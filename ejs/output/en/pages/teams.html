@@ -13,8 +13,130 @@
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
+<<<<<<< HEAD
 <body class="font-primary">
     <main class="d-flex flex-column" id="teams">
+=======
+<body class="font-primary">    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column pt-20" id="teams">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
 
         <section class="hero bg-dark text-secondary position-relative position-relative">
             <div class="container py-10">
@@ -53,7 +175,11 @@
         <div class="row text-center g-4">
 
             <div class="col-md-3 d-flex line justify-content-center gap-6">
+<<<<<<< HEAD
                 <img src="./assets/media/images/en/components/cycle-icon1.png" width="55">
+=======
+                <img src="./assets/media/images/en/components/cycle-icon1.png" width="40">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                 <div  class="d-flex flex-column">
                     <h2 class="fw-bold mt-2 text-muted">25+</h2>
                     <span class="text-muted">
@@ -63,7 +189,11 @@
             </div>
             
             <div class="col-md-3 d-flex line justify-content-center gap-6">
+<<<<<<< HEAD
                 <img src="./assets/media/images/en/components/cycle-icon2.png" width="55">
+=======
+                <img src="./assets/media/images/en/components/cycle-icon2.png" width="40">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                 <div class="d-flex flex-column">
                     <h2 class="fw-bold mt-2 text-muted">1530+</h2>
                     <span class="text-muted">
@@ -73,7 +203,11 @@
             </div>
             
             <div class="col-md-3 d-flex line justify-content-center gap-6">
+<<<<<<< HEAD
                 <img src="./assets/media/images/en/components/cycle-icon3.png" width="55">
+=======
+                <img src="./assets/media/images/en/components/cycle-icon3.png" width="40">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                 <div  class="d-flex flex-column">
                     <h2 class="fw-bold mt-2 text-muted">1310+</h2>
                     <span class="text-muted">
@@ -83,7 +217,11 @@
             </div>
 
             <div class="col-md-3 d-flex justify-content-center gap-6">
+<<<<<<< HEAD
                 <img src="./assets/media/images/en/components/cycle-icon4.png" width="55">
+=======
+                <img src="./assets/media/images/en/components/cycle-icon4.png" width="40">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                <div  class="d-flex flex-column">
                     <h2 class="fw-bold mt-2 text-muted">50+</h2>
                     <span class="text-muted">
@@ -100,6 +238,7 @@
         <section class="experts ">
             <div class="container d-flex flex-column align-items-center gap-10">
                 <div class="d-flex flex-column gap-2 text-center fw-bold col-10 col-xxl-6 col-xl-6 col-lg-8 ">
+<<<<<<< HEAD
                     <h2 class="text-primary fw-bold fs-big text-uppercase">MEET OUR EXPERTS</h2>
                     <span class="fw-bold text-uppercase">Leadership That Builds Excellence</span>
                     <p class="text-text">Our leaders bring vision, expertise, and dedication to every project, ensuring the highest standards in construction and client satisfaction.</p>
@@ -264,6 +403,165 @@
 
 
 
+=======
+                    <h2 class="text-primary fw-bold fs-big text-uppercase"> MEET OUR EXPERTS</h2>
+                    <span class="fw-bold text-uppercase"> Leadership That Builds Excellence</span>
+                    <p class="text-text"> Our leaders bring vision, expertise, and dedication to every project, ensuring the highest standards in construction and client satisfaction.</p>
+                </div>
+
+                <div class="row align-items-stretch justify-content-center row-gap-6 column-gap-lg-2">
+
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(19).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(18).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(19).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(18).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                 </div>
 
             </div>
@@ -278,16 +576,28 @@
                     <span class="text-primary fw-bold text-uppercase fs-big">Why We're Different</span>
 
                     <h2 class="fw-bold fs-mid-title">
+<<<<<<< HEAD
                         Built on Values.<br>
+=======
+                          Built on Values.<br>
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                         Focused on People.
                     </h2>
 
                     <p class="text-text">
+<<<<<<< HEAD
                         We believe great projects start with a great team and strong values.
                     </p>
                     
                     
                     <a href="#" class="bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content">
+=======
+                         We believe great projects start with a great team and strong values.
+                    </p>
+                    
+                    
+                    <a href="#" class="bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                         <span class="fs-small text-uppercase">join our team</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -362,18 +672,31 @@
 
     
     <footer class="footer bg-dark text-secondary py-5 ">
+<<<<<<< HEAD
         <div class="mx-12 container">
 
             <div class="row gap-6 gap-lg-0 gap-md-3">
 
                 
                 <div class="d-flex flex-column gap-3 col-10 col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+=======
+        <div class="container">
+
+            <div class="row row-gap-8 row-gap-lg-0">
+
+                
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
 
                     <img src="./assets/media/images/en/footer/logo.png" class="" width="210">
 
                     <p  class="">We are a leading construction company providing high-quality services across residential, commercial and industrial sectors worldwide.</p>
 
+<<<<<<< HEAD
                     <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center">
+=======
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
 
                         <a  href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-facebook-f "></i>
@@ -396,6 +719,7 @@
                 </div>
 
                 
+<<<<<<< HEAD
                 <div class="px-0 col-lg-2 col-md-5">
 
                     <h6 class="d-flex flex-column gap-1 fw-bold mb-4">QUICK LINKS</h6>
@@ -423,6 +747,35 @@
                         </li>
 
                         <li>
+=======
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">QUICK LINKS</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Home</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">About Us</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Services</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Projects</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Blog</a>
+                        </li>
+
+                        <li class="w-fit-content">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Contact Us</a>
                         </li>
 
@@ -431,6 +784,7 @@
                 </div>
 
                 
+<<<<<<< HEAD
                 <div class="px-0 col-lg-2 col-md-6">
 
                     <h6 class="d-flex flex-column gap-1 fw-bold mb-4">OUR SERVICES</h6>
@@ -449,6 +803,26 @@
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Interior Design</a>
                         </li>
                         <li>
+=======
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">OUR SERVICES</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Construction Management</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Design &amp; Build</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Renovation</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Interior Design</a>
+                        </li>
+                        <li class="w-fit-content">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Project Consulting</a>
                         </li>
                     </ul>
@@ -456,18 +830,28 @@
                 </div>
 
                 
+<<<<<<< HEAD
                 <div class="px-0 col-lg-3 col-md-5">
 
                     <h6 class="d-flex flex-column gap-1 fw-bold mb-4">CONTACT INFO</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li class="d-flex gap-2 align-items-baseline">
+=======
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">CONTACT INFO</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                             <i class="fa-solid fa-location text-primary"></i>
                             <div class="d-flex flex-column justify-content-start">
                                 <span class="">123 Construction Ave,</span>
                                 <span class="">New York, NY 10001, USA</span>
                             </div>
                         </li>
+<<<<<<< HEAD
                         <li class="d-flex gap-2 align-items-baseline">
                             <i class="fa-solid fa-light fa-phone text-primary"></i>
                             <span class="">+1 212 555 7890</span>
@@ -477,6 +861,17 @@
                             <span class="">info@buildex.com</span>
                         </li>
                         <li class="d-flex gap-2 align-items-baseline">
+=======
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-light fa-phone text-primary"></i>
+                            <span class="">+1 212 555 7890</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span class="">info@buildex.com</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                             <i class="fa-solid fa-clock text-primary"></i>
                             <span  class="">Mon – Sat: 8:00 AM – 6:00 PM</span>
                         </li>
@@ -506,6 +901,7 @@
                 </div>
 
             
+<<<<<<< HEAD
                 <div class="px-0 col-10 col-xxl-2 col-xl-2 col-lg-2 col-md-10 ">
 
                     <h6 class="d-flex flex-column gap-1 fw-bold mb-4">RECENT PROJECTS</h6>
@@ -534,6 +930,36 @@
 
                         <a href="./output/en/pages/" class="col-4">
                             <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100">
+=======
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
+
+                    <h6 class="fw-bold text-nowrap">RECENT PROJECTS</h6>
+
+                    <div class="row g-1">
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100 image-hover">
+>>>>>>> 23a1f70680a34f53711cdecd508dcdb1074f104b
                         </a>
 
                     </div>

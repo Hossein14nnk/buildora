@@ -1,8 +1,10 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
+.vh-50 {
+    height: 50vh;;
+}
 
-#contact-hero {
-    min-height: 500px !important;
-    margin-bottom: 2rem;
+#contact-us .social a:hover i {
+    color: var(--bs-primary);
 }

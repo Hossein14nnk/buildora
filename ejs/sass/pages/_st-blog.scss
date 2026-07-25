@@ -2,22 +2,25 @@
 @use "../../miz/sass/global-functions/_colors" as *;
 
 
-#st-blog-hero {
-    min-height: 500px !important;
-    margin-bottom: 2rem;
-}
-
-#descriotion-blog .image-blog{
+#st-blog #descriotion-blog .image-blog{
     aspect-ratio: 2/1;
 }
 
-#descriotion-blog .number{
+#st-blog #descriotion-blog .number{
     width: 30px;
   height: 29px;
 }
 
+ul{
+    list-style: none;
+}
+
+#st-blog .social i:hover {
+    color: var(--bs_primary);
+} 
 
 
-
-
-
+#st-blog .pooular-post img {
+    width: 50px;
+    aspect-ratio: 1;
+}

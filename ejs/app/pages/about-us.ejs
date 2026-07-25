@@ -1,8 +1,9 @@
 <%- include('../layouts/page/head.ejs' , {title: "about-us", addCount: 0}); -%>
 
-    <main class="d-flex flex-column" id="about-us">
+    <%- include('../components/header/content.ejs', ); -%>
+    <main class="d-flex flex-column pt-20" id="about-us">
 
-        <section class="hero py-20 pt-20 text-secondary-text ">
+        <section class="hero pt-20 text-secondary-text ">
             <div class="container">
                 <div class="align-items-start col-lg-5 d-flex flex-column gap-8 ">
 
@@ -14,7 +15,7 @@
                        <%- t.pages.aboutUs.descriptionHero %>
                     </p>
 
-                    <a class="rounded-3 bg-button px-5 py-2 text-button-text mt-2 d-flex gap-6 align-items-center fw-semibold">
+                    <a href="<%- navigation(lang , 'home-one.html') %>" class="rounded-3 bg-button px-5 py-2 text-button-text mt-2 d-flex gap-6 align-items-center fw-bold fs-subtitle">
                         <span class="" ><%- t.pages.aboutUs.btnHero %></span>
                         <i class="fa-solid fa-arrow-right text-dark"></i>
                     </a>
@@ -79,7 +80,7 @@
 
         </section>
 
-        <section class="journey py-20 bg-specific">
+        <section class="journey bg-card">
             <div class="container ">
                 <div class=" d-flex gap-6 flex-column flex-xxl-row flex-xl-row">
 
@@ -97,7 +98,7 @@
                 </div>
         </section>
 
-        <section class="values py-20 bg-dark">
+        <section class="values bg-dark">
             <div class="container ">
                 <div class=" d-flex gap-10 flex-column flex-xxl-row flex-xl-row ">
 
@@ -115,7 +116,7 @@
                 </div>
         </section>
 
-        <section class="introductionb bg-specific">
+        <section class="introductionb bg-card">
             <div class="container overflow-x-scroll">
                 <div class="wrapper d-flex gap-4">
                     <div class="col-3">
@@ -138,7 +139,7 @@
 
         </section>
 
-        <section class="team py-20">
+        <section class="team">
             <div class="container d-flex flex-column gap-10">
 
                 <div class=" d-flex gap-6 justify-content-between align-items-end flex-column flex-xxl-row flex-xl-row flex-lg-row flex-md-row">
@@ -152,21 +153,81 @@
                     </div>
                 </div>
                 
-                <div class="gap-4 row justify-content-center">
-                    <div class="col-5 col-xxl-2 col-xl-2 col-lg-3 col-md-4 ">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                <div class="row justify-content-center row-gap-4 column-gap-xxl-4">
+                    <div class="col-5 col-xl-2 col-md-4">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5 col-xxl-2 col-xl-2 col-lg-3 col-md-4 ">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-5 col-xl-2 col-md-4">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(19).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5 col-xxl-2 col-xl-2 col-lg-3 col-md-4 ">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-5 col-xl-2 col-md-4">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(18).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5 col-xxl-2 col-xl-2 col-lg-3 col-md-4 ">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-5 col-xl-2 col-md-4">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5 col-xxl-2 col-xl-2 col-lg-3 col-md-4 ">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-5 col-xl-2 col-md-4">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                 </div>

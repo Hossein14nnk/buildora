@@ -1,91 +1,90 @@
 <%- include('../layouts/page/head.ejs' , {title: "contact-us", addCount: 0}); -%>
 
-
-    <main>
-        <section id="contact-hero" class="conainer-flouds bg-on-secondary d-flex align-items-center">
-            <div class="container d-flex gap-4 flex-column">
-                <span class="text-primary fw-bold fs-normal">OUR BLOG</span>
-                <h1 class="text-light fw-bold fs-big-title">Insights, Ideas & Inspiration
-                    <br><span class="text-primary">For Better Building</span>
+    <%- include('../components/header/content.ejs', ); -%>
+    <main id="contact-us" class="d-flex flex-column pt-20">
+        <section id="contact-hero" class="conainer-flouds bg-on-secondary d-flex align-items-center pt-20">
+            <div class="container d-flex gap-4 flex-column py-6">
+                <span class="text-primary fw-bold fs-normal"><%- t.pages.contactUs.heroSubtitle %></span>
+                <h1 class="text-light fw-bold fs-big-title"><%- t.pages.contactUs.heroTitle1 %>
+                    <br><span class="text-primary"><%- t.pages.contactUs.heroTitle2 %></span>
                 </h1>
-                <p class="text-text fw-medium fs-title">Stay updated with the latest trends, expert insights, and
-                    practical tips from the construction industry.</p>
+                <p class="text-text fw-medium fs-title"><%- t.pages.contactUs.heroDescription %></p>
             </div>
         </section>
         <section id="" class="conainer-flouds">
             <div class="container">
-                <div class="row gy-4">
+                <div class="row gy-4 gap-10">
                     <div class="col-xl-7 gap-3">
                         <div class="d-flex flex-column gap-5">
                             <div class="d-flex flex-column">
-                                <span class="text-primary fw-bold fs-normal">OUR BLOG</span>
-                                <h2 class="fw-bold">were here to help</h2>
+                                <span class="text-primary fw-bold fs-normal text-uppercase">send us a message</span>
+                                <h2 class="fw-bold"><%- t.pages.contactUs.sectiontwotext %></h2>
                             </div>
                             <form>
                                 <div class="d-flex gap-5 flex-column">
                                     <div class="d-flex w-100 gap-5">
                                         <div class="d-flex flex-column w-50">
                                             <label class="fw-semibold small mb-2">
-                                                Full Name <span class="text-danger">*</span>
+                                                <%- t.pages.contactUs.name %><span class="text-danger">*</span>
                                             </label>
-                                            <input type="email" class="bg-fields border-border-fields border p-2"
-                                                placeholder="Enter your full name">
+                                            <input type="email" class="bg-fields border-border-fields border p-2 rounded-1"
+                                                placeholder="<%- t.pages.contactUs.placeHolderName %>">
                                         </div>
                                         <div class="d-flex flex-column w-50">
                                             <label class="fw-semibold small mb-2">
-                                                Email Address <span class="text-danger">*</span>
+                                                <%- t.pages.contactUs.address %> <span class="text-danger">*</span>
                                             </label>
-                                            <input type="email" class="bg-fields border-border-fields border p-2"
-                                                placeholder="Enter your email">
+                                            <input type="email" class="bg-fields border-border-fields border p-2 rounded-1"
+                                                placeholder="<%- t.pages.contactUs.placeHolderddress %>">
                                         </div>
                                     </div>
 
                                     <div class="d-flex w-100 gap-5">
-                                        <div class="d-flex flex-column w-50">
+                                        <div class="d-flex flex-column w-50 rounded-1">
                                             <label class="form-label fw-semibold small mb-2">
-                                                Phone Number
+                                               <%- t.pages.contactUs.number %>
                                             </label>
-                                            <input type="tel" class="bg-fields border-border-fields border p-2"
-                                                placeholder="Enter your phone number">
+                                            <input type="tel" class="bg-fields border-border-fields border p-2 rounded-1"
+                                                placeholder="<%- t.pages.contactUs.placeHoldernumber %>">
                                         </div>
 
                                         <div class="d-flex flex-column w-50">
                                             <label class="form-label fw-semibold small mb-2">
-                                                Subject <span class="text-danger">*</span>
+                                                <%- t.pages.contactUs.subject %> <span class="text-danger">*</span>
                                             </label>
                                             <select class="bg-fields border-border-fields border p-2">
-                                                <option selected>Select a subject</option>
-                                                <option>Construction</option>
-                                                <option>Interior Design</option>
-                                                <option>Consulting</option>
+                                                <option selected><%- t.pages.contactUs.option1 %> </option>
+                                                <option><%- t.pages.contactUs.option2 %> </option>
+                                                <option><%- t.pages.contactUs.option3 %> </option>
+                                                <option><%- t.pages.contactUs.option4 %> </option>
                                             </select>
                                         </div>
                                     </div>
 
                                     <div class="d-flex flex-column">
                                         <label class="form-label fw-semibold small mb-2">
-                                            Project Type
+                                            <%- t.pages.contactUs.projectType %>
                                         </label>
                                         <select class="bg-fields border-border-fields border p-2">
-                                            <option selected>Select project type</option>
-                                            <option>Residential</option>
-                                            <option>Commercial</option>
-                                            <option>Industrial</option>
+                                            <option selected><%- t.pages.contactUs.type1 %></option>
+                                            <option><%- t.pages.contactUs.type2 %></option>
+                                            <option><%- t.pages.contactUs.type3 %></option>
+                                            <option><%- t.pages.contactUs.type4 %></option>
                                         </select>
                                     </div>
 
                                     <div class="d-flex flex-column">
                                         <label class="form-label fw-semibold small mb-2">
-                                            Message <span class="text-danger">*</span>
+                                            <%- t.pages.contactUs.message %> <span class="text-danger">*</span>
                                         </label>
-                                        <textarea rows="6" class="bg-fields border-border-fields border p-2"
-                                            placeholder="Tell us about your project..."></textarea>
+                                        <textarea rows="6" class="bg-fields border-border-fields border p-2 rounded-1"
+                                            placeholder="<%- t.pages.contactUs.placeHolderMessage %>"></textarea>
                                     </div>
 
-                                    <div class="col-12">
-                                        <button type="submit"
-                                            class="bg-button fw-semibold border-border-fields border p-2">
-                                            Send Message
+                                    <div class="col-12 rounded-2 ">
+                                        <button type="submit "
+                                            class="bg-button fw-semibold border-border-fields border py-2 px-4 rounded-2 btn-hover d-flex align-items-center">
+                                           <%- t.pages.contactUs.sendbtn %>
                                             <i class="fa-solid fa-arrow-right ms-2"></i>
                                         </button>
                                     </div>
@@ -95,94 +94,43 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-xl-5">
+                    <div class="col-xl-4">
 
                         <div class="h-100 d-flex flex-column gap-3">
                            <div class="d-flex flex-column">
                              <span class="text-primary fw-bold fs-normal">
-                                GET IN TOUCH
+                                <%- t.pages.contactUs.subtitleInformatoin %>
                             </span>
                             <h2 class="fw-bold mb-5">
-                                Contact Information
+                                <%- t.pages.contactUs.titleInformation %>
                             </h2>
                            </div>
-                            <div class="contact-details d-flex flex-column gap-3">
-                                <div class="bg-white rounded p-4 d-flex align-items-center gap-4">
-                                    <i class="fa-solid fa-location-dot fs-2 text-primary"></i>
-                                    <div>
-                                        <h5 class="fw-bold mb-1">Address</h5>
-                                        <p class="mb-0">
-                                            123 Construction Ave,<br>
-                                            New York
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="bg-white rounded p-4 d-flex align-items-center gap-4">
+                             <%- include('../components/contact-details/content.ejs', {ContactDetails: t.components.ContactDetails}); -%>
 
-                                    <i class="fa-solid fa-phone fs-2 text-primary"></i>
+                            <div class="d-flex flex-column gap-2 mt-4">
 
-                                    <div>
-
-                                        <h5 class="fw-bold mb-1">Phone</h5>
-
-                                        <p class="mb-0">+1 212 555 7890</p>
-
-                                    </div>
-
-                                </div>
-                                <div class="bg-white rounded p-4 d-flex align-items-center gap-4">
-
-                                    <i class="fa-solid fa-envelope fs-2 text-primary"></i>
-
-                                    <div>
-
-                                        <h5 class="fw-bold mb-1">Email</h5>
-
-                                        <p class="mb-0">info@buildex.com</p>
-
-                                    </div>
-
-                                </div>
-                                <div class="bg-white rounded p-4 d-flex align-items-center gap-4">
-
-                                    <i class="fa-solid fa-clock fs-2 text-primary"></i>
-
-                                    <div>
-
-                                        <h5 class="fw-bold mb-1">Working Hours</h5>
-
-                                        <p class="mb-0">Mon - Sat : 8AM - 6PM</p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="mt-auto pt-4">
-
-                                <h6 class="fw-bold mb-3">
-                                    Let's Connect
+                                <h6 class="fw-bold">
+                                    <%- t.pages.contactUs.contact %>
                                 </h6>
 
                                 <div class="social gap-2 d-flex flex-row align-items-center">
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
+                                    <a href="#" style="width: 30px; height: 30px;"
+                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border ">
                                         <i class="fab fa-facebook-f "></i>
                                     </a>
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
+                                    <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
                                         <i class="fab fa-linkedin-in "></i>
                                     </a>
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
+                                    <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
                                         <i class="fab fa-instagram "></i>
                                     </a>
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
+                                    <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
                                         <i class="fab fa-youtube "></i>
                                     </a>
@@ -197,8 +145,8 @@
                 </div>
         </section>
         <section class="conainer-flouds">
-            <div class="container">
-                <iframe class="w-100"
+            <div class="container rounded-1">
+                <iframe class="w-100 rounded-1 vh-50"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12951.109024056112!2d51.218427!3d35.7562792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8de5006a0ba159%3A0x6ef7e9cb611a8298!2sivahid!5e0!3m2!1sen!2s!4v1728657276517!5m2!1sen!2s"
                     width="600" style="border: 0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -206,33 +154,12 @@
         </section>
         <section class="conainer-flouds">
             <div class="container">
-                <div
-                    class="contact-card text-secondary bg-dark rounded-3 shadow-lg gap-2 px-5 py-3 d-flex flex-column align-items-center justify-content-between flex-sm-column flex-md-column flex-lg-row ">
-                    <div class="col-lg-7 col-10 col-xxl-7 col-xl-7">
-                        <div class="d-flex align-items-center gap-4">
-                            <div class=" fs-high-title">
-                                <i class="fa-solid fa-headphones text-primary"></i>
-                            </div>
-                            <div class="d-flex flex-column gap-1">
-                                <h3 class="fw-bold mb-3">Need Immediate Assistance?</h3>
-                                <span class="text-text">Call us directly or send us an email.</span>
-                                <span class="text-text">Our team is ready to assist you right away.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-8 col-xxl-3 col-xl-3 border rounded-2 p-4 d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-phone-volume fs-mid-title  text-primary"></i>
-                        <div class="d-flex flex-column ">
-                            <span class="fw-semibold">Call Us Now</span>
-                            <span class=" fs-3 fw-bold text-nowrap text-primary">+1 212 555 7890</span>
-                        </div>
-                    </div>
-                </div>
+                <%- include('../components/contact-card/content.ejs', {contactCard: t.components.contactCard}); -%>
             </div>
         </section>
     </main>
 
-
+    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
     
     <script src="./assets/js/mizchin.min.js"></script>
 </body>

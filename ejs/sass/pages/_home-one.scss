@@ -2,18 +2,22 @@
 @use "../../miz/sass/global-functions/_colors" as *;
 
 
-.hossein {
-    background-image: url(get-image("logo.png"));
-    color: get-color("primary");
-}
 
-#home-one .hero {
-    background-image:  linear-gradient(to bottom , rgba(0, 0, 0, 0.66) , rgba(0, 0, 0, 0.26)), url(get-image("en/home-one/photo-1486406146926-c627a92ad1ab.jpg"));
-    background-repeat: no-repeat;
+#home-one #main-hero {
+    // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.26)), url(get-image("en/home-one/photo-1486406146926-c627a92ad1ab.jpg"));
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    background-image: linear-gradient(to right,
+            rgba(15, 18, 22, .78) 0%,
+            rgba(15, 18, 22, .52) 35%,
+            rgba(15, 18, 22, .18) 65%,
+            rgba(15, 18, 22, 0) 100%),
+        url("../media/images/en/single/herohomepage.png");
     background-size: 100% 100%;
+    min-height: 500px !important;
 }
 
-#home-one .btn-hover i {
+.btn-hover i {
     transition: all 300ms ease-in-out;
 }
 
@@ -27,69 +31,145 @@
     bottom: 50%;
 }
 
-#home-one .statistics-hero{
+#home-one .statistics-hero {
     transform: translateY(50%);
 }
 
-#home-one .border-play{
-   border: 1px solid var(--bs-primary);
+#home-one .border-play {
+    border: 1px solid var(--bs-primary);
     width: 65px;
-  height: 65px;
+    height: 65px;
 }
 
-.card-play{
-    max-width:350px;
+#home-one .card-play {
+    max-width: 350px;
     backdrop-filter: blur(5px);
 }
 
-.image-wrapper{
-    min-height:650px;
+#home-one .image-wrapper {
+    min-height: 570px;
 }
 
-.dots{
-    left:-40px;
-    top:90px;
-    width:140px;
-    height:140px;
+#home-one .dots {
+    left: -40px;
+    top: 90px;
+    width: 140px;
+    height: 140px;
     background-image:
-    radial-gradient(#FFC107 2px,transparent 2px);
-    background-size:18px 18px;
-    z-index:2;
+        radial-gradient(#FFC107 2px, transparent 2px);
+    background-size: 18px 18px;
+    z-index: 2;
 }
 
-.building-img{
-    left:40px;
-    top:30px;
-    width:72%;
-    height:520px;
-    object-fit:cover;
-    z-index:3;
-    box-shadow:0 25px 60px rgba(0,0,0,.18);
+#home-one .building-img {
+    left: 40px;
+    top: 30px;
+    width: 72%;
+    height: 520px;
+    object-fit: cover;
+    z-index: 3;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .18);
 }
 
-.mission-card{
-    right:10px;
-    bottom:20px;
-    width:360px;
-    background:#151515;
-
-    color:#fff;
-
-    padding:50px;
-
-    z-index:4;
-
-    box-shadow:0 20px 50px rgba(0,0,0,.30);
+#home-one .mission-card {
+    right: 10px;
+    bottom: 20px;
+    width: 300px;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    z-index: 4;
+    padding: 25px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .30);
 }
 
-.yellow-line{
-    width:55px;
-    height:4px;
-    margin-bottom:20px;
+#home-one .yellow-line {
+    width: 55px;
+    height: 4px;
+    margin-bottom: 20px;
 }
 
-.mission-footer{
+#home-one .mission-footer {
     border: 1px solid #FFC107;
     width: 35px;
     height: 35px;
+}
+
+
+
+#home-one .play-btn {
+    width: 60px;
+    height: 60px;
+}
+
+#home-one .signature {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#home-one .image-box {
+    position: relative;
+    overflow: hidden;
+    max-height: 350px;
+}
+
+#home-one .image-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+
+
+#home-one #home-one #testimonials .comment>div {
+    background: #232323 !important;
+}
+
+#home-one #testimonials .slider-btn {
+    width: 40px;
+    height: 40px;
+}
+
+#home-one .client-logo {
+    width: 100%;
+    max-width: 150px;
+    height: 60px;
+    object-fit: contain;
+    transition: .3s;
+}
+
+#home-one .client-logo:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 992px) {
+    #home-one #main-hero .card-play {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+
+#home-one .mission-btn:hover {
+    background: var(--bs-primary);
+}
+
+#home-one.mission-btn:hover .fa-solid.fa-arrow-right {
+    color: var(--bs-dark) !important;
+    transform: rotate(-45deg);
+}
+
+#home-one .cta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+a {
+    text-decoration-line: none;
 }

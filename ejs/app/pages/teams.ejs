@@ -1,6 +1,6 @@
 <%- include('../layouts/page/head.ejs' , {title: "teams", addCount: 0}); -%>
-
-    <main class="d-flex flex-column" id="teams">
+    <%- include('../components/header/content.ejs', ); -%>
+    <main class="d-flex flex-column pt-20" id="teams">
 
         <section class="hero bg-dark text-secondary position-relative position-relative">
             <div class="container py-10">
@@ -9,18 +9,18 @@
 
                     <div class=" d-flex flex-column gap-5">
 
-                        <span class="text-primary fw-bold text-uppercase">OUR TEAM</span>
+                        <span class="text-primary fw-bold text-uppercase"><%- t.pages.teams.heroSubtitle %></span>
 
                         <h1 class="fs-big-title fw-bold">
 
-                            The People Behind
-                            <span class="text-primary">Every Great Build</span>
+                            <%- t.pages.teams.heroTitle1 %>
+                            <span class="text-primary"><%- t.pages.teams.heroTitle2 %></span>
                         </h1>
 
                         <div class="bg-primary" style="width:60px;height:3px;"></div>
 
                         <p class="text-secondary ">
-                            Our team of experienced professionals is dedicated to delivering exceptional results with integrity, innovation, and teamwork.
+                           <%- t.pages.teams.heroDescription %>
                         </p>
 
                     </div>
@@ -38,50 +38,163 @@
         <section class="experts ">
             <div class="container d-flex flex-column align-items-center gap-10">
                 <div class="d-flex flex-column gap-2 text-center fw-bold col-10 col-xxl-6 col-xl-6 col-lg-8 ">
-                    <h2 class="text-primary fw-bold fs-big text-uppercase">MEET OUR EXPERTS</h2>
-                    <span class="fw-bold text-uppercase">Leadership That Builds Excellence</span>
-                    <p class="text-text">Our leaders bring vision, expertise, and dedication to every project, ensuring the highest standards in construction and client satisfaction.</p>
+                    <h2 class="text-primary fw-bold fs-big text-uppercase"> <%- t.pages.teams.sectiontwosubtitle %></h2>
+                    <span class="fw-bold text-uppercase"> <%- t.pages.teams.sectiontwotitle %></span>
+                    <p class="text-text"> <%- t.pages.teams.sectiontwoDescription %></p>
                 </div>
 
-                <div class="row align-items-stretch justify-content-center gap-6">
+                <div class="row align-items-stretch justify-content-center row-gap-6 column-gap-lg-2">
 
-                    <div class="p-1 col-4 col-xxl-2 col-xl-2 col-lg-3 col-md-3 flex-grow-1">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-1 col-4 col-xxl-2 col-xl-2 col-lg-3 col-md-3 flex-grow-1">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-1 col-4 col-xxl-2 col-xl-2 col-lg-3 col-md-3 flex-grow-1">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(19).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-1 col-4 col-xxl-2 col-xl-2 col-lg-3 col-md-3 flex-grow-1">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(18).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-1 col-4 col-xxl-2 col-xl-2 col-lg-3 col-md-3 flex-grow-1">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-1 col-4 col-xxl-2 col-xl-2 col-lg-3 col-md-3 flex-grow-1">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-1 col-4 col-xxl-2 col-xl-2 col-lg-3 col-md-3 flex-grow-1">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(19).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-1 col-4 col-xxl-2 col-xl-2 col-lg-3 col-md-3 flex-grow-1">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(18).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-1 col-4 col-xxl-2 col-xl-2 col-lg-3 col-md-3 flex-grow-1">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-1 col-4 col-xxl-2 col-xl-2 col-lg-3 col-md-3 flex-grow-1">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
+                            <div class="d-flex flex-column gap-3 p-3">
+                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
+                                <span class="fs-big fw-semibold text-text">Project Manager</span>
+                                <div class="d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-
-
-
-
-
-
                 </div>
 
             </div>
@@ -93,20 +206,20 @@
 
                 <div class="col-11 col-xxl-3 col-xl-3 col-lg-3 col-md-4 container-fluid d-flex flex-column gap-4 justify-content-start py-4 border-end border-1" >
                     
-                    <span class="text-primary fw-bold text-uppercase fs-big">Why We're Different</span>
+                    <span class="text-primary fw-bold text-uppercase fs-big"><%- t.pages.teams.sectiontreeSubtitle %></span>
 
                     <h2 class="fw-bold fs-mid-title">
-                        Built on Values.<br>
-                        Focused on People.
+                        <%- t.pages.teams.sectiontreetitle1 %><br>
+                       <%- t.pages.teams.sectiontreetitle2 %>
                     </h2>
 
                     <p class="text-text">
-                        We believe great projects start with a great team and strong values.
+                        <%- t.pages.teams.sectiontreedescription %>
                     </p>
                     
                     
-                    <a href="#" class="bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content">
-                        <span class="fs-small text-uppercase">join our team</span>
+                    <a href="#" class="bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
+                        <span class="fs-small text-uppercase"><%- t.pages.teams.sectiontreebtn %></span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>

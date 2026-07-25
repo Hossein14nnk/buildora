@@ -2,13 +2,8 @@
 @use "../../miz/sass/global-functions/_colors" as *;
 
 
-.hossein {
-    background-image: url(get-image("logo.png"));
-    color: get-color("primary");
-}
-
 #about-us .hero {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) , transparent), url("../media/images/en/about-us/photo-1486406146926-c627a92ad1ab.jpg");
+    background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/about-us/photo-1486406146926-c627a92ad1ab.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -36,6 +31,10 @@
 #about-us .wrapper {
     width: 300vw;
 } 
+
+#about-us .journey .history-timeline {
+    min-width: 800px
+}
 
 @media (min-width: 768px) {
     #about-us .wrapper {

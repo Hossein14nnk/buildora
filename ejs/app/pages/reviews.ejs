@@ -1,0 +1,125 @@
+<%- include('../layouts/page/head.ejs' , {title: "Reviews", addCount: 0}); -%>
+    <%- include('../components/header/content.ejs', ); -%>
+    <main class="d-flex flex-column pt-20" id="Reviews">
+
+        <section class="hero py-20 text-secondary-text d-flex justify-content-start">
+            <div class="container d-flex ">
+                <div class="d-flex flex-column gap-4 col-10 col-xxl-5 col-xl-6 col-lg-8 align-items-start">
+                    <div class="small ">
+                        <a href="#"><%- t.pages.Reviews.breadcromp1 %></a>
+                        <span class="mx-2">›</span>
+
+                        <a href="#"><%- t.pages.Reviews.breadcromp2 %></a>
+                        <span class="mx-2">›</span>
+                        <span><%- t.pages.Reviews.breadcromp3 %></span>
+                    </div>
+                    <span class="text-primary fw-bold text-uppercase border-secondary border-start px-3 border-3 lh-1"><%- t.pages.Reviews.heroSubTitle %></span>
+
+                    <h1 class="fs-big-title fw-bold">
+                       <%- t.pages.Reviews.heroTitle1 %> <br>
+                        <span class="text-primary"><%- t.pages.Reviews.heroTitle2 %></span>
+                    </h1>
+
+                    <p class="text-secondary fs-mid-title">
+                        <%- t.pages.Reviews.heroDescription %>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper-items">
+            <div class="container">
+                <%- include('../components/items-card/content.ejs'); -%>
+            </div>
+        </section>
+
+        <section class="reviews container py-8 d-flex flex-column gap-8 align-items-center d-flex">
+             
+            <div class="d-flex align-items-center justify-content-between w-100 flex-md-row flex-column">
+
+                <h2 class="fs-mid-title fw-bold"><%- t.pages.Reviews.section2Title %></h2>
+
+                <ul class="reviews-filter d-flex align-items-center fw-semibold fs-small">
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center fw-bold">
+                        <a class=" text-dark" href="#">
+                            <%- t.pages.Reviews.filter1 %>
+                        </a>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center fw-bold">
+                        <a class="text-dark" href="#">
+                            <%- t.pages.Reviews.filter2 %>
+                        </a>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center fw-bold">
+                        <a class="text-dark" href="#">
+                            <%- t.pages.Reviews.filter3 %>
+                        </a>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center fw-bold">
+                        <a class="text-dark" href="#">
+                            <%- t.pages.Reviews.filter4 %>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="row align-items-stretch justify-content-center row-gap-6">
+                <div class="col-12 col-lg-4 col-md-6">
+                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                </div>
+            </div> 
+
+        </section>
+ 
+        <section class="project-cta py-0 text-light">
+            <div class="container py-8 px-20">
+                <div class="d-flex align-items-center justify-content-between flex-column flex-xxl-row  flex-xl-row gap-4">
+
+                    <div class="d-flex flex-column gap-4">
+
+                        <h4 class="fw-bold fs-high-title"><%- t.pages.Reviews.sectionEndtitle %></h4>
+
+                        <p class="text-text">
+                           <%- t.pages.Reviews.sectionEndDescription %>
+                        </p>
+                    </div>
+
+                    <a href="./output/en/pages/home-one.html" class="rounded-3 bg-button px-5 py-2 text-button-text mt-2 d-flex gap-6 align-items-center fw-bold fs-subtitle">
+                        <span class=""><%- t.pages.Reviews.sectionEnbtn %></span>
+                        <i class="fa-solid fa-arrow-right text-dark"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
+
+    <script src="./assets/js/mizchin.min.js"></script>
+</body>
+
+</html>
+

@@ -5,7 +5,7 @@
 
 
 #second-demo .hero {
-    background-image: linear-gradient(to right , rgba(0, 0, 0, 0.86) , rgba(0, 0, 0, 0.327)), url("../media/images/en/demo2/ChatGPT1.png");
+    background-image:linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../../../assets/media/images/en/demo2/ChatGPT1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -82,4 +82,13 @@
 #second-demo .about .button:hover {
     background-color: transparent !important;
     color: var(--bs-secondar) !important;
+}
+
+
+#second-demo .wrapper1 img {
+    width: 100px;
+}
+
+#second-demo .wrapper2 img {
+    width: 100px;
 }

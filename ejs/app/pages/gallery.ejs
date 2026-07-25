@@ -1,6 +1,6 @@
 <%- include('../layouts/page/head.ejs' , {title: "gallery", addCount: 0}); -%>
-
-    <main class="d-flex flex-column" id="gallery">
+    <%- include('../components/header/content.ejs', ); -%>
+    <main class="d-flex flex-column pt-20" id="gallery">
 
         <section class="hero py-20 text-secondary-text d-flex justify-content-start">
             <div class="container d-flex ">
@@ -34,50 +34,46 @@
 
                 <ul class="gallery-filter d-flex align-items-center fw-semibold fs-small">
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class=" active" href="#">
+                        <a class="text-dark" href="#">
                             <%- t.pages.gallery.filter1 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="" href="#">
+                        <a class="text-dark" href="#">
                             <%- t.pages.gallery.filter2 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="" href="#">
+                        <a class="text-dark" href="#">
                             <%- t.pages.gallery.filter3 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="" href="#">
+                        <a class="text-dark" href="#">
                             <%- t.pages.gallery.filter4 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="" href="#">
+                        <a class="text-dark" href="#">
                             <%- t.pages.gallery.filter5 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="" href="#">
+                        <a class="text-dark" href="#">
                             <%- t.pages.gallery.filter6 %>
                         </a>
                     </li>
                 </ul>
-
-
-                    <select class="form-select sort-select text-lg-end d-flex gap-6 align-items-center border rounded px-4 py-1 fs-small">
-                        <option class="">Latest Firs</option>
-                        <option class="">Oldest First</option>
-                        <option class="">Oldest First</option>
-                    </select>
-
-
+                <select class="form-select sort-select d-flex border rounded px-1 py-1 fs-small ">
+                    <option class=""><%- t.pages.gallery.option1 %></option>
+                    <option class=""><%- t.pages.gallery.option2 %></option>
+                    <option class=""><%- t.pages.gallery.option3 %></option>
+                </select>
             </div>
 
 

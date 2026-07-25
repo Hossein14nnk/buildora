@@ -1,0 +1,140 @@
+<%- include('../layouts/page/head.ejs' , {title: "st-project", addCount: 0}); -%>
+    <%- include('../components/header/content.ejs', ); -%>
+    <main class="d-flex flex-column bg-background pt-20" id="stProject">
+
+        <section class="hero bg-dark text-secondary position-relative py-8 position-relative">
+
+            <div class="container py-4 d-flex flex-column gap-6">
+
+                <div class="small gap-3 d-flex">
+                    <a href="#" class="text-decoration-none "><%- t.pages.stProject.breadcromp1 %></a>
+                    <span class="text-secondary">></span>
+                    <a href="#" class="text-decoration-none"><%- t.pages.stProject.breadcromp2 %></a>
+                    <span class="text-secondary">></span>
+                    <span class="text-secondary"><%- t.pages.stProject.breadcromp3 %></span>
+                </div>
+
+                <div class="row col-11 col-xxl-5 col-xl-7 col-lg-10 col-md-10 ">
+                    <div class=" d-flex flex-column gap-5">
+
+                        <span class="text-primary fw-bold text-uppercase"><%- t.pages.stProject.heroSubtitle %></span>
+
+                        <h1 class="fs-big-title fw-bold">
+
+                            <%- t.pages.stProject.heroTitle1 %>
+                            <span class="text-primary"> <%- t.pages.stProject.heroTitle2 %></span>
+                        </h1>
+
+                        <div class="bg-primary" style="width:60px;height:3px;"></div>
+
+                        <p class="text-secondary lh-lg fs-title">
+                             <%- t.pages.stProject.heroDescription %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <div class="container justify-content-center d-flex gap-10 flex-column flex-xxl-row flex-xl-row flex-lg-row flex-md-row">
+
+            <div class="col-11 col-xxl-9 col-xl-9 col-lg-8 col-md-7 align-self-center">
+                <section class="overview py-8 d-flex flex-column gap-4">
+                    <img src="<%= getMedia(lang, 'services/ChatGPT Image Jul 12, 2026, 03_39_32 AM.png', 'images'); %>" class="img-fluid rounded-3 shadow-sm" alt="">
+                    
+                    <h2 class="fw-bold"> <%- t.pages.stProject.sectiontwotitle %></h2>
+
+                    <hr>
+
+                    <p class="text-dark lh-lg">
+                         <%- t.pages.stProject.sectiontwoDescription1 %>
+                    </p>
+
+                    <p class="text-dark lh-lg">
+                     <%- t.pages.stProject.sectiontwoDescription2 %>
+                    </p>
+
+                </section>
+                <section class="offer py-8 d-flex flex-column gap-4">
+                    <h2 class="fw-bold"> Key Feature</h2>
+                    <hr >  
+                    <div class="row ">
+
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 ">
+                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="process py-8 d-flex flex-column gap-4">
+                    <h2 class="fw-bold"><%- t.pages.stProject.sectiontreetitle %></h2>
+                    <hr>
+                    <div class="project-gallery gap-2 d-grid"> 
+                        <img src="<%= getMedia(lang, 'services/photo-1486406146926-c627a92ad1ab.jpg', 'images'); %>" class="img-fluid rounded-3 shadow-sm " alt="">
+                        <img src="<%= getMedia(lang, 'services/ChatGPT6.png', 'images'); %>" class="img-fluid rounded-3 shadow-sm " alt="">
+                        <img src="<%= getMedia(lang, 'services/ChatGPT4.png', 'images'); %>" class="img-fluid rounded-3 shadow-sm " alt="">
+                        <img src="<%= getMedia(lang, 'services/ChatGPT Image Jul 12, 2026, 03_39_32 AM.png', 'images'); %>" class="img-fluid rounded-3 shadow-sm " alt="">
+                        <img src="<%= getMedia(lang, 'services/homepage-section2.jpg', 'images'); %>" class="img-fluid rounded-3 shadow-sm " alt="">
+                        <img src="<%= getMedia(lang, 'services/building.png', 'images'); %>" class="img-fluid rounded-3 shadow-sm " alt="">
+                    </div>
+                </section>
+            </div>
+
+            <aside class="col-11 col-xxl-3 col-xl-3 col-lg-4 col-md-5 py-8 d-flex flex-column justify-content-between align-self-center gap-4">
+                <div>
+                    <%- include('../components/project-overview/content.ejs', {projectOverview: t.components.projectOverview}); -%>
+                </div>
+                <div>
+                    <%- include('../components/icon-banner-CTA/content.ejs', {iconBannerCTA: t.components.iconBannerCTA}); -%> 
+                </div>
+
+                <div class="card-body px-4 py-8 order-0 shadow-sm rounded-3 d-flex flex-column gap-8">
+
+                    <h4 class="fw-bold"><%- t.pages.stProject.insidetitle %></h4>
+
+                    <div class="border-bottom border-primary border-3" style="width:50px"></div>
+
+                    <ul class="list-group d-flex flex-column gap-2">
+
+                        <%- include('../components/project-list/content.ejs', {projectList: t.components.projectList}); -%>
+                        <%- include('../components/project-list/content.ejs', {projectList: t.components.projectList}); -%>
+                        <%- include('../components/project-list/content.ejs', {projectList: t.components.projectList}); -%>
+                        <%- include('../components/project-list/content.ejs', {projectList: t.components.projectList}); -%>
+
+
+                    </ul>
+
+                </div>
+
+               
+                <div class="overflow-hidden rounded">
+                    <%- include('../components/process-timeline/content.ejs', {processTimeline: t.components.processTimeline}); -%>
+                </div>
+            </aside> 
+
+        </div>
+
+    </main>
+
+    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
+
+    
+    <script src="./assets/js/mizchin.min.js"></script>
+</body>
+
+</html>

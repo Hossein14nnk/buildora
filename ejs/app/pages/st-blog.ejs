@@ -1,137 +1,95 @@
-<!DOCTYPE html>
-<html dir="<%= t.direction %>" lang="<%= t.language %>">
+<%- include('../layouts/page/head.ejs' , {title: "st-blog", addCount: 0}); -%>
+    <%- include('../components/header/content.ejs', ); -%>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pages</title>
-    <link rel="icon" type="image/png" href="<%= getMedia(lang, 'single/logo-web3.webp', 'images') %>">
-    <base href="<%= basePathPages() %>">
-    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/vendors/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/components.min.css">
-    <link rel="stylesheet" href="./assets/css/style.min.css">
-</head>
+    <main id="st-blog" class="d-flex flex-column pt-20">
+        <section id="st-blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center pt-20">
+            <div class="container d-flex gap-6 flex-column">
 
-<body class="font-primary">
+                <div class="small ">
+                    <a href="#" class="text-decoration-none mt-2"><%- t.pages.stBlog.breadcromp1 %></a>
 
+                    <span class="text-secondary">></span>
 
-    <main>
-        <section id="st-blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center">
-            <div class="container d-flex gap-4 flex-column">
-                <span class="text-primary fw-bold fs-normal">BLOG DETAILS</span>
-                <h1 class="text-light fw-bold fs-big-title">10 Construction Trends
-                    <br><span class="text-primary">Shaping the Future</span>
+                    <a href="#" class="text-decoration-none "><%- t.pages.stBlog.breadcromp2 %></a>
+                    <span class="text-secondary">></span>
+
+                    <span class="text-secondary"><%- t.pages.stBlog.breadcromp3 %></span>
+                </div>
+                <span class="text-primary fw-bold fs-normal"><%- t.pages.stBlog.heroSubtitle %></span>
+                <h1 class="text-light fw-bold fs-big-title"><%- t.pages.stBlog.heroTitle1 %>
+                    <br><span class="text-primary"><%- t.pages.stBlog.heroTitle2 %></span>
                 </h1>
                 <div class="border-bottom border-primary border-3" style="width:50px"></div>
-                <div class="small ">
-                    <a href="#" class="text-decoration-none text-secondary mt-2">Home</a>
-
-                    <span class="text-secondary">&gt;</span>
-
-                    <a href="#" class="text-decoration-none text-secondary">Blog</a>
-
-                    <span class="text-secondary">&gt;</span>
-
-                    <span class="text-secondary">10 Construction Trends Shaping the Future</span>
-                </div>
+                
             </div>
         </section>
         <section id="descriotion-blog" class="container-fluid">
             <div class="container">
                 <div class="row gx-xl-5 gx-0 gy-5">
                     <div class="col-12 col-xl-9 g-2 m-0 pe-xl-10">
-                        <div class="d-flex flex-column gap-5 align-items-start justify-content-between h-100">
-                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text">
-                                Construction</span>
-                            <h2 class="fs-mid-title fw-bold text-title-text mb-0">1. 10 Construction
-                                Trends
-                                Shaping
-                                the Future<div>
-                            </div>
+
+                        <div class="d-flex flex-column gap-2 align-items-start  h-100">
+                            <span class="fs-small bg-primary rounded-1 p-2 text-button-text fw-bold">
+                                <%- t.pages.stBlog.btnsectiontwo %></span>
+                            <h2 class="fs-mid-title fw-bold text-title-text">
+                                <%- t.pages.stBlog.sectiontwoTitle %>
                             </h2>
                             <div class="d-flex align-items-center gap-5">
                                 <div class="d-flex align-items-center gap-2 fs-normal">
                                     <i class="fa-solid fa-calendar text-text"></i>
-                                    <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                    <span class="text-text fs-normal"> <%- t.pages.stBlog.date %></span>
                                 </div>
                                 <div class="d-flex align-items-center gap-2 fs-normal">
                                     <i class="fa-solid fa-user text-text"></i>
-                                    <span class="text-text fs-normal">By Admin</span>
+                                    <span class="text-text fs-normal"><%- t.pages.stBlog.admin %></span>
                                 </div>
                                 <div class="d-flex align-items-center gap-2 fs-normal">
                                     <i class="fa-solid fa-comments text-text"></i>
-                                    <span class="text-text fs-normal"> 5 comments</span>
+                                    <span class="text-text fs-normal"><%- t.pages.stBlog.comment %></span>
                                 </div>
                             </div>
-                            <img src="./assets/media/images/en/components/projects.jpg" alt=""
+                            <img src="<%= getMedia(lang, 'st-blog/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp', 'images'); %>" alt=""
                                 class="w-100 rounded-2 image-blog">
                             <div class="d-flex flex-column gap-2">
-                                <p class="text-text">The construction industry is constantly evolving. New technologies,
-                                    innovative materials, and a stronger focus on sustainability are reshaping the way
-                                    we build. Here are the top trends that are defining the future of construction.</p>
-                                <h3 class="fs-mid-title fw-bold text-title-text">1. Sustainable Building Practices</h3>
-                                <p class="text-text">Sustainability is no longer an option—it's a necessity. Green
-                                    building materials, energy-efficient designs, and waste reduction practices are
-                                    helping reduce environmental impact while lowering long-term costs.</p>
-                                <h3 class="fs-mid-title fw-bold text-title-text">2. Building Information Modeling (BIM)
+                                <p class="text-text"><%- t.pages.stBlog.description1 %></p>
+                                <h3 class="fs-mid-title fw-bold text-title-text"><%- t.pages.stBlog.title1 %></h3>
+                                <p class="text-text"><%- t.pages.stBlog.description2 %></p>
+                                <h3 class="fs-mid-title fw-bold text-title-text"><%- t.pages.stBlog.title2 %>
                                 </h3>
-                                <p class="text-text">BIM technology allows teams to create digital representations of
-                                    physical and functional characteristics of a facility. It improves collaboration,
-                                    reduces errors, and enhances project outcomes.</p>
-                                <h3 class="fs-mid-title fw-bold text-title-text">3. Modular Construction</h3>
-                                <p class="text-text">Off-site construction and prefabrication are speeding up project
-                                    timelines and improving quality control. Modular building is becoming a mainstream
-                                    solution for various sectors.</p>
-                                <p class="text-text">These trends are more than just buzzwords—they are transforming the
-                                    industry and creating better outcomes for clients, communities, and the environment.
+                                <p class="text-text"><%- t.pages.stBlog.description3 %></p>
+                                <h3 class="fs-mid-title fw-bold text-title-text"><%- t.pages.stBlog.title3 %></h3>
+                                <p class="text-text"><%- t.pages.stBlog.description4 %></p>
+                                <p class="text-text"><%- t.pages.stBlog.description5 %>
                                 </p>
                             </div>
-                            <div class="bg-icon d-flex align-items-center p-5 gap-3 rounded-1 w-100">
+                            <div class="bg-primary-light d-flex align-items-center p-5 gap-3 rounded-1 w-100">
                                 <i class="fa-solid fa-quote-left fs-high-title text-primary"></i>
                                 <span class="fs-title fw-bold text-title-text">
-                                    The future of construction is built on innovation, sustainability, and
-                                    collaboration.
+                                    <%- t.pages.stBlog.point %>
                                 </span>
                             </div>
                             <div class="d-flex gap-2">
-                                <span class="fs-title fw-bold text-title-text">Share this post:</span>
-                                <div class="social gap-2 d-flex align-items-center">
-
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset bg-secondary">
-                                        <i class="fab fa-facebook-f "></i>
-                                    </a>
-
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset bg-secondary">
-                                        <i class="fab fa-linkedin-in "></i>
-                                    </a>
-
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset bg-secondary">
-                                        <i class="fab fa-instagram "></i>
-                                    </a>
-
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset ibg-secondary">
-                                        <i class="fab fa-youtube "></i>
-                                    </a>
+                                <span class="fs-title fw-bold text-title-text"><%- t.pages.stBlog.share %></span>
+                                <div class="social d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
                                 </div>
                             </div>
                             <div class="d-flex gap-2">
-                                <span class="fs-title fw-bold text-title-text">tags:</span>
+                                <span class="fs-title fw-bold text-title-text"><%- t.pages.stBlog.tag %></span>
                                 <div class="d-flex flex-wrap gap-4">
                                     <span class="fs-normal border rounded-1 p-2 text-button-text">
-                                        Construction</span>
+                                        <%- t.pages.stBlog.filter1 %></span>
                                     <span class="fs-normal border rounded-1 p-2 text-button-text">
-                                        Trends</span>
+                                        <%- t.pages.stBlog.filter2 %></span>
                                     <span class="fs-normal border rounded-1 p-2 text-button-text">
-                                        Innovation</span>
+                                        <%- t.pages.stBlog.filter3 %></span>
                                     <span class="fs-normal border rounded-1 p-2 text-button-text">
-                                        Sustainability</span>
+                                        <%- t.pages.stBlog.filter4 %></span>
                                     <span class="fs-normal border rounded-1 p-2 text-button-text">
-                                        Future</span>
+                                        <%- t.pages.stBlog.filter5 %></span>
                                 </div>
 
                             </div>
@@ -139,18 +97,17 @@
                                 <div class="d-flex flex-column align-items-start w-50 border ps-3 ps-xl-10 py-4">
                                     <div>
                                         <i class="fas fa-arrow-left-long"></i>
-                                        <span class="fs-title fw-bold text-title-text text-start">PREVIOUS POST</span>
+                                        <span class="fs-title fw-bold text-title-text text-start"><%- t.pages.stBlog.previus %></span>
                                     </div>
-                                    <p class="fs-subtitle fw-bold text-title-text text-start">How Effective Planning
-                                        Ensures <br> Project Success</p>
+                                    <p class="fs-subtitle fw-bold text-title-text text-start"><%- t.pages.stBlog.previusDescription1 %><br> <%- t.pages.stBlog.previusDescription2 %></p>
                                 </div>
                                 <div class="d-flex flex-column align-items-end w-50 border pe-3 pe-xl-10 py-4">
                                     <div>
-                                        <span class="fs-title fw-bold text-title-text text-end">NEXT POST</span>
+                                        <span class="fs-title fw-bold text-title-text text-end"><%- t.pages.stBlog.next %></span>
                                         <i class="fas fa-arrow-right-long"></i>
                                     </div>
-                                    <p class="fs-subtitle fw-bold text-title-text text-end">Modern Interior Design <br>
-                                        Trends for 2024</p>
+                                    <p class="fs-subtitle fw-bold text-title-text text-end"><%- t.pages.stBlog.nextDescription1 %> <br>
+                                       <%- t.pages.stBlog.nextDescription2 %></p>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +116,7 @@
                     <div class="col-12 col-xl-3 m-0 pt-5 pt-xl-0">
                         <div class="d-flex flex-column gap-5 justify-content-between h-100">
                             <div class="w-100 d-flex flex-row justify-content-between bg-white rounded-2 p-3">
-                                <input type="text" placeholder="search blogs...">
+                                <input type="text" placeholder="<%- t.pages.stBlog.searchpalceholder %>">
                                 <button>
                                     <i class="fa-light fa-search fs-normal p-2 bg-primary rounded-1"></i>
                                 </button>
@@ -167,61 +124,61 @@
                             <div
                                 class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
 
-                                <h4 class="fw-bold fs-title">Categories</h4>
+                                <h4 class="fw-bold fs-title"><%- t.pages.stBlog.Categories %></h4>
 
                                 <div class="border-bottom border-primary border-3" style="width:50px"></div>
 
                                 <ul class="list-group d-flex flex-column gap-3">
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center ">
-                                            Construction
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
+                                            <%- t.pages.stBlog.category1 %>
                                             <span class="number bg-background">(8)</span>
                                         </a>
                                     </li>
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
-                                            Project Management
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
+                                           <%- t.pages.stBlog.category2 %>
                                             <span class="number bg-background">(5)</span>
                                         </a>
                                     </li>
 
-                                    <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
-                                            Interior Design
+                                    <li class="rounded ">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
+                                           <%- t.pages.stBlog.category3 %>
                                             <span class="number bg-background">(4)</span>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
-                                            Interior Design
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
+                                           <%- t.pages.stBlog.category4 %>
                                             <span class="number bg-background">(8)</span>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
-                                            Sustainability
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
+                                            <%- t.pages.stBlog.category5 %>
                                             <span class="number bg-background">(3)</span>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
-                                            Safety
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
+                                            <%- t.pages.stBlog.category6 %>
                                             <span class="number bg-background">(2)</span>
                                         </a>
                                     </li>
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
-                                            Commercial
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
+                                            <%- t.pages.stBlog.category7 %>
                                             <span class="number bg-background">(1)</span>
                                         </a>
                                     </li>
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
-                                            Commercial
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
+                                            <%- t.pages.stBlog.category8 %>
                                             <span class="number bg-background">(1)</span>
                                         </a>
                                     </li>
@@ -230,104 +187,67 @@
                             </div>
                             <div
                                 class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
-                                <h4 class="fw-bold fs-title">Popular Blog</h4>
+                                <h4 class="fw-bold fs-title"><%- t.pages.stBlog.PopularBlog %></h4>
                                 <div class="border-bottom border-primary border-3" style="width:50px"></div>
                                 <div class="d-flex flex-column gap-5">
                                     <div class="pooular-post d-flex align-items-stretch gap-3">
-                                        <div class="image-post"> <img src="./assets/media/images/en/components/news.jpg"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
+                                        <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/news.jpg', 'images'); %> "
+                                                alt="" class="rounded-1 object-fit-cover"> </div>
                                         <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10
-                                                Construction
-                                                Trends
-                                                Shaping the Future</a>
+                                            <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.stBlog.blog1 %></a>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                                <span class="text-text fs-normal"> <%- t.pages.stBlog.date1 %></span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pooular-post d-flex align-items-stretch gap-3">
-                                        <div class="image-post"> <img src="./assets/media/images/en/components/news.jpg"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
+                                        <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/projects.jpg', 'images'); %>"
+                                                alt="" class="rounded-1 object-fit-cover"> </div>
                                         <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10
-                                                Construction
-                                                Trends
-                                                Shaping the Future</a>
+                                            <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.stBlog.blog2 %></a>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                                <span class="text-text fs-normal"><%- t.pages.stBlog.date2 %></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pooular-post d-flex align-items-stretch gap-2">
+                                        <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/ChatGPT2.png', 'images'); %>"
+                                                alt="" class="rounded-1 object-fit-cover"> </div>
+                                        <div class="d-flex gap-2 flex-column">
+                                            <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.stBlog.blog3 %></a>
+                                            <div class="d-flex align-items-center gap-2 fs-normal">
+                                                <i class="fa-solid fa-calendar text-primary"></i>
+                                                <span class="text-text fs-normal"> <%- t.pages.stBlog.date3 %></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pooular-post d-flex align-items-stretch gap-2">
+                                        <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/ChatGPT3.png', 'images'); %>"
+                                                alt="" class="rounded-1 object-fit-cover"> </div>
+                                        <div class="d-flex gap-2 flex-column">
+                                            <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.stBlog.blog4 %></a>
+                                            <div class="d-flex align-items-center gap-2 fs-normal">
+                                                <i class="fa-solid fa-calendar text-primary"></i>
+                                                <span class="text-text fs-normal"> <%- t.pages.stBlog.date4 %></span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="pooular-post d-flex align-items-stretch gap-2">
                                         <div class="image-post"> <img src="./assets/media/images/en/components/news.jpg"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
+                                                alt="" class="rounded-1 object-fit-cover"> </div>
                                         <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10
-                                                Construction
-                                                Trends
-                                                Shaping the Future</a>
+                                            <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.stBlog.blog5 %></a>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
-                                        <div class="image-post"> <img src="./assets/media/images/en/components/news.jpg"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10
-                                                Construction
-                                                Trends
-                                                Shaping the Future</a>
-                                            <div class="d-flex align-items-center gap-2 fs-normal">
-                                                <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
-                                        <div class="image-post"> <img src="./assets/media/images/en/components/news.jpg"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10
-                                                Construction
-                                                Trends
-                                                Shaping the Future</a>
-                                            <div class="d-flex align-items-center gap-2 fs-normal">
-                                                <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                                <span class="text-text fs-normal"><%- t.pages.stBlog.date5 %></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="subscribeCard"
-                                class="d-flex flex-column gap-2 align-items-center justify-content-between bg-black rounded-1 p-4">
-                                <div
-                                    class="subscribe-icon rounded-circle border border-primary d-flex justify-content-center align-items-center">
-                                    <img src="./assets/media/images/en/components/subscribe-icon.png" alt=""
-                                        class="icon">
-                                </div>
-                                <h3 class="fs-title text-white text-center">Subscribe to Our Newsletter</h3>
-                                <p class="fs-subtitle text-center text-secondary-text">Get the latest updates,
-                                    insights,
-                                    and
-                                    news delivered to your inbox.</p>
-                                <form action="" class="d-flex flex-column gap-2 container-fluid">
-                                    <input type="text" placeholder="Enter your email"
-                                        class="fs-subtitle bg-transparent container border rounded-1 border-white px-3 py-2 text-white fw-medium">
-                                    <button type="submit"
-                                        class="bg-primary text-black d-flex align-items-center gap-4 rounded-1 container-fluid justify-content-center py-2"
-                                        href="#">
-                                        <span class="fs-small fw-semibold">SUBSCRIBE NOW</span>
-                                        <i class="fas fa-arrow-right-long fs-small"></i>
-                                    </button>
-                                </form>
-                            </div>
+                            <%- include('../components/subscribe/content.ejs', {subscribe: t.components.subscribe}); -%>
                         </div>
 
                     </div>
@@ -336,7 +256,7 @@
             </div>
         </section>
     </main>
-
+    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
     <script src="./assets/js/mizchin.min.js"></script>
 </body>
 

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ar-project</title>
+    <link rel="icon" type="image/png" href="./assets/media/images/en/single/logo-web3.webp">
+    <base href="../../../">
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/components.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body class="font-primary">
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column pt-20" id="ar-project">
+
+        <section id="" class="pt-20 conainer-fluid bg-on-secondary d-flex align-items-center">
+            <div class="container d-flex gap-4 flex-column">
+                <span class="text-primary fw-bold fs-normal">OUR PROJECTS</span>
+                <h1 class="text-light fw-bold fs-big-title">Building Excellence
+                    <br><span class="text-primary">Through Every Project</span>
+                </h1>
+                <div class="bg-primary" style="width:60px;height:3px;"></div>
+                <p class="text-text fw-medium fs-title">Explore our diverse portfolio of successful projects across residential, commercial, and industrial sectors.</p>
+            </div>
+        </section>
+        <section class="container-fluid bg-section">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between w-100 mb-5">
+                    <ul class="d-flex align-items-center fw-semibold fs-small">
+                        <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 rounded-1 px-sm-2 py-2 d-flex align-items-center">
+                            <a class="fs-normal text-dark" href="#">
+                                 ALL PROJECTS
+                            </a>
+                        </li>
+
+                        <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                            <a class="fs-normal text-dark" href="#">
+                                  RESIDENTIAL
+                            </a>
+                        </li>
+
+                        <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                            <a class="fs-normal text-dark" href="#">
+                                INTERIOR
+                            </a>
+                        </li>
+
+                        <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                            <a class="fs-normal text-dark" href="#">
+                                  INDUSTRIAL
+                            </a>
+                        </li>
+
+                        <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                            <a class="fs-normal text-dark" href="#">
+                                 INFRASTRUCTURE
+                            </a>
+                        </li>
+
+                    </ul>
+                    <select class="form-select w-auto rounded-0 border rounded-1 px-4 py-1 fs-normal">
+                        <option>Filter By</option>
+                        <option>Newest</option>
+                        <option> Oldest</option>
+                    </select>
+                </div>
+                <div class="wrapper col-xl-12 g-2">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="project-card shadow bg-white w-100">
+    <div class="image p-3">
+        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
+    </div>
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+        <div class="d-flex gap-3 flex-column">
+            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-text fs-normal"> Miami,USA</span>
+            </div>
+        </div>
+        
+        
+        <a href="" class="fs-title fw-bold card-button transition">
+            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+        </a>
+    </div>
+</div>            
+                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="project-card shadow bg-white w-100">
+    <div class="image p-3">
+        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
+    </div>
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+        <div class="d-flex gap-3 flex-column">
+            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-text fs-normal"> Miami,USA</span>
+            </div>
+        </div>
+        
+        
+        <a href="" class="fs-title fw-bold card-button transition">
+            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+        </a>
+    </div>
+</div>                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="project-card shadow bg-white w-100">
+    <div class="image p-3">
+        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
+    </div>
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+        <div class="d-flex gap-3 flex-column">
+            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-text fs-normal"> Miami,USA</span>
+            </div>
+        </div>
+        
+        
+        <a href="" class="fs-title fw-bold card-button transition">
+            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+        </a>
+    </div>
+</div>                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex">
+                           <div class="project-card shadow bg-white w-100">
+    <div class="image p-3">
+        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
+    </div>
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+        <div class="d-flex gap-3 flex-column">
+            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-text fs-normal"> Miami,USA</span>
+            </div>
+        </div>
+        
+        
+        <a href="" class="fs-title fw-bold card-button transition">
+            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+        </a>
+    </div>
+</div>                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="project-card shadow bg-white w-100">
+    <div class="image p-3">
+        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
+    </div>
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+        <div class="d-flex gap-3 flex-column">
+            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-text fs-normal"> Miami,USA</span>
+            </div>
+        </div>
+        
+        
+        <a href="" class="fs-title fw-bold card-button transition">
+            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+        </a>
+    </div>
+</div>                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex">
+                           <div class="project-card shadow bg-white w-100">
+    <div class="image p-3">
+        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
+    </div>
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+        <div class="d-flex gap-3 flex-column">
+            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-text fs-normal"> Miami,USA</span>
+            </div>
+        </div>
+        
+        
+        <a href="" class="fs-title fw-bold card-button transition">
+            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+        </a>
+    </div>
+</div>                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="project-card shadow bg-white w-100">
+    <div class="image p-3">
+        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
+    </div>
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+        <div class="d-flex gap-3 flex-column">
+            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-text fs-normal"> Miami,USA</span>
+            </div>
+        </div>
+        
+        
+        <a href="" class="fs-title fw-bold card-button transition">
+            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+        </a>
+    </div>
+</div>                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="project-card shadow bg-white w-100">
+    <div class="image p-3">
+        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
+    </div>
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+        <div class="d-flex gap-3 flex-column">
+            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-text fs-normal"> Miami,USA</span>
+            </div>
+        </div>
+        
+        
+        <a href="" class="fs-title fw-bold card-button transition">
+            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+        </a>
+    </div>
+</div>                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="project-card shadow bg-white w-100">
+    <div class="image p-3">
+        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
+    </div>
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+        <div class="d-flex gap-3 flex-column">
+            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-text fs-normal"> Miami,USA</span>
+            </div>
+        </div>
+        
+        
+        <a href="" class="fs-title fw-bold card-button transition">
+            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+        </a>
+    </div>
+</div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature d-flex">
+            <div class="container d-flex rounded-4 py-2 px-4 align-items-center flex-column flex-xxl-row flex-xl-row flex-lg-row flex-md-row">
+
+                <div class="col-11 col-xxl-3 col-xl-3 col-lg-3 col-md-4 container-fluid d-flex flex-column gap-4 justify-content-start border-end border-1">
+                    
+                    <span class="text-primary fw-bold text-uppercase fs-big">WHY CLIENTS CHOOSE US</span>
+
+                    <h2 class="fw-bold fs-mid-title">
+                          Delivering Quality
+                            In Every Detail
+                    </h2>
+
+                    <p class="text-text">We combine expert craftsmanship, innovative solutions, and a client-first approach to deliver projects that stand the test of time</p>
+                    
+                    
+                    <a href="./output/en/pages/home-one.html" class="bg-primary text-dark py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content">
+                        <span class="fs-small text-uppercase ">WORK WITH US</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-9">
+                    <div id="secondFeatureCard" class="container-fluid d-flex px-5 rounded-1">
+                        <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
+                            <img class="feature-icon" src="./assets/media/images/en/components/second-feature-card-icon-1.png" alt="">
+                            <div class="line"></div>
+                            <h3 class="fs-title text-center">Expert Team</h3>
+                            <p class="fs-subtitle text-text text-center fw-medium">Skilled professionals dedicated to excellence.</p>
+                        </div>
+                        <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
+                            <img class="feature-icon" src="./assets/media/images/en/components/second-feature-card-icon-2.png" alt="">
+                            <div class="line"></div>
+                            <h3 class="fs-title text-center">Quality Materials</h3>
+                            <p class="fs-subtitle text-text text-center ">We use only the best materials for lasting durability.</p>
+                        </div>
+                        <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
+                            <img class="feature-icon" src="./assets/media/images/en/components/second-feature-card-icon-3.png" alt="">
+                            <div class="line"></div>
+                            <h3 class="fs-title text-center">On-Time Delivery</h3>
+                            <p class="fs-subtitle text-text text-center fw-medium">We value your time and deliver projects on schedule.</p>
+                        </div>
+                        <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
+                            <img class="feature-icon" src="./assets/media/images/en/components/second-feature-card-icon-4.png" alt="">
+                            <div class="line"></div>
+                            <h3 class="fs-title text-center">Client Satisfaction</h3>
+                            <p class="fs-subtitle text-text text-center fw-medium">Your satisfaction is our goal, every step of the way.</p>
+                        </div>
+                    </div> 
+                </div>
+                
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="container">
+                
+
+
+    <div class="quote-card text-secondary bg-dark rounded-3 shadow-lg gap-2 px-5 py-3 d-flex flex-column align-items-center justify-content-between flex-sm-column flex-md-column flex-lg-row ">
+
+        <div class="d-flex align-items-center gap-5">
+                
+            <i class=" fa-solid fa-city text-primary fs-mid-title"></i>
+
+            <div class="d-flex flex-column gap-1">
+
+                <p class="fw-bold small text-uppercase text-primary">Have A Project In Mind?</p>
+
+                <h4 class="fw-bold">Let&#39;s Build Something Great Together</h4>
+
+                <p class="text-text fw-semibold">Share your vision with us and we&#39;ll bring it to life.</p>
+
+            </div>
+
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center">
+
+            <a href="#" class="quote-btn bg-primary fw-bold px-4 py-3 rounded-2 text-decoration-none text-reset d-flex align-items-center gap-3 text-nowrap">
+
+                <span class="text-dark">GET A FREE QUOTE</span>
+
+                <i class="fa-solid fa-arrow-right text-dark"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    
+    <footer class="footer bg-dark text-secondary py-5 ">
+        <div class="container">
+
+            <div class="row row-gap-8 row-gap-lg-0">
+
+                
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
+
+                    <img src="./assets/media/images/en/footer/logo.png" class="" width="210">
+
+                    <p  class="">We are a leading construction company providing high-quality services across residential, commercial and industrial sectors worldwide.</p>
+
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
+
+                        <a  href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./output/en/pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./output/en/pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">QUICK LINKS</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Home</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">About Us</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Services</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Projects</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Blog</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">OUR SERVICES</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Construction Management</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Design &amp; Build</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Renovation</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Interior Design</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Project Consulting</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">CONTACT INFO</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-location text-primary"></i>
+                            <div class="d-flex flex-column justify-content-start">
+                                <span class="">123 Construction Ave,</span>
+                                <span class="">New York, NY 10001, USA</span>
+                            </div>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-light fa-phone text-primary"></i>
+                            <span class="">+1 212 555 7890</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span class="">info@buildex.com</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-clock text-primary"></i>
+                            <span  class="">Mon – Sat: 8:00 AM – 6:00 PM</span>
+                        </li>
+                    </ul>
+
+                    <div class="social d-xxl-none d-xl-none d-lg-none d-flex align-items-center gap-2">
+
+                        <a  href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./output/en/pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./output/en/pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
+
+                    <h6 class="fw-bold text-nowrap">RECENT PROJECTS</h6>
+
+                    <div class="row g-1">
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="bg-light">
+
+            <div class="copyright">
+
+                © 2024 Buildex Construction. All Rights Reserved.
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./assets/js/mizchin.min.js"></script>
+</body>
+
+</html>
