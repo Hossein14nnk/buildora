@@ -16,10 +16,6 @@
     transition: all 300ms ease-in-out;
 }
 
-#register .register .check-button:hover i {
-    transform: translateX(0.5rem);
-}
-
 #register {
   background-image: url(get-image("en/register/building.png"))  ;
   background-repeat: no-repeat;
