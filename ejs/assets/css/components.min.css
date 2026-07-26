@@ -94,10 +94,6 @@
   color: var(--bs-primary);
 }
 
-.team-card img {
-  aspect-ratio: 1;
-}
-
 .card:hover {
   box-shadow: 0px 0px 8px 0px rgba(150, 148, 148, 0.4392156863);
 }
@@ -367,6 +363,346 @@
   transform: translateX(50%) translateY(-50%);
 }
 
+:root {
+  --primary: #FEBF01;
+  --on-primary: #0F0F0F;
+  --primary-light: #FCF0D6;
+  --primary-dark: rgba(0, 0, 0, 0);
+  --secondary: #FAFAFA;
+  --on-secondary: #0C0B0C;
+  --secondary-light: rgba(0, 0, 0, 0);
+  --secondary-dark: rgba(0, 0, 0, 0);
+  --specific: #E7E7E6;
+  --button-text: #0F0F0F;
+  --button: #FEBF01;
+  --text: #8E8B8D;
+  --title-text: #0C0B0C;
+  --secondary-text: #C6C6C7;
+  --section-title-text: #0C0B0C;
+  --border: #FEBF01;
+  --divider: #FEBF01;
+  --shadow: #F0F0F1;
+  --icon: #0C0B0C;
+  --icon-hover: rgba(0, 0, 0, 0);
+  --menu: rgba(0, 0, 0, 0);
+  --card: #FFFFFF;
+  --background: #F7F7F7;
+  --section: #FFFFFF;
+  --hover: rgba(0, 0, 0, 0);
+  --button-hover: rgba(0, 0, 0, 0);
+  --button-text-hover: rgba(0, 0, 0, 0);
+  --discount-price: rgba(0, 0, 0, 0);
+  --fields: #FCFDFD;
+  --border-fields: #F1F1F1;
+  --title-text-fields: #545250;
+  --text-fields: #B8B6BA;
+  --black: #000000;
+  --white: #FFFFFF;
+  --danger-regular: #D70D0D;
+  --disabled-regular: #B1B1B1;
+  --warning-regular: #FFB800;
+  --warning-light: #FDD368;
+  --warning-dark: #CA9200;
+  --success-regular: #02B74A;
+  --success-light: #C0FCD8;
+  --success-dark: #007A31;
+  --danger-dark: #AA0D0D;
+  --danger-light: #F8D0D0;
+  --disabled-light: #E2E2E2;
+  --disabled-dark: #575857;
+  --information-regular: #3761EB;
+  --information-light: #7393FF;
+  --information-dark: #2145BC;
+  --border-secondary: #FFFFFF;
+  --unCommon: #FFFFFF;
+}
+
+.border-primary-color {
+  border-color: var(--primary);
+}
+
+.primary-color {
+  color: var(--primary);
+}
+
+.bg-primary-color {
+  background-color: var(--primary);
+}
+
+.border-on-primary-color {
+  border-color: var(--on-primary);
+}
+
+.on-primary-color {
+  color: var(--on-primary);
+}
+
+.bg-on-primary-color {
+  background-color: var(--on-primary);
+}
+
+.primary-light-color {
+  color: var(--primary-light);
+}
+
+.bg-primary-light-color {
+  background-color: var(--primary-light);
+}
+
+.bg-primary-dark-color {
+  background-color: var(--primary-dark);
+}
+
+.secondary-color {
+  color: var(--secondary);
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary);
+}
+
+.on-secondary-color {
+  color: var(--on-secondary);
+}
+
+.bg-on-secondary-color {
+  background-color: var(--on-secondary);
+}
+
+.bg-secondary-light-color {
+  background-color: var(--secondary-light);
+}
+
+.bg-secondary-dark-color {
+  background-color: var(--secondary-dark);
+}
+
+.specific-color {
+  color: var(--specific);
+}
+
+.bg-specific-color {
+  background-color: var(--specific);
+}
+
+.button-text-color {
+  color: var(--button-text);
+}
+
+.bg-button-color {
+  background-color: var(--button);
+}
+
+.text-color {
+  color: var(--text);
+}
+
+.bg-text-color {
+  background-color: var(--text);
+}
+
+.title-text-color {
+  color: var(--title-text);
+}
+
+.bg-title-text-color {
+  background-color: var(--title-text);
+}
+
+.bg-secondary-text-color {
+  background-color: var(--secondary-text);
+}
+
+.bg-section-title-text-color {
+  background-color: var(--section-title-text);
+}
+
+.border-color {
+  border-color: var(--border);
+}
+
+.bg-border-color {
+  background-color: var(--border);
+}
+
+.border-divider-color {
+  border-color: var(--divider);
+}
+
+.bg-divider-color {
+  background-color: var(--divider);
+}
+
+.bg-shadow-color {
+  background-color: var(--shadow);
+}
+
+.icon-color {
+  color: var(--icon);
+}
+
+.bg-icon-color {
+  background-color: var(--icon);
+}
+
+.bg-menu-color {
+  background-color: var(--menu);
+}
+
+.bg-card-color {
+  background-color: var(--card);
+}
+
+.bg-color {
+  background-color: var(--background);
+}
+
+.bg-section-color {
+  background-color: var(--section);
+}
+
+.bg-hover-color {
+  background-color: var(--hover);
+}
+
+.bg-button-hover-color {
+  background-color: var(--button-hover);
+}
+
+.bg-button-text-hover-color {
+  background-color: var(--button-text-hover);
+}
+
+.bg-fields-color {
+  background-color: var(--fields);
+}
+
+.text-fields-color {
+  color: var(--text-fields);
+}
+
+.bg-danger-regular-color {
+  background-color: var(--danger-regular);
+}
+
+.bg-disabled-regular-color {
+  background-color: var(--disabled-regular);
+}
+
+.bg-warning-regular-color {
+  background-color: var(--warning-regular);
+}
+
+.bg-warning-light-color {
+  background-color: var(--warning-light);
+}
+
+.bg-warning-dark-color {
+  background-color: var(--warning-dark);
+}
+
+.bg-success-regular-color {
+  background-color: var(--success-regular);
+}
+
+.bg-success-light-color {
+  background-color: var(--success-light);
+}
+
+.bg-success-dark-color {
+  background-color: var(--success-dark);
+}
+
+.bg-danger-dark-color {
+  background-color: var(--danger-dark);
+}
+
+.bg-danger-light-color {
+  background-color: var(--danger-light);
+}
+
+.bg-disabled-light-color {
+  background-color: var(--disabled-light);
+}
+
+.bg-disabled-dark-color {
+  background-color: var(--disabled-dark);
+}
+
+.bg-information-regular-color {
+  background-color: var(--information-regular);
+}
+
+.bg-information-light-color {
+  background-color: var(--information-light);
+}
+
+.bg-information-dark-color {
+  background-color: var(--information-dark);
+}
+
+.bg-border-secondary-color {
+  background-color: var(--border-secondary);
+}
+
+.bg-unCommon-color {
+  background-color: var(--unCommon);
+}
+
+.light-palette {
+  --primary: #FEBF01;
+  --on-primary: #0F0F0F;
+  --primary-light: #FCF0D6;
+  --primary-dark: rgba(0, 0, 0, 0);
+  --secondary: #FAFAFA;
+  --on-secondary: #0C0B0C;
+  --secondary-light: rgba(0, 0, 0, 0);
+  --secondary-dark: rgba(0, 0, 0, 0);
+  --specific: #E7E7E6;
+  --button-text: #0F0F0F;
+  --button: #FEBF01;
+  --text: #8E8B8D;
+  --title-text: #0C0B0C;
+  --secondary-text: #C6C6C7;
+  --section-title-text: #0C0B0C;
+  --border: #FEBF01;
+  --divider: #FEBF01;
+  --shadow: #F0F0F1;
+  --icon: #0C0B0C;
+  --icon-hover: rgba(0, 0, 0, 0);
+  --menu: rgba(0, 0, 0, 0);
+  --card: #FFFFFF;
+  --background: #F7F7F7;
+  --section: #FFFFFF;
+  --hover: rgba(0, 0, 0, 0);
+  --button-hover: rgba(0, 0, 0, 0);
+  --button-text-hover: rgba(0, 0, 0, 0);
+  --discount-price: rgba(0, 0, 0, 0);
+  --fields: #FCFDFD;
+  --border-fields: #F1F1F1;
+  --title-text-fields: #545250;
+  --text-fields: #B8B6BA;
+  --black: #000000;
+  --white: #FFFFFF;
+  --danger-regular: #D70D0D;
+  --disabled-regular: #B1B1B1;
+  --warning-regular: #FFB800;
+  --warning-light: #FDD368;
+  --warning-dark: #CA9200;
+  --success-regular: #02B74A;
+  --success-light: #C0FCD8;
+  --success-dark: #007A31;
+  --danger-dark: #AA0D0D;
+  --danger-light: #F8D0D0;
+  --disabled-light: #E2E2E2;
+  --disabled-dark: #575857;
+  --information-regular: #3761EB;
+  --information-light: #7393FF;
+  --information-dark: #2145BC;
+  --border-secondary: #FFFFFF;
+  --unCommon: #FFFFFF;
+}
+
 .project-banner {
   background-image: url(../../assets/media/images/en/components/news.jpg);
   background-size: 100% 100%;
@@ -384,8 +720,12 @@
   right: 0;
 }
 
-.project-banner .card-button i {
-  margin-top: 3px !important;
+.project-banner:hover i {
+  transform: translateX(3px);
+}
+
+p .fancy-link {
+  background-image: linear-gradient(to right, white, var(--bs-primary-light), var(--bs-primary));
 }
 
 .project-card a:hover {
@@ -625,6 +965,15 @@
     width: 50%;
   }
 }
+.cycle-card:hover .cycle-icon {
+  box-shadow: 0px 0px 10px 5px var(--bs-primary-light);
+  scale: 1.1;
+}
+
+.transition-150 {
+  transition: all 150ms ease-in-out;
+}
+
 .cycle-icon icon {
   width: 35px;
 }
