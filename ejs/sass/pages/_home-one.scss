@@ -19,7 +19,7 @@
     transition: all 300ms ease-in-out;
 }
 
-.btn-hover:hover i {
+#home-one .btn-hover:hover i {
     transform: translateX(0.5rem);
 }
 
@@ -39,16 +39,16 @@
     height: 65px;
 }
 
-.card-play {
+#home-one .card-play {
     max-width: 350px;
     backdrop-filter: blur(5px);
 }
 
-.image-wrapper {
+#home-one .image-wrapper {
     min-height: 570px;
 }
 
-.dots {
+#home-one .dots {
     left: -40px;
     top: 90px;
     width: 140px;
@@ -59,7 +59,7 @@
     z-index: 2;
 }
 
-.building-img {
+#home-one .building-img {
     left: 40px;
     top: 30px;
     width: 72%;
@@ -69,24 +69,24 @@
     box-shadow: 0 25px 60px rgba(0, 0, 0, .18);
 }
 
-.mission-card {
+#home-one .mission-card {
     right: 10px;
     bottom: 20px;
-    width: 360px;
-backdrop-filter: blur(5px);
+    width: 300px;
+    backdrop-filter: blur(5px);
     color: #fff;
-    padding: 50px;
     z-index: 4;
+    padding: 25px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .30);
 }
 
-.yellow-line {
+#home-one .yellow-line {
     width: 55px;
     height: 4px;
     margin-bottom: 20px;
 }
 
-.mission-footer {
+#home-one .mission-footer {
     border: 1px solid #FFC107;
     width: 35px;
     height: 35px;
@@ -94,23 +94,24 @@ backdrop-filter: blur(5px);
 
 
 
-.play-btn {
+#home-one .play-btn {
     width: 60px;
     height: 60px;
 }
-.signature {
-  width: 200px;
-  height: 100px;
-  object-fit: cover;
+
+#home-one .signature {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
 }
 
-.image-box {
+#home-one .image-box {
     position: relative;
     overflow: hidden;
     max-height: 350px;
 }
 
-.image-box::before {
+#home-one .image-box::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -120,16 +121,16 @@ backdrop-filter: blur(5px);
 }
 
 
-#testimonials .comment>div {
+#home-one #home-one #testimonials .comment>div {
     background: #232323 !important;
 }
 
-#testimonials .slider-btn {
+#home-one #testimonials .slider-btn {
     width: 40px;
     height: 40px;
 }
 
-.client-logo {
+#home-one .client-logo {
     width: 100%;
     max-width: 150px;
     height: 60px;
@@ -137,13 +138,13 @@ backdrop-filter: blur(5px);
     transition: .3s;
 }
 
-.client-logo:hover {
+#home-one .client-logo:hover {
     transform: scale(1.05);
 }
 
 
 @media (max-width: 992px) {
-    #main-hero .card-play {
+    #home-one #main-hero .card-play {
         width: 100% !important;
         max-width: 100% !important;
     }
@@ -151,11 +152,22 @@ backdrop-filter: blur(5px);
 
 
 
-.mission-btn:hover{
-    background:var(--bs-primary);
+#home-one .mission-btn:hover {
+    background: var(--bs-primary);
 }
 
-.mission-btn:hover .fa-solid.fa-arrow-right{
-    color:var(--bs-dark) !important;
+#home-one.mission-btn:hover .fa-solid.fa-arrow-right {
+    color: var(--bs-dark) !important;
     transform: rotate(-45deg);
+}
+
+#home-one .cta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+a {
+    text-decoration-line: none;
 }

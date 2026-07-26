@@ -24,3 +24,12 @@
     background-position: right bottom;
     background-size: 55% 45%;
 }
+
+#register input {
+    border-style: none;
+    background: transparent;
+}
+
+input:focus {
+    outline: none;
+}

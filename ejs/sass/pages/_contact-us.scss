@@ -1,7 +1,15 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
-#contact-hero {
-    min-height: 500px !important;
-    margin-bottom: 2rem;
+// #contact-hero {
+//     min-height: 500px !important;
+//     margin-bottom: 2rem;
+// }
+
+.vh-50 {
+    height: 50vh;;
+}
+
+#contact-us .social a:hover i {
+    color: var(--bs-primary);
 }

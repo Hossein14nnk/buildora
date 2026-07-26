@@ -9,6 +9,7 @@
         "clean": "sass --no-source-map --style=expanded miz/_index.scss:assets/css/miz-clean.css && node miz/pkg/miz-min.cjs",
         "dev": "node miz/pkg/server.js",
         "build-bootstrap": "concurrently \"sass --no-source-map --style=expanded assets/vendors/bootstrap/scss/bootstrap.scss:assets/vendors/bootstrap/dist/css/bootstrap.css\" \"sass --no-source-map --style=compressed assets/vendors/bootstrap/scss/bootstrap.scss:assets/vendors/bootstrap/dist/css/bootstrap.min.css\""
+    
     },
     "author": "",
     "license": "ISC",

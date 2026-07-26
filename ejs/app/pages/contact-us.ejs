@@ -1,10 +1,10 @@
 <%- include('../layouts/page/head.ejs' , {title: "contact-us", addCount: 0}); -%>
 
-
-    <main>
-        <section id="contact-hero" class="conainer-flouds bg-on-secondary d-flex align-items-center">
-            <div class="container d-flex gap-4 flex-column">
-                <span class="text-primary fw-bold fs-normal"><%- t.pages.contactUs.heroSubtitle %>/span>
+    <%- include('../components/header/content.ejs', ); -%>
+    <main id="contact-us" class="d-flex flex-column pt-20">
+        <section id="contact-hero" class="conainer-flouds bg-on-secondary d-flex align-items-center pt-20">
+            <div class="container d-flex gap-4 flex-column py-6">
+                <span class="text-primary fw-bold fs-normal"><%- t.pages.contactUs.heroSubtitle %></span>
                 <h1 class="text-light fw-bold fs-big-title"><%- t.pages.contactUs.heroTitle1 %>
                     <br><span class="text-primary"><%- t.pages.contactUs.heroTitle2 %></span>
                 </h1>
@@ -13,11 +13,11 @@
         </section>
         <section id="" class="conainer-flouds">
             <div class="container">
-                <div class="row gy-4">
+                <div class="row gy-4 gap-10">
                     <div class="col-xl-7 gap-3">
                         <div class="d-flex flex-column gap-5">
                             <div class="d-flex flex-column">
-                                <span class="text-primary fw-bold fs-normal"><%- t.pages.contactUs.sectiontwosubtitle %></span>
+                                <span class="text-primary fw-bold fs-normal text-uppercase">send us a message</span>
                                 <h2 class="fw-bold"><%- t.pages.contactUs.sectiontwotext %></h2>
                             </div>
                             <form>
@@ -81,9 +81,9 @@
                                             placeholder="<%- t.pages.contactUs.placeHolderMessage %>"></textarea>
                                     </div>
 
-                                    <div class="col-12 rounded-1">
+                                    <div class="col-12 rounded-2 ">
                                         <button type="submit "
-                                            class="bg-button fw-semibold border-border-fields border p-2 rounded-1 btn-hover">
+                                            class="bg-button fw-semibold border-border-fields border py-2 px-4 rounded-2 btn-hover d-flex align-items-center">
                                            <%- t.pages.contactUs.sendbtn %>
                                             <i class="fa-solid fa-arrow-right ms-2"></i>
                                         </button>
@@ -94,7 +94,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-xl-5">
+                    <div class="col-xl-4">
 
                         <div class="h-100 d-flex flex-column gap-3">
                            <div class="d-flex flex-column">
@@ -107,30 +107,30 @@
                            </div>
                              <%- include('../components/contact-details/content.ejs', {ContactDetails: t.components.ContactDetails}); -%>
 
-                            <div class="mt-auto pt-4">
+                            <div class="d-flex flex-column gap-2 mt-4">
 
-                                <h6 class="fw-bold mb-3">
+                                <h6 class="fw-bold">
                                     <%- t.pages.contactUs.contact %>
                                 </h6>
 
                                 <div class="social gap-2 d-flex flex-row align-items-center">
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
+                                    <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border ">
                                         <i class="fab fa-facebook-f "></i>
                                     </a>
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
+                                    <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
                                         <i class="fab fa-linkedin-in "></i>
                                     </a>
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
+                                    <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
                                         <i class="fab fa-instagram "></i>
                                     </a>
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
+                                    <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
                                         <i class="fab fa-youtube "></i>
                                     </a>
@@ -146,7 +146,7 @@
         </section>
         <section class="conainer-flouds">
             <div class="container rounded-1">
-                <iframe class="w-100 rounded-1"
+                <iframe class="w-100 rounded-1 vh-50"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12951.109024056112!2d51.218427!3d35.7562792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8de5006a0ba159%3A0x6ef7e9cb611a8298!2sivahid!5e0!3m2!1sen!2s!4v1728657276517!5m2!1sen!2s"
                     width="600" style="border: 0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>

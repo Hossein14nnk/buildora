@@ -13,8 +13,125 @@
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
-<body class="font-primary">
-    <main class="d-flex flex-column" id="second-demo">
+<body class="font-primary">    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column pt-20" id="second-demo">
 
     <section class="hero text-white pb-0 d-flex flex-column w-100 gap-20 overflow-hidden">
 
@@ -95,22 +212,22 @@
         </div>
 
         <div class="d-flex align-items-center position-relative bg-dark bg-opacity-50 py-10">
-            <!-- <div class="wrapper1 d-flex justify-content-between align-items-center w-100 text-secondary w-100 gap-20 px-20 position-absolute">
-                <img src="../../assets/media/images/en/demo2/brand1.png" class="w-10" alt="">
-                <img src="../../assets/media/images/en/demo2/brand2.png" class="w-10" alt="">
-                <img src="../../assets/media/images/en/demo2/brand3.png" class="w-10" alt="">
-                <img src="../../assets/media/images/en/demo2/brand4.png" class="w-10" alt="">
-                <img src="../../assets/media/images/en/demo2/brand5.png" class="w-10" alt="">
-                <img src="../../assets/media/images/en/demo2/brand6.png" class="w-10" alt="">  
+            <div class="wrapper1 d-flex justify-content-between align-items-center w-100 text-secondary w-100 gap-20 px-20 position-absolute">
+                <img src="../../assets/media/images/en/demo2/brand1.png" class="" alt="">
+                <img src="../../assets/media/images/en/demo2/brand2.png" class="" alt="">
+                <img src="../../assets/media/images/en/demo2/brand3.png" class="" alt="">
+                <img src="../../assets/media/images/en/demo2/brand4.png" class="" alt="">
+                <img src="../../assets/media/images/en/demo2/brand5.png" class="" alt="">
+                <img src="../../assets/media/images/en/demo2/brand6.png" class="" alt="">  
             </div>
             <div class="wrapper2 d-flex justify-content-between align-items-center w-100 text-secondary w-100 gap-20 px-20 position-absolute">
-                <img src="../../assets/media/images/en/demo2/brand1.png" class="w-10" alt="">
-                <img src="../../assets/media/images/en/demo2/brand2.png" class="w-10" alt="">
-                <img src="../../assets/media/images/en/demo2/brand3.png" class="w-10" alt="">
-                <img src="../../assets/media/images/en/demo2/brand4.png" class="w-10" alt="">
-                <img src="../../assets/media/images/en/demo2/brand5.png" class="w-10" alt="">
-                <img src="../../assets/media/images/en/demo2/brand6.png" class="w-10" alt="">  
-            </div> -->
+                <img src="../../assets/media/images/en/demo2/brand1.png" class="" alt="">
+                <img src="../../assets/media/images/en/demo2/brand2.png" class="" alt="">
+                <img src="../../assets/media/images/en/demo2/brand3.png" class="" alt="">
+                <img src="../../assets/media/images/en/demo2/brand4.png" class="" alt="">
+                <img src="../../assets/media/images/en/demo2/brand5.png" class="" alt="">
+                <img src="../../assets/media/images/en/demo2/brand6.png" class="" alt="">  
+            </div>
         </div>
 
     </section>
@@ -139,47 +256,60 @@
                 </a>
             </div>
 
-            <div class="d-flex gap-4 gap-lg-2 flex-column flex-xxl-row flex-xl-row flex-lg-row">
-                <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
-    <img src="./assets/media/images/en/components/card1_construction_management.png" class="img-size">
-    <h3 class="fs-mid-title fw-semibold fw-bold">Construction Management</h3>
-    <span class="fs-title">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
-    <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button">
-        <span class="fs-big fw-bold text-button-text transition">Describe More</span>
-        <i class="fa-solid fa-arrow-right-long text-color transition"></i>
-    </a>
-</div>                 <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
-    <img src="./assets/media/images/en/components/card1_construction_management.png" class="img-size">
-    <h3 class="fs-mid-title fw-semibold fw-bold">Construction Management</h3>
-    <span class="fs-title">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
-    <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button">
-        <span class="fs-big fw-bold text-button-text transition">Describe More</span>
-        <i class="fa-solid fa-arrow-right-long text-color transition"></i>
-    </a>
-</div>                 <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
-    <img src="./assets/media/images/en/components/card1_construction_management.png" class="img-size">
-    <h3 class="fs-mid-title fw-semibold fw-bold">Construction Management</h3>
-    <span class="fs-title">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
-    <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button">
-        <span class="fs-big fw-bold text-button-text transition">Describe More</span>
-        <i class="fa-solid fa-arrow-right-long text-color transition"></i>
-    </a>
-</div>                 <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
-    <img src="./assets/media/images/en/components/card1_construction_management.png" class="img-size">
-    <h3 class="fs-mid-title fw-semibold fw-bold">Construction Management</h3>
-    <span class="fs-title">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
-    <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button">
-        <span class="fs-big fw-bold text-button-text transition">Describe More</span>
-        <i class="fa-solid fa-arrow-right-long text-color transition"></i>
-    </a>
-</div>             </div>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
+                        <img src="./assets/media/images/en/demo1/vector1.png" class="img-size">
+                        <h3 class="fs-title fw-semibold fw-bold">Construction Management</h3>
+                        <span class="fs-big">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
+                        <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                            <span class="fs-big fw-bold text-text transition">Describe More</span>
+                            <i class="fa-solid fa-arrow-right-long text-color transition"></i>
+                        </a>
+                    </div>                 
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
+                        <img src="./assets/media/images/en/demo1/vector2.png" class="img-size">
+                        <h3 class="fs-title fw-semibold fw-bold">Construction Management</h3>
+                        <span class="fs-big">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
+                        <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                            <span class="fs-big fw-bold text-text transition">Describe More</span>
+                            <i class="fa-solid fa-arrow-right-long text-color transition"></i>
+                        </a>
+                    </div>                      
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
+                        <img src="./assets/media/images/en/demo1/vector3.png" class="img-size">
+                        <h3 class="fs-title fw-semibold fw-bold">Construction Management</h3>
+                        <span class="fs-big">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
+                        <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                            <span class="fs-big fw-bold text-text transition">Describe More</span>
+                            <i class="fa-solid fa-arrow-right-long text-color transition"></i>
+                        </a>
+                    </div>                   
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
+                        <img src="./assets/media/images/en/demo1/vector4.png" class="img-size">
+                        <h3 class="fs-title fw-semibold fw-bold">Construction Management</h3>
+                        <span class="fs-big">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
+                        <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                            <span class="fs-big fw-bold text-text transition">Describe More</span>
+                            <i class="fa-solid fa-arrow-right-long text-color transition"></i>
+                        </a>
+                    </div>                 
+                </div>
+                
+            </div>
         </div>
     </section>
 
     <section class="about py-0 ">
-            <div class="row bg-dark flex-column flex-xxl-row flex-xl-row flex-lg-row flex-md-row ps-0 ps-xxl-20 ps-xl-20 ps-lg-20 ps-md-10">
+            <div class="row bg-dark flex-column flex-lg-row ps-0 ps-xxl-20 ps-xl-20 ps-lg-20 ps-md-10">
 
-                <div class=" text-secondary py-8 bg-dark col-12 col-xxl-5 col-xl-5 col-lg-5 col-md-5 ">
+                <div class=" text-secondary py-8 bg-dark col-12 col-lg-5">
                     <div class=" d-flex flex-column gap-3 align-items-start">
 
                         <span class="text-uppercase text-secondary fs-big">About Our Company</span>
@@ -195,28 +325,28 @@
 
                         <div class="row g-4 my-1">
 
-                            <div class="col-6 col-xxl-3 col-xl-3 text-center d-flex flex-column gap-3 border-end ">
+                            <div class="item col-6 col-md-3 text-center d-flex flex-column gap-3 border-end border-start ">
                                 <i class="fa-solid fa-shield-halved text-primary"></i>
                                 <p class="fw-semibold fs-big px-3">
                                     Quality Craftsmanship
                                 </p>
                             </div>
 
-                            <div class="col-6 col-xxl-3 col-xl-3 text-center d-flex flex-column gap-3 border-end ">
+                            <div class="item col-6 col-md-3 text-center d-flex flex-column gap-3 border-end border-start ">
                                 <i class="fa-solid fa-seedling text-primary"></i>
                                 <p class="fw-semibold fs-big px-3">
                                      Sustainable Practices
                                 </p>
                             </div>
 
-                            <div class="col-6 col-xxl-3 col-xl-3 text-center d-flex flex-column gap-3 border-end ">
+                            <div class="item col-6 col-md-3 text-center d-flex flex-column gap-3 border-end border-start ">
                                 <i class="fa-solid fa-helmet-safety text-primary"></i>
                                 <p class="fw-semibold fs-big px-3">
                                      Skilled Professionals
                                 </p>
                             </div>
 
-                            <div class="col-6 col-xxl-3 col-xl-3 text-center d-flex flex-column gap-3 ">
+                            <div class="item col-6 col-md-3 text-center d-flex flex-column gap-3 border-end border-start">
                                 <i class="fa-regular fa-clock text-primary"></i>
                                 <p class="fw-semibold fs-big px-3">
                                    On-Time Delivery
@@ -233,44 +363,60 @@
                     </div>
                 </div>
 
-                <div class=" d-flex flex-column col-12 col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                <div class=" d-flex flex-column col-12 col-lg-7">
 
                     <div class="contain-img position-relative h-100 w-100 p-20"></div>
 
-                    <div class="text-light d-flex bg-specific p-4">
-                        
-                        <div class="col-3 d-flex line justify-content-center gap-6">
-                            <img src="./assets/media/images/en/components/cycle-icon1.png" width="30">
-                            <div  class="d-flex flex-column gap-2">
-                                <span class="fw-bold text-muted">850+</span>
-                                <span class="text-muted">Project Done</span>
-                            </div>
-                        </div>
-                        
-                        <div class="col-3 d-flex line justify-content-center gap-6">
-                            <img src="./assets/media/images/en/components/cycle-icon2.png" width="30">
-                            <div  class="d-flex flex-column gap-2">
-                                <span class="fw-bold text-muted">120+</span>
-                                <span class="text-muted">Expert Employers</span>
-                            </div>
-                        </div>
-                        
-                        <div class="col-3 d-flex line justify-content-center gap-6">
-                            <img src="./assets/media/images/en/components/cycle-icon3.png" width="30">
-                            <div  class="d-flex flex-column gap-2">
-                                <span class="fw-bold text-muted">25+</span>
-                                <span class="text-muted">Awards Won</span>
+                    
+                        <div class="bg-white rounded-4 shadow-lg py-4 px-5">
+
+                            <div class="row text-center g-4">
+
+                                <div class="col-md-3 d-flex line justify-content-center gap-6">
+                                    <img src="./assets/media/images/en/components/cycle-icon1.png" width="40">
+                                    <div  class="d-flex flex-column">
+                                        <span class="fw-bold text-muted fs-mid-title">25+</span>
+                                        <span class="text-muted">
+                                            Years Experience
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3 d-flex line justify-content-center gap-6">
+                                    <img src="./assets/media/images/en/components/cycle-icon2.png" width="20">
+                                    <div class="d-flex flex-column">
+                                        <span class="fw-bold text-muted fs-mid-title">1530+</span>
+                                        <span class="text-muted">
+                                        Projects Completed
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3 d-flex line justify-content-center gap-6">
+                                    <img src="./assets/media/images/en/components/cycle-icon3.png" width="20">
+                                    <div  class="d-flex flex-column">
+                                        <span class="fw-bold text-muted fs-mid-title">1310+</span>
+                                        <span class="text-muted">
+                                        Happy Customers
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 d-flex justify-content-center gap-6">
+                                    <img src="./assets/media/images/en/components/cycle-icon4.png" width="20">
+                                <div  class="d-flex flex-column">
+                                        <span class="fw-bold text-muted fs-mid-title">50+</span>
+                                        <span class="text-muted">
+                                         Professional Awards
+                                        </span>
+                                </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-3 d-flex line justify-content-center gap-6">
-                            <img src="./assets/media/images/en/components/cycle-icon4.png" width="30">
-                            <div  class="d-flex flex-column gap-2">
-                                <span class="fw-bold text-muted">98%</span>
-                                <span class="text-muted">Happy Clients</span>
-                            </div>
-                        </div>
                     </div>
+                    
+                    
                 </div>
 
             </div>
@@ -287,66 +433,70 @@
                 <div style="width:60px;height:4px;" class="bg-primary rounded-4"></div>
             </div>
             <div class="d-flex flex-wrap">
-                <div class="col-12 col-xxl-3 col-xl-3 col-lg-6 col-md-6 p-2">
+                <div class="px-2 col-6 col-md-3">
                     <div class="secondary-project-card2 shadow bg-white position-relative">
-    <img class="w-100 " src="./assets/media/images/en/components/news.jpg" class="img-size">
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
-        <div class="d-flex gap-2 flex-column">
-            <h3 class="fs-title fw-bold text-secondary mb-0">Skyline Tower</h3>
-            <span class="text-secondary fs-normal"> Miami,USA</span>
-        </div>
-        
-        
-        <a href="" class="fs-title fw-bold card-button transition">
-            <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
-        </a>
-    </div>
-</div>  =                </div>
-                <div class="col-12 col-xxl-3 col-xl-3 col-lg-6 col-md-6 p-2">
+                        <img class="w-100 " src="./assets/media/images/en/demo1/ChatGPT1.png" class="img-size">
+                        <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
+                            <div class="d-flex gap-2 flex-column">
+                                <h3 class="fs-title fw-bold text-secondary mb-0">Skyline Tower</h3>
+                                <span class="text-secondary fs-normal"> Miami,USA</span>
+                            </div>
+                            
+                            
+                            <a href="" class="fs-title fw-bold card-button transition">
+                                <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="px-2 col-6 col-md-3">
                     <div class="secondary-project-card2 shadow bg-white position-relative">
-    <img class="w-100 " src="./assets/media/images/en/components/news.jpg" class="img-size">
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
-        <div class="d-flex gap-2 flex-column">
-            <h3 class="fs-title fw-bold text-secondary mb-0">Skyline Tower</h3>
-            <span class="text-secondary fs-normal"> Miami,USA</span>
-        </div>
-        
-        
-        <a href="" class="fs-title fw-bold card-button transition">
-            <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
-        </a>
-    </div>
-</div>  =                </div>
-                <div class="col-12 col-xxl-3 col-xl-3 col-lg-6 col-md-6 p-2">
+                        <img class="w-100 " src="./assets/media/images/en/demo1/herohomepage.png" class="img-size">
+                        <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
+                            <div class="d-flex gap-2 flex-column">
+                                <h3 class="fs-title fw-bold text-secondary mb-0">Skyline Tower</h3>
+                                <span class="text-secondary fs-normal"> Miami,USA</span>
+                            </div>
+                            
+                            
+                            <a href="" class="fs-title fw-bold card-button transition">
+                                <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="px-2 col-6 col-md-3">
                     <div class="secondary-project-card2 shadow bg-white position-relative">
-    <img class="w-100 " src="./assets/media/images/en/components/news.jpg" class="img-size">
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
-        <div class="d-flex gap-2 flex-column">
-            <h3 class="fs-title fw-bold text-secondary mb-0">Skyline Tower</h3>
-            <span class="text-secondary fs-normal"> Miami,USA</span>
-        </div>
-        
-        
-        <a href="" class="fs-title fw-bold card-button transition">
-            <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
-        </a>
-    </div>
-</div>  =                </div>
-                <div class="col-12 col-xxl-3 col-xl-3 col-lg-6 col-md-6 p-2">
+                        <img class="w-100 " src="./assets/media/images/en/demo1/homepage-section2.jpg" class="img-size">
+                        <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
+                            <div class="d-flex gap-2 flex-column">
+                                <h3 class="fs-title fw-bold text-secondary mb-0">Skyline Tower</h3>
+                                <span class="text-secondary fs-normal"> Miami,USA</span>
+                            </div>
+                            
+                            
+                            <a href="" class="fs-title fw-bold card-button transition">
+                                <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="px-2 col-6 col-md-3">
                     <div class="secondary-project-card2 shadow bg-white position-relative">
-    <img class="w-100 " src="./assets/media/images/en/components/news.jpg" class="img-size">
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
-        <div class="d-flex gap-2 flex-column">
-            <h3 class="fs-title fw-bold text-secondary mb-0">Skyline Tower</h3>
-            <span class="text-secondary fs-normal"> Miami,USA</span>
-        </div>
-        
-        
-        <a href="" class="fs-title fw-bold card-button transition">
-            <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
-        </a>
-    </div>
-</div>  =                </div>
+                        <img class="w-100 " src="./assets/media/images/en/demo1/ChatGPT4.png" class="img-size">
+                        <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
+                            <div class="d-flex gap-2 flex-column">
+                                <h3 class="fs-title fw-bold text-secondary mb-0">Skyline Tower</h3>
+                                <span class="text-secondary fs-normal"> Miami,USA</span>
+                            </div>
+                            
+                            
+                            <a href="" class="fs-title fw-bold card-button transition">
+                                <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
+                            </a>
+                        </div>
+                    </div> 
+                </div>
                 
             </div>
         </div>
@@ -372,7 +522,7 @@
                 <div class="col-12 col-xxl-8 col-xl-8">
                         <div class="team-feature w-100 d-flex gap-4 align-items-stretch flex-wrap flex-xxl-nowrap flex-xl-nowrap flex-lg-nowrap">
         
-        <div class="col-5 col-xxl-3 col-xl-3 col-lg-3">
+        <div class="col-5 col-xxl-3 col-xl-3 col-lg-3 h-100">
 
             <div class="bg-dark border-0 rounded-3 p-4 d-flex flex-column gap-3">
 
@@ -386,7 +536,7 @@
 
         </div>
 
-        <div class="col-5 col-xxl-3 col-xl-3 col-lg-3">
+        <div class="col-5 col-xxl-3 col-xl-3 col-lg-3 h-100">
             
             <div class="bg-dark border-0 rounded-3 p-4 d-flex flex-column gap-3">
                 <i class="fa-solid fa-award fs-mid-title text-primary"></i>
@@ -400,7 +550,7 @@
 
         </div>
 
-        <div class="col-5 col-xxl-3 col-xl-3 col-lg-3">
+        <div class="col-5 col-xxl-3 col-xl-3 col-lg-3 h-100">
 
             <div class="bg-dark border-0 rounded-3 p-4 d-flex flex-column gap-3">
                 <i class="fa-solid fa-pencil-ruler fs-mid-title text-primary"></i>
@@ -413,7 +563,7 @@
 
         </div>
 
-        <div class="col-5 col-xxl-3 col-xl-3 col-lg-3">
+        <div class="col-5 col-xxl-3 col-xl-3 col-lg-3 h-100">
 
             <div class="bg-dark border-0 rounded-3 p-4 d-flex flex-column gap-3">
 
@@ -445,12 +595,11 @@
             </div>
             <div class="d-flex gap-4 gap-lg-2 flex-column flex-xxl-row flex-xl-row flex-lg-row">
                 
-    <div class="comment w-100">
+    <div class="comment w-100 ">
 
-        <div class="bg-dark border-0 h-100 p-4 rounded-3 d-flex flex-column gap-4">
+        <div class="bg-dark border-0 h-100 p-4 rounded-3 d-flex flex-column gap-4 comment-hover transition-300">
 
             <i class="fa-solid fa-quote-left text-primary"></i>
-
             <p class="text-text ">Buildex delivered our project on time and exceeded our expectations. Their attention to detail is unmatched.</p>
 
             <span class="text-secondary">- Emily Wilson</span>
@@ -465,14 +614,12 @@
 
         </div>
 
-    </div>
-                
-    <div class="comment w-100">
+    </div>                
+    <div class="comment w-100 ">
 
-        <div class="bg-dark border-0 h-100 p-4 rounded-3 d-flex flex-column gap-4">
+        <div class="bg-dark border-0 h-100 p-4 rounded-3 d-flex flex-column gap-4 comment-hover transition-300">
 
             <i class="fa-solid fa-quote-left text-primary"></i>
-
             <p class="text-text ">Buildex delivered our project on time and exceeded our expectations. Their attention to detail is unmatched.</p>
 
             <span class="text-secondary">- Emily Wilson</span>
@@ -487,14 +634,12 @@
 
         </div>
 
-    </div>
-                
-    <div class="comment w-100">
+    </div>                
+    <div class="comment w-100 ">
 
-        <div class="bg-dark border-0 h-100 p-4 rounded-3 d-flex flex-column gap-4">
+        <div class="bg-dark border-0 h-100 p-4 rounded-3 d-flex flex-column gap-4 comment-hover transition-300">
 
             <i class="fa-solid fa-quote-left text-primary"></i>
-
             <p class="text-text ">Buildex delivered our project on time and exceeded our expectations. Their attention to detail is unmatched.</p>
 
             <span class="text-secondary">- Emily Wilson</span>
@@ -509,8 +654,7 @@
 
         </div>
 
-    </div>
-            </div>
+    </div>            </div>
         </div>
     </section>
 
@@ -545,18 +689,18 @@
 
     
     <footer class="footer bg-dark text-secondary py-5 ">
-        <div class="mx-12 container">
+        <div class="container">
 
-            <div class="row gap-6 gap-lg-0 gap-md-3">
+            <div class="row row-gap-8 row-gap-lg-0">
 
                 
-                <div class="d-flex flex-column gap-3 col-10 col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
 
                     <img src="./assets/media/images/en/footer/logo.png" class="" width="210">
 
                     <p  class="">We are a leading construction company providing high-quality services across residential, commercial and industrial sectors worldwide.</p>
 
-                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center">
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
 
                         <a  href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-facebook-f "></i>
@@ -579,33 +723,33 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-2 col-md-5">
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">QUICK LINKS</h6>
+                    <h6 class="fw-bold">QUICK LINKS</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Home</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">About Us</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Services</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Projects</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Blog</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Contact Us</a>
                         </li>
 
@@ -614,24 +758,24 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-2 col-md-6">
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">OUR SERVICES</h6>
+                    <h6 class="fw-bold">OUR SERVICES</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Construction Management</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Design &amp; Build</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Renovation</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Interior Design</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Project Consulting</a>
                         </li>
                     </ul>
@@ -639,27 +783,27 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-3 col-md-5">
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">CONTACT INFO</h6>
+                    <h6 class="fw-bold">CONTACT INFO</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-location text-primary"></i>
                             <div class="d-flex flex-column justify-content-start">
                                 <span class="">123 Construction Ave,</span>
                                 <span class="">New York, NY 10001, USA</span>
                             </div>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-light fa-phone text-primary"></i>
                             <span class="">+1 212 555 7890</span>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-envelope text-primary"></i>
                             <span class="">info@buildex.com</span>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-clock text-primary"></i>
                             <span  class="">Mon – Sat: 8:00 AM – 6:00 PM</span>
                         </li>
@@ -689,34 +833,34 @@
                 </div>
 
             
-                <div class="px-0 col-10 col-xxl-2 col-xl-2 col-lg-2 col-md-10 ">
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">RECENT PROJECTS</h6>
+                    <h6 class="fw-bold text-nowrap">RECENT PROJECTS</h6>
 
-                    <div class="px-0 row g-1">
+                    <div class="row g-1">
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
                     </div>

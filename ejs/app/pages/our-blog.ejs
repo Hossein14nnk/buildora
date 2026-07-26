@@ -1,7 +1,7 @@
 <%- include('../layouts/page/head.ejs' , {title: "our-blog" , addCount: 0}); -%>
-
-    <main>
-        <section id="blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center">
+    <%- include('../components/header/content.ejs', ); -%>
+    <main id="weblogs" class="d-flex flex-column pt-20">
+        <section id="blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center pt-20 pb-10">
             <div class="container d-flex gap-4 flex-column">
                 <span class="text-primary fw-bold fs-normal"><%- t.pages.ourBlog.heroSubtitle %></span>
                 <h1 class="text-light fw-bold fs-big-title"><%- t.pages.ourBlog.heroTitle1 %>
@@ -10,22 +10,22 @@
                 <p class="text-text fw-medium fs-title"><%- t.pages.ourBlog.heroDescription %></p>
             </div>
         </section>
-        <section id="weblogs" class="container-fluid py-5">
+        <section class="container-fluid py-5">
             <div class="container">
                 <div class="row g-6 align-items-start">
                     <div class="wrapper d-flex justify-content-between align-items-center mb-4 w-75">
                         <span><%- t.pages.ourBlog.countShowing %></span>
-                        <select class="p-3 rounded-1 border bg-white pe-5">
+                        <select class="p-1 rounded-1 border bg-white ">
                             <option selected><%- t.pages.ourBlog.Select %></option>
                             <option><%- t.pages.ourBlog.option1 %></option>
                             <option><%- t.pages.ourBlog.option2 %></option>
                             <option><%- t.pages.ourBlog.option3 %></option>
                         </select>
                     </div>
-                    <div class="col-xl-9 g-2">
+                    <div class="wrapper col-xl-9 g-2">
                         <div class="row g-4">
 						
-                            <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="col-lg-4 col-6 d-flex">
                                 <div class="news-box shadow bg-white ">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
@@ -44,7 +44,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="col-lg-4 col-6 d-flex">
                                 <div class="news-box shadow bg-white">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category2 %></span>
@@ -63,7 +63,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="col-lg-4 col-6 d-flex">
                                 <div class="news-box shadow bg-white">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category3 %></span>
@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="col-lg-4 col-6 d-flex">
                                 <div class="news-box shadow bg-white">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category4 %></span>
@@ -101,7 +101,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="col-lg-4 col-6 d-flex">
                                 <div class="news-box shadow bg-white">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category5 %></span>
@@ -120,7 +120,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="col-lg-4 col-6 d-flex">
                                 <div class="news-box shadow bg-white">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category6 %></span>
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="col-lg-4 col-6 d-flex">
                                 <div class="news-box shadow bg-white">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category7 %></span>
@@ -158,7 +158,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="col-lg-4 col-6 d-flex">
                                 <div class="news-box shadow bg-white">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category8 %></span>
@@ -177,7 +177,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="col-lg-4 col-6 d-flex">
                                 <div class="news-box shadow bg-white">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category9 %></span>
@@ -210,7 +210,7 @@
                     </div>
 
                     <div class="col-xl-3 m-0">
-                        <div class="d-flex flex-column gap-5">
+                        <div class="d-flex gap-5 flex-column">
                             <div class="w-100 d-flex flex-row justify-content-between bg-white rounded-2 p-3">
                                 <input type="text" placeholder="search blogs...">
                                 <button>
@@ -227,42 +227,42 @@
                                 <ul class="list-group d-flex flex-column gap-3">
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center ">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark ">
                                            <%- t.pages.ourBlog.categorys1 %>
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
                                            <%- t.pages.ourBlog.categorys2 %>
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
                                             <%- t.pages.ourBlog.categorys3 %>
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
                                             <%- t.pages.ourBlog.categorys4 %>
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
                                             <%- t.pages.ourBlog.categorys5 %>
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
                                             <%- t.pages.ourBlog.categorys4 %>
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
@@ -277,9 +277,9 @@
                                 <h4 class="fw-bold fs-title"><%- t.pages.ourBlog.PopularBlog %></h4>
                                 <div class="border-bottom border-primary border-3" style="width:50px"></div>
                                 <div class="d-flex flex-column gap-5">
-                                    <div class="pooular-post d-flex align-items-stretch gap-3">
+                                    <div class="pooular-post d-flex align-items-center gap-3">
                                         <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/news.jpg', 'images'); %>"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
+                                                alt="" class=" rounded-1 object-fit-cover"> </div>
                                         <div class="d-flex gap-2 flex-column">
                                             <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.ourBlog.blog1 %></a>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
@@ -288,9 +288,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-3">
+                                    <div class="pooular-post d-flex align-items-center gap-3">
                                         <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/projects.jpg', 'images'); %>"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
+                                                alt="" class=" rounded-1 object-fit-cover"> </div>
                                         <div class="d-flex gap-2 flex-column">
                                             <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.ourBlog.blog2 %></a>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
@@ -299,9 +299,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
+                                    <div class="pooular-post d-flex align-items-center gap-2">
                                         <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/ChatGPT2.png', 'images'); %>"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
+                                                alt="" class=" rounded-1 object-fit-cover"> </div>
                                         <div class="d-flex gap-2 flex-column">
                                             <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.ourBlog.blog3 %></a>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
@@ -310,9 +310,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
+                                    <div class="pooular-post d-flex align-items-center gap-2">
                                         <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/ChatGPT3.png', 'images'); %>"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
+                                                alt="" class=" rounded-1 object-fit-cover"> </div>
                                         <div class="d-flex gap-2 flex-column">
                                             <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.ourBlog.blog4 %></a>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
@@ -321,9 +321,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
+                                    <div class="pooular-post d-flex align-items-center gap-2 ">
                                         <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/ChatGPT2.png', 'images'); %>"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
+                                                alt="" class=" rounded-1 object-fit-cover"> </div>
                                         <div class="d-flex gap-2 flex-column">
                                             <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.ourBlog.blog5 %></a>
                                             <div class="d-flex align-items-center gap-2 fs-normal">

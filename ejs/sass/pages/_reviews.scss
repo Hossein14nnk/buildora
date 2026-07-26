@@ -1,16 +1,8 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
-#Reviews div:has(>img) {
-    height: 250px;
-}
-
-#Reviews ul li:checked {
-    background-color: red;
-}
-
 #Reviews .hero {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) , transparent), url("../media/images/en/Reviews/photo-1486406146926-c627a92ad1ab.jpg");
+    background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/reviews/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
