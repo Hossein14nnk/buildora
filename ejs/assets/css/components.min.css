@@ -1089,6 +1089,10 @@
     border-bottom: 0;
   }
 }
+.pooular-post:hover h6 {
+  color: var(--bs-primary) !important;
+}
+
 .line {
   border-right: 1px dashed gray !important;
 }

@@ -24,3 +24,7 @@ ul{
     width: 50px;
     aspect-ratio: 1;
 }
+
+.primary-hover:hover {
+    color: var(--bs-primary) !important;
+}

@@ -478,6 +478,10 @@ ul {
   aspect-ratio: 1;
 }
 
+.primary-hover:hover {
+  color: var(--bs-primary) !important;
+}
+
 #teams .hero::after {
   content: "";
   bottom: 0px;
