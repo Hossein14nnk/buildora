@@ -46,152 +46,203 @@
                 <div class="row align-items-stretch justify-content-center row-gap-6 column-gap-lg-2">
 
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="<%- getMedia(lang, 'teams/percon1.jpg', 'images'); %>" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
+                                <p><%- t.components.teamCard.job %></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="<%- getMedia(lang, 'teams/percon1.jpg', 'images'); %>" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
+                                <p><%- t.components.teamCard.job %></p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="<%- getMedia(lang, 'teams/percon1.jpg', 'images'); %>" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
+                                <p><%- t.components.teamCard.job %></p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(19).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="<%- getMedia(lang, 'teams/percon1.jpg', 'images'); %>" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
+                                <p><%- t.components.teamCard.job %></p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(18).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="<%- getMedia(lang, 'teams/percon1.jpg', 'images'); %>" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
+                                <p><%- t.components.teamCard.job %></p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="<%- getMedia(lang, 'teams/percon1.jpg', 'images'); %>" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
+                                <p><%- t.components.teamCard.job %></p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="<%- getMedia(lang, 'teams/percon1.jpg', 'images'); %>" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
+                                <p><%- t.components.teamCard.job %></p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(19).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="<%- getMedia(lang, 'teams/percon1.jpg', 'images'); %>" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
+                                <p><%- t.components.teamCard.job %></p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(18).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="<%- getMedia(lang, 'teams/percon1.jpg', 'images'); %>" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
+                                <p><%- t.components.teamCard.job %></p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="<%- getMedia(lang, 'teams/percon1.jpg', 'images'); %>" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
+                                <p><%- t.components.teamCard.job %></p>
                             </div>
                         </div>
                     </div>
@@ -218,7 +269,7 @@
                     </p>
                     
                     
-                    <a href="#" class="bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
+                    <a href="#" class="btn-hover bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
                         <span class="fs-small text-uppercase"><%- t.pages.teams.sectiontreebtn %></span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>

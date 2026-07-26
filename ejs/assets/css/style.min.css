@@ -51,6 +51,14 @@ section {
   z-index: -1;
 }
 
+.btn-hover:hover i {
+  transform: translateX(5px);
+}
+
+.btn-hover {
+  transition: all 300ms ease-in-out;
+}
+
 #home-one #main-hero {
   background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/single/herohomepage.png");
   background-size: 100% 100%;
@@ -445,70 +453,24 @@ ul {
   aspect-ratio: 1;
 }
 
-#stProject .overview img {
-  aspect-ratio: 16/7;
-}
-
-#stProject hr {
-  background-color: var(--bs-divider);
-  width: 10%;
-  margin: 0;
-  height: 2px;
-}
-
-#stProject .hero::after {
+#teams .hero::after {
   content: "";
   bottom: 0px;
   right: 0%;
   position: absolute;
   background-repeat: repeat;
-  background-size: 100% 100%, 15px 17px;
-  width: 40%;
+  background-size: 100% 100%, 10px 12px;
+  width: 20%;
   height: 100%;
   background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
 }
 
-#stProject .list-group li {
-  transition: all 300ms ease-in-out;
+#teams .items {
+  margin-top: -50px;
 }
 
-#stProject .list-group li i {
-  transition: all 300ms ease-in-out;
-}
-
-#stProject .list-group li:hover {
-  background-color: var(--bs-specific);
-}
-
-#stProject .list-group li:hover i {
-  color: var(--bs-primary);
-}
-
-#stProject .feature .container {
+#teams .feature .container {
   background-color: #F4F4F4;
-}
-
-#stProject .project-gallery {
-  grid-template-columns: repeat(3, 1fr);
-}
-#stProject .project-gallery img {
-  min-height: 160px;
-}
-
-#stProject .project-gallery img {
-  aspect-ratio: 1.5;
-}
-
-#Reviews .hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/reviews/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#Reviews .project-cta > .container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 #ar-services .services-title {
@@ -599,6 +561,72 @@ ul {
     gap: 1rem;
   }
 }
+#stProject .overview img {
+  aspect-ratio: 16/7;
+}
+
+#stProject hr {
+  background-color: var(--bs-divider);
+  width: 10%;
+  margin: 0;
+  height: 2px;
+}
+
+#stProject .hero::after {
+  content: "";
+  bottom: 0px;
+  right: 0%;
+  position: absolute;
+  background-repeat: repeat;
+  background-size: 100% 100%, 15px 17px;
+  width: 40%;
+  height: 100%;
+  background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
+}
+
+#stProject .list-group li {
+  transition: all 300ms ease-in-out;
+}
+
+#stProject .list-group li i {
+  transition: all 300ms ease-in-out;
+}
+
+#stProject .list-group li:hover {
+  background-color: var(--bs-specific);
+}
+
+#stProject .list-group li:hover i {
+  color: var(--bs-primary);
+}
+
+#stProject .feature .container {
+  background-color: #F4F4F4;
+}
+
+#stProject .project-gallery {
+  grid-template-columns: repeat(3, 1fr);
+}
+#stProject .project-gallery img {
+  min-height: 160px;
+}
+
+#stProject .project-gallery img {
+  aspect-ratio: 1.5;
+}
+
+#Reviews .hero {
+  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/reviews/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#Reviews .project-cta > .container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 #plans .hero {
   background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/plans/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp");
   background-repeat: no-repeat;
@@ -615,26 +643,18 @@ ul {
   background-color: #F4F4F4;
 }
 
-#teams .hero::after {
-  content: "";
-  bottom: 0px;
-  right: 0%;
-  position: absolute;
-  background-repeat: repeat;
-  background-size: 100% 100%, 10px 12px;
-  width: 20%;
-  height: 100%;
-  background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
+#plans .pricing .fa-arrow-right {
+  animation: move 1s infinite;
 }
 
-#teams .items {
-  margin-top: -50px;
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(6px);
+  }
 }
-
-#teams .feature .container {
-  background-color: #F4F4F4;
-}
-
 #second-demo .hero {
   background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../../../assets/media/images/en/demo2/ChatGPT1.png");
   background-repeat: no-repeat;
@@ -752,46 +772,6 @@ ul {
 #ar-project .wrapper div:nth-child(6) .image {
   background-image: url("../../assets/media/images/en/gallery/ChatGPT6.png");
   background-size: 100% 100%;
-}
-
-#teams .hero::after {
-  content: "";
-  bottom: 0px;
-  right: 0%;
-  position: absolute;
-  background-repeat: repeat;
-  background-size: 100% 100%, 10px 12px;
-  width: 20%;
-  height: 100%;
-  background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
-}
-
-#teams .items {
-  margin-top: -50px;
-}
-
-#teams .feature .container {
-  background-color: #F4F4F4;
-}
-
-#ar-services .hero::after {
-  content: "";
-  bottom: 0px;
-  right: 0%;
-  position: absolute;
-  background-repeat: repeat;
-  background-size: 100% 100%, 10px 12px;
-  width: 20%;
-  height: 100%;
-  background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
-}
-
-#ar-services .items {
-  margin-top: -50px;
-}
-
-#ar-services .feature .container {
-  background-color: #F4F4F4;
 }
 
 /*# sourceMappingURL=style.min.css.map */
