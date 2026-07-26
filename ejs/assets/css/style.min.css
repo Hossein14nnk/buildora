@@ -339,6 +339,18 @@ input:focus {
   background-color: #F4F4F4;
 }
 
+.fancy-txt {
+  background-image: linear-gradient(90deg, var(--bs-primary-light), var(--bs-primary));
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: all 300ms ease;
+}
+
+.fancy-txt:hover {
+  background-size: 100% 1px;
+}
+
 #gallery a:has(> img) {
   height: 250px;
 }
@@ -626,6 +638,19 @@ ul {
 
 #stProject .project-gallery img {
   aspect-ratio: 1.5;
+}
+
+#stProject .project-gallery img:hover {
+  scale: 1.02;
+}
+
+#stProject .project-gallery img:hover {
+  scale: 1.02;
+}
+
+#stProject .project-gallery:has(img:hover) img:not(img:hover) {
+  filter: grayscale(1);
+  scale: 0.98;
 }
 
 #Reviews .hero {
