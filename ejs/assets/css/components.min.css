@@ -209,11 +209,12 @@
 }
 
 .project-overview .line {
-  width: 100%;
+  width: 0%;
   height: 0.1rem;
   border-radius: 100px;
-  background-color: rgba(128, 128, 128, 0.15);
-  margin-top: 0.5rem;
+  background-image: linear-gradient(to right, var(--bs-primary), var(--bs-primary-light));
+  margin-top: 10px;
+  transition: all 400ms linear;
 }
 
 .project-overview .icon {
@@ -221,6 +222,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.project-overview:hover .line {
+  width: 100%;
 }
 
 .footer li:hover {
@@ -886,7 +891,7 @@
 }
 
 #bannerCTA:hover {
-  box-shadow: 0px 0px 5px 1px #c0bebe !important;
+  box-shadow: var(--bs-box-shadow-lg) !important;
   transform: translateY(-1px);
 }
 
