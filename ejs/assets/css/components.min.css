@@ -278,6 +278,15 @@
   transform: translateX(0.5rem);
 }
 
+.items-card > div:hover {
+  transform: translateY(-3px);
+  border-color: var(--bs-primary) !important;
+}
+
+.items-card > div:hover i {
+  color: var(--bs-secondary) !important;
+}
+
 .comment-hover:hover {
   background-color: rgba(58, 50, 53, 0.5529411765) !important;
   border: 1px solid #6B5720 !important;
@@ -314,6 +323,10 @@
   /* background: #febf0133; */
   height: fit-content;
   margin-bottom: -7px;
+}
+
+.card-review:hover {
+  box-shadow: var(--bs-box-shadow-lg) !important;
 }
 
 .core-services-card .img-size {
