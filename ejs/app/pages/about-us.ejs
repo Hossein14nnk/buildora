@@ -83,7 +83,7 @@
             <div class="container ">
                 <div class=" d-flex gap-6 flex-column flex-xxl-row flex-xl-row">
 
-                    <div class="d-flex flex-column gap-4 col-12 col-xxl-3 col-xl-3">
+                    <div class="left-box d-flex flex-column gap-4 col-12 col-xxl-3 col-xl-3">
                         <span class="text-primary fw-bold "><%- t.pages.aboutUs.sectiontreeSubtitle %></span>
 
                         <h2 class="fw-bold"><%- t.pages.aboutUs.sectiiontreeTitle %></h2>
@@ -175,8 +175,4 @@
     </main>
 
     <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
-    
-    <script src="./assets/js/mizchin.min.js"></script>
-</body>
-
-</html>
+<%- include('../layouts/page/foot.ejs'); -%>

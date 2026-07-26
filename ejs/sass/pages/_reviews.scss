@@ -1,7 +1,6 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
-
 #Reviews div:has(>img) {
     height: 250px;
 }

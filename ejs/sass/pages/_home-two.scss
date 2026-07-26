@@ -1,13 +1,11 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
-
 #second-demo .hero {
     background-image: linear-gradient(to right , rgba(0, 0, 0, 0.86) , rgba(0, 0, 0, 0.327)), url("../media/images/en/demo2/ChatGPT1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
 
 #second-demo .hero .view {
     transition: all 150ms ease-in-out;

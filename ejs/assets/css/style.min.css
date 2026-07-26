@@ -31,11 +31,6 @@ section {
   padding-bottom: 2rem;
 }
 
-.hossein {
-  background-image: url("../media/images/logo.png");
-  color: var(--primary);
-}
-
 #home-one #main-hero {
   background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/single/herohomepage.png");
   background-size: 100% 100%;
@@ -180,11 +175,6 @@ section {
   transform: rotate(-45deg);
 }
 
-.hossein {
-  background-image: url("../media/images/logo.png");
-  color: var(--primary);
-}
-
 #about-us .hero {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent), url("../media/images/en/about-us/photo-1486406146926-c627a92ad1ab.jpg");
   background-repeat: no-repeat;
@@ -234,11 +224,6 @@ section {
     width: 80vw !important;
   }
 }
-.hossein {
-  background-image: url("../media/images/logo.png");
-  color: var(--primary);
-}
-
 #register {
   background-color: #F9F9F9;
 }

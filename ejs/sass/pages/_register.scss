@@ -1,17 +1,9 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
-
-.hossein {
-    background-image: url(get-image("logo.png"));
-    color: get-color("primary");
-}
-
-
 #register {
     background-color: #F9F9F9;
 }
- 
 
 #register input:checked {
     background-color: var(--bs-primary);
@@ -27,8 +19,8 @@
 }
 
 #register {
-  background-image: url(get-image("en/register/building.png"))  ;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 55% 45%;
+    background-image: url(get-image("en/register/building.png"))  ;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 55% 45%;
 }

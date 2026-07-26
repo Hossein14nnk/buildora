@@ -1,12 +1,6 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
-
-.hossein {
-    background-image: url(get-image("logo.png"));
-    color: get-color("primary");
-}
-
 #about-us .hero {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) , transparent), url("../media/images/en/about-us/photo-1486406146926-c627a92ad1ab.jpg");
     background-repeat: no-repeat;
