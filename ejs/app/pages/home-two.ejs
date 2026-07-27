@@ -119,7 +119,7 @@
                     <%- t.pages.homeTwo.sectiontwoDescription %>
                 </p>
 
-                <a href="#" class="bg-dark px-4 py-2 rounded-1 fw-semibold d-flex align-items-center gap-4 text-light d-flex justify-content-center fs-big">
+                <a href="#" class="btn-hover bg-dark px-4 py-2 rounded-1 fw-semibold d-flex align-items-center gap-4 text-light d-flex justify-content-center fs-big">
                    <%- t.pages.homeTwo.sectiontwobtn %>
                     <i class="fa-solid fa-arrow-right text-primary"></i>
                 </a>
@@ -224,7 +224,7 @@
 
                         </div>
 
-                        <a href="#" class="mt-2 button px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center gap-2 border-primary border">
+                        <a href="#" class="btn-hover mt-2 button px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center gap-2 border-primary border">
                             <%- t.pages.homeTwo.sectiontreebtn %>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -396,7 +396,7 @@
     </section>
 
     <section class="comments py-8 bg-specific">
-        <div class="container d-flex gap-10 w-100 flex-column flex-xxl-row flex-xl-row flex-lg-row">
+        <div class="container d-flex gap-10 w-100 flex-column flex-xxl-row">
             <div class="d-flex flex-column gap-4 col-10 col-xxl-3 col-xl-4 col-lg-4">
                 <span class="text-uppercase fw-semibold fs-subtitle"><%- t.pages.homeTwo.sectionsixsubtitle %></span>
 
@@ -406,9 +406,9 @@
 
             </div>
             <div class="d-flex gap-4 gap-lg-2 flex-column flex-xxl-row flex-xl-row flex-lg-row">
-                <%- include('../components/comment/content.ejs'); -%>
-                <%- include('../components/comment/content.ejs'); -%>
-                <%- include('../components/comment/content.ejs'); -%>
+                <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
             </div>
         </div>
     </section>

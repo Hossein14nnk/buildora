@@ -10,7 +10,7 @@
                     <br><span class="text-primary"><%- t.pages.arProject.heroTitle2 %></span>
                 </h1>
                 <div class="bg-primary" style="width:60px;height:3px;"></div>
-                <p class="text-text fw-medium fs-title"><%- t.pages.arProject.heroDescription %></p>
+                <p class="text-text fw-medium fs-title"><span class="fancy-txt"><%- t.pages.arProject.heroDescription %></span> </p>
             </div>
         </section>
         <section class="container-fluid bg-section">
@@ -18,31 +18,31 @@
                 <div class="d-flex align-items-center justify-content-between w-100 mb-5">
                     <ul class="d-flex align-items-center fw-semibold fs-small">
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 rounded-1 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark" href="#">
+                            <a class="fs-normal text-dark primary-hover" href="#">
                                  <%- t.pages.arProject.filter1 %>
                             </a>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark" href="#">
+                            <a class="fs-normal text-dark primary-hover" href="#">
                                   <%- t.pages.arProject.filter2 %>
                             </a>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark" href="#">
+                            <a class="fs-normal text-dark primary-hover" href="#">
                                 <%- t.pages.arProject.filter3 %>
                             </a>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark" href="#">
+                            <a class="fs-normal text-dark primary-hover" href="#">
                                   <%- t.pages.arProject.filter4 %>
                             </a>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark" href="#">
+                            <a class="fs-normal text-dark primary-hover" href="#">
                                  <%- t.pages.arProject.filter5 %>
                             </a>
                         </li>
@@ -58,7 +58,6 @@
                     <div class="row g-4">
                         <div class="col-md-6 col-xl-4 d-flex">
                             <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
-            
                         </div>
                         <div class="col-md-6 col-xl-4 d-flex">
                             <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
@@ -103,7 +102,7 @@
                     <p class="text-text">We combine expert craftsmanship, innovative solutions, and a client-first approach to deliver projects that stand the test of time</p>
                     
                     
-                    <a href="<%- navigation(lang , 'home-one.html') %>" class="bg-primary text-dark py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content">
+                    <a href="<%- navigation(lang , 'home-one.html') %>" class="btn-hover bg-primary text-dark py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content">
                         <span class="fs-small text-uppercase ">WORK WITH US</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
