@@ -135,7 +135,7 @@ const Animation = {
         },
         managers(){
             Helper.checkElement("#experts");
-            const managers = Helper.elements("#experts .project-managers > div");
+            const managers = Helper.elements("#experts .project-managers > div:has(.card)");
             const tl = Helper.timeline("#experts .project-managers");
 
             gsap.set(managers, {

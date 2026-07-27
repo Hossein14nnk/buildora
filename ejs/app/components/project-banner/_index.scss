@@ -16,11 +16,14 @@
 }
 
 
-.project-banner:hover i {
-    transform: translateX(3px);
+.project-banner .fancy-link {
+    background-image: linear-gradient(90deg ,var(--bs-primary-light) ,var(--bs-primary));
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: all 300ms ease;
 }
 
-
-p .fancy-link {
-    background-image: linear-gradient( to right ,white , var(--bs-primary-light) ,var(--bs-primary));
+.project-banner:hover .fancy-link {
+    background-size: 100% 3px;
 }
