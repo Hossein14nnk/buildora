@@ -1,3 +1,4 @@
+@use "../../../miz/sass/kernel/responsive/boots/_responsive" as *;
 .project-banner {
     background-image: url(../../assets/media/images/en/components/news.jpg);
     background-size: 100% 100%;
@@ -13,6 +14,13 @@
     background: linear-gradient(90deg, #100F0F 0%, transparent 160%);
     right: 0;
 }
-.project-banner .card-button i{
-    margin-top: 3px !important;
+
+
+.project-banner:hover i {
+    transform: translateX(3px);
+}
+
+
+p .fancy-link {
+    background-image: linear-gradient( to right ,white , var(--bs-primary-light) ,var(--bs-primary));
 }

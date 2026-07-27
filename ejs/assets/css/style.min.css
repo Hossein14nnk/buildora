@@ -51,6 +51,14 @@ section {
   z-index: -1;
 }
 
+.btn-hover:hover i {
+  transform: translateX(5px);
+}
+
+.btn-hover {
+  transition: all 300ms ease-in-out;
+}
+
 #home-one #main-hero {
   background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/single/herohomepage.png");
   background-size: 100% 100%;
@@ -331,7 +339,7 @@ input:focus {
   background-color: #F4F4F4;
 }
 
-#gallery div:has(> img) {
+#gallery a:has(> img) {
   height: 250px;
 }
 
@@ -351,6 +359,19 @@ input:focus {
   background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+#gallery img {
+  filter: grayscale(0.8);
+}
+
+#gallery img:hover {
+  scale: 1.3;
+  filter: grayscale(0) !important;
+}
+
+.transition-400 {
+  transition: all 400ms ease-in-out;
 }
 
 .vh-50 {
@@ -635,6 +656,18 @@ ul {
   background-color: #F4F4F4;
 }
 
+#plans .pricing .fa-arrow-right {
+  animation: move 1s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(6px);
+  }
+}
 #second-demo .hero {
   background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../../../assets/media/images/en/demo2/ChatGPT1.png");
   background-repeat: no-repeat;

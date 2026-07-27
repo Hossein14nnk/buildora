@@ -17,3 +17,13 @@
 #plans .included .container {
     background-color: #F4F4F4;
 }
+
+#plans .pricing .fa-arrow-right {
+    animation: move 1s infinite;
+
+}
+
+@keyframes move {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(6px);}
+}
