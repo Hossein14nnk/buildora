@@ -209,11 +209,12 @@
 }
 
 .project-overview .line {
-  width: 100%;
+  width: 0%;
   height: 0.1rem;
   border-radius: 100px;
-  background-color: rgba(128, 128, 128, 0.15);
-  margin-top: 0.5rem;
+  background-image: linear-gradient(to right, var(--bs-primary), var(--bs-primary-light));
+  margin-top: 10px;
+  transition: all 400ms linear;
 }
 
 .project-overview .icon {
@@ -221,6 +222,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.project-overview:hover .line {
+  width: 100%;
 }
 
 .footer li:hover {
@@ -273,6 +278,15 @@
   transform: translateX(0.5rem);
 }
 
+.items-card > div:hover {
+  transform: translateY(-3px);
+  border-color: var(--bs-primary) !important;
+}
+
+.items-card > div:hover i {
+  color: var(--bs-secondary) !important;
+}
+
 .comment-hover:hover {
   background-color: rgba(58, 50, 53, 0.5529411765) !important;
   border: 1px solid #6B5720 !important;
@@ -309,6 +323,10 @@
   /* background: #febf0133; */
   height: fit-content;
   margin-bottom: -7px;
+}
+
+.card-review:hover {
+  box-shadow: var(--bs-box-shadow-lg) !important;
 }
 
 .core-services-card .img-size {
@@ -886,7 +904,7 @@
 }
 
 #bannerCTA:hover {
-  box-shadow: 0px 0px 5px 1px #c0bebe !important;
+  box-shadow: var(--bs-box-shadow-lg) !important;
   transform: translateY(-1px);
 }
 
@@ -1084,6 +1102,10 @@
     border-bottom: 0;
   }
 }
+.pooular-post:hover h6 {
+  color: var(--bs-primary) !important;
+}
+
 .line {
   border-right: 1px dashed gray !important;
 }

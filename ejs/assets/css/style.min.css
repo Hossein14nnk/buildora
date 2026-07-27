@@ -478,6 +478,10 @@ ul {
   aspect-ratio: 1;
 }
 
+.primary-hover:hover {
+  color: var(--bs-primary) !important;
+}
+
 #teams .hero::after {
   content: "";
   bottom: 0px;
@@ -651,6 +655,10 @@ ul {
 #stProject .project-gallery:has(img:hover) img:not(img:hover) {
   filter: grayscale(1);
   scale: 0.98;
+}
+
+.card-body:hover {
+  box-shadow: var(--bs-box-shadow-lg) !important;
 }
 
 #Reviews .hero {

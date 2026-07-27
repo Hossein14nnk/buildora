@@ -6,7 +6,7 @@
 
 
 #bannerCTA:hover {
-    box-shadow: 0px 0px 5px 1px #c0bebe !important;
+    box-shadow: var(--bs-box-shadow-lg) !important;
     transform: translateY(-1px);
 }
 
