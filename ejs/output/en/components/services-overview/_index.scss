@@ -2,3 +2,7 @@
     width: 70px;
     aspect-ratio: 1;
 }
+
+.services-overview:hover {
+    box-shadow: 0px 0px 10px 3px var(--bs-primary-light);
+}

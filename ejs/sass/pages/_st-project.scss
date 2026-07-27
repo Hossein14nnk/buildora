@@ -56,3 +56,16 @@
 #stProject .project-gallery img {
     aspect-ratio: 1.5;
 }
+
+#stProject .project-gallery img:hover{
+    scale: 1.02;
+}
+
+#stProject .project-gallery img:hover{
+    scale: 1.02;
+}
+
+#stProject .project-gallery:has(img:hover) img:not(img:hover){
+    filter: grayscale(1);
+    scale: 0.98;
+}

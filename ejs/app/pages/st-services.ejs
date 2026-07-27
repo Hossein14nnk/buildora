@@ -7,11 +7,11 @@
             <div class="container py-4 d-flex flex-column gap-6">
 
                 <div class="small ">
-                    <a href="#" class="text-decoration-none text-secondary"><%- t.pages.stService.breadcromp1 %></a>
+                    <a href="#" class="text-decoration-none text-primary"><%- t.pages.stService.breadcromp1 %></a>
 
                     <span class="text-secondary">></span>
 
-                    <a href="#" class="text-decoration-none text-secondary"><%- t.pages.stService.breadcromp2 %></a>
+                    <a href="#" class="text-decoration-none text-primary"><%- t.pages.stService.breadcromp2 %></a>
 
                     <span class="text-secondary">></span>
 
@@ -26,8 +26,8 @@
                             <span class="text-primary"><%- t.pages.stService.heroTitle2 %></span>
                         </h1>
                         <div class="bg-primary" style="width:60px;height:3px;"></div>
-                        <p class="text-secondary lh-lg fs-mid-title">
-                            <%- t.pages.stService.heroDescription %>
+                        <p class=" text-secondary lh-lg fs-mid-title">
+                            <span class="fancy-txt"><%- t.pages.stService.heroDescription %></span>
                         </p>
                     </div>
                 </div>
@@ -57,22 +57,58 @@
                     <div class="row ">
 
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 ">
-                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="<%- getMedia(lang, 'demo1/vector1.png', 'images') %>" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
-                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="<%- getMedia(lang, 'demo1/vector2.png', 'images') %>" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
-                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="<%- getMedia(lang, 'demo1/vector3.png', 'images') %>" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
-                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="<%- getMedia(lang, 'demo1/vector4.png', 'images') %>" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
-                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="<%- getMedia(lang, 'demo1/vector5.png', 'images') %>" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
-                            <%- include('../components/services-overview/content.ejs', {servicesOverview: t.components.servicesOverview}); -%>
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="<%- getMedia(lang, 'demo1/vector6.png', 'images') %>" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
