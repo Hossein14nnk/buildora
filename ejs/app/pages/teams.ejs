@@ -1,52 +1,36 @@
 <%- include('../layouts/page/head.ejs' , {title: "teams", addCount: 0}); -%>
-    <%- include('../components/header/content.ejs', ); -%>
-    <main class="d-flex flex-column pt-20" id="teams">
-
-        <section class="hero bg-dark text-secondary position-relative position-relative">
+    <!-- <main class="d-flex flex-column pt-20" id="teams"> -->
+    <main class="d-flex flex-column" id="teams">
+        <section id="hero" class="bg-dark text-secondary position-relative position-relative">
             <div class="container py-10">
-
                 <div class="row col-11 col-xxl-5 col-xl-7 col-lg-10 col-md-10 ">
-
                     <div class=" d-flex flex-column gap-5">
-
                         <span class="text-primary fw-bold text-uppercase"><%- t.pages.teams.heroSubtitle %></span>
-
                         <h1 class="fs-big-title fw-bold">
-
                             <%- t.pages.teams.heroTitle1 %>
                             <span class="text-primary"><%- t.pages.teams.heroTitle2 %></span>
                         </h1>
-
                         <div class="bg-primary" style="width:60px;height:3px;"></div>
-
                         <p class="text-secondary ">
-                           <%- t.pages.teams.heroDescription %>
+                            <%- t.pages.teams.heroDescription %>
                         </p>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <section class="items py-0">
                 <%- include('../components/statistics/content.ejs', {statistics: t.components.statistics}); -%>
         </section>
-        
-        <section class="experts ">
+        <section id="experts">
             <div class="container d-flex flex-column align-items-center gap-10">
                 <div class="d-flex flex-column gap-2 text-center fw-bold col-10 col-xxl-6 col-xl-6 col-lg-8 ">
                     <h2 class="text-primary fw-bold fs-big text-uppercase"> <%- t.pages.teams.sectiontwosubtitle %></h2>
                     <span class="fw-bold text-uppercase"> <%- t.pages.teams.sectiontwotitle %></span>
                     <p class="text-text"> <%- t.pages.teams.sectiontwoDescription %></p>
                 </div>
-
-                <div class="row align-items-stretch justify-content-center row-gap-6 column-gap-lg-2">
-
+                <div class="project-managers row align-items-stretch justify-content-center row-gap-6 column-gap-lg-2">
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                        <div class="team-card shadow bg-white d-flex flex-column gap-3">
                             <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
                             <div class="d-flex flex-column gap-3 p-3">
                                 <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
@@ -61,7 +45,7 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                        <div class="team-card shadow bg-white d-flex flex-column gap-3">
                             <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
                             <div class="d-flex flex-column gap-3 p-3">
                                 <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
@@ -76,7 +60,7 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                        <div class="team-card shadow bg-white d-flex flex-column gap-3">
                             <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(19).jpg" alt="">
                             <div class="d-flex flex-column gap-3 p-3">
                                 <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
@@ -91,7 +75,7 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                        <div class="team-card shadow bg-white d-flex flex-column gap-3">
                             <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(18).jpg" alt="">
                             <div class="d-flex flex-column gap-3 p-3">
                                 <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
@@ -106,7 +90,7 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                        <div class="team-card shadow bg-white d-flex flex-column gap-3">
                             <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
                             <div class="d-flex flex-column gap-3 p-3">
                                 <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
@@ -121,7 +105,7 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                        <div class="team-card shadow bg-white d-flex flex-column gap-3">
                             <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
                             <div class="d-flex flex-column gap-3 p-3">
                                 <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
@@ -136,7 +120,7 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                        <div class="team-card shadow bg-white d-flex flex-column gap-3">
                             <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(19).jpg" alt="">
                             <div class="d-flex flex-column gap-3 p-3">
                                 <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
@@ -151,7 +135,7 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                        <div class="team-card shadow bg-white d-flex flex-column gap-3">
                             <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(18).jpg" alt="">
                             <div class="d-flex flex-column gap-3 p-3">
                                 <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
@@ -166,7 +150,7 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                        <div class="team-card shadow bg-white d-flex flex-column gap-3">
                             <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
                             <div class="d-flex flex-column gap-3 p-3">
                                 <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
@@ -181,7 +165,7 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
+                        <div class="team-card shadow bg-white d-flex flex-column gap-3">
                             <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
                             <div class="d-flex flex-column gap-3 p-3">
                                 <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
@@ -196,28 +180,20 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </section>
-
         <section class="feature d-flex">
             <div class="container d-flex rounded-4 py-8 px-4 align-items-center flex-column flex-xxl-row flex-xl-row flex-lg-row flex-md-row">
-
                 <div class="col-11 col-xxl-3 col-xl-3 col-lg-3 col-md-4 container-fluid d-flex flex-column gap-4 justify-content-start py-4 border-end border-1" >
-                    
                     <span class="text-primary fw-bold text-uppercase fs-big"><%- t.pages.teams.sectiontreeSubtitle %></span>
-
                     <h2 class="fw-bold fs-mid-title">
-                        <%- t.pages.teams.sectiontreetitle1 %><br>
-                       <%- t.pages.teams.sectiontreetitle2 %>
+                        <%- t.pages.teams.sectiontreetitle1 %>
+                        <br>
+                        <%- t.pages.teams.sectiontreetitle2 %>
                     </h2>
-
                     <p class="text-text">
                         <%- t.pages.teams.sectiontreedescription %>
                     </p>
-                    
-                    
                     <a href="#" class="bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
                         <span class="fs-small text-uppercase"><%- t.pages.teams.sectiontreebtn %></span>
                         <i class="fa-solid fa-arrow-right"></i>
@@ -226,21 +202,13 @@
                 <div class="col-9">
                     <%- include('../components/feature-cards/content.ejs', {featureCards: t.components.featureCards}); -%> 
                 </div>
-                
             </div>
         </section>
-
         <section class="view py-8">
             <div class="container">
                 <%- include('../components/position-card/content.ejs'); -%>
             </div>
         </section>
-
     </main>
-
-    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
-    
-    <script src="./assets/js/mizchin.min.js"></script>
-</body>
-
-</html>
+    <%#- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
+<%- include('../layouts/page/foot.ejs') %>
