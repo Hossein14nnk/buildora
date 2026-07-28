@@ -1,15 +1,17 @@
 <%- include('../layouts/page/head.ejs' , {title: "plans", addCount: 0}); -%>
-    <%- include('../components/header/content.ejs', ); -%>
-    <main class="d-flex flex-column pt-20" id="plans">
 
-        <section class="hero text-white d-flex flex-column w-100 gap-20">
+    <main class="d-flex flex-column" id="plans">
+
+        <section id="hero" class="text-white d-flex flex-column w-100 gap-20">
 
             <div class="container d-flex flex-column gap-4 py-10">
 
                 <span class="text-primary text-uppercase fw-bold fs-title d-block"><%- t.pages.plans.heroSubtitle %></span>
 
-                <h1 class="fw-bold text-uppercase d-flex flex-column fs-mega-title">
+                <!-- <h1 class="fw-bold text-uppercase d-flex flex-column fs-mega-title"> -->
+                <h1 class="fw-bold text-uppercase fs-mega-title">
                     <%- t.pages.plans.heroTitle1 %>
+                    <br>
                     <span class="text-primary"><%- t.pages.plans.heroTitle2 %></span>
                 </h1>
 
@@ -23,7 +25,7 @@
 
         </section>
 
-        <section class="plans">
+        <section id="plans">
             <div class="container d-flex flex-column gap-6">
 
                 <div class="">
@@ -61,7 +63,7 @@
             </div>
         </section>
         
-        <section class="pricing">
+        <section id="pricing">
             <div class="container d-flex flex-column gap-8">
 
                 <div class="d-flex flex-column gap-2 text-center">
@@ -142,8 +144,4 @@
     </main>
 
     <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
-    
-    <script src="./assets/js/mizchin.min.js"></script>
-</body>
-
-</html>
+<%- include('../layouts/page/foot.ejs'); -%>
