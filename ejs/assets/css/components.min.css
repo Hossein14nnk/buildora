@@ -1034,11 +1034,11 @@
 }
 .cycle-card:hover .cycle-icon {
   box-shadow: 0px 0px 10px 5px var(--bs-primary-light);
-  scale: 1.1;
+  scale: 1.1 !important;
 }
 
 .transition-150 {
-  transition: all 150ms linear;
+  transition: all 150ms linear !important;
 }
 
 .cycle-icon icon {
@@ -1090,7 +1090,7 @@
 
 #secondFeatureCard .second-feature-card {
   border-right: 1px solid #ececec;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease !important;
 }
 
 #secondFeatureCard .second-feature-card:last-child {
@@ -1098,7 +1098,7 @@
 }
 
 #secondFeatureCard .second-feature-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
 }
 
 #secondFeatureCard .feature-icon {

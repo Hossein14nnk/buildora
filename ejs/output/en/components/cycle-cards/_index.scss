@@ -49,9 +49,9 @@
 
 .cycle-card:hover .cycle-icon {
     box-shadow: 0px 0px 10px 5px var(--bs-primary-light);
-    scale: 1.1;
+    scale: 1.1 !important;
 }
 
 .transition-150 {
-    transition: all 150ms linear;
+    transition: all 150ms linear !important;
 }

@@ -27,11 +27,11 @@
 }
 
 #stProject .list-group li {
-    transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out !important;
 } 
 
 #stProject .list-group li i {
-    transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out !important;
 } 
 
 #stProject .list-group li:hover {
@@ -59,16 +59,16 @@
 }
 
 #stProject .project-gallery img:hover{
-    scale: 1.02;
+    scale: 1.02 !important;
 }
 
 #stProject .project-gallery img:hover{
-    scale: 1.02;
+    scale: 1.02 !important;
 }
 
 #stProject .project-gallery:has(img:hover) img:not(img:hover){
     filter: grayscale(1);
-    scale: 0.98;
+    scale: 0.98 !important;
 }
 
 .card-body:hover {

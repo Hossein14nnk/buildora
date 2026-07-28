@@ -16,11 +16,11 @@
 }
 
 .btn-hover i {
-    transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out !important;
 }
 
 #home-one .btn-hover:hover i {
-    transform: translateX(0.5rem);
+    transform: translateX(0.5rem) !important;
 }
 
 #home-one .about::after {
@@ -135,11 +135,11 @@
     max-width: 150px;
     height: 60px;
     object-fit: contain;
-    transition: .3s;
+    transition: .3s !important;
 }
 
 #home-one .client-logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 
 
