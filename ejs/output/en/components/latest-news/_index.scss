@@ -2,6 +2,7 @@
     aspect-ratio: 2/1;
 }
 
-.latest-news a span:hover {
-    color: var(--bs-button) !important;
+
+.latest-news:hover h3 {
+    color: var(--bs-primary) !important;
 }

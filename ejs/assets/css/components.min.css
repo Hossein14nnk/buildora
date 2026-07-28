@@ -97,8 +97,8 @@
   aspect-ratio: 2/1;
 }
 
-.latest-news a span:hover {
-  color: var(--bs-button) !important;
+.latest-news:hover h3 {
+  color: var(--bs-primary) !important;
 }
 
 .team-card i {
@@ -300,9 +300,15 @@
   color: var(--bs-secondary) !important;
 }
 
-.comment-hover:hover {
-  background-color: rgba(58, 50, 53, 0.5529411765) !important;
-  border: 1px solid #6B5720 !important;
+.comment:hover {
+  background-color: rgb(30, 29, 21) !important;
+  border: 1px solid var(--bs-primary-light) !important;
+  color: var(--bs-primary-light) !important;
+}
+
+.comment {
+  border: 1px solid #4f4d4d !important;
+  border-radius: 15px;
 }
 
 .transition-300 {
@@ -1137,7 +1143,7 @@
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   right: 0;
@@ -1195,23 +1201,28 @@
 }
 
 .header .navbar-nav .nav-link.active {
-  color: #ffc107 !important;
+  color: var(--bs-primary) !important;
 }
 
 .header .quote-btn {
-  background: #ffc107;
+  background-color: var(--bs-primary);
   color: #111;
   font-weight: 700;
-  padding: 14px 28px;
+  padding: 12px 22px;
   border: none;
   text-transform: uppercase;
   border-radius: 4px;
   transition: 0.3s;
   text-decoration-line: none;
+  box-shadow: 0 0px 0px 0px black inset;
+  transition: all 300ms linear;
+  border: 1px solid var(--bs-primary) !important;
 }
 
 .header .quote-btn:hover {
-  background: #ffca2c;
+  color: var(--bs-primary) !important;
+  box-shadow: 250px 0px 0px 0px black inset;
+  border: 1px solid var(--bs-primary) !important;
 }
 
 .header .navbar-toggler {
@@ -1234,8 +1245,6 @@
 @media (max-width: 991px) {
   .header .navbar-collapse {
     background: #111;
-    padding: 20px;
-    margin-top: 15px;
   }
   .header .navbar-nav .nav-link {
     margin: 10px 0;
@@ -1261,8 +1270,9 @@
   box-shadow: 0px 0px 8px 0px rgba(150, 148, 148, 0.4392156863);
 }
 
-.cover {
-  background-color: rgba(128, 128, 128, 0.768);
+.card-team .cover {
+  background-color: var(--bs-body-bg);
+  opacity: 0.7;
   z-index: 5;
   transform: rotateX(90deg);
   transition: all 300ms linear;
@@ -1270,6 +1280,25 @@
 
 .card-team:hover .cover {
   transform: rotateX(0deg);
+}
+
+.card-hover > img {
+  aspect-ratio: 1.1;
+}
+
+.card-hover:hover > div {
+  bottom: 0%;
+}
+
+.card-hover > div {
+  height: 50%;
+  bottom: -50%;
+  right: 0;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  transition: all 300ms ease-in-out;
+  background-color: rgba(6, 6, 6, 0.61);
+  backdrop-filter: blur(2px);
 }
 
 /*# sourceMappingURL=components.min.css.map */
