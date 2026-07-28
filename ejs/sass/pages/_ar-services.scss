@@ -1,0 +1,107 @@
+@use "../../miz/sass/global-functions/_images" as *;
+@use "../../miz/sass/global-functions/_colors" as *;
+
+#ar-services .services-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1.5rem;
+}
+
+#ar-services .services-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 3px;
+    background-color: #ffc107;
+}
+
+#ar-services .services-card {
+    border-color: transparent !important;
+    transition: all .3s ease;
+}
+
+#ar-services .services-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--bs-primary) !important;
+}
+
+#ar-services .img-size {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+
+#ar-services .services-card a i {
+    transition: transform .3s ease;
+}
+
+#ar-services .services-card:hover a i {
+    transform: translateX(.4rem);
+}
+
+#ar-services .process-section {
+    background: #f8f8f8;
+}
+
+#ar-services .section-divider {
+    width: 48px;
+    height: 2px;
+    background: var(--bs-primary);
+}
+
+#ar-services .cycle-icon icon {
+    width: 35px;
+}
+
+#ar-services .cycle-icon {
+    width: 60px;
+    aspect-ratio: 1;
+}
+
+#ar-services #cycleCards {
+    position: relative;
+}
+
+#ar-services .cycle-card .line {
+    top: 30px;
+    z-index: -1;
+    right: 0px;
+    width: 100%
+}
+
+#ar-services .cycle-card:first-child .line {
+    width: 50%;
+}
+
+#ar-services .cycle-card:last-child .line {
+    right: unset;
+    left: 0px;
+    width: 50%;
+}
+
+@media (max-width: 991px) {
+
+    #ar-services .line {
+        display: none;
+    }
+
+    #ar-services #cycleCards {
+        gap: 1rem;
+    }
+}
+
+
+.fancy-txt2 {
+  background-image: linear-gradient(90deg, gray ,var(--bs-primary-light) , var(--bs-primary));
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: all 300ms ease;
+}
+
+article:hover .fancy-txt2 {
+  background-size: 100% 2px;
+}

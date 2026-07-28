@@ -14,48 +14,169 @@
 </head>
 
 <body class="font-primary">
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
 
-    <main>
-        <section id="st-blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center">
-            <div class="container d-flex gap-4 flex-column">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>>
+    <main id="st-blog" class="d-flex flex-column">
+        <section id="st-blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center pt-20">
+            <div class="container d-flex gap-6 flex-column">
+
+                <div class="small ">
+                    <a href="#" class="text-decoration-none mt-2">Home</a>
+
+                    <span class="text-secondary">></span>
+
+                    <a href="#" class="text-decoration-none ">Blog</a>
+                    <span class="text-secondary">></span>
+
+                    <span class="text-secondary">10 Construction Trends Shaping the Future</span>
+                </div>
                 <span class="text-primary fw-bold fs-normal">BLOG DETAILS</span>
                 <h1 class="text-light fw-bold fs-big-title">10 Construction Trends
                     <br><span class="text-primary">Shaping the Future</span>
                 </h1>
                 <div class="border-bottom border-primary border-3" style="width:50px"></div>
-                <div class="small ">
-                    <a href="#" class="text-decoration-none text-secondary mt-2">Home</a>
-
-                    <span class="text-secondary">&gt;</span>
-
-                    <a href="#" class="text-decoration-none text-secondary">Blog</a>
-
-                    <span class="text-secondary">&gt;</span>
-
-                    <span class="text-secondary">10 Construction Trends Shaping the Future</span>
-                </div>
+                
             </div>
         </section>
         <section id="descriotion-blog" class="container-fluid">
             <div class="container">
                 <div class="row gx-xl-5 gx-0 gy-5">
                     <div class="col-12 col-xl-9 g-2 m-0 pe-xl-10">
-                        <div class="d-flex flex-column gap-5 align-items-start justify-content-between h-100">
-                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text">
+
+                        <div class="d-flex flex-column gap-6 align-items-start  h-100">
+                            <span class="fs-small bg-primary rounded-1 p-2 text-button-text fw-bold">
                                 Construction</span>
-                            <h2 class="fs-mid-title fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future
+                            <h2 class="fs-mid-title fw-bold text-title-text">
+                                1. 10 Construction Trends Shaping the Future
                             </h2>
                             <div class="d-flex align-items-center gap-5">
                                 <div class="d-flex align-items-center gap-2 fs-normal">
-                                    <i class="fa-solid fa-calendar text-text"></i>
+                                    <i class="fa-solid fa-calendar text-text primary-hover transition-150"></i>
                                     <span class="text-text fs-normal"> Oct 15, 2026</span>
                                 </div>
-                                <div class="d-flex align-items-center gap-2 fs-normal">
-                                    <i class="fa-solid fa-user text-text"></i>
+                                <div class="d-flex align-items-center gap-2 fs-normal ">
+                                    <i class="fa-solid fa-user text-text primary-hover transition-150"></i>
                                     <span class="text-text fs-normal">By Admin</span>
                                 </div>
                                 <div class="d-flex align-items-center gap-2 fs-normal">
-                                    <i class="fa-solid fa-comments text-text"></i>
+                                    <i class="fa-solid fa-comments text-text primary-hover transition-150"></i>
                                     <span class="text-text fs-normal"> 5 comments</span>
                                 </div>
                             </div>
@@ -73,7 +194,7 @@
                                 <p class="text-text">These trends are more than just buzzwords—they are transforming the industry and creating better outcomes for clients, communities, and the environment.
                                 </p>
                             </div>
-                            <div class="bg-icon d-flex align-items-center p-5 gap-3 rounded-1 w-100">
+                            <div class="bg-primary-light d-flex align-items-center p-5 gap-3 rounded-1 w-100">
                                 <i class="fa-solid fa-quote-left fs-high-title text-primary"></i>
                                 <span class="fs-title fw-bold text-title-text">
                                     The future of construction is built on innovation, sustainability, and collaboration.
@@ -81,27 +202,11 @@
                             </div>
                             <div class="d-flex gap-2">
                                 <span class="fs-title fw-bold text-title-text">Share this post:</span>
-                                <div class="social gap-2 d-flex align-items-center">
-
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset bg-secondary">
-                                        <i class="fab fa-facebook-f "></i>
-                                    </a>
-
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset bg-secondary">
-                                        <i class="fab fa-linkedin-in "></i>
-                                    </a>
-
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset bg-secondary">
-                                        <i class="fab fa-instagram "></i>
-                                    </a>
-
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset ibg-secondary">
-                                        <i class="fab fa-youtube "></i>
-                                    </a>
+                                <div class="social d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal primary-hover transition-150"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal primary-hover transition-150"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal primary-hover transition-150"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal primary-hover transition-150"></i>
                                 </div>
                             </div>
                             <div class="d-flex gap-2">
@@ -121,14 +226,14 @@
 
                             </div>
                             <div class="d-flex w-100">
-                                <div class="d-flex flex-column align-items-start w-50 border ps-3 ps-xl-10 py-4">
+                                <div class="d-flex flex-column align-items-start w-50 border p-2 justify-content-center">
                                     <div>
                                         <i class="fas fa-arrow-left-long"></i>
                                         <span class="fs-title fw-bold text-title-text text-start">PREVIOUS POST</span>
                                     </div>
                                     <p class="fs-subtitle fw-bold text-title-text text-start">How Effective Planning Ensures<br> Project Success</p>
                                 </div>
-                                <div class="d-flex flex-column align-items-end w-50 border pe-3 pe-xl-10 py-4">
+                                <div class="d-flex flex-column align-items-end w-50 border p-2 justify-content-center">
                                     <div>
                                         <span class="fs-title fw-bold text-title-text text-end">NEXT POST</span>
                                         <i class="fas fa-arrow-right-long"></i>
@@ -148,8 +253,7 @@
                                     <i class="fa-light fa-search fs-normal p-2 bg-primary rounded-1"></i>
                                 </button>
                             </div>
-                            <div
-                                class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
+                            <div class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
 
                                 <h4 class="fw-bold fs-title">Categories</h4>
 
@@ -158,53 +262,53 @@
                                 <ul class="list-group d-flex flex-column gap-3">
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center ">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
                                             Construction
                                             <span class="number bg-background">(8)</span>
                                         </a>
                                     </li>
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
                                            Project Management
                                             <span class="number bg-background">(5)</span>
                                         </a>
                                     </li>
 
-                                    <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <li class="rounded ">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
                                            Interior Design
                                             <span class="number bg-background">(4)</span>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
                                            Sustainability
                                             <span class="number bg-background">(8)</span>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
                                             Safety
                                             <span class="number bg-background">(3)</span>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
                                             Commercial
                                             <span class="number bg-background">(2)</span>
                                         </a>
                                     </li>
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
                                             Sustainability
                                             <span class="number bg-background">(1)</span>
                                         </a>
                                     </li>
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
                                             Commercial
                                             <span class="number bg-background">(1)</span>
                                         </a>
@@ -212,65 +316,75 @@
                                 </ul>
 
                             </div>
-                            <div
-                                class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
+                            <div class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
                                 <h4 class="fw-bold fs-title">Popular Blog</h4>
                                 <div class="border-bottom border-primary border-3" style="width:50px"></div>
                                 <div class="d-flex flex-column gap-5">
-                                    <div class="pooular-post d-flex align-items-stretch gap-3">
-                                        <div class="image-post"> <img src="./assets/media/images/en/st-blog/news.jpg"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</a>
+                                    <div class="pooular-post d-flex align-items-center gap-3">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/news.jpg "
+                                            alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a  href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
                                                 <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-3">
-                                        <div class="image-post"> <img src="./assets/media/images/en/st-blog/projects.jpg"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</a>
+                                    <div class="pooular-post d-flex align-items-center gap-3">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/projects.jpg"
+                                            alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a  href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
                                                 <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
-                                        <div class="image-post"> <img src="./assets/media/images/en/st-blog/ChatGPT2.png"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</a>
+                                    <div class="pooular-post d-flex align-items-center gap-2">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/ChatGPT2.png"
+                                                alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
                                                 <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
-                                        <div class="image-post"> <img src="./assets/media/images/en/st-blog/ChatGPT3.png"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</a>
+                                    <div class="pooular-post d-flex align-items-center gap-2">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/ChatGPT3.png"
+                                                alt="" class="rounded-1 object-fit-cover"> 
+                                            <i class="fa-solid fa-like"></i>
+                                        </div>
+                                        <a href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
                                                 <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
-                                        <div class="image-post"> <img src="./assets/media/images/en/components/news.jpg"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</a>
+                                    <div class="pooular-post d-flex align-items-center gap-2">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/components/news.jpg"
+                                                alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
                                                 <span class="text-text fs-normal">Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -297,18 +411,18 @@
     </main>
     
     <footer class="footer bg-dark text-secondary py-5 ">
-        <div class="mx-12 container">
+        <div class="container">
 
-            <div class="row gap-6 gap-lg-0 gap-md-3">
+            <div class="row row-gap-8 row-gap-lg-0">
 
                 
-                <div class="d-flex flex-column gap-3 col-10 col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
 
                     <img src="./assets/media/images/en/footer/logo.png" class="" width="210">
 
                     <p  class="">We are a leading construction company providing high-quality services across residential, commercial and industrial sectors worldwide.</p>
 
-                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center">
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
 
                         <a  href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-facebook-f "></i>
@@ -331,33 +445,33 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-2 col-md-5">
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">QUICK LINKS</h6>
+                    <h6 class="fw-bold">QUICK LINKS</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Home</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">About Us</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Services</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Projects</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Blog</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Contact Us</a>
                         </li>
 
@@ -366,24 +480,24 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-2 col-md-6">
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">OUR SERVICES</h6>
+                    <h6 class="fw-bold">OUR SERVICES</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Construction Management</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Design &amp; Build</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Renovation</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Interior Design</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Project Consulting</a>
                         </li>
                     </ul>
@@ -391,27 +505,27 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-3 col-md-5">
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">CONTACT INFO</h6>
+                    <h6 class="fw-bold">CONTACT INFO</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-location text-primary"></i>
                             <div class="d-flex flex-column justify-content-start">
                                 <span class="">123 Construction Ave,</span>
                                 <span class="">New York, NY 10001, USA</span>
                             </div>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-light fa-phone text-primary"></i>
                             <span class="">+1 212 555 7890</span>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-envelope text-primary"></i>
                             <span class="">info@buildex.com</span>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-clock text-primary"></i>
                             <span  class="">Mon – Sat: 8:00 AM – 6:00 PM</span>
                         </li>
@@ -441,34 +555,34 @@
                 </div>
 
             
-                <div class="px-0 col-10 col-xxl-2 col-xl-2 col-lg-2 col-md-10 ">
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">RECENT PROJECTS</h6>
+                    <h6 class="fw-bold text-nowrap">RECENT PROJECTS</h6>
 
-                    <div class="px-0 row g-1">
+                    <div class="row g-1">
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
                     </div>
@@ -487,6 +601,10 @@
 
         </div>
     </footer>
+    <script src="./assets/vendors/gsap/SplitText.min.js"></script>
+    <script src="./assets/vendors/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/vendors/gsap/gsap.min.js"></script>
+    <script src="./assets/js/animations.js"></script>
     <script src="./assets/js/mizchin.min.js"></script>
 </body>
 

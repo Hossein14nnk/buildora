@@ -1,0 +1,29 @@
+@use "../../miz/sass/global-functions/_images" as *;
+@use "../../miz/sass/global-functions/_colors" as *;
+
+
+#plans #hero {
+    background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/plans/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#plans .project-cta > .container{
+    background-image: linear-gradient(rgba(2, 11, 38, 0.893) ), url("../media/images/en/gallery/ChatGPT3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#plans .included .container {
+    background-color: #F4F4F4;
+}
+
+#plans .pricing .fa-arrow-right {
+    animation: move 1s infinite;
+
+}
+
+@keyframes move {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(6px);}
+}

@@ -1,5 +1,5 @@
 <%- include('../layouts/page/head.ejs' , {title: "gallery", addCount: 0}); -%>
-
+    <%- include('../components/header/content.ejs', ); -%>
     <main class="d-flex flex-column" id="gallery">
 
         <section class="hero py-20 text-secondary-text d-flex justify-content-start">
@@ -34,108 +34,129 @@
 
                 <ul class="gallery-filter d-flex align-items-center fw-semibold fs-small">
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class=" active" href="#">
+                        <a class="text-dark primary-hover transition-150" href="#">
                             <%- t.pages.gallery.filter1 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="" href="#">
+                        <a class="text-dark primary-hover transition-150" href="#">
                             <%- t.pages.gallery.filter2 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="" href="#">
+                        <a class="text-dark primary-hover transition-150" href="#">
                             <%- t.pages.gallery.filter3 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="" href="#">
+                        <a class="text-dark primary-hover transition-150" href="#">
                             <%- t.pages.gallery.filter4 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="" href="#">
+                        <a class="text-dark primary-hover transition-150" href="#">
                             <%- t.pages.gallery.filter5 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="" href="#">
+                        <a class="text-dark primary-hover transition-150" href="#">
                             <%- t.pages.gallery.filter6 %>
                         </a>
                     </li>
                 </ul>
-
-<<<<<<< HEAD
-
-                    <select class="form-select sort-select text-lg-end d-flex gap-6 align-items-center border rounded px-4 py-1 fs-small">
-                        <option class="">Latest Firs</option>
-                        <option class="">Oldest First</option>
-                        <option class="">Oldest First</option>
-=======
-                <div class="text-lg-end d-flex gap-6 align-items-center border rounded px-4 py-1 fs-small">
-                    <select class="form-select sort-select">
-                        <option><%- t.pages.gallery.option1 %></option>
-                        <option><%- t.pages.gallery.option2 %></option>
->>>>>>> be88250eb37d9a9732c706538fd6da4eca5259df
-                    </select>
-
-
+                <select class="form-select sort-select d-flex border rounded px-1 py-1 fs-small ">
+                    <option class=""><%- t.pages.gallery.option1 %></option>
+                    <option class=""><%- t.pages.gallery.option2 %></option>
+                    <option class=""><%- t.pages.gallery.option3 %></option>
+                </select>
             </div>
 
 
             <div class="row align-items-stretch justify-content-center">
-                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/building.png', 'images'); %>" alt="">
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1 ">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/building.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT1.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT1.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT4.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT4.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT2.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT2.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT3.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT3.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT4.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT4.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT6.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT6.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/news.jpg', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/news.jpg', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/photo-1486406146926-c627a92ad1ab.jpg', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/photo-1486406146926-c627a92ad1ab.jpg', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/projects.jpg', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/projects.jpg', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/building.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/building.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT1.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT1.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT4.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT4.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT2.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT2.png', 'images'); %>" alt="">
+                    </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <img class="w-100 h-100" src="<%= getMedia(lang, 'gallery/ChatGPT3.png', 'images'); %>" alt="">
+                    <a href="#" class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT3.png', 'images'); %>" alt="">
+                    </a>
                 </div>
             </div>
 
@@ -160,7 +181,7 @@
                     </div>
 
                     <div class="text-lg-end">
-                        <a href="#" class="cta-btn d-flex align-items-center gap-2">
+                        <a href="#" class="cta-btn d-flex align-items-center gap-2 btn-hover">
                             <span class=""><%- t.pages.gallery.sectionEnbtn %></span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -174,9 +195,4 @@
     </main>
 
     <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
-
-    <script src="./assets/js/mizchin.min.js"></script>
-</body>
-
-</html>
-
+<%- include('../layouts/page/foot.ejs'); -%>

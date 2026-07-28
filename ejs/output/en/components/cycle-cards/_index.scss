@@ -1,3 +1,4 @@
+@use "../../../assets/vendors/bootstrap/scss/mixins/_box-shadow" as *;
 .cycle-icon icon{
     width:35px;
 }
@@ -45,3 +46,12 @@
 }
 }
 
+
+.cycle-card:hover .cycle-icon {
+    box-shadow: 0px 0px 10px 5px var(--bs-primary-light);
+    scale: 1.1;
+}
+
+.transition-150 {
+    transition: all 150ms linear;
+}

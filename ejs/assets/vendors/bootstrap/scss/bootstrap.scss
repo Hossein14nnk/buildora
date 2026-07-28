@@ -15,19 +15,19 @@
 
 @import "root";
 @import "reboot";
-@import "reset";
 @import "type";
 @import "images";
 @import "containers";
 @import "grid";
+
 // @import "tables";
 // @import "forms";
 // @import "buttons";
-// @import "transitions";
-// @import "dropdown";
+@import "transitions";
+@import "dropdown";
 // @import "button-group";
-// @import "nav";
-// @import "navbar";
+@import "nav";
+@import "navbar";
 // @import "card";
 // @import "accordion";
 // @import "breadcrumb";

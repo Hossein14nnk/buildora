@@ -1,13 +1,12 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
+// #blog-hero {
+//     min-height: 500px !important;
+//     margin-bottom: 2rem;
+// }
 
-#blog-hero {
-    min-height: 500px !important;
-    margin-bottom: 2rem;
-}
-
-.number {
+#weblogs .number {
     width: 30px;
     height: 30px;
     display: flex;
@@ -15,25 +14,53 @@
     justify-content: center;
 }
 
-.text-limit-3 {
+#weblogs .text-limit-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.w-75 {
+#weblogs .w-75 {
     width: 75%;
 }
 
-.select-box {
+#weblogs .select-box {
     position: relative;
     width: 250px;
-    /* یا 100% */
+   
 }
 
 @media (max-width: 1200px) {
     #weblogs .wrapper {
         width: 100% !important;
     }
+}
+
+#weblogs .list-group li:hover a {
+    color: var(--bs-primary) !important;
+}
+
+#weblogs .pooular-post img {
+    width: 50px;
+    aspect-ratio: 1 !important;
+}
+
+#weblogs .wrapper div:nth-child(1) .image {
+    background-image: url("../../assets/media/images/en/gallery/ChatGPT1.png");
+}
+#weblogs .wrapper div:nth-child(3) .image {
+    background-image: url("../../assets/media/images/en/gallery/ChatGPT3.png");
+}
+#weblogs .wrapper div:nth-child(2) .image {
+    background-image: url("../../assets/media/images/en/gallery/ChatGPT2.png");
+}
+#weblogs .wrapper div:nth-child(4) .image {
+    background-image: url("../../assets/media/images/en/gallery/ChatGPT4.png");
+}
+#weblogs .wrapper div:nth-child(5) .image {
+    background-image: url("../../assets/media/images/en/gallery/ChatGPT3.png");
+}
+#weblogs .wrapper div:nth-child(6) .image {
+    background-image: url("../../assets/media/images/en/gallery/ChatGPT6.png");
 }

@@ -14,200 +14,438 @@
 </head>
 
 <body class="font-primary">
-    <main>
-        <section id="blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center">
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>>    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main id="weblogs" class="d-flex flex-column">
+        <section id="blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center pt-20 pb-10">
             <div class="container d-flex gap-4 flex-column">
                 <span class="text-primary fw-bold fs-normal">OUR BLOG</span>
                 <h1 class="text-light fw-bold fs-big-title">Insights, Ideas & Inspiration
                     <br><span class="text-primary">For Better Building</span>
                 </h1>
-                <p class="text-text fw-medium fs-title">Stay updated with the latest trends, expert insights, and practical tips from the construction industry.</p>
+                <p class="text-text fw-medium fs-title">
+                    <span class="fancy-txt">Stay updated with the latest trends, expert insights, and practical tips from the construction industry.</span>
+                </p>
             </div>
         </section>
-        <section id="weblogs" class="container-fluid py-5">
+        <section class="container-fluid py-5">
             <div class="container">
                 <div class="row g-6 align-items-start">
                     <div class="wrapper d-flex justify-content-between align-items-center mb-4 w-75">
                         <span>Showing 1–9 of 24 results</span>
-                        <select class="p-3 rounded-1 border bg-white pe-5">
+                        <select class="p-1 rounded-1 border bg-white ">
                             <option selected>Latest Posts</option>
                             <option>Residential</option>
                             <option>Commercial</option>
                             <option>Industrial</option>
                         </select>
                     </div>
-                    <div class="col-xl-9 g-2">
+                    <div class="wrapper col-xl-9 g-2">
                         <div class="row g-4">
 						
-                            <div class="col-md-6 col-xl-4 d-flex">
-                                <div class="news-box shadow bg-white ">
+                            <div class="col-lg-4 col-6 d-flex">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> safety</span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
                                             <span class="text-text fs-normal"> Oct 15, 2026</span>
                                         </div>
                                         <h3 class="fs-title fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h3>
                                         <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition">Read more</span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
-                                <div class="news-box shadow bg-white">
-                                    <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> comercial</span>
-                                    </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
-                                        <div class="d-flex align-items-center gap-2 fs-normal">
-                                            <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> Oct 12, 2026</span>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0">How effective planning ensures project success</h3>
-                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
-                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
-                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
-                                <div class="news-box shadow bg-white">
-                                    <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> Design</span>
-                                    </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
-                                        <div class="d-flex align-items-center gap-2 fs-normal">
-                                            <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> Oct 23, 2026</span>
-                                        </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0">modern interior design trends for 2024</h3>
-                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
-                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
-                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
-                                <div class="news-box shadow bg-white">
-                                    <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> build</span>
-                                    </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
-                                        <div class="d-flex align-items-center gap-2 fs-normal">
-                                            <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> Oct 20, 2026</span>
-                                        </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0">sustainable building practices for a greener tomorrow</h3>
-                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
-                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
-                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
-                                <div class="news-box shadow bg-white">
-                                    <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> Commercial</span>
-                                    </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
-                                        <div class="d-flex align-items-center gap-2 fs-normal">
-                                            <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> Oct 16, 2026</span>
-                                        </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0">construction site safety:best practices</h3>
-                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
-                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
-                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
-                                <div class="news-box shadow bg-white">
+                            <div class="col-lg-4 col-6 d-flex">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> safety</span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> Oct 14, 2026</span>
-                                        </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0">key Considerations for commercial constructoin</h3>
-                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
-                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
-                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
-                                <div class="news-box shadow bg-white">
-                                    <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> build</span>
-                                    </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
-                                        <div class="d-flex align-items-center gap-2 fs-normal">
-                                            <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> Oct 20, 2026</span>
-                                        </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0">building your dream home: a step-by-step guide</h3>
-                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
-                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
-                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
-                                <div class="news-box shadow bg-white">
-                                    <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> Commercial</span>
-                                    </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
-                                        <div class="d-flex align-items-center gap-2 fs-normal">
-                                            <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> Oct 16, 2026</span>
-                                        </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0">construction site safety:best practices</h3>
-                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
-                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
-                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 d-flex">
-                                <div class="news-box shadow bg-white">
-                                    <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> safety</span>
-                                    </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
-                                        <div class="d-flex align-items-center gap-2 fs-normal">
-                                            <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> Oct 14, 2026</span>
+                                            <span class="text-text fs-normal"> Oct 15, 2026</span>
                                         </div>
                                         <h3 class="fs-title fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h3>
                                         <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition">Read more</span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6 d-flex">
+                                <div class="news-box shadow bg-white transition-300">
+                                    <div class="image p-3">
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> safety</span>
                                     </div>
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
+                                        <div class="d-flex align-items-center gap-2 fs-normal">
+                                            <i class="fa-solid fa-calendar text-text"></i>
+                                            <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h3>
+                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
+                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6 d-flex">
+                                <div class="news-box shadow bg-white transition-300">
+                                    <div class="image p-3">
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> safety</span>
+                                    </div>
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
+                                        <div class="d-flex align-items-center gap-2 fs-normal">
+                                            <i class="fa-solid fa-calendar text-text"></i>
+                                            <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h3>
+                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
+                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6 d-flex">
+                                <div class="news-box shadow bg-white transition-300">
+                                    <div class="image p-3">
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> safety</span>
+                                    </div>
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
+                                        <div class="d-flex align-items-center gap-2 fs-normal">
+                                            <i class="fa-solid fa-calendar text-text"></i>
+                                            <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h3>
+                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
+                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6 d-flex">
+                                <div class="news-box shadow bg-white transition-300">
+                                    <div class="image p-3">
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> safety</span>
+                                    </div>
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
+                                        <div class="d-flex align-items-center gap-2 fs-normal">
+                                            <i class="fa-solid fa-calendar text-text"></i>
+                                            <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h3>
+                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
+                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6 d-flex">
+                                <div class="news-box shadow bg-white transition-300">
+                                    <div class="image p-3">
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> safety</span>
+                                    </div>
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
+                                        <div class="d-flex align-items-center gap-2 fs-normal">
+                                            <i class="fa-solid fa-calendar text-text"></i>
+                                            <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h3>
+                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
+                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6 d-flex">
+                                <div class="news-box shadow bg-white transition-300">
+                                    <div class="image p-3">
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> safety</span>
+                                    </div>
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
+                                        <div class="d-flex align-items-center gap-2 fs-normal">
+                                            <i class="fa-solid fa-calendar text-text"></i>
+                                            <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h3>
+                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
+                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6 d-flex">
+                                <div class="news-box shadow bg-white transition-300">
+                                    <div class="image p-3">
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> safety</span>
+                                    </div>
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
+                                        <div class="d-flex align-items-center gap-2 fs-normal">
+                                            <i class="fa-solid fa-calendar text-text"></i>
+                                            <span class="text-text fs-normal"> Oct 15, 2026</span>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h3>
+                                        <p class="fs-big text-text lh-lg mb-0">The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. </p>
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
+                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -224,7 +462,7 @@
                     </div>
 
                     <div class="col-xl-3 m-0">
-                        <div class="d-flex flex-column gap-5">
+                        <div class="d-flex gap-5 flex-column">
                             <div class="w-100 d-flex flex-row justify-content-between bg-white rounded-2 p-3">
                                 <input type="text" placeholder="search blogs...">
                                 <button>
@@ -241,42 +479,42 @@
                                 <ul class="list-group d-flex flex-column gap-3">
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center ">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark ">
                                            Design & Build
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
                                            Project Consulting
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
                                               Renovation & Restoration
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
                                             Interior Design
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
                                             Construction Maintenance
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
                                     </li>
 
                                     <li class="rounded">
-                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="d-flex justify-content-between align-items-center text-dark">
                                             Interior Design
                                             <i class="fa-solid fa-arrow-right bg-background p-2 rounded-1"></i>
                                         </a>
@@ -286,65 +524,70 @@
 
                             </div>
 
-                            <div
-                                class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
+                            <div class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
                                 <h4 class="fw-bold fs-title">Popular Blog</h4>
                                 <div class="border-bottom border-primary border-3" style="width:50px"></div>
                                 <div class="d-flex flex-column gap-5">
-                                    <div class="pooular-post d-flex align-items-stretch gap-3">
-                                        <div class="image-post"> <img src="./assets/media/images/en/st-blog/news.jpg"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</a>
+                                    <div class="pooular-post d-flex align-items-center gap-3">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/news.jpg " alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
                                                 <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-3">
-                                        <div class="image-post"> <img src="./assets/media/images/en/st-blog/projects.jpg"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</a>
+                                    <div class="pooular-post d-flex align-items-center gap-3">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/projects.jpg" alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal">Oct 12, 2026</span>
+                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
-                                        <div class="image-post"> <img src="./assets/media/images/en/st-blog/ChatGPT2.png"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</a>
+                                    <div class="pooular-post d-flex align-items-center gap-2">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/ChatGPT2.png" alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal">  Oct 15, 2026</span>
+                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
-                                        <div class="image-post"> <img src="./assets/media/images/en/st-blog/ChatGPT3.png"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</a>
+                                    <div class="pooular-post d-flex align-items-center gap-2">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/ChatGPT3.png" alt="" class="rounded-1 object-fit-cover"> 
+                                            <i class="fa-solid fa-like"></i>
+                                        </div>
+                                        <a href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"> Oct 20, 2026</span>
+                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-stretch gap-2">
-                                        <div class="image-post"> <img src="./assets/media/images/en/st-blog/ChatGPT2.png"
-                                                alt="" class="h-100 rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</a>
+                                    <div class="pooular-post d-flex align-items-center gap-2">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/components/news.jpg" alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal">Oct 16, 2026</span>
+                                                <span class="text-text fs-normal">Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -375,18 +618,18 @@
 
     
     <footer class="footer bg-dark text-secondary py-5 ">
-        <div class="mx-12 container">
+        <div class="container">
 
-            <div class="row gap-6 gap-lg-0 gap-md-3">
+            <div class="row row-gap-8 row-gap-lg-0">
 
                 
-                <div class="d-flex flex-column gap-3 col-10 col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
 
                     <img src="./assets/media/images/en/footer/logo.png" class="" width="210">
 
                     <p  class="">We are a leading construction company providing high-quality services across residential, commercial and industrial sectors worldwide.</p>
 
-                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center">
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
 
                         <a  href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-facebook-f "></i>
@@ -409,33 +652,33 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-2 col-md-5">
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">QUICK LINKS</h6>
+                    <h6 class="fw-bold">QUICK LINKS</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Home</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">About Us</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Services</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Projects</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Blog</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Contact Us</a>
                         </li>
 
@@ -444,24 +687,24 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-2 col-md-6">
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">OUR SERVICES</h6>
+                    <h6 class="fw-bold">OUR SERVICES</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Construction Management</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Design &amp; Build</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Renovation</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Interior Design</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Project Consulting</a>
                         </li>
                     </ul>
@@ -469,27 +712,27 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-3 col-md-5">
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">CONTACT INFO</h6>
+                    <h6 class="fw-bold">CONTACT INFO</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-location text-primary"></i>
                             <div class="d-flex flex-column justify-content-start">
                                 <span class="">123 Construction Ave,</span>
                                 <span class="">New York, NY 10001, USA</span>
                             </div>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-light fa-phone text-primary"></i>
                             <span class="">+1 212 555 7890</span>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-envelope text-primary"></i>
                             <span class="">info@buildex.com</span>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-clock text-primary"></i>
                             <span  class="">Mon – Sat: 8:00 AM – 6:00 PM</span>
                         </li>
@@ -519,34 +762,34 @@
                 </div>
 
             
-                <div class="px-0 col-10 col-xxl-2 col-xl-2 col-lg-2 col-md-10 ">
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">RECENT PROJECTS</h6>
+                    <h6 class="fw-bold text-nowrap">RECENT PROJECTS</h6>
 
-                    <div class="px-0 row g-1">
+                    <div class="row g-1">
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
                     </div>
@@ -565,8 +808,11 @@
 
         </div>
     </footer>
-
+    <script src="./assets/vendors/gsap/SplitText.min.js"></script>
+    <script src="./assets/vendors/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/vendors/gsap/gsap.min.js"></script>
+    <script src="./assets/js/animations.js"></script>
     <script src="./assets/js/mizchin.min.js"></script>
-    </body>
+</body>
 
-    </html>
+</html>

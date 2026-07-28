@@ -1,3 +1,12 @@
 .pricing-table.popular-style .icon{
     background-color: rgba(128, 128, 128, 0.3);
 }
+
+.pricing-table-popular:hover{
+    background-color: black !important;
+    color: #FEBF01 !important;
+}
+
+.pricing-table-popular{
+    border: 1px solid #FEBF01 !important;
+}

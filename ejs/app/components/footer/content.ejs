@@ -1,17 +1,17 @@
 
     <footer class="footer bg-dark text-secondary py-5 ">
-        <div class="mx-12 container">
+        <div class="container">
 
-            <div class="row gap-6 gap-lg-0 gap-md-3">
+            <div class="row row-gap-8 row-gap-lg-0">
 
                 
-                <div class="d-flex flex-column gap-3 col-10 col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
 
                     <img src="<%- getMedia(lang, 'footer/logo.png', 'images') %>" class="" width="210">
 
                     <p  class=""><%= t.footer.description %></p>
 
-                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center">
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
 
                         <a  href="<%= navigation(lang , '') %>" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-facebook-f "></i>
@@ -34,33 +34,33 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-2 col-md-5">
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4"><%= t.footer.quickLinks.txt %></h6>
+                    <h6 class="fw-bold"><%= t.footer.quickLinks.txt %></h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.quickLinks.home %></a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.quickLinks.aboutUs %></a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.quickLinks.services %></a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.quickLinks.projects %></a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.quickLinks.blogs %></a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.quickLinks.contactUs %></a>
                         </li>
 
@@ -69,24 +69,24 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-2 col-md-6">
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4"><%= t.footer.ourSservices.txt %></h6>
+                    <h6 class="fw-bold"><%= t.footer.ourSservices.txt %></h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.ourSservices.construction %></a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.ourSservices.design %></a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.ourSservices.renovation %></a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.ourSservices.interior %></a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="<%= navigation(lang , '') %>" class="text-decoration-none text-reset"><%= t.footer.ourSservices.project %></a>
                         </li>
                     </ul>
@@ -94,27 +94,27 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-3 col-md-5">
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4"><%= t.footer.contact.txt %></h6>
+                    <h6 class="fw-bold"><%= t.footer.contact.txt %></h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-location text-primary"></i>
                             <div class="d-flex flex-column justify-content-start">
                                 <span class=""><%= t.footer.contact.address1 %></span>
                                 <span class=""><%= t.footer.contact.address2 %></span>
                             </div>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-light fa-phone text-primary"></i>
                             <span class=""><%= t.footer.contact.phoneNumber %></span>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-envelope text-primary"></i>
                             <span class=""><%= t.footer.contact.email %></span>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-clock text-primary"></i>
                             <span  class=""><%= t.footer.contact.timeWork %></span>
                         </li>
@@ -144,34 +144,34 @@
                 </div>
 
             
-                <div class="px-0 col-10 col-xxl-2 col-xl-2 col-lg-2 col-md-10 ">
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4"><%= t.footer.recent %></h6>
+                    <h6 class="fw-bold text-nowrap"><%= t.footer.recent %></h6>
 
-                    <div class="px-0 row g-1">
+                    <div class="row g-1">
 
-                        <a href="<%= navigation(lang , '') %>" class="col-4">
-                            <img src="<%- getMedia(lang, 'footer/ChatGPT1.png', 'images') %>" class="img-fluid rounded w-100">
+                        <a href="<%= navigation(lang , '') %>" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="<%- getMedia(lang, 'footer/ChatGPT1.png', 'images') %>" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="<%= navigation(lang , '') %>" class="col-4">
-                            <img src="<%- getMedia(lang, 'footer/ChatGPT2.png', 'images') %>" class="img-fluid rounded w-100">
+                        <a href="<%= navigation(lang , '') %>" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="<%- getMedia(lang, 'footer/ChatGPT2.png', 'images') %>" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="<%= navigation(lang , '') %>" class="col-4">
-                            <img src="<%- getMedia(lang, 'footer/ChatGPT3.png', 'images') %>" class="img-fluid rounded w-100">
+                        <a href="<%= navigation(lang , '') %>" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="<%- getMedia(lang, 'footer/ChatGPT3.png', 'images') %>" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="<%= navigation(lang , '') %>" class="col-4">
-                            <img src="<%- getMedia(lang, 'footer/ChatGPT4.png', 'images') %>" class="img-fluid rounded w-100">
+                        <a href="<%= navigation(lang , '') %>" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="<%- getMedia(lang, 'footer/ChatGPT4.png', 'images') %>" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="<%= navigation(lang , '') %>" class="col-4">
-                            <img src="<%- getMedia(lang, 'footer/ChatGPT5.png', 'images') %>" class="img-fluid rounded w-100">
+                        <a href="<%= navigation(lang , '') %>" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="<%- getMedia(lang, 'footer/ChatGPT5.png', 'images') %>" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="<%= navigation(lang , '') %>" class="col-4">
-                            <img src="<%- getMedia(lang, 'footer/ChatGPT6.png', 'images') %>" class="img-fluid rounded w-100">
+                        <a href="<%= navigation(lang , '') %>" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="<%- getMedia(lang, 'footer/ChatGPT6.png', 'images') %>" class="img-fluid rounded w-100 image-hover">
                         </a>
 
                     </div>

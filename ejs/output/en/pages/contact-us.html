@@ -14,24 +14,262 @@
 </head>
 
 <body class="font-primary">
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
 
-    <main>
-        <section id="contact-hero" class="conainer-flouds bg-on-secondary d-flex align-items-center">
-            <div class="container d-flex gap-4 flex-column">
-                <span class="text-primary fw-bold fs-normal">OUR BLOG/span>
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>>
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main id="contact-us" class="d-flex flex-column">
+        <section id="contact-hero" class="conainer-flouds bg-on-secondary d-flex align-items-center pt-20">
+            <div class="container d-flex gap-4 flex-column py-6">
+                <span class="text-primary fw-bold fs-normal">OUR BLOG</span>
                 <h1 class="text-light fw-bold fs-big-title">Insights, Ideas & Inspiration
                     <br><span class="text-primary">For Better Building</span>
                 </h1>
-                <p class="text-text fw-medium fs-title">Stay updated with the latest trends, expert insights, and practical tips from the construction industry.</p>
+                <p class="text-text fw-medium fs-title">
+                    <span class="fancy-txt">Stay updated with the latest trends, expert insights, and practical tips from the construction industry.</span>
+                </p>
             </div>
         </section>
         <section id="" class="conainer-flouds">
             <div class="container">
-                <div class="row gy-4">
+                <div class="row gy-4 gap-10">
                     <div class="col-xl-7 gap-3">
                         <div class="d-flex flex-column gap-5">
                             <div class="d-flex flex-column">
-                                <span class="text-primary fw-bold fs-normal">OUR BLOG</span>
+                                <span class="text-primary fw-bold fs-normal text-uppercase">send us a message</span>
                                 <h2 class="fw-bold">were here to help</h2>
                             </div>
                             <form>
@@ -95,9 +333,9 @@
                                             placeholder="Tell us about your project..."></textarea>
                                     </div>
 
-                                    <div class="col-12 rounded-1">
+                                    <div class="col-12 rounded-2 ">
                                         <button type="submit "
-                                            class="bg-button fw-semibold border-border-fields border p-2 rounded-1 btn-hover">
+                                            class="bg-button fw-semibold border-border-fields border py-2 px-4 rounded-2 btn-hover d-flex align-items-center">
                                            Send Message
                                             <i class="fa-solid fa-arrow-right ms-2"></i>
                                         </button>
@@ -108,7 +346,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-xl-5">
+                    <div class="col-xl-4">
 
                         <div class="h-100 d-flex flex-column gap-3">
                            <div class="d-flex flex-column">
@@ -121,7 +359,7 @@
                            </div>
                              <div class="contact-details d-flex flex-column align-items-start gap-3">
     <div class="d-flex flex-row align-items-center gap-4 w-100 bg-white py-2 px-3 rounded-1 hover">
-        <i class="fa-solid fa-location-dot text-primary fs-high-title py-2 px-4 icon"></i>
+        <i class="fa-solid fa-location-dot text-primary fs-mid-title py-2 px-4 icon"></i>
         <div class="d-flex flex-column align-items-start">
             <h4 class="fs-title fw-bold">Address</h4>
             <span class="fs-big fw-semibold">123 Construction Ave, New York, NY 10001, USA</span>
@@ -129,23 +367,23 @@
     </div>
 
     <div class="d-flex flex-row align-items-center gap-4 w-100 bg-white py-2 px-3 rounded-1 hover">
-        <i class="fa-solid fa-phone text-primary fs-high-title py-2 icon"></i>
+        <i class="fa-solid fa-phone text-primary fs-mid-title py-2 icon"></i>
         <div class="d-flex flex-column align-items-start">
             <h4 class="fs-title fw-bold">Phone</h4>
-            <span class="fs-big fw-semibold">+1 212 555 7890</span>
+            <a href="#" class="primary-hover text-dark"><span class="fs-big fw-semibold">+1 212 555 7890</span></a>
         </div>
     </div>
 
     <div class="d-flex flex-row align-items-center gap-4 w-100 bg-white py-2 px-3 rounded-1 hover">
-        <i class="fa-solid fa-envelope text-primary fs-high-title py-2 icon"></i>
+        <i class="fa-solid fa-envelope text-primary fs-mid-title py-2 icon"></i>
         <div class="d-flex flex-column align-items-start">
             <h4 class="fs-title fw-bold">Email</h4>
-            <span class="fs-big fw-semibold">info@buildex.com</span>
+            <a href="#" class="primary-hover text-dark"><span class="fs-big fw-semibold">info@buildex.com</span></a>
         </div>
     </div>
 
     <div class="d-flex flex-row align-items-center gap-4 w-100 bg-white py-2 px-3 rounded-1 hover">
-        <i class="fa-solid fa-clock text-primary fs-high-title py-2 icon"></i>
+        <i class="fa-solid fa-clock text-primary fs-mid-title py-2 icon"></i>
         <div class="d-flex flex-column align-items-start">
             <h4 class="fs-title fw-bold">Working Hours</h4>
             <span class="fs-big fw-semibold">Mon-Sat: 8:00 AM 6:00 PM</span>
@@ -153,32 +391,32 @@
         </div>
     </div>
 </div>
-                            <div class="mt-auto pt-4">
+                            <div class="d-flex flex-column gap-2 mt-4">
 
-                                <h6 class="fw-bold mb-3">
+                                <h6 class="fw-bold">
                                     Let's Connect
                                 </h6>
 
                                 <div class="social gap-2 d-flex flex-row align-items-center">
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border ">
-                                        <i class="fab fa-facebook-f "></i>
+                                    <a href="#" style="width: 30px; height: 30px; "
+                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
+                                        <i class="fab fa-facebook-f transition-150 primary-hover"></i>
                                     </a>
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
+                                    <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
-                                        <i class="fab fa-linkedin-in "></i>
+                                        <i class="fab fa-linkedin-in transition-150 primary-hover"></i>
                                     </a>
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
+                                    <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
-                                        <i class="fab fa-instagram "></i>
+                                        <i class="fab fa-instagram transition-150 primary-hover"></i>
                                     </a>
 
-                                    <a href="./output/en/pages/" style="width: 30px; height: 30px;"
+                                    <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
-                                        <i class="fab fa-youtube "></i>
+                                        <i class="fab fa-youtube transition-150 primary-hover"></i>
                                     </a>
 
                                 </div>
@@ -192,7 +430,7 @@
         </section>
         <section class="conainer-flouds">
             <div class="container rounded-1">
-                <iframe class="w-100 rounded-1"
+                <iframe class="w-100 rounded-1 vh-50"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12951.109024056112!2d51.218427!3d35.7562792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8de5006a0ba159%3A0x6ef7e9cb611a8298!2sivahid!5e0!3m2!1sen!2s!4v1728657276517!5m2!1sen!2s"
                     width="600" style="border: 0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -246,18 +484,18 @@
 
     
     <footer class="footer bg-dark text-secondary py-5 ">
-        <div class="mx-12 container">
+        <div class="container">
 
-            <div class="row gap-6 gap-lg-0 gap-md-3">
+            <div class="row row-gap-8 row-gap-lg-0">
 
                 
-                <div class="d-flex flex-column gap-3 col-10 col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
 
                     <img src="./assets/media/images/en/footer/logo.png" class="" width="210">
 
                     <p  class="">We are a leading construction company providing high-quality services across residential, commercial and industrial sectors worldwide.</p>
 
-                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center">
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
 
                         <a  href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-facebook-f "></i>
@@ -280,33 +518,33 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-2 col-md-5">
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">QUICK LINKS</h6>
+                    <h6 class="fw-bold">QUICK LINKS</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Home</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">About Us</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Services</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Projects</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Blog</a>
                         </li>
 
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Contact Us</a>
                         </li>
 
@@ -315,24 +553,24 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-2 col-md-6">
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">OUR SERVICES</h6>
+                    <h6 class="fw-bold">OUR SERVICES</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Construction Management</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Design &amp; Build</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Renovation</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Interior Design</a>
                         </li>
-                        <li>
+                        <li class="w-fit-content">
                             <a href="./output/en/pages/" class="text-decoration-none text-reset">Project Consulting</a>
                         </li>
                     </ul>
@@ -340,27 +578,27 @@
                 </div>
 
                 
-                <div class="px-0 col-lg-3 col-md-5">
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">CONTACT INFO</h6>
+                    <h6 class="fw-bold">CONTACT INFO</h6>
 
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-location text-primary"></i>
                             <div class="d-flex flex-column justify-content-start">
                                 <span class="">123 Construction Ave,</span>
                                 <span class="">New York, NY 10001, USA</span>
                             </div>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-light fa-phone text-primary"></i>
                             <span class="">+1 212 555 7890</span>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-envelope text-primary"></i>
                             <span class="">info@buildex.com</span>
                         </li>
-                        <li class="d-flex gap-2 align-items-baseline">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-clock text-primary"></i>
                             <span  class="">Mon – Sat: 8:00 AM – 6:00 PM</span>
                         </li>
@@ -390,34 +628,34 @@
                 </div>
 
             
-                <div class="px-0 col-10 col-xxl-2 col-xl-2 col-lg-2 col-md-10 ">
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
 
-                    <h6 class="d-flex flex-column gap-1 fw-bold mb-4">RECENT PROJECTS</h6>
+                    <h6 class="fw-bold text-nowrap">RECENT PROJECTS</h6>
 
-                    <div class="px-0 row g-1">
+                    <div class="row g-1">
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-4">
-                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100">
+                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
                     </div>
@@ -436,7 +674,10 @@
 
         </div>
     </footer>
-    
+    <script src="./assets/vendors/gsap/SplitText.min.js"></script>
+    <script src="./assets/vendors/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/vendors/gsap/gsap.min.js"></script>
+    <script src="./assets/js/animations.js"></script>
     <script src="./assets/js/mizchin.min.js"></script>
 </body>
 

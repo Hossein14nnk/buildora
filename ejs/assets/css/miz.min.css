@@ -2,4 +2,345 @@
  * Miz  v1.1.3 (https://eazymizy.com/docs/get-started/install)
  * Copyright 2024-2026 The Miz Authors
  * Licensed under MIT (https://eazymizy.com/docs/about/license)
-*/:root{--primary:#febf01;--on-primary:#0f0f0f;--primary-light:#fcf0d6;--primary-dark:rgba(0,0,0,0);--secondary:#fafafa;--on-secondary:#0c0b0c;--secondary-light:rgba(0,0,0,0);--secondary-dark:rgba(0,0,0,0);--specific:#e7e7e6;--button-text:#0f0f0f;--button:#febf01;--text:#8e8b8d;--title-text:#0c0b0c;--secondary-text:#c6c6c7;--section-title-text:#0c0b0c;--border:#febf01;--divider:#febf01;--shadow:#f0f0f1;--icon:#0c0b0c;--icon-hover:rgba(0,0,0,0);--menu:rgba(0,0,0,0);--card:#fff;--background:#f7f7f7;--section:#fff;--hover:rgba(0,0,0,0);--button-hover:rgba(0,0,0,0);--button-text-hover:rgba(0,0,0,0);--discount-price:rgba(0,0,0,0);--fields:#fcfdfd;--border-fields:#f1f1f1;--title-text-fields:#545250;--text-fields:#b8b6ba;--black:#000;--white:#fff;--danger-regular:#d70d0d;--disabled-regular:#b1b1b1;--warning-regular:#ffb800;--warning-light:#fdd368;--warning-dark:#ca9200;--success-regular:#02b74a;--success-light:#c0fcd8;--success-dark:#007a31;--danger-dark:#aa0d0d;--danger-light:#f8d0d0;--disabled-light:#e2e2e2;--disabled-dark:#575857;--information-regular:#3761eb;--information-light:#7393ff;--information-dark:#2145bc;--border-secondary:#fff;--unCommon:#fff}.border-primary-color{border-color:var(--primary)}.primary-color{color:var(--primary)}.bg-primary-color{background-color:var(--primary)}.border-on-primary-color{border-color:var(--on-primary)}.on-primary-color{color:var(--on-primary)}.bg-on-primary-color{background-color:var(--on-primary)}.primary-light-color{color:var(--primary-light)}.bg-primary-light-color{background-color:var(--primary-light)}.bg-primary-dark-color{background-color:var(--primary-dark)}.secondary-color{color:var(--secondary)}.bg-secondary-color{background-color:var(--secondary)}.on-secondary-color{color:var(--on-secondary)}.bg-on-secondary-color{background-color:var(--on-secondary)}.bg-secondary-light-color{background-color:var(--secondary-light)}.bg-secondary-dark-color{background-color:var(--secondary-dark)}.specific-color{color:var(--specific)}.bg-specific-color{background-color:var(--specific)}.button-text-color{color:var(--button-text)}.bg-button-color{background-color:var(--button)}.text-color{color:var(--text)}.bg-text-color{background-color:var(--text)}.title-text-color{color:var(--title-text)}.bg-title-text-color{background-color:var(--title-text)}.bg-secondary-text-color{background-color:var(--secondary-text)}.bg-section-title-text-color{background-color:var(--section-title-text)}.border-color{border-color:var(--border)}.bg-border-color{background-color:var(--border)}.border-divider-color{border-color:var(--divider)}.bg-divider-color{background-color:var(--divider)}.bg-shadow-color{background-color:var(--shadow)}.icon-color{color:var(--icon)}.bg-icon-color{background-color:var(--icon)}.bg-menu-color{background-color:var(--menu)}.bg-card-color{background-color:var(--card)}.bg-color{background-color:var(--background)}.bg-section-color{background-color:var(--section)}.bg-hover-color{background-color:var(--hover)}.bg-button-hover-color{background-color:var(--button-hover)}.bg-button-text-hover-color{background-color:var(--button-text-hover)}.bg-fields-color{background-color:var(--fields)}.text-fields-color{color:var(--text-fields)}.bg-danger-regular-color{background-color:var(--danger-regular)}.bg-disabled-regular-color{background-color:var(--disabled-regular)}.bg-warning-regular-color{background-color:var(--warning-regular)}.bg-warning-light-color{background-color:var(--warning-light)}.bg-warning-dark-color{background-color:var(--warning-dark)}.bg-success-regular-color{background-color:var(--success-regular)}.bg-success-light-color{background-color:var(--success-light)}.bg-success-dark-color{background-color:var(--success-dark)}.bg-danger-dark-color{background-color:var(--danger-dark)}.bg-danger-light-color{background-color:var(--danger-light)}.bg-disabled-light-color{background-color:var(--disabled-light)}.bg-disabled-dark-color{background-color:var(--disabled-dark)}.bg-information-regular-color{background-color:var(--information-regular)}.bg-information-light-color{background-color:var(--information-light)}.bg-information-dark-color{background-color:var(--information-dark)}.bg-border-secondary-color{background-color:var(--border-secondary)}.bg-unCommon-color{background-color:var(--unCommon)}.light-palette{--primary:#febf01;--on-primary:#0f0f0f;--primary-light:#fcf0d6;--primary-dark:rgba(0,0,0,0);--secondary:#fafafa;--on-secondary:#0c0b0c;--secondary-light:rgba(0,0,0,0);--secondary-dark:rgba(0,0,0,0);--specific:#e7e7e6;--button-text:#0f0f0f;--button:#febf01;--text:#8e8b8d;--title-text:#0c0b0c;--secondary-text:#c6c6c7;--section-title-text:#0c0b0c;--border:#febf01;--divider:#febf01;--shadow:#f0f0f1;--icon:#0c0b0c;--icon-hover:rgba(0,0,0,0);--menu:rgba(0,0,0,0);--card:#fff;--background:#f7f7f7;--section:#fff;--hover:rgba(0,0,0,0);--button-hover:rgba(0,0,0,0);--button-text-hover:rgba(0,0,0,0);--discount-price:rgba(0,0,0,0);--fields:#fcfdfd;--border-fields:#f1f1f1;--title-text-fields:#545250;--text-fields:#b8b6ba;--black:#000;--white:#fff;--danger-regular:#d70d0d;--disabled-regular:#b1b1b1;--warning-regular:#ffb800;--warning-light:#fdd368;--warning-dark:#ca9200;--success-regular:#02b74a;--success-light:#c0fcd8;--success-dark:#007a31;--danger-dark:#aa0d0d;--danger-light:#f8d0d0;--disabled-light:#e2e2e2;--disabled-dark:#575857;--information-regular:#3761eb;--information-light:#7393ff;--information-dark:#2145bc;--border-secondary:#fff;--unCommon:#fff}
+*/
+:root {
+  --primary: #FEBF01;
+  --on-primary: #0F0F0F;
+  --primary-light: #FCF0D6;
+  --primary-dark: rgba(0, 0, 0, 0);
+  --secondary: #FAFAFA;
+  --on-secondary: #0C0B0C;
+  --secondary-light: rgba(0, 0, 0, 0);
+  --secondary-dark: rgba(0, 0, 0, 0);
+  --specific: #E7E7E6;
+  --button-text: #0F0F0F;
+  --button: #FEBF01;
+  --text: #8E8B8D;
+  --title-text: #0C0B0C;
+  --secondary-text: #C6C6C7;
+  --section-title-text: #0C0B0C;
+  --border: #FEBF01;
+  --divider: #FEBF01;
+  --shadow: #F0F0F1;
+  --icon: #0C0B0C;
+  --icon-hover: rgba(0, 0, 0, 0);
+  --menu: rgba(0, 0, 0, 0);
+  --card: #FFFFFF;
+  --background: #F7F7F7;
+  --section: #FFFFFF;
+  --hover: rgba(0, 0, 0, 0);
+  --button-hover: rgba(0, 0, 0, 0);
+  --button-text-hover: rgba(0, 0, 0, 0);
+  --discount-price: rgba(0, 0, 0, 0);
+  --fields: #FCFDFD;
+  --border-fields: #F1F1F1;
+  --title-text-fields: #545250;
+  --text-fields: #B8B6BA;
+  --black: #000000;
+  --white: #FFFFFF;
+  --danger-regular: #D70D0D;
+  --disabled-regular: #B1B1B1;
+  --warning-regular: #FFB800;
+  --warning-light: #FDD368;
+  --warning-dark: #CA9200;
+  --success-regular: #02B74A;
+  --success-light: #C0FCD8;
+  --success-dark: #007A31;
+  --danger-dark: #AA0D0D;
+  --danger-light: #F8D0D0;
+  --disabled-light: #E2E2E2;
+  --disabled-dark: #575857;
+  --information-regular: #3761EB;
+  --information-light: #7393FF;
+  --information-dark: #2145BC;
+  --border-secondary: #FFFFFF;
+  --unCommon: #FFFFFF;
+}
+
+.border-primary-color {
+  border-color: var(--primary);
+}
+
+.primary-color {
+  color: var(--primary);
+}
+
+.bg-primary-color {
+  background-color: var(--primary);
+}
+
+.border-on-primary-color {
+  border-color: var(--on-primary);
+}
+
+.on-primary-color {
+  color: var(--on-primary);
+}
+
+.bg-on-primary-color {
+  background-color: var(--on-primary);
+}
+
+.primary-light-color {
+  color: var(--primary-light);
+}
+
+.bg-primary-light-color {
+  background-color: var(--primary-light);
+}
+
+.bg-primary-dark-color {
+  background-color: var(--primary-dark);
+}
+
+.secondary-color {
+  color: var(--secondary);
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary);
+}
+
+.on-secondary-color {
+  color: var(--on-secondary);
+}
+
+.bg-on-secondary-color {
+  background-color: var(--on-secondary);
+}
+
+.bg-secondary-light-color {
+  background-color: var(--secondary-light);
+}
+
+.bg-secondary-dark-color {
+  background-color: var(--secondary-dark);
+}
+
+.specific-color {
+  color: var(--specific);
+}
+
+.bg-specific-color {
+  background-color: var(--specific);
+}
+
+.button-text-color {
+  color: var(--button-text);
+}
+
+.bg-button-color {
+  background-color: var(--button);
+}
+
+.text-color {
+  color: var(--text);
+}
+
+.bg-text-color {
+  background-color: var(--text);
+}
+
+.title-text-color {
+  color: var(--title-text);
+}
+
+.bg-title-text-color {
+  background-color: var(--title-text);
+}
+
+.bg-secondary-text-color {
+  background-color: var(--secondary-text);
+}
+
+.bg-section-title-text-color {
+  background-color: var(--section-title-text);
+}
+
+.border-color {
+  border-color: var(--border);
+}
+
+.bg-border-color {
+  background-color: var(--border);
+}
+
+.border-divider-color {
+  border-color: var(--divider);
+}
+
+.bg-divider-color {
+  background-color: var(--divider);
+}
+
+.bg-shadow-color {
+  background-color: var(--shadow);
+}
+
+.icon-color {
+  color: var(--icon);
+}
+
+.bg-icon-color {
+  background-color: var(--icon);
+}
+
+.bg-menu-color {
+  background-color: var(--menu);
+}
+
+.bg-card-color {
+  background-color: var(--card);
+}
+
+.bg-color {
+  background-color: var(--background);
+}
+
+.bg-section-color {
+  background-color: var(--section);
+}
+
+.bg-hover-color {
+  background-color: var(--hover);
+}
+
+.bg-button-hover-color {
+  background-color: var(--button-hover);
+}
+
+.bg-button-text-hover-color {
+  background-color: var(--button-text-hover);
+}
+
+.bg-fields-color {
+  background-color: var(--fields);
+}
+
+.text-fields-color {
+  color: var(--text-fields);
+}
+
+.bg-danger-regular-color {
+  background-color: var(--danger-regular);
+}
+
+.bg-disabled-regular-color {
+  background-color: var(--disabled-regular);
+}
+
+.bg-warning-regular-color {
+  background-color: var(--warning-regular);
+}
+
+.bg-warning-light-color {
+  background-color: var(--warning-light);
+}
+
+.bg-warning-dark-color {
+  background-color: var(--warning-dark);
+}
+
+.bg-success-regular-color {
+  background-color: var(--success-regular);
+}
+
+.bg-success-light-color {
+  background-color: var(--success-light);
+}
+
+.bg-success-dark-color {
+  background-color: var(--success-dark);
+}
+
+.bg-danger-dark-color {
+  background-color: var(--danger-dark);
+}
+
+.bg-danger-light-color {
+  background-color: var(--danger-light);
+}
+
+.bg-disabled-light-color {
+  background-color: var(--disabled-light);
+}
+
+.bg-disabled-dark-color {
+  background-color: var(--disabled-dark);
+}
+
+.bg-information-regular-color {
+  background-color: var(--information-regular);
+}
+
+.bg-information-light-color {
+  background-color: var(--information-light);
+}
+
+.bg-information-dark-color {
+  background-color: var(--information-dark);
+}
+
+.bg-border-secondary-color {
+  background-color: var(--border-secondary);
+}
+
+.bg-unCommon-color {
+  background-color: var(--unCommon);
+}
+
+.light-palette {
+  --primary: #FEBF01;
+  --on-primary: #0F0F0F;
+  --primary-light: #FCF0D6;
+  --primary-dark: rgba(0, 0, 0, 0);
+  --secondary: #FAFAFA;
+  --on-secondary: #0C0B0C;
+  --secondary-light: rgba(0, 0, 0, 0);
+  --secondary-dark: rgba(0, 0, 0, 0);
+  --specific: #E7E7E6;
+  --button-text: #0F0F0F;
+  --button: #FEBF01;
+  --text: #8E8B8D;
+  --title-text: #0C0B0C;
+  --secondary-text: #C6C6C7;
+  --section-title-text: #0C0B0C;
+  --border: #FEBF01;
+  --divider: #FEBF01;
+  --shadow: #F0F0F1;
+  --icon: #0C0B0C;
+  --icon-hover: rgba(0, 0, 0, 0);
+  --menu: rgba(0, 0, 0, 0);
+  --card: #FFFFFF;
+  --background: #F7F7F7;
+  --section: #FFFFFF;
+  --hover: rgba(0, 0, 0, 0);
+  --button-hover: rgba(0, 0, 0, 0);
+  --button-text-hover: rgba(0, 0, 0, 0);
+  --discount-price: rgba(0, 0, 0, 0);
+  --fields: #FCFDFD;
+  --border-fields: #F1F1F1;
+  --title-text-fields: #545250;
+  --text-fields: #B8B6BA;
+  --black: #000000;
+  --white: #FFFFFF;
+  --danger-regular: #D70D0D;
+  --disabled-regular: #B1B1B1;
+  --warning-regular: #FFB800;
+  --warning-light: #FDD368;
+  --warning-dark: #CA9200;
+  --success-regular: #02B74A;
+  --success-light: #C0FCD8;
+  --success-dark: #007A31;
+  --danger-dark: #AA0D0D;
+  --danger-light: #F8D0D0;
+  --disabled-light: #E2E2E2;
+  --disabled-dark: #575857;
+  --information-regular: #3761EB;
+  --information-light: #7393FF;
+  --information-dark: #2145BC;
+  --border-secondary: #FFFFFF;
+  --unCommon: #FFFFFF;
+}
+
+/*# sourceMappingURL=miz.min.css.map */

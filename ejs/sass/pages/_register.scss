@@ -1,17 +1,9 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
-
-.hossein {
-    background-image: url(get-image("logo.png"));
-    color: get-color("primary");
-}
-
-
 #register {
     background-color: #F9F9F9;
 }
- 
 
 #register input:checked {
     background-color: var(--bs-primary);
@@ -22,13 +14,18 @@
     transition: all 300ms ease-in-out;
 }
 
-#register .register .check-button:hover i {
-    transform: translateX(0.5rem);
+#register {
+    background-image: url(get-image("en/register/building.png"))  ;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 55% 45%;
 }
 
-#register {
-  background-image: url(get-image("en/register/building.png"))  ;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 55% 45%;
+#register input {
+    border-style: none;
+    background: transparent;
+}
+
+input:focus {
+    outline: none;
 }

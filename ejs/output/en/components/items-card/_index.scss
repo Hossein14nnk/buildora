@@ -1,0 +1,8 @@
+.items-card > div:hover {
+    transform: translateY(-3px);
+    border-color: var(--bs-primary) !important;
+}
+
+.items-card > div:hover i{
+    color: var(--bs-secondary) !important;
+}

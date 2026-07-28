@@ -1,8 +1,9 @@
 <%- include('../layouts/page/head.ejs' , {title: "about-us", addCount: 0}); -%>
 
+    <%- include('../components/header/content.ejs', ); -%>
     <main class="d-flex flex-column" id="about-us">
 
-        <section class="hero py-20 pt-20 text-secondary-text ">
+        <section class="hero pt-20 text-secondary-text ">
             <div class="container">
                 <div class="align-items-start col-lg-5 d-flex flex-column gap-8 ">
 
@@ -11,10 +12,10 @@
                     <h1 class="fw-semibold"><%- t.pages.aboutUs.titleHero %></h1>
 
                     <p class="fw-medium fs-title">
-                       <%- t.pages.aboutUs.descriptionHero %>
+                       <span class="fancy-txt" ><%- t.pages.aboutUs.descriptionHero %></span>
                     </p>
 
-                    <a class="rounded-3 bg-button px-5 py-2 text-button-text mt-2 d-flex gap-6 align-items-center fw-semibold">
+                    <a href="<%- navigation(lang , 'home-one.html') %>" class="rounded-3 bg-button px-5 py-2 text-button-text mt-2 d-flex gap-6 align-items-center fw-bold fs-subtitle">
                         <span class="" ><%- t.pages.aboutUs.btnHero %></span>
                         <i class="fa-solid fa-arrow-right text-dark"></i>
                     </a>
@@ -79,11 +80,11 @@
 
         </section>
 
-        <section class="journey py-20 bg-specific">
+        <section class="journey bg-card">
             <div class="container ">
                 <div class=" d-flex gap-6 flex-column flex-xxl-row flex-xl-row">
 
-                    <div class="d-flex flex-column gap-4 col-12 col-xxl-3 col-xl-3">
+                    <div class="left-box d-flex flex-column gap-4 col-12 col-xxl-3 col-xl-3">
                         <span class="text-primary fw-bold "><%- t.pages.aboutUs.sectiontreeSubtitle %></span>
 
                         <h2 class="fw-bold"><%- t.pages.aboutUs.sectiiontreeTitle %></h2>
@@ -97,7 +98,7 @@
                 </div>
         </section>
 
-        <section class="values py-20 bg-dark">
+        <section class="values bg-dark">
             <div class="container ">
                 <div class=" d-flex gap-10 flex-column flex-xxl-row flex-xl-row ">
 
@@ -115,30 +116,73 @@
                 </div>
         </section>
 
-        <section class="introductionb bg-specific">
+        <section class="introductionb bg-card">
             <div class="container overflow-x-scroll">
-                <div class="wrapper d-flex gap-4">
-                    <div class="col-3">
-                        <%- include('../components/services-overview/content.ejs' , {servicesOverview: t.components.servicesOverview}); -%>
+                <div class="row ">
+
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 ">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector1.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector2.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector3.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector4.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector5.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector6.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-3">
-                        <%- include('../components/services-overview/content.ejs' , {servicesOverview: t.components.servicesOverview}); -%>
-                    </div>
-                    <div class="col-3">
-                        <%- include('../components/services-overview/content.ejs' , {servicesOverview: t.components.servicesOverview}); -%>
-                    </div>
-                    <div class="col-3">
-                        <%- include('../components/services-overview/content.ejs' , {servicesOverview: t.components.servicesOverview}); -%>
-                    </div>
-                   
-                </div>
                  
             </div>
             <!-- <%- include('../components/statistics/content.ejs', {statistics: t.components.statistics}); -%> -->
 
         </section>
 
-        <section class="team py-20">
+        <section class="team">
             <div class="container d-flex flex-column gap-10">
 
                 <div class=" d-flex gap-6 justify-content-between align-items-end flex-column flex-xxl-row flex-xl-row flex-lg-row flex-md-row">
@@ -152,21 +196,101 @@
                     </div>
                 </div>
                 
-                <div class="gap-4 row justify-content-center">
-                    <div class="col-5 col-xxl-2 col-xl-2 col-lg-3 col-md-4 ">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                <div class="row justify-content-center row-gap-4 column-gap-xxl-4">
+                    <div class="col-5 col-xl-2 col-md-4">
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5 col-xxl-2 col-xl-2 col-lg-3 col-md-4 ">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-5 col-xl-2 col-md-4">
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5 col-xxl-2 col-xl-2 col-lg-3 col-md-4 ">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-5 col-xl-2 col-md-4">
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5 col-xxl-2 col-xl-2 col-lg-3 col-md-4 ">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-5 col-xl-2 col-md-4">
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5 col-xxl-2 col-xl-2 col-lg-3 col-md-4 ">
-                        <%- include('../components/team-card/content.ejs', {teamCard: t.components.teamCard}); -%>
+                    <div class="col-5 col-xl-2 col-md-4">
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
                     </div>
                     
                 </div>
@@ -175,8 +299,4 @@
     </main>
 
     <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
-    
-    <script src="./assets/js/mizchin.min.js"></script>
-</body>
-
-</html>
+<%- include('../layouts/page/foot.ejs'); -%>
