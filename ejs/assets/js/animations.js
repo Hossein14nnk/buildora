@@ -5,17 +5,22 @@ const Helper = {
         return {
             trigger,
             start,
-            toggleActions: "play none none reverse",
+            // toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
             ...options
         };
     },
 
     splitTitle(selector, type = "chars", mask = "chars") {
-        return this.elements(selector).flatMap(element => {
-            return SplitText.create(element, {
-                type: type,
-                mask: mask
-            })[type];
+        return this.elements(selector).map(element => {
+            const split = SplitText.create(element, {
+                type,
+                mask
+            });
+
+            split.element = element;
+
+            return split;
         });
     },
 
@@ -36,26 +41,19 @@ const Helper = {
         return gsap.utils.toArray(selector);
     },
 
-    checkElement(selector){
-        if (!document.querySelector(selector)) return;
+    checkElement(selector) {
+        return !!document.querySelector(selector);
     },
 
-    timeline(selector, start = "top 70%"){
+    timeline(trigger, start = "top 70%"){
         return gsap.timeline({
-            scrollTrigger: Helper.trigger(selector, start)
+            scrollTrigger: Helper.trigger(trigger, start)
         });
     }
 };
 
-const Animation = {
-    init() {
-        this.global.init();
-        this.aboutUs.init();
-        this.teams.init();
-        this.plans.init();
-    },
-
-    global: {
+const Global = {
+    pages: {
         init(){
             this.revealSection();
             this.hero();
@@ -72,18 +70,31 @@ const Animation = {
                 });
             });
         },
-        hero(){
-            Helper.checkElement("#hero");
-            const chars = Helper.splitTitle("#hero :is(p,span,a,h1,h2,h3)");
-            const tl = Helper.timeline("#hero");
+        hero(selector = "#hero"){
+            if (!Helper.checkElement(selector)) return;
 
-            tl.from(chars, {
-                y: 100,
-                autoAlpha: 0,
-                stagger: 0.02,
-                duration: 0.6
+            let textType = "chars";
+            Helper.splitTitle(`${selector} :is(p,span,a,h1,h2,h3)`, textType, textType).forEach(split => {
+                const tl = Helper.timeline(split.element);
+
+                tl.from(split[textType], {
+                    y: 100,
+                    autoAlpha: 0,
+                    stagger: 0.02,
+                    duration: 0.6,
+                    ease: "power3.out"
+                });
             });
         },
+    },
+}
+
+const Animation = {
+    init() {
+        this.stBlog.init();
+        this.aboutUs.init();
+        this.teams.init();
+        this.plans.init();
     },
 
     aboutUs: {
@@ -128,13 +139,15 @@ const Animation = {
             this.featureCard();
         },
         counter(){
+            if (!Helper.checkElement(".counter")) return;
+            console.log("hoasddf", );
             const tl = Helper.timeline("#hero + section");
             document.querySelectorAll(".counter").forEach(counter => {
                 tl.add(Helper.counter(counter).play(), "<");
             });
         },
         managers(){
-            Helper.checkElement("#experts");
+            if (!Helper.checkElement("#experts")) return;
             const managers = Helper.elements("#experts .project-managers > div:has(.card)");
             const tl = Helper.timeline("#experts .project-managers");
 
@@ -152,7 +165,7 @@ const Animation = {
             });
         },
         featureCard(){
-            Helper.checkElement("#feature-cards");
+            if (!Helper.checkElement("#feature-cards")) return;
             const featureCards = Helper.elements("#feature-cards .feature-card");
             const tl = Helper.timeline("#feature-cards");
 
@@ -177,7 +190,7 @@ const Animation = {
             this.pricing();
         },
         plans(){
-            Helper.checkElement("#plans");
+            if (!Helper.checkElement("#plans")) return;
             const pricingTables = Helper.elements("#plans .col-6");
             const tl = Helper.timeline("#plans .col-6");
 
@@ -200,7 +213,7 @@ const Animation = {
             });
         },
         pricing() {
-            Helper.checkElement("#pricing");
+            if (!Helper.checkElement("#pricing")) return;
             const pricingItems = Helper.elements("#pricing .row > div");
             const tl = Helper.timeline("#pricing .row > div");
 
@@ -250,11 +263,119 @@ const Animation = {
         }
     },
 
-    gallery: {
+    // gallery: {
+    //     init(){
+    //         this.gallery();
+    //     }
+    // },
+
+    stBlog: {
         init(){
-            this.gallery();
+            this.hero();
+            this.descriptionBlog();
+            this.hr();
+        },
+        hero(){
+            if (!Helper.checkElement("#st-blog-hero")) return;
+            Global.pages.hero("#st-blog-hero");
+        },
+        hr(){
+            if (!Helper.checkElement(".border-bottom.border-primary.border-3")) return;
+            Helper.elements(".border-bottom.border-primary.border-3").forEach(hr => {
+                const tl = Helper.timeline(hr);
+                
+                gsap.set(hr, {
+                    opacity: 0,
+                    scaleX: 0,
+                    transformOrigin: "left center"
+                });
+
+                tl.to(hr, {
+                    opacity: 1,
+                    scaleX: 1,
+                    duration: 1.2,
+                    ease: "power3.out"
+                });
+            });
+        },
+        descriptionBlog(){
+            if (!Helper.checkElement("#descriotion-blog")) return;
+
+            const animateCardBody = (selector) => {
+                const cards = Helper.elements(selector);
+                
+                cards.forEach(card => {
+                    const tl = Helper.timeline(card, "top 60%");
+
+                    gsap.set(card, {
+                        opacity: 0,
+                        x: 100,
+                    });
+
+                    tl.to(card, {
+                        opacity: 1,
+                        x: 0,
+                        duration: 1,
+                        ease: "back.out(1.4)",
+                    });
+                });
+            };
+
+            const animateEmail = (selector) => {
+                const cards = Helper.elements(selector);
+                const tl = Helper.timeline(cards);
+    
+                gsap.set(cards, {
+                    opacity: 0,
+                    x: 100,
+                });
+    
+                tl.to(cards, {
+                    opacity: 1,
+                    x: 0,
+                    duration: 1,
+                    ease: "back.out(1.4)",
+                });
+            };
+
+            const animateImageBlog = (selector) => {
+                const image = Helper.elements(selector);
+                const tl = Helper.timeline(image);
+
+                gsap.set(image, {
+                    opacity: 0,
+                    x: -100,
+                });
+
+                tl.to(image, {
+                    opacity: 1,
+                    x: 0,
+                    duration: 1,
+                    ease: "back.out(1.4)",
+                });
+            };
+
+            const animateTexts = (selector) => {
+                let textType = "lines";
+                Helper.splitTitle(`${selector} :is(p,span,a,h1,h2,h3)`, textType, textType).forEach(split => {
+                    const tl = Helper.timeline(split.element, "top 80%");
+
+                    tl.from(split[textType], {
+                        y: 100,
+                        autoAlpha: 0,
+                        duration: 0.8,
+                        stagger: 0.1,
+                        ease: "power3.out"
+                    });
+                });
+            };
+
+            animateCardBody(".card-body");
+            animateEmail("#subscribeCard");
+            animateImageBlog(".image-blog");
+            animateTexts(".image-blog ~ div");
         }
-    }
+    },
 };
 
 Animation.init();
