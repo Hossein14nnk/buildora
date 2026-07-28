@@ -54,10 +54,6 @@ const Helper = {
 
 const Global = {
     pages: {
-        init(){
-            this.revealSection();
-            this.hero();
-        },
         revealSection(selector = "section") {
             Helper.elements(selector).forEach((section, index, array) => {
                 let start = (index == array.length - 1) ? "top 90%" : "top 70%";
@@ -87,6 +83,38 @@ const Global = {
             });
         },
     },
+    components: {
+        tilt(items) {
+            items.forEach(item => {
+                const rotateX = gsap.quickTo(item, "rotationX", {
+                    duration: .5,
+                    ease: "power3.out"
+                });
+
+                const rotateY = gsap.quickTo(item, "rotationY", {
+                    duration: .5,
+                    ease: "power3.out"
+                });
+
+                item.addEventListener("mousemove", (e) => {
+                    const rect = item.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    const moveX = (x / rect.width - .5) * 20;
+                    const moveY = (y / rect.height - .5) * -20;
+
+                    rotateY(moveX);
+                    rotateX(moveY);
+                });
+
+                item.addEventListener("mouseleave", () => {
+                    rotateX(0);
+                    rotateY(0);
+                });
+            });
+        },
+    }
 }
 
 const Animation = {
@@ -140,7 +168,7 @@ const Animation = {
         },
         counter(){
             if (!Helper.checkElement(".counter")) return;
-            console.log("hoasddf", );
+
             const tl = Helper.timeline("#hero + section");
             document.querySelectorAll(".counter").forEach(counter => {
                 tl.add(Helper.counter(counter).play(), "<");
@@ -186,6 +214,7 @@ const Animation = {
 
     plans: {
         init(){
+            Global.pages.hero();
             this.plans();
             this.pricing();
         },
@@ -208,7 +237,7 @@ const Animation = {
                 stagger: .75,
                 ease: "back.out(1.4)",
                 onComplete: () => {
-                    this.plansTilt(pricingTables);
+                    Global.components.tilt(pricingTables);
                 }
             });
         },
@@ -229,37 +258,6 @@ const Animation = {
                 stagger: .75,
                 ease: "power3.out",
             });
-        },
-
-        plansTilt(items) {
-            items.forEach(item => {
-                const rotateX = gsap.quickTo(item, "rotationX", {
-                    duration: .5,
-                    ease: "power3.out"
-                });
-
-                const rotateY = gsap.quickTo(item, "rotationY", {
-                    duration: .5,
-                    ease: "power3.out"
-                });
-
-                item.addEventListener("mousemove", (e) => {
-                    const rect = item.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-
-                    const moveX = (x / rect.width - .5) * 20;
-                    const moveY = (y / rect.height - .5) * -20;
-
-                    rotateY(moveX);
-                    rotateX(moveY);
-                });
-
-                item.addEventListener("mouseleave", () => {
-                    rotateX(0);
-                    rotateY(0);
-                });
-            });
         }
     },
 
@@ -271,13 +269,9 @@ const Animation = {
 
     stBlog: {
         init(){
-            this.hero();
+            Global.pages.hero("#st-blog-hero");
             this.descriptionBlog();
             this.hr();
-        },
-        hero(){
-            if (!Helper.checkElement("#st-blog-hero")) return;
-            Global.pages.hero("#st-blog-hero");
         },
         hr(){
             if (!Helper.checkElement(".border-bottom.border-primary.border-3")) return;
