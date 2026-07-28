@@ -132,8 +132,125 @@ navLinks.forEach(link => {
     });
 
 });
-</script>>
-    <main class="d-flex flex-column pt-20" id="second-demo">
+</script>>    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column" id="second-demo">
 
     <section class="hero text-white pb-0 d-flex flex-column w-100 gap-20 overflow-hidden">
 
@@ -252,7 +369,7 @@ navLinks.forEach(link => {
                        From concept to completion, we provide end-to-end construction services tailored to your needs with unmatched quality and reliability.
                 </p>
 
-                <a href="#" class="bg-dark px-4 py-2 rounded-1 fw-semibold d-flex align-items-center gap-4 text-light d-flex justify-content-center fs-big">
+                <a href="#" class="btn-hover bg-dark px-4 py-2 rounded-1 fw-semibold d-flex align-items-center gap-4 text-light d-flex justify-content-center fs-big">
                      ALL SERVICES
                     <i class="fa-solid fa-arrow-right text-primary"></i>
                 </a>
@@ -357,7 +474,7 @@ navLinks.forEach(link => {
 
                         </div>
 
-                        <a href="#" class="mt-2 button px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center gap-2 border-primary border">
+                        <a href="#" class="btn-hover mt-2 button px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center gap-2 border-primary border">
                                MORE ABOUT US
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -586,7 +703,7 @@ navLinks.forEach(link => {
     </section>
 
     <section class="comments py-8 bg-specific">
-        <div class="container d-flex gap-10 w-100 flex-column flex-xxl-row flex-xl-row flex-lg-row">
+        <div class="container d-flex gap-10 w-100 flex-column flex-xxl-row">
             <div class="d-flex flex-column gap-4 col-10 col-xxl-3 col-xl-4 col-lg-4">
                 <span class="text-uppercase fw-semibold fs-subtitle">Testimonials</span>
 
@@ -596,67 +713,181 @@ navLinks.forEach(link => {
 
             </div>
             <div class="d-flex gap-4 gap-lg-2 flex-column flex-xxl-row flex-xl-row flex-lg-row">
+                <div class="card-review h-100 border-0 shadow-sm review-card-item py-6 px-8 transition-150">
+
+    <div class="">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <div class="text-warning small">
                 
-    <div class="comment w-100 ">
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+            </div>
 
-        <div class="bg-dark border-0 h-100 p-4 rounded-3 d-flex flex-column gap-4 comment-hover transition-300">
-
-            <i class="fa-solid fa-quote-left text-primary"></i>
-            <p class="text-text ">Buildex delivered our project on time and exceeded our expectations. Their attention to detail is unmatched.</p>
-
-            <span class="text-secondary">- Emily Wilson</span>
-
-            <div class="text-primary">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+            <div class="review-card-quote">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path d="M4,3C2.343,3,1,4.343,1,6s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C3.782,10.168,2.493,11,1,11v2c3.309,0,6-2.691,6-6   V6C7,4.343,5.657,3,4,3z"/><path d="M12,3c-1.657,0-3,1.343-3,3s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C11.782,10.168,10.493,11,9,11v2   c3.309,0,6-2.691,6-6V6C15,4.343,13.657,3,12,3z"/></g><text x="0" y="31" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by icon 54</text><text x="0" y="36" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
             </div>
 
         </div>
 
-    </div>                
-    <div class="comment w-100 ">
+        <p class="fs-big text-text lh-lg mb-0 mb-5 ">
+            Buildex Construction exceeded our expectations from start to finish. Their team was professional, transparent, and delivered our dream home on time and within budget.
+        </p>
 
-        <div class="bg-dark border-0 h-100 p-4 rounded-3 d-flex flex-column gap-4 comment-hover transition-300">
+        <div class="d-flex align-items-center border-top pt-4 pb-3">
 
-            <i class="fa-solid fa-quote-left text-primary"></i>
-            <p class="text-text ">Buildex delivered our project on time and exceeded our expectations. Their attention to detail is unmatched.</p>
+            <img
+                src="./assets/media/images/en/components/comment-profile.jpg"
+                alt="Michael Anderson"
+                class="rounded-circle review-card__avatar"
+            >
 
-            <span class="text-secondary">- Emily Wilson</span>
+            <div class="ms-3">
 
-            <div class="text-primary">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <h6 class="fs-title fw-bold text-title-text mb-0 mb-1">
+                    Michael Anderson
+                </h6>
+
+                <p class="text-muted small">
+                    Homeowner
+                </p>
+
+                <p class="text-primary fw-bold small">
+                    Residential Project
+                </p>
+
             </div>
 
         </div>
 
-    </div>                
-    <div class="comment w-100 ">
+    </div>
 
-        <div class="bg-dark border-0 h-100 p-4 rounded-3 d-flex flex-column gap-4 comment-hover transition-300">
+</div>                <div class="card-review h-100 border-0 shadow-sm review-card-item py-6 px-8 transition-150">
 
-            <i class="fa-solid fa-quote-left text-primary"></i>
-            <p class="text-text ">Buildex delivered our project on time and exceeded our expectations. Their attention to detail is unmatched.</p>
+    <div class="">
 
-            <span class="text-secondary">- Emily Wilson</span>
+        <div class="d-flex justify-content-between align-items-center mb-4">
 
-            <div class="text-primary">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+            <div class="text-warning small">
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+            </div>
+
+            <div class="review-card-quote">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path d="M4,3C2.343,3,1,4.343,1,6s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C3.782,10.168,2.493,11,1,11v2c3.309,0,6-2.691,6-6   V6C7,4.343,5.657,3,4,3z"/><path d="M12,3c-1.657,0-3,1.343-3,3s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C11.782,10.168,10.493,11,9,11v2   c3.309,0,6-2.691,6-6V6C15,4.343,13.657,3,12,3z"/></g><text x="0" y="31" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by icon 54</text><text x="0" y="36" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
             </div>
 
         </div>
 
-    </div>            </div>
+        <p class="fs-big text-text lh-lg mb-0 mb-5 ">
+            Buildex Construction exceeded our expectations from start to finish. Their team was professional, transparent, and delivered our dream home on time and within budget.
+        </p>
+
+        <div class="d-flex align-items-center border-top pt-4 pb-3">
+
+            <img
+                src="./assets/media/images/en/components/comment-profile.jpg"
+                alt="Michael Anderson"
+                class="rounded-circle review-card__avatar"
+            >
+
+            <div class="ms-3">
+
+                <h6 class="fs-title fw-bold text-title-text mb-0 mb-1">
+                    Michael Anderson
+                </h6>
+
+                <p class="text-muted small">
+                    Homeowner
+                </p>
+
+                <p class="text-primary fw-bold small">
+                    Residential Project
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                <div class="card-review h-100 border-0 shadow-sm review-card-item py-6 px-8 transition-150">
+
+    <div class="">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <div class="text-warning small">
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+                    <i class="fa-solid fa-star"></i>
+                
+            </div>
+
+            <div class="review-card-quote">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path d="M4,3C2.343,3,1,4.343,1,6s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C3.782,10.168,2.493,11,1,11v2c3.309,0,6-2.691,6-6   V6C7,4.343,5.657,3,4,3z"/><path d="M12,3c-1.657,0-3,1.343-3,3s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C11.782,10.168,10.493,11,9,11v2   c3.309,0,6-2.691,6-6V6C15,4.343,13.657,3,12,3z"/></g><text x="0" y="31" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by icon 54</text><text x="0" y="36" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+            </div>
+
+        </div>
+
+        <p class="fs-big text-text lh-lg mb-0 mb-5 ">
+            Buildex Construction exceeded our expectations from start to finish. Their team was professional, transparent, and delivered our dream home on time and within budget.
+        </p>
+
+        <div class="d-flex align-items-center border-top pt-4 pb-3">
+
+            <img
+                src="./assets/media/images/en/components/comment-profile.jpg"
+                alt="Michael Anderson"
+                class="rounded-circle review-card__avatar"
+            >
+
+            <div class="ms-3">
+
+                <h6 class="fs-title fw-bold text-title-text mb-0 mb-1">
+                    Michael Anderson
+                </h6>
+
+                <p class="text-muted small">
+                    Homeowner
+                </p>
+
+                <p class="text-primary fw-bold small">
+                    Residential Project
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>            </div>
         </div>
     </section>
 

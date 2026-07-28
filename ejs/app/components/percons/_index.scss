@@ -1,13 +1,24 @@
-.team-card i {
+.card-team i {
     width: 30px;
     height: 30px;
     transition: all 150ms ease-in-out;
 }
 
-.team-card i:hover {
+.card-team i:hover {
     color: var(--bs-primary);
 }
 
-.team-card img {
-    aspect-ratio: 1;
+.card-team:hover {
+  box-shadow: 0px 0px 8px 0px #96949470;
+}
+
+.cover {
+    background-color: rgba(128, 128, 128, 0.768);
+    z-index: 5;
+    transform: rotateX(90deg);
+    transition: all 300ms linear;
+}
+
+.card-team:hover .cover {
+  transform: rotateX(0deg);
 }

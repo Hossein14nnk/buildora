@@ -1,3 +1,4 @@
+@use "../../../assets/vendors/bootstrap/scss/mixins/_box-shadow" as *;
 .news-box a:hover {
     color: var(--bs-button);
 }
@@ -11,4 +12,13 @@
 
 .news-box a span:hover {
   color: var(--bs-button) !important;
+}
+
+.news-box:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--bs-box-shadow-lg) !important;
+}
+
+.news-box:hover h3 {
+    color: var(--bs-primary) !important;
 }

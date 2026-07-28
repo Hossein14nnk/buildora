@@ -1,6 +1,5 @@
 <%- include('../layouts/page/head.ejs' , {title: "our-blog" , addCount: 0}); -%>
-
-<!-- <main id="weblogs" class="d-flex flex-column pt-20"> -->
+    <%- include('../components/header/content.ejs', ); -%>
     <main id="weblogs" class="d-flex flex-column">
         <section id="blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center pt-20 pb-10">
             <div class="container d-flex gap-4 flex-column">
@@ -8,7 +7,9 @@
                 <h1 class="text-light fw-bold fs-big-title"><%- t.pages.ourBlog.heroTitle1 %>
                     <br><span class="text-primary"><%- t.pages.ourBlog.heroTitle2 %></span>
                 </h1>
-                <p class="text-text fw-medium fs-title"><%- t.pages.ourBlog.heroDescription %></p>
+                <p class="text-text fw-medium fs-title">
+                    <span class="fancy-txt"><%- t.pages.ourBlog.heroDescription %></span>
+                </p>
             </div>
         </section>
         <section class="container-fluid py-5">
@@ -27,174 +28,174 @@
                         <div class="row g-4">
 						
                             <div class="col-lg-4 col-6 d-flex">
-                                <div class="news-box shadow bg-white ">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
                                             <span class="text-text fs-normal"> <%- t.pages.ourBlog.date1 %></span>
                                         </div>
                                         <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title1 %></h3>
                                         <p class="fs-big text-text lh-lg mb-0"><%- t.pages.ourBlog.description %></p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.pages.ourBlog.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6 d-flex">
-                                <div class="news-box shadow bg-white">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category2 %></span>
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date2 %></span>
+                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date1 %></span>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title2 %></h3>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title1 %></h3>
                                         <p class="fs-big text-text lh-lg mb-0"><%- t.pages.ourBlog.description %></p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.pages.ourBlog.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6 d-flex">
-                                <div class="news-box shadow bg-white">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category3 %></span>
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date3 %></span>
+                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date1 %></span>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title3 %></h3>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title1 %></h3>
                                         <p class="fs-big text-text lh-lg mb-0"><%- t.pages.ourBlog.description %></p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.pages.ourBlog.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6 d-flex">
-                                <div class="news-box shadow bg-white">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category4 %></span>
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date4 %></span>
+                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date1 %></span>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title4 %></h3>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title1 %></h3>
                                         <p class="fs-big text-text lh-lg mb-0"><%- t.pages.ourBlog.description %></p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.pages.ourBlog.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6 d-flex">
-                                <div class="news-box shadow bg-white">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category5 %></span>
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date5 %></span>
+                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date1 %></span>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title5 %></h3>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title1 %></h3>
                                         <p class="fs-big text-text lh-lg mb-0"><%- t.pages.ourBlog.description %></p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.pages.ourBlog.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6 d-flex">
-                                <div class="news-box shadow bg-white">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category6 %></span>
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date6 %></span>
+                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date1 %></span>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title6 %></h3>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title1 %></h3>
                                         <p class="fs-big text-text lh-lg mb-0"><%- t.pages.ourBlog.description %></p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.pages.ourBlog.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6 d-flex">
-                                <div class="news-box shadow bg-white">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category7 %></span>
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date7 %></span>
+                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date1 %></span>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title7 %></h3>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title1 %></h3>
                                         <p class="fs-big text-text lh-lg mb-0"><%- t.pages.ourBlog.description %></p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.pages.ourBlog.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6 d-flex">
-                                <div class="news-box shadow bg-white">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category8 %></span>
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date8 %></span>
+                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date1 %></span>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title8 %></h3>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title1 %></h3>
                                         <p class="fs-big text-text lh-lg mb-0"><%- t.pages.ourBlog.description %></p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.pages.ourBlog.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6 d-flex">
-                                <div class="news-box shadow bg-white">
+                                <div class="news-box shadow bg-white transition-300">
                                     <div class="image p-3">
-                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category9 %></span>
+                                        <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
                                     </div>
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <a href="#" class="d-flex gap-3 p-3 flex-column">
                                         <div class="d-flex align-items-center gap-2 fs-normal">
                                             <i class="fa-solid fa-calendar text-text"></i>
-                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date9 %></span>
+                                            <span class="text-text fs-normal"> <%- t.pages.ourBlog.date1 %></span>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title9 %></h3>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.pages.ourBlog.title1 %></h3>
                                         <p class="fs-big text-text lh-lg mb-0"><%- t.pages.ourBlog.description %></p>
-                                        <a href="" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center">
+                                        <div href="#" class="fs-title fw-bold text-decoration-none d-flex gap-2 align-items-center btn-hover primary-hover">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.pages.ourBlog.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -273,65 +274,70 @@
 
                             </div>
 
-                            <div
-                                class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
-                                <h4 class="fw-bold fs-title"><%- t.pages.ourBlog.PopularBlog %></h4>
+                            <div class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
+                                <h4 class="fw-bold fs-title">Popular Blog</h4>
                                 <div class="border-bottom border-primary border-3" style="width:50px"></div>
                                 <div class="d-flex flex-column gap-5">
                                     <div class="pooular-post d-flex align-items-center gap-3">
-                                        <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/news.jpg', 'images'); %>"
-                                                alt="" class=" rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.ourBlog.blog1 %></a>
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/news.jpg " alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"> <%- t.pages.ourBlog.date1 %></span>
+                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="pooular-post d-flex align-items-center gap-3">
-                                        <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/projects.jpg', 'images'); %>"
-                                                alt="" class=" rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.ourBlog.blog2 %></a>
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/projects.jpg" alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"><%- t.pages.ourBlog.date2 %></span>
+                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="pooular-post d-flex align-items-center gap-2">
-                                        <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/ChatGPT2.png', 'images'); %>"
-                                                alt="" class=" rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.ourBlog.blog3 %></a>
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/ChatGPT2.png" alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"> <%- t.pages.ourBlog.date11 %></span>
+                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="pooular-post d-flex align-items-center gap-2">
-                                        <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/ChatGPT3.png', 'images'); %>"
-                                                alt="" class=" rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.ourBlog.blog4 %></a>
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/st-blog/ChatGPT3.png" alt="" class="rounded-1 object-fit-cover"> 
+                                            <i class="fa-solid fa-like"></i>
+                                        </div>
+                                        <a href="#" class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"> <%- t.pages.ourBlog.date4 %></span>
+                                                <span class="text-text fs-normal"> Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="pooular-post d-flex align-items-center gap-2 ">
-                                        <div class="image-post"> <img src="<%= getMedia(lang, 'st-blog/ChatGPT2.png', 'images'); %>"
-                                                alt="" class=" rounded-1 object-fit-cover"> </div>
-                                        <div class="d-flex gap-2 flex-column">
-                                            <a href="#" class="fs-big fw-bold text-title-text mb-0"><%- t.pages.ourBlog.blog5 %></a>
+                                    <div class="pooular-post d-flex align-items-center gap-2">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/components/news.jpg" alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0">1. 10 Construction Trends Shaping the Future</h6>
                                             <div class="d-flex align-items-center gap-2 fs-normal">
                                                 <i class="fa-solid fa-calendar text-primary"></i>
-                                                <span class="text-text fs-normal"><%- t.pages.ourBlog.date5 %></span>
+                                                <span class="text-text fs-normal">Oct 15, 2026</span>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

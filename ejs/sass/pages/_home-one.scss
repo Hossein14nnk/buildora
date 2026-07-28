@@ -171,3 +171,11 @@
 a {
     text-decoration-line: none;
 }
+
+#home-one #our-clients img {
+    filter: grayscale(1);
+}
+
+#home-one #our-clients img:hover {
+    filter: grayscale(0);
+}

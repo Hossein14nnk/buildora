@@ -133,8 +133,125 @@ navLinks.forEach(link => {
 
 });
 </script>>
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
 
-    <main class="d-flex flex-column pt-20" id="ar-project">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column" id="ar-project">
 
         <section id="hero" class="pt-20 conainer-fluid bg-on-secondary d-flex align-items-center">
             <div class="container d-flex gap-4 flex-column">
@@ -143,7 +260,7 @@ navLinks.forEach(link => {
                     <br><span class="text-primary">Through Every Project</span>
                 </h1>
                 <div class="bg-primary" style="width:60px;height:3px;"></div>
-                <p class="text-text fw-medium fs-title">Explore our diverse portfolio of successful projects across residential, commercial, and industrial sectors.</p>
+                <p class="text-text fw-medium fs-title"><span class="fancy-txt">Explore our diverse portfolio of successful projects across residential, commercial, and industrial sectors.</span> </p>
             </div>
         </section>
         <section class="container-fluid bg-section">
@@ -151,31 +268,31 @@ navLinks.forEach(link => {
                 <div class="d-flex align-items-center justify-content-between w-100 mb-5">
                     <ul class="d-flex align-items-center fw-semibold fs-small">
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 rounded-1 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark" href="#">
-                                ALL PROJECTS
+                            <a class="fs-normal text-dark primary-hover" href="#">
+                                 ALL PROJECTS
                             </a>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark" href="#">
+                            <a class="fs-normal text-dark primary-hover" href="#">
                                   RESIDENTIAL
                             </a>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark" href="#">
+                            <a class="fs-normal text-dark primary-hover" href="#">
                                 INTERIOR
                             </a>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark" href="#">
+                            <a class="fs-normal text-dark primary-hover" href="#">
                                   INDUSTRIAL
                             </a>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark" href="#">
+                            <a class="fs-normal text-dark primary-hover" href="#">
                                  INFRASTRUCTURE
                             </a>
                         </li>
@@ -190,11 +307,11 @@ navLinks.forEach(link => {
                 <div class="wrapper col-xl-12 g-2">
                     <div class="row g-4">
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <div class="project-card shadow bg-white w-100">
-    <div class="image p-3">
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+    <div class="image p-3 overflow-hidden transition-300 ">
         <span class="fs-normal rounded-1 cat-badg"> commercial</span>
     </div>
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
         <div class="d-flex gap-3 flex-column">
             <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
             <div>
@@ -202,28 +319,6 @@ navLinks.forEach(link => {
                 <span class="text-text fs-normal"> Miami,USA</span>
             </div>
         </div>
-        
-        
-        <a href="" class="fs-title fw-bold card-button transition">
-            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
-        </a>
-    </div>
-</div>            
-                        </div>
-                        <div class="col-md-6 col-xl-4 d-flex">
-                            <div class="project-card shadow bg-white w-100">
-    <div class="image p-3">
-        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
-    </div>
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
-        <div class="d-flex gap-3 flex-column">
-            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
-            <div>
-                <i class="fa-solid fa-location-dot"></i>
-                <span class="text-text fs-normal"> Miami,USA</span>
-            </div>
-        </div>
-        
         
         <a href="" class="fs-title fw-bold card-button transition">
             <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
@@ -231,11 +326,11 @@ navLinks.forEach(link => {
     </div>
 </div>                        </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <div class="project-card shadow bg-white w-100">
-    <div class="image p-3">
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+    <div class="image p-3 overflow-hidden transition-300 ">
         <span class="fs-normal rounded-1 cat-badg"> commercial</span>
     </div>
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
         <div class="d-flex gap-3 flex-column">
             <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
             <div>
@@ -243,7 +338,6 @@ navLinks.forEach(link => {
                 <span class="text-text fs-normal"> Miami,USA</span>
             </div>
         </div>
-        
         
         <a href="" class="fs-title fw-bold card-button transition">
             <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
@@ -251,11 +345,11 @@ navLinks.forEach(link => {
     </div>
 </div>                        </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                           <div class="project-card shadow bg-white w-100">
-    <div class="image p-3">
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+    <div class="image p-3 overflow-hidden transition-300 ">
         <span class="fs-normal rounded-1 cat-badg"> commercial</span>
     </div>
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
         <div class="d-flex gap-3 flex-column">
             <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
             <div>
@@ -263,7 +357,6 @@ navLinks.forEach(link => {
                 <span class="text-text fs-normal"> Miami,USA</span>
             </div>
         </div>
-        
         
         <a href="" class="fs-title fw-bold card-button transition">
             <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
@@ -271,11 +364,11 @@ navLinks.forEach(link => {
     </div>
 </div>                        </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <div class="project-card shadow bg-white w-100">
-    <div class="image p-3">
+                           <div class="project-card shadow bg-white w-100 overflow-hidden ">
+    <div class="image p-3 overflow-hidden transition-300 ">
         <span class="fs-normal rounded-1 cat-badg"> commercial</span>
     </div>
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
         <div class="d-flex gap-3 flex-column">
             <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
             <div>
@@ -283,7 +376,6 @@ navLinks.forEach(link => {
                 <span class="text-text fs-normal"> Miami,USA</span>
             </div>
         </div>
-        
         
         <a href="" class="fs-title fw-bold card-button transition">
             <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
@@ -291,11 +383,11 @@ navLinks.forEach(link => {
     </div>
 </div>                        </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                           <div class="project-card shadow bg-white w-100">
-    <div class="image p-3">
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+    <div class="image p-3 overflow-hidden transition-300 ">
         <span class="fs-normal rounded-1 cat-badg"> commercial</span>
     </div>
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
         <div class="d-flex gap-3 flex-column">
             <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
             <div>
@@ -303,7 +395,6 @@ navLinks.forEach(link => {
                 <span class="text-text fs-normal"> Miami,USA</span>
             </div>
         </div>
-        
         
         <a href="" class="fs-title fw-bold card-button transition">
             <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
@@ -311,11 +402,11 @@ navLinks.forEach(link => {
     </div>
 </div>                        </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <div class="project-card shadow bg-white w-100">
-    <div class="image p-3">
+                           <div class="project-card shadow bg-white w-100 overflow-hidden ">
+    <div class="image p-3 overflow-hidden transition-300 ">
         <span class="fs-normal rounded-1 cat-badg"> commercial</span>
     </div>
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
         <div class="d-flex gap-3 flex-column">
             <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
             <div>
@@ -323,7 +414,6 @@ navLinks.forEach(link => {
                 <span class="text-text fs-normal"> Miami,USA</span>
             </div>
         </div>
-        
         
         <a href="" class="fs-title fw-bold card-button transition">
             <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
@@ -331,11 +421,11 @@ navLinks.forEach(link => {
     </div>
 </div>                        </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <div class="project-card shadow bg-white w-100">
-    <div class="image p-3">
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+    <div class="image p-3 overflow-hidden transition-300 ">
         <span class="fs-normal rounded-1 cat-badg"> commercial</span>
     </div>
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
         <div class="d-flex gap-3 flex-column">
             <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
             <div>
@@ -343,7 +433,6 @@ navLinks.forEach(link => {
                 <span class="text-text fs-normal"> Miami,USA</span>
             </div>
         </div>
-        
         
         <a href="" class="fs-title fw-bold card-button transition">
             <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
@@ -351,11 +440,11 @@ navLinks.forEach(link => {
     </div>
 </div>                        </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <div class="project-card shadow bg-white w-100">
-    <div class="image p-3">
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+    <div class="image p-3 overflow-hidden transition-300 ">
         <span class="fs-normal rounded-1 cat-badg"> commercial</span>
     </div>
-    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between">
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
         <div class="d-flex gap-3 flex-column">
             <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
             <div>
@@ -364,6 +453,24 @@ navLinks.forEach(link => {
             </div>
         </div>
         
+        <a href="" class="fs-title fw-bold card-button transition">
+            <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+        </a>
+    </div>
+</div>                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex">
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+    <div class="image p-3 overflow-hidden transition-300 ">
+        <span class="fs-normal rounded-1 cat-badg"> commercial</span>
+    </div>
+    <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
+        <div class="d-flex gap-3 flex-column">
+            <h3 class="fs-title fw-bold text-title-text mb-0">Skyline Tower</h3>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-text fs-normal"> Miami,USA</span>
+            </div>
+        </div>
         
         <a href="" class="fs-title fw-bold card-button transition">
             <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
@@ -389,7 +496,7 @@ navLinks.forEach(link => {
                     <p class="text-text">We combine expert craftsmanship, innovative solutions, and a client-first approach to deliver projects that stand the test of time</p>
                     
                     
-                    <a href="./output/en/pages/home-one.html" class="bg-primary text-dark py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content">
+                    <a href="./output/en/pages/home-one.html" class="btn-hover bg-primary text-dark py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content">
                         <span class="fs-small text-uppercase ">WORK WITH US</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>

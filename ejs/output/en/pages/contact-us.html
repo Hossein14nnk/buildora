@@ -133,15 +133,134 @@ navLinks.forEach(link => {
 
 });
 </script>>
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
 
-    <main id="contact-us" class="d-flex flex-column pt-20">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main id="contact-us" class="d-flex flex-column">
         <section id="contact-hero" class="conainer-flouds bg-on-secondary d-flex align-items-center pt-20">
             <div class="container d-flex gap-4 flex-column py-6">
                 <span class="text-primary fw-bold fs-normal">OUR BLOG</span>
                 <h1 class="text-light fw-bold fs-big-title">Insights, Ideas & Inspiration
                     <br><span class="text-primary">For Better Building</span>
                 </h1>
-                <p class="text-text fw-medium fs-title">Stay updated with the latest trends, expert insights, and practical tips from the construction industry.</p>
+                <p class="text-text fw-medium fs-title">
+                    <span class="fancy-txt">Stay updated with the latest trends, expert insights, and practical tips from the construction industry.</span>
+                </p>
             </div>
         </section>
         <section id="" class="conainer-flouds">
@@ -240,7 +359,7 @@ navLinks.forEach(link => {
                            </div>
                              <div class="contact-details d-flex flex-column align-items-start gap-3">
     <div class="d-flex flex-row align-items-center gap-4 w-100 bg-white py-2 px-3 rounded-1 hover">
-        <i class="fa-solid fa-location-dot text-primary fs-high-title py-2 px-4 icon"></i>
+        <i class="fa-solid fa-location-dot text-primary fs-mid-title py-2 px-4 icon"></i>
         <div class="d-flex flex-column align-items-start">
             <h4 class="fs-title fw-bold">Address</h4>
             <span class="fs-big fw-semibold">123 Construction Ave, New York, NY 10001, USA</span>
@@ -248,23 +367,23 @@ navLinks.forEach(link => {
     </div>
 
     <div class="d-flex flex-row align-items-center gap-4 w-100 bg-white py-2 px-3 rounded-1 hover">
-        <i class="fa-solid fa-phone text-primary fs-high-title py-2 icon"></i>
+        <i class="fa-solid fa-phone text-primary fs-mid-title py-2 icon"></i>
         <div class="d-flex flex-column align-items-start">
             <h4 class="fs-title fw-bold">Phone</h4>
-            <span class="fs-big fw-semibold">+1 212 555 7890</span>
+            <a href="#" class="primary-hover text-dark"><span class="fs-big fw-semibold">+1 212 555 7890</span></a>
         </div>
     </div>
 
     <div class="d-flex flex-row align-items-center gap-4 w-100 bg-white py-2 px-3 rounded-1 hover">
-        <i class="fa-solid fa-envelope text-primary fs-high-title py-2 icon"></i>
+        <i class="fa-solid fa-envelope text-primary fs-mid-title py-2 icon"></i>
         <div class="d-flex flex-column align-items-start">
             <h4 class="fs-title fw-bold">Email</h4>
-            <span class="fs-big fw-semibold">info@buildex.com</span>
+            <a href="#" class="primary-hover text-dark"><span class="fs-big fw-semibold">info@buildex.com</span></a>
         </div>
     </div>
 
     <div class="d-flex flex-row align-items-center gap-4 w-100 bg-white py-2 px-3 rounded-1 hover">
-        <i class="fa-solid fa-clock text-primary fs-high-title py-2 icon"></i>
+        <i class="fa-solid fa-clock text-primary fs-mid-title py-2 icon"></i>
         <div class="d-flex flex-column align-items-start">
             <h4 class="fs-title fw-bold">Working Hours</h4>
             <span class="fs-big fw-semibold">Mon-Sat: 8:00 AM 6:00 PM</span>
@@ -280,24 +399,24 @@ navLinks.forEach(link => {
 
                                 <div class="social gap-2 d-flex flex-row align-items-center">
 
-                                    <a href="#" style="width: 30px; height: 30px;"
-                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border ">
-                                        <i class="fab fa-facebook-f "></i>
+                                    <a href="#" style="width: 30px; height: 30px; "
+                                        class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
+                                        <i class="fab fa-facebook-f transition-150 primary-hover"></i>
                                     </a>
 
                                     <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
-                                        <i class="fab fa-linkedin-in "></i>
+                                        <i class="fab fa-linkedin-in transition-150 primary-hover"></i>
                                     </a>
 
                                     <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
-                                        <i class="fab fa-instagram "></i>
+                                        <i class="fab fa-instagram transition-150 primary-hover"></i>
                                     </a>
 
                                     <a href="#" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
-                                        <i class="fab fa-youtube "></i>
+                                        <i class="fab fa-youtube transition-150 primary-hover"></i>
                                     </a>
 
                                 </div>

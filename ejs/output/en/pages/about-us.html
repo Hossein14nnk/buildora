@@ -133,8 +133,125 @@ navLinks.forEach(link => {
 
 });
 </script>>
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
 
-    <main class="d-flex flex-column pt-20" id="about-us">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column" id="about-us">
 
         <section class="hero pt-20 text-secondary-text ">
             <div class="container">
@@ -145,7 +262,7 @@ navLinks.forEach(link => {
                     <h1 class="fw-semibold">Building More Than Structures</h1>
 
                     <p class="fw-medium fs-title">
-                        We are a leading construction company delivering innovative and sustainable solutions across residential, commercial and industrial sectors.
+                       <span class="fancy-txt" > We are a leading construction company delivering innovative and sustainable solutions across residential, commercial and industrial sectors.</span>
                     </p>
 
                     <a href="./output/en/pages/home-one.html" class="rounded-3 bg-button px-5 py-2 text-button-text mt-2 d-flex gap-6 align-items-center fw-bold fs-subtitle">
@@ -368,41 +485,64 @@ navLinks.forEach(link => {
 
         <section class="introductionb bg-card">
             <div class="container overflow-x-scroll">
-                <div class="wrapper d-flex gap-4">
-                    <div class="col-3">
-                        <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
-    <img src="./assets/media/images/en/components/feuture1.png" class="img-size">
-    <div class="d-flex flex-column align-items-start gap-1">
-        <h3 class="fs-mid-title fw-bold">Project Planning</h3>
-        <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
-    </div>
-</div>                    </div>
-                    <div class="col-3">
-                        <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
-    <img src="./assets/media/images/en/components/feuture1.png" class="img-size">
-    <div class="d-flex flex-column align-items-start gap-1">
-        <h3 class="fs-mid-title fw-bold">Project Planning</h3>
-        <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
-    </div>
-</div>                    </div>
-                    <div class="col-3">
-                        <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
-    <img src="./assets/media/images/en/components/feuture1.png" class="img-size">
-    <div class="d-flex flex-column align-items-start gap-1">
-        <h3 class="fs-mid-title fw-bold">Project Planning</h3>
-        <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
-    </div>
-</div>                    </div>
-                    <div class="col-3">
-                        <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
-    <img src="./assets/media/images/en/components/feuture1.png" class="img-size">
-    <div class="d-flex flex-column align-items-start gap-1">
-        <h3 class="fs-mid-title fw-bold">Project Planning</h3>
-        <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
-    </div>
-</div>                    </div>
-                   
-                </div>
+                <div class="row ">
+
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 ">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector1.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector2.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector3.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector4.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector5.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
+                                <img src="./assets/media/images/en/demo1/vector6.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">Project Planning</h3>
+                                    <span class="fs-big fw-semibold">We develop detailed plans and strategies to ensure your project starts on the right track.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                  
             </div>
             <!-- <div class="container position-relative statistics">
@@ -474,77 +614,97 @@ navLinks.forEach(link => {
                 
                 <div class="row justify-content-center row-gap-4 column-gap-xxl-4">
                     <div class="col-5 col-xl-2 col-md-4">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Project Manager</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-5 col-xl-2 col-md-4">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(19).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Project Manager</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-5 col-xl-2 col-md-4">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(18).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Project Manager</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-5 col-xl-2 col-md-4">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(21).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Project Manager</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-5 col-xl-2 col-md-4">
-                       <div class="team-card shadow bg-white d-flex flex-column gap-3">
-                            <img class="w-100 object-fit-fill" src="./assets/media/images/en/demo1/image(20).jpg" alt="">
-                            <div class="d-flex flex-column gap-3 p-3">
-                                <h3 class="fs-title fw-bold text-title-text mb-0">James Anderson</h3>
-                                <span class="fs-big fw-semibold text-text">Project Manager</span>
-                                <div class="d-flex gap-3 mt-2">
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
-                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal"></i>
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Project Manager</p>
                             </div>
                         </div>
                     </div>
