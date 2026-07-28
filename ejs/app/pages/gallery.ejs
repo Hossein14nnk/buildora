@@ -1,5 +1,5 @@
 <%- include('../layouts/page/head.ejs' , {title: "gallery", addCount: 0}); -%>
-    <%- include('../components/header/content.ejs', ); -%>
+
     <main class="d-flex flex-column pt-20" id="gallery">
 
         <section class="hero py-20 text-secondary-text d-flex justify-content-start">
@@ -195,9 +195,4 @@
     </main>
 
     <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
-
-    <script src="./assets/js/mizchin.min.js"></script>
-</body>
-
-</html>
-
+<%- include('../layouts/page/foot.ejs'); -%>

@@ -1,9 +1,9 @@
 <%- include('../layouts/page/head.ejs' , {title: "ar-project", addCount: 0}); -%>
 
-    <%- include('../components/header/content.ejs', ); -%>
+
     <main class="d-flex flex-column pt-20" id="ar-project">
 
-        <section id="" class="pt-20 conainer-fluid bg-on-secondary d-flex align-items-center">
+        <section id="hero" class="pt-20 conainer-fluid bg-on-secondary d-flex align-items-center">
             <div class="container d-flex gap-4 flex-column">
                 <span class="text-primary fw-bold fs-normal"><%- t.pages.arProject.heroSubtitle %></span>
                 <h1 class="text-light fw-bold fs-big-title"><%- t.pages.arProject.heroTitle1 %>
@@ -19,7 +19,7 @@
                     <ul class="d-flex align-items-center fw-semibold fs-small">
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 rounded-1 px-sm-2 py-2 d-flex align-items-center">
                             <a class="fs-normal text-dark" href="#">
-                                 <%- t.pages.arProject.filter1 %>
+                                <%- t.pages.arProject.filter1 %>
                             </a>
                         </li>
 
@@ -149,8 +149,4 @@
 
 
     <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
-
-    <script src="./assets/js/mizchin.min.js"></script>
-</body>
-
-</html>
+<%- include('../layouts/page/foot.ejs'); -%>
