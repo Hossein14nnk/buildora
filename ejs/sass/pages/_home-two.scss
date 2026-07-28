@@ -1,15 +1,11 @@
-@use "../../assets/vendors/bootstrap/scss/_functions" as *;
-
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
-
 
 #second-demo .hero {
     background-image:linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../../../assets/media/images/en/demo2/ChatGPT1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
 
 #second-demo .hero .view {
     transition: all 150ms ease-in-out;

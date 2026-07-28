@@ -3,7 +3,7 @@
     <%- include('../components/header/content.ejs', ); -%>
     <main class="d-flex flex-column" id="ar-project">
 
-        <section id="" class="pt-20 conainer-fluid bg-on-secondary d-flex align-items-center">
+        <section id="hero" class="pt-20 conainer-fluid bg-on-secondary d-flex align-items-center">
             <div class="container d-flex gap-4 flex-column">
                 <span class="text-primary fw-bold fs-normal"><%- t.pages.arProject.heroSubtitle %></span>
                 <h1 class="text-light fw-bold fs-big-title"><%- t.pages.arProject.heroTitle1 %>
@@ -148,8 +148,4 @@
 
 
     <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
-
-    <script src="./assets/js/mizchin.min.js"></script>
-</body>
-
-</html>
+<%- include('../layouts/page/foot.ejs'); -%>
