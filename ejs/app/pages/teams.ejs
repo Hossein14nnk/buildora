@@ -29,12 +29,8 @@
                 </div>
                 <div class="project-managers row align-items-stretch justify-content-center row-gap-6 column-gap-lg-2">
                     <div class="col-6 col-lg-2 col-md-4  flex-grow-1">
-<<<<<<< HEAD
-                        <div class="card d-flex flex-column w-100 bg-card">
-=======
                         
                         <div class="card-team d-flex flex-column w-100 bg-card">
->>>>>>> cfd1e19adf4b248b6ac77dc0625dde138167b1ec
                             <div class="wrapper-img d-flex flex-column position-relative w-100 ">
                                 <img src="./assets/media/images/en/teams/percon1.jpg" class="w-100">
                                 <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
@@ -249,7 +245,7 @@
                     <p class="text-text">
                         <%- t.pages.teams.sectiontreedescription %>
                     </p>
-                    <a href="#" class="btn-hover bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
+                    <a href="<%= navigation(lang, 'contact-us.html') %>" class="btn-hover bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
                         <span class="fs-small text-uppercase"><%- t.pages.teams.sectiontreebtn %></span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -265,5 +261,4 @@
             </div>
         </section>
     </main>
-    <%#- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
 <%- include('../layouts/page/foot.ejs') %>
