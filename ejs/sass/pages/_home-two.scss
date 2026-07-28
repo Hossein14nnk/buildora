@@ -2,9 +2,9 @@
 @use "../../miz/sass/global-functions/_colors" as *;
 
 #second-demo .hero {
-    background-image:linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../../../assets/media/images/en/demo2/ChatGPT1.png");
+    background-image:linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/demo2/pic8.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 #second-demo .hero .view {
@@ -87,4 +87,11 @@
 
 #second-demo .wrapper2 img {
     width: 100px;
+}
+
+
+@media (min-width: 1200px) {
+  #second-demo .about .wrapper .item:not(:last-child){
+    border-right: 1px dashed #555353;
+}
 }

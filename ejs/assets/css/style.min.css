@@ -222,9 +222,9 @@ a {
 }
 
 #about-us .hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/about-us/photo-1486406146926-c627a92ad1ab.jpg");
+  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/about-us/pic5.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 #about-us .hero a i {
@@ -718,9 +718,9 @@ article:hover .fancy-txt2 {
   }
 }
 #second-demo .hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../../../assets/media/images/en/demo2/ChatGPT1.png");
+  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/demo2/pic8.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 #second-demo .hero .view {
@@ -806,6 +806,11 @@ article:hover .fancy-txt2 {
   width: 100px;
 }
 
+@media (min-width: 1200px) {
+  #second-demo .about .wrapper .item:not(:last-child) {
+    border-right: 1px dashed #555353;
+  }
+}
 #ar-project .wrapper div:nth-child(1) .image {
   background-image: url("../../assets/media/images/en/gallery/ChatGPT1.png");
   background-size: 100% 100%;
