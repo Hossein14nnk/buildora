@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
-<body class="font-primary">    <header class="header">
+<body class="font-primary">
+    <header class="header">
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
 
@@ -131,16 +132,19 @@ navLinks.forEach(link => {
     });
 
 });
-</script>    <main class="d-flex flex-column pt-20" id="plans">
+</script>>
+    <main class="d-flex flex-column" id="plans">
 
-        <section class="hero text-white d-flex flex-column w-100 gap-20">
+        <section id="hero" class="text-white d-flex flex-column w-100 gap-20">
 
             <div class="container d-flex flex-column gap-4 py-10">
 
                 <span class="text-primary text-uppercase fw-bold fs-title d-block">PRICING PLANS</span>
 
-                <h1 class="fw-bold text-uppercase d-flex flex-column fs-mega-title">
+                <!-- <h1 class="fw-bold text-uppercase d-flex flex-column fs-mega-title"> -->
+                <h1 class="fw-bold text-uppercase fs-mega-title">
                     Transparent Pricing
+                    <br>
                     <span class="text-primary">Exceptional Value</span>
                 </h1>
 
@@ -154,7 +158,7 @@ navLinks.forEach(link => {
 
         </section>
 
-        <section class="plans">
+        <section id="plans">
             <div class="container d-flex flex-column gap-6">
 
                 <div class="">
@@ -306,7 +310,7 @@ navLinks.forEach(link => {
                 <h2 class="fw-bold text-center fs-mid-title">Whats Included In Every Plan</h2>
 
                 <div class="row text-center align-items-center gap-2">
-                    <div id="featureCard" class="container-fluid d-flex px-5 py-4 flex-wrap rounded-1">
+                    <div id="feature-cards" class="container-fluid d-flex px-5 py-4 flex-wrap rounded-1">
     <div class="feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start col-lg-3 col-md-6">
         <img class="feature-icon" src="./assets/media/images/en/components/feature-icon1.png" alt="">
         <h3 class="fs-title text-center">Experienced Team</h3>
@@ -333,7 +337,7 @@ navLinks.forEach(link => {
             </div>
         </section>
         
-        <section class="pricing">
+        <section id="pricing">
             <div class="container d-flex flex-column gap-8">
 
                 <div class="d-flex flex-column gap-2 text-center">
@@ -605,7 +609,10 @@ navLinks.forEach(link => {
 
         </div>
     </footer>
-    
+    <script src="./assets/vendors/gsap/SplitText.min.js"></script>
+    <script src="./assets/vendors/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/vendors/gsap/gsap.min.js"></script>
+    <script src="./assets/js/animations.js"></script>
     <script src="./assets/js/mizchin.min.js"></script>
 </body>
 
