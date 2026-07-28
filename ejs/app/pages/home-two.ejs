@@ -23,13 +23,13 @@
 
                     <div class="d-flex gap-3 mt-4 align-items-center">
 
-                        <a href="<%= navigation(lang, 'ar-services.html') %>" class="service px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center gap-2 border-primary border">
-                            <%- t.pages.homeTwo.btnHero1 %>
-                            <i class="fa-solid fa-arrow-right"></i>
+                        <a href="<%= navigation(lang, 'ar-services.html') %>" class="service px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center border-primary border gap-2">
+                            <span ><%- t.pages.homeTwo.btnHero1 %></span>
+                            <i class="fa-solid fa-arrow-right "></i>
                         </a>
 
                         <a href="<%= navigation(lang, 'ar-projects.html') %>" class="view px-4 py-2 fw-semibold rounded-1 fs-big d-flex justify-content-center align-items-center border-primary border gap-2">
-                           <%- t.pages.homeTwo.btnHero2 %>
+                            <span><%- t.pages.homeTwo.btnHero2 %></span>
                             <i class="fa-solid fa-arrow-right text-primary"></i>
                         </a>
 
@@ -175,9 +175,9 @@
     </section>
 
     <section class="about py-0 ">
-            <div class="row bg-dark flex-column flex-lg-row ps-0 ps-xxl-20 ps-xl-20 ps-lg-20 ps-md-10">
+            <div class="row gap-0 bg-dark flex-column flex-lg-row ps-10 ps-xxl-20 ps-xl-20 ps-lg-20 ps-md-10 ">
 
-                <div class=" text-secondary py-8 bg-dark col-12 col-lg-5">
+                <div class="px-0 text-secondary py-8 bg-dark col-12 col-lg-5">
                     <div class=" d-flex flex-column gap-3 align-items-start">
 
                         <span class="text-uppercase text-secondary fs-big"><%- t.pages.homeTwo.sectiontreeSubtitle %></span>
@@ -191,30 +191,30 @@
                            <%- t.pages.homeTwo.sectiontreedescription %>
                         </p>
 
-                        <div class="row g-4 my-1">
+                        <div class="wrapper row">
 
-                            <div class="item col-6 col-md-3 text-center d-flex flex-column gap-3 border-end border-start ">
+                            <div class="item px-0 col-6 col-md-3 text-center d-flex flex-column gap-3">
                                 <i class="fa-solid fa-shield-halved text-primary"></i>
                                 <p class="fw-semibold fs-big px-3">
                                   <%- t.pages.homeTwo.sectiontreefeature1 %>
                                 </p>
                             </div>
 
-                            <div class="item col-6 col-md-3 text-center d-flex flex-column gap-3 border-end border-start ">
+                            <div class="item px-0 col-6 col-md-3 text-center d-flex flex-column gap-3">
                                 <i class="fa-solid fa-seedling text-primary"></i>
                                 <p class="fw-semibold fs-big px-3">
                                    <%- t.pages.homeTwo.sectiontreefeature2 %>
                                 </p>
                             </div>
 
-                            <div class="item col-6 col-md-3 text-center d-flex flex-column gap-3 border-end border-start ">
+                            <div class="item px-0 col-6 col-md-3 text-center d-flex flex-column gap-3">
                                 <i class="fa-solid fa-helmet-safety text-primary"></i>
                                 <p class="fw-semibold fs-big px-3">
                                     <%- t.pages.homeTwo.sectiontreefeature3 %>
                                 </p>
                             </div>
 
-                            <div class="item col-6 col-md-3 text-center d-flex flex-column gap-3 border-end border-start">
+                            <div class="item px-0 col-6 col-md-3 text-center d-flex flex-column gap-3">
                                 <i class="fa-regular fa-clock text-primary"></i>
                                 <p class="fw-semibold fs-big px-3">
                                    <%- t.pages.homeTwo.sectiontreefeature4 %>
@@ -231,59 +231,44 @@
                     </div>
                 </div>
 
-                <div class=" d-flex flex-column col-12 col-lg-7">
+                <div class="d-flex flex-column col-11 col-lg-7">
 
                     <div class="contain-img position-relative h-100 w-100 p-20"></div>
 
-                    
-                        <div class="bg-white rounded-4 shadow-lg py-4 px-5">
+                    <div class="text-center bg-card d-flex">
 
-                            <div class="row text-center g-4">
-
-                                <div class="col-md-3 d-flex line justify-content-center gap-6">
-                                    <img src="<%= getMedia(lang, 'components/cycle-icon1.png', 'images'); %>" width="40">
-                                    <div  class="d-flex flex-column">
-                                        <span class="fw-bold text-muted fs-mid-title counter" data-value="25"></span>
-                                        <span class="text-muted">
-                                            <%- t.components.statistics.text1 %>
-                                        </span>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-3 d-flex line justify-content-center gap-6">
-                                    <img src="<%= getMedia(lang, 'components/cycle-icon2.png', 'images'); %>" width="20">
-                                    <div class="d-flex flex-column">
-                                        <span class="fw-bold text-muted fs-mid-title counter" data-value="1530"></span>
-                                        <span class="text-muted">
-                                        <%- t.components.statistics.text2 %>
-                                        </span>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-3 d-flex line justify-content-center gap-6">
-                                    <img src="<%= getMedia(lang, 'components/cycle-icon3.png', 'images'); %>" width="20">
-                                    <div  class="d-flex flex-column">
-                                        <span class="fw-bold text-muted fs-mid-title counter" data-value="1310"></span>
-                                        <span class="text-muted">
-                                        <%- t.components.statistics.text3 %>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 d-flex justify-content-center gap-6">
-                                    <img src="<%= getMedia(lang, 'components/cycle-icon4.png', 'images'); %>" width="20">
-                                <div  class="d-flex flex-column">
-                                        <span class="fw-bold text-muted fs-mid-title counter" data-value="50"></span>
-                                        <span class="text-muted">
-                                        <%- t.components.statistics.text4 %>
-                                        </span>
-                                </div>
-                                </div>
+                        <div class=" col-md-4 col-12 d-flex line justify-content-center gap-2">
+                            <img src="<%= getMedia(lang, 'components/icob (1).png', 'images'); %>" width="50px">
+                            <div  class="d-flex flex-column">
+                                <h2 class="fw-bold mt-2 text-muted fs-mid-title">25+</h2>
+                                <span class="text-muted">
+                                    <%- t.components.statistics.text1 %>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class=" col-md-4 col-12 d-flex line justify-content-center gap-2">
+                            <img src="<%= getMedia(lang, 'components/icob (2).png', 'images'); %>" width="50px">
+                            <div class="d-flex flex-column">
+                                <h2 class="fw-bold mt-2 text-muted fs-mid-title">1530+</h2>
+                                <span class="text-muted">
+                                <%- t.components.statistics.text2 %>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class=" col-md-4 col-12 d-flex justify-content-center gap-2">
+                            <img src="<%= getMedia(lang, 'components/icob (3).png', 'images'); %>" width="50px">
+                            <div  class="d-flex flex-column">
+                                <h2 class="fw-bold mt-2 text-muted fs-mid-title">1310+</h2>
+                                <span class="text-muted">
+                                <%- t.components.statistics.text3 %>
+                                </span>
                             </div>
                         </div>
 
+                        
                     </div>
-                    
                     
                 </div>
 
@@ -300,67 +285,70 @@
 
                 <div style="width:60px;height:4px;" class="bg-primary rounded-4"></div>
             </div>
-            <div class="d-flex flex-wrap">
-                <div class="px-2 col-6 col-md-3">
-                    <div class="secondary-project-card2 shadow bg-white position-relative">
-                        <img class="w-100 " src="<%- getMedia(lang, 'demo1/ChatGPT1.png', 'images') %>" class="img-size">
-                        <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
+            <div class="d-flex flex-wrap row-gap-3">
+                <div class="px-2 col-12 col-lg-3 col-sm-6">
+                    <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
+                        <img src="<%- getMedia(lang, 'demo1/homepage-section2.jpg', 'images') %>" class="img-size w-100 ">
+
+                        <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
                             <div class="d-flex gap-2 flex-column">
-                                <h3 class="fs-title fw-bold text-secondary mb-0"><%- t.components.projectCard.title %></h3>
+                                <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title %></h3>
                                 <span class="text-secondary fs-normal"> <%- t.components.projectCard.location %></span>
                             </div>
-                            
-                            
-                            <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button transition">
-                                <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
+
+                            <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                <i class="fa-solid fa-arrow-right-long "></i> 
                             </a>
                         </div>
                     </div> 
                 </div>
-                <div class="px-2 col-6 col-md-3">
-                    <div class="secondary-project-card2 shadow bg-white position-relative">
-                        <img class="w-100 " src="<%- getMedia(lang, 'demo1/herohomepage.png', 'images') %>" class="img-size">
-                        <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
+                <div class="px-2 col-12 col-lg-3 col-sm-6">
+                    <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
+                        <img src="<%- getMedia(lang, 'demo2/ChatGPT1.png', 'images') %>" class="img-size w-100 ">
+
+                        <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
                             <div class="d-flex gap-2 flex-column">
-                                <h3 class="fs-title fw-bold text-secondary mb-0"><%- t.components.projectCard.title %></h3>
+                                <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title %></h3>
                                 <span class="text-secondary fs-normal"> <%- t.components.projectCard.location %></span>
                             </div>
                             
                             
-                            <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button transition">
-                                <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
+                            <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                <i class="fa-solid fa-arrow-right-long "></i> 
                             </a>
                         </div>
                     </div> 
                 </div>
-                <div class="px-2 col-6 col-md-3">
-                    <div class="secondary-project-card2 shadow bg-white position-relative">
-                        <img class="w-100 " src="<%- getMedia(lang, 'demo1/homepage-section2.jpg', 'images') %>" class="img-size">
-                        <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
+                <div class="px-2 col-12 col-lg-3 col-sm-6">
+                    <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
+                        <img src="<%- getMedia(lang, 'demo1/ChatGPT2.png', 'images') %>" class="img-size w-100 ">
+
+                        <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
                             <div class="d-flex gap-2 flex-column">
-                                <h3 class="fs-title fw-bold text-secondary mb-0"><%- t.components.projectCard.title %></h3>
+                                <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title %></h3>
                                 <span class="text-secondary fs-normal"> <%- t.components.projectCard.location %></span>
                             </div>
                             
                             
-                            <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button transition">
-                                <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
+                            <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                <i class="fa-solid fa-arrow-right-long "></i> 
                             </a>
                         </div>
                     </div> 
                 </div>
-                <div class="px-2 col-6 col-md-3">
-                    <div class="secondary-project-card2 shadow bg-white position-relative">
-                        <img class="w-100 " src="<%- getMedia(lang, 'demo1/ChatGPT4.png', 'images') %>" class="img-size">
-                        <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between position-absolute bottom-0 w-100"> 
+                <div class="px-2 col-12 col-lg-3 col-sm-6">
+                    <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
+                        <img src="<%- getMedia(lang, 'demo1/ChatGPT4.png', 'images') %>" class="img-size w-100 ">
+
+                        <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
                             <div class="d-flex gap-2 flex-column">
-                                <h3 class="fs-title fw-bold text-secondary mb-0"><%- t.components.projectCard.title %></h3>
+                                <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title %></h3>
                                 <span class="text-secondary fs-normal"> <%- t.components.projectCard.location %></span>
                             </div>
                             
-                            
-                            <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button transition">
-                                <i class="fa-solid fa-arrow-right-long transition text-secondary"></i> 
+
+                            <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                <i class="fa-solid fa-arrow-right-long "></i> 
                             </a>
                         </div>
                     </div> 

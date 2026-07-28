@@ -35,7 +35,7 @@
 
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
                         <ul class="dropdown-menu">
                             
                             <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
@@ -45,7 +45,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">buildex</a>
                          <ul class="dropdown-menu">
                             
                             <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
@@ -59,7 +59,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
 
                         <ul class="dropdown-menu">
                             
@@ -70,7 +70,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
 
                          <ul class="dropdown-menu">
                             
@@ -80,7 +80,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
 
                         <ul class="dropdown-menu">
                             
@@ -132,16 +132,16 @@ navLinks.forEach(link => {
     });
 
 });
-</script>>    <main class="d-flex flex-column" id="gallery">
+</script>    <main class="d-flex flex-column" id="gallery">
 
         <section class="hero py-20 text-secondary-text d-flex justify-content-start">
             <div class="container d-flex ">
                 <div class="d-flex flex-column gap-4 col-10 col-xxl-5 col-xl-6 col-lg-8 align-items-start">
                     <div class="small ">
-                        <a href="#">Home</a>
+                        <a href="./output/en/pages/home-one.html">Home</a>
                         <span class="mx-2">›</span>
 
-                        <a href="#">Pages</a>
+                        <a>Pages</a>
                         <span class="mx-2">›</span>
 
                         <span>Gallery</span>
@@ -154,7 +154,7 @@ navLinks.forEach(link => {
                     </h1>
 
                     <p class="text-secondary fs-mid-title">
-                         Explore our gallery to see the quality, craftsmanship, and attention to detail that define every project we build.
+                        <span class="fancy-txt">  Explore our gallery to see the quality, craftsmanship, and attention to detail that define every project we build.</span>
                     </p>
                 </div>
             </div>
@@ -162,43 +162,43 @@ navLinks.forEach(link => {
 
         <section class="gallery container py-8 d-flex flex-column gap-8 align-items-center d-flex">
              
-            <div class="d-flex align-items-center justify-content-between w-100">
+            <div class="d-flex align-items-center justify-content-between w-100 flex-column flex-sm-row">
 
                 <ul class="gallery-filter d-flex align-items-center fw-semibold fs-small">
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             All Galleries
-                        </a>
+                        </span>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             Residential
-                        </a>
+                        </span>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             Commercial
-                        </a>
+                        </span>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             Industrial
-                        </a>
+                        </span>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             Interior
-                        </a>
+                        </span>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             Infrastructure
-                        </a>
+                        </span>
                     </li>
                 </ul>
                 <select class="form-select sort-select d-flex border rounded px-1 py-1 fs-small ">
@@ -211,82 +211,82 @@ navLinks.forEach(link => {
 
             <div class="row align-items-stretch justify-content-center">
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1 ">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/building.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT1.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT4.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT2.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT3.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT4.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT6.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/news.jpg" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/photo-1486406146926-c627a92ad1ab.jpg" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/projects.jpg" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/building.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT1.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT4.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT2.png" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/en/gallery/ChatGPT3.png" alt="">
                     </a>
                 </div>
@@ -300,7 +300,7 @@ navLinks.forEach(link => {
 
         <section class="project-cta py-0 text-light">
             <div class="container py-8 px-20">
-                <div class="d-flex align-items-center justify-content-between flex-column flex-xxl-row  flex-xl-row gap-4">
+                <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row gap-4">
 
                     <div class="d-flex flex-column gap-4">
                         <span class="text-primary">LET'S BUILD TOGETHER</span>
@@ -313,7 +313,7 @@ navLinks.forEach(link => {
                     </div>
 
                     <div class="text-lg-end">
-                        <a href="#" class="cta-btn d-flex align-items-center gap-2 btn-hover">
+                        <a href="./output/en/pages/contact-us.html" class="cta-btn d-flex align-items-center gap-2 btn-hover">
                             <span class="">GET A QUOTE</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>

@@ -19,11 +19,11 @@
 
 #ar-services .services-card {
     border-color: transparent !important;
-    transition: all .3s ease;
+    transition: all .3s ease !important;
 }
 
 #ar-services .services-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) !important;
     border-color: var(--bs-primary) !important;
 }
 
@@ -35,11 +35,11 @@
 
 
 #ar-services .services-card a i {
-    transition: transform .3s ease;
+    transition: transform .3s ease !important;
 }
 
 #ar-services .services-card:hover a i {
-    transform: translateX(.4rem);
+    transform: translateX(.4rem) !important;
 }
 
 #ar-services .process-section {
