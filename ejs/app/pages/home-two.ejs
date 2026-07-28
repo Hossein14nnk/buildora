@@ -1,5 +1,6 @@
 <%- include('../layouts/page/head.ejs' , {title: "home-two", addCount: 0}); -%>
     <%- include('../components/header/content.ejs', ); -%>
+    
     <main class="d-flex flex-column" id="second-demo">
 
     <section class="hero text-white pb-0 d-flex flex-column w-100 gap-20 overflow-hidden">
@@ -24,13 +25,13 @@
 
                     <div class="d-flex gap-3 mt-4 align-items-center">
 
-                        <a href="#" class="service px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center gap-2 border-primary border">
-                            <%- t.pages.homeTwo.btnHero1 %>
-                            <i class="fa-solid fa-arrow-right"></i>
+                        <a href="#" class="service px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center border-primary border gap-2">
+                            <span ><%- t.pages.homeTwo.btnHero1 %></span>
+                            <i class="fa-solid fa-arrow-right "></i>
                         </a>
 
                         <a href="#" class="view px-4 py-2 fw-semibold rounded-1 fs-big d-flex justify-content-center align-items-center border-primary border gap-2">
-                           <%- t.pages.homeTwo.btnHero2 %>
+                            <span><%- t.pages.homeTwo.btnHero2 %></span>
                             <i class="fa-solid fa-arrow-right text-primary"></i>
                         </a>
 
@@ -287,7 +288,7 @@
                 <div style="width:60px;height:4px;" class="bg-primary rounded-4"></div>
             </div>
             <div class="d-flex flex-wrap row-gap-3">
-                <div class="px-2 col-6 col-lg-3">
+                <div class="px-2 col-12 col-lg-3 col-sm-6">
                     <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
                         <img src="<%- getMedia(lang, 'demo1/homepage-section2.jpg', 'images') %>" class="img-size w-100 ">
 
@@ -303,7 +304,7 @@
                         </div>
                     </div> 
                 </div>
-                <div class="px-2 col-6 col-lg-3">
+                <div class="px-2 col-12 col-lg-3 col-sm-6">
                     <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
                         <img src="<%- getMedia(lang, 'demo2/ChatGPT1.png', 'images') %>" class="img-size w-100 ">
 
@@ -319,7 +320,7 @@
                         </div>
                     </div> 
                 </div>
-                <div class="px-2 col-6 col-lg-3">
+                <div class="px-2 col-12 col-lg-3 col-sm-6">
                     <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
                         <img src="<%- getMedia(lang, 'demo1/ChatGPT2.png', 'images') %>" class="img-size w-100 ">
 
@@ -335,7 +336,7 @@
                         </div>
                     </div> 
                 </div>
-                <div class="px-2 col-6 col-lg-3">
+                <div class="px-2 col-12 col-lg-3 col-sm-6">
                     <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
                         <img src="<%- getMedia(lang, 'demo1/ChatGPT4.png', 'images') %>" class="img-size w-100 ">
 
