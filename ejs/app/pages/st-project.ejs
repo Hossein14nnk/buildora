@@ -1,5 +1,4 @@
 <%- include('../layouts/page/head.ejs' , {title: "st-project", addCount: 0}); -%>
-    <%- include('../components/header/content.ejs', ); -%>
     <main class="d-flex flex-column bg-background" id="stProject">
 
         <section class="hero bg-dark text-secondary position-relative py-8 position-relative">
@@ -7,9 +6,9 @@
             <div class="container py-4 d-flex flex-column gap-6">
 
                 <div class="small gap-3 d-flex">
-                    <a href="#" class="text-decoration-none "><%- t.pages.stProject.breadcromp1 %></a>
+                    <a href="<%= navigation(lang, '') %>" class="text-decoration-none "><%- t.pages.stProject.breadcromp1 %></a>
                     <span class="text-secondary">></span>
-                    <a href="#" class="text-decoration-none"><%- t.pages.stProject.breadcromp2 %></a>
+                    <a href="<%= navigation(lang, '') %>" class="text-decoration-none"><%- t.pages.stProject.breadcromp2 %></a>
                     <span class="text-secondary">></span>
                     <span class="text-secondary"><%- t.pages.stProject.breadcromp3 %></span>
                 </div>
@@ -169,5 +168,5 @@
 
     </main>
 
-    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
+
 <%- include('../layouts/page/foot.ejs'); -%>

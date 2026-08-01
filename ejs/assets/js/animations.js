@@ -5,8 +5,8 @@ const Helper = {
         return {
             trigger,
             start,
-            toggleActions: "play none none reverse",
-            // toggleActions: "play none none none",
+            // toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
             ...options
         };
     },
@@ -235,7 +235,7 @@ const Animation = {
         },
         managers(){
             if (!Helper.checkElement("#experts")) return;
-            const managers = Helper.elements("#experts .project-managers > div:has(.card)");
+            const managers = Helper.elements("#experts .project-managers > div:has(.card-team)");
             const tl = Helper.timeline("#experts .project-managers");
 
             gsap.set(managers, {

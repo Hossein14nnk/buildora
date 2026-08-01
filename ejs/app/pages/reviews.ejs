@@ -1,15 +1,14 @@
 <%- include('../layouts/page/head.ejs' , {title: "Reviews", addCount: 0}); -%>
-    <%- include('../components/header/content.ejs', ); -%>
     <main class="d-flex flex-column" id="Reviews">
 
         <section class="hero py-20 text-secondary-text d-flex justify-content-start">
             <div class="container d-flex ">
                 <div class="d-flex flex-column gap-4 col-10 col-xxl-5 col-xl-6 col-lg-8 align-items-start">
                     <div class="small ">
-                        <a href="#"><%- t.pages.Reviews.breadcromp1 %></a>
+                        <a href="<%= navigation(lang, 'contact-us.html') %>"><%- t.pages.Reviews.breadcromp1 %></a>
                         <span class="mx-2">›</span>
 
-                        <a href="#"><%- t.pages.Reviews.breadcromp2 %></a>
+                        <a><%- t.pages.Reviews.breadcromp2 %></a>
                         <span class="mx-2">›</span>
                         <span><%- t.pages.Reviews.breadcromp3 %></span>
                     </div>
@@ -34,32 +33,32 @@
         </section>
 
         <section class="reviews container py-8 d-flex flex-column gap-8 align-items-center d-flex">
-             
+
             <div class="d-flex align-items-center justify-content-between w-100 flex-md-row flex-column">
 
                 <h2 class="fs-mid-title fw-bold"><%- t.pages.Reviews.section2Title %></h2>
 
                 <ul class="reviews-filter d-flex align-items-center fw-semibold fs-small">
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center fw-bold">
-                        <a class=" text-dark primary-hover transition-150" href="#">
+                        <a class=" text-dark primary-hover transition-150">
                             <%- t.pages.Reviews.filter1 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center fw-bold">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <a class="text-dark primary-hover transition-150">
                             <%- t.pages.Reviews.filter2 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center fw-bold">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <a class="text-dark primary-hover transition-150">
                             <%- t.pages.Reviews.filter3 %>
                         </a>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center fw-bold">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <a class="text-dark primary-hover transition-150">
                             <%- t.pages.Reviews.filter4 %>
                         </a>
                     </li>
@@ -104,7 +103,11 @@
                         </p>
                     </div>
 
+<<<<<<< HEAD
                     <a href="./output/en/pages/home-one.html" class="btn-hover rounded-3 bg-button px-5 py-2 text-button-text mt-2 d-flex gap-5 align-items-center fw-bold fs-subtitle">
+=======
+                    <a href="<%= navigation(lang, 'home-one.html') %>" class="btn-hover rounded-3 bg-button px-5 py-2 text-button-text mt-2 d-flex gap-6 align-items-center fw-bold fs-subtitle">
+>>>>>>> 92be3538014c7641773efd563a6fe0c2544e2662
                         <span class=""><%- t.pages.Reviews.sectionEnbtn %></span>
                         <i class="fa-solid fa-arrow-right text-dark"></i>
                     </a>
@@ -116,5 +119,5 @@
 
     </main>
 
-    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
+
 <%- include('../layouts/page/foot.ejs'); -%>

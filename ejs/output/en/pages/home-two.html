@@ -35,7 +35,7 @@
 
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
                         <ul class="dropdown-menu">
                             
                             <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
@@ -45,7 +45,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">buildex</a>
                          <ul class="dropdown-menu">
                             
                             <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
@@ -59,7 +59,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
 
                         <ul class="dropdown-menu">
                             
@@ -70,7 +70,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
 
                          <ul class="dropdown-menu">
                             
@@ -80,7 +80,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
 
                         <ul class="dropdown-menu">
                             
@@ -132,126 +132,7 @@ navLinks.forEach(link => {
     });
 
 });
-</script>>    <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container">
-
-            <!-- Logo -->
-            <a class="navbar-brand" href="./output/en/pages/home-one.html">
-
-                <img class="logo" src="./assets/media/images/en/footer/logo.png">
-
-            </a>
-
-            <!-- Mobile Button -->
-            <button class="navbar-toggler" type="button" id="menuBtn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="mainMenu">
-
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
-                        <ul class="dropdown-menu">
-                            
-                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
-                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
-
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">buildex</a>
-                         <ul class="dropdown-menu">
-                            
-                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
-                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
-                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
-                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
-                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
-                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
-
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
-
-                        <ul class="dropdown-menu">
-                            
-                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
-                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
-
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
-
-                         <ul class="dropdown-menu">
-                            
-                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
-                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
-
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
-
-                        <ul class="dropdown-menu">
-                            
-                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
-                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
-
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
-                    </li>
-                </ul>
-
-                <div class="quote-wrapper">
-                    <a class="quote-btn" href="./output/en/pages/plans.html">
-                        Get A Quote
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-    </nav>
-</header>
-
-<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-const menuBtn = document.getElementById("menuBtn");
-const menu = document.getElementById("mainMenu");
-
-menuBtn.addEventListener("click", () => {
-    menu.classList.toggle("show");
-});
-
-const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-navLinks.forEach(link => {
-
-    link.addEventListener("click", function () {
-
-        navLinks.forEach(item => {
-            item.classList.remove("active");
-        });
-
-        this.classList.add("active");
-
-    });
-
-});
-</script>    
-    <main class="d-flex flex-column" id="second-demo">
+</script>    <main class="d-flex flex-column" id="second-demo">
 
     <section class="hero text-white pb-0 d-flex flex-column w-100 gap-20 overflow-hidden">
 
@@ -275,12 +156,12 @@ navLinks.forEach(link => {
 
                     <div class="d-flex gap-3 mt-4 align-items-center">
 
-                        <a href="#" class="service px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center border-primary border gap-2">
+                        <a href="./output/en/pages/ar-services.html" class="service px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center border-primary border gap-2">
                             <span >OUR SERVICES</span>
                             <i class="fa-solid fa-arrow-right "></i>
                         </a>
 
-                        <a href="#" class="view px-4 py-2 fw-semibold rounded-1 fs-big d-flex justify-content-center align-items-center border-primary border gap-2">
+                        <a href="./output/en/pages/ar-projects.html" class="view px-4 py-2 fw-semibold rounded-1 fs-big d-flex justify-content-center align-items-center border-primary border gap-2">
                             <span> VIEW PROJECTS</span>
                             <i class="fa-solid fa-arrow-right text-primary"></i>
                         </a>
@@ -370,7 +251,7 @@ navLinks.forEach(link => {
                        From concept to completion, we provide end-to-end construction services tailored to your needs with unmatched quality and reliability.
                 </p>
 
-                <a href="#" class="btn-hover bg-dark px-4 py-2 rounded-1 fw-semibold d-flex align-items-center gap-4 text-light d-flex justify-content-center fs-big">
+                <a href="./output/en/pages/ar-services.html" class="btn-hover bg-dark px-4 py-2 rounded-1 fw-semibold d-flex align-items-center gap-4 text-light d-flex justify-content-center fs-big">
                      ALL SERVICES
                     <i class="fa-solid fa-arrow-right text-primary"></i>
                 </a>
@@ -382,7 +263,7 @@ navLinks.forEach(link => {
                         <img src="./assets/media/images/en/demo1/vector1.png" class="img-size">
                         <h3 class="fs-title fw-semibold fw-bold">Construction Management</h3>
                         <span class="fs-big">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
-                        <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                        <a href="./output/en/pages/st-services.html" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
                             <span class="fs-big fw-bold text-text transition">Describe More</span>
                             <i class="fa-solid fa-arrow-right-long text-color transition"></i>
                         </a>
@@ -393,7 +274,7 @@ navLinks.forEach(link => {
                         <img src="./assets/media/images/en/demo1/vector2.png" class="img-size">
                         <h3 class="fs-title fw-semibold fw-bold">Construction Management</h3>
                         <span class="fs-big">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
-                        <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                        <a href="./output/en/pages/st-services.html" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
                             <span class="fs-big fw-bold text-text transition">Describe More</span>
                             <i class="fa-solid fa-arrow-right-long text-color transition"></i>
                         </a>
@@ -404,7 +285,7 @@ navLinks.forEach(link => {
                         <img src="./assets/media/images/en/demo1/vector3.png" class="img-size">
                         <h3 class="fs-title fw-semibold fw-bold">Construction Management</h3>
                         <span class="fs-big">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
-                        <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                        <a href="./output/en/pages/st-services.html" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
                             <span class="fs-big fw-bold text-text transition">Describe More</span>
                             <i class="fa-solid fa-arrow-right-long text-color transition"></i>
                         </a>
@@ -415,7 +296,7 @@ navLinks.forEach(link => {
                         <img src="./assets/media/images/en/demo1/vector4.png" class="img-size">
                         <h3 class="fs-title fw-semibold fw-bold">Construction Management</h3>
                         <span class="fs-big">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
-                        <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                        <a href="./output/en/pages/st-services.html" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
                             <span class="fs-big fw-bold text-text transition">Describe More</span>
                             <i class="fa-solid fa-arrow-right-long text-color transition"></i>
                         </a>
@@ -475,7 +356,7 @@ navLinks.forEach(link => {
 
                         </div>
 
-                        <a href="#" class="btn-hover mt-2 button px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center gap-2 border-primary border">
+                        <a href="./output/en/pages/about-us.html" class="btn-hover mt-2 button px-4 py-2 fw-semibold rounded-1 bg-primary text-dark fs-big d-flex justify-content-center align-items-center gap-2 border-primary border">
                                MORE ABOUT US
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -547,8 +428,8 @@ navLinks.forEach(link => {
                                 <h3 class="fs-title fw-bold text-secondary">Skyline Tower</h3>
                                 <span class="text-secondary fs-normal"> Miami,USA</span>
                             </div>
-                            
-                            <a href="#" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+
+                            <a href="./output/en/pages/st-project.html" class="fs-title fw-bold card-button text-secondary transition primary-hover">
                                 <i class="fa-solid fa-arrow-right-long "></i> 
                             </a>
                         </div>
@@ -564,7 +445,8 @@ navLinks.forEach(link => {
                                 <span class="text-secondary fs-normal"> Miami,USA</span>
                             </div>
                             
-                            <a href="#" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                            
+                            <a href="./output/en/pages/st-project.html" class="fs-title fw-bold card-button text-secondary transition primary-hover">
                                 <i class="fa-solid fa-arrow-right-long "></i> 
                             </a>
                         </div>
@@ -580,7 +462,8 @@ navLinks.forEach(link => {
                                 <span class="text-secondary fs-normal"> Miami,USA</span>
                             </div>
                             
-                            <a href="#" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                            
+                            <a href="./output/en/pages/st-project.html" class="fs-title fw-bold card-button text-secondary transition primary-hover">
                                 <i class="fa-solid fa-arrow-right-long "></i> 
                             </a>
                         </div>
@@ -596,7 +479,8 @@ navLinks.forEach(link => {
                                 <span class="text-secondary fs-normal"> Miami,USA</span>
                             </div>
                             
-                            <a href="#" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+
+                            <a href="./output/en/pages/st-project.html" class="fs-title fw-bold card-button text-secondary transition primary-hover">
                                 <i class="fa-solid fa-arrow-right-long "></i> 
                             </a>
                         </div>
@@ -895,7 +779,7 @@ navLinks.forEach(link => {
 
             </div>
 
-            <a href="#" class="px-6 py-3 fw-semibold text-uppercase fs-big bg-dark rounded text-secondary d-flex justify-content-center align-items-center gap-4 btn-hover">
+            <a href="./output/en/pages/contact-us.html" class="px-6 py-3 fw-semibold text-uppercase fs-big bg-dark rounded text-secondary d-flex justify-content-center align-items-center gap-4 btn-hover">
                 Get A Free Quote
                 <i class="fa-solid fa-arrow-right text-primary"></i>
             </a>
@@ -905,6 +789,7 @@ navLinks.forEach(link => {
     </section>
 
     </main>
+
 
     
     <footer class="footer bg-dark text-secondary py-5 ">
@@ -1098,6 +983,7 @@ navLinks.forEach(link => {
 
         </div>
     </footer>
+
     <script src="./assets/vendors/gsap/SplitText.min.js"></script>
     <script src="./assets/vendors/gsap/ScrollTrigger.min.js"></script>
     <script src="./assets/vendors/gsap/gsap.min.js"></script>

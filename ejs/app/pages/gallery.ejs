@@ -1,15 +1,14 @@
 <%- include('../layouts/page/head.ejs' , {title: "gallery", addCount: 0}); -%>
-    <%- include('../components/header/content.ejs', ); -%>
     <main class="d-flex flex-column" id="gallery">
 
         <section class="hero py-20 text-secondary-text d-flex justify-content-start">
             <div class="container d-flex ">
                 <div class="d-flex flex-column gap-4 col-10 col-xxl-5 col-xl-6 col-lg-8 align-items-start">
                     <div class="small ">
-                        <a href="#"><%- t.pages.gallery.breadcromp1 %></a>
+                        <a href="<%= navigation(lang, 'home-one.html') %>"><%- t.pages.gallery.breadcromp1 %></a>
                         <span class="mx-2">›</span>
 
-                        <a href="#"><%- t.pages.gallery.breadcromp2 %></a>
+                        <a><%- t.pages.gallery.breadcromp2 %></a>
                         <span class="mx-2">›</span>
 
                         <span><%- t.pages.gallery.breadcromp3 %></span>
@@ -34,39 +33,39 @@
 
                 <ul class="gallery-filter d-flex align-items-center fw-semibold fs-small">
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             <%- t.pages.gallery.filter1 %>
-                        </a>
+                        </span>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             <%- t.pages.gallery.filter2 %>
-                        </a>
+                        </span>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             <%- t.pages.gallery.filter3 %>
-                        </a>
+                        </span>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             <%- t.pages.gallery.filter4 %>
-                        </a>
+                        </span>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             <%- t.pages.gallery.filter5 %>
-                        </a>
+                        </span>
                     </li>
 
                     <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                        <a class="text-dark primary-hover transition-150" href="#">
+                        <span class="text-dark primary-hover transition-150">
                             <%- t.pages.gallery.filter6 %>
-                        </a>
+                        </span>
                     </li>
                 </ul>
                 <select class="form-select sort-select d-flex border rounded px-1 py-1 fs-small ">
@@ -79,82 +78,82 @@
 
             <div class="row align-items-stretch justify-content-center">
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1 ">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/building.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT1.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT4.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT2.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT3.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT4.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT6.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/news.jpg', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/photo-1486406146926-c627a92ad1ab.jpg', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/projects.jpg', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/building.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT1.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT4.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT2.png', 'images'); %>" alt="">
                     </a>
                 </div>
                 <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
-                    <a href="#" class="overflow-hidden d-flex">
+                    <a class="overflow-hidden d-flex">
                         <img class="w-100 h-100 transition-400 overflow-hidde" src="<%= getMedia(lang, 'gallery/ChatGPT3.png', 'images'); %>" alt="">
                     </a>
                 </div>
@@ -181,7 +180,7 @@
                     </div>
 
                     <div class="text-lg-end">
-                        <a href="#" class="cta-btn d-flex align-items-center gap-2 btn-hover">
+                        <a href="<%= navigation(lang, 'contact-us.html') %>" class="cta-btn d-flex align-items-center gap-2 btn-hover">
                             <span class=""><%- t.pages.gallery.sectionEnbtn %></span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -194,5 +193,5 @@
 
     </main>
 
-    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
+
 <%- include('../layouts/page/foot.ejs'); -%>

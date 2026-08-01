@@ -242,7 +242,7 @@
                     <p class="text-text">
                         <%- t.pages.teams.sectiontreedescription %>
                     </p>
-                    <a href="#" class="btn-hover bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
+                    <a href="<%= navigation(lang, 'contact-us.html') %>" class="btn-hover bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
                         <span class="fs-small text-uppercase"><%- t.pages.teams.sectiontreebtn %></span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -258,5 +258,4 @@
             </div>
         </section>
     </main>
-    <%#- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
 <%- include('../layouts/page/foot.ejs') %>
