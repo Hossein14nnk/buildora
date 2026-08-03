@@ -1,0 +1,7 @@
+.quote-btn i {
+    transition: all 300ms ease-in-out;
+}
+
+.quote-btn:hover i {
+    transform: translateX(0.5rem);
+}

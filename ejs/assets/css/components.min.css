@@ -955,7 +955,7 @@
 
 .feature-card {
   border-right: 1px solid #ececec;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease !important;
 }
 
 .feature-card:last-child {
@@ -963,7 +963,7 @@
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
 }
 
 .feature-icon {

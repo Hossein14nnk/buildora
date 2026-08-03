@@ -1,6 +1,4 @@
 <%- include('../layouts/page/head.ejs' , {title: "ar-project", addCount: 0}); -%>
-
-    <%- include('../components/header/content.ejs', ); -%>
     <main class="d-flex flex-column" id="ar-project">
 
         <section id="hero" class="pt-20 conainer-fluid bg-on-secondary d-flex align-items-center">
@@ -18,70 +16,223 @@
                 <div class="d-flex align-items-center justify-content-between w-100 mb-5">
                     <ul class="d-flex align-items-center fw-semibold fs-small">
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 rounded-1 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark primary-hover" href="#">
+                            <span class="fs-normal text-dark primary-hover">
                                  <%- t.pages.arProject.filter1 %>
-                            </a>
+                            </span>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark primary-hover" href="#">
+                            <span class="fs-normal text-dark primary-hover">
                                   <%- t.pages.arProject.filter2 %>
-                            </a>
+                            </span>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark primary-hover" href="#">
+                            <span class="fs-normal text-dark primary-hover">
                                 <%- t.pages.arProject.filter3 %>
-                            </a>
+                            </span>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark primary-hover" href="#">
+                            <span class="fs-normal text-dark primary-hover">
                                   <%- t.pages.arProject.filter4 %>
-                            </a>
+                            </span>
                         </li>
 
                         <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
-                            <a class="fs-normal text-dark primary-hover" href="#">
+                            <span class="fs-normal text-dark primary-hover">
                                  <%- t.pages.arProject.filter5 %>
-                            </a>
+                            </span>
                         </li>
 
                     </ul>
                     <select class="form-select w-auto rounded-0 border rounded-1 px-4 py-1 fs-normal">
                         <option><%- t.pages.arProject.option1 %></option>
                         <option><%- t.pages.arProject.option2 %></option>
-                        <option> <%- t.pages.arProject.option3 %></option>
+                        <option><%- t.pages.arProject.option3 %></option>
                     </select>
                 </div>
                 <div class="wrapper col-xl-12 g-2">
                     <div class="row g-4">
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+                                <div class="image p-3 overflow-hidden transition-300 ">
+                                    <span class="fs-normal rounded-1 cat-badg"> <%- t.components.projectCard.category1 %></span>
+                                </div>
+                                <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
+                                    <div class="d-flex gap-3 flex-column">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.projectCard.title1 %></h3>
+                                        <div>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="text-text fs-normal"> <%- t.components.projectCard.location1 %></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fs-title fw-bold card-button transition">
+                                        <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+                                <div class="image p-3 overflow-hidden transition-300 ">
+                                    <span class="fs-normal rounded-1 cat-badg"> <%- t.components.projectCard.category2 %></span>
+                                </div>
+                                <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
+                                    <div class="d-flex gap-3 flex-column">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.projectCard.title2 %></h3>
+                                        <div>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="text-text fs-normal"> <%- t.components.projectCard.location2 %></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fs-title fw-bold card-button transition">
+                                        <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+                                <div class="image p-3 overflow-hidden transition-300 ">
+                                    <span class="fs-normal rounded-1 cat-badg"> <%- t.components.projectCard.category3 %></span>
+                                </div>
+                                <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
+                                    <div class="d-flex gap-3 flex-column">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.projectCard.title3 %></h3>
+                                        <div>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="text-text fs-normal"> <%- t.components.projectCard.location3 %></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fs-title fw-bold card-button transition">
+                                        <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                           <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
+                           <div class="project-card shadow bg-white w-100 overflow-hidden ">
+                                <div class="image p-3 overflow-hidden transition-300 ">
+                                    <span class="fs-normal rounded-1 cat-badg"> <%- t.components.projectCard.category4 %></span>
+                                </div>
+                                <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
+                                    <div class="d-flex gap-3 flex-column">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.projectCard.title4 %></h3>
+                                        <div>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="text-text fs-normal"> <%- t.components.projectCard.location4 %></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fs-title fw-bold card-button transition">
+                                        <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+                                <div class="image p-3 overflow-hidden transition-300 ">
+                                    <span class="fs-normal rounded-1 cat-badg"> <%- t.components.projectCard.category5 %></span>
+                                </div>
+                                <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
+                                    <div class="d-flex gap-3 flex-column">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.projectCard.title5 %></h3>
+                                        <div>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="text-text fs-normal"> <%- t.components.projectCard.location5 %></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fs-title fw-bold card-button transition">
+                                        <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                           <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
+                           <div class="project-card shadow bg-white w-100 overflow-hidden ">
+                                <div class="image p-3 overflow-hidden transition-300 ">
+                                    <span class="fs-normal rounded-1 cat-badg"> <%- t.components.projectCard.category6 %></span>
+                                </div>
+                                <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
+                                    <div class="d-flex gap-3 flex-column">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.projectCard.title6 %></h3>
+                                        <div>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="text-text fs-normal"> <%- t.components.projectCard.location6 %></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fs-title fw-bold card-button transition">
+                                        <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+                                <div class="image p-3 overflow-hidden transition-300 ">
+                                    <span class="fs-normal rounded-1 cat-badg"> <%- t.components.projectCard.category7 %></span>
+                                </div>
+                                <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
+                                    <div class="d-flex gap-3 flex-column">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.projectCard.title7 %></h3>
+                                        <div>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="text-text fs-normal"> <%- t.components.projectCard.location7 %></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fs-title fw-bold card-button transition">
+                                        <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+                                <div class="image p-3 overflow-hidden transition-300 ">
+                                    <span class="fs-normal rounded-1 cat-badg"> <%- t.components.projectCard.category8 %></span>
+                                </div>
+                                <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
+                                    <div class="d-flex gap-3 flex-column">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.projectCard.title8 %></h3>
+                                        <div>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="text-text fs-normal"> <%- t.components.projectCard.location8 %></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fs-title fw-bold card-button transition">
+                                        <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-xl-4 d-flex">
-                            <%- include('../components/project-card/content.ejs', {projectCard: t.components.projectCard}); -%>
+                            <div class="project-card shadow bg-white w-100 overflow-hidden ">
+                                <div class="image p-3 overflow-hidden transition-300 ">
+                                    <span class="fs-normal rounded-1 cat-badg"> <%- t.components.projectCard.category9 %></span>
+                                </div>
+                                <div class="d-flex gap-3 p-3 flex-row align-items-center justify-content-between overflow-hidden ">
+                                    <div class="d-flex gap-3 flex-column">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.projectCard.title9 %></h3>
+                                        <div>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="text-text fs-normal"> <%- t.components.projectCard.location9 %></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="fs-title fw-bold card-button transition">
+                                        <i class="fa-solid fa-arrow-right-long text-primary transition"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,46 +243,45 @@
 
                 <div class="col-11 col-xxl-3 col-xl-3 col-lg-3 col-md-4 container-fluid d-flex flex-column gap-4 justify-content-start border-end border-1">
                     
-                    <span class="text-primary fw-bold text-uppercase fs-big">WHY CLIENTS CHOOSE US</span>
+                    <span class="text-primary fw-bold text-uppercase fs-big"><%- t.pages.arProject.sectiontreeSubtitle %></span>
 
                     <h2 class="fw-bold fs-mid-title">
-                          Delivering Quality
-                            In Every Detail
+                          <%- t.pages.arProject.sectiontreetitle %>
                     </h2>
 
-                    <p class="text-text">We combine expert craftsmanship, innovative solutions, and a client-first approach to deliver projects that stand the test of time</p>
+                    <p class="text-text"><%- t.pages.arProject.sectiontreedescription %></p>
                     
                     
                     <a href="<%- navigation(lang , 'home-one.html') %>" class="bg-primary text-dark py-2 fw-bold text-uppercase rounded d-flex gap-4 justify-content-center align-items-center px-4  w-fit-content">
-                        <span class="fs-small text-uppercase w-100">WORK WITH US</span>
+                        <span class="fs-small text-uppercase w-100"><%- t.pages.arProject.sectiontreebtn %></span>
                         <i class="fa-solid fa-arrow-right fs-small"></i>
                     </a>
                 </div>
                 <div class="col-9">
                     <div id="secondFeatureCard" class="container-fluid d-flex px-5 rounded-1">
                         <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
-                            <img class="feature-icon" src="./assets/media/images/en/components/second-feature-card-icon-1.png" alt="">
+                            <img class="feature-icon" src="<%- getMedia(lang, 'components/second-feature-card-icon-1.png', 'images') %>" alt="">
                             <div class="line"></div>
-                            <h3 class="fs-title text-center">Expert Team</h3>
-                            <p class="fs-subtitle text-text text-center fw-medium">Skilled professionals dedicated to excellence.</p>
+                            <h3 class="fs-title text-center"><%- t.components.secondFeatureCards.itemOne.title %></h3>
+                            <p class="fs-subtitle text-text text-center fw-medium"><%- t.components.secondFeatureCards.itemOne.subtitle %></p>
                         </div>
                         <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
-                            <img class="feature-icon" src="./assets/media/images/en/components/second-feature-card-icon-2.png" alt="">
+                            <img class="feature-icon" src="<%- getMedia(lang, 'components/second-feature-card-icon-2.png', 'images') %>" alt="">
                             <div class="line"></div>
-                            <h3 class="fs-title text-center">Quality Materials</h3>
-                            <p class="fs-subtitle text-text text-center ">We use only the best materials for lasting durability.</p>
+                            <h3 class="fs-title text-center"><%- t.components.secondFeatureCards.itemTwo.title %></h3>
+                            <p class="fs-subtitle text-text text-center "><%- t.components.secondFeatureCards.itemTwo.subtitle %></p>
                         </div>
                         <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
-                            <img class="feature-icon" src="./assets/media/images/en/components/second-feature-card-icon-3.png" alt="">
+                            <img class="feature-icon" src="<%- getMedia(lang, 'components/second-feature-card-icon-3.png', 'images') %>" alt="">
                             <div class="line"></div>
-                            <h3 class="fs-title text-center">On-Time Delivery</h3>
-                            <p class="fs-subtitle text-text text-center fw-medium">We value your time and deliver projects on schedule.</p>
+                            <h3 class="fs-title text-center"><%- t.components.secondFeatureCards.itemThree.title %></h3>
+                            <p class="fs-subtitle text-text text-center fw-medium"><%- t.components.secondFeatureCards.itemThree.subtitle %></p>
                         </div>
                         <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
-                            <img class="feature-icon" src="./assets/media/images/en/components/second-feature-card-icon-4.png" alt="">
+                            <img class="feature-icon" src="<%- getMedia(lang, 'components/second-feature-card-icon-4.png', 'images') %>" alt="">
                             <div class="line"></div>
-                            <h3 class="fs-title text-center">Client Satisfaction</h3>
-                            <p class="fs-subtitle text-text text-center fw-medium">Your satisfaction is our goal, every step of the way.</p>
+                            <h3 class="fs-title text-center"><%- t.components.secondFeatureCards.itemFour.title %></h3>
+                            <p class="fs-subtitle text-text text-center fw-medium"><%- t.components.secondFeatureCards.itemFour.subtitle %></p>
                         </div>
                     </div> 
                 </div>
@@ -147,5 +297,5 @@
     </main>
 
 
-    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
+
 <%- include('../layouts/page/foot.ejs'); -%>

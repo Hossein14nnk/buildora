@@ -1,6 +1,4 @@
 <%- include('../layouts/page/head.ejs' , {title: "contact-us", addCount: 0}); -%>
-
-    <%- include('../components/header/content.ejs', ); -%>
     <main id="contact-us" class="d-flex flex-column">
         <section id="contact-hero" class="conainer-flouds bg-on-secondary d-flex align-items-center pt-20">
             <div class="container d-flex gap-4 flex-column py-6">
@@ -107,7 +105,7 @@
                                 <%- t.pages.contactUs.titleInformation %>
                             </h2>
                            </div>
-                             <%- include('../components/contact-details/content.ejs', {ContactDetails: t.components.ContactDetails}); -%>
+                            <%- include('../components/contact-details/content.ejs', {ContactDetails: t.components.ContactDetails}); -%>
 
                             <div class="d-flex flex-column gap-2 mt-4">
 
@@ -117,22 +115,22 @@
 
                                 <div class="social gap-2 d-flex flex-row align-items-center">
 
-                                    <a href="#" style="width: 30px; height: 30px; "
+                                    <a href="https://facebook.com" style="width: 30px; height: 30px; "
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
                                         <i class="fab fa-facebook-f transition-150 primary-hover"></i>
                                     </a>
 
-                                    <a href="#" style="width: 30px; height: 30px;"
+                                    <a href="https://linkedin.com" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
                                         <i class="fab fa-linkedin-in transition-150 primary-hover"></i>
                                     </a>
 
-                                    <a href="#" style="width: 30px; height: 30px;"
+                                    <a href="https://instagram.com" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
                                         <i class="fab fa-instagram transition-150 primary-hover"></i>
                                     </a>
 
-                                    <a href="#" style="width: 30px; height: 30px;"
+                                    <a href="https://youtube.com" style="width: 30px; height: 30px;"
                                         class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none text-reset border">
                                         <i class="fab fa-youtube transition-150 primary-hover"></i>
                                     </a>
@@ -161,5 +159,5 @@
         </section>
     </main>
 
-    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
+
 <%- include('../layouts/page/foot.ejs'); -%>

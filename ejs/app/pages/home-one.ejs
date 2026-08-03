@@ -1,13 +1,12 @@
 <%- include('../layouts/page/head.ejs' , {title: "home-one", addCount: 0}); -%>
-
-     <main class="d-flex flex-column" id="home-one">
+    <main class="d-flex flex-column" id="home-one">
 
         <section id="main-hero" class="container-fluid py-20  text-secondary-text position-relative d-flex flex-column justify-content-center">
             <div class="container d-flex justify-content-between">
                 <div class="row gy-5 align-items-center w-100">
                     <div class="col-lg-6">
 
-                        <span class="text-primary fs-title">
+                        <span class="text-warning text-primary fs-title">
                            <%- t.pages.homeOne.subtitleslider %>
                         </span>
 
@@ -18,13 +17,13 @@
                         </h1>
 
                         <p class="fw-medium fs-title text-white mb-4">
-                           <%- t.pages.homeOne.sliderDescription %>
+                            <%- t.pages.homeOne.sliderDescription %>
                         </p>
 
                         <div
                             class="d-flex flex-column flex-sm-row gap-3 justify-content-start">
 
-                            <a href="#"
+                            <a href="<%= navigation(lang, 'ar-project.html') %>"
                                 class="rounded-1 bg-button btn-hover px-5 py-3 text-button-text d-flex align-items-center justify-content-center gap-2 fw-semibold fs-big">
 
                                 <span><%- t.pages.homeOne.btnslider1 %></span>
@@ -32,7 +31,7 @@
 
                             </a>
 
-                            <a href="#"
+                            <a href="<%= navigation(lang, 'contact-us.html') %>"
                                 class="rounded-1 border border-white px-6 py-3 text-white d-flex align-items-center justify-content-center fw-semibold fs-big">
 
                                 <%- t.pages.homeOne.btnslider2 %>
@@ -59,15 +58,14 @@
 
                             <div class="d-flex align-items-center">
 
-                                <a href="#video-wrapper"
-                                    class="rounded-circle border-play d-flex align-items-center justify-content-center">
+                                <a class="rounded-circle border-play d-flex align-items-center justify-content-center">
 
                                     <i class="fa-solid fa-play text-primary"></i>
 
                                 </a>
 
                                 <span class="ms-3 fw-semibold">
-                                   <%- t.pages.homeOne.cardvideobtn %>
+                                    <%- t.pages.homeOne.cardvideobtn %>
                                 </span>
 
                             </div>
@@ -81,9 +79,8 @@
 
             </div>
             <div class="position-absolute w-100 bottom-0 statistics-hero d-none d-lg-flex">
-                 <%- include('../components/statistics/content.ejs', {statistics: t.components.statistics}); -%>
+                <%- include('../components/statistics/content.ejs', {statistics: t.components.statistics}); -%>
             </div> 
-           
         </section>
 
         <section class="container-fluid pt-20">
@@ -121,7 +118,7 @@
                                 <p>
                                     <%- t.pages.homeOne.descriptionMisson %>
                                 </p>
-                                <a href="#" class="mission-btn transition d-flex justify-content-center align-items-center border border-primary p-3">
+                                <a href="<%= navigation(lang, 'about-us') %>" class="mission-btn transition d-flex justify-content-center align-items-center border border-primary p-3">
                                     <i class="fa-solid fa-arrow-right text-primary transition"></i>
                                 </a>
                             </div>
@@ -140,66 +137,66 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector1.png', 'images') %>" class="img-size">
-                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title %></h3>
-                            <span class="fs-big"><%- t.components.coreServicesCard.text %></span>
-                            <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title1 %></h3>
+                            <span class="fs-big"><%- t.components.coreServicesCard.text1 %></span>
+                            <a href="<%= navigation(lang, 'st-services.html') %>" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
                                 <span class="fs-big fw-bold text-text transition"><%- t.components.coreServicesCard.button %></span>
                                 <i class="fa-solid fa-arrow-right-long text-color transition"></i>
                             </a>
                         </div> 
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector2.png', 'images') %>" class="img-size">
-                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title %></h3>
-                            <span class="fs-big"><%- t.components.coreServicesCard.text %></span>
-                            <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title2 %></h3>
+                            <span class="fs-big"><%- t.components.coreServicesCard.text2 %></span>
+                            <a href="<%= navigation(lang, 'st-services.html') %>" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
                                 <span class="fs-big fw-bold text-text transition"><%- t.components.coreServicesCard.button %></span>
                                 <i class="fa-solid fa-arrow-right-long text-color transition"></i>
                             </a>
                         </div> 
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector3.png', 'images') %>" class="img-size">
-                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title %></h3>
-                            <span class="fs-big"><%- t.components.coreServicesCard.text %></span>
-                            <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title3 %></h3>
+                            <span class="fs-big"><%- t.components.coreServicesCard.text3 %></span>
+                            <a href="<%= navigation(lang, 'st-services.html') %>" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
                                 <span class="fs-big fw-bold text-text transition"><%- t.components.coreServicesCard.button %></span>
                                 <i class="fa-solid fa-arrow-right-long text-color transition"></i>
                             </a>
                         </div> 
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector4.png', 'images') %>" class="img-size">
-                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title %></h3>
-                            <span class="fs-big"><%- t.components.coreServicesCard.text %></span>
-                            <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title4 %></h3>
+                            <span class="fs-big"><%- t.components.coreServicesCard.text4 %></span>
+                            <a href="<%= navigation(lang, 'st-services.html') %>" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
                                 <span class="fs-big fw-bold text-text transition"><%- t.components.coreServicesCard.button %></span>
                                 <i class="fa-solid fa-arrow-right-long text-color transition"></i>
                             </a>
                         </div> 
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector5.png', 'images') %>" class="img-size">
-                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title %></h3>
-                            <span class="fs-big"><%- t.components.coreServicesCard.text %></span>
-                            <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title5 %></h3>
+                            <span class="fs-big"><%- t.components.coreServicesCard.text5 %></span>
+                            <a href="<%= navigation(lang, 'st-services.html') %>" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
                                 <span class="fs-big fw-bold text-text transition"><%- t.components.coreServicesCard.button %></span>
                                 <i class="fa-solid fa-arrow-right-long text-color transition"></i>
                             </a>
                         </div> 
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector6.png', 'images') %>" class="img-size">
-                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title %></h3>
-                            <span class="fs-big"><%- t.components.coreServicesCard.text %></span>
-                            <a href="" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                            <h3 class="fs-title fw-semibold fw-bold"><%- t.components.coreServicesCard.title6 %></h3>
+                            <span class="fs-big"><%- t.components.coreServicesCard.text6 %></span>
+                            <a href="<%= navigation(lang, 'st-services.html') %>" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
                                 <span class="fs-big fw-bold text-text transition"><%- t.components.coreServicesCard.button %></span>
                                 <i class="fa-solid fa-arrow-right-long text-color transition"></i>
                             </a>
@@ -217,7 +214,7 @@
                             <span class="text-primary fs-title"> <%- t.pages.homeOne.sectionfouresubtitle %></span>
                             <h2 class="fs-high-title fw-bold text-white">  <%- t.pages.homeOne.sectionfouretitle1 %> <br>
                                <%- t.pages.homeOne.sectionfouretitle2 %></h2>
-                            <a href="" class="btn-hover text-white border border-primary p-3">
+                            <a href="<%= navigation(lang, 'ar-project.html') %>" class="btn-hover text-white border border-primary p-3">
                                <%- t.pages.homeOne.sectionfourebtn %>
                                 <i class="fa-solid fa-arrow-right text-primary ps-2"></i>
                             </a>
@@ -231,11 +228,12 @@
 
                                     <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
                                         <div class="d-flex gap-2 flex-column">
-                                            <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title %></h3>
-                                            <span class="text-secondary fs-normal"> <%- t.components.projectCard.location %></span>
+                                            <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title1 %></h3>
+                                            <span class="text-secondary fs-normal"> <%- t.components.projectCard.location1 %></span>
                                         </div>
                                         
-                                        <a href="#" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                        
+                                        <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button text-secondary transition primary-hover">
                                             <i class="fa-solid fa-arrow-right-long "></i> 
                                         </a>
                                     </div>
@@ -243,15 +241,16 @@
                             </div>
                             <div class="col-md-6 col-xl-3">
                                 <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
-                                    <img src="<%- getMedia(lang, 'demo1/ChatGPT1.png', 'images') %>" class="img-size w-100 ">
+                                    <img src="<%- getMedia(lang, 'demo1/building1.png', 'images') %>" class="img-size w-100 ">
 
                                     <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
                                         <div class="d-flex gap-2 flex-column">
-                                            <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title %></h3>
-                                            <span class="text-secondary fs-normal"> <%- t.components.projectCard.location %></span>
+                                            <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title2 %></h3>
+                                            <span class="text-secondary fs-normal"> <%- t.components.projectCard.location2 %></span>
                                         </div>
                                         
-                                        <a href="#" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                        
+                                        <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button text-secondary transition primary-hover">
                                             <i class="fa-solid fa-arrow-right-long "></i> 
                                         </a>
                                     </div>
@@ -259,15 +258,16 @@
                             </div>
                             <div class="col-md-6 col-xl-3">
                                 <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
-                                    <img src="<%- getMedia(lang, 'demo1/ChatGPT2.png', 'images') %>" class="img-size w-100 ">
+                                    <img src="<%- getMedia(lang, 'demo1/building2.png', 'images') %>" class="img-size w-100 ">
 
                                     <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
                                         <div class="d-flex gap-2 flex-column">
-                                            <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title %></h3>
-                                            <span class="text-secondary fs-normal"> <%- t.components.projectCard.location %></span>
+                                            <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title3 %></h3>
+                                            <span class="text-secondary fs-normal"> <%- t.components.projectCard.location3 %></span>
                                         </div>
                                         
-                                        <a href="#" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                        
+                                        <a href="<%= navigation(lang, 'st-project.html') %>" class="fs-title fw-bold card-button text-secondary transition primary-hover">
                                             <i class="fa-solid fa-arrow-right-long "></i> 
                                         </a>
                                     </div>
@@ -275,12 +275,12 @@
                             </div>
                             <div class="col-md-6 col-xl-3">
                                 <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
-                                    <img src="<%- getMedia(lang, 'demo1/ChatGPT4.png', 'images') %>" class="img-size w-100 ">
+                                    <img src="<%- getMedia(lang, 'demo1/building4.png', 'images') %>" class="img-size w-100 ">
 
                                     <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
                                         <div class="d-flex gap-2 flex-column">
-                                            <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title %></h3>
-                                            <span class="text-secondary fs-normal"> <%- t.components.projectCard.location %></span>
+                                            <h3 class="fs-title fw-bold text-secondary"><%- t.components.projectCard.title4 %></h3>
+                                            <span class="text-secondary fs-normal"> <%- t.components.projectCard.location4 %></span>
                                         </div>
                                         
                                         <a href="#" class="fs-title fw-bold card-button text-secondary transition primary-hover">
@@ -368,8 +368,8 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column px-3 py-3 gap-2">
-                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
-                                <p><%- t.components.teamCard.job %></p>
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name1 %></h3>
+                                <p><%- t.components.teamCard.job1 %></p>
                             </div>
                         </div>
                     </div>
@@ -387,8 +387,8 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column px-3 py-3 gap-2">
-                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
-                                <p><%- t.components.teamCard.job %></p>
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name3 %></h3>
+                                <p><%- t.components.teamCard.job3 %></p>
                             </div>
                         </div>
                     </div>
@@ -406,8 +406,8 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column px-3 py-3 gap-2">
-                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
-                                <p><%- t.components.teamCard.job %></p>
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name2 %></h3>
+                                <p><%- t.components.teamCard.job2 %></p>
                             </div>
                         </div>
                     </div>
@@ -425,8 +425,8 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column px-3 py-3 gap-2">
-                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
-                                <p><%- t.components.teamCard.job %></p>
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name5 %></h3>
+                                <p><%- t.components.teamCard.job5 %></p>
                             </div>
                         </div>
                     </div>
@@ -444,8 +444,8 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column px-3 py-3 gap-2">
-                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
-                                <p><%- t.components.teamCard.job %></p>
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name6 %></h3>
+                                <p><%- t.components.teamCard.job6 %></p>
                             </div>
                         </div>
                     </div>
@@ -463,8 +463,8 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column px-3 py-3 gap-2">
-                                <h3 class="fs-mid-title"><%- t.components.teamCard.name %></h3>
-                                <p><%- t.components.teamCard.job %></p>
+                                <h3 class="fs-mid-title"><%- t.components.teamCard.name9 %></h3>
+                                <p><%- t.components.teamCard.job9 %></p>
                             </div>
                         </div>
                     </div>
@@ -480,9 +480,67 @@
                     <div style="width:60px;height:4px;" class="bg-primary rounded-4"></div>
                 </div>
                 <div class="d-flex gap-4 gap-lg-2 flex-column flex-xxl-row flex-xl-row flex-lg-row">
-                    <%- include('../components/comment/content.ejs', {comment: t.components.comment}); -%>
-                    <%- include('../components/comment/content.ejs', {comment: t.components.comment}); -%>
-                    <%- include('../components/comment/content.ejs', {comment: t.components.comment}); -%>
+
+                    <div class="comment w-100 ">
+
+                        <div class="h-100 p-4 d-flex flex-column gap-4 transition-300 h-100 justify-content-between">
+
+                            <i class="fa-solid fa-quote-left text-primary"></i>
+                            <p class="text-text "><%= t.components.comment.txt2 %></p>
+
+                            <span class="text-secondary"><%= t.components.comment.name2 %></span>
+
+                            <div class="text-primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="comment w-100 ">
+
+                        <div class="h-100 p-4 d-flex flex-column gap-4 transition-300 h-100 justify-content-between">
+
+                            <i class="fa-solid fa-quote-left text-primary"></i>
+                            <p class="text-text "><%= t.components.comment.txt1 %></p>
+
+                            <span class="text-secondary"><%= t.components.comment.name1 %></span>
+
+                            <div class="text-primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="comment w-100 ">
+
+                        <div class="h-100 p-4 d-flex flex-column gap-4 transition-300 h-100 justify-content-between">
+
+                            <i class="fa-solid fa-quote-left text-primary"></i>
+                            <p class="text-text "><%= t.components.comment.txt3 %></p>
+
+                            <span class="text-secondary"><%= t.components.comment.name3 %></span>
+
+                            <div class="text-primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -511,38 +569,18 @@
                     <div class="col-12 col-xl-7">
                         <div class="row g-4">
                             <div class="col-12 col-md-4">
-                                <div class="latest-news shadow bg-white">
-                                    <img class="w-100 ratio-1x1 object-fit-cover" src="<%= getMedia(lang, 'demo1/news.jpg', 'images'); %>" alt="">
-                                    <div class="d-flex gap-3 p-3 flex-column">
-                                        <div class="d-flex gap-6 align-items-center">
-                                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.components.latestNews.category %></span>
-                                            <div class="text-decoration-none d-flex gap-2 align-items-center">
-                                                <i class="fa-solid fa-calendar text-text fs-normal"></i>
-                                                <span class="text-text fs-normal"> <%- t.components.latestNews.date %></span>
-                                            </div>
-                                        </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.latestNews.title %></h3>
-                                        <a href="" class="btn-hover fs-title fw-bold text-decoration-none text-decoration-none d-flex gap-2 align-items-center">
-                                            <span class="fs-big fw-semibold text-button-text transition"><%- t.components.latestNews.txtButton %></span>
-                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-4">
-                                 <div class="latest-news shadow bg-white">
+                                <div class="latest-news shadow bg-white  h-100 ">
                                     <img class="w-100 ratio-1x1 object-fit-cover" src="<%= getMedia(lang, 'demo1/pic1.jpg', 'images'); %>" alt="">
-                                    <div class="d-flex gap-3 p-3 flex-column">
+                                    <div class="d-flex gap-3 p-3 flex-column justify-content-between">
                                         <div class="d-flex gap-6 align-items-center">
-                                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.components.latestNews.category %></span>
+                                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.components.latestNews.category1 %></span>
                                             <div class="text-decoration-none d-flex gap-2 align-items-center">
                                                 <i class="fa-solid fa-calendar text-text fs-normal"></i>
-                                                <span class="text-text fs-normal"> <%- t.components.latestNews.date %></span>
+                                                <span class="text-text fs-normal"> <%- t.components.latestNews.date1 %></span>
                                             </div>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.latestNews.title %></h3>
-                                        <a href="" class="btn-hover fs-title fw-bold text-decoration-none text-decoration-none d-flex gap-2 align-items-center">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0 transition-300"><%- t.components.latestNews.title1 %></h3>
+                                        <a href="<%= navigation(lang, 'st-blog.html') %>" class="btn-hover fs-title fw-bold text-decoration-none text-decoration-none d-flex gap-2 align-items-center">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.components.latestNews.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
                                         </a>
@@ -551,18 +589,39 @@
                             </div>
 
                             <div class="col-12 col-md-4">
-                                 <div class="latest-news shadow bg-white">
-                                    <img class="w-100 ratio-1x1 object-fit-cover" src="<%= getMedia(lang, 'demo1/ChatGPT3.png', 'images'); %>" alt="">
-                                    <div class="d-flex gap-3 p-3 flex-column">
+
+                                <div class="latest-news shadow bg-white h-100">
+                                    <img class="w-100 ratio-1x1 object-fit-cover" src="<%= getMedia(lang, 'demo1/news.jpg', 'images'); %>" alt="">
+                                    <div class="d-flex gap-3 p-3 flex-column justify-content-between">
                                         <div class="d-flex gap-6 align-items-center">
-                                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.components.latestNews.category %></span>
+                                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.components.latestNews.category2 %></span>
                                             <div class="text-decoration-none d-flex gap-2 align-items-center">
                                                 <i class="fa-solid fa-calendar text-text fs-normal"></i>
-                                                <span class="text-text fs-normal"> <%- t.components.latestNews.date %></span>
+                                                <span class="text-text fs-normal"> <%- t.components.latestNews.date2 %></span>
                                             </div>
                                         </div>
-                                        <h3 class="fs-title fw-bold text-title-text mb-0"><%- t.components.latestNews.title %></h3>
-                                        <a href="" class="btn-hover fs-title fw-bold text-decoration-none text-decoration-none d-flex gap-2 align-items-center">
+                                        <h3 class="fs-title fw-bold text-title-text mb-0 transition-300"><%- t.components.latestNews.title2 %></h3>
+                                        <a href="<%= navigation(lang, 'st-blog.html') %>" class="btn-hover fs-title fw-bold text-decoration-none text-decoration-none d-flex gap-2 align-items-center">
+                                            <span class="fs-big fw-semibold text-button-text transition"><%- t.components.latestNews.txtButton %></span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                 <div class="latest-news shadow bg-white h-100">
+                                    <img class="w-100 ratio-1x1 object-fit-cover" src="<%= getMedia(lang, 'demo1/building3.png', 'images'); %>" alt="">
+                                    <div class="d-flex gap-3 p-3 flex-column justify-content-between">
+                                        <div class="d-flex gap-6 align-items-center ">
+                                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.components.latestNews.category3 %></span>
+                                            <div class="text-decoration-none d-flex gap-2 align-items-center">
+                                                <i class="fa-solid fa-calendar text-text fs-normal"></i>
+                                                <span class="text-text fs-normal"> <%- t.components.latestNews.date3 %></span>
+                                            </div>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0 transition-300"><%- t.components.latestNews.title3 %></h3>
+                                        <a href="<%= navigation(lang, 'st-blog.html') %>" class="btn-hover fs-title fw-bold text-decoration-none text-decoration-none d-flex gap-2 align-items-center">
                                             <span class="fs-big fw-semibold text-button-text transition"><%- t.components.latestNews.txtButton %></span>
                                             <i class="fa-regular fa-arrow-right fs-normal"></i>
                                         </a>
@@ -587,7 +646,7 @@
                                         class="fs-subtitle w-100 border rounded-1 px-3 py-2 fw-medium">
                                     <button type="submit"
                                         class="bg-primary text-black d-flex align-items-center gap-4 rounded-1 justify-content-center py-2"
-                                        href="#">
+                                        href="<%= navigation(lang, '') %>">
                                         <i class="fas fa-arrow-right-long fs-small px-4"></i>
                                     </button>
                                 </div>
@@ -647,15 +706,15 @@
                 <div class="d-flex flex-column align-items-center justify-content-between flex-lg-row gap-4">
 
                     <div class="d-flex flex-column gap-4 col-12 col-lg-8 ">
-                        <span class="text-primary">READY TO BUILD YOUR DREAM PROJECT?</span>
+                        <span class="text-primary"><%- t.pages.homeOne.sectiontensubtitle %></span>
 
-                        <h4 class="fw-bold fs-high-title">Let's Build Something Great Together!</h4>
+                        <h4 class="fw-bold fs-high-title"><%- t.pages.homeOne.sectiontentitle %></h4>
 
                     </div>
 
                     <div class="text-lg-end">
-                        <a href="#" class="cta-btn  btn-hover d-flex align-items-center gap-2">
-                            <span class="">GET A FREE QUOTE</span>
+                        <a href="<%= navigation(lang, 'contact-us.html') %>" class="cta-btn  btn-hover d-flex align-items-center gap-2">
+                            <span class=""><%- t.pages.homeOne.sectiontenbtn %></span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -667,5 +726,5 @@
 
     </main>
 
-    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
+
 <%- include('../layouts/page/foot.ejs') -%>

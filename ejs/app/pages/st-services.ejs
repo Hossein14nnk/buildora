@@ -1,5 +1,4 @@
 <%- include('../layouts/page/head.ejs' , {title: "st-services", addCount: 0}); -%>
-    <%- include('../components/header/content.ejs', ); -%>
     <main class="d-flex flex-column bg-background" id="st-services">
 
         <section class="hero bg-dark text-secondary position-relative py-8 position-relative">
@@ -7,11 +6,11 @@
             <div class="container py-4 d-flex flex-column gap-6">
 
                 <div class="small ">
-                    <a href="#" class="text-decoration-none text-primary"><%- t.pages.stService.breadcromp1 %></a>
+                    <a href="<%= navigation(lang, 'home-one.html') %>" class="text-decoration-none text-primary"><%- t.pages.stService.breadcromp1 %></a>
 
                     <span class="text-secondary">></span>
 
-                    <a href="#" class="text-decoration-none text-primary"><%- t.pages.stService.breadcromp2 %></a>
+                    <a class="text-decoration-none text-primary"><%- t.pages.stService.breadcromp2 %></a>
 
                     <span class="text-secondary">></span>
 
@@ -52,66 +51,68 @@
                 </section>
                 <hr>
                 <section class="offer py-8 d-flex flex-column gap-4">
-                    <h2 class="fw-bold">  <%- t.pages.stService.sectiiontreeTitle %></h2>
-
+                    <h2 class="fw-bold"><%- t.pages.stProject.sectionextra %></h2>
+                    <hr >  
+                    
                     <div class="row ">
 
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 ">
-                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
-                                <img src="<%- getMedia(lang, 'demo1/vector1.png', 'images') %>" class="img-size">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/en/demo1/vector1.png" class="img-size">
                                 <div class="d-flex flex-column align-items-start gap-1">
-                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
-                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title1 %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text1 %></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
-                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
-                                <img src="<%- getMedia(lang, 'demo1/vector2.png', 'images') %>" class="img-size">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/en/demo1/vector2.png" class="img-size">
                                 <div class="d-flex flex-column align-items-start gap-1">
-                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
-                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title2 %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text2 %></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
-                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
-                                <img src="<%- getMedia(lang, 'demo1/vector3.png', 'images') %>" class="img-size">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/en/demo1/vector3.png" class="img-size">
                                 <div class="d-flex flex-column align-items-start gap-1">
-                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
-                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title3 %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text3 %></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
-                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
-                                <img src="<%- getMedia(lang, 'demo1/vector4.png', 'images') %>" class="img-size">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/en/demo1/vector4.png" class="img-size">
                                 <div class="d-flex flex-column align-items-start gap-1">
-                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
-                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title4 %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text4 %></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
-                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
-                                <img src="<%- getMedia(lang, 'demo1/vector5.png', 'images') %>" class="img-size">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/en/demo1/vector5.png" class="img-size">
                                 <div class="d-flex flex-column align-items-start gap-1">
-                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
-                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title5 %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text5 %></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
-                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4">
-                                <img src="<%- getMedia(lang, 'demo1/vector6.png', 'images') %>" class="img-size">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/en/demo1/vector6.png" class="img-size">
                                 <div class="d-flex flex-column align-items-start gap-1">
-                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title %></h3>
-                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text %></span>
+                                    <h3 class="fs-mid-title fw-bold"><%- t.components.servicesOverview.title6 %></h3>
+                                    <span class="fs-big fw-semibold"><%- t.components.servicesOverview.text6 %></span>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+
                 </section>
                 <section class="process py-8 d-flex flex-column gap-4">
                     <h2 class="fw-bold">  <%- t.pages.stService.sectionfourtitle %></h2>
@@ -136,42 +137,42 @@
                     <ul class="list-group d-flex flex-column">
 
                         <li class="rounded">
-                            <a href="#" class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
                                 <%- t.pages.stService.service1 %>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </li>
 
                         <li class="rounded">
-                            <a href="#" class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
                                 <%- t.pages.stService.service2 %>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </li>
 
                         <li class="rounded">
-                            <a href="#" class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
                                  <%- t.pages.stService.service3 %>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </li>
 
                         <li class="rounded">
-                            <a href="#" class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
                                  <%- t.pages.stService.service4 %>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </li>
 
                         <li class="rounded">
-                            <a href="#" class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
                                  <%- t.pages.stService.service5 %>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </li>
 
                         <li class="rounded">
-                            <a href="#" class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
                                 <%- t.pages.stService.service6 %>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
@@ -198,7 +199,7 @@
                 <div class="col-11 col-xxl-3 col-xl-3 col-lg-3 col-md-4 second-feature-card container-fluid d-flex flex-column gap-4 justify-content-start py-4" >
                     <h2 class="fs-mid-title fw-bold"> <%- t.pages.stService.sectionfiveTitle %></h2>
                     <p class="fs-title text-text fw-medium"> <%- t.pages.stService.sectionfiveDescription %></p>
-                    <a href="#" class="btn-hover bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
+                    <a href="<%= navigation(lang, 'teams.html') %>" class="btn-hover bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
                         <span class="fs-small"> <%- t.pages.stService.sectionfivebtn %></span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -212,5 +213,5 @@
 
     </main>
 
-    <%- include('../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
+
 <%- include('../layouts/page/foot.ejs'); -%>
