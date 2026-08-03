@@ -1,0 +1,11 @@
+.account-features .icon {
+    width: 60px;
+    aspect-ratio: 1;
+}
+
+.account-features .line {
+    width: 34px;
+    height: 2px;
+    border-radius: 100px;
+    background-color: var(--bs-primary);
+}

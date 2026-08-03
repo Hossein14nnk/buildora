@@ -1,0 +1,21 @@
+.stats-counter.row-style .icon{
+    width: 60px;
+    aspect-ratio: 1;
+    background-color: var(--bs-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stats-counter.row-style .line{
+    height: 35px;
+    background-color: rgba(128, 128, 128, 0.5);
+    width: 3px;
+    border-radius: 100px;
+}
+.stats-counter .hover h4{
+    transition: all 200ms linear;
+}
+.stats-counter .hover:hover h4{
+    color: var(--bs-primary);
+}

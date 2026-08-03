@@ -69,22 +69,324 @@
 
             <div class="row align-items-stretch justify-content-center row-gap-6">
                 <div class="col-12 col-lg-4 col-md-6">
-                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+
+                    <div class="card-review h-100 border-0 shadow-sm review-card-item py-6 px-8 transition-150">
+
+                        <div class="">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <div class="text-warning small">
+                                    <% for (let i = 0; i < t.components.reviewsCart.star6; i++) { %>
+                                        <i class="fa-solid fa-star"></i>
+                                    <% } %>
+                                </div>
+
+                                <div class="review-card-quote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path d="M4,3C2.343,3,1,4.343,1,6s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C3.782,10.168,2.493,11,1,11v2c3.309,0,6-2.691,6-6   V6C7,4.343,5.657,3,4,3z"/><path d="M12,3c-1.657,0-3,1.343-3,3s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C11.782,10.168,10.493,11,9,11v2   c3.309,0,6-2.691,6-6V6C15,4.343,13.657,3,12,3z"/></g><text x="0" y="31" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by icon 54</text><text x="0" y="36" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+                                </div>
+
+                            </div>
+
+                            <p class="fs-big text-text lh-lg mb-0 mb-5 ">
+                                <%= t.components.reviewsCart.comment6 %>
+                            </p>
+
+                            <div class="d-flex align-items-center border-top pt-4 pb-3">
+
+                                <img
+                                    src="<%- getMedia(lang, 'reviews/client(6).jpg', 'images') %>"
+                                    alt="<%= t.components.reviewsCart.name1 %>"
+                                    class="rounded-circle review-card__avatar"
+                                >
+
+                                <div class="ms-3">
+
+                                    <h6 class="fs-title fw-bold text-title-text mb-0 mb-1">
+                                        <%= t.components.reviewsCart.name6 %>
+                                    </h6>
+
+                                    <p class="text-muted small">
+                                        <%= t.components.reviewsCart.position6 %>
+                                    </p>
+
+                                    <p class="text-primary fw-bold small">
+                                        <%= t.components.reviewsCart.project6 %>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+  
                 </div>
                 <div class="col-12 col-lg-4 col-md-6">
-                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                    <div class="card-review h-100 border-0 shadow-sm review-card-item py-6 px-8 transition-150">
+
+                        <div class="">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <div class="text-warning small">
+                                    <% for (let i = 0; i < t.components.reviewsCart.star1; i++) { %>
+                                        <i class="fa-solid fa-star"></i>
+                                    <% } %>
+                                </div>
+
+                                <div class="review-card-quote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path d="M4,3C2.343,3,1,4.343,1,6s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C3.782,10.168,2.493,11,1,11v2c3.309,0,6-2.691,6-6   V6C7,4.343,5.657,3,4,3z"/><path d="M12,3c-1.657,0-3,1.343-3,3s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C11.782,10.168,10.493,11,9,11v2   c3.309,0,6-2.691,6-6V6C15,4.343,13.657,3,12,3z"/></g><text x="0" y="31" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by icon 54</text><text x="0" y="36" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+                                </div>
+
+                            </div>
+
+                            <p class="fs-big text-text lh-lg mb-0 mb-5 ">
+                                <%= t.components.reviewsCart.comment1 %>
+                            </p>
+
+                            <div class="d-flex align-items-center border-top pt-4 pb-3">
+
+                                <img
+                                    src="<%- getMedia(lang, 'reviews/client(5).jpg', 'images') %>"
+                                    alt="<%= t.components.reviewsCart.name1 %>"
+                                    class="rounded-circle review-card__avatar"
+                                >
+
+                                <div class="ms-3">
+
+                                    <h6 class="fs-title fw-bold text-title-text mb-0 mb-1">
+                                        <%= t.components.reviewsCart.name1 %>
+                                    </h6>
+
+                                    <p class="text-muted small">
+                                        <%= t.components.reviewsCart.position1 %>
+                                    </p>
+
+                                    <p class="text-primary fw-bold small">
+                                        <%= t.components.reviewsCart.project1 %>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
                 <div class="col-12 col-lg-4 col-md-6">
-                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                    <div class="card-review h-100 border-0 shadow-sm review-card-item py-6 px-8 transition-150">
+
+                        <div class="">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <div class="text-warning small">
+                                    <% for (let i = 0; i < t.components.reviewsCart.star2; i++) { %>
+                                        <i class="fa-solid fa-star"></i>
+                                    <% } %>
+                                </div>
+
+                                <div class="review-card-quote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path d="M4,3C2.343,3,1,4.343,1,6s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C3.782,10.168,2.493,11,1,11v2c3.309,0,6-2.691,6-6   V6C7,4.343,5.657,3,4,3z"/><path d="M12,3c-1.657,0-3,1.343-3,3s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C11.782,10.168,10.493,11,9,11v2   c3.309,0,6-2.691,6-6V6C15,4.343,13.657,3,12,3z"/></g><text x="0" y="31" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by icon 54</text><text x="0" y="36" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+                                </div>
+
+                            </div>
+
+                            <p class="fs-big text-text lh-lg mb-0 mb-5 ">
+                                <%= t.components.reviewsCart.comment2 %>
+                            </p>
+
+                            <div class="d-flex align-items-center border-top pt-4 pb-3">
+
+                                <img
+                                    src="<%- getMedia(lang, 'reviews/client(4).jpg', 'images') %>"
+                                    alt="<%= t.components.reviewsCart.name1 %>"
+                                    class="rounded-circle review-card__avatar"
+                                >
+
+                                <div class="ms-3">
+
+                                    <h6 class="fs-title fw-bold text-title-text mb-0 mb-1">
+                                        <%= t.components.reviewsCart.name2 %>
+                                    </h6>
+
+                                    <p class="text-muted small">
+                                        <%= t.components.reviewsCart.position2 %>
+                                    </p>
+
+                                    <p class="text-primary fw-bold small">
+                                        <%= t.components.reviewsCart.project2 %>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
                 <div class="col-12 col-lg-4 col-md-6">
-                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                    <div class="card-review h-100 border-0 shadow-sm review-card-item py-6 px-8 transition-150">
+
+                        <div class="">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <div class="text-warning small">
+                                    <% for (let i = 0; i < t.components.reviewsCart.star3; i++) { %>
+                                        <i class="fa-solid fa-star"></i>
+                                    <% } %>
+                                </div>
+
+                                <div class="review-card-quote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path d="M4,3C2.343,3,1,4.343,1,6s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C3.782,10.168,2.493,11,1,11v2c3.309,0,6-2.691,6-6   V6C7,4.343,5.657,3,4,3z"/><path d="M12,3c-1.657,0-3,1.343-3,3s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C11.782,10.168,10.493,11,9,11v2   c3.309,0,6-2.691,6-6V6C15,4.343,13.657,3,12,3z"/></g><text x="0" y="31" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by icon 54</text><text x="0" y="36" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+                                </div>
+
+                            </div>
+
+                            <p class="fs-big text-text lh-lg mb-0 mb-5 ">
+                                <%= t.components.reviewsCart.comment3 %>
+                            </p>
+
+                            <div class="d-flex align-items-center border-top pt-4 pb-3">
+
+                                <img
+                                    src="<%- getMedia(lang, 'reviews/client(3).jpg', 'images') %>"
+                                    alt="<%= t.components.reviewsCart.name1 %>"
+                                    class="rounded-circle review-card__avatar"
+                                >
+
+                                <div class="ms-3">
+
+                                    <h6 class="fs-title fw-bold text-title-text mb-0 mb-1">
+                                        <%= t.components.reviewsCart.name3 %>
+                                    </h6>
+
+                                    <p class="text-muted small">
+                                        <%= t.components.reviewsCart.position3 %>
+                                    </p>
+
+                                    <p class="text-primary fw-bold small">
+                                        <%= t.components.reviewsCart.project3 %>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
                 <div class="col-12 col-lg-4 col-md-6">
-                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                    <div class="card-review h-100 border-0 shadow-sm review-card-item py-6 px-8 transition-150">
+
+                        <div class="">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <div class="text-warning small">
+                                    <% for (let i = 0; i < t.components.reviewsCart.star4; i++) { %>
+                                        <i class="fa-solid fa-star"></i>
+                                    <% } %>
+                                </div>
+
+                                <div class="review-card-quote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path d="M4,3C2.343,3,1,4.343,1,6s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C3.782,10.168,2.493,11,1,11v2c3.309,0,6-2.691,6-6   V6C7,4.343,5.657,3,4,3z"/><path d="M12,3c-1.657,0-3,1.343-3,3s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C11.782,10.168,10.493,11,9,11v2   c3.309,0,6-2.691,6-6V6C15,4.343,13.657,3,12,3z"/></g><text x="0" y="31" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by icon 54</text><text x="0" y="36" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+                                </div>
+
+                            </div>
+
+                            <p class="fs-big text-text lh-lg mb-0 mb-5 ">
+                                <%= t.components.reviewsCart.comment4 %>
+                            </p>
+
+                            <div class="d-flex align-items-center border-top pt-4 pb-3">
+
+                                <img
+                                    src="<%- getMedia(lang, 'reviews/client(6).jpg', 'images') %>"
+                                    alt="<%= t.components.reviewsCart.name1 %>"
+                                    class="rounded-circle review-card__avatar"
+                                >
+
+                                <div class="ms-3">
+
+                                    <h6 class="fs-title fw-bold text-title-text mb-0 mb-1">
+                                        <%= t.components.reviewsCart.name4 %>
+                                    </h6>
+
+                                    <p class="text-muted small">
+                                        <%= t.components.reviewsCart.position4 %>
+                                    </p>
+
+                                    <p class="text-primary fw-bold small">
+                                        <%= t.components.reviewsCart.project4 %>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
                 <div class="col-12 col-lg-4 col-md-6">
-                    <%- include('../components/reviews-card/content.ejs', {reviewsCart: t.components.reviewsCart}); -%>
+                    <div class="card-review h-100 border-0 shadow-sm review-card-item py-6 px-8 transition-150">
+
+                        <div class="">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <div class="text-warning small">
+                                    <% for (let i = 0; i < t.components.reviewsCart.star5; i++) { %>
+                                        <i class="fa-solid fa-star"></i>
+                                    <% } %>
+                                </div>
+
+                                <div class="review-card-quote">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path d="M4,3C2.343,3,1,4.343,1,6s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C3.782,10.168,2.493,11,1,11v2c3.309,0,6-2.691,6-6   V6C7,4.343,5.657,3,4,3z"/><path d="M12,3c-1.657,0-3,1.343-3,3s1.343,3,3,3c0.161,0,0.315-0.023,0.469-0.047C11.782,10.168,10.493,11,9,11v2   c3.309,0,6-2.691,6-6V6C15,4.343,13.657,3,12,3z"/></g><text x="0" y="31" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by icon 54</text><text x="0" y="36" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+                                </div>
+
+                            </div>
+
+                            <p class="fs-big text-text lh-lg mb-0 mb-5 ">
+                                <%= t.components.reviewsCart.comment5 %>
+                            </p>
+
+                            <div class="d-flex align-items-center border-top pt-4 pb-3">
+
+                                <img
+                                    src="<%- getMedia(lang, 'reviews/client(5).jpg', 'images') %>"
+                                    alt="<%= t.components.reviewsCart.name1 %>"
+                                    class="rounded-circle review-card__avatar"
+                                >
+
+                                <div class="ms-3">
+
+                                    <h6 class="fs-title fw-bold text-title-text mb-0 mb-1">
+                                        <%= t.components.reviewsCart.name5 %>
+                                    </h6>
+
+                                    <p class="text-muted small">
+                                        <%= t.components.reviewsCart.position5 %>
+                                    </p>
+
+                                    <p class="text-primary fw-bold small">
+                                        <%= t.components.reviewsCart.project5 %>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div> 
 
@@ -103,11 +405,7 @@
                         </p>
                     </div>
 
-<<<<<<< HEAD
-                    <a href="./output/en/pages/home-one.html" class="btn-hover rounded-3 bg-button px-5 py-2 text-button-text mt-2 d-flex gap-5 align-items-center fw-bold fs-subtitle">
-=======
                     <a href="<%= navigation(lang, 'home-one.html') %>" class="btn-hover rounded-3 bg-button px-5 py-2 text-button-text mt-2 d-flex gap-6 align-items-center fw-bold fs-subtitle">
->>>>>>> 92be3538014c7641773efd563a6fe0c2544e2662
                         <span class=""><%- t.pages.Reviews.sectionEnbtn %></span>
                         <i class="fa-solid fa-arrow-right text-dark"></i>
                     </a>

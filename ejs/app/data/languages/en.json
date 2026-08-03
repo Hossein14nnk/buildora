@@ -2,7 +2,7 @@
   "direction": "ltr",
   "components": {
     "accountFeatures": {
-      "title": "Build Your Future With Buildex",
+      "title": "Build Your Future With Buildora",
       "subtitle": "Create an account to access exclusive features and manage your projects easily.",
       "itemOne": {
         "title": "Manage Your Projects",
@@ -55,7 +55,7 @@
       },
       "itemThree": {
         "title": "Email",
-        "value": "info@buildex.com"
+        "value": "info@Buildora.com"
       },
       "itemFour": {
         "title": "Working Hours",
@@ -99,19 +99,52 @@
       "txtButton": "Read more"
     },
     "servicesCard": {
-      "title": "Construction Management",
-      "text": "We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.",
-      "button": "LEARN MORE"
+      "title1": "Construction Management",
+      "text1": "We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.",
+      
+      "button": "LEARN MORE",
+
+      "title2": "Interior Design",
+      "text2": "Our integrated design and build approach streamlines the process, reduces costs, and brings your vision to life efficiently.",
+      
+      "title3": "Renovation & Restoration",
+      "text3": "We transform existing spaces with expert renovation and restoration services, blending innovation with proven construction techniques.",
+      
+
+      "title4": "Construction Management",
+      "text4": "Our interior design solutions combine functionality and aesthetics to create spaces that inspire and perform.",
+      
+      "title5": "Project Consulting",
+      "text5": "We provide expert advice and strategic insights to help you make informed decisions and achieve project success.",
+      
+      "title6": "Construction Maintenance",
+      "text6": "Our ongoing maintenance services ensure your property remains safe, efficient, and in optimal condition."
+      
     },
     "servicesOverview": {
-      "title": "Project Planning",
-      "text": "We develop detailed plans and strategies to ensure your project starts on the right track."
+      "title1": "Project Planning",
+      "text1": "We develop detailed plans and strategies to ensure your project starts on the right track.",
+
+      "title2": "Schedule Management",
+      "text2": "We create realistic timelines and ensure your project is completed on schedule.",
+
+      "title3": "Budget Management",
+      "text3": "Our team monitors costs and resources to keep your project within budget.",
+
+      "title4": "Risk Management",
+      "text4": "We identify potential risks early and implement solutions to minimize delays and costs.",
+
+      "title5": "Quality Assurance",
+      "text5": "We maintain strict quality control standards throughout the construction process.",
+
+      "title6": "Vendor & Subcontractor Management",
+      "text6": "We coordinate and manage all subcontractors and suppliers to ensure smooth collaboration."
     },
     "needHelpCard": {
       "title": "Need Help?",
       "subtitle": "Our team is ready to answer your questions and help you get started.",
       "itemOne": "+1 212 555 7890",
-      "itemTwo": "info@buildex.com",
+      "itemTwo": "info@Buildora.com",
       "itemThree": "Mon-Sat: 8:00 AM - 6:00 PM"
     },
     "processTimeline": {
@@ -136,7 +169,7 @@
     "historyTimeline": {
       "itemOne": {
         "title": "1998 Company Founded",
-        "text": "Buildex Construction was established with a vision for excellence."
+        "text": "Buildora Construction was established with a vision for excellence."
       },
       "itemTwo": {
         "title": "2005 Expanded Services",
@@ -232,8 +265,15 @@
       "law": "I agree to the Privacy Policy"
     },
     "comment": {
-      "txt": "Buildex delivered our project on time and exceeded our expectations. Their attention to detail is unmatched.",
-      "name": "- Emily Wilson"
+      "txt1": "Builder delivered our project on time and exceeded our expectations. Their attention to detail is unmatched.",
+      "name1": "— David Wilson",
+
+      "txt2": "Professional, reliable and innovative team. We highly recommend Builder for any construction project.",
+      "name2": "— Sarah Mitchell",
+
+      "txt3": "The quality of work and communication throughout the project was outstanding. Truly a great experience.",
+      "name3": "— Michael Brown"
+
     },
 	"teamFeature":
 		{
@@ -255,9 +295,27 @@
 			}
     },
     	"coreServicesCard": {
-			"title": "Construction Management",
-			"text": "We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.",
-			"button": "Describe More"
+			"button": "Describe More",
+
+      "title1": "Construction Management",
+      "text1": "We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.",
+
+      "title2": "Interior Design",
+      "text2": "Our integrated design and build approach streamlines the process, reduces costs, and brings your vision to life efficiently.",
+      
+      "title3": "Renovation & Restoration",
+      "text3": "We transform existing spaces with expert renovation and restoration services, blending innovation with proven construction techniques.",
+      
+
+      "title4": "Construction Management",
+      "text4": "Our interior design solutions combine functionality and aesthetics to create spaces that inspire and perform.",
+      
+      "title5": "Project Consulting",
+      "text5": "We provide expert advice and strategic insights to help you make informed decisions and achieve project success.",
+      
+      "title6": "Construction Maintenance",
+      "text6": "Our ongoing maintenance services ensure your property remains safe, efficient, and in optimal condition."
+      
 		},
 		"coreServicesSecondaryCard": {
 			"title": "Construction Management",
@@ -265,10 +323,43 @@
 			"button": "Describe More"
 		},
 		"projectCard": {
-			"category": "commercial",
-			"title": "Skyline Tower",
-			"location": "Miami,USA",
-			"image": ""
+			"category1": "Residential",
+			"title1": "Oceanview Residence",
+			"location1": "Miami, USA",
+
+      "category2": "commercial",
+			"title2": "Skyline Tower",
+			"location2": "Dubai, UAE",
+
+      "category3": "Industrial",
+			"title3": "Northern Logistics Hub",
+			"location3": "Hamburg, Germany",
+
+      "category4": "Interior",
+			"title4": "Modern Interior Apartment",
+			"location4": "New York, USA",
+
+      "category5": "Commercial",
+			"title5": "Tech Park Building",
+			"location5": "Bangalore, India",
+
+      "category6": "Infrastructure",
+			"title6": "Riverside Bridge",
+			"location6": "Austin, Texas, USA",
+
+      "category7": "Industrial",
+			"title7": "Horizon Office Complex",
+			"location7": "Singapore",
+
+      "category8": "Commercial",
+			"title8": "Central Plaza",
+			"location8": "Toronto, Canada",
+
+      "category9": "Residential",
+			"title9": "Sunset Villa",
+			"location9": "Los Angeles, USA"
+
+
 		},
 		"projectBanner": {
 			"title": "Building Dreams With Precision",
@@ -277,12 +368,48 @@
 			"image": ""
 		},
 		"reviewsCart": {
-			"comment" : "Buildex Construction exceeded our expectations from start to finish. Their team was professional, transparent, and delivered our dream home on time and within budget.",
-			"star" : 5,
-			"name" : "Michael Anderson",
-			"position": "Homeowner",
-			"project": "Residential Project",
-			"image": "components/comment-profile.jpg"
+			"comment1" : "Buildex Construction exceeded our expectations from start to finish. Their team was professional, transparent, and delivered our dream home on time and within budget.",
+			"star1" : 5,
+			"name1" : "Michael Anderson",
+			"position1": "Homeowner",
+			"project1": "Residential Project",
+			"image1": "reviews/client(5).jpg",
+
+      "comment2" : "Working with Buildex was a fantastic experience. The quality of their work and attention to detail on our office building project was outstanding.",
+			"star2" : 5,
+			"name2" : "Sarah Thompson",
+			"position2": "Operations Manager",
+			"project2": "Commercial Project",
+			"image2": "reviews/client(6).jpg",
+
+      "comment3" : "Their team managed the entire process seamlessly. Communication was excellent and they completed the renovation ahead of schedule.",
+			"star3" : 5,
+			"name3" : "David Martinez",
+			"position3": "Property Owner",
+			"project3": "Renovation Project",
+			"image3": "reviews/client(3).jpg",
+
+      "comment4" : "Buildex Construction is reliable, efficient, and truly cares about client satisfaction. I highly recommend them for any construction project.",
+			"star4" : 5,
+			"name4" : "Emily Johnson",
+			"position4": "Business Owner",
+			"project4": "Commercial Project",
+			"image4": "reviews/client(4).jpg",
+
+      "comment5" : "We are extremely happy with the quality and craftsmanship. Buildex turned our vision into reality with great expertise and dedication.",
+			"star5" : 5,
+			"name5" : "James Wilson",
+			"position5": "Homeowner",
+			"project5": "Residential Project",
+			"image5": "reviews/client(5).jpg",
+
+      "comment6" : "Exceptional service and top-notch quality! Buildex Construction is our go-to partner for all our construction needs.",
+			"star6" : 5,
+			"name6" : "Olivia Brown",
+			"position6": "Director",
+			"project6": "Commercial Project",
+			"image6": "reviews/client(6).jpg"
+
 		},
 		"serviceWork" : {
 			"image": "projects/project-1.jpg",
@@ -298,18 +425,56 @@
       "name": "Construction"
     },
     "projectList": {
-      "description": "modern artachiteck design"
+      "description1": "Client-focused approach",
+      "description2": "Skilled and certified team",
+      "description3": "Commitment to safety and quality"
     },
-        "latestNews": {
+    "latestNews": {
       "src": "en/components/latest-news.jpg",
-      "category": "Construction",
-      "date": "Oct 15, 2026",
-      "title": "Key Considerations for Commercial Construction",
-      "txtButton": "Read more"
+      "category1": "Construction",
+      "date1": "July 11, 2024",
+      "title1": "5 Points to Consider When Choosing a General Contractor",
+      "txtButton": "Read more",
+
+      "category2": "Trends",
+      "date2": "July 13, 2024",
+      "title2": "Commercial Construction Trends of 2025–25",
+
+      "category3": "Technology",
+      "date3": "July 15, 2024",
+      "title3": "How Technology Is Transforming the Construction Industry"
     },
     "teamCard": {
-      "name": "James Anderson",
-      "job": "Project Manager"
+      "name1": "James Anderson",
+      "job1": "Chief Executive Officer",
+
+      "name2": "Olivia Bennett",
+      "job2": "Chief Operating Officer",
+
+      "name3": "Michael Carter",
+      "job3": "Chief Project Officer",
+
+      "name4": "Sophia Martinez",
+      "job4": "Director of Design",
+
+      "name5": "Daniel Thomas",
+      "job5": "Director of Construction",
+
+      "name6": "Liam Wilson",
+      "job6": "Project Manager",
+
+      "name7": "Emily Johnson",
+      "job7": "Planning Engineer",
+
+      "name8": "David Lee",
+      "job8": "David Lee",
+
+      "name9": "Ava Thompson",
+      "job9": "Interior Designer",
+
+      "name10": "Noah Brown",
+      "job10": "Site Supervisor"
+
     },
     "pricingArea": {
       "number1": "1",
@@ -387,11 +552,8 @@
 			"title":"Handover",
 			"subtitle":"We deliver the project and ensure your complete satisfaction."
 		}
-	},
-		"subscribe":{
-			"title":"Subscribe to Our Newsletter",
-			"subtitle":"Get the latest updates, insights, and news delivered to your inbox."
-	},
+  },
+		
 		"secondFeatureCards":{
 		"itemOne":{
 			"title":"Expert Team",
@@ -447,7 +609,7 @@
     "register":{
       "subtitle":"Create Account",
       "title":"Register",
-      "description":"Join Buildex Construction and get started today.",
+      "description":"Join Buildora Construction and get started today.",
       "firstname":"First Name ",
       "placeHolderFirst":"Enter your first name",
       "lastname":"Last Name",
@@ -513,6 +675,7 @@
       "service4":" Interior Design",
       "service5":"  Project Consulting",
       "service6":"  Construction Maintenance",
+
       "sectionfiveTitle":"Why Choose Us",
       "sectionfiveDescription":"We combine experience, expertise, and dedication to deliver exceptional construction management services.",
       "sectionfivebtn":"LET'S WORK TOGETHER"
@@ -591,17 +754,22 @@
       "category6":"Commercial",
       "category7":"Sustainability",
       "category8":"Commercial",
+
+
       "PopularBlog":"Popular Blog",
-      "blog1":"1. 10 Construction Trends Shaping the Future",
-      "date1":"Oct 15, 2026",
-      "blog2":"1. 10 Construction Trends Shaping the Future",
-      "date2":" Oct 15, 2026",
-      "blog3":"1. 10 Construction Trends Shaping the Future",
-      "date3":"Oct 15, 2026",
-      "blog4":"1. 10 Construction Trends Shaping the Future",
+      "blog1":"10 Construction Trends Shaping the Future",
+      "date1":"May 12, 2024",
+      "blog2":"How Effective Planning Ensures ",
+      "date2":"May 5, 2024",
+      "blog3":"Modern Interior Design Trends for ",
+      "date3":"April 28, 2024",
+      "blog4":"Construction Trends Shaping the Future",
       "date4":"Oct 15, 2026",
-      "blog5":"1. 10 Construction Trends Shaping the Future",
-      "date5":"Oct 15, 2026",
+      "blog5":"Sustainable Building Practices for ",
+      "date5":"April 20, 2024",
+
+
+
       "cardsubscribe":"Subscribe to Our Newsletter",
       "descriptionSubscribe":"Get the latest updates,insights, and news delivered to your inbox.",
       "emailolaceholder":"Enter your email",
@@ -617,43 +785,64 @@
       "option1":"Residential",
       "option2":"Commercial",
       "option3":"Industrial",
-      "category1": "safety",
-      "date1": "Oct 15, 2026",
-      "title1": "1. 10 Construction Trends Shaping the Future",
-      "description": "The construction industry is evolving faster than ever before. New technologies, sustainable materials, and digital workflows are transforming how buildings are designed and constructed. ",
+
+
+      "category1": "Construction",
+      "date1": "May 12, 2024",
+      "title1": "10 Construction Trends Shaping the Future",
+      "description1": "Discover the top construction trends that are transforming the way we build in 2024 and beyond.",
       "txtButton": "Read more",
-      "category2": "comercial",
-      "date2": "Oct 12, 2026",
-      "title2": "How effective planning ensures project success",
-      "category3": "Design",
-      "date3": "Oct 23, 2026",
-      "title3": "modern interior design trends for 2024",
-      "category4": "build",
-      "date4": "Oct 20, 2026",
-      "title4": "sustainable building practices for a greener tomorrow",
-      "category5": "Commercial",
-      "date5": "Oct 16, 2026",
-      "title5": "construction site safety:best practices",
-      "category6": "safety",
-      "date6": "Oct 14, 2026",
-      "title6": "key Considerations for commercial constructoin",
-      "category7": "build",
-      "date7": "Oct 20, 2026",
-      "title7": "building your dream home: a step-by-step guide",
-      "category8": "Commercial",
-      "date8": "Oct 16, 2026",
-      "title8": "construction site safety:best practices",
-      "category9": "safety",
-      "date9": "Oct 14, 2026",
-      "title9": "1. 10 Construction Trends Shaping the Future",
+
+      "category2": "Project Management",
+      "date2": "May 5, 2024",
+      "title2": "How Effective Planning Ensures Project Success",
+      "description2": "Learn how proper planning, scheduling, and resource management lead to successful project delivery.",
+
+      "category3": "Interior Design",
+      "date3": "April 28, 2024",
+      "title3": "Modern Interior Design Trends for 2024",
+      "description3": "Explore the latest interior design trends that bring style, functionality, and comfort to modern spaces.",
+
+      "category4": "Sustainability",
+      "date4": "April 20, 2024",
+      "title4": "Sustainable Building Practices for a Greener Tomorrow",
+      "description4": "Sustainability is the future. Here are the best practices for environmentally friendly modern construction.",
+
+      "category5": "Safety",
+      "date5": "April 16, 2024",
+      "title5": "Construction Site Safety: Best Practices",
+      "description5": "Safety is a top priority. Follow these best practices to ensure a safe and healthy work environment.",
+
+      "category6": "Commercial",
+      "date6": "April 10, 2024",
+      "title6": "Key Considerations for Commercial Construction",
+      "description6": "Understand the essential factors to consider for a successful commercial construction project.",
+
+      "category7": "Residential",
+      "date7": "April 3, 2024",
+      "title7": "Building Your Dream Home: A Step-by-Step Guide",
+      "description7": "A complete guide to help you navigate the home construction process from concept to completion.",
+
+      "category8": "Design Build",
+      "date8": "March 23, 2024",
+      "title8": "Design-Build vs Traditional Construction: Which is Right for You?",
+      "description8": "Compare the design-build and traditional methods to choose the best approach for your project.",
+      
+      "category9": "9. Infrastructure",
+      "date9": "March 20, 2024",
+      "title9": "The Importance of Quality Materials in Construction",
+      "description9": "Quality materials ensure durability, safety, and long-term value. Here's why they matter most.",
+
       "PopularBlog":"Popular Blog",
-      "blog1":"1. 10 Construction Trends Shaping the Future",
-      "date10":"Oct 15, 2026",
-      "blog2":"1. 10 Construction Trends Shaping the Future",
-      "date11":" Oct 15, 2026",
-      "blog3":"1. 10 Construction Trends Shaping the Future",
-      "blog4":"1. 10 Construction Trends Shaping the Future",
-      "blog5":"1. 10 Construction Trends Shaping the Future",
+      "blog1":"10 Construction Trends Shaping the Future",
+      "date10":"May 12, 2024",
+      "blog2":"How Effective Planning Ensures Project Success",
+      "date11":"May 5, 2024",
+      "blog3":"Modern Interior Design Trends for 2024",
+      "date12":"April 28, 2024",
+      "blog4":"Sustainable Building Practices for Greener Tomorrow",
+      "date13":"April 20, 2024",
+
       "Categories":"Categories",
       "categorys1":"Design & Build",
       "categorys2":"Project Consulting",
@@ -670,7 +859,7 @@
       "heroSubTitle": "Reviews",
       "heroTitle1":" Customer Reviews ",
       "heroTitle2":"That Inspire Trust",
-      "heroDescription":"Don't just take our word for it. See what our clients say about working with Buildex Construction.",
+      "heroDescription":"Don't just take our word for it. See what our clients say about working with Buildora Construction.",
       "section2Title": "What Our Clients Say",
       "filter1":"ALL REVIEWS",
       "filter2":"RESIDENTIAL",
@@ -683,7 +872,7 @@
       "btnLoud":"LOAD MORE IMAGES",
       "sectionEndsubtitle":"LET'S BUILD TOGETHER",
       "sectionEndtitle": "Ready to Build Your Dream Project?",
-      "sectionEndDescription":"Join hundreds of happy clients who trust Buildex Construction.",
+      "sectionEndDescription":"Join hundreds of happy clients who trust Buildora Construction.",
       "sectionEnbtn":"GET A QUOTE"
     },
     "Plan":{
@@ -745,10 +934,9 @@
       "sectionseventitile":"meat our professionals",
       "sectioneightsubtitle":"TESTIMONIALS",
       "sectioneighttitle":"What Our Clients Say",
-      "sectiontensubtitle":"OUR BLOG",
-      "sectiontentitle":"Latest Articles & News",
-      "sectiontendescription":"Donec porta enim pellentesque commodo convallis rhoncus.",
-      "sectiontenbtn": "view all articles",
+      "sectiontensubtitle":"READY TO BUILD YOUR DREAM PROJECT?",
+      "sectiontentitle":"Let's Build Something Great Together!",
+      "sectiontenbtn": "GET A FREE QUOTE",
       "sectionelevensubtitle":" OUR CLIENTS",
       "sectioneleventitle":"Trusted By Leading Companies",
       "sectionsubscribe":"Subscribe To Our Newsletter",
@@ -806,7 +994,8 @@
       "sectiontwoDescription1":"Our construction management services provide comprehensive oversight of your project from planning to completion. We coordinate all aspects of construction,including budgeting, scheduling, resource allocation, and quality control, to ensure seamless execution and successful outcomes.",
       "sectiontwoDescription2":" With a focus on safety, efficiency, and transparent communication, we act as your trusted partner every step of the way.",
       "sectiontreetitle":"What We Offer",
-      "insidetitle":"Project Highlights"
+      "insidetitle":"Project Highlights",
+      "sectionextra": "Key Feature"
     },
     "arServices":{
       "heroSubtitle":"  Our Services",
@@ -814,6 +1003,7 @@
       "for":"For",
       "heroTitle2":"Every Build",
       "heroDescription":" From concept to completion, we provide end-to-end construction services tailored to your needs.",
+      
       "sectiontwosubtitle":"OUR PROCESS",
       "sectiontwotitle":" How We Work",
       "sectiontwoDescription":"We follow a structured process to ensure every project is delivered efficiently, on time, and to the highest quality standards.",
@@ -858,15 +1048,15 @@
       "option1":"Filter By",
       "option2":"Newest",
       "option3":"Oldest",
-      "sectiontreeSubtitle":"OUR PROCESS",
-      "sectiontreetitle":"  How We Work",
-      "sectiontreedescription":" We follow a structured process to ensure every project is delivered efficiently, on time,and to the highest quality standards.",
-      "sectiontreebtn":"START Your PROJECT"
+      "sectiontreeSubtitle":"WHY CLIENTS CHOOSE US",
+      "sectiontreetitle":" Delivering Quality In Every Detail",
+      "sectiontreedescription":"We combine expert craftsmanship, innovative solutions, and a client-first approach to deliver projects that stand the test of time",
+      "sectiontreebtn":"WORK WITH US"
     }
 	},
 	"footer": {
 		"description": "We are a leading construction company providing high-quality services across residential, commercial and industrial sectors worldwide.",
-		"paragraph": "© 2024 Buildex Construction. All Rights Reserved.",
+		"paragraph": "© 2024 Buildora Construction. All Rights Reserved.",
 		"quickLinks": {
 			"txt": "QUICK LINKS",
 			"home": "Home",
@@ -889,33 +1079,41 @@
 			"address1": "123 Construction Ave,",
 			"address2": "New York, NY 10001, USA",
 			"phoneNumber": "+1 212 555 7890",
-			"email" : "info@buildex.com",
+			"email" : "info@Buildora.com",
 			"timeWork": "Mon – Sat: 8:00 AM – 6:00 PM"
 		},
 		"recent" : "RECENT PROJECTS"
 
 	},
   "header":{
-    "logotitle":"BUILDEX",
-    "logoDescription":"Construction",
-    "home":"Home",
-    "item1":"About Us",
-    "item2":"Services",
-    "item3":"Projects",
-    "item4":"Pages",
-    "item5":"Blog",
-    "item6":"Contact",
-    "headerbtn":"Get A Quote",
-    "otherpage1":"homeTwo",
-    "otherpage2":"service",
-    "otherpage3":"weblog",
-    "otherpage4":"gallery",
-    "otherpage5":"plans",
-    "otherpage6":"register",
-    "otherpage7":"Reviews",
-    "otherpage8":"teams",
-    "otherpage9":"project"
-    
+    "logotitle":"BUILDORA",
+    "logoDescription":"buildora logo",
+    "headerbtn": "Get A Quote",
 
+    "home":"Home",
+    "item1":"Demo1",
+    "item2":"Demo2",
+
+    "Buildora": "Buildora",
+    "item3":"gallery",
+    "item4":"Teams",
+    "item5":"Contact Us",
+    "item6":"About Us",
+    "item7":"Register",
+    "item8":"Reviews",
+
+    "Services": "Services",
+    "item9":"Service",
+    "item10":"Services Archive",
+
+    "Projects" : "Projects",
+    "item11": "Project",
+    "item12": "Projects Archive",
+
+    "Blog": "Blog",
+    "item13": "weblog",
+    "item14": "weblogs Archive",
+
+    "PLANS": "PLANS"
   }
 }

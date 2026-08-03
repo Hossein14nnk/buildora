@@ -188,8 +188,8 @@ const Animation = {
         servicesOverview(){
             if (!Helper.checkElement("#about-us section.journey")) return;
 
-            const projects = Helper.elements("#about-us section.introductionb .wrapper div:has(.services-overview)");
-            const tlProjects = Helper.timeline("#about-us section.introductionb .wrapper div:has(.services-overview)");
+            const projects = Helper.elements("#about-us section.introduction .wrapper div:has(.services-overview)");
+            const tlProjects = Helper.timeline("#about-us section.introduction .wrapper div:has(.services-overview)");
 
             gsap.set(projects, {
                 opacity: 0,
