@@ -59,6 +59,10 @@ section {
   transition: all 300ms ease-in-out;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #home-one #main-hero {
   background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/single/herohomepage.png");
   background-size: 100% 100%;
@@ -206,7 +210,8 @@ section {
 #home-one .cta {
   background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 a {
@@ -374,7 +379,8 @@ input:focus {
 #gallery .project-cta > .container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 #gallery img {
@@ -698,7 +704,8 @@ article:hover .fancy-txt2 {
 #plans .project-cta > .container {
   background-image: linear-gradient(rgba(2, 11, 38, 0.893)), url("../media/images/en/plans/pic1.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 #plans .included .container {

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="icon" type="image/png" href="./assets/media/images/single/logo-web3.webp">
+    <base href="../">
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/components.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body class="font-primary">
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">buildex</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./pages/plans.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column" id="gallery">
+
+        <section class="hero py-20 text-secondary-text d-flex justify-content-start">
+            <div class="container d-flex ">
+                <div class="d-flex flex-column gap-4 col-10 col-xxl-5 col-xl-6 col-lg-8 align-items-start">
+                    <div class="small ">
+                        <a href="./pages/home-one.html">Home</a>
+                        <span class="mx-2">›</span>
+
+                        <a>Pages</a>
+                        <span class="mx-2">›</span>
+
+                        <span>Gallery</span>
+                    </div>
+                    <span class="text-primary fw-bold text-uppercase border-secondary border-start px-3 border-3 lh-1">Our Gallery</span>
+
+                    <h1 class="fs-big-title fw-bold">
+                        A Glimpse Of Our  <br>
+                        <span class="text-primary">Work & Achievements</span>
+                    </h1>
+
+                    <p class="text-secondary fs-mid-title">
+                        <span class="fancy-txt">  Explore our gallery to see the quality, craftsmanship, and attention to detail that define every project we build.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery container py-8 d-flex flex-column gap-8 align-items-center d-flex">
+             
+            <div class="d-flex align-items-center justify-content-between w-100 flex-column flex-sm-row">
+
+                <ul class="gallery-filter d-flex align-items-center fw-semibold fs-small">
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            All Galleries
+                        </span>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            Residential
+                        </span>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            Commercial
+                        </span>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            Industrial
+                        </span>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            Interior
+                        </span>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            Infrastructure
+                        </span>
+                    </li>
+                </ul>
+                <select class="form-select sort-select d-flex border rounded px-1 py-1 fs-small ">
+                    <option class="">Latest First</option>
+                    <option class="">Oldest First</option>
+                    <option class="">Oldest First</option>
+                </select>
+            </div>
+
+
+            <div class="row align-items-stretch justify-content-center">
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1 ">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT1.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT4.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT2.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT3.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT4.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT6.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/news.jpg" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/photo-1486406146926-c627a92ad1ab.jpg" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/projects.jpg" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT1.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT4.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT2.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/ChatGPT3.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <button class="seeMore d-flex gap-8 px-3 py-2 rounded border fs-small fw-bold align-items-center">
+                <span class="text-uppercase">LOAD MORE IMAGES</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </section>
+
+        <section class="project-cta py-0 text-light">
+            <div class="container py-8 px-20">
+                <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row gap-4">
+
+                    <div class="d-flex flex-column gap-4">
+                        <span class="text-primary">LET'S BUILD TOGETHER</span>
+
+                        <h4 class="fw-bold fs-high-title">Have A Project In Mind?</h4>
+
+                        <p class="text-text">
+                           We're here to help you turn your ideas into reality with quality and precision.
+                        </p>
+                    </div>
+
+                    <div class="text-lg-end">
+                        <a href="./pages/contact-us.html" class="cta-btn d-flex align-items-center gap-2 btn-hover">
+                            <span class="">GET A QUOTE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+
+    
+    <footer class="footer bg-dark text-secondary py-5 ">
+        <div class="container">
+
+            <div class="row row-gap-8 row-gap-lg-0">
+
+                
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
+
+                    <img src="./assets/media/images/footer/logo.png" class="" width="210">
+
+                    <p  class="">We are a leading construction company providing high-quality services across residential, commercial and industrial sectors worldwide.</p>
+
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
+
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">QUICK LINKS</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Home</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">About Us</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Services</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Projects</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Blog</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">OUR SERVICES</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Construction Management</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Design &amp; Build</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Renovation</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Interior Design</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Project Consulting</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">CONTACT INFO</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-location text-primary"></i>
+                            <div class="d-flex flex-column justify-content-start">
+                                <span class="">123 Construction Ave,</span>
+                                <span class="">New York, NY 10001, USA</span>
+                            </div>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-light fa-phone text-primary"></i>
+                            <span class="">+1 212 555 7890</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span class="">info@buildex.com</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-clock text-primary"></i>
+                            <span  class="">Mon – Sat: 8:00 AM – 6:00 PM</span>
+                        </li>
+                    </ul>
+
+                    <div class="social d-xxl-none d-xl-none d-lg-none d-flex align-items-center gap-2">
+
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
+
+                    <h6 class="fw-bold text-nowrap">RECENT PROJECTS</h6>
+
+                    <div class="row g-1">
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT1.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT2.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT3.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT4.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT5.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT6.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="bg-light">
+
+            <div class="copyright">
+
+                © 2024 Buildex Construction. All Rights Reserved.
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./assets/js/SplitText.min.js"></script>
+    <script src="./assets/js/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/gsap.min.js"></script>
+    
+    
+    
+    <script src="./assets/js/animations.js"></script>
+    <script src="./assets/js/mizchin.min.js"></script>
+</body>
+
+</html>

@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>st-project</title>
-    <link rel="icon" type="image/png" href="./assets/media/images/en/single/logo-web3.webp">
-    <base href="../../../">
+    <link rel="icon" type="image/png" href="./assets/media/images/single/logo-web3.webp">
+    <base href="../">
     <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/components.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
@@ -19,9 +20,9 @@
         <div class="container">
 
             <!-- Logo -->
-            <a class="navbar-brand" href="./output/en/pages/home-one.html">
+            <a class="navbar-brand" href="./pages/home-one.html">
 
-                <img class="logo" src="./assets/media/images/en/footer/logo.png">
+                <img class="logo" src="./assets/media/images/footer/logo.png">
 
             </a>
 
@@ -38,8 +39,8 @@
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
                         <ul class="dropdown-menu">
                             
-                            <li><a class="dropdown-item" href="./output/en/pages/home-one.html">Demo1</a></li>
-                            <li><a class="dropdown-item" href="./output/en/pages/home-two.html">Demo2</a></li> 
+                            <li><a class="dropdown-item" href="./pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item" href="./pages/home-two.html">Demo2</a></li> 
 
                         </ul>
                     </li>
@@ -48,12 +49,12 @@
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">buildex</a>
                          <ul class="dropdown-menu">
                             
-                            <li><a class="dropdown-item" href="./output/en/pages/gallery.html">Gallery</a></li>
-                            <li><a class="dropdown-item" href="./output/en/pages/teams.html">Teams</a></li> 
-                            <li><a class="dropdown-item" href="./output/en/pages/contact-us.html">Contact Us</a></li> 
-                            <li><a class="dropdown-item" href="./output/en/pages/about-us.html">About Us</a></li> 
-                            <li><a class="dropdown-item" href="./output/en/pages/register.html">Register</a></li> 
-                            <li><a class="dropdown-item" href="./output/en/pages/reviews.html">Reviews</a></li> 
+                            <li><a class="dropdown-item" href="./pages/gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="./pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item" href="./pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item" href="./pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item" href="./pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item" href="./pages/reviews.html">Reviews</a></li> 
 
                         </ul>
                     </li>
@@ -63,8 +64,8 @@
 
                         <ul class="dropdown-menu">
                             
-                            <li><a class="dropdown-item" href="./output/en/pages/st-services.html">Service</a></li>
-                            <li><a class="dropdown-item" href="./output/en/pages/ar-services.html">Services Archive</a></li> 
+                            <li><a class="dropdown-item" href="./pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item" href="./pages/ar-services.html">Services Archive</a></li> 
 
                         </ul>
                     </li>
@@ -74,8 +75,8 @@
 
                          <ul class="dropdown-menu">
                             
-                            <li><a class="dropdown-item" href="./output/en/pages/st-project.html">Project</a></li>
-                            <li><a class="dropdown-item" href="./output/en/pages/ar-project.html">Projects Archive</a></li> 
+                            <li><a class="dropdown-item" href="./pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="./pages/ar-project.html">Projects Archive</a></li> 
 
                         </ul>
                     </li>
@@ -84,19 +85,19 @@
 
                         <ul class="dropdown-menu">
                             
-                            <li><a class="dropdown-item" href="./output/en/pages/st-blog.html">weblog</a></li>
-                            <li><a class="dropdown-item" href="./output/en/pages/our-blog.html">weblogs Archive</a></li> 
+                            <li><a class="dropdown-item" href="./pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item" href="./pages/our-blog.html">weblogs Archive</a></li> 
 
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./output/en/pages/plans.html">PLANS</a>
+                        <a class="nav-link" href="./pages/plans.html">PLANS</a>
                     </li>
                 </ul>
 
                 <div class="quote-wrapper">
-                    <a class="quote-btn" href="./output/en/pages/plans.html">
+                    <a class="quote-btn" href="./pages/plans.html">
                         Get A Quote
                     </a>
                 </div>
@@ -107,7 +108,8 @@
     </nav>
 </header>
 
-<script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
 
 <script>
 const menuBtn = document.getElementById("menuBtn");
@@ -139,9 +141,9 @@ navLinks.forEach(link => {
             <div class="container py-4 d-flex flex-column gap-6">
 
                 <div class="small gap-3 d-flex">
-                    <a href="./output/en/pages/" class="text-decoration-none ">Home</a>
+                    <a href="./pages/" class="text-decoration-none ">Home</a>
                     <span class="text-secondary">></span>
-                    <a href="./output/en/pages/" class="text-decoration-none">Project</a>
+                    <a href="./pages/" class="text-decoration-none">Project</a>
                     <span class="text-secondary">></span>
                     <span class="text-secondary">Construction Management</span>
                 </div>
@@ -172,7 +174,7 @@ navLinks.forEach(link => {
 
             <div class="col-11 col-xxl-9 col-xl-9 col-lg-8 col-md-7 align-self-center">
                 <section class="overview py-8 d-flex flex-column gap-4">
-                    <img src="./assets/media/images/en/services/ChatGPT Image Jul 12, 2026, 03_39_32 AM.png" class="img-fluid rounded-3 shadow-sm" alt="">
+                    <img src="./assets/media/images/services/ChatGPT Image Jul 12, 2026, 03_39_32 AM.png" class="img-fluid rounded-3 shadow-sm" alt="">
                     
                     <h2 class="fw-bold"> About The Project</h2>
 
@@ -255,12 +257,12 @@ navLinks.forEach(link => {
                     <h2 class="fw-bold">What We Offer</h2>
                     <hr>
                     <div class="project-gallery gap-2 d-grid"> 
-                        <img src="./assets/media/images/en/services/photo-1486406146926-c627a92ad1ab.jpg" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
-                        <img src="./assets/media/images/en/services/ChatGPT6.png" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
-                        <img src="./assets/media/images/en/services/ChatGPT4.png" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
-                        <img src="./assets/media/images/en/services/ChatGPT Image Jul 12, 2026, 03_39_32 AM.png" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
-                        <img src="./assets/media/images/en/services/homepage-section2.jpg" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
-                        <img src="./assets/media/images/en/services/building.png" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
+                        <img src="./assets/media/images/services/photo-1486406146926-c627a92ad1ab.jpg" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
+                        <img src="./assets/media/images/services/ChatGPT6.png" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
+                        <img src="./assets/media/images/services/ChatGPT4.png" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
+                        <img src="./assets/media/images/services/ChatGPT Image Jul 12, 2026, 03_39_32 AM.png" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
+                        <img src="./assets/media/images/services/homepage-section2.jpg" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
+                        <img src="./assets/media/images/services/building.png" class="img-fluid rounded-3 shadow-sm transition-150 " alt="">
                     </div>
                 </section>
             </div>
@@ -327,10 +329,10 @@ navLinks.forEach(link => {
 </div>                </div>
                 <div>
                     <div id="bannerCTA"  class="container-fluid d-flex flex-column bg-primary gap-4 px-5 py-7 rounded-2">
-    <img class="icon" src="./assets/media/images/en/components/banner-icon.png" alt="">
+    <img class="icon" src="./assets/media/images/components/banner-icon.png" alt="">
     <h5 class="fs-title">Have a similar project?</h5>
     <h3 class="fs-mid-title">Let's Build It Together</h3>
-    <a id="btnCTA" class="bg-black text-primary d-flex align-items-center gap-4 rounded-1 btn-hover" href="./output/en/pages/contact-us.html">
+    <a id="btnCTA" class="bg-black text-primary d-flex align-items-center gap-4 rounded-1 btn-hover" href="./pages/contact-us.html">
         <span class="fs-big">Get A Free Quote</span>
         <i class="fas fa-arrow-right-long fs-small"></i>
     </a>
@@ -467,25 +469,25 @@ navLinks.forEach(link => {
                 
                 <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
 
-                    <img src="./assets/media/images/en/footer/logo.png" class="" width="210">
+                    <img src="./assets/media/images/footer/logo.png" class="" width="210">
 
                     <p  class="">We are a leading construction company providing high-quality services across residential, commercial and industrial sectors worldwide.</p>
 
                     <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
 
-                        <a  href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-facebook-f "></i>
                         </a>
 
-                        <a href="./output/en/pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-linkedin-in "></i>
                         </a>
 
-                        <a href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-instagram "></i>
                         </a>
 
-                        <a href="./output/en/pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-youtube "></i>
                         </a>
 
@@ -501,27 +503,27 @@ navLinks.forEach(link => {
                     <ul class="list-unstyled d-flex flex-column gap-1">
 
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Home</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">Home</a>
                         </li>
 
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">About Us</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">About Us</a>
                         </li>
 
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Services</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">Services</a>
                         </li>
 
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Projects</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">Projects</a>
                         </li>
 
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Blog</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">Blog</a>
                         </li>
 
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Contact Us</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">Contact Us</a>
                         </li>
 
                     </ul>
@@ -535,19 +537,19 @@ navLinks.forEach(link => {
 
                     <ul class="list-unstyled d-flex flex-column gap-1">
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Construction Management</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">Construction Management</a>
                         </li>
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Design &amp; Build</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">Design &amp; Build</a>
                         </li>
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Renovation</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">Renovation</a>
                         </li>
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Interior Design</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">Interior Design</a>
                         </li>
                         <li class="w-fit-content">
-                            <a href="./output/en/pages/" class="text-decoration-none text-reset">Project Consulting</a>
+                            <a href="./pages/" class="text-decoration-none text-reset">Project Consulting</a>
                         </li>
                     </ul>
 
@@ -582,19 +584,19 @@ navLinks.forEach(link => {
 
                     <div class="social d-xxl-none d-xl-none d-lg-none d-flex align-items-center gap-2">
 
-                        <a  href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-facebook-f "></i>
                         </a>
 
-                        <a href="./output/en/pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-linkedin-in "></i>
                         </a>
 
-                        <a href="./output/en/pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-instagram "></i>
                         </a>
 
-                        <a href="./output/en/pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
                             <i class="fab fa-youtube "></i>
                         </a>
 
@@ -610,28 +612,28 @@ navLinks.forEach(link => {
 
                     <div class="row g-1">
 
-                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
-                            <img src="./assets/media/images/en/footer/ChatGPT1.png" class="img-fluid rounded w-100 image-hover">
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT1.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
-                            <img src="./assets/media/images/en/footer/ChatGPT2.png" class="img-fluid rounded w-100 image-hover">
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT2.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
-                            <img src="./assets/media/images/en/footer/ChatGPT3.png" class="img-fluid rounded w-100 image-hover">
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT3.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
-                            <img src="./assets/media/images/en/footer/ChatGPT4.png" class="img-fluid rounded w-100 image-hover">
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT4.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
-                            <img src="./assets/media/images/en/footer/ChatGPT5.png" class="img-fluid rounded w-100 image-hover">
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT5.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
-                        <a href="./output/en/pages/" class="col-2 col-xxl-4 col-lg-6">
-                            <img src="./assets/media/images/en/footer/ChatGPT6.png" class="img-fluid rounded w-100 image-hover">
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/ChatGPT6.png" class="img-fluid rounded w-100 image-hover">
                         </a>
 
                     </div>
@@ -651,9 +653,12 @@ navLinks.forEach(link => {
         </div>
     </footer>
 
-    <script src="./assets/vendors/gsap/SplitText.min.js"></script>
-    <script src="./assets/vendors/gsap/ScrollTrigger.min.js"></script>
-    <script src="./assets/vendors/gsap/gsap.min.js"></script>
+    <script src="./assets/js/gsap/SplitText.min.js"></script>
+    <script src="./assets/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/gsap/gsap.min.js"></script>
+    
+    
+    
     <script src="./assets/js/animations.js"></script>
     <script src="./assets/js/mizchin.min.js"></script>
 </body>
