@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>st-services</title>
+    <link rel="icon" type="image/png" href="./assets/media/images/single/logo-web3.webp">
+    <base href="../">
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/components.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body class="font-primary">
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">होम</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/home-one.html">डेमो 1</a></li>
+                            <li><a class="dropdown-item" href="./pages/home-two.html">डेमो 2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">बिल्डोरा</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/gallery.html">गैलरी</a></li>
+                            <li><a class="dropdown-item" href="./pages/teams.html">टीम</a></li> 
+                            <li><a class="dropdown-item" href="./pages/contact-us.html">संपर्क करें</a></li> 
+                            <li><a class="dropdown-item" href="./pages/about-us.html">हमारे बारे में</a></li> 
+                            <li><a class="dropdown-item" href="./pages/register.html">पंजीकरण</a></li> 
+                            <li><a class="dropdown-item" href="./pages/reviews.html">समीक्षाएँ</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">सेवाएँ</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-services.html">सेवा</a></li>
+                            <li><a class="dropdown-item" href="./pages/ar-services.html">सेवाओं का संग्रह</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">परियोजनाएँ</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-project.html">परियोजना</a></li>
+                            <li><a class="dropdown-item" href="./pages/ar-project.html">परियोजनाओं का संग्रह</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ब्लॉग</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-blog.html">ब्लॉग</a></li>
+                            <li><a class="dropdown-item" href="./pages/our-blog.html">ब्लॉग संग्रह</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/plans.html">योजनाएँ</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./pages/contact-us.html">
+                        कोटेशन प्राप्त करें
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column bg-background" id="st-services">
+
+        <section class="hero bg-dark text-secondary position-relative py-8 position-relative">
+
+            <div class="container py-4 d-flex flex-column gap-6">
+
+                <div class="small ">
+                    <a href="./pages/home-one.html" class="text-decoration-none text-primary">होम</a>
+
+                    <span class="text-secondary">></span>
+
+                    <a class="text-decoration-none text-primary">सेवाएँ</a>
+
+                    <span class="text-secondary">></span>
+
+                    <span class="text-secondary">निर्माण प्रबंधन</span>
+                </div>
+
+                <div class="row col-11 col-xxl-5 col-xl-7 col-lg-10 col-md-10 ">
+                    <div class=" d-flex flex-column gap-5">
+                        <span class="text-primary fw-bold text-uppercase">हमारी सेवा</span>
+                        <h1 class="fs-big-title fw-bold">
+                            निर्माण
+                            <span class="text-primary">प्रबंधन</span>
+                        </h1>
+                        <div class="bg-primary" style="width:60px;height:3px;"></div>
+                        <p class=" text-secondary lh-lg fs-mid-title">
+                            <span class="fancy-txt">हम निर्माण के प्रत्येक चरण की निगरानी करते हैं ताकि आपकी परियोजना समय पर, बजट के भीतर और सर्वोच्च गुणवत्ता के साथ पूरी हो।</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container justify-content-center d-flex gap-10 flex-column flex-xxl-row flex-xl-row flex-lg-row flex-md-row">
+
+            <div class="col-11 col-xxl-9 col-xl-9 col-lg-8 col-md-7 align-self-center">
+                <section class="overview py-8 d-flex flex-column gap-4">
+                    <img src="./assets/media/images/services/thum5.jpg" class="img-fluid rounded-3 shadow-sm" alt="">
+                    
+                    <h2 class="fw-bold">  अवलोकन</h2>
+
+                    <p class="text-dark lh-lg">
+                     हमारी निर्माण प्रबंधन सेवाएँ योजना से लेकर परियोजना के पूर्ण होने तक व्यापक निगरानी प्रदान करती हैं। हम बजट, समय-निर्धारण, संसाधन आवंटन और गुणवत्ता नियंत्रण सहित निर्माण के सभी पहलुओं का समन्वय करते हैं ताकि परियोजना सफलतापूर्वक पूरी हो।
+                    </p>
+                    <p class="text-dark lh-lg">
+                        सुरक्षा, दक्षता और पारदर्शी संचार पर ध्यान देते हुए हम हर चरण में आपके विश्वसनीय साझेदार के रूप में कार्य करते हैं।
+                    </p>
+
+                </section>
+                <hr>
+                <section class="offer py-8 d-flex flex-column gap-4">
+                    <h2 class="fw-bold">मुख्य विशेषता</h2>
+                    <hr >  
+                    
+                    <div class="row ">
+
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 ">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/demo1/vector1.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">परियोजना योजना</h3>
+                                    <span class="fs-big fw-semibold">हम विस्तृत योजनाएँ और रणनीतियाँ तैयार करते हैं ताकि आपका प्रोजेक्ट सही दिशा में शुरू हो।</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/demo1/vector2.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">समय-सारणी प्रबंधन</h3>
+                                    <span class="fs-big fw-semibold">हम यथार्थवादी समय-सीमा बनाते हैं और सुनिश्चित करते हैं कि आपका प्रोजेक्ट निर्धारित समय पर पूरा हो।</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/demo1/vector3.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">बजट प्रबंधन</h3>
+                                    <span class="fs-big fw-semibold">हमारी टीम लागत और संसाधनों की निगरानी करती है ताकि आपका प्रोजेक्ट बजट के भीतर रहे।</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/demo1/vector4.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">जोखिम प्रबंधन</h3>
+                                    <span class="fs-big fw-semibold">हम संभावित जोखिमों की पहले ही पहचान करते हैं और देरी तथा अतिरिक्त लागत को कम करने के लिए समाधान लागू करते हैं।</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/demo1/vector5.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">गुणवत्ता आश्वासन</h3>
+                                    <span class="fs-big fw-semibold">हम पूरे निर्माण प्रक्रिया के दौरान कड़े गुणवत्ता नियंत्रण मानकों का पालन करते हैं।</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-6 col-xl-6 col-lg-6">
+                            <div class="services-overview d-flex flex-row align-items-start px-4 py-4 gap-4 transition-300 rounded-4 h-100">
+                                <img src="./assets/media/images/demo1/vector6.png" class="img-size">
+                                <div class="d-flex flex-column align-items-start gap-1">
+                                    <h3 class="fs-mid-title fw-bold">विक्रेता एवं उप-ठेकेदार प्रबंधन</h3>
+                                    <span class="fs-big fw-semibold">हम सभी उप-ठेकेदारों और आपूर्तिकर्ताओं का समन्वय और प्रबंधन करते हैं ताकि कार्य सुचारु रूप से चलता रहे।</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <section class="process py-8 d-flex flex-column gap-4">
+                    <h2 class="fw-bold">  हम क्या प्रदान करते हैं</h2>
+
+                    <div class="col-12 gap-3">
+                            <div id="cycleCards" class="container-fluid d-flex row px-5 py-4 flex-sm-wrap position-relative gap-6 gap-xxl-0 gap-xl-0 gap-lg-0 gap-md-0">
+    <div class="cycle-card container-fluid d-flex flex-column gap-3 align-items-center justify-content-start col-5 col-lg-3 col-md-6 position-relative">
+        <div class="line container-fluid border-primary position-absolute"></div>
+        <div class="cycle-icon border border-1 border-secondary-text rounded-circle bg-white d-flex align-items-center justify-content-center transition-150">
+            <img src="./assets/media/images/components/cycle-icon1.png" alt="" class="icon">
+        </div>
+        <span class="fs-title text-center bold fw-bold text-primary">01</span>
+        <h3 class="fs-title text-center">परामर्श</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">हम आपकी आवश्यकताओं को सुनते हैं और आपके लक्ष्यों को समझते हैं।</p>
+    </div>
+    <div class="cycle-card container-fluid d-flex flex-column gap-3 align-items-center justify-content-start col-5 col-lg-3 col-md-6 position-relative">
+        <div class="line container-fluid border-primary position-absolute"></div>
+        <div class="cycle-icon border border-1 border-secondary-text rounded-circle bg-white d-flex align-items-center justify-content-center transition-150">
+            <img src="./assets/media/images/components/cycle-icon2.png" alt="" class="icon">
+        </div>
+        <span class="fs-title text-center bold fw-bold text-primary">02</span>
+        <h3 class="fs-title text-center">योजना</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">हम आपकी परियोजना के अनुरूप विस्तृत योजना तैयार करते हैं।</p>
+    </div>
+    <div class="cycle-card container-fluid d-flex flex-column gap-3 align-items-center justify-content-start col-5 col-lg-3 col-md-6 position-relative">
+        <div class="line container-fluid border-primary position-absolute"></div>
+        <div class="cycle-icon border border-1 border-secondary-text rounded-circle bg-white d-flex align-items-center justify-content-center  transition-150">
+            <img src="./assets/media/images/components/cycle-icon3.png" alt="" class="icon">
+        </div>
+        <span class="fs-title text-center bold fw-bold text-primary">03</span>
+        <h3 class="fs-title text-center">कार्यान्वयन</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">हम निर्माण के हर पहलू का सटीकता के साथ प्रबंधन करते हैं।</p>
+    </div>
+    <div class="cycle-card container-fluid d-flex flex-column gap-3 align-items-center justify-content-start col-5 col-lg-3 col-md-6 position-relative">
+        <div class="line container-fluid border-primary position-absolute"></div>
+        <div class="cycle-icon border border-1 border-secondary-text rounded-circle bg-white d-flex align-items-center justify-content-center transition-150">
+            <img src="./assets/media/images/components/cycle-icon4.png" alt="" class="icon">
+        </div>
+        <span class="fs-title text-center bold fw-bold text-primary">04</span>
+        <h3 class="fs-title text-center">हस्तांतरण</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">हम परियोजना सौंपते हैं और आपकी पूर्ण संतुष्टि सुनिश्चित करते हैं।</p>
+    </div>
+</div> 
+                    </div>
+                </section>
+            </div>
+
+            <aside class="col-11 col-xxl-3 col-xl-3 col-lg-4 col-md-5 py-8 d-flex flex-column justify-content-between gap-4">
+                <div>
+                    <div id="bannerCTA"  class="container-fluid d-flex flex-column bg-primary gap-4 px-5 py-7 rounded-2">
+    <img class="icon" src="./assets/media/images/components/banner-icon.png" alt="">
+    <h5 class="fs-title">क्या आपके पास इसी तरह की कोई परियोजना है?</h5>
+    <h3 class="fs-mid-title">आइए इसे मिलकर बनाएं</h3>
+    <a id="btnCTA" class="bg-black text-primary d-flex align-items-center gap-4 rounded-1 btn-hover" href="./pages/contact-us.html">
+        <span class="fs-big">निःशुल्क कोटेशन प्राप्त करें</span>
+        <i class="fas fa-arrow-right-long fs-small"></i>
+    </a>
+</div> 
+                </div>
+
+                <div class="card-body px-4 py-8 order-0 shadow-sm rounded-3 d-flex flex-column gap-8">
+
+                    <h4 class="fw-bold">हमारी सेवाएँ</h4>
+
+                    <div class="border-bottom border-primary border-3" style="width:50px"></div>
+
+                    <ul class="list-group d-flex flex-column">
+
+                        <li class="rounded">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                                निर्माण प्रबंधन
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </li>
+
+                        <li class="rounded">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                                डिज़ाइन एवं निर्माण
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </li>
+
+                        <li class="rounded">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                                 नवीनीकरण एवं पुनर्स्थापन
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </li>
+
+                        <li class="rounded">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                                 इंटीरियर डिज़ाइन
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </li>
+
+                        <li class="rounded">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                                 परियोजना परामर्श
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </li>
+
+                        <li class="rounded">
+                            <a class="d-flex justify-content-between align-items-center py-3 px-2 text-dark">
+                                निर्माण रखरखाव
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+                    <div class="need-help-card d-flex flex-column align-items-start gap-3 px-5 py-7 rounded-1 shadow">
+    <h3 class="fs-mid-title fw-bold">सहायता चाहिए?</h3>
+    <p class="fs-title">हमारी टीम आपके प्रश्नों का उत्तर देने और शुरुआत करने में आपकी सहायता के लिए तैयार है।</p>
+    <div class="d-flex flex-column w-100 gap-5 mt-3">
+        <div class="d-flex flex-row align-items-center gap-4">
+            <i class="fa-solid fa-phone text-primary"></i>
+            <span class="fw-semibold transition-150">+1 212 555 7890</span>
+        </div>
+        <div class="d-flex flex-row align-items-center gap-4">
+            <i class="fa-solid fa-inbox text-primary"></i>
+            <span class="fw-semibold transition-150">info@Buildora.com</span>
+        </div>
+        <div class="d-flex flex-row align-items-center gap-4">
+            <i class="fa-solid fa-clock text-primary"></i>
+            <span class="fw-semibold transition-150">सोमवार–शनिवार: सुबह 8:00 बजे - शाम 6:00 बजे</span>
+        </div>
+    </div>
+</div>                </div>
+                <div class="overflow-hidden rounded">
+                    <div class="project-banner shadow bg-white rounded-2 px-12 justify-content-center flex-column d-flex gap-6 transition-300 ">
+    <h3 class="z-1 fw-bold fs-mid-title text-secondary mt-6">सटीकता के साथ सपनों का निर्माण</h3>
+    <p class="z-1 fs-title text-text mb-8 text-secondary">निर्माण उद्योग पहले से कहीं अधिक तेज़ी से विकसित हो रहा है। नई प्रौद्योगिकियाँ
+        <a class="fancy-link text-secondary" href="./pages/st-services.html">In our services.</a>
+    </p>
+    <a href="./pages/ar-project.html" class="btn-hover z-1 d-flex align-items-center gap-2 mt-4 text-decoration-none card-button mb-10 w-fit-contetn">
+        <span class="fs-big fw-bold transition text-primary">परियोजना देखें</span>
+        <i class="fa-solid fa-arrow-right-long text-color transition text-primary"></i>
+    </a>
+</div>                 </div>
+            </aside>
+
+        </div>
+
+   
+        <section class="feature py-8 d-flex">
+            <div class="container d-flex rounded-4 py-8 px-4 align-items-center flex-column flex-xxl-row flex-xl-row flex-lg-row flex-md-row">
+
+                <div class="col-11 col-xxl-3 col-xl-3 col-lg-3 col-md-4 second-feature-card container-fluid d-flex flex-column gap-4 justify-content-start py-4" >
+                    <h2 class="fs-mid-title fw-bold"> हमें क्यों चुनें</h2>
+                    <p class="fs-title text-text fw-medium"> हम अनुभव, विशेषज्ञता और समर्पण का संयोजन करके उत्कृष्ट निर्माण प्रबंधन सेवाएँ प्रदान करते हैं।</p>
+                    <a href="./pages/teams.html" class="btn-hover bg-primary py-2 fw-bold text-uppercase rounded d-flex gap-5 justify-content-center align-items-center px-4 w-fit-content text-dark">
+                        <span class="fs-small"> आइए साथ काम करें</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-9">
+                    <div id="secondFeatureCard" class="container-fluid d-flex px-5 rounded-1">
+    <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
+        <img class="feature-icon" src="./assets/media/images/components/second-feature-card-icon-1.png" alt="">
+        <div class="line"></div>
+        <h3 class="fs-title text-center">विशेषज्ञ टीम</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">उत्कृष्टता के लिए समर्पित कुशल पेशेवर।</p>
+    </div>
+    <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
+        <img class="feature-icon" src="./assets/media/images/components/second-feature-card-icon-2.png" alt="">
+        <div class="line"></div>
+        <h3 class="fs-title text-center">उच्च गुणवत्ता वाली सामग्री</h3>
+        <p class="fs-subtitle text-text text-center ">दीर्घकालिक मजबूती के लिए हम केवल सर्वोत्तम सामग्री का उपयोग करते हैं।</p>
+    </div>
+    <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
+        <img class="feature-icon" src="./assets/media/images/components/second-feature-card-icon-3.png" alt="">
+        <div class="line"></div>
+        <h3 class="fs-title text-center">समय पर डिलीवरी</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">हम आपके समय का सम्मान करते हैं और परियोजनाएँ निर्धारित समय पर पूरी करते हैं।</p>
+    </div>
+    <div class="second-feature-card container-fluid d-flex flex-column gap-2 align-items-center justify-content-start py-4 col-lg-3 col-md-6">
+        <img class="feature-icon" src="./assets/media/images/components/second-feature-card-icon-4.png" alt="">
+        <div class="line"></div>
+        <h3 class="fs-title text-center">ग्राहक संतुष्टि</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">हर चरण में आपकी संतुष्टि ही हमारा लक्ष्य है।</p>
+    </div>
+</div> 
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+
+    
+    <footer class="footer bg-dark text-secondary py-5 ">
+        <div class="container">
+
+            <div class="row row-gap-8 row-gap-lg-0">
+
+                
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
+
+                    <img src="./assets/media/images/footer/logo.png" class="" width="210">
+
+                    <p  class="">हम एक अग्रणी निर्माण कंपनी हैं जो दुनिया भर में आवासीय, वाणिज्यिक और औद्योगिक क्षेत्रों में उच्च गुणवत्ता वाली सेवाएँ प्रदान करती है।</p>
+
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
+
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">त्वरित लिंक</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">होम</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">हमारे बारे में</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">सेवाएँ</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">परियोजनाएँ</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">ब्लॉग</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">संपर्क करें</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">हमारी सेवाएँ</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">निर्माण प्रबंधन</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">डिज़ाइन एवं निर्माण</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">नवीनीकरण</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">इंटीरियर डिज़ाइन</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">परियोजना परामर्श</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">संपर्क जानकारी</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-location text-primary"></i>
+                            <div class="d-flex flex-column justify-content-start">
+                                <span class="">123 कंस्ट्रक्शन एवेन्यू,</span>
+                                <span class="">न्यूयॉर्क, एनवाई 10001, संयुक्त राज्य अमेरिका</span>
+                            </div>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-light fa-phone text-primary"></i>
+                            <span class="">+1 212 555 7890</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span class="">info@Buildora.com</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-clock text-primary"></i>
+                            <span  class="">सोमवार – शनिवार: सुबह 8:00 बजे – शाम 6:00 बजे</span>
+                        </li>
+                    </ul>
+
+                    <div class="social d-xxl-none d-xl-none d-lg-none d-flex align-items-center gap-2">
+
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
+
+                    <h6 class="fw-bold text-nowrap">हाल की परियोजनाएँ</h6>
+
+                    <div class="row g-1">
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building1.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building2.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building3.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building4.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building5.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building6.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="bg-light">
+
+            <div class="copyright">
+
+                © 2024 Buildora Construction. All Rights Reserved.
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./assets/js/gsap/SplitText.min.js"></script>
+    <script src="./assets/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/gsap/gsap.min.js"></script>
+    
+    
+    
+    
+    <script src="./assets/js/animations.js"></script>
+</body>
+
+</html>

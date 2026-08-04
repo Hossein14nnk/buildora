@@ -1,0 +1,109 @@
+@font-face {
+    font-family: icomoon;
+    src: url("../fonts/icomoon.ttf");
+}
+
+.icon-user::before {
+    content: "\e91d";
+    font-family: 'icomoon';
+    font-style: normal;
+    display: block;
+}
+
+.icon-calender::before {
+    content: "\e910";
+    font-family: 'icomoon';
+    font-style: normal;
+     display: block;
+}
+
+.icon-comment::before {
+    content: "\e911";
+    font-family: 'icomoon';
+    font-style: normal;
+     display: block;
+}
+
+.icon-clock::before {
+    content: "\e905";
+    font-family: 'icomoon';
+    font-style: normal;
+     display: block;
+}
+
+.icon-view::before {
+    content: "\e92f";
+    font-family: 'icomoon';
+    font-style: normal;
+     display: block;
+}
+
+
+.icon-arr-left::before {
+  content: "\e907";
+    font-family: 'icomoon';
+    font-style: normal;
+     display: block;
+}
+
+.icon-arr-left-foot::before {
+    content: "\e908";
+    font-family: 'icomoon';
+    font-style: normal;
+    display: block;
+}
+
+.icon-search:before {
+    content: "\e919";
+    font-family: 'icomoon';
+    font-style: normal;
+    display: block;
+}
+
+.icon-share::before {
+  content: "";
+  font-family: 'icomoon';
+  font-style: normal;
+      display: block;
+}
+.icon-arr-left-foot::before {
+  content: "\e908";
+  font-family: 'icomoon';
+  font-style: normal;
+}
+
+.single-blog__faq ul li.active span::before {
+  content: "\e926";
+  font-family: "icomoon";
+}
+
+.icon-copy::before {
+  content: "\e925";
+    font-family: 'icomoon';
+  font-style: normal;
+}
+.icon-star::before {
+  content: "\e92b";
+    font-family: 'icomoon';
+  font-style: normal;
+}
+.icon-telegram::before {
+  content: "\e91b";
+    font-family: 'icomoon';
+  font-style: normal;
+}
+.icon-whatsapp::before {
+  content: "\e91e";
+    font-family: 'icomoon';
+  font-style: normal;
+}
+.icon-twitter::before {
+  content: "\e91c";
+    font-family: 'icomoon';
+  font-style: normal;
+}
+.icon-facebook::before {
+  content: "\e913";
+    font-family: 'icomoon';
+  font-style: normal;
+}

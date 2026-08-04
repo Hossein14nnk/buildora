@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="icon" type="image/png" href="./assets/media/images/single/logo-web3.webp">
+    <base href="../">
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/components.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body class="font-primary">
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">خانه</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/home-one.html">دمو ۱</a></li>
+                            <li><a class="dropdown-item" href="./pages/home-two.html">دمو ۲</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Buildora</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/gallery.html">گالری</a></li>
+                            <li><a class="dropdown-item" href="./pages/teams.html">تیم</a></li> 
+                            <li><a class="dropdown-item" href="./pages/contact-us.html">تماس با ما</a></li> 
+                            <li><a class="dropdown-item" href="./pages/about-us.html">درباره ما</a></li> 
+                            <li><a class="dropdown-item" href="./pages/register.html">ثبت‌نام</a></li> 
+                            <li><a class="dropdown-item" href="./pages/reviews.html">نظرات</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">خدمات</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-services.html">خدمت</a></li>
+                            <li><a class="dropdown-item" href="./pages/ar-services.html">آرشیو خدمات</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">پروژه‌ها</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-project.html">پروژه</a></li>
+                            <li><a class="dropdown-item" href="./pages/ar-project.html">آرشیو پروژه‌ها</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">وبلاگ</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-blog.html">وبلاگ</a></li>
+                            <li><a class="dropdown-item" href="./pages/our-blog.html">آرشیو وبلاگ</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/plans.html">پلن‌ها</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./pages/contact-us.html">
+                        دریافت مشاوره
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column" id="gallery">
+
+        <section class="hero py-20 text-secondary-text d-flex justify-content-start">
+            <div class="container d-flex ">
+                <div class="d-flex flex-column gap-4 col-10 col-xxl-5 col-xl-6 col-lg-8 align-items-start">
+                    <div class="small ">
+                        <a href="./pages/home-one.html">خانه</a>
+                        <span class="mx-2">›</span>
+
+                        <a>صفحات</a>
+                        <span class="mx-2">›</span>
+
+                        <span>گالری</span>
+                    </div>
+                    <span class="text-primary fw-bold text-uppercase border-secondary border-start px-3 border-3 lh-1">Our Gallery</span>
+
+                    <h1 class="fs-big-title fw-bold">
+                       نگاهی به  <br>
+                        <span class="text-primary">پروژه‌ها و دستاوردهای ما</span>
+                    </h1>
+
+                    <p class="text-secondary fs-mid-title">
+                        <span class="fancy-txt"> گالری ما را مشاهده کنید و کیفیت، مهارت و دقتی را که در تمامی پروژه‌های ما وجود دارد از نزدیک ببینید.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery container py-8 d-flex flex-column gap-8 align-items-center d-flex">
+             
+            <div class="d-flex align-items-center justify-content-between w-100 flex-column flex-sm-row">
+
+                <ul class="gallery-filter d-flex align-items-center fw-semibold fs-small">
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            همه گالری‌ها
+                        </span>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            مسکونی
+                        </span>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            تجاری
+                        </span>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            صنعتی
+                        </span>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            طراحی داخلی
+                        </span>
+                    </li>
+
+                    <li class="px-1 px-xxl-5 px-xl-5 px-lg-5 px-md-5 px-sm-2 py-2 d-flex align-items-center">
+                        <span class="text-dark primary-hover transition-150">
+                            زیرساخت
+                        </span>
+                    </li>
+                </ul>
+                <select class="form-select sort-select d-flex border rounded px-1 py-1 fs-small ">
+                    <option class="">جدیدترین</option>
+                    <option class="">قدیمی‌ترین</option>
+                    <option class="">قدیمی‌ترین</option>
+                </select>
+            </div>
+
+
+            <div class="row align-items-stretch justify-content-center">
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1 ">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/archive-picture.webp" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building1.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building4.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building2.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building3.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-3 col-xl-3 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building4.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building6.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/news.jpg" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building7.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/projects.jpg" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building1.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building4.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building2.png" alt="">
+                    </a>
+                </div>
+                <div class="p-1 col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4 flex-grow-1">
+                    <a class="overflow-hidden d-flex">
+                        <img class="w-100 h-100 transition-400 overflow-hidde" src="./assets/media/images/gallery/building3.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <button class="seeMore d-flex gap-8 px-3 py-2 rounded border fs-small fw-bold align-items-center">
+                <span class="text-uppercase">بارگذاری تصاویر بیشتر</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </section>
+
+        <section class="project-cta py-0 text-light">
+            <div class="container py-8 px-20">
+                <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row gap-4">
+
+                    <div class="d-flex flex-column gap-4">
+                        <span class="text-primary">بیایید با هم بسازیم</span>
+
+                        <h4 class="fw-bold fs-high-title">پروژه‌ای در ذهن دارید؟</h4>
+
+                        <p class="text-text">
+                           ما آماده‌ایم تا ایده‌های شما را با کیفیت و دقت به واقعیت تبدیل کنیم.
+                        </p>
+                    </div>
+
+                    <div class="text-lg-end">
+                        <a href="./pages/contact-us.html" class="cta-btn d-flex align-items-center gap-2 btn-hover">
+                            <span class="">دریافت مشاوره</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+
+    
+    <footer class="footer bg-dark text-secondary py-5 ">
+        <div class="container">
+
+            <div class="row row-gap-8 row-gap-lg-0">
+
+                
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
+
+                    <img src="./assets/media/images/footer/logo.png" class="" width="210">
+
+                    <p  class="">ما یک شرکت پیشرو در صنعت ساخت‌وساز هستیم که خدمات باکیفیتی را در حوزه‌های مسکونی، تجاری و صنعتی در سراسر جهان ارائه می‌دهیم.</p>
+
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
+
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">دسترسی سریع</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">خانه</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">درباره ما</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">خدمات</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">پروژه‌ها</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">وبلاگ</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">تماس با ما</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">خدمات ما</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">مدیریت ساخت‌وساز</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">طراحی و اجرا</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">بازسازی</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">طراحی داخلی</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">مشاوره پروژه</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">اطلاعات تماس</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-location text-primary"></i>
+                            <div class="d-flex flex-column justify-content-start">
+                                <span class="">۱۲۳ خیابان کانستراکشن،</span>
+                                <span class="">نیویورک، NY 10001، آمریکا</span>
+                            </div>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-light fa-phone text-primary"></i>
+                            <span class="">+1 212 555 7890</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span class="">info@Buildora.com</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-clock text-primary"></i>
+                            <span  class="">شنبه تا دوشنبه: ۸:۰۰ صبح تا ۶:۰۰ عصر</span>
+                        </li>
+                    </ul>
+
+                    <div class="social d-xxl-none d-xl-none d-lg-none d-flex align-items-center gap-2">
+
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
+
+                    <h6 class="fw-bold text-nowrap">پروژه‌های اخیر</h6>
+
+                    <div class="row g-1">
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building1.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building2.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building3.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building4.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building5.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building6.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="bg-light">
+
+            <div class="copyright">
+
+                © 2024 Buildora Construction. All Rights Reserved.
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./assets/js/gsap/SplitText.min.js"></script>
+    <script src="./assets/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/gsap/gsap.min.js"></script>
+    
+    
+    
+    
+    <script src="./assets/js/animations.js"></script>
+</body>
+
+</html>
