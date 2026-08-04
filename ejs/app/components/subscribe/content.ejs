@@ -2,12 +2,12 @@
     <div class="subscribe-icon rounded-circle border border-primary d-flex justify-content-center align-items-center">
         <img src="<%- getMedia(lang, 'components/subscribe-icon.png', 'images') %>" alt="" class="icon">
     </div>
-    <h3 class="fs-title text-white text-center"><%- subscribe.title %></h3>
-    <p class="fs-subtitle text-center text-secondary-text"><%- subscribe.subtitle %></p>
+    <h3 class="fs-title text-white text-center"><%- t.pages.stBlog.cardsubscribe %></h3>
+    <p class="fs-subtitle text-center text-secondary-text"><%- t.pages.stBlog.descriptionSubscribe %></p>
     <form action="" class="d-flex flex-column gap-2 container-fluid">
-        <input type="text" placeholder="Enter your email" class="fs-subtitle bg-transparent container border rounded-1 border-white px-3 py-2 text-white fw-medium">
+        <input type="text" placeholder="<%- t.pages.stBlog.emailolaceholder %>" class="fs-subtitle bg-transparent container border rounded-1 border-white px-3 py-2 text-white fw-medium">
         <button type="submit" class="bg-primary text-black d-flex align-items-center gap-4 rounded-1 container-fluid justify-content-center py-2" href="<%= navigation(lang, '') %>">
-            <span class="fs-small fw-semibold">SUBSCRIBE NOW</span>
+            <span class="fs-small fw-semibold"><%- t.pages.stBlog.btnSubscribe %></span>
             <i class="fas fa-arrow-right-long fs-small"></i>
         </button>
     </form>
