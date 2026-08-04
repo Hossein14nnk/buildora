@@ -5,7 +5,7 @@
         <div class="d-flex justify-content-between align-items-center mb-4">
 
             <div class="text-warning small">
-                <% for (let i = 0; i < reviewsCart.star; i++) { %>
+                <% for (let i = 0; i < t.components.reviewsCart.star1; i++) { %>
                     <i class="fa-solid fa-star"></i>
                 <% } %>
             </div>
@@ -17,29 +17,29 @@
         </div>
 
         <p class="fs-big text-text lh-lg mb-0 mb-5 ">
-            <%= reviewsCart.comment %>
+            <%= t.components.reviewsCart.comment1 %>
         </p>
 
         <div class="d-flex align-items-center border-top pt-4 pb-3">
 
             <img
                 src="<%- getMedia(lang, 'components/comment-profile.jpg', 'images') %>"
-                alt="<%= reviewsCart.name %>"
+                alt="<%= t.components.reviewsCart.name1 %>"
                 class="rounded-circle review-card__avatar"
             >
 
             <div class="ms-3">
 
                 <h6 class="fs-title fw-bold text-title-text mb-0 mb-1">
-                    <%= reviewsCart.name %>
+                    <%= t.components.reviewsCart.name1 %>
                 </h6>
 
                 <p class="text-muted small">
-                    <%= reviewsCart.position %>
+                    <%= t.components.reviewsCart.position1 %>
                 </p>
 
                 <p class="text-primary fw-bold small">
-                    <%= reviewsCart.project %>
+                    <%= t.components.reviewsCart.project1 %>
                 </p>
 
             </div>

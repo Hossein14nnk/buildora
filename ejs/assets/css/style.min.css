@@ -198,17 +198,8 @@ body {
     max-width: 100% !important;
   }
 }
-#home-one .mission-btn:hover {
-  background: var(--bs-primary);
-}
-
-#home-one.mission-btn:hover .fa-solid.fa-arrow-right {
-  color: var(--bs-dark) !important;
-  transform: rotate(-45deg);
-}
-
 #home-one .cta {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/building3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -370,14 +361,14 @@ input:focus {
 }
 
 #gallery .hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 20%, rgba(15, 18, 22, 0.52) 45%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/gallery/photo-1486406146926-c627a92ad1ab.jpg");
+  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 20%, rgba(15, 18, 22, 0.52) 45%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/gallery/building7.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #gallery .project-cta > .container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/building3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -443,27 +434,27 @@ input:focus {
 }
 
 #weblogs .wrapper div:nth-child(1) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT1.png");
+  background-image: url("../../assets/media/images/en/gallery/building1.png");
 }
 
 #weblogs .wrapper div:nth-child(3) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT3.png");
+  background-image: url("../../assets/media/images/en/gallery/building3.png");
 }
 
 #weblogs .wrapper div:nth-child(2) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT2.png");
+  background-image: url("../../assets/media/images/en/gallery/building2.png");
 }
 
 #weblogs .wrapper div:nth-child(4) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT4.png");
+  background-image: url("../../assets/media/images/en/gallery/building4.png");
 }
 
 #weblogs .wrapper div:nth-child(5) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT3.png");
+  background-image: url("../../assets/media/images/en/gallery/building3.png");
 }
 
 #weblogs .wrapper div:nth-child(6) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT6.png");
+  background-image: url("../../assets/media/images/en/gallery/building6.png");
 }
 
 #st-blog #descriotion-blog .image-blog {
@@ -684,19 +675,19 @@ article:hover .fancy-txt2 {
 }
 
 #Reviews .hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 20%, rgba(15, 18, 22, 0.52) 45%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/reviews/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp");
+  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 20%, rgba(15, 18, 22, 0.52) 45%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/reviews/building9.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #Reviews .project-cta > .container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/building3.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 #plans #hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 20%, rgba(15, 18, 22, 0.52) 45%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/plans/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp");
+  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 20%, rgba(15, 18, 22, 0.52) 45%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0.341) 100%), url("../media/images/en/plans/thum2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -791,7 +782,7 @@ article:hover .fancy-txt2 {
 }
 
 #second-demo .about .contain-img {
-  background-image: url("../media/images/en/demo2/ChatGPT6.png");
+  background-image: url("../media/images/en/demo2/building6.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -819,32 +810,32 @@ article:hover .fancy-txt2 {
   }
 }
 #ar-project .wrapper div:nth-child(1) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT1.png");
+  background-image: url("../../assets/media/images/en/gallery/building1.png");
   background-size: 100% 100%;
 }
 
 #ar-project .wrapper div:nth-child(3) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT3.png");
+  background-image: url("../../assets/media/images/en/gallery/building3.png");
   background-size: 100% 100%;
 }
 
 #ar-project .wrapper div:nth-child(2) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT2.png");
+  background-image: url("../../assets/media/images/en/gallery/building2.png");
   background-size: 100% 100%;
 }
 
 #ar-project .wrapper div:nth-child(4) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT4.png");
+  background-image: url("../../assets/media/images/en/gallery/building4.png");
   background-size: 100% 100%;
 }
 
 #ar-project .wrapper div:nth-child(5) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT3.png");
+  background-image: url("../../assets/media/images/en/gallery/building3.png");
   background-size: 100% 100%;
 }
 
 #ar-project .wrapper div:nth-child(6) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT6.png");
+  background-image: url("../../assets/media/images/en/gallery/building6.png");
   background-size: 100% 100%;
 }
 

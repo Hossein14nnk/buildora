@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="icon" type="image/png" href="./assets/media/images/single/logo-web3.webp">
+    <base href="../">
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/components.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body class="font-primary">
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/footer/logo.png">
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">خانه</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/home-one.html">دمو ۱</a></li>
+                            <li><a class="dropdown-item" href="./pages/home-two.html">دمو ۲</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Buildora</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/gallery.html">گالری</a></li>
+                            <li><a class="dropdown-item" href="./pages/teams.html">تیم</a></li> 
+                            <li><a class="dropdown-item" href="./pages/contact-us.html">تماس با ما</a></li> 
+                            <li><a class="dropdown-item" href="./pages/about-us.html">درباره ما</a></li> 
+                            <li><a class="dropdown-item" href="./pages/register.html">ثبت‌نام</a></li> 
+                            <li><a class="dropdown-item" href="./pages/reviews.html">نظرات</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">خدمات</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-services.html">خدمت</a></li>
+                            <li><a class="dropdown-item" href="./pages/ar-services.html">آرشیو خدمات</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">پروژه‌ها</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-project.html">پروژه</a></li>
+                            <li><a class="dropdown-item" href="./pages/ar-project.html">آرشیو پروژه‌ها</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">وبلاگ</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item" href="./pages/st-blog.html">وبلاگ</a></li>
+                            <li><a class="dropdown-item" href="./pages/our-blog.html">آرشیو وبلاگ</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/plans.html">پلن‌ها</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn" href="./pages/contact-us.html">
+                        دریافت مشاوره
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column" id="register">
+
+    <section class="register container py-8 ">
+        
+        <div class="d-flex j flex-column flex-xxl-row flex-xl-row flex-lg-row gap-20">
+
+            <div class="col-9 col-xxl-5 col-xl-5 col-lg-6 align-self-center d-flex">
+
+                <div class=" bg-light rounded-4 shadow-sm p-5 d-flex flex-column gap-4">
+
+                    <span class="text-primary fw-bold text-uppercase small">ایجاد حساب کاربری</span>
+
+                    <h1 class="fw-bold display-5">ثبت‌نام</h1>
+
+                    <p class="text-muted">به Buildora Construction بپیوندید و همین امروز شروع کنید.</p>
+
+
+                    <form class="d-flex flex-column gap-4">
+
+                        <div class="">
+                            <label for="name" class="fw-semibold">
+                                نام <span class="text-danger">*</span>
+                            </label>
+
+                            <div class="rounded-2 border px-2 d-flex align-items-center justify-content-between">
+                                <input id="name" type="text" class=" py-3 w-100" placeholder="نام خود را وارد کنید">
+                                    <span class="">
+                                        <i class="fa-solid fa-user text-text"></i>
+                                    </span>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <label for="family" class=" fw-semibold">
+                                نام خانوادگی <span class="text-danger">*</span>
+                            </label>
+
+                            <div class="rounded-2 border px-2 d-flex align-items-center justify-content-between">
+                                <input id="family" type="text" class=" py-3 w-100" placeholder="نام خانوادگی خود را وارد کنید">
+
+                                    <i class="fa-solid fa-user text-text"></i>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <label for="email" class=" fw-semibold">
+                                آدرس ایمیل <span class="text-danger">*</span>
+                            </label>
+
+                            <div class="rounded-2 border px-2 d-flex align-items-center justify-content-between">
+                                <input id="email" type="email" class=" py-3 w-100" placeholder="آدرس ایمیل خود را وارد کنید">
+
+                                    <i class="fa-solid fa-envelope text-text"></i>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <label for="phone" class=" fw-semibold">
+                                شماره تلفن
+                            </label>
+
+                            <div class="rounded-2 border px-2 d-flex align-items-center justify-content-between">
+                                <input id="phone" type="text" class=" py-3 w-100" placeholder="شماره تلفن خود را وارد کنید">
+
+                                    <i class="fa-solid fa-light fa-phone text-text"></i>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <label for="password" class=" fw-semibold">
+                                رمز عبور <span class="text-danger">*</span>
+                            </label>
+
+                            <div class="rounded-2 border px-2 d-flex align-items-center justify-content-between">
+                                <input id="password" type="password" class=" py-3 w-100" placeholder="یک رمز عبور ایجاد کنید">
+
+                                <div class="d-flex align-items-center gap-4">
+                                    <i class="fa-solid fa-lock text-text"></i>
+
+                                    <i class="fa-solid fa-eye text-text"></i>
+                                </div>
+                                    
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <label for="password2" class=" fw-semibold">
+                                تأیید رمز عبور <span class="text-danger">*</span>
+                            </label>
+
+                            <div class="rounded-2 border px-2 d-flex align-items-center justify-content-between">
+                                <input id="password2" type="password" class=" py-3 w-100" placeholder="رمز عبور خود را دوباره وارد کنید">
+
+                                <div class="d-flex align-items-center gap-4">
+                                    <i class="fa-solid fa-lock text-text"></i>
+
+                                    <i class="fa-solid fa-eye text-text"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2 align-items-center">
+                            <input class="form-check-input p-2 border rounded" type="checkbox" id="check">
+
+                            <label for="check" class="" >
+                                با
+                                <a href="./pages/home-one.html" class="text-warning text-decoration-none">
+                                    شرایط و قوانین
+                                </a>
+                                و
+                                <a href="./pages/home-one.html" class="text-warning text-decoration-none">
+                                    سیاست حفظ حریم خصوصی
+                                </a>
+                            </label>
+
+                        </div>
+
+                        <button class="check-button btn-hover bg-primary mt-2 w-100 py-3 fw-bold text-uppercase rounded-2 d-flex gap-5 align-items-center justify-content-center">
+                            <span class="">ثبت‌نام</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                        <div class="d-flex align-items-center ">
+                            <hr class="flex-grow-1 bg-dark">
+                            <span class="mx-3 text-muted fs-small">یا</span>
+                            <hr class="flex-grow-1 bg-dark">
+                        </div>
+
+                        <button class="w-100 py-3 border rounded-2 fw-bold">
+                            <i class="fa-brands fa-google text-primary fs-mid-title"></i>
+                            ادامه با گوگل
+                        </button>
+
+                        <button class="w-100 py-3 border rounded-2 fw-bold">
+                            <i class="fa-brands fa-linkedin text-primary fs-mid-title"></i>
+                            ادامه با لینکدین
+                        </button>
+
+                        <p class="text-center">
+                            از قبل حساب کاربری دارید؟
+                            <a href="./pages/contact-us.html" class="text-primary text-decoration-none fw-semibold">
+                                ورود
+                            </a>
+                        </p>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <aside class="col-6 col-xxl-4 col-xl-5 col-lg-5 py-10">
+
+               <div class="account-features d-flex flex-column align-items-start gap-4 w-100 px-8 py-6">
+    <div class="line mb-4"></div>
+    <h2 class="fw-bold ">آینده خود را با Buildora بسازید</h2>
+    <span class="fs-big">با ایجاد حساب کاربری، به امکانات اختصاصی دسترسی داشته باشید و پروژه‌های خود را به‌راحتی مدیریت کنید.</span>
+    <div class="d-flex flex-column align-items-start gap-8 mt-5">
+        <div class="d-flex flex-row align-items-center gap-4">
+            <img src="./assets/media/images/components/icon1.png" class="icon bg-white rounded-1 px-2 py-2">
+            <div class="d-flex flex-column align-items-start">
+                <h4 class="fs-title fw-bold">مدیریت پروژه‌های شما</h4>
+                <span class="fs-normal">تمام پروژه‌های ساختمانی خود را در یک مکان سازماندهی و پیگیری کنید.</span>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row align-items-center gap-4">
+            <img src="./assets/media/images/components/icon2.png" class="icon bg-white rounded-1 px-2 py-2">
+            <div class="d-flex flex-column align-items-start">
+                <h4 class="fs-title fw-bold">دریافت پیشنهاد قیمت اختصاصی</h4>
+                <span class="fs-normal">برای پروژه‌های آینده خود درخواست قیمت اختصاصی ثبت کرده و آن‌ها را ذخیره کنید.</span>
+            </div>
+        </div>
+        
+        <div class="d-flex flex-row align-items-center gap-4">
+            <img src="./assets/media/images/components/icon3.png" class="icon bg-white rounded-1 px-2 py-2">
+            <div class="d-flex flex-column align-items-start">
+                <h4 class="fs-title fw-bold">به‌روزرسانی پروژه‌ها</h4>
+                <span class="fs-normal">به‌صورت لحظه‌ای از آخرین تغییرات و اعلان‌های مهم پروژه‌های خود مطلع شوید.</span>
+            </div>
+        </div>
+        
+        <div class="d-flex flex-row align-items-center gap-4">
+            <img src="./assets/media/images/components/icon4.png" class="icon bg-white rounded-1 px-2 py-2">
+            <div class="d-flex flex-column align-items-start">
+                <h4 class="fs-title fw-bold">همکاری تیمی</h4>
+                <span class="fs-normal">اعضای تیم خود را دعوت کرده و به‌صورت یکپارچه روی پروژه‌ها همکاری کنید.</span>
+            </div>
+        </div>
+    </div>
+</div>
+            </aside>
+
+        </div>
+    </section>
+
+    </main>
+
+
+    
+    <footer class="footer bg-dark text-secondary py-5 ">
+        <div class="container">
+
+            <div class="row row-gap-8 row-gap-lg-0">
+
+                
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
+
+                    <img src="./assets/media/images/footer/logo.png" class="" width="210">
+
+                    <p  class="">ما یک شرکت پیشرو در صنعت ساخت‌وساز هستیم که خدمات باکیفیتی را در حوزه‌های مسکونی، تجاری و صنعتی در سراسر جهان ارائه می‌دهیم.</p>
+
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
+
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">دسترسی سریع</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">خانه</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">درباره ما</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">خدمات</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">پروژه‌ها</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">وبلاگ</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">تماس با ما</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">خدمات ما</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">مدیریت ساخت‌وساز</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">طراحی و اجرا</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">بازسازی</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">طراحی داخلی</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">مشاوره پروژه</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">اطلاعات تماس</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-location text-primary"></i>
+                            <div class="d-flex flex-column justify-content-start">
+                                <span class="">۱۲۳ خیابان کانستراکشن،</span>
+                                <span class="">نیویورک، NY 10001، آمریکا</span>
+                            </div>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-light fa-phone text-primary"></i>
+                            <span class="">+1 212 555 7890</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span class="">info@Buildora.com</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-clock text-primary"></i>
+                            <span  class="">شنبه تا دوشنبه: ۸:۰۰ صبح تا ۶:۰۰ عصر</span>
+                        </li>
+                    </ul>
+
+                    <div class="social d-xxl-none d-xl-none d-lg-none d-flex align-items-center gap-2">
+
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
+
+                    <h6 class="fw-bold text-nowrap">پروژه‌های اخیر</h6>
+
+                    <div class="row g-1">
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building1.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building2.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building3.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building4.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building5.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building6.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="bg-light">
+
+            <div class="copyright">
+
+                © 2024 Buildora Construction. All Rights Reserved.
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./assets/js/gsap/SplitText.min.js"></script>
+    <script src="./assets/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/gsap/gsap.min.js"></script>
+    
+    
+    
+    
+    <script src="./assets/js/animations.js"></script>
+</body>
+
+</html>
