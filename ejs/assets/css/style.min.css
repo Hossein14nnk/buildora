@@ -1,20 +1,33 @@
 @font-face {
-  font-family: "primary";
+  font-family: "vazirmatn";
   font-weight: 900;
-  src: url("../fonts/vazir/Vazir-Black.woff2"), url("../fonts/vazir/Vazir-Black.woff"), url("../fonts/vazir/Vazir-Black.ttf"), url("../fonts/vazir/Vazir-Black.eot");
+  src: url("../fonts/Vazirmatn/Vazirmatn-Black.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Black.woff"), url("../fonts/Vazirmatn/Vazirmatn-Black.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Black.eot");
 }
 @font-face {
-  font-family: "primary";
+  font-family: "vazirmatn";
   font-weight: 400;
-  src: url("../fonts/vazir/Vazir-Regular.woff2"), url("../fonts/vazir/Vazir-Regular.woff"), url("../fonts/vazir/Vazir-Regular.ttf"), url("../fonts/vazir/Vazir-Regular.eot");
+  src: url("../fonts/Vazirmatn/Vazirmatn-Regular.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Regular.woff"), url("../fonts/Vazirmatn/Vazirmatn-Regular.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Regular.eot");
 }
 @font-face {
-  font-family: "primary";
+  font-family: "vazirmatn";
   font-weight: 100;
-  src: url("../fonts/vazir/Vazir-Thin.woff2"), url("../fonts/vazir/Vazir-Thin.woff"), url("../fonts/vazir/Vazir-Thin.ttf"), url("../fonts/vazir/Vazir-Thin.eot");
+  src: url("../fonts/Vazirmatn/Vazirmatn-Thin.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Thin.woff"), url("../fonts/Vazirmatn/Vazirmatn-Thin.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Thin.eot");
 }
-.font-primary {
-  font-family: var("--font-primary"), sans-serif, "Courier New", Courier, monospace;
+.font-vazirmatn {
+  font-family: "vazirmatn", sans-serif, "Courier New", Courier, monospace;
+}
+
+@font-face {
+  font-family: "PTSans";
+  font-weight: 400;
+  src: url("../fonts/PTSans/PTSans-Regular.woff2"), url("../fonts/PTSans/PTSans-Regular.woff"), url("../fonts/PTSans/PTSans-Regular.ttf"), url("../fonts/PTSans/PTSans-Regular.eot");
+}
+.font-PTSans {
+  font-family: "PTSans", sans-serif, "Courier New", Courier, monospace;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .transition {
@@ -57,6 +70,14 @@ section {
 
 .btn-hover {
   transition: all 300ms ease-in-out;
+}
+
+ul, li {
+  padding: 0;
+}
+
+html[dir=rtl] .fa-arrow-right, .fa-arrow-right-long {
+  rotate: 180deg;
 }
 
 body {
@@ -103,7 +124,7 @@ body {
 }
 
 #home-one .dots {
-  left: -40px;
+  left: 0%;
   top: 90px;
   width: 140px;
   height: 140px;
@@ -284,10 +305,10 @@ a {
 }
 
 #register {
-  background-image: url("../media/images/en/register/building.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4117647059)), url("../media/images/en/register/building.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 55% 45%;
+  background-size: 100% 100%;
 }
 
 #register input {
@@ -305,18 +326,6 @@ input:focus {
 
 #st-services hr {
   background-color: var(--bs-dark);
-}
-
-#st-services .hero::after {
-  content: "";
-  bottom: 0px;
-  right: 0%;
-  position: absolute;
-  background-repeat: repeat;
-  background-size: 100% 100%, 10px 12px;
-  width: 20%;
-  height: 100%;
-  background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
 }
 
 #st-services .list-group li {
@@ -509,16 +518,6 @@ ul {
   padding-bottom: 1.5rem;
 }
 
-#ar-services .services-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 70px;
-  height: 3px;
-  background-color: #ffc107;
-}
-
 #ar-services .services-card {
   border-color: transparent !important;
   transition: all 0.3s ease !important;
@@ -612,18 +611,6 @@ article:hover .fancy-txt2 {
   width: 10%;
   margin: 0;
   height: 2px;
-}
-
-#stProject .hero::after {
-  content: "";
-  bottom: 0px;
-  right: 0%;
-  position: absolute;
-  background-repeat: repeat;
-  background-size: 100% 100%, 15px 17px;
-  width: 40%;
-  height: 100%;
-  background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
 }
 
 #stProject .list-group li {
@@ -804,9 +791,31 @@ article:hover .fancy-txt2 {
   width: 100px;
 }
 
+#second-demo .about > div {
+  padding-inline-start: 2.5rem;
+}
+
+@media (min-width: 1400px) {
+  #second-demo .about > div {
+    padding-inline-start: 5rem;
+  }
+}
 @media (min-width: 1200px) {
   #second-demo .about .wrapper .item:not(:last-child) {
     border-right: 1px dashed #555353;
+  }
+  #second-demo .about > div {
+    padding-inline-start: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  #second-demo .about > div {
+    padding-inline-start: 5rem;
+  }
+}
+@media (min-width: 768px) {
+  #second-demo .about > div {
+    padding-inline-start: 2.5rem;
   }
 }
 #ar-project .wrapper div:nth-child(1) .image {

@@ -45,7 +45,7 @@ const Helper = {
             scrollTrigger: Helper.trigger(trigger, start)
         });
     },
-    animateTexts(selector, start = "top 80%", textType = "words", textTags = "p,span,a,h1,h2,h3", options){
+    animateTexts(selector, start = "top 80%", textType = "lines", textTags = "p,span,a,h1,h2,h3", options){
         this.splitTitle(`${selector} :is(${textTags})`, textType, textType).forEach(split => {
             const tl = this.timeline(split.element, start);
 
@@ -484,7 +484,7 @@ const Animation = {
                 ease: "power1.in",
             });
 
-            Helper.animateTexts("section.process", "top 80%", "words", "p,span,a,h1,h2,h3",{x: 100, autoAlpha: 0, duration: 0.8, stagger: 0.1, ease: "power3.out"});
+            Helper.animateTexts("section.process", "top 80%", "lines", "p,span,a,h1,h2,h3",{x: 100, autoAlpha: 0, duration: 0.8, stagger: 0.1, ease: "power3.out"});
         },
         feature(){
             if (!Helper.checkElement("section.feature .second-feature-card")) return;
@@ -584,7 +584,7 @@ const Animation = {
                 ease: "none",
             });
 
-            Helper.animateTexts("section.process", "top 80%", "words", "p,span,a,h1,h2,h3",{x: 100, autoAlpha: 0, duration: 0.8, stagger: 0.1, ease: "power3.out"});
+            Helper.animateTexts("section.process", "top 80%", "lines", "p,span,a,h1,h2,h3",{x: 100, autoAlpha: 0, duration: 0.8, stagger: 0.1, ease: "power3.out"});
         }
     },
     reviews: {
@@ -738,7 +738,7 @@ const Animation = {
                         ease: "back.out(1.4)",
                     });
 
-                    Helper.animateTexts(selector, "top 70%", "words", "p,a,h1,h2,h3");
+                    Helper.animateTexts(selector, "top 70%", "lines", "p,a,h1,h2,h3");
                 });
             };
             animateCardBody(".container-fluid .card-body");
@@ -1022,7 +1022,7 @@ const Animation = {
                 ease: "none"
             });
 
-            Helper.animateTexts("#ar-services section", "top 80%", "words", "p,a,h1,h2,h3");
+            Helper.animateTexts("#ar-services section", "top 80%", "lines", "p,a,h1,h2,h3");
         }
     },
     arProject: {
@@ -1050,7 +1050,7 @@ const Animation = {
                 ease: "none"
             });
 
-            Helper.animateTexts("#ar-services section", "top 80%", "words", "p,a,h1,h2,h3");
+            Helper.animateTexts("#ar-services section", "top 80%", "lines", "p,a,h1,h2,h3");
         },
         featureCard(){
             if (!Helper.checkElement("#ar-project #secondFeatureCard .second-feature-card")) return;
@@ -1070,7 +1070,7 @@ const Animation = {
             //     ease: "none"
             // });
 
-            Helper.animateTexts(".container:has(#secondFeatureCard)", "top 80%", "words", "p,a,h1,h2,h3");
+            Helper.animateTexts(".container:has(#secondFeatureCard)", "top 80%", "lines", "p,a,h1,h2,h3");
         },
     }
 };

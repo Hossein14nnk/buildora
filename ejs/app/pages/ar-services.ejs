@@ -1,16 +1,17 @@
 <%- include('../layouts/page/head.ejs' , {title: "services" , addCount: 0}); -%>
     <main id="ar-services" class="d-flex flex-column">
         <section id="servicesHero" class="bg-dark text-white pt-20">
-            <div class="container d-flex flex-column py-lg-5">
+            <div class="container d-flex flex-column py-lg-5 gap-4">
 
-                <span class="text-primary text-uppercase fw-bold fs-small mb-3">
+                <span class="text-primary text-uppercase fw-bold ">
                    <%- t.pages.arServices.heroSubtitle %>
                 </span>
 
-                <h1 class="services-title fs-high-title fw-bold mb-4">
-                  <%- t.pages.arServices.heroTitle2 %><br><%- t.pages.arServices.for %> <span class="text-primary"><%- t.pages.arServices.heroTitle1 %></span>
+                <h1 class="services-title fs-high-title fw-bold lh-base">
+                  <%- t.pages.arServices.heroTitle2 %><%- t.pages.arServices.for %> <br>
+                  <span class="text-primary lh-base "><%- t.pages.arServices.heroTitle1 %></span>
                 </h1>
-                
+                <div class="bg-primary" style="width:60px;height:3px;"></div>
 
                 <p class="text-secondary col-lg-6">
                     <span class="fancy-txt"><%- t.pages.arServices.heroDescription %></span>
@@ -23,7 +24,7 @@
             <div class="container">
                 <div class="row g-4">
                     <article class="col-md-6 col-xl-4">
-                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
+                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector1.png', 'images') %>" class="img-size">
                             <h3 class="fs-mid-title fw-semibold"><%- t.components.servicesCard.title1 %></h3>
                             <p class="fs-title"><span class="fancy-txt2"><%- t.components.servicesCard.text1 %></span></p>
@@ -35,7 +36,7 @@
                     </article>
 
                     <article class="col-md-6 col-xl-4">
-                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
+                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector2.png', 'images') %>" class="img-size">
                             <h3 class="fs-mid-title fw-semibold"><%- t.components.servicesCard.title2 %></h3>
                             <p class="fs-title"><span class="fancy-txt2"><%- t.components.servicesCard.text2 %></span></p>
@@ -47,7 +48,7 @@
                     </article>
 
                     <article class="col-md-6 col-xl-4">
-                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
+                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector3.png', 'images') %>" class="img-size">
                             <h3 class="fs-mid-title fw-semibold"><%- t.components.servicesCard.title3 %></h3>
                             <p class="fs-title"><span class="fancy-txt2"><%- t.components.servicesCard.text3 %></span></p>
@@ -59,7 +60,7 @@
                     </article>
 
                     <article class="col-md-6 col-xl-4">
-                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
+                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector4.png', 'images') %>" class="img-size">
                             <h3 class="fs-mid-title fw-semibold"><%- t.components.servicesCard.title4 %></h3>
                             <p class="fs-title"><span class="fancy-txt2"><%- t.components.servicesCard.text4 %></span></p>
@@ -71,10 +72,10 @@
                     </article>
 
                     <article class="col-md-6 col-xl-4">
-                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
+                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector5.png', 'images') %>" class="img-size">
                             <h3 class="fs-mid-title fw-semibold"><%- t.components.servicesCard.title5 %></h3>
-                            <p class="fs-title"><span class="fancy-txt2"><%- t.components.servicesCard.text %></span></p>
+                            <p class="fs-title"><span class="fancy-txt2"><%- t.components.servicesCard.text5 %></span></p>
                             <a href="<%= navigation(lang, 'st-sercives.html') %>" class="d-flex align-items-center gap-2 mt-4 text-decoration-none">
                                 <span class="fs-big fw-bold text-button-text"><%- t.components.servicesCard.button %></span>
                                 <i class="fa-solid fa-arrow-right-long text-primary"></i>
@@ -83,7 +84,7 @@
                     </article>
 
                     <article class="col-md-6 col-xl-4">
-                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6">
+                        <div class="services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 h-100 justify-content-between">
                             <img src="<%- getMedia(lang, 'demo1/vector6.png', 'images') %>" class="img-size">
                             <h3 class="fs-mid-title fw-semibold"><%- t.components.servicesCard.title6 %></h3>
                             <p class="fs-title"><span class="fancy-txt2"><%- t.components.servicesCard.text6 %></span></p>

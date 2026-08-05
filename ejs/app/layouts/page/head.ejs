@@ -8,11 +8,26 @@
     <link rel="icon" type="image/png" href="<%= getMedia(lang, 'single/logo-web3.webp', 'images') %>">
     <base href="<%= basePathPages() %>">
     <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
-    <%# <link rel="stylesheet" href="./assets/vendors/bootstrap/dist/css/bootstrap.min.css"> %>
+    <%#_ <link rel="stylesheet" href="./assets/vendors/bootstrap/dist/css/bootstrap.min.css"> -%>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/components.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
+<%_ 
 
-<body class="font-primary">
+let fontName = "";
+switch(lang){
+    case "fa":
+        fontName = "vazirmatn";
+    break;
+    case "en":
+        fontName = "PTSans";
+    break;
+    default:
+        fontName = "primary";
+    break;
+}
+
+-%>
+<body class="font-<%= fontName %>">
     <%- include('../../components/header/content.ejs') %>

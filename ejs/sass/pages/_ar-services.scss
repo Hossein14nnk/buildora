@@ -7,15 +7,6 @@
     padding-bottom: 1.5rem;
 }
 
-#ar-services .services-title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 70px;
-    height: 3px;
-    background-color: #ffc107;
-}
 
 #ar-services .services-card {
     border-color: transparent !important;

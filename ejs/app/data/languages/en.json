@@ -364,6 +364,7 @@
 		"projectBanner": {
 			"title": "Building Dreams With Precision",
 			"description": "The construction industry is evolving faster than ever before. New technologies",
+      "description2": "In our services.",
 			"button": "VIEW PROJECT",
 			"image": ""
 		},
@@ -686,6 +687,7 @@
       "heroTitle2":"For Better Building",
       "heroDescription":"Stay updated with the latest trends, expert insights, and practical tips from the construction industry.",
       "sectiontwosubtitle":"OUR BLOG",
+      "sectiontwotitle": "send us a message",
       "sectiontwotext":"were here to help",
       "name":"Full Name",
       "placeHolderName":"Enter your full name",

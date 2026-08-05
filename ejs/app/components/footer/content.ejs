@@ -7,7 +7,12 @@
                 
                 <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
 
-                    <img src="<%- getMedia(lang, 'footer/logo.png', 'images') %>" class="" width="210">
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="<%- navigation(lang , 'home-one.html') %>">
+
+                        <img class="logo" src="<%= getMedia(lang, 'footer/logo.png', 'images'); %>" width="50">
+                        <p class="text-primary fw-bold fs-mid-title my-0"><%- t.header.logotitle %></p>
+
+                    </a>
 
                     <p  class=""><%= t.footer.description %></p>
 
@@ -32,8 +37,7 @@
                     </div>
 
                 </div>
-
-                
+               
                 <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
                     <h6 class="fw-bold"><%= t.footer.quickLinks.txt %></h6>
@@ -68,7 +72,6 @@
 
                 </div>
 
-                
                 <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
 
                     <h6 class="fw-bold"><%= t.footer.ourSservices.txt %></h6>
@@ -92,8 +95,7 @@
                     </ul>
 
                 </div>
-
-                
+              
                 <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
 
                     <h6 class="fw-bold"><%= t.footer.contact.txt %></h6>
@@ -108,7 +110,7 @@
                         </li>
                         <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-light fa-phone text-primary"></i>
-                            <span class=""><%= t.footer.contact.phoneNumber %></span>
+                            <span class="number"><%= t.footer.contact.phoneNumber %></span>
                         </li>
                         <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-envelope text-primary"></i>
@@ -116,7 +118,7 @@
                         </li>
                         <li class="d-flex gap-2 align-items-baseline w-fit-content">
                             <i class="fa-solid fa-clock text-primary"></i>
-                            <span  class=""><%= t.footer.contact.timeWork %></span>
+                            <span class=""><%= t.footer.contact.timeWork %></span>
                         </li>
                     </ul>
 
@@ -142,8 +144,7 @@
 
 
                 </div>
-
-            
+           
                 <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
 
                     <h6 class="fw-bold text-nowrap"><%= t.footer.recent %></h6>
@@ -184,7 +185,7 @@
 
             <div class="copyright">
 
-                © 2024 Buildora Construction. All Rights Reserved.
+                <%= t.footer.paragraph %>
 
             </div>
 

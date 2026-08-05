@@ -1,4 +1,8 @@
 
+       .header .dropdown-toggle::after {
+            margin-inline-start: 0.5rem !important;
+       }
+       
        .header .navbar-custom{
             background: var(--bs-black);
             min-height:90px;
@@ -19,7 +23,6 @@
         }
 
         .header .logo-icon{
-            width:45px;
             height:45px;
             border:3px solid #ffc107;
             border-radius:8px;
@@ -102,9 +105,7 @@
             font-size:28px;
         }
 
-        .header .logo {
-            width: 100px;
-        }
+       
 
         @media(max-width:991px){
 

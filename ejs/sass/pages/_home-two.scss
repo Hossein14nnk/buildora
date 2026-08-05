@@ -90,8 +90,37 @@
 }
 
 
+#second-demo .about > div  {
+    padding-inline-start: 2.5rem ;
+}
+
+
+@media (min-width: 1400px) {
+
+  #second-demo .about > div  {
+    padding-inline-start: 5rem;
+  }
+}
+
 @media (min-width: 1200px) {
   #second-demo .about .wrapper .item:not(:last-child){
     border-right: 1px dashed #555353;
+  }
+
+  #second-demo .about > div  {
+    padding-inline-start: 5rem;
+  }
+
 }
+
+@media (min-width: 992px) {
+  #second-demo .about > div  {
+    padding-inline-start: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #second-demo .about > div  {
+    padding-inline-start: 2.5rem;
+  }
 }

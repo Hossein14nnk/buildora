@@ -3,9 +3,10 @@
         <div class="container">
 
             <!-- Logo -->
-            <a class="navbar-brand" href="<%- navigation(lang , 'home-one.html') %>">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="<%- navigation(lang , 'home-one.html') %>">
 
-                <img class="logo" src="<%= getMedia(lang, 'footer/logo.png', 'images'); %>">
+                <img class="logo" src="<%= getMedia(lang, 'footer/logo.png', 'images'); %>" width="40">
+                <p class="text-primary fw-bold fs-mid-title my-0"><%- t.header.logotitle %></p>
 
             </a>
 
@@ -19,11 +20,11 @@
 
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><%- t.header.home %></a>
+                        <a class="nav-link dropdown-toggle text-nowrap" data-bs-toggle="dropdown"><%- t.header.home %></a>
                         <ul class="dropdown-menu">
                             
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'home-one.html') %>"><%- t.header.item1 %></a></li>
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'home-two.html') %>"><%- t.header.item2 %></a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'home-one.html') %>"><%- t.header.item1 %></a></li>
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'home-two.html') %>"><%- t.header.item2 %></a></li> 
 
                         </ul>
                     </li>
@@ -32,55 +33,55 @@
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><%- t.header.Buildora %></a>
                          <ul class="dropdown-menu">
                             
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'gallery.html') %>"><%- t.header.item3 %></a></li>
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'teams.html') %>"><%- t.header.item4 %></a></li> 
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'contact-us.html') %>"><%- t.header.item5 %></a></li> 
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'about-us.html') %>"><%- t.header.item6 %></a></li> 
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'register.html') %>"><%- t.header.item7 %></a></li> 
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'reviews.html') %>"><%- t.header.item8 %></a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'gallery.html') %>"><%- t.header.item3 %></a></li>
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'teams.html') %>"><%- t.header.item4 %></a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'contact-us.html') %>"><%- t.header.item5 %></a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'about-us.html') %>"><%- t.header.item6 %></a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'register.html') %>"><%- t.header.item7 %></a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'reviews.html') %>"><%- t.header.item8 %></a></li> 
 
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><%- t.header.Services %></a>
+                        <a class="nav-link dropdown-toggle text-nowrap" data-bs-toggle="dropdown"><%- t.header.Services %></a>
 
                         <ul class="dropdown-menu">
                             
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'st-services.html') %>"><%- t.header.item9 %></a></li>
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'ar-services.html') %>"><%- t.header.item10 %></a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'st-services.html') %>"><%- t.header.item9 %></a></li>
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'ar-services.html') %>"><%- t.header.item10 %></a></li> 
 
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><%- t.header.Projects %></a>
+                        <a class="nav-link dropdown-toggle text-nowrap" data-bs-toggle="dropdown"><%- t.header.Projects %></a>
 
                          <ul class="dropdown-menu">
                             
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'st-project.html') %>"><%- t.header.item11 %></a></li>
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'ar-project.html') %>"><%- t.header.item12 %></a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'st-project.html') %>"><%- t.header.item11 %></a></li>
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'ar-project.html') %>"><%- t.header.item12 %></a></li> 
 
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><%- t.header.Blog %></a>
+                        <a class="nav-link dropdown-toggle text-nowrap" data-bs-toggle="dropdown"><%- t.header.Blog %></a>
 
                         <ul class="dropdown-menu">
                             
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'st-blog.html') %>"><%- t.header.item13 %></a></li>
-                            <li><a class="dropdown-item" href="<%- navigation(lang , 'our-blog.html') %>"><%- t.header.item14 %></a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'st-blog.html') %>"><%- t.header.item13 %></a></li>
+                            <li><a class="dropdown-item text-nowrap" href="<%- navigation(lang , 'our-blog.html') %>"><%- t.header.item14 %></a></li> 
 
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<%- navigation(lang , 'plans.html') %>"><%- t.header.PLANS %></a>
+                        <a class="nav-link text-nowrap" href="<%- navigation(lang , 'plans.html') %>"><%- t.header.PLANS %></a>
                     </li>
                 </ul>
 
                 <div class="quote-wrapper">
-                    <a class="quote-btn" href="<%- navigation(lang , 'contact-us.html') %>">
+                    <a class="quote-btn text-nowrap px-4" href="<%- navigation(lang , 'contact-us.html') %>">
                         <%- t.header.headerbtn %>
                     </a>
                 </div>
@@ -92,8 +93,7 @@
 </header>
 
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
-<%# <script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script> %>
-
+<%#_ <script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -%>
 <script>
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("mainMenu");

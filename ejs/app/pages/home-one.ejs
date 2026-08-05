@@ -56,7 +56,7 @@
                                 <%- t.pages.homeOne.cardvideoDescription %>
                             </p>
 
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center gap-2">
 
                                 <a class="rounded-circle border-play d-flex align-items-center justify-content-center">
 
@@ -64,7 +64,7 @@
 
                                 </a>
 
-                                <span class="ms-3 fw-semibold">
+                                <span class=" fw-semibold">
                                     <%- t.pages.homeOne.cardvideobtn %>
                                 </span>
 
@@ -308,7 +308,7 @@
                                 class="w-100 h-100 object-fit-cover rounded-2" alt=""> -->
 
                             <video class="object-fit-cover h-100 w-100" controls poster="<%= getMedia(lang, 'single/homepage-section2.jpg', 'images'); %> " >
-                                <source class="" src="<%= getMedia(lang, 'video.mp4', 'videos'); %>" type="video/mp4">
+                                <source class="" src="<%= getMedia(null, 'video.mp4', 'videos'); %>" type="video/mp4">
                             </video>
 
                             <span
@@ -644,9 +644,7 @@
                                 <div class="d-flex justify-content-between w-100 gap-2">
                                     <input type="text" placeholder=" <%- t.pages.homeOne.subscribeplaceholder %>"
                                         class="fs-subtitle w-100 border rounded-1 px-3 py-2 fw-medium">
-                                    <button type="submit"
-                                        class="bg-primary text-black d-flex align-items-center gap-4 rounded-1 justify-content-center py-2"
-                                        href="<%= navigation(lang, '') %>">
+                                    <button type="submit" class="bg-primary border-0 text-black d-flex align-items-center gap-4 rounded-1 justify-content-center py-2">
                                         <i class="fas fa-arrow-right-long fs-small px-4"></i>
                                     </button>
                                 </div>
