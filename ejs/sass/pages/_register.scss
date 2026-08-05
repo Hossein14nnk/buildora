@@ -15,10 +15,10 @@
 }
 
 #register {
-    background-image: url(get-image("en/register/building.png"))  ;
+    background-image: linear-gradient(#ffffff69), url("../media/images/en/register/building.png");
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: 55% 45%;
+    background-size: 100% 100% ;
 }
 
 #register input {

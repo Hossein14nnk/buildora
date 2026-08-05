@@ -14,17 +14,6 @@
     height: 2px;
 }
 
-#stProject .hero::after {
-    content: "";
-    bottom: 0px;
-    right: 0%;
-    position: absolute;
-    background-repeat: repeat;
-    background-size: 100% 100%, 15px 17px;
-    width: 40%;
-    height: 100%;
-    background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(#FEBF015E 10%, rgba(254, 191, 1, 0) 10% 100%);
-}
 
 #stProject .list-group li {
     transition: all 300ms ease-in-out !important;
