@@ -17,7 +17,7 @@
     border-top:1px dashed;
     top: 30px;
     z-index: 1 !important;
-    right:0px;
+    inset-inline-end: 0px;
     width:100%
 }
 
@@ -26,22 +26,22 @@
 }
 
 .cycle-card:last-child .line{
-    right:unset;
-    left:0px;
+    inset-inline-end: unset;
+    inset-inline-start: 0px;
     width:50%;
 }
 
 @media (max-width: 991px){
 
 .cycle-card:nth-child(even) .line{
-    width:50%;
-    left:0px;
-    right:unset;
+    width: 50%;
+    inset-inline-start: 0px;
+    inset-inline-end: unset;
 }
 
 .cycle-card:nth-child(odd) .line{
-    left:unset;
-    right:0px;
+    inset-inline-start: unset;
+    inset-inline-end: 0px;
     width:50%;
 }
 }

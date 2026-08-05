@@ -59,6 +59,10 @@ section {
   transition: all 300ms ease-in-out;
 }
 
+ul, li {
+  padding: 0;
+}
+
 #home-one #main-hero {
   background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/single/herohomepage.png");
   background-size: 100% 100%;
@@ -503,16 +507,6 @@ ul {
   padding-bottom: 1.5rem;
 }
 
-#ar-services .services-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 70px;
-  height: 3px;
-  background-color: #ffc107;
-}
-
 #ar-services .services-card {
   border-color: transparent !important;
   transition: all 0.3s ease !important;
@@ -797,9 +791,31 @@ article:hover .fancy-txt2 {
   width: 100px;
 }
 
+#second-demo .about > div {
+  padding-inline-start: 2.5rem;
+}
+
+@media (min-width: 1400px) {
+  #second-demo .about > div {
+    padding-inline-start: 5rem;
+  }
+}
 @media (min-width: 1200px) {
   #second-demo .about .wrapper .item:not(:last-child) {
     border-right: 1px dashed #555353;
+  }
+  #second-demo .about > div {
+    padding-inline-start: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  #second-demo .about > div {
+    padding-inline-start: 5rem;
+  }
+}
+@media (min-width: 768px) {
+  #second-demo .about > div {
+    padding-inline-start: 2.5rem;
   }
 }
 #ar-project .wrapper div:nth-child(1) .image {

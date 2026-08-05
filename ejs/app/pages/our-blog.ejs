@@ -2,7 +2,7 @@
     <main id="weblogs" class="d-flex flex-column">
         <section id="blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center pt-20 pb-10">
             <div class="container d-flex gap-4 flex-column">
-                <span class="text-primary fw-bold fs-normal"><%- t.pages.ourBlog.heroSubtitle %></span>
+                <span class="text-primary fw-bold "><%- t.pages.ourBlog.heroSubtitle %></span>
                 <h1 class="text-light fw-bold fs-big-title"><%- t.pages.ourBlog.heroTitle1 %>
                     <br><span class="text-primary"><%- t.pages.ourBlog.heroTitle2 %></span>
                 </h1>
@@ -27,7 +27,7 @@
                         <div class="row g-4">
 						
                             <div class="col-lg-4 col-sm-6 col-12 d-flex">
-                                <div class="news-box shadow bg-white transition-300">
+                                <div class="news-box shadow bg-white transition-300 w-100">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category1 %></span>
                                     </div>
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 col-12 d-flex">
-                                <div class="news-box shadow bg-white transition-300">
+                                <div class="news-box shadow bg-white transition-300 w-100">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category2 %></span>
                                     </div>
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 col-12 d-flex">
-                                <div class="news-box shadow bg-white transition-300">
+                                <div class="news-box shadow bg-white transition-300 w-100">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category3 %></span>
                                     </div>
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 col-12 d-flex">
-                                <div class="news-box shadow bg-white transition-300">
+                                <div class="news-box shadow bg-white transition-300 w-100">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category4 %></span>
                                     </div>
@@ -103,7 +103,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 col-12 d-flex">
-                                <div class="news-box shadow bg-white transition-300">
+                                <div class="news-box shadow bg-white transition-300 w-100">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category5 %></span>
                                     </div>
@@ -122,7 +122,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 col-12 d-flex">
-                                <div class="news-box shadow bg-white transition-300">
+                                <div class="news-box shadow bg-white transition-300 w-100">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category6 %></span>
                                     </div>
@@ -141,7 +141,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 col-12 d-flex">
-                                <div class="news-box shadow bg-white transition-300">
+                                <div class="news-box shadow bg-white transition-300 w-100">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category7 %></span>
                                     </div>
@@ -160,7 +160,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 col-12 d-flex">
-                                <div class="news-box shadow bg-white transition-300">
+                                <div class="news-box shadow bg-white transition-300 w-100">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category8 %></span>
                                     </div>
@@ -179,7 +179,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 col-12 d-flex">
-                                <div class="news-box shadow bg-white transition-300">
+                                <div class="news-box shadow bg-white transition-300 w-100">
                                     <div class="image p-3">
                                         <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> <%- t.pages.ourBlog.category9 %></span>
                                     </div>
@@ -330,8 +330,7 @@
                                 </div>
                             </div>
 
-                            
-                            <%- include('../components/subscribe/content.ejs', {subscribe: t.components.subscribe}); -%>
+                            <%- include('../components/subscribe/content.ejs'); -%>
                         </div>
 
                     </div>
