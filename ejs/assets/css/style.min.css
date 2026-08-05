@@ -1,17 +1,17 @@
 @font-face {
   font-family: "vazirmatn";
   font-weight: 900;
-  src: url("../fonts/Vazirmatn/Vazirmatn-Black.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Black.woff"), url("../fonts/Vazirmatn/Vazirmatn-Black.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Black.eot");
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Black.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Black.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Black.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Black.eot");
 }
 @font-face {
   font-family: "vazirmatn";
   font-weight: 400;
-  src: url("../fonts/Vazirmatn/Vazirmatn-Regular.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Regular.woff"), url("../fonts/Vazirmatn/Vazirmatn-Regular.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Regular.eot");
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Regular.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Regular.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Regular.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Regular.eot");
 }
 @font-face {
   font-family: "vazirmatn";
   font-weight: 100;
-  src: url("../fonts/Vazirmatn/Vazirmatn-Thin.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Thin.woff"), url("../fonts/Vazirmatn/Vazirmatn-Thin.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Thin.eot");
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Thin.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Thin.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Thin.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Thin.eot");
 }
 .font-vazirmatn {
   font-family: "vazirmatn", sans-serif, "Courier New", Courier, monospace;
@@ -28,6 +28,10 @@
 
 html {
   overflow-x: hidden;
+}
+
+html[dir=rtl] {
+  font-size: 0.9rem;
 }
 
 .transition {
@@ -78,10 +82,6 @@ ul, li {
 
 html[dir=rtl] .fa-arrow-right, .fa-arrow-right-long {
   rotate: 180deg;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 #home-one #main-hero {

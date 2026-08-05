@@ -5,19 +5,19 @@ $font-fa-folder: "Vazirmatn";
 @font-face {
     font-family: $font-family-fa;
     font-weight: 900;
-    src: url("../fonts/#{$font-fa-folder}/Vazirmatn-Black.woff2"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Black.woff"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Black.ttf"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Black.eot"),;
+    src: url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Black.woff2"),url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Black.woff"),url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Black.ttf"),url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Black.eot"),;
 }
 
 @font-face {
     font-family: $font-family-fa;
     font-weight: 400;
-    src: url("../fonts/#{$font-fa-folder}/Vazirmatn-Regular.woff2"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Regular.woff"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Regular.ttf"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Regular.eot"),;
+    src: url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Regular.woff2"),url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Regular.woff"),url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Regular.ttf"),url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Regular.eot"),;
 }
 
 @font-face {
     font-family: $font-family-fa;
     font-weight: 100;
-    src: url("../fonts/#{$font-fa-folder}/Vazirmatn-Thin.woff2"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Thin.woff"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Thin.ttf"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Thin.eot"),;
+    src: url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Thin.woff2"),url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Thin.woff"),url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Thin.ttf"),url("../fonts/#{$font-fa-folder}/Vazirmatn-RD-FD-Thin.eot"),;
 }
 
 .font-#{$font-family-fa}{

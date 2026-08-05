@@ -30,6 +30,10 @@ html {
   overflow-x: hidden;
 }
 
+html[dir=rtl] {
+  font-size: 0.9rem;
+}
+
 .transition {
   transition: 0.3s 0s linear;
 }
@@ -76,12 +80,8 @@ ul, li {
   padding: 0;
 }
 
-html[dir="rtl"] .fa-arrow-right, html[dir="rtl"] .fa-arrow-right-long {
-    rotate: 180deg;
-}
-
-body {
-  overflow-x: hidden;
+html[dir=rtl] .fa-arrow-right, .fa-arrow-right-long {
+  rotate: 180deg;
 }
 
 #home-one #main-hero {

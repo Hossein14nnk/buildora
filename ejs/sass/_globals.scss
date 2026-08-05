@@ -2,6 +2,10 @@ html {
     overflow-x: hidden;
 }
 
+html[dir="rtl"] {
+    font-size: 0.9rem;
+}
+
 .transition {
     transition: 0.3s 0s linear;
 }

@@ -29,8 +29,7 @@ const Helper = {
             duration: 2,
             paused: true,
             onUpdate() {
-                target.textContent =
-                    Math.floor(obj.value).toLocaleString() + unit;
+                target.textContent = Math.floor(obj.value).toLocaleString("en-US") + unit;
             }
         });
     },

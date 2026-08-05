@@ -1,10 +1,6 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
-body{
-    overflow-x: hidden;
-}
-
 #home-one #main-hero {
     // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.26)), url(get-image("en/home-one/building7.png"));
     // background-repeat: no-repeat;
