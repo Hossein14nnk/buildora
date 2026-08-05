@@ -1,25 +1,39 @@
-$font-family-primary: "primary";
-$font-primary-default: sans-serif, 'Courier New', Courier, monospace;
-$font-primary-folder: "vazir";
+$font-family-fa: "vazirmatn";
+$font-fa-default: sans-serif, 'Courier New', Courier, monospace;
+$font-fa-folder: "Vazirmatn";
 
 @font-face {
-    font-family: $font-family-primary;
+    font-family: $font-family-fa;
     font-weight: 900;
-    src: url("../fonts/#{$font-primary-folder}/Vazir-Black.woff2"),url("../fonts/#{$font-primary-folder}/Vazir-Black.woff"),url("../fonts/#{$font-primary-folder}/Vazir-Black.ttf"),url("../fonts/#{$font-primary-folder}/Vazir-Black.eot"),;
+    src: url("../fonts/#{$font-fa-folder}/Vazirmatn-Black.woff2"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Black.woff"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Black.ttf"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Black.eot"),;
 }
 
 @font-face {
-    font-family: $font-family-primary;
+    font-family: $font-family-fa;
     font-weight: 400;
-    src: url("../fonts/#{$font-primary-folder}/Vazir-Regular.woff2"),url("../fonts/#{$font-primary-folder}/Vazir-Regular.woff"),url("../fonts/#{$font-primary-folder}/Vazir-Regular.ttf"),url("../fonts/#{$font-primary-folder}/Vazir-Regular.eot"),;
+    src: url("../fonts/#{$font-fa-folder}/Vazirmatn-Regular.woff2"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Regular.woff"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Regular.ttf"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Regular.eot"),;
 }
 
 @font-face {
-    font-family: $font-family-primary;
+    font-family: $font-family-fa;
     font-weight: 100;
-    src: url("../fonts/#{$font-primary-folder}/Vazir-Thin.woff2"),url("../fonts/#{$font-primary-folder}/Vazir-Thin.woff"),url("../fonts/#{$font-primary-folder}/Vazir-Thin.ttf"),url("../fonts/#{$font-primary-folder}/Vazir-Thin.eot"),;
+    src: url("../fonts/#{$font-fa-folder}/Vazirmatn-Thin.woff2"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Thin.woff"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Thin.ttf"),url("../fonts/#{$font-fa-folder}/Vazirmatn-Thin.eot"),;
 }
 
-.font-#{$font-family-primary}{
-    font-family: var("--font-#{$font-family-primary}"), $font-primary-default;
+.font-#{$font-family-fa}{
+    font-family: $font-family-fa, $font-fa-default;
+}
+
+$font-family-en: "PTSans";
+$font-en-default: sans-serif, 'Courier New', Courier, monospace;
+$font-en-folder: "PTSans";
+
+@font-face {
+    font-family: $font-family-en;
+    font-weight: 400;
+    src: url("../fonts/#{$font-en-folder}/PTSans-Regular.woff2"),url("../fonts/#{$font-en-folder}/PTSans-Regular.woff"),url("../fonts/#{$font-en-folder}/PTSans-Regular.ttf"),url("../fonts/#{$font-en-folder}/PTSans-Regular.eot"),;
+}
+
+.font-#{$font-family-en}{
+    font-family: $font-family-en, $font-en-default;
 }

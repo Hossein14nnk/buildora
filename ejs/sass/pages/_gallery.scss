@@ -23,7 +23,8 @@
 #gallery .project-cta>.container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/building3.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 #gallery img {

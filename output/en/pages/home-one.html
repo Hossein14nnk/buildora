@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-one</title>
+    <link rel="icon" type="image/png" href="./assets/media/images/single/logo-web3.webp">
+    <base href="../">
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/components.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+<body class="font-PTSans">
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="./pages/home-one.html">
+
+                <img class="logo" src="./assets/media/images/footer/logo.png" width="40">
+                <p class="text-primary fw-bold fs-mid-title my-0">BUILDORA</p>
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-nowrap" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item text-nowrap" href="./pages/home-one.html">Demo1</a></li>
+                            <li><a class="dropdown-item text-nowrap" href="./pages/home-two.html">Demo2</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Buildora</a>
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item text-nowrap" href="./pages/gallery.html">gallery</a></li>
+                            <li><a class="dropdown-item text-nowrap" href="./pages/teams.html">Teams</a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="./pages/contact-us.html">Contact Us</a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="./pages/about-us.html">About Us</a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="./pages/register.html">Register</a></li> 
+                            <li><a class="dropdown-item text-nowrap" href="./pages/reviews.html">Reviews</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-nowrap" data-bs-toggle="dropdown">Services</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item text-nowrap" href="./pages/st-services.html">Service</a></li>
+                            <li><a class="dropdown-item text-nowrap" href="./pages/ar-services.html">Services Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-nowrap" data-bs-toggle="dropdown">Projects</a>
+
+                         <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item text-nowrap" href="./pages/st-project.html">Project</a></li>
+                            <li><a class="dropdown-item text-nowrap" href="./pages/ar-project.html">Projects Archive</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-nowrap" data-bs-toggle="dropdown">Blog</a>
+
+                        <ul class="dropdown-menu">
+                            
+                            <li><a class="dropdown-item text-nowrap" href="./pages/st-blog.html">weblog</a></li>
+                            <li><a class="dropdown-item text-nowrap" href="./pages/our-blog.html">weblogs Archive</a></li> 
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-nowrap" href="./pages/plans.html">PLANS</a>
+                    </li>
+                </ul>
+
+                <div class="quote-wrapper">
+                    <a class="quote-btn text-nowrap px-4" href="./pages/contact-us.html">
+                        Get A Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("mainMenu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});
+</script>    <main class="d-flex flex-column" id="home-one">
+
+        <section id="main-hero" class="container-fluid py-20  text-secondary-text position-relative d-flex flex-column justify-content-center">
+            <div class="container d-flex justify-content-between">
+                <div class="row gy-5 align-items-center w-100">
+                    <div class="col-lg-6">
+
+                        <span class="text-warning text-primary fs-title">
+                           WE BUILD FUTURE
+                        </span>
+
+                        <h1 class="fw-bold fs-mega-title mb-4">
+                            <span class="d-block text-white">Build.</span>
+                            <span class="d-block text-white">Invest.</span>
+                            <span class="d-block text-primary">Innovate.</span>
+                        </h1>
+
+                        <p class="fw-medium fs-title text-white mb-4">
+                            we deliver exceptional construction services with a focus on quality,sefety and innovation.
+                        </p>
+
+                        <div
+                            class="d-flex flex-column flex-sm-row gap-3 justify-content-start">
+
+                            <a href="./pages/ar-project.html"
+                                class="rounded-1 bg-button btn-hover px-5 py-3 text-button-text d-flex align-items-center justify-content-center gap-2 fw-semibold fs-big">
+
+                                <span>OUR PROJECTS</span>
+                                <i class="fa-solid fa-arrow-right text-dark"></i>
+
+                            </a>
+
+                            <a href="./pages/contact-us.html"
+                                class="rounded-1 border border-white px-6 py-3 text-white d-flex align-items-center justify-content-center fw-semibold fs-big">
+
+                                CET A QUOTE
+
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center justify-content-xl-end">
+                        
+                        <div class="bg-dark bg-opacity-75 text-white rounded-2 shadow p-4 p-lg-5 card-play d-flex flex-column gap-4">
+
+                            <h2 class="fw-bold mb-0">
+                               Let's build
+                                <span class="text-primary d-block">
+                                       together
+                                </span>
+                            </h2>
+
+                            <p class="text-light mb-0">
+                                 Trusted by 1500+ clients to bring their vision to life.
+                            </p>
+
+                            <div class="d-flex align-items-center gap-2">
+
+                                <a class="rounded-circle border-play d-flex align-items-center justify-content-center">
+
+                                    <i class="fa-solid fa-play text-primary"></i>
+
+                                </a>
+
+                                <span class=" fw-semibold">
+                                      WATCH VIDEO
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+            <div class="position-absolute w-100 bottom-0 statistics-hero d-none d-lg-flex">
+                <div class="container position-relative statistics">
+
+    <div class="bg-white rounded-4 shadow-lg py-4 px-5">
+
+        <div class="row text-center g-4">
+
+            <div class="col-md-3 d-flex line justify-content-center gap-6">
+                <img src="./assets/media/images/components/icob (1).png" style="object-fit: cover;" width="15%">
+                <div  class="d-flex flex-column">
+                    <h2 class="counter fw-bold mt-2 text-muted" data-value="25"></h2>
+                    <span class="text-muted">
+                        Years Experience
+                    </span>
+                </div>
+            </div>
+            
+            <div class="col-md-3 d-flex line justify-content-center gap-6">
+                <img src="./assets/media/images/components/icob (2).png" style="object-fit: cover;" width="15%">
+                <div class="d-flex flex-column">
+                    <h2 class="counter fw-bold mt-2 text-muted" data-value="1530"></h2>
+                    <span class="text-muted">
+                        Projects Completed
+                    </span>
+                </div>
+            </div>
+            
+            <div class="col-md-3 d-flex line justify-content-center gap-6">
+                <img src="./assets/media/images/components/icob (3).png" style="object-fit: cover;" width="15%">
+                <div  class="d-flex flex-column">
+                    <h2 class="counter fw-bold mt-2 text-muted" data-value="1310"></h2>
+                    <span class="text-muted">
+                       Happy Customers
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-3 d-flex justify-content-center gap-6">
+                <img src="./assets/media/images/components/icob (4).png" style="object-fit: cover;" width="15%">
+               <div  class="d-flex flex-column">
+                    <h2 class="counter fw-bold mt-2 text-muted" data-value="50"></h2>
+                    <span class="text-muted">
+                        Professional Awards
+                    </span>
+               </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>            </div> 
+        </section>
+
+        <section class="container-fluid pt-20">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 d-flex flex-column gap-2 align-items-start">
+                        <span class="section-title text-primary">
+                            WHO WE ARE
+                        </span>
+                        <h2 class="fw-bold mt-3">
+                            Building More Than Structures, We Build Lasting Relationships
+                        </h2>
+                        <p class="about-text mt-4">
+                            We are a leading construction company delivering innovative and sustainable solutions across residential, commercial and industrial sectors.
+                        </p>
+
+                     <img src="./assets/media/images/single/signature.png" class="signature" alt="signature">
+
+                        <a class="rounded-1 btn-hover bg-button px-5 py-2 text-button-text d-flex gap-6 align-items-center fw-semibold">
+                            <span class="">MORE ABOUT US</span>
+                            <i class="fa-solid fa-arrow-right text-dark"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="image-wrapper w-100 position-relative">
+                            <div class="dots position-absolute"></div>
+                            <div class="bg-box"></div>
+
+                          <div class="d-flex flex-column gap-3">
+                              <img src="./assets/media/images/single/build2.png" class="building-img img-fluid position-absolute" alt="">
+
+                            <div class="mission-card position-absolute bg-dark gap-4 d-flex flex-column align-items-start">
+                                <h2>Our Mission</h2>
+                                <div class="yellow-line bg-primary"></div>
+                                <p>
+                                     To provide high-quality construction services that exceed client expectations while maintaining the highest standards of safety and integrity.
+                                </p>
+                                <a href="./pages/about-us" class="mission-btn transition d-flex justify-content-center align-items-center border border-primary p-3">
+                                    <i class="fa-solid fa-arrow-right text-primary transition"></i>
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="container d-flex flex-column gap-5">
+                <div class="d-flex flex-column">
+                    <p class="text-primary fs-title">WHAT WE DO</p>
+                    <h2 class="fs-mid-title fw-bold">Our Core Services</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
+                            <img src="./assets/media/images/demo1/vector1.png" class="img-size">
+                            <h3 class="fs-title fw-semibold fw-bold">Construction Management</h3>
+                            <span class="fs-big">We oversee every phase of construction to ensure your project is completed on time, on budget, and to the highest quality standards.</span>
+                            <a href="./pages/st-services.html" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                                <span class="fs-big fw-bold text-text transition">Describe More</span>
+                                <i class="fa-solid fa-arrow-right-long text-color transition"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
+                            <img src="./assets/media/images/demo1/vector2.png" class="img-size">
+                            <h3 class="fs-title fw-semibold fw-bold">Interior Design</h3>
+                            <span class="fs-big">Our integrated design and build approach streamlines the process, reduces costs, and brings your vision to life efficiently.</span>
+                            <a href="./pages/st-services.html" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                                <span class="fs-big fw-bold text-text transition">Describe More</span>
+                                <i class="fa-solid fa-arrow-right-long text-color transition"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
+                            <img src="./assets/media/images/demo1/vector3.png" class="img-size">
+                            <h3 class="fs-title fw-semibold fw-bold">Renovation & Restoration</h3>
+                            <span class="fs-big">We transform existing spaces with expert renovation and restoration services, blending innovation with proven construction techniques.</span>
+                            <a href="./pages/st-services.html" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                                <span class="fs-big fw-bold text-text transition">Describe More</span>
+                                <i class="fa-solid fa-arrow-right-long text-color transition"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
+                            <img src="./assets/media/images/demo1/vector4.png" class="img-size">
+                            <h3 class="fs-title fw-semibold fw-bold">Construction Management</h3>
+                            <span class="fs-big">Our interior design solutions combine functionality and aesthetics to create spaces that inspire and perform.</span>
+                            <a href="./pages/st-services.html" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                                <span class="fs-big fw-bold text-text transition">Describe More</span>
+                                <i class="fa-solid fa-arrow-right-long text-color transition"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
+                            <img src="./assets/media/images/demo1/vector5.png" class="img-size">
+                            <h3 class="fs-title fw-semibold fw-bold">Project Consulting</h3>
+                            <span class="fs-big">We provide expert advice and strategic insights to help you make informed decisions and achieve project success.</span>
+                            <a href="./pages/st-services.html" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                                <span class="fs-big fw-bold text-text transition">Describe More</span>
+                                <i class="fa-solid fa-arrow-right-long text-color transition"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                        <div class="core-services-card d-flex flex-column align-items-start gap-3 bg-card shadow rounded-1 px-6 py-6 transition-150 h-100 justify-content-between">
+                            <img src="./assets/media/images/demo1/vector6.png" class="img-size">
+                            <h3 class="fs-title fw-semibold fw-bold">Construction Maintenance</h3>
+                            <span class="fs-big">Our ongoing maintenance services ensure your property remains safe, efficient, and in optimal condition.</span>
+                            <a href="./pages/st-services.html" class="d-flex align-items-center gap-2 mt-4 text-decoration-none card-button btn-hover text-primary">
+                                <span class="fs-big fw-bold text-text transition">Describe More</span>
+                                <i class="fa-solid fa-arrow-right-long text-color transition"></i>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid bg-dark py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-4 gy-2">
+                        <div class="d-flex flex-column gap-5 align-items-start">
+                            <span class="text-primary fs-title"> FEATURED PROJECTS</span>
+                            <h2 class="fs-high-title fw-bold text-white">   Some Of Our <br>
+                                Recent Works</h2>
+                            <a href="./pages/ar-project.html" class="btn-hover text-white border border-primary p-3">
+                                OUR PROJECTS
+                                <i class="fa-solid fa-arrow-right text-primary ps-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8"> 
+                        <div class="row g-3">
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
+                                    <img src="./assets/media/images/demo1/homepage-section2.jpg" class="img-size w-100 ">
+
+                                    <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
+                                        <div class="d-flex gap-2 flex-column">
+                                            <h3 class="fs-title fw-bold text-secondary">Oceanview Residence</h3>
+                                            <span class="text-secondary fs-normal"> Miami, USA</span>
+                                        </div>
+                                        
+                                        
+                                        <a href="./pages/st-project.html" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                            <i class="fa-solid fa-arrow-right-long "></i> 
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
+                                    <img src="./assets/media/images/demo1/building1.png" class="img-size w-100 ">
+
+                                    <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
+                                        <div class="d-flex gap-2 flex-column">
+                                            <h3 class="fs-title fw-bold text-secondary">Skyline Tower</h3>
+                                            <span class="text-secondary fs-normal"> Dubai, UAE</span>
+                                        </div>
+                                        
+                                        
+                                        <a href="./pages/st-project.html" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                            <i class="fa-solid fa-arrow-right-long "></i> 
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
+                                    <img src="./assets/media/images/demo1/building2.png" class="img-size w-100 ">
+
+                                    <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
+                                        <div class="d-flex gap-2 flex-column">
+                                            <h3 class="fs-title fw-bold text-secondary">Northern Logistics Hub</h3>
+                                            <span class="text-secondary fs-normal"> Hamburg, Germany</span>
+                                        </div>
+                                        
+                                        
+                                        <a href="./pages/st-project.html" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                            <i class="fa-solid fa-arrow-right-long "></i> 
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card-hover shadow bg-white position-relative overflow-hidden rounded">
+                                    <img src="./assets/media/images/demo1/building4.png" class="img-size w-100 ">
+
+                                    <div class="d-flex gap-3 px-4 flex-row align-items-center justify-content-between position-absolute w-100 "> 
+                                        <div class="d-flex gap-2 flex-column">
+                                            <h3 class="fs-title fw-bold text-secondary">Modern Interior Apartment</h3>
+                                            <span class="text-secondary fs-normal"> New York, USA</span>
+                                        </div>
+                                        
+                                        <a href="#" class="fs-title fw-bold card-button text-secondary transition primary-hover">
+                                            <i class="fa-solid fa-arrow-right-long "></i> 
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section  class="container-fluid">
+            <div class="container" id="video-wrapper">
+                <div class="row gx-xl-5 gy-5">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="stats-counter column-style d-flex flex-column align-items-start gap-1">
+    <div class="d-flex flex-row align-items-center gap-2 w-100 bg-white py-2 px-3 rounded-1 hover">
+        <img src="./assets/media/images/components/1_years_experience.png" class="icon">
+        <div class="d-flex flex-column align-items-start">
+            <h4 class="fs-title fw-bold counter" data-value="25+"></h4>
+            <span class="fs-big fw-semibold">Years Experience</span>
+        </div>
+    </div>
+    
+    <div class="d-flex flex-row align-items-center gap-2 w-100 bg-white py-2 px-3 rounded-1 hover">
+        <img src="./assets/media/images/components/2_projects_completed.png" class="icon">
+        <div class="d-flex flex-column align-items-start">
+            <h4 class="fs-title fw-bold counter" data-value="1530+"></h4>
+            <span class="fs-big fw-semibold">Projects Completed</span>
+        </div>
+    </div>
+    
+    <div class="d-flex flex-row align-items-center gap-2 w-100 bg-white py-2 px-3 rounded-1 hover">
+        <img src="./assets/media/images/components/3_satisfied_clients.png" class="icon">
+        <div class="d-flex flex-column align-items-start">
+            <h4 class="fs-title fw-bold counter" data-value="1310+"></h4>
+            <span class="fs-big fw-semibold">Satisfied Clients</span>
+        </div>
+    </div>
+    
+    <div class="d-flex flex-row align-items-center gap-2 w-100 bg-white py-2 px-3 rounded-1 hover">
+        <img src="./assets/media/images/components/4_professional_team.png" class="icon">
+        <div class="d-flex flex-column align-items-start">
+            <h4 class="fs-title fw-bold counter" data-value="120+"></h4>
+            <span class="fs-big fw-semibold">Professional Team</span>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="col-lg-6 col-xl-8">
+                        <div class="image-box position-relative h-100">
+                            <!-- <img src="./assets/media/images/single/homepage-section2.jpg"
+                                class="w-100 h-100 object-fit-cover rounded-2" alt=""> -->
+
+                            <video class="object-fit-cover h-100 w-100" controls poster="./assets/media/images/single/homepage-section2.jpg " >
+                                <source class="" src="./assets/media/videos/video.mp4" type="video/mp4">
+                            </video>
+
+                            <span
+                                class=" z-2 text-uppercase position-absolute p-4 text-white fw-bold fs-title bottom-0 start-50 mb-0 mb-sm-10">
+                                Building dreams with<br> precision and passion
+                            </span>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class=" col-lg-3">
+
+                        <div class="h-100 d-flex flex-column justify-content-center d-flex flex-column">
+ 
+                            <p class="text-primary fs-title fw-bold">
+                                WHY CHOOSE US
+                            </p>
+                            <h2 class="fs-mid-title fw-bold ">
+                                 We Provide The Best Experience For You
+                            </h2>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-9">
+                        <div id="cycleCards" class="container-fluid d-flex row px-5 py-4 flex-sm-wrap position-relative gap-6 gap-xxl-0 gap-xl-0 gap-lg-0 gap-md-0">
+    <div class="cycle-card container-fluid d-flex flex-column gap-3 align-items-center justify-content-start col-5 col-lg-3 col-md-6 position-relative">
+        <div class="line container-fluid border-primary position-absolute"></div>
+        <div class="cycle-icon border border-1 border-secondary-text rounded-circle bg-white d-flex align-items-center justify-content-center transition-150">
+            <img src="./assets/media/images/components/cycle-icon1.png" alt="" class="icon">
+        </div>
+        <span class="fs-title text-center bold fw-bold text-primary">01</span>
+        <h3 class="fs-title text-center">Consultation</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">We listen to your needs and understand your goals.</p>
+    </div>
+    <div class="cycle-card container-fluid d-flex flex-column gap-3 align-items-center justify-content-start col-5 col-lg-3 col-md-6 position-relative">
+        <div class="line container-fluid border-primary position-absolute"></div>
+        <div class="cycle-icon border border-1 border-secondary-text rounded-circle bg-white d-flex align-items-center justify-content-center transition-150">
+            <img src="./assets/media/images/components/cycle-icon2.png" alt="" class="icon">
+        </div>
+        <span class="fs-title text-center bold fw-bold text-primary">02</span>
+        <h3 class="fs-title text-center">Planning</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">We develop a detailed plan tailored to your project.</p>
+    </div>
+    <div class="cycle-card container-fluid d-flex flex-column gap-3 align-items-center justify-content-start col-5 col-lg-3 col-md-6 position-relative">
+        <div class="line container-fluid border-primary position-absolute"></div>
+        <div class="cycle-icon border border-1 border-secondary-text rounded-circle bg-white d-flex align-items-center justify-content-center  transition-150">
+            <img src="./assets/media/images/components/cycle-icon3.png" alt="" class="icon">
+        </div>
+        <span class="fs-title text-center bold fw-bold text-primary">03</span>
+        <h3 class="fs-title text-center">Execution</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">We manage every aspect of construction with precision.</p>
+    </div>
+    <div class="cycle-card container-fluid d-flex flex-column gap-3 align-items-center justify-content-start col-5 col-lg-3 col-md-6 position-relative">
+        <div class="line container-fluid border-primary position-absolute"></div>
+        <div class="cycle-icon border border-1 border-secondary-text rounded-circle bg-white d-flex align-items-center justify-content-center transition-150">
+            <img src="./assets/media/images/components/cycle-icon4.png" alt="" class="icon">
+        </div>
+        <span class="fs-title text-center bold fw-bold text-primary">04</span>
+        <h3 class="fs-title text-center">Handover</h3>
+        <p class="fs-subtitle text-text text-center fw-medium">We deliver the project and ensure your complete satisfaction.</p>
+    </div>
+</div>                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="container d-flex flex-column gap-5">
+                <div class="d-flex flex-column">
+                    <p class="text-primary fs-title">our team</p>
+                    <h2 class="fs-mid-title fw-bold">meat our professionals</h2>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-xl-2 col-md-3">
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/teams/percon1.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">James Anderson</h3>
+                                <p>Chief Executive Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-3">
+                       <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/teams/percon2.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">Michael Carter</h3>
+                                <p>Chief Project Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-3">
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/teams/percon3.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">Olivia Bennett</h3>
+                                <p>Chief Operating Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-3">
+                       <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/teams/percon4.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">Daniel Thomas</h3>
+                                <p>Director of Construction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-3">
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/teams/percon2.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">Liam Wilson</h3>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-3">
+                        <div class="card-team d-flex flex-column w-100 bg-card">
+                            <div class="wrapper-img d-flex flex-column position-relative w-100 ">
+                                <img src="./assets/media/images/teams/percon3.jpg" class="w-100">
+                                <div class="cover w-100 h-100 position-absolute top-0 right-0 align-items-center d-flex justify-content-center transition-300">
+                                    <div class="wrapper-icons d-flex gap-2 w-100 justify-content-center">
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-twitter bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-facebook-f bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                        <i class="fa-brands fa-instagram bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-normal transition-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-3 py-3 gap-2">
+                                <h3 class="fs-mid-title">Ava Thompson</h3>
+                                <p>Interior Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-8 bg-dark">
+            <div class="container d-flex gap-10 w-100 flex-column flex-xxl-row flex-xl-row flex-lg-row">
+                <div class="d-flex flex-column gap-2 col-10 col-xxl-3 col-xl-4 col-lg-4">
+                    <p class="text-primary fs-title text-white">TESTIMONIALS</p>
+                    <h2 class="fs-mid-title fw-bold text-white">What Our Clients Say</h2>
+                    <div style="width:60px;height:4px;" class="bg-primary rounded-4"></div>
+                </div>
+                <div class="d-flex gap-4 gap-lg-2 flex-column flex-xxl-row flex-xl-row flex-lg-row">
+
+                    <div class="comment w-100 ">
+
+                        <div class="h-100 p-4 d-flex flex-column gap-4 transition-300 h-100 justify-content-between">
+
+                            <i class="fa-solid fa-quote-left text-primary"></i>
+                            <p class="text-text ">Professional, reliable and innovative team. We highly recommend Builder for any construction project.</p>
+
+                            <span class="text-secondary">— Sarah Mitchell</span>
+
+                            <div class="text-primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="comment w-100 ">
+
+                        <div class="h-100 p-4 d-flex flex-column gap-4 transition-300 h-100 justify-content-between">
+
+                            <i class="fa-solid fa-quote-left text-primary"></i>
+                            <p class="text-text ">Builder delivered our project on time and exceeded our expectations. Their attention to detail is unmatched.</p>
+
+                            <span class="text-secondary">— David Wilson</span>
+
+                            <div class="text-primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="comment w-100 ">
+
+                        <div class="h-100 p-4 d-flex flex-column gap-4 transition-300 h-100 justify-content-between">
+
+                            <i class="fa-solid fa-quote-left text-primary"></i>
+                            <p class="text-text ">The quality of work and communication throughout the project was outstanding. Truly a great experience.</p>
+
+                            <span class="text-secondary">— Michael Brown</span>
+
+                            <div class="text-primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="latest-news" class="container-fluid py-5">
+            <div class="container">
+
+                <div class="row g-4">
+                    <div class="col-12 col-xl-2">
+                        <div class="h-100 d-flex flex-column justify-content-center gap-2 align-items-start">
+                            <p class="text-primary fs-title">
+                                READY TO BUILD YOUR DREAM PROJECT?
+                            </p>
+                            <h2 class="fs-mid-title fw-bold">
+                                Let's Build Something Great Together!
+                            </h2>
+                            <p class="text-text">
+                                
+                            </p>
+                            <a class="rounded-1 btn-hover bg-button px-5 py-2 text-button-text d-flex gap-3 align-items-center fw-semibold">
+                                <span class=" text-nowrap fs-big text-uppercase">GET A FREE QUOTE</span>
+                                <i class="fa-solid fa-arrow-right text-dark"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-7">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-4">
+                                <div class="latest-news shadow bg-white  h-100 ">
+                                    <img class="w-100 ratio-1x1 object-fit-cover" src="./assets/media/images/demo1/pic1.jpg" alt="">
+                                    <div class="d-flex gap-3 p-3 flex-column justify-content-between">
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> Construction</span>
+                                            <div class="text-decoration-none d-flex gap-2 align-items-center">
+                                                <i class="fa-solid fa-calendar text-text fs-normal"></i>
+                                                <span class="text-text fs-normal"> July 11, 2024</span>
+                                            </div>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0 transition-300">5 Points to Consider When Choosing a General Contractor</h3>
+                                        <a href="./pages/st-blog.html" class="btn-hover fs-title fw-bold text-decoration-none text-decoration-none d-flex gap-2 align-items-center">
+                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+
+                                <div class="latest-news shadow bg-white h-100">
+                                    <img class="w-100 ratio-1x1 object-fit-cover" src="./assets/media/images/demo1/news.jpg" alt="">
+                                    <div class="d-flex gap-3 p-3 flex-column justify-content-between">
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> Trends</span>
+                                            <div class="text-decoration-none d-flex gap-2 align-items-center">
+                                                <i class="fa-solid fa-calendar text-text fs-normal"></i>
+                                                <span class="text-text fs-normal"> July 13, 2024</span>
+                                            </div>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0 transition-300">Commercial Construction Trends of 2025–25</h3>
+                                        <a href="./pages/st-blog.html" class="btn-hover fs-title fw-bold text-decoration-none text-decoration-none d-flex gap-2 align-items-center">
+                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                 <div class="latest-news shadow bg-white h-100">
+                                    <img class="w-100 ratio-1x1 object-fit-cover" src="./assets/media/images/demo1/building3.png" alt="">
+                                    <div class="d-flex gap-3 p-3 flex-column justify-content-between">
+                                        <div class="d-flex gap-6 align-items-center ">
+                                            <span class="fs-normal bg-primary rounded-1 p-2 text-button-text"> Technology</span>
+                                            <div class="text-decoration-none d-flex gap-2 align-items-center">
+                                                <i class="fa-solid fa-calendar text-text fs-normal"></i>
+                                                <span class="text-text fs-normal"> July 15, 2024</span>
+                                            </div>
+                                        </div>
+                                        <h3 class="fs-title fw-bold text-title-text mb-0 transition-300">How Technology Is Transforming the Construction Industry</h3>
+                                        <a href="./pages/st-blog.html" class="btn-hover fs-title fw-bold text-decoration-none text-decoration-none d-flex gap-2 align-items-center">
+                                            <span class="fs-big fw-semibold text-button-text transition">Read more</span>
+                                            <i class="fa-regular fa-arrow-right fs-normal"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-xl-3">
+                        <div class="d-flex flex-column justify-content-between h-100 shadow bg-white p-3 gap-5">
+                            <h4 class="fw-bold fs-mid-title text-title-text">
+                                 Subscribe To Our Newsletter
+                            </h4>
+                            <p class="text-text text-title">
+                                Get the latest updates, news and offers directly to your inbox.
+                            </p>
+                            <form class="d-flex flex-column gap-2">
+                                <div class="d-flex justify-content-between w-100 gap-2">
+                                    <input type="text" placeholder=" Enter your email"
+                                        class="fs-subtitle w-100 border rounded-1 px-3 py-2 fw-medium">
+                                    <button type="submit" class="bg-primary border-0 text-black d-flex align-items-center gap-4 rounded-1 justify-content-center py-2">
+                                        <i class="fas fa-arrow-right-long fs-small px-4"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <input type="checkbox" id="policy">
+                                    <label for="policy">
+                                        I agree to the Privacy Policy
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-clients" class="container-fluid py-10 bg-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-6">
+                        <span class="text-primary fw-semibold fs-title">
+                             OUR CLIENTS
+                        </span>
+                        <h2 class="fs-mid-title fw-bold mb-0">
+                            
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center gy-5">
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="./assets/media/images/homepage/logo1.jpg" class="img-fluid client-logo" alt="">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="./assets/media/images/homepage/logo2.jpg" class="img-fluid client-logo" alt="">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="./assets/media/images/homepage/logo3.jpg" class="img-fluid client-logo" alt="">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="./assets/media/images/homepage/logo4.jpg" class="img-fluid client-logo" alt="">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="./assets/media/images/homepage/logo5.jpg" class="img-fluid client-logo" alt="">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <img src="./assets/media/images/homepage/logo6.jpg" class="img-fluid client-logo" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta py-0 text-light">
+            <div class="container py-8 px-20">
+                <div class="d-flex flex-column align-items-center justify-content-between flex-lg-row gap-4">
+
+                    <div class="d-flex flex-column gap-4 col-12 col-lg-8 ">
+                        <span class="text-primary">READY TO BUILD YOUR DREAM PROJECT?</span>
+
+                        <h4 class="fw-bold fs-high-title">Let's Build Something Great Together!</h4>
+
+                    </div>
+
+                    <div class="text-lg-end">
+                        <a href="./pages/contact-us.html" class="cta-btn  btn-hover d-flex align-items-center gap-2">
+                            <span class="">GET A FREE QUOTE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    
+    <footer class="footer bg-dark text-secondary py-5 ">
+        <div class="container">
+
+            <div class="row row-gap-8 row-gap-lg-0">
+
+                
+                <div class="d-flex flex-column gap-4 col-12 col-lg-3 col-sm-6">
+
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="./pages/home-one.html">
+
+                        <img class="logo" src="./assets/media/images/footer/logo.png" width="50">
+                        <p class="text-primary fw-bold fs-mid-title my-0">BUILDORA</p>
+
+                    </a>
+
+                    <p  class="">We are a leading construction company providing high-quality services across residential, commercial and industrial sectors worldwide.</p>
+
+                    <div class="social d-none gap-2 d-xxl-flex d-xl-flex d-lg-flex align-items-center mt-2">
+
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+                </div>
+               
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">QUICK LINKS</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Home</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">About Us</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Services</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Projects</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Blog</a>
+                        </li>
+
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-lg-2 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">OUR SERVICES</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Construction Management</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Design &amp; Build</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Renovation</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Interior Design</a>
+                        </li>
+                        <li class="w-fit-content">
+                            <a href="./pages/" class="text-decoration-none text-reset">Project Consulting</a>
+                        </li>
+                    </ul>
+
+                </div>
+              
+                <div class="col-12 col-lg-3 col-sm-6 d-flex flex-column gap-4">
+
+                    <h6 class="fw-bold">CONTACT INFO</h6>
+
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-location text-primary"></i>
+                            <div class="d-flex flex-column justify-content-start">
+                                <span class="">123 Construction Ave,</span>
+                                <span class="">New York, NY 10001, USA</span>
+                            </div>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-light fa-phone text-primary"></i>
+                            <span class="number">+1 212 555 7890</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span class="">info@Buildora.com</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-baseline w-fit-content">
+                            <i class="fa-solid fa-clock text-primary"></i>
+                            <span class="">Mon – Sat: 8:00 AM – 6:00 PM</span>
+                        </li>
+                    </ul>
+
+                    <div class="social d-xxl-none d-xl-none d-lg-none d-flex align-items-center gap-2">
+
+                        <a  href="./pages/" style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+
+                        <a href="./pages/" style="width: 30px; background: #28292A; height: 30px;"  class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="./pages/"  style="width: 30px; background: #28292A; height: 30px;" class="rounded d-flex justify-content-center align-items-center text-decoration-none text-reset">
+                            <i class="fab fa-youtube "></i>
+                        </a>
+
+                    </div>
+
+
+                </div>
+           
+                <div class="col-12 col-lg-2 gap-4 d-flex flex-column">
+
+                    <h6 class="fw-bold text-nowrap">RECENT PROJECTS</h6>
+
+                    <div class="row g-1">
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building1.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building2.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building3.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building4.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building5.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                        <a href="./pages/" class="col-2 col-xxl-4 col-lg-6">
+                            <img src="./assets/media/images/footer/building6.png" class="img-fluid rounded w-100 image-hover">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="bg-light">
+
+            <div class="copyright">
+
+                © 2024 Buildora Construction. All Rights Reserved.
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./assets/js/gsap/SplitText.min.js"></script>
+    <script src="./assets/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/gsap/gsap.min.js"></script>
+                <script src="./assets/js/animations.js"></script>
+</body>
+
+</html>

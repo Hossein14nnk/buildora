@@ -1,6 +1,10 @@
 @use "../../miz/sass/global-functions/_images" as *;
 @use "../../miz/sass/global-functions/_colors" as *;
 
+body{
+    overflow-x: hidden;
+}
+
 #home-one #main-hero {
     // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.26)), url(get-image("en/home-one/building7.png"));
     // background-repeat: no-repeat;
@@ -154,7 +158,8 @@
 #home-one .cta {
     background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/building3.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 

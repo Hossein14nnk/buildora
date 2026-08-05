@@ -1,20 +1,33 @@
 @font-face {
-  font-family: "primary";
+  font-family: "vazirmatn";
   font-weight: 900;
-  src: url("../fonts/vazir/Vazir-Black.woff2"), url("../fonts/vazir/Vazir-Black.woff"), url("../fonts/vazir/Vazir-Black.ttf"), url("../fonts/vazir/Vazir-Black.eot");
+  src: url("../fonts/Vazirmatn/Vazirmatn-Black.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Black.woff"), url("../fonts/Vazirmatn/Vazirmatn-Black.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Black.eot");
 }
 @font-face {
-  font-family: "primary";
+  font-family: "vazirmatn";
   font-weight: 400;
-  src: url("../fonts/vazir/Vazir-Regular.woff2"), url("../fonts/vazir/Vazir-Regular.woff"), url("../fonts/vazir/Vazir-Regular.ttf"), url("../fonts/vazir/Vazir-Regular.eot");
+  src: url("../fonts/Vazirmatn/Vazirmatn-Regular.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Regular.woff"), url("../fonts/Vazirmatn/Vazirmatn-Regular.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Regular.eot");
 }
 @font-face {
-  font-family: "primary";
+  font-family: "vazirmatn";
   font-weight: 100;
-  src: url("../fonts/vazir/Vazir-Thin.woff2"), url("../fonts/vazir/Vazir-Thin.woff"), url("../fonts/vazir/Vazir-Thin.ttf"), url("../fonts/vazir/Vazir-Thin.eot");
+  src: url("../fonts/Vazirmatn/Vazirmatn-Thin.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Thin.woff"), url("../fonts/Vazirmatn/Vazirmatn-Thin.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Thin.eot");
 }
-.font-primary {
-  font-family: var("--font-primary"), sans-serif, "Courier New", Courier, monospace;
+.font-vazirmatn {
+  font-family: "vazirmatn", sans-serif, "Courier New", Courier, monospace;
+}
+
+@font-face {
+  font-family: "PTSans";
+  font-weight: 400;
+  src: url("../fonts/PTSans/PTSans-Regular.woff2"), url("../fonts/PTSans/PTSans-Regular.woff"), url("../fonts/PTSans/PTSans-Regular.ttf"), url("../fonts/PTSans/PTSans-Regular.eot");
+}
+.font-PTSans {
+  font-family: "PTSans", sans-serif, "Courier New", Courier, monospace;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .transition {
@@ -61,6 +74,14 @@ section {
 
 ul, li {
   padding: 0;
+}
+
+html[dir=rtl] .fa-arrow-right, .fa-arrow-right-long {
+  rotate: 180deg;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 #home-one #main-hero {
@@ -201,7 +222,8 @@ ul, li {
 #home-one .cta {
   background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/building3.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 a {
@@ -357,7 +379,8 @@ input:focus {
 #gallery .project-cta > .container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/building3.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 #gallery img {
@@ -659,7 +682,8 @@ article:hover .fancy-txt2 {
 #plans .project-cta > .container {
   background-image: linear-gradient(rgba(2, 11, 38, 0.893)), url("../media/images/en/plans/pic1.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 #plans .included .container {

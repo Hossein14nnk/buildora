@@ -11,7 +11,8 @@
 #plans .project-cta > .container{
     background-image: linear-gradient(rgba(2, 11, 38, 0.893) ), url("../media/images/en/plans/pic1.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 #plans .included .container {
