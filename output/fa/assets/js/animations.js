@@ -24,13 +24,12 @@ const Helper = {
     counter(target) {
         const obj = { value: 0 };
         let unit = target.dataset.unit ?? "+";
-
         return gsap.to(obj, {
             value: parseFloat(target.dataset.value),
             duration: 2,
             paused: true,
             onUpdate() {
-                target.textContent = Math.floor(obj.value).toLocaleString("fa-IR") + unit;
+                target.textContent = Math.floor(obj.value).toLocaleString() + unit;
             }
         });
     },

@@ -6,7 +6,7 @@
             <a class="navbar-brand d-flex align-items-center gap-2" href="<%- navigation(lang , 'home-one.html') %>">
 
                 <img class="logo" src="<%= getMedia(lang, 'footer/logo.png', 'images'); %>" width="40">
-                <p class="text-primary fw-bold fs-mid-title my-0"><%- t.header.logotitle %></p>
+                <p class="text-primary fw-bold fs-mid-title my-0 d-md-flex d-none"><%- t.header.logotitle %></p>
 
             </a>
 
@@ -91,30 +91,3 @@
         </div>
     </nav>
 </header>
-
-<script src="./assets/js/bootstrap.bundle.min.js"></script>
-<%#_ <script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -%>
-<script>
-const menuBtn = document.getElementById("menuBtn");
-const menu = document.getElementById("mainMenu");
-
-menuBtn.addEventListener("click", () => {
-    menu.classList.toggle("show");
-});
-
-const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-navLinks.forEach(link => {
-
-    link.addEventListener("click", function () {
-
-        navLinks.forEach(item => {
-            item.classList.remove("active");
-        });
-
-        this.classList.add("active");
-
-    });
-
-});
-</script>

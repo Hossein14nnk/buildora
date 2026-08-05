@@ -1,9 +1,11 @@
-html {
+html, main{
+// html{
     overflow-x: hidden;
 }
 
 html[dir="rtl"] {
-    font-size: 0.9rem;
+    // font-size: 0.75rem; /* font-size = 12px */
+    font-size: 0.8125rem; /* font-size = 13px */
 }
 
 .transition {
@@ -52,6 +54,9 @@ ul , li {
     padding: 0;
 }
 
-html[dir="rtl"] .fa-arrow-right, .fa-arrow-right-long {
+html[dir="rtl"] .fa-arrow-right,
+html[dir="rtl"] .fa-arrow-right-long,
+html[dir="rtl"] .fa-arrow-left,
+html[dir="rtl"] .fa-arrow-left-long {
     rotate: 180deg;
 }

@@ -10,7 +10,7 @@ const Helper = {
             ...options
         };
     },
-    splitTitle(selector, type = "words", mask = "words") {
+    splitTitle(selector, type = "chars", mask = "chars") {
         return this.elements(selector).map(element => {
             const split = SplitText.create(element, {
                 type,
@@ -29,8 +29,7 @@ const Helper = {
             duration: 2,
             paused: true,
             onUpdate() {
-                target.textContent =
-                    Math.floor(obj.value).toLocaleString() + unit;
+                target.textContent = Math.floor(obj.value).toLocaleString() + unit;
             }
         });
     },
@@ -77,7 +76,7 @@ const Global = {
         hero(selector = "#hero", start = "top 70%", textTags = "p,span,a,h1,h2,h3"){
             if (!Helper.checkElement(selector)) return;
 
-            let textType = "words";
+            let textType = "chars";
             Helper.splitTitle(`${selector} :is(${textTags})`, textType, textType).forEach(split => {
                 const tl = Helper.timeline(split.element, start);
 
@@ -650,7 +649,7 @@ const Animation = {
             Helper.animateTexts("section.reviews");
         },
         projectCta(){
-            Helper.animateTexts("section.project-cta", "top 80%", "words");
+            Helper.animateTexts("section.project-cta", "top 80%", "chars");
         }
     },
     register: {

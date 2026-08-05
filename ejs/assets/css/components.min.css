@@ -413,8 +413,12 @@
   color: #000 !important;
   position: absolute;
   top: 50%;
-  right: 50%;
+  inset-inline-end: 50%;
   transform: translateX(50%) translateY(-50%);
+}
+
+html[dir=rtl] .project-card .card-button i {
+  transform: translateX(50%) translateY(50%);
 }
 
 .project-card:hover > div:nth-child(1) {
@@ -1061,7 +1065,7 @@
 .cycle-card .line {
   top: 30px;
   z-index: -1;
-  right: 0px;
+  inset-inline-end: 0px;
   width: 100%;
 }
 
@@ -1070,20 +1074,20 @@
 }
 
 .cycle-card:last-child .line {
-  right: unset;
-  left: 0px;
+  inset-inline-end: unset;
+  inset-inline-start: 0px;
   width: 50%;
 }
 
 @media (max-width: 991px) {
   .cycle-card:nth-child(even) .line {
     width: 50%;
-    left: 0px;
-    right: unset;
+    inset-inline-start: 0px;
+    inset-inline-end: unset;
   }
   .cycle-card:nth-child(odd) .line {
-    left: unset;
-    right: 0px;
+    inset-inline-start: unset;
+    inset-inline-end: 0px;
     width: 50%;
   }
 }

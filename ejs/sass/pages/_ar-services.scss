@@ -59,7 +59,7 @@
 #ar-services .cycle-card .line {
     top: 30px;
     z-index: -1;
-    right: 0px;
+    inset-inline-end: 0px;
     width: 100%
 }
 
@@ -68,8 +68,8 @@
 }
 
 #ar-services .cycle-card:last-child .line {
-    right: unset;
-    left: 0px;
+    inset-inline-end: unset;
+    inset-inline-start: 0px;
     width: 50%;
 }
 

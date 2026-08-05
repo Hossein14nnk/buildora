@@ -1,12 +1,38 @@
     <%- include('../../components/footer/content.ejs', {accountFeatures: t.components.accountFeatures}); -%>
 
-    <script src="./assets/js/gsap/SplitText.min.js"></script>
-    <script src="./assets/js/gsap/ScrollTrigger.min.js"></script>
-    <script src="./assets/js/gsap/gsap.min.js"></script>
-    <%#_ <script src="./assets/vendors/gsap/SplitText.min.js"></script> -%>
-    <%#_ <script src="./assets/vendors/gsap/ScrollTrigger.min.js"></script> -%>
-    <%#_ <script src="./assets/vendors/gsap/gsap.min.js"></script> -%>
+    <%#_ <script src="./assets/js/gsap/SplitText.min.js"></script> -%>
+    <%#_ <script src="./assets/js/gsap/ScrollTrigger.min.js"></script> -%>
+    <%#_ <script src="./assets/js/gsap/gsap.min.js"></script> -%>
+    <script src="./assets/vendors/gsap/SplitText.min.js"></script>
+    <script src="./assets/vendors/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/vendors/gsap/gsap.min.js"></script>
     <script src="./assets/js/animations.js"></script>
+    <%#_ <script src="./assets/js/bootstrap.bundle.min.js"></script> -%>
+    <script src="./assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const menu = document.getElementById("mainMenu");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("show");
+        });
+
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+        navLinks.forEach(link => {
+
+            link.addEventListener("click", function () {
+
+                navLinks.forEach(item => {
+                    item.classList.remove("active");
+                });
+
+                this.classList.add("active");
+
+            });
+
+        });
+    </script>
 </body>
 
 </html>
