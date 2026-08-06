@@ -1,6 +1,9 @@
-html, main{
-// html{
+html {
     overflow-x: hidden;
+}
+
+main {
+    overflow: hidden;
 }
 
 html[dir="rtl"] {

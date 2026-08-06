@@ -53,7 +53,10 @@ const Helper = {
                 autoAlpha: 0,
                 duration: 0.8,
                 stagger: 0.1,
-                ease: "power3.out"
+                ease: "power3.out",
+                onComplete: () => {
+                    split.revert();
+                }
             });
         });
     }
@@ -277,8 +280,8 @@ const Animation = {
         },
         plans(){
             if (!Helper.checkElement("#plans")) return;
-            const pricingTables = Helper.elements("#plans .col-6");
-            const tl = Helper.timeline("#plans .col-6");
+            const pricingTables = Helper.elements("#plans .col-12");
+            const tl = Helper.timeline("#plans .col-12");
 
             gsap.set(pricingTables, {
                 opacity: 0,

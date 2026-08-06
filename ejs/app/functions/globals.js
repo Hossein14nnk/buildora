@@ -1,5 +1,5 @@
 // modes: development / production
-let mode = "development";
+let mode = "production";
 
 let globals = {
 	basePathPages: function () {

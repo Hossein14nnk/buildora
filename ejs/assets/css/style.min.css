@@ -56,8 +56,12 @@
   font-family: "PTSans", sans-serif, "Courier New", Courier, monospace;
 }
 
-html, main {
+html {
   overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
 }
 
 html[dir=rtl] {
@@ -341,7 +345,7 @@ a {
   background-image: linear-gradient(rgba(255, 255, 255, 0.4117647059)), url("../media/images/en/register/building.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 #register input {
