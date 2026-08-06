@@ -808,7 +808,8 @@ article:hover .fancy-txt2 {
 #second-demo .about .contain-img {
   background-image: url("../media/images/demo2/building6.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center 30%;
 }
 
 #second-demo .about .button {
@@ -853,6 +854,7 @@ article:hover .fancy-txt2 {
 @media (min-width: 768px) {
   #second-demo .about > div {
     padding-inline-start: 2.5rem;
+    padding-inline-end: 2.5rem;
   }
 }
 #ar-project .wrapper div:nth-child(1) .image {
