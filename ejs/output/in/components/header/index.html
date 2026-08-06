@@ -30,7 +30,7 @@
             <a class="navbar-brand d-flex align-items-center gap-2" href="./pages/home-one.html">
 
                 <img class="logo" src="./assets/media/images/footer/logo.png" width="40">
-                <p class="text-primary fw-bold fs-mid-title my-0">BUILDORA</p>
+                <p class="text-primary fw-bold fs-mid-title my-0 d-md-flex d-none">BUILDORA</p>
 
             </a>
 
@@ -40,7 +40,7 @@
             </button>
 
             <!-- Menu -->
-            <div class="collapse navbar-collapse" id="mainMenu">
+            <div class="collapse navbar-collapse bg-transparent" id="mainMenu">
 
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
@@ -102,45 +102,19 @@
                     <li class="nav-item">
                         <a class="nav-link text-nowrap" href="./pages/plans.html">योजनाएँ</a>
                     </li>
-                </ul>
-
-                <div class="quote-wrapper">
-                    <a class="quote-btn text-nowrap px-4" href="./pages/contact-us.html">
+                    <a class="quote-btn text-nowrap px-4 align-self-start" href="./pages/contact-us.html">
                         कोटेशन प्राप्त करें
                     </a>
-                </div>
+                </ul>
+
+                <!-- <div class="quote-wrapper">
+                </div> -->
 
             </div>
 
         </div>
     </nav>
-</header>
-
-<script src="./assets/js/bootstrap.bundle.min.js"></script>
-<script>
-const menuBtn = document.getElementById("menuBtn");
-const menu = document.getElementById("mainMenu");
-
-menuBtn.addEventListener("click", () => {
-    menu.classList.toggle("show");
-});
-
-const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-navLinks.forEach(link => {
-
-    link.addEventListener("click", function () {
-
-        navLinks.forEach(item => {
-            item.classList.remove("active");
-        });
-
-        this.classList.add("active");
-
-    });
-
-});
-</script></div>
+</header></div>
 
     <script src="./assets/js/mizchin.min.js"></script>
 </body>

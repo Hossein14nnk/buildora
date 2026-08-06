@@ -1,0 +1,7 @@
+.position-btn i {
+    transition: all 300ms ease-in-out;
+}
+
+.position-btn:hover i {
+    transform: translateX(0.5rem);
+}

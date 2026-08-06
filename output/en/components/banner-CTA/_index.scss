@@ -1,0 +1,15 @@
+#btnCTA{
+    width: fit-content;
+    text-decoration: none;
+    padding:9px 1.5rem;
+}
+
+
+#bannerCTA:hover {
+    box-shadow: var(--bs-box-shadow-lg) !important;
+    transform: translateY(-1px);
+}
+
+#bannerCTA {
+    transition: all 150ms ease-in-out;
+}

@@ -1,0 +1,28 @@
+.footer li:hover {
+    color: var(--bs-primary);
+    transform: translateX(0.2rem);
+}
+
+.footer li{
+    transition: all 200ms linear;
+}
+
+.image-hover{
+    transition: all 300ms linear;
+}
+
+.image-hover:hover {
+    transform: scale(1.04);
+}
+
+.footer .social i {
+    transition: all 100ms ease-in-out;
+}
+
+.footer .social i:hover {
+    color: var(--bs-primary);
+}
+
+.footer .number {
+    direction: ltr;
+}

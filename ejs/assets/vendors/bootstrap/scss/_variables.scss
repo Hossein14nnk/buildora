@@ -714,15 +714,24 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
+  // "mega-title": 4rem,
+  // "big-title": 3rem,
+  // "high-title": 2.5rem,
+  // "mid-title": 1.5rem,
+  // "title": 1rem,
+  // "big": 0.8rem,
+  // "normal": 0.75rem,
+  // "subtitle": 0.688rem,
+  // "small": 0.625rem,
   "mega-title": 4rem,
   "big-title": 3rem,
   "high-title": 2.5rem,
   "mid-title": 1.5rem,
-  "title": 1rem,
-  "small": 0.625rem,
-  "subtitle": 0.688rem,
-  "normal": 0.75rem,
-  "big": 0.8rem,
+  "title": 1.25rem,
+  "big": 1.125rem,
+  "normal": 1rem,
+  "subtitle": 0.875rem,
+  "small": 0.8125rem,
 ) !default;
 // scss-d11ocs-end font-sizes
 
@@ -1264,7 +1273,8 @@ $nav-underline-link-active-color:   var(--#{$prefix}emphasis-color) !default;
 // Navbar
 
 // scss-docs-start navbar-variables
-$navbar-padding-y:                  $spacer * .5 !default;
+// $navbar-padding-y:                  $spacer * .5 !default;
+$navbar-padding-y:                  1.5rem !default;
 $navbar-padding-x:                  null !default;
 
 $navbar-nav-link-padding-x:         .5rem !default;

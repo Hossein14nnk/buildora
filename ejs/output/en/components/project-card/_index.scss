@@ -31,12 +31,18 @@
             color: #000 !important;  
             position: absolute;
             top: 50%;
-            right: 50%; 
+            inset-inline-end: 50%; 
             transform: translateX(50%) translateY(-50%);
         }
     }
 } 
-
+html[dir="rtl"] .project-card{
+    .card-button{
+        i{
+            transform: translateX(50%) translateY(50%);
+        }
+    }
+}
 .project-card:hover > div:nth-child(1) {
     scale: 1.05;
 }

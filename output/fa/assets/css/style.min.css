@@ -1,17 +1,47 @@
 @font-face {
   font-family: "vazirmatn";
-  font-weight: 900;
-  src: url("../fonts/Vazirmatn/Vazirmatn-Black.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Black.woff"), url("../fonts/Vazirmatn/Vazirmatn-Black.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Black.eot");
+  font-weight: 100;
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Thin.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Thin.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Thin.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Thin.eot");
+}
+@font-face {
+  font-family: "vazirmatn";
+  font-weight: 200;
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-ExtraLight.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-ExtraLight.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-ExtraLight.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-ExtraLight.eot");
+}
+@font-face {
+  font-family: "vazirmatn";
+  font-weight: 300;
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Light.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Light.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Light.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Light.eot");
 }
 @font-face {
   font-family: "vazirmatn";
   font-weight: 400;
-  src: url("../fonts/Vazirmatn/Vazirmatn-Regular.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Regular.woff"), url("../fonts/Vazirmatn/Vazirmatn-Regular.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Regular.eot");
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Regular.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Regular.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Regular.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Regular.eot");
 }
 @font-face {
   font-family: "vazirmatn";
-  font-weight: 100;
-  src: url("../fonts/Vazirmatn/Vazirmatn-Thin.woff2"), url("../fonts/Vazirmatn/Vazirmatn-Thin.woff"), url("../fonts/Vazirmatn/Vazirmatn-Thin.ttf"), url("../fonts/Vazirmatn/Vazirmatn-Thin.eot");
+  font-weight: 500;
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Medium.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Medium.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Medium.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Medium.eot");
+}
+@font-face {
+  font-family: "vazirmatn";
+  font-weight: 600;
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-SemiBold.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-SemiBold.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-SemiBold.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-SemiBold.eot");
+}
+@font-face {
+  font-family: "vazirmatn";
+  font-weight: 700;
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Bold.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Bold.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Bold.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Bold.eot");
+}
+@font-face {
+  font-family: "vazirmatn";
+  font-weight: 800;
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-ExtraBold.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-ExtraBold.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-ExtraBold.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-ExtraBold.eot");
+}
+@font-face {
+  font-family: "vazirmatn";
+  font-weight: 900;
+  src: url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Black.woff2"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Black.woff"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Black.ttf"), url("../fonts/Vazirmatn/Vazirmatn-RD-FD-Black.eot");
 }
 .font-vazirmatn {
   font-family: "vazirmatn", sans-serif, "Courier New", Courier, monospace;
@@ -28,6 +58,14 @@
 
 html {
   overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
+}
+
+html[dir=rtl] {
+  font-size: 0.8125rem; /* font-size = 13px */
 }
 
 .transition {
@@ -76,12 +114,11 @@ ul, li {
   padding: 0;
 }
 
-html[dir="rtl"] .fa-arrow-right, html[dir="rtl"] .fa-arrow-right-long {
-    rotate: 180deg;
-}
-
-body {
-  overflow-x: hidden;
+html[dir=rtl] .fa-arrow-right,
+html[dir=rtl] .fa-arrow-right-long,
+html[dir=rtl] .fa-arrow-left,
+html[dir=rtl] .fa-arrow-left-long {
+  rotate: 180deg;
 }
 
 #home-one #main-hero {
@@ -308,7 +345,7 @@ a {
   background-image: linear-gradient(rgba(255, 255, 255, 0.4117647059)), url("../media/images/register/building.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 #register input {
@@ -568,7 +605,7 @@ ul {
 #ar-services .cycle-card .line {
   top: 30px;
   z-index: -1;
-  right: 0px;
+  inset-inline-end: 0px;
   width: 100%;
 }
 
@@ -577,8 +614,8 @@ ul {
 }
 
 #ar-services .cycle-card:last-child .line {
-  right: unset;
-  left: 0px;
+  inset-inline-end: unset;
+  inset-inline-start: 0px;
   width: 50%;
 }
 

@@ -1,0 +1,13 @@
+.core-services-card .img-size{
+    width: 70px;
+    aspect-ratio: 1;
+}
+
+.core-services-card .card-button i{
+    color: #0F0F0F;
+    margin-top: 3px;
+}
+
+.core-services-card:hover .card-button i, .core-services-card:hover .card-button span{
+    color: var(--primary) !important;
+}
