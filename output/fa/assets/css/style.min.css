@@ -831,6 +831,7 @@ article:hover .fancy-txt2 {
 
 #second-demo .about > div {
   padding-inline-start: 2.5rem;
+  padding-inline-end: 2.5rem;
 }
 
 @media (min-width: 1400px) {
@@ -854,7 +855,7 @@ article:hover .fancy-txt2 {
 @media (min-width: 768px) {
   #second-demo .about > div {
     padding-inline-start: 2.5rem;
-    padding-inline-end: 2.5rem;
+    padding-inline-end: 0rem;
   }
 }
 #ar-project .wrapper div:nth-child(1) .image {
