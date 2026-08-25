@@ -3,9 +3,13 @@
 @use "../../../../../system/sass/global-functions/_colors" as *;
 @use "../../../../base/_commons" as *;
 
-.section-title {
+.hero-title {
     font-size: get-font-size("title");
     text-transform: capitalize;
-    color: get-color("section-title-text");
+    color: get-color("on-secondary");
     font-weight: get-font-weight("bold");
+}
+
+.hero-title .highlight {
+    color: get-color("primary");
 }

@@ -219,10 +219,10 @@ a {
   font-weight: 700;
 }
 
-.section-title {
+.title {
   font-size: 2rem;
   text-transform: capitalize;
-  color: var(--section-title-text);
+  color: var(--title-text);
   font-weight: 700;
 }
 
@@ -240,14 +240,14 @@ a {
   font-weight: 400;
 }
 
-.title {
+.hero-title {
   font-size: 2rem;
   text-transform: capitalize;
-  color: var(--secondary);
+  color: var(--on-secondary);
   font-weight: 700;
 }
 
-.title .highlight {
+.hero-title .highlight {
   color: var(--primary);
 }
 
