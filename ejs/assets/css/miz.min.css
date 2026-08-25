@@ -655,7 +655,7 @@ html {
   color: var(--on-primary);
 }
 
-.bg-on-primary-color {
+.on-primary {
   background-color: var(--on-primary);
 }
 

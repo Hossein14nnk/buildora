@@ -12,6 +12,14 @@
 		},
 		"title": {
 			"text": "meat our professionals"
+		},
+		"composities": {
+			"openPosition":{
+				"uptitle": "Be Part Of Team",
+				"title": "Build Your Career With Us",
+				"subtitle": "We're are always looking for talented and pasionate individuals",
+				"btn": "veiw open positions"
+			}
 		}
 	},
 	"pages": {
