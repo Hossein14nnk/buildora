@@ -38,6 +38,16 @@
 			"counter": {
 				"number": "+25",
 				"text": "experiment"
+			},
+			"briefNews":{
+				"alt": "article picture",
+				"title": "10 construction treands shaping the future",
+				"date": "may,12,2026"
+			},
+			"servicesCard":{
+				"alt": "service picture",
+				"title": "Sustainable Design",
+				"description": "Built with eco-friendly materials and energy-efficient systems"
 			}
 		}
 	},
