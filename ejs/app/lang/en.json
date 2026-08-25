@@ -10,8 +10,11 @@
 		"eyebrow": {
 			"text": "our projects"
 		},
-		"title": {
+		"sectionTitle": {
 			"text": "meat our professionals"
+		},
+		"description": {
+			"text": "We transform existing spaces with expert renovation and restoration services, blending innovation with proven construction techniques."
 		}
 	},
 	"pages": {

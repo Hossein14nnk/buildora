@@ -3,9 +3,9 @@
 @use "../../../../system/sass/global-functions/_colors" as *;
 @use "../../../base/_commons" as *;
 
-.title {
+.section-title {
     font-size: get-font-size("title");
     text-transform: capitalize;
-    color: get-color("on-primary");
+    color: get-color("section-title-text");
     font-weight: get-font-weight("bold");
 }

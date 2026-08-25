@@ -206,11 +206,25 @@ a {
   font-weight: 700;
 }
 
-.title {
+.section-title {
   font-size: 2rem;
   text-transform: capitalize;
-  color: var(--on-primary);
+  color: var(--section-title-text);
   font-weight: 700;
+}
+
+.description {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.description-secondary {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: var(--secondary);
+  font-weight: 400;
 }
 
 .dropdown {
