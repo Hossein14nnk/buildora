@@ -1,0 +1,19 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "dropdown"}); -%>
+
+<div class="bg-on-primary-color w-100 h-100 d-flex align-items-center justify-content-center gap-4">
+    <%- include('./content.ejs', {
+        title: t.components.navItem.title,
+        items: [
+            {
+                title: "dome 1",
+                link: navigation(lang, "home-one")
+            },
+            {
+                title: "dome 2",
+                link: navigation(lang, "home-two")
+            },
+        ]
+    }); -%>
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>

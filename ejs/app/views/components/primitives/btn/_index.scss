@@ -1,0 +1,42 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+
+/* btn basic */
+
+.btn {
+    border-radius: $common-border-radius;
+    border-width: $common-border-width;
+    border-style: solid;
+    padding-inline: get-space(2);
+    padding-block: get-space(3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: get-font-weight("semi-bold");
+    font-size: get-font-size("body-sm");
+    gap: get-space(4);
+}
+
+/* btn primary */
+
+.btn-primary {
+    background-color: get-color("primary");
+    border-color: get-color("primary");
+    color: get-color("on-primary");
+}
+
+/* btn secondary */
+
+.btn-secondary {
+    border-color: get-color("secondary");
+    color: get-color("secondary");
+}
+
+/* btn tertiary */
+
+.btn-tertiary {
+    border-color: get-color("primary");
+    color: get-color("secondary");
+}

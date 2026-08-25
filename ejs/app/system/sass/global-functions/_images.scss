@@ -1,0 +1,6 @@
+@use "../../../views/base/_paths" as *;
+
+@function get-image($name){
+    $url:$images-path + "/en/" + $name;
+    @return $url;
+}

@@ -1,0 +1,56 @@
+@use "_commons" as *;
+@use "_typography" as *;
+@use "_colors" as *;
+
+@mixin root(){
+    :root{
+        @content;
+    }
+}
+
+@mixin generate-font-variables(){
+    @each $font-name , $font-details in $conf-fonts {
+        #{"--" + "font-" + $font-name}: $font-name;
+    }
+}
+
+@mixin generate-common-variables(){
+    @each $common-name, $common-value in $common-variables {
+        #{"--" + "common-" + $common-name}: #{$common-value};
+    }
+}
+
+@mixin generate-color-variables() {
+    @each $key, $value in $color-palette {
+        @if $key =="default" {
+            @each $key-color-property , $value-color-property in $value {
+                #{"--" + $key-color-property}: $value-color-property;
+            }
+        }
+    }
+}
+
+@include root(){
+    /* color */
+    @include generate-color-variables();
+    /* common */
+    @include generate-common-variables();
+    /* font */
+    @include generate-font-variables();
+};
+
+@mixin generate-color-variables-mode($property-mode) {
+    @each $class , $colors in $property-mode {
+        .#{$class} {
+            @each $key-color-property , $value-color-property in $colors {
+                #{"--" + $key-color-property}: $value-color-property;
+            }
+        }
+    }
+}
+
+@each $key, $value in $color-palette {
+    @if $key =="colors" {
+        @include generate-color-variables-mode($value);
+    }
+}

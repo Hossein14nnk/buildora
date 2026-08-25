@@ -1,0 +1,126 @@
+$break-points:(xs:575px, sm:576px, md:768px, lg:992px, xl:1200px, xxl:1400px);
+// number of boxed space around should be equal with break points
+$conf-font-size-responsive: (14px, 14px, 15px, 16px, 16px, 16px);
+// $conf-font-size-responsive: (
+//     "default": (1rem, 1rem, 0.8rem, 0.7rem, 0.7rem),
+//     "fa": (1rem, 1rem, 0.8rem, 0.7rem, 0.7rem),
+//     "en": (1rem, 1rem, 0.8rem, 0.7rem, 0.7rem),
+//     "in": (1rem, 1rem, 0.8rem, 0.7rem, 0.7rem),
+// );
+
+$conf-cols:(
+    count:12,
+    responsive:true
+);
+$conf-width:(
+    count:50,
+    responsive:true
+);
+$conf-height:(
+    count:50,
+    responsive:true
+);
+$conf-inset-inline-start:(
+    count:4,
+    responsive:true
+);
+$conf-inset-inline-end:(
+    count:4,
+    responsive:true
+);
+$conf-top:(
+    count:4,
+    responsive:true
+);
+$conf-bottom:(
+    count:4,
+    responsive:true
+);
+$conf-left:(
+    count:4,
+    responsive:true
+);
+$conf-right:(
+    count:4,
+    responsive:true
+);
+$conf-line-height:(
+    count:20,
+    unit:rem,
+    factor:0.25,
+    responsive:true
+);
+$conf-grids:(
+    count:14,
+    responsive:true
+);
+$conf-spaces:(
+    count:20,
+    factor:0.25,
+    responsive:true
+);
+$conf-letter-spacing:(
+    count:10,
+    unit:rem,
+    factor:0.25,
+    responsive:true
+);
+$conf-orders:(
+    count:10,
+    responsive:true
+);
+$conf-display:(
+    responsive:true
+);
+$conf-grows:(
+    count:5,
+    responsive:true
+);
+$conf-wrap:(
+    responsive:true
+);
+$conf-flex-direction:(
+    responsive:true
+);
+$conf-justify-content:(
+    responsive:true
+);
+$conf-justify-self:(
+    responsive:true
+);
+$conf-justify-items:(
+    responsive:true
+);
+$conf-align-content:(
+    responsive:true
+);
+$conf-align-self:(
+    responsive:true
+);
+$conf-align-items:(
+    responsive:true
+);
+$conf-text-align:(
+    responsive:true
+);
+$conf-text-transform:(
+    responsive:true
+);
+$conf-text-decoration-line:(
+    responsive:true
+);
+$conf-text-decoration:(
+    responsive:true
+);
+$conf-font-style:(
+    responsive:true
+);
+$conf-white-space:(
+    responsive:true
+);
+$conf-text-wrap:(
+    responsive:true
+);
+$conf-list-style:(
+    responsive:true
+);

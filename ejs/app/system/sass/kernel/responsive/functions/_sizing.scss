@@ -1,0 +1,37 @@
+@use "_space" as *;
+@use "_responsive" as *;
+@use 'sass:map';
+@use 'sass:meta';
+@use 'sass:list';
+
+@function generate-value-sizing($name , $map-config , $map-property, $size){
+    $factor:map.get($map-config , factor);
+    $key:generate-key($name , $map-property);
+    $value:$factor * $size;
+    $value-list:();
+
+    @if meta.type-of($key) == list{
+        @for $i from 1 through list.length($key){
+            $value-list:list.append($value-list,$value , comma);
+        }
+        @return $value-list;
+    }
+    @return $value;
+}
+
+@function generate-total-map-list-sizing($name-list , $map-property , $map-config){
+    $conf-size: map.get($map-config, "sizes");
+    $list:();
+    $map:();
+    @each $name, $size in $conf-size{
+        $base:generate-classes-on-value($name-list , $name);
+        $map:(
+            className:$base,
+            propertyKeys:generate-key($base , $map-property),
+            propertyValues:generate-value-sizing($base , $map-config , $map-property, $size)
+        );
+        $list:list.append($list , $map);
+    }
+
+    @return $list;
+}

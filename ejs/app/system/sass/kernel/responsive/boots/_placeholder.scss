@@ -1,0 +1,557 @@
+@use "_images" as *;
+@use "../functions/_responsive" as *;
+@use "../../common/_inset-inline" as *;
+@use "../../kernel-functions/_break-point" as *;
+@use "_icon" as *;
+@use "../functions/_sizing" as *;
+@use "../functions/_space" as *;
+// @use "../layouts/_dims" as *;
+@use "../layouts/_displays" as *;
+@use "../layouts/_flex" as *;
+@use "../layouts/_grid" as *;
+@use "../layouts/_orders" as *;
+@use "../../../../../views/base/_responsive" as *;
+@use "../../../../../views/base/_typography" as *;
+@use "../../../../../views/base/_dims" as *;
+@use "../../../../../views/base/_colors" as *;
+@use "../../../../../views/base/_paths" as *;
+@use 'sass:list';
+@use 'sass:string';
+@use 'sass:map';
+
+// functions
+
+@function str-replace($string, $search, $replace: '') {
+    $index: string.index($string, $search);
+
+    @if ($index){
+        @return string.slice($string, 1, $index - 1) + $replace + str-replace(string.slice($string, $index + string.length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+@function generate-placeholder-selector($selector){
+    $result: str-replace("%" + string.unquote($selector), ".");
+    @debug $result;
+    @return $result;
+}
+
+@function generate-border-class-name($map-config){
+    $conf-border-width:map.get($map-config , last-width);
+    $result:();
+
+    @for $i from 0 through $conf-border-width{
+        $item:"." + "bw" + "-" + $i;
+        $result:list.append($result, $item)
+    }
+
+    @return $result;
+}
+
+@function generate-border-class-value($map-config){
+    $conf-border-width:map.get($map-config, last-width);
+    $result:();
+
+    @for $i from 0 through $conf-border-width{
+        $result:list.append($result, $i + px)
+    }
+
+    @return $result;
+}
+
+@function font-weight-connection($weight-string){
+    $weight-number : 0;
+    @if ($weight-string == "black"){$weight-number: 900;}
+    @else if ($weight-string == "extra-bold"){$weight-number: 800;}
+    @else if ($weight-string == "bold"){$weight-number: 700;}
+    @else if ($weight-string == "semi-bold"){$weight-number: 600;}
+    @else if ($weight-string == "medium"){$weight-number: 500;}
+    @else if ($weight-string == "regular"){$weight-number: 400;}
+    @else if ($weight-string == "light"){$weight-number: 300;}
+    @else if ($weight-string == "extra-light"){$weight-number: 200;}
+    @else if ($weight-string == "thin"){$weight-number: 100;}
+
+    @return $weight-number;
+}
+
+@function generate-text-style($property , $value , $class){
+    $list : ();
+    $base : ();
+    @each $name in $value{
+        $base:generate-classes-on-value(($conf-font-prefix + "-" + $class) , $name);
+        $map:(
+            className: $base,
+            propertyKeys:'#{$property}',
+            propertyValues:$name
+        );
+        $list:list.append($list , $map);
+    }
+    @return $list;
+}
+
+@function get-greatest-break-point(){
+    $max-size:0;
+    @each $key , $value in $break-points{
+        @if map.get($break-points, $key) > $max-size{
+            $max-size : map.get($break-points, $key);
+        }
+    }
+    @return $max-size;
+}
+
+@function get-smallest-break-point(){
+    $min-size: get-greatest-break-point();
+    @each $key , $value in $break-points{
+        @if ($value < $min-size){
+            $min-size : $value;
+        }
+    }
+    @return $min-size;
+}
+
+// variable
+
+$font-family-prefix:"font-";
+$font-size-prefix: $conf-font-prefix + "-size";
+$values-text-align:(center,end,start,left,right,justify);
+$values-text-transform:(lowercase,none,uppercase,capitalize);
+$values-text-decoration-line:(line-through,none,overline,underline,wavy);
+$values-text-decoration-style:(dashed,dotted,double,solid);
+$values-font-style:(italic,);
+$values-white-space:(unset, pre, pre-wrap, pre-line, wrap, nowrap);
+$values-text-wrap:(unset, balance, nowrap, wrap);
+$values-list-style-type:(disc, circle, square, decimal, georgian, trad-chinese-informal, kannada);
+$values-list-style-position:(inside, outside);
+
+$font-size : generate-typography-size-classes($conf-font-size, $font-size-prefix);
+$text-align : generate-text-style(text-align , $values-text-align , align);
+$text-transform : generate-text-style(text-transform , $values-text-transform , transform);
+$text-decoration-line : generate-text-style(text-decoration-line , $values-text-decoration-line , decoration);
+$text-decoration-style : generate-text-style(text-decoration-style , $values-text-decoration-style , decoration-style);
+$font-style : generate-text-style(font-style , $values-font-style , style);
+$white-space : generate-text-style(white-space , $values-white-space , white-space);
+$text-wrap : generate-text-style(text-wrap , $values-text-wrap , wrap);
+$list-style-type : generate-text-style(list-style-type , $values-list-style-type , list-type);
+$list-style-position : generate-text-style(list-style-position , $values-list-style-position , list-position);
+
+$width-list : generate-classes-items("w" ,width, $conf-width, true, "percentage");
+$height-list : generate-classes-items("h" ,height, $conf-height, true, "percentage");
+
+$border-style-map:(
+    bl-style:border-left-style,
+    br-style:border-right-style,
+    bt-style:border-top-style,
+    bb-style:border-bottom-style,
+    bis-style:border-inline-start-style,
+    bie-style:border-inline-end-style,
+    border-style:(
+        border-top-style,
+        border-left-style,
+        border-bottom-style,
+        border-right-style
+    ),
+    bx-style:(
+        border-left-style,
+        border-right-style
+    ),
+    by-style:(
+        border-top-style,
+        border-bottom-style
+    ),
+);
+
+$border-style-values:(
+    solid,
+    dashed,
+    dotted,
+    double,
+    groove,
+    inset,
+    outset,
+    ridge,
+    none,
+);
+
+$radius-map:(
+    tl:border-top-left-radius,
+    tr:border-top-right-radius,
+    bl:border-bottom-left-radius,
+    br:border-bottom-right-radius,
+    ss:border-start-start-radius,
+    se:border-start-end-radius,
+    es:border-end-start-radius,
+    ee:border-end-end-radius,
+    all:(
+        border-top-left-radius,
+        border-top-right-radius,
+        border-bottom-left-radius,
+        border-bottom-right-radius
+    ),
+);
+
+// border
+
+@mixin generate-total-style-border($map-config){
+    $class-name-list:generate-border-class-name($map-config);
+    $value-list:generate-border-class-value($map-config);
+    $map:();
+    $list:();
+    @for $i from 1 through list.length($class-name-list){
+        $class-item:list.nth($class-name-list , $i);
+        $value:list.nth($value-list , $i);
+
+        #{generate-placeholder-selector($class-item)}{
+            border-width:$value;
+        }
+    }
+}
+
+@mixin generate-border-radius($radius-map , $values , $class-list){
+    @each $name , $value in $values{
+        @each $key , $property-list in $radius-map{
+            $class-item:$class-list + "-" + $key;
+            $base:generate-classes-on-value($class-item , $name);
+            #{generate-placeholder-selector($base)}{
+                @each $property in $property-list{
+                    #{$property}:$value;
+                }
+            }
+        }
+    }
+}
+
+@mixin generate-border-style($border-map , $border-style-values){
+    @each $value in $border-style-values{
+        @each $border-style-class , $border-style-properties in $border-map{
+            $base:generate-classes-on-value($border-style-class , $value);
+            #{generate-placeholder-selector($base)}{
+                @each $property in $border-style-properties{
+                    #{$property}:$value;
+                }
+            }
+        }
+    }
+}
+
+// color
+
+@mixin detect-color-palette($keyword, $key-palette-color, $value-palette-color) {
+    @if ($keyword == $borders) {
+        $result : str-replace("border-#{$key-palette-color}-color", "-border", "");
+
+        #{generate-placeholder-selector($result)} {
+            border-color: string.unquote("var(--#{$key-palette-color})");
+        }
+    }
+
+    @if ($keyword == $backgrounds) {
+        $result : str-replace("bg-#{$key-palette-color}-color", "-background", "");
+
+        #{generate-placeholder-selector($result)} {
+            background-color: string.unquote("var(--#{$key-palette-color})");
+        }
+    }
+
+    @if ($keyword == $colors) {
+        #{generate-placeholder-selector($key-palette-color)}-color {
+            color: string.unquote("var(--#{$key-palette-color})");
+        }
+    }
+}
+
+@mixin compare-palette-key($key-palette-color, $value-palette-color, $keyword) {
+    @for $i from 1 through list.length($keyword) {
+        $item-list: list.nth($keyword, $i);
+
+        @if (#{$key-palette-color} == $item-list) {
+            @include detect-color-palette($keyword, $key-palette-color, $value-palette-color);
+        }
+    }
+}
+
+@mixin generate-color-classes($color-palette) {
+    @each $key, $value in $color-palette {
+        @each $key-color-property , $value-color-property in $value {
+            @include compare-palette-key($key-color-property, $value-color-property, $borders);
+            @include compare-palette-key($key-color-property, $value-color-property, $colors);
+            @include compare-palette-key($key-color-property, $value-color-property, $backgrounds);
+        }
+    }
+}
+
+// dims
+
+%w-100vw{
+    width: 100vw;
+}
+%w-75vw{
+    width: 75vw;
+}
+%w-50vw{
+    width: 50vw;
+}
+%w-25vw{
+    width: 25vw;
+}
+%w-0vw{
+    width: 0vw;
+}
+%h-100vh{
+    height: 100vh;
+}
+%h-75vh{
+    height: 75vh;
+}
+%h-50vh{
+    height: 50vh;
+}
+%h-25vh{
+    height: 25vh;
+}
+%h-0vh{
+    height: 0vh;
+}
+%w-fit-content {
+    width: fit-content;
+}
+%h-fit-content {
+    height: fit-content;
+}
+%w-unset {
+    width: unset;
+}
+%h-unset {
+    height: unset;
+}
+
+// flex
+
+
+
+// typography
+
+%font-weight-black{
+    font-weight: 900;
+}
+%font-weight-extra-bold{
+    font-weight: 800;
+}
+%font-weight-bold{
+    font-weight: 700;
+}
+%font-weight-semi-bold{
+    font-weight: 600;
+}
+%font-weight-medium{
+    font-weight: 500;
+}
+%font-weight-regular{
+    font-weight: 400;
+}
+%font-weight-light{
+    font-weight: 300;
+}
+%font-weight-extra-light{
+    font-weight: 200;
+}
+%font-weight-thin{
+    font-weight: 100;
+}
+
+@mixin make-font-face{
+    @each $font-name , $font-details in $conf-fonts {
+        $font-folder: map.get($font-details, "folder");
+        $font-default: map.get($font-details, "defaults");
+        #{generate-placeholder-selector($font-family-prefix + $font-name)}{
+            font-family: string.unquote("var(--font-#{$font-name})") , string.unquote($font-default);
+        }
+    }
+}
+
+// elevation
+
+@mixin generate-box-shadow($values , $class-prefix){
+    @each $name , $value in $values{
+        $base:generate-classes-on-value($class-prefix , $name);
+        #{generate-placeholder-selector($base)}{
+            box-shadow: $value;
+        }
+    }
+}
+
+// responsive
+
+$total-list : (
+    $display-values,
+    $flex-cols,
+    $width-list,
+    $height-list,
+    $flex-type,
+    $flex-orders,
+    $flex-grows,
+    $grid,
+    $padding,
+    $margin,
+    $gap,
+    $col-gap,
+    $letter-spacing,
+    $font-size,
+    $text-transform,
+    $text-align,
+    $text-decoration-line,
+    $text-decoration-style,
+    $font-style,
+    $white-space,
+    $text-wrap,
+    $top-list,
+    $bottom-list,
+    $left-list,
+    $right-list,
+    $inset-inline-start-list,
+    $inset-inline-end-list,
+    $line-height,
+    $list-style-type,
+    $list-style-position,
+    $icon-element-size,
+    $image-element-size,
+);
+
+$media-screen-property: "width";
+$media-screen-operator: " >= ";
+
+@function get-greatest-break-point(){
+    $max-size: 0;
+    @each $key , $value in $break-points{
+        @if ($value > $max-size){
+            $max-size : $value;
+        }
+    }
+    @return $max-size;
+}
+
+@function get-smallest-break-point(){
+    $min-size: get-greatest-break-point();
+    @each $key , $value in $break-points{
+        @if ($value < $min-size){
+            $min-size : $value;
+        }
+    }
+    @return $min-size;
+}
+
+
+@function check-config-count($total-list-item){
+    @if list.length(list.nth($total-list,$total-list-item))!=0{
+        @return true;
+    }
+    @return false;
+}
+
+@mixin generate-classes($value){
+    @for $i from 1 through list.length($total-list){
+        @for $j from 1 through list.length(list.nth($total-list,$i)){
+            @include generate-style-property($i,$j,$value);
+        }
+    }
+}
+
+@function break-point($class-name){
+    $result:();
+    $i:1;
+    @each $key , $value in $break-points{
+        @if string.index($class-name , ("-" + $key + "-")) != null{
+            $result:$value;
+            @return $value;
+        }
+        @if ($i == 1){
+            $result:$value;
+        }
+        $i:$i+1;
+    }
+    @return $result;
+}
+
+@mixin generate-style-property($total-list-item,$total-list-member-item,$break-point-value){
+    $total-list-member:list.nth($total-list,$total-list-item);
+    @if (check-config-count($total-list-item)){
+        $class-name:map.get(list.nth($total-list-member,$total-list-member-item),className);
+        $class-name-without-smallest : str-replace($class-name,"#{get-smallest-break-point-key()}-");
+
+        $result : ();
+        @each $item1 in $class-name{
+            @each $item2 in $class-name-without-smallest{
+                @if ($item1 != $item2){
+                    // $result : $item2;
+                }
+            }
+        }
+
+        $property-keys:map.get(list.nth($total-list-member,$total-list-member-item),propertyKeys);
+        $property-break-point:break-point($class-name);
+        $property-values:map.get(list.nth($total-list-member,$total-list-member-item),propertyValues);
+        $property-list:($property-keys,$property-values);
+        
+        @if($break-point-value==$property-break-point){
+            @if ($result != ()){
+                #{generate-placeholder-selector($result)}{
+                    @for $k from 1 through list.length($property-keys){
+                        #{list.nth(list.nth($property-list,1),$k)}: list.nth(list.nth($property-list,2),$k);
+                    }
+                }
+            }
+            
+            @if ($break-point-value == get-smallest-break-point()){
+                
+                
+                #{generate-placeholder-selector(str-replace($class-name,"#{get-smallest-break-point-key()}-"))}{
+                    @for $k from 1 through list.length($property-keys){
+                        #{list.nth(list.nth($property-list,1),$k)}: list.nth(list.nth($property-list,2),$k);
+                    }
+                };
+            }
+            @else {
+                #{generate-placeholder-selector($class-name)}{
+                    @for $k from 1 through list.length($property-keys){
+                        #{list.nth(list.nth($property-list,1),$k)}: list.nth(list.nth($property-list,2),$k);
+                    }
+                };
+            }
+        }
+    }
+}
+
+@function get-smallest-break-point-key(){
+    $min-size-key: "";
+    $min-size: get-greatest-break-point();
+    @each $key , $value in $break-points{
+        @if map.get($break-points, $key) < $min-size{
+            $min-size : map.get($break-points, $key);
+            $min-size-key: $key;
+        }
+    }
+    @return $min-size-key;
+}
+
+@mixin check-break-point($media-screen-property, $media-screen-operator){
+    @each $key , $value in $break-points{
+        $min-break-point:get-smallest-break-point();
+        $min-break-point-key: get-smallest-break-point-key();
+        @if($value != $min-break-point){
+            $condition: string.unquote($media-screen-property + $media-screen-operator + $value);
+            @media screen and ($condition) {
+                @include generate-classes($value);
+            }
+        }  
+        @else{
+            @include generate-classes($value);
+        }
+    }
+}
+
+// @include generate-box-shadow($conf-elevation , "elevation");
+// @include generate-total-style-border($conf-border-thickness);
+// @include generate-border-radius($radius-map , $border-radius , radius);
+// @include generate-border-style($border-style-map , $border-style-values);
+// @include generate-color-classes($color-palette);
+// @include check-break-point($media-screen-property, $media-screen-operator);
