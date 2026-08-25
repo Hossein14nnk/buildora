@@ -9,3 +9,10 @@
     color: get-color("title-text");
     font-weight: get-font-weight("bold");
 }
+
+.secondary-title {
+    font-size: get-font-size("title");
+    text-transform: capitalize;
+    color: get-color("on-secondary");
+    font-weight: get-font-weight("bold");
+}
