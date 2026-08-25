@@ -1,0 +1,31 @@
+{
+	"direction": "ltr",
+	"components": {
+		"btn": {
+			"title": "OUR PROJECTS"
+		},
+		"navItem": {
+			"title": "Home"
+		},
+		"eyebrow": {
+			"text": "our projects"
+		},
+		"title": {
+			"text": "meat our professionals"
+		}
+	},
+	"pages": {
+		"home": {
+			"hero": {
+				"btn": {
+					"primary": {
+						"title": "OUR PROJECTS"
+					},
+					"secondary": {
+						"title": "CET A QUOTE"
+					}
+				}
+			}
+		}
+	}
+}

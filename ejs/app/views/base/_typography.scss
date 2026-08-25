@@ -1,0 +1,74 @@
+$conf-font-prefix: "txt";
+$conf-font-size:(
+    sizes:(
+        body-sm: 0.875rem,
+        body: 1rem,
+        subtitle: 1.125rem,
+        title-sm: 1.5rem,
+        title: 2rem,
+        title-lg: 2.5rem,
+        title-xl: 3rem,
+        display: 3.75rem,
+    ),
+    responsive:true
+);
+
+$conf-fonts: (
+    "roboto": (
+        "defaults":"",
+        "folder": "Roboto",
+        "font-types": (
+            "black": (
+                "Roboto_Condensed-Black.ttf",
+            ),
+            "extra-bold": (
+                "Roboto_Condensed-Bold.ttf",
+            ),
+            "bold": (
+                "Roboto_Condensed-ExtraBold.ttf",
+            ),
+            "semi-bold": (
+                "Roboto_Condensed-SemiBold.ttf",
+            ),
+            "medium": (
+                "Roboto_Condensed-Medium.ttf",
+            ),
+            "regular": (
+                "Roboto_Condensed-Regular.ttf",
+            ),
+            "light": (
+                "Roboto_Condensed-Light.ttf",
+            ),
+            "extra-light": (
+                "Roboto_Condensed-ExtraLight.ttf",
+            ),
+            "thin": (
+                "Roboto_Condensed-Thin.ttf",
+            ),
+        )
+    ),
+    "vazirmatn": (
+        "defaults":"sans-serif, 'Courier New', Courier, monospace",
+        "folder": "vazirmatn",
+        "font-types": (
+            "black": (
+                "Vazirmatn-RD-FD-Black.woff2",
+            ),
+            "bold": (
+                "Vazirmatn-RD-FD-Bold.woff2",
+            ),
+            "light": (
+                "Vazirmatn-RD-FD-Light.woff2",
+            ),
+            "medium": (
+                "Vazirmatn-RD-FD-Medium.woff2",
+            ),
+            "regular": (
+                "Vazirmatn-RD-FD-Regular.woff2",
+            ),
+            "thin": (
+                "Vazirmatn-RD-FD-Thin.woff2",
+            )
+        )
+    )
+);

@@ -1,0 +1,343 @@
+@use "../../../../../views/base/_responsive" as *;
+@use "../../../../../views/base/_layout" as *;
+@use 'sass:list';
+@use 'sass:map';
+
+@function layouts-get-greatest-break-point(){
+    $max-size: 0;
+    @each $key , $value in $break-points{
+        @if ($value > $max-size){
+            $max-size : $value;
+        }
+    }
+    @return $max-size;
+}
+
+@function layouts-get-smallest-break-point(){
+    $min-size: layouts-get-greatest-break-point();
+    @each $key , $value in $break-points{
+        @if ($value < $min-size){
+            $min-size : $value;
+        }
+    }
+    @return $min-size;
+}
+
+@function layouts-get-smallest-break-point-key(){
+    $min-size-key: "";
+    $min-size: layouts-get-greatest-break-point();
+    @each $key , $value in $break-points{
+        @if map.get($break-points, $key) < $min-size{
+            $min-size : map.get($break-points, $key);
+            $min-size-key: $key;
+        }
+    }
+    @return $min-size-key;
+}
+
+@function generate-space-list($conf-spaces){
+    $space-list: [];
+    $space-count: map.get($conf-spaces, "count");
+    $space-factor: map.get($conf-spaces, "factor");
+    @for $i from 0 through $space-count{
+        $space-list-item: $i * $space-factor + "rem";
+        $space-list: list.append($space-list, $space-list-item, comma);
+    }
+    @return $space-list;
+}
+
+@function space($index-item, $is-index-form-zero: false){
+    $space-list: generate-space-list($conf-spaces);
+    @if ($is-index-form-zero){
+        @return list.nth($space-list, $index-item + 1);
+    }
+    @else {
+        @return list.nth($space-list, $index-item);
+    }
+}
+
+// layouts css
+
+@mixin generate-header-horizontal-space(){
+    @for $i from 1 through list.length($header-horizontal-space){
+        $break-point-values:map.values($break-points);
+        $media-screen-value:list.nth($break-point-values,$i);
+        $space-item:list.nth($header-horizontal-space,$i);
+
+        @if layouts-get-smallest-break-point() == $media-screen-value{
+            header.section {
+                padding-block: #{space($space-item, true)};
+            }
+        }
+        @else{
+            @media screen and (width >= $media-screen-value){
+                header.section {
+                    padding-block: #{space($space-item, true)};
+                }
+            }
+        }
+    }
+}
+
+@mixin generate-header-vertical-space(){
+    @for $i from 1 through list.length($header-vertical-space){
+        $break-point-values:map.values($break-points);
+        $media-screen-value:list.nth($break-point-values,$i);
+        $space-item:list.nth($header-vertical-space,$i);
+
+        @if layouts-get-smallest-break-point() == $media-screen-value{
+            header.section > .container {
+                max-width: $media-screen-value;
+                padding-inline: #{space($space-item, true)};
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+            header.section > .container.wide {
+                max-width: unset;
+            }
+        }
+        @else{
+            @media screen and (width >= $media-screen-value){
+                header.section > .container {
+                    max-width: $media-screen-value;
+                    padding-inline: #{space($space-item, true)};
+                }
+                .container {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+@mixin generate-main-horizontal-space(){
+    @for $i from 1 through list.length($main-horizontal-space){
+        $break-point-values:map.values($break-points);
+        $media-screen-value:list.nth($break-point-values,$i);
+        $space-item:list.nth($main-horizontal-space,$i);
+
+        @if layouts-get-smallest-break-point() == $media-screen-value{
+            main .section {
+                padding-block: #{space($space-item, true)};
+            }
+        }
+        @else{
+            @media screen and (width >= $media-screen-value){
+                main .section {
+                    padding-block: #{space($space-item, true)};
+                }
+            }
+        }
+    }
+}
+
+@mixin generate-main-vertical-space(){
+    @for $i from 1 through list.length($main-vertical-space){
+        $break-point-values:map.values($break-points);
+        $media-screen-value:list.nth($break-point-values,$i);
+        $space-item:list.nth($main-vertical-space,$i);
+
+        @if layouts-get-smallest-break-point() == $media-screen-value{
+            main .section > .container {
+                max-width: $media-screen-value;
+                margin-inline: auto;
+                width: 100%;
+                // padding-inline: #{space($space-item, true)};
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+            main .section > .container.wide {
+                max-width: unset;
+            }
+        }
+        @else{
+            @media screen and (width >= $media-screen-value){
+                main .section > .container {
+                    max-width: $media-screen-value;
+                    margin-inline: auto;
+                    width: 100%;
+                    // padding-inline: #{space($space-item, true)};
+                }
+                .container {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+@mixin generate-footer-horizontal-space(){
+    @for $i from 1 through list.length($footer-horizontal-space){
+        $break-point-values:map.values($break-points);
+        $media-screen-value:list.nth($break-point-values,$i);
+        $space-item:list.nth($footer-horizontal-space,$i);
+
+        @if layouts-get-smallest-break-point() == $media-screen-value{
+            footer.section {
+                padding-block: #{space($space-item, true)};
+            }
+        }
+        @else{
+            @media screen and (width >= $media-screen-value){
+                footer.section {
+                    padding-block: #{space($space-item, true)};
+                }
+            }
+        }
+    }
+}
+
+@mixin generate-footer-vertical-space(){
+    @for $i from 1 through list.length($footer-vertical-space){
+        $break-point-values:map.values($break-points);
+        $media-screen-value:list.nth($break-point-values,$i);
+        $space-item:list.nth($footer-vertical-space,$i);
+
+        @if layouts-get-smallest-break-point() == $media-screen-value{
+            footer.section > .container {
+                max-width: $media-screen-value;
+                padding-inline: #{space($space-item, true)};
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+            footer.section > .container.wide {
+                max-width: unset;
+            }
+        }
+        @else{
+            @media screen and (width >= $media-screen-value){
+                footer.section > .container {
+                    max-width: $media-screen-value;
+                    padding-inline: #{space($space-item, true)};
+                }
+                .container {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+@mixin generate-block-space(){
+    @for $i from 1 through list.length($block-space){
+        $break-point-values:map.values($break-points);
+        $media-screen-value:list.nth($break-point-values,$i);
+        $space-item:list.nth($block-space,$i);
+
+        @if layouts-get-smallest-break-point() == $media-screen-value{
+            .section > .container > .block {
+                padding-inline: #{space($space-item, true)};
+                // gap: 10px;
+            }
+            .block {
+                display: flex;
+                // flex-direction: row;
+                flex-direction: column;
+            }
+        }
+        @else{
+            @media screen and (width >= $media-screen-value){
+                .section > .container > .block {
+                    padding-inline: #{space($space-item, true)};
+                    // gap: 10px;
+                }
+                // .block {
+                //     flex-direction: column;
+                // }
+            }
+        }
+    }
+}
+
+@mixin generate-div(){
+    @for $i from 1 through list.length($block-space){
+        $break-point-values:map.values($break-points);
+        $media-screen-value:list.nth($break-point-values,$i);
+        $space-item:list.nth($block-space,$i);
+
+        @if layouts-get-smallest-break-point() == $media-screen-value{
+            .div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+            }
+        }
+        @else{
+            @media screen and (width >= $media-screen-value){
+                // .div {
+                //     flex-direction: column;
+                // }
+            }
+        }
+    }
+}
+
+@mixin generate-element-space(){
+    .icon-title {
+        margin-inline-end: #{space($icon-title, true)};
+    }
+
+    .label-input {
+        margin-block-end: #{space($label-input, true)};
+    }
+
+    .icon-description {
+        margin-inline-end: #{space($icon-description, true)};
+    }
+
+    .title-block, .title-div {
+        gap: #{space($title-block-div, true)};
+    }
+
+    .title-list {
+        margin-block-end: #{space($title-list, true)};
+    }
+
+    .section-title-description {
+        margin-block-end: #{space($section-title-description, true)};
+    }
+
+    .card-title-description {
+        margin-inline-end: #{space($card-title-description, true)};
+    }
+}
+
+@mixin generate-grid-gap-space(){
+    @for $i from 1 through list.length($grid-gap-space){
+        $break-point-values:map.values($break-points);
+        $media-screen-value:list.nth($break-point-values,$i);
+        $space-item:list.nth($grid-gap-space,$i);
+
+        @if layouts-get-smallest-break-point() == $media-screen-value{
+            .grid-gap {
+                margin-inline-end: #{space($space-item, true)};
+            }
+        }
+        @else{
+            @media screen and (width >= $media-screen-value){
+                .grid-gap {
+                    margin-inline-end: #{space($space-item, true)};
+                }
+            }
+        }
+    }
+}
+
+@include generate-header-horizontal-space();
+@include generate-header-vertical-space();
+@include generate-main-horizontal-space();
+@include generate-main-vertical-space();
+@include generate-footer-horizontal-space();
+@include generate-footer-vertical-space();
+@include generate-block-space();
+@include generate-div();
+@include generate-element-space();
+@include generate-grid-gap-space();

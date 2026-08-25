@@ -1,0 +1,26 @@
+@use 'sass:map';
+@use "../../../views/base/_typography" as *;
+
+@function get-font-size($value){
+    $result : map.get(map.get($conf-font-size, "sizes"), $value);
+    @return $result;
+}
+
+@function get-font-weight($weight-string){
+    $weight-number : 0;
+    @if ($weight-string == "black"){$weight-number: 900;}
+    @else if ($weight-string == "extra-bold"){$weight-number: 800;}
+    @else if ($weight-string == "bold"){$weight-number: 700;}
+    @else if ($weight-string == "semi-bold"){$weight-number: 600;}
+    @else if ($weight-string == "medium"){$weight-number: 500;}
+    @else if ($weight-string == "regular"){$weight-number: 400;}
+    @else if ($weight-string == "light"){$weight-number: 300;}
+    @else if ($weight-string == "extra-light"){$weight-number: 200;}
+    @else if ($weight-string == "thin"){$weight-number: 100;}
+
+    @return $weight-number;
+}
+
+@function get-font-prefix(){
+    @return $conf-font-prefix;
+}

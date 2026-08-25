@@ -1,0 +1,11 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+
+.eyebrow {
+    font-size: get-font-size("body-sm");
+    text-transform: uppercase;
+    color: get-color("primary");
+    font-weight: get-font-weight("bold");
+}

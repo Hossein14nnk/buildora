@@ -1,1 +1,9 @@
-# building
+settings:
+
+"files.associations": {
+  "*.ejs": "html"
+}
+
+"emmet.includeLanguages": {
+  "ejs": "html"
+}

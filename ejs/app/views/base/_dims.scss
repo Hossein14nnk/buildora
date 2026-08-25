@@ -1,0 +1,82 @@
+$border-radius:(
+    xs: 2px,
+    sm: 6px,
+    md: 10px,
+    lg: 16px,
+    xl: 24px,
+    xxl: 32px,
+    full: 9999px,
+    none: 0,
+);
+
+$conf-elevation: (
+    xs: 0 1px 2px rgba(0, 0, 0, 0.05),
+    sm: 0 2px 4px rgba(0, 0, 0, 0.08),
+    md: 0 4px 8px rgba(0, 0, 0, 0.10),
+    lg: 0 8px 16px rgba(0, 0, 0, 0.12),
+    xl: 0 12px 24px rgba(0, 0, 0, 0.14),
+    xxl: 0 20px 40px rgba(0, 0, 0, 0.16),
+    none: 0,
+);
+
+$conf-opacity:(
+    factor:0.1
+);
+
+$conf-ellipsis:(
+    count:10
+);
+
+$conf-z-index:(
+    max:10,
+    min:0,
+    step:1
+);
+
+$conf-aspect-ratio:(
+    nominator:4,
+    denominator:3,
+    step:1
+);
+
+$conf-border-thickness:(
+    last-width:4
+);
+
+$conf-cursor:(
+    default,
+    pointer,
+    text,
+    not-allowed,
+    move,
+    grab,
+    grabbing,
+    wait,
+    progress,
+);
+
+$conf-icon : (
+    factor: 1.5,
+    prefix: "icon",
+    sizes: (
+        xs: 12px,
+        sm: 16px,
+        md: 20px,
+        lg: 24px,
+        xl: 32px,
+        xxl: 40px,
+    ),
+);
+
+$conf-image : (
+    factor: 1.5,
+    prefix: "image",
+    sizes: (
+        xs: 50px,
+        sm: 60px,
+        md: 70px,
+        lg: 80px,
+        xl: 90px,
+        xxl: 100px,
+    ),
+);
