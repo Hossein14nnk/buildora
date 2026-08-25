@@ -31,7 +31,7 @@
 }
 
 #home-one .card-play {
-  background-color: color-mix(in srgb, var(--on-secondary) 80%, transparent);
+  background-color: color-mix(in srgb, var(--secondary) 80%, transparent);
   backdrop-filter: blur(3px);
 }
 
@@ -202,6 +202,70 @@ a {
   border-radius: 10px;
 }
 
+/* btn basic */
+.nav-item {
+  font-size: 1rem;
+  color: var(--secondary);
+  transition: 200ms linear color;
+}
+.nav-item:hover {
+  color: var(--primary);
+}
+
+.eyebrow {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--section-title-text);
+  font-weight: 700;
+}
+
+.description {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.description-secondary {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: var(--on-secondary);
+  font-weight: 400;
+}
+
+.title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.title .highlight {
+  color: var(--primary);
+}
+
+.learn-more {
+  color: var(--on-primary);
+  text-transform: uppercase;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+}
+.learn-more i {
+  transition: 200ms linear;
+}
+.learn-more:hover i {
+  padding-inline-start: 0.5rem;
+}
+
 .dropdown {
   display: inline-block;
   position: relative;
@@ -219,7 +283,7 @@ a {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background-color: var(--transparent);
-  color: var(--secondary);
+  color: var(--on-secondary);
   border-radius: 10px;
   font-size: 1rem;
   border-color: var(--on-primary);
@@ -237,8 +301,8 @@ a {
   z-index: 10;
   border-style: solid;
   transition: 200ms linear;
-  background-color: var(--secondary);
-  color: var(--on-secondary);
+  background-color: var(--on-secondary);
+  color: var(--secondary);
   border-radius: 10px;
   font-size: 1rem;
   border-color: var(--on-primary);
@@ -251,7 +315,7 @@ a {
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  color: var(--on-secondary);
+  color: var(--secondary);
   font-size: 1rem;
 }
 .dropdown .dropdown-menu > li > :not(:has(*)):hover {
@@ -294,7 +358,7 @@ a {
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  color: var(--on-secondary);
+  color: var(--secondary);
   font-size: 1rem;
 }
 .dropdown .dropdown-menu .dropdown-submenu .dropdown-submenu-toggle:hover {
