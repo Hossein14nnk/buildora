@@ -21,7 +21,7 @@
         padding-left: get-space(2);
         padding-right: get-space(2);
         background-color: get-color("transparent");
-        color: get-color("secondary");
+        color: get-color("on-secondary");
         border-radius: $common-border-radius;
         font-size: get-font-size("body");
         border-color: get-color("on-primary");
@@ -42,8 +42,8 @@
         border-style: solid;
 
         transition: $common-transition;
-        background-color: get-color("secondary");
-        color: get-color("on-secondary");
+        background-color: get-color("on-secondary");
+        color: get-color("secondary");
         border-radius: $common-border-radius;
         font-size: get-font-size("body");
         border-color: get-color("on-primary");
@@ -58,7 +58,7 @@
                 padding-bottom: get-space(1);
                 padding-left: get-space(2);
                 padding-right: get-space(2);
-                color: get-color("on-secondary");
+                color: get-color("secondary");
                 font-size: get-font-size("body");
 
                 &:hover {
@@ -110,7 +110,7 @@
                 padding-bottom: get-space(1);
                 padding-left: get-space(2);
                 padding-right: get-space(2);
-                color: get-color("on-secondary");
+                color: get-color("secondary");
                 font-size: get-font-size("body");
 
                 &:hover {
