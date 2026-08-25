@@ -1,0 +1,13 @@
+@use "../../../../system/sass/global-functions/_image-size" as *;
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+
+.image-box {
+    & img {
+        width: get-image-size("xl");
+        height: get-image-size("xl");
+        border-radius: $common-border-radius;
+    }
+}

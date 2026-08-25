@@ -189,42 +189,17 @@ a {
   color: var(--secondary);
 }
 
-/* btn basic */
-.nav-item {
-  font-size: 1rem;
-  color: var(--secondary);
-  transition: 200ms linear color;
-}
-.nav-item:hover {
-  color: var(--primary);
+.image-box img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
 }
 
-.eyebrow {
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  color: var(--primary);
-  font-weight: 700;
-}
-
-.section-title {
-  font-size: 2rem;
-  text-transform: capitalize;
-  color: var(--section-title-text);
-  font-weight: 700;
-}
-
-.description {
-  font-size: 0.875rem;
-  text-transform: capitalize;
-  color: var(--text);
-  font-weight: 400;
-}
-
-.description-secondary {
-  font-size: 0.875rem;
-  text-transform: capitalize;
-  color: var(--secondary);
-  font-weight: 400;
+.intro-image img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .dropdown {

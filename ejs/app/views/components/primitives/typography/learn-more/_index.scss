@@ -1,0 +1,21 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+
+.learn-more {
+    color: get-color("on-primary");
+    text-transform: uppercase;
+    flex-direction: row;
+    align-items: center;
+    gap: get-space(3);
+    font-weight: get-font-weight("bold");
+
+    i {
+        transition: $common-transition;
+    }
+
+    &:hover i {
+        padding-inline-start: get-space(2);
+    }
+}
