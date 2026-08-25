@@ -226,6 +226,13 @@ a {
   font-weight: 700;
 }
 
+.secondary-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--on-secondary);
+  font-weight: 700;
+}
+
 .description {
   font-size: 0.875rem;
   text-transform: capitalize;
