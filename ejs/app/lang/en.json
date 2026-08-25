@@ -10,7 +10,7 @@
 		"eyebrow": {
 			"text": "our projects"
 		},
-		"title": {
+		"sectionTitle": {
 			"text": "meat our professionals"
 		},
 		"composities": {
@@ -20,6 +20,16 @@
 				"subtitle": "We're are always looking for talented and pasionate individuals",
 				"btn": "veiw open positions"
 			}
+		},
+		"title": {
+			"text": "comprehensive solutions for ",
+			"highlight": "every build"
+		},
+		"description": {
+			"text": "We transform existing spaces with expert renovation and restoration services, blending innovation with proven construction techniques."
+		},
+		"learnMore": {
+			"text": "learn more"
 		}
 	},
 	"pages": {

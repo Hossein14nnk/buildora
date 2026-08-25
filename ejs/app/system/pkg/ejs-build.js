@@ -84,47 +84,46 @@ async function renderComponents(src, dest, data, lang) {
     const items = fs.readdirSync(src, { withFileTypes: true });
 
     for (const item of items) {
+        if (!item.isDirectory()) {
+            continue;
+        }
+
         const srcPath = path.join(src, item.name);
+        const indexFile = path.join(srcPath, "index.ejs");
 
-        if (item.isDirectory()) {
-            const indexFile = path.join(srcPath, "index.ejs");
+        if (fs.existsSync(indexFile)) {
+            const outputFile = path.join(dest, `${item.name}.html`);
 
-            if (fs.existsSync(indexFile)) {
-                const outputFile = path.join(dest, `${item.name}.html`);
+            try {
+                const html = await ejs.renderFile(
+                    indexFile,
+                    {
+                        ...globals,
+                        t: data,
+                        lang
+                    },
+                    {
+                        root: appDir
+                    }
+                );
 
-                try {
-                    const html = await ejs.renderFile(
-                        indexFile,
-                        {
-                            ...globals,
-                            t: data,
-                            lang
-                        },
-                        {
-                            root: appDir
-                        }
-                    );
+                fs.writeFileSync(outputFile, html);
 
-                    fs.writeFileSync(outputFile, html);
-
-                    console.log(`✅ Component rendered: ${outputFile}`);
-                } catch (err) {
-                    console.error(`❌ Error rendering component: ${indexFile}`);
-                    console.error(err);
-                }
-
-                continue;
+                console.log(`✅ Component rendered: ${outputFile}`);
+            } catch (err) {
+                console.error(`❌ Error rendering component: ${indexFile}`);
+                console.error(err);
             }
-
-            await renderComponents(
-                srcPath,
-                path.join(dest, item.name),
-                data,
-                lang
-            );
 
             continue;
         }
+
+        await renderComponents(
+            srcPath,
+            path.join(dest, item.name),
+            data,
+            lang
+        );
     }
 }
 

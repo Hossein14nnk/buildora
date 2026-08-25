@@ -1,0 +1,7 @@
+@use "../../../views/base/dims" as *;
+@use 'sass:map';
+
+@function get-image-size($image-size){
+    $sizes: map.get($conf-image, "sizes");
+    @return map.get($sizes, $image-size);
+}
