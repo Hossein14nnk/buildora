@@ -1,0 +1,19 @@
+@use "../../../assets/vendors/bootstrap/scss/mixins/_border-radius" as *;
+.card-hover > img{
+    aspect-ratio: 1.1;  
+}
+
+.card-hover:hover >div {
+    bottom: 0%;
+}
+
+.card-hover > div {
+    height: 50%;
+    bottom: -50%;
+    right: 0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    transition: all 300ms ease-in-out;
+    background-color: rgba(6, 6, 6, 0.61);
+    backdrop-filter: blur(2px);
+}

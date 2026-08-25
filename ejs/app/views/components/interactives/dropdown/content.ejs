@@ -1,0 +1,13 @@
+<!-- start dropdown -->
+<div class="dropdown dropdown-bottom">
+    <button class="dropdown-box">
+        <%= title %>
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <%_ for (let item of items){ -%>
+            <li><a href="<%= item["link"] %>"><%= item["title"] %></a></li>
+        <%_ } -%>
+    </ul>
+</div>
+<!-- end dropdown -->

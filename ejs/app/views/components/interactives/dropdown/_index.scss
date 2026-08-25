@@ -1,0 +1,186 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    user-select: none;
+
+    .dropdown-box {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-style: solid;
+
+        transition: $common-transition;
+        gap: get-space(1);
+        padding-top: get-space(1);
+        padding-bottom: get-space(1);
+        padding-left: get-space(2);
+        padding-right: get-space(2);
+        background-color: get-color("transparent");
+        color: get-color("secondary");
+        border-radius: $common-border-radius;
+        font-size: get-font-size("body");
+        border-color: get-color("on-primary");
+        border-width: $common-border-width;
+    }
+
+    &.active .dropdown-box {
+        color: get-color("primary");
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        width: 100%;
+        min-width: 120px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10;
+        border-style: solid;
+
+        transition: $common-transition;
+        background-color: get-color("secondary");
+        color: get-color("on-secondary");
+        border-radius: $common-border-radius;
+        font-size: get-font-size("body");
+        border-color: get-color("on-primary");
+        border-width: $common-border-width;
+
+        & > li {
+            & > :not(:has(*)) {
+                display: block;
+
+                transition: $common-transition;
+                padding-top: get-space(1);
+                padding-bottom: get-space(1);
+                padding-left: get-space(2);
+                padding-right: get-space(2);
+                color: get-color("on-secondary");
+                font-size: get-font-size("body");
+
+                &:hover {
+                    background-color: get-color("primary");
+                    color: get-color("on-primary");
+                }
+            }
+
+            &:first-child:not(.dropdown-submenu) {
+                border-top-right-radius: $common-border-radius;
+                border-top-left-radius: $common-border-radius;
+                overflow: hidden;
+            }
+
+            &:last-child:not(.dropdown-submenu) {
+                border-bottom-right-radius: $common-border-radius;
+                border-bottom-left-radius: $common-border-radius;
+                overflow: hidden;
+            }
+
+            &:first-child.dropdown-submenu > *:not(.dropdown-menu) {
+                border-bottom-right-radius: $common-border-radius;
+                border-bottom-left-radius: $common-border-radius;
+                overflow: hidden;
+            }
+
+            &:last-child.dropdown-submenu > *:not(.dropdown-menu) {
+                border-bottom-right-radius: $common-border-radius;
+                border-bottom-left-radius: $common-border-radius;
+                overflow: hidden;
+            }
+        }
+
+        &:has(> li:only-child) {
+            overflow: hidden;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+
+            .dropdown-submenu-toggle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                transition: $common-transition;
+                padding-top: get-space(1);
+                padding-bottom: get-space(1);
+                padding-left: get-space(2);
+                padding-right: get-space(2);
+                color: get-color("on-secondary");
+                font-size: get-font-size("body");
+
+                &:hover {
+                    background-color: get-color("primary");
+                    color: get-color("on-primary");
+                }
+
+                i {
+                    transition: $common-transition;
+                }
+            }
+
+            &.active > .dropdown-submenu-toggle {
+                background-color: get-color("primary");
+                color: get-color("on-primary");
+            }
+
+            &.active > .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &.active > .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    & .dropdown-menu.dropdown-bottom {
+        top: 100%;
+        bottom: unset;
+        right: unset;
+        left: 0%;
+
+        margin-top: get-space(1);
+    }
+
+    & .dropdown-menu.dropdown-top {
+        top: unset;
+        bottom: 100%;
+        right: unset;
+        left: 0%;
+
+        margin-bottom: get-space(1);
+    }
+
+    & .dropdown-menu.dropdown-right {
+        bottom: unset;
+        left: 100%;
+        right: unset;
+        top: 0%;
+
+        margin-left: get-space(1);
+        margin-top: get-space(1);
+    }
+
+    & .dropdown-menu.dropdown-left {
+        bottom: unset;
+        left: unset;
+        right: 100%;
+        top: 0%;
+
+        margin-right: get-space(1);
+        margin-top: get-space(1);
+    }
+
+    &.dropdown-hover:hover > .dropdown-menu,
+    .dropdown-submenu.dropdown-hover:hover > .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+}

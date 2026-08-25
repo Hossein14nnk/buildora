@@ -1,0 +1,13 @@
+@use "../functions/_responsive" as *;
+@use "../../../../../views/base/_dims" as *;
+
+@mixin generate-box-shadow($values , $class-prefix){
+    @each $name , $value in $values{
+        $base:generate-classes-on-value($class-prefix , $name);
+        #{$base}{
+            box-shadow: $value;
+        }
+    }
+}
+
+@include generate-box-shadow($conf-elevation , "elevation");

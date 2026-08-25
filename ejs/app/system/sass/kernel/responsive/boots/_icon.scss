@@ -1,0 +1,8 @@
+@use "../functions/_sizing" as *;
+@use "../../../../../views/base/_dims" as *;
+@use "../functions/responsive" as *;
+@use 'sass:map';
+
+$icons-list-class:#{"#{map.get($conf-icon, 'prefix')}-size"},;
+$map-icon:(icon: font-size,);
+$icon-element-size : generate-total-map-list-sizing($icons-list-class , $map-icon , $conf-icon);

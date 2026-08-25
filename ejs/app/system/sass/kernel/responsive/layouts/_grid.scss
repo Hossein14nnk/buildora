@@ -1,0 +1,5 @@
+@use "../functions/responsive" as *;
+@use "../../../../../views/base/_responsive" as *;
+
+$grid-list : grid;
+$grid : generate-classes-items($grid-list ,grid-template-columns, $conf-grids, false, grid);

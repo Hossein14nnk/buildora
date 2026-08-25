@@ -1,0 +1,33 @@
+@use "../../../views/base/_dims" as *;
+@use "../../../views/base/_responsive" as *;
+@use 'sass:map';
+@use 'sass:list';
+
+@function generate-space-list($conf-spaces){
+    $space-list: [];
+    $space-count: map.get($conf-spaces, "count");
+    $space-factor: map.get($conf-spaces, "factor");
+    @for $i from 0 through $space-count{
+        $space-list-item: $i * $space-factor + "rem";
+        $space-list: list.append($space-list, $space-list-item, comma);
+    }
+    @return $space-list;
+}
+
+@function get-space($index-item, $is-index-form-zero: true){
+    $space-list: generate-space-list($conf-spaces);
+    @if ($is-index-form-zero){
+        @return #{list.nth($space-list, $index-item + 1)};
+    }
+    @else {
+        @return #{list.nth($space-list, $index-item)};
+    }
+}
+
+@function get-icon($value){
+    @return map.get(map.get($conf-icon, "sizes"), $value);
+}
+
+@function get-size-value($conf, $value){
+    @return map.get($conf, $value);
+}

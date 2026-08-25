@@ -1,64 +1,5 @@
-@font-face {
-  font-family: "primary";
-  font-weight: 900;
-  src: url("../fonts/vazir/Vazir-Black.woff2"), url("../fonts/vazir/Vazir-Black.woff"), url("../fonts/vazir/Vazir-Black.ttf"), url("../fonts/vazir/Vazir-Black.eot");
-}
-@font-face {
-  font-family: "primary";
-  font-weight: 400;
-  src: url("../fonts/vazir/Vazir-Regular.woff2"), url("../fonts/vazir/Vazir-Regular.woff"), url("../fonts/vazir/Vazir-Regular.ttf"), url("../fonts/vazir/Vazir-Regular.eot");
-}
-@font-face {
-  font-family: "primary";
-  font-weight: 100;
-  src: url("../fonts/vazir/Vazir-Thin.woff2"), url("../fonts/vazir/Vazir-Thin.woff"), url("../fonts/vazir/Vazir-Thin.ttf"), url("../fonts/vazir/Vazir-Thin.eot");
-}
-.font-primary {
-  font-family: var("--font-primary"), sans-serif, "Courier New", Courier, monospace;
-}
-
-.transition {
-  transition: 0.3s 0s linear;
-}
-
-body {
-  background: var(--bs-background);
-}
-
-section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.section-hero {
-  min-height: 500px !important;
-  margin-bottom: 2rem;
-  position: relative;
-  background-color: var(--bs-dark) !important;
-  z-index: 10;
-}
-
-.section-hero::after {
-  content: "";
-  bottom: 0px;
-  right: 0%;
-  position: absolute;
-  background-repeat: repeat;
-  background-size: 100% 100%, 15px 17px;
-  width: 40%;
-  height: 100%;
-  background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
-  z-index: -1;
-}
-
-.btn-hover:hover i {
-  transform: translateX(5px);
-}
-
-.btn-hover {
-  transition: all 300ms ease-in-out;
-}
-
+/* global styles */
+/* pages styles */
 #home-one #main-hero {
   background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/single/herohomepage.png");
   background-size: 100% 100%;
@@ -66,11 +7,11 @@ section {
 }
 
 .btn-hover i {
-  transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out !important;
 }
 
 #home-one .btn-hover:hover i {
-  transform: translateX(0.5rem);
+  transform: translateX(0.5rem) !important;
 }
 
 #home-one .about::after {
@@ -90,8 +31,8 @@ section {
 }
 
 #home-one .card-play {
-  max-width: 350px;
-  backdrop-filter: blur(5px);
+  background-color: color-mix(in srgb, var(--on-secondary) 80%, transparent);
+  backdrop-filter: blur(3px);
 }
 
 #home-one .image-wrapper {
@@ -99,7 +40,7 @@ section {
 }
 
 #home-one .dots {
-  left: -40px;
+  left: 0%;
   top: 90px;
   width: 140px;
   height: 140px;
@@ -181,11 +122,11 @@ section {
   max-width: 150px;
   height: 60px;
   object-fit: contain;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 
 #home-one .client-logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
 }
 
 @media (max-width: 992px) {
@@ -194,19 +135,11 @@ section {
     max-width: 100% !important;
   }
 }
-#home-one .mission-btn:hover {
-  background: var(--bs-primary);
-}
-
-#home-one.mission-btn:hover .fa-solid.fa-arrow-right {
-  color: var(--bs-dark) !important;
-  transform: rotate(-45deg);
-}
-
 #home-one .cta {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/building3.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 a {
@@ -221,619 +154,213 @@ a {
   filter: grayscale(0);
 }
 
-#about-us .hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/about-us/photo-1486406146926-c627a92ad1ab.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#about-us .hero a i {
-  transition: all 300ms ease-in-out;
-}
-
-#about-us .hero a:hover i {
-  transform: translateX(0.5rem);
-}
-
-#about-us .about::after {
-  content: ".";
-  z-index: 2;
-  bottom: 50%;
-}
-
-#about-us .experience-box {
-  width: 250px;
-  border-bottom-left-radius: 5px;
-}
-
-#about-us .wrapper {
-  width: 300vw;
-}
-
-#about-us .journey .history-timeline {
-  min-width: 800px;
-}
-
-@media (min-width: 768px) {
-  #about-us .wrapper {
-    width: 200vw !important;
-  }
-}
-@media (min-width: 992px) {
-  #about-us .wrapper {
-    width: 200vw !important;
-  }
-}
-@media (min-width: 1200px) {
-  #about-us .wrapper {
-    width: 100vw !important;
-  }
-}
-@media (min-width: 1400px) {
-  #about-us .wrapper {
-    width: 80vw !important;
-  }
-}
-#register {
-  background-color: #F9F9F9;
-}
-
-#register input:checked {
-  background-color: var(--bs-primary);
-  color: white;
-}
-
-#register .register .check-button i {
-  transition: all 300ms ease-in-out;
-}
-
-#register {
-  background-image: url("../media/images/en/register/building.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 55% 45%;
-}
-
-#register input {
-  border-style: none;
-  background: transparent;
-}
-
-input:focus {
-  outline: none;
-}
-
-#st-services .overview img {
-  aspect-ratio: 16/7;
-}
-
-#st-services hr {
-  background-color: var(--bs-dark);
-}
-
-#st-services .hero::after {
-  content: "";
-  bottom: 0px;
-  right: 0%;
-  position: absolute;
-  background-repeat: repeat;
-  background-size: 100% 100%, 10px 12px;
-  width: 20%;
-  height: 100%;
-  background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
-}
-
-#st-services .list-group li {
-  transition: all 300ms ease-in-out;
-}
-
-#st-services .list-group li i {
-  transition: all 300ms ease-in-out;
-}
-
-#st-services .list-group li:hover {
-  background-color: var(--bs-specific);
-}
-
-#st-services .list-group li:hover i {
-  color: var(--bs-primary);
-}
-
-#st-services .feature .container {
-  background-color: #F4F4F4;
-}
-
-.fancy-txt {
-  background-image: linear-gradient(90deg, var(--bs-primary-light), var(--bs-primary));
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: 0% 1px;
-  transition: all 300ms ease;
-}
-
-.fancy-txt:hover {
-  background-size: 100% 1px;
-}
-
-#gallery a:has(> img) {
-  height: 250px;
-}
-
-#gallery ul {
-  margin: 0;
-  padding: 0;
-}
-
-#gallery .hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/gallery/photo-1486406146926-c627a92ad1ab.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-#gallery .project-cta > .container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#gallery img {
-  filter: grayscale(0.8);
-}
-
-#gallery img:hover {
-  scale: 1.3;
-  filter: grayscale(0) !important;
-}
-
-.transition-400 {
-  transition: all 400ms ease-in-out;
-}
-
-.vh-50 {
-  height: 50vh;
-}
-
-#contact-us .social a:hover i {
-  color: var(--bs-primary);
-}
-
-#weblogs .number {
-  width: 30px;
-  height: 30px;
+/* components styles */
+/* btn basic */
+.btn {
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  padding-inline: 0.5rem;
+  padding-block: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  gap: 1rem;
 }
 
-#weblogs .text-limit-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+/* btn primary */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--on-primary);
+}
+
+/* btn secondary */
+.btn-secondary {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+/* btn tertiary */
+.btn-tertiary {
+  border-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* btn basic */
+.nav-item {
+  font-size: 1rem;
+  color: var(--secondary);
+  transition: 200ms linear color;
+}
+.nav-item:hover {
+  color: var(--primary);
+}
+
+.eyebrow {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--on-primary);
+  font-weight: 700;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  user-select: none;
+}
+.dropdown .dropdown-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-style: solid;
+  transition: 200ms linear;
+  gap: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: var(--transparent);
+  color: var(--secondary);
+  border-radius: 10px;
+  font-size: 1rem;
+  border-color: var(--on-primary);
+  border-width: 1px;
+}
+.dropdown.active .dropdown-box {
+  color: var(--primary);
+}
+.dropdown .dropdown-menu {
+  position: absolute;
+  width: 100%;
+  min-width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  border-style: solid;
+  transition: 200ms linear;
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+  border-radius: 10px;
+  font-size: 1rem;
+  border-color: var(--on-primary);
+  border-width: 1px;
+}
+.dropdown .dropdown-menu > li > :not(:has(*)) {
+  display: block;
+  transition: 200ms linear;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: var(--on-secondary);
+  font-size: 1rem;
+}
+.dropdown .dropdown-menu > li > :not(:has(*)):hover {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+.dropdown .dropdown-menu > li:first-child:not(.dropdown-submenu) {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   overflow: hidden;
 }
-
-#weblogs .w-75 {
-  width: 75%;
+.dropdown .dropdown-menu > li:last-child:not(.dropdown-submenu) {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
 }
-
-#weblogs .select-box {
-  position: relative;
-  width: 250px;
+.dropdown .dropdown-menu > li:first-child.dropdown-submenu > *:not(.dropdown-menu) {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
 }
-
-@media (max-width: 1200px) {
-  #weblogs .wrapper {
-    width: 100% !important;
-  }
+.dropdown .dropdown-menu > li:last-child.dropdown-submenu > *:not(.dropdown-menu) {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
 }
-#weblogs .list-group li:hover a {
-  color: var(--bs-primary) !important;
+.dropdown .dropdown-menu:has(> li:only-child) {
+  overflow: hidden;
 }
-
-#weblogs .pooular-post img {
-  width: 50px;
-  aspect-ratio: 1 !important;
-}
-
-#weblogs .wrapper div:nth-child(1) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT1.png");
-}
-
-#weblogs .wrapper div:nth-child(3) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT3.png");
-}
-
-#weblogs .wrapper div:nth-child(2) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT2.png");
-}
-
-#weblogs .wrapper div:nth-child(4) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT4.png");
-}
-
-#weblogs .wrapper div:nth-child(5) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT3.png");
-}
-
-#weblogs .wrapper div:nth-child(6) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT6.png");
-}
-
-#st-blog #descriotion-blog .image-blog {
-  aspect-ratio: 2/1;
-}
-
-#st-blog #descriotion-blog .number {
-  width: 30px;
-  height: 29px;
-}
-
-ul {
-  list-style: none;
-}
-
-#st-blog .social i:hover {
-  color: var(--bs_primary);
-}
-
-#st-blog .pooular-post img {
-  width: 50px;
-  aspect-ratio: 1;
-}
-
-.primary-hover:hover {
-  color: var(--bs-primary) !important;
-}
-
-#teams .hero::after {
-  content: "";
-  bottom: 0px;
-  right: 0%;
-  position: absolute;
-  background-repeat: repeat;
-  background-size: 100% 100%, 10px 12px;
-  width: 20%;
-  height: 100%;
-  background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
-}
-
-#teams .items {
-  margin-top: -50px;
-}
-
-#teams .feature .container {
-  background-color: #F4F4F4;
-}
-
-#ar-services .services-title {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 1.5rem;
-}
-
-#ar-services .services-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 70px;
-  height: 3px;
-  background-color: #ffc107;
-}
-
-#ar-services .services-card {
-  border-color: transparent !important;
-  transition: all 0.3s ease;
-}
-
-#ar-services .services-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--bs-primary) !important;
-}
-
-#ar-services .img-size {
-  width: 72px;
-  height: 72px;
-  object-fit: contain;
-}
-
-#ar-services .services-card a i {
-  transition: transform 0.3s ease;
-}
-
-#ar-services .services-card:hover a i {
-  transform: translateX(0.4rem);
-}
-
-#ar-services .process-section {
-  background: #f8f8f8;
-}
-
-#ar-services .section-divider {
-  width: 48px;
-  height: 2px;
-  background: var(--bs-primary);
-}
-
-#ar-services .cycle-icon icon {
-  width: 35px;
-}
-
-#ar-services .cycle-icon {
-  width: 60px;
-  aspect-ratio: 1;
-}
-
-#ar-services #cycleCards {
+.dropdown .dropdown-menu .dropdown-submenu {
   position: relative;
 }
-
-#ar-services .cycle-card .line {
-  top: 30px;
-  z-index: -1;
-  right: 0px;
+.dropdown .dropdown-menu .dropdown-submenu .dropdown-submenu-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  transition: 200ms linear;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: var(--on-secondary);
+  font-size: 1rem;
 }
-
-#ar-services .cycle-card:first-child .line {
-  width: 50%;
+.dropdown .dropdown-menu .dropdown-submenu .dropdown-submenu-toggle:hover {
+  background-color: var(--primary);
+  color: var(--on-primary);
 }
-
-#ar-services .cycle-card:last-child .line {
+.dropdown .dropdown-menu .dropdown-submenu .dropdown-submenu-toggle i {
+  transition: 200ms linear;
+}
+.dropdown .dropdown-menu .dropdown-submenu.active > .dropdown-submenu-toggle {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+.dropdown .dropdown-menu .dropdown-submenu.active > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown.active > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown .dropdown-menu.dropdown-bottom {
+  top: 100%;
+  bottom: unset;
   right: unset;
-  left: 0px;
-  width: 50%;
+  left: 0%;
+  margin-top: 0.25rem;
 }
-
-@media (max-width: 991px) {
-  #ar-services .line {
-    display: none;
-  }
-  #ar-services #cycleCards {
-    gap: 1rem;
-  }
+.dropdown .dropdown-menu.dropdown-top {
+  top: unset;
+  bottom: 100%;
+  right: unset;
+  left: 0%;
+  margin-bottom: 0.25rem;
 }
-.fancy-txt2 {
-  background-image: linear-gradient(90deg, gray, var(--bs-primary-light), var(--bs-primary));
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: all 300ms ease;
+.dropdown .dropdown-menu.dropdown-right {
+  bottom: unset;
+  left: 100%;
+  right: unset;
+  top: 0%;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
 }
-
-article:hover .fancy-txt2 {
-  background-size: 100% 2px;
+.dropdown .dropdown-menu.dropdown-left {
+  bottom: unset;
+  left: unset;
+  right: 100%;
+  top: 0%;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
 }
-
-#stProject .overview img {
-  aspect-ratio: 16/7;
-}
-
-#stProject hr {
-  background-color: var(--bs-divider);
-  width: 10%;
-  margin: 0;
-  height: 2px;
-}
-
-#stProject .hero::after {
-  content: "";
-  bottom: 0px;
-  right: 0%;
-  position: absolute;
-  background-repeat: repeat;
-  background-size: 100% 100%, 15px 17px;
-  width: 40%;
-  height: 100%;
-  background-image: linear-gradient(-45deg, transparent 20%, rgb(0, 0, 0) 75% 100%), radial-gradient(rgba(254, 191, 1, 0.368627451) 10%, rgba(254, 191, 1, 0) 10% 100%);
-}
-
-#stProject .list-group li {
-  transition: all 300ms ease-in-out;
-}
-
-#stProject .list-group li i {
-  transition: all 300ms ease-in-out;
-}
-
-#stProject .list-group li:hover {
-  background-color: var(--bs-specific);
-}
-
-#stProject .list-group li:hover i {
-  color: var(--bs-primary);
-}
-
-#stProject .feature .container {
-  background-color: #F4F4F4;
-}
-
-#stProject .project-gallery {
-  grid-template-columns: repeat(3, 1fr);
-}
-#stProject .project-gallery img {
-  min-height: 160px;
-}
-
-#stProject .project-gallery img {
-  aspect-ratio: 1.5;
-}
-
-#stProject .project-gallery img:hover {
-  scale: 1.02;
-}
-
-#stProject .project-gallery img:hover {
-  scale: 1.02;
-}
-
-#stProject .project-gallery:has(img:hover) img:not(img:hover) {
-  filter: grayscale(1);
-  scale: 0.98;
-}
-
-.card-body:hover {
-  box-shadow: var(--bs-box-shadow-lg) !important;
-}
-
-#Reviews .hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/reviews/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#Reviews .project-cta > .container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.811)), url("../media/images/en/gallery/ChatGPT3.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#plans #hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../media/images/en/plans/ChatGPT Image Jul 12, 2026, 03_39_32 AM.webp");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#plans .project-cta > .container {
-  background-image: linear-gradient(rgba(2, 11, 38, 0.893)), url("../media/images/en/gallery/ChatGPT3.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#plans .included .container {
-  background-color: #F4F4F4;
-}
-
-#plans .pricing .fa-arrow-right {
-  animation: move 1s infinite;
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(6px);
-  }
-}
-#second-demo .hero {
-  background-image: linear-gradient(to right, rgba(15, 18, 22, 0.78) 0%, rgba(15, 18, 22, 0.52) 35%, rgba(15, 18, 22, 0.18) 65%, rgba(15, 18, 22, 0) 100%), url("../../../assets/media/images/en/demo2/ChatGPT1.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#second-demo .hero .view {
-  transition: all 150ms ease-in-out;
-}
-
-#second-demo .hero .view:hover {
-  background-color: var(--bs-primary);
-  color: var(--bs-black);
-}
-
-#second-demo .hero .view i {
-  transition: all 150ms ease-in-out;
-}
-
-#second-demo .hero .view:hover i {
-  color: var(--bs-black) !important;
-}
-
-#second-demo .hero .service {
-  transition: all 150ms ease-in-out;
-}
-
-#second-demo .hero .service:hover {
-  background-color: transparent !important;
-  color: var(--bs-secondar) !important;
-}
-
-#second-demo .hero .wrapper1 {
-  animation: move1 20s linear infinite both;
-  transform: translateX(0vw);
-}
-
-@keyframes move1 {
-  0% {
-    transform: translateX(0vw);
-  }
-  100% {
-    transform: translateX(100vw);
-  }
-}
-#second-demo .hero .wrapper2 {
-  animation: move2 20s linear infinite both;
-  transform: translateX(-100vw);
-}
-
-@keyframes move2 {
-  0% {
-    transform: translateX(-100vw);
-  }
-  100% {
-    transform: translateX(0vw);
-  }
-}
-#second-demo .wrapper1 img {
-  filter: grayscale(1);
-}
-
-#second-demo .wrapper2 img {
-  filter: grayscale(1);
-}
-
-#second-demo .about .contain-img {
-  background-image: url("../media/images/en/demo2/ChatGPT6.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#second-demo .about .button {
-  transition: all 150ms ease-in-out;
-}
-
-#second-demo .about .button:hover {
-  background-color: transparent !important;
-  color: var(--bs-secondar) !important;
-}
-
-#second-demo .wrapper1 img {
-  width: 100px;
-}
-
-#second-demo .wrapper2 img {
-  width: 100px;
-}
-
-#ar-project .wrapper div:nth-child(1) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT1.png");
-  background-size: 100% 100%;
-}
-
-#ar-project .wrapper div:nth-child(3) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT3.png");
-  background-size: 100% 100%;
-}
-
-#ar-project .wrapper div:nth-child(2) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT2.png");
-  background-size: 100% 100%;
-}
-
-#ar-project .wrapper div:nth-child(4) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT4.png");
-  background-size: 100% 100%;
-}
-
-#ar-project .wrapper div:nth-child(5) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT3.png");
-  background-size: 100% 100%;
-}
-
-#ar-project .wrapper div:nth-child(6) .image {
-  background-image: url("../../assets/media/images/en/gallery/ChatGPT6.png");
-  background-size: 100% 100%;
+.dropdown.dropdown-hover:hover > .dropdown-menu,
+.dropdown .dropdown-submenu.dropdown-hover:hover > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.min.css.map */

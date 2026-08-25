@@ -1,19 +1,19 @@
 {
-    "name":"make-stracture-bootstrap",
-    "version":"1.0.0",
-    "description":"null",
+    "name": "niva",
+    "version": "1.0.0",
+    "description": "null",
     "type": "module",
-    "scripts":{
-        "watch": "concurrently \"node miz/pkg/miz-controller.js --watch\" \"sass --watch --update --style=expanded sass/style.scss:assets/css/style.min.css\" \"sass --watch --update --style=expanded app/components/_index.scss:assets/css/components.min.css\"",
-        "build": "concurrently \"node miz/pkg/miz-controller.js --build\" \"sass --no-source-map --style=compressed sass/style.scss:assets/css/style.min.css\" \"sass --no-source-map --style=compressed app/components/_index.scss:assets/css/components.min.css\"",
-        "clean": "sass --no-source-map --style=expanded miz/_index.scss:assets/css/miz-clean.css && node miz/pkg/miz-min.cjs",
-        "dev": "node miz/pkg/server.js",
-        "build-bootstrap": "concurrently \"sass --no-source-map --style=expanded assets/vendors/bootstrap/scss/bootstrap.scss:assets/vendors/bootstrap/dist/css/bootstrap.css\" \"sass --no-source-map --style=compressed assets/vendors/bootstrap/scss/bootstrap.scss:assets/vendors/bootstrap/dist/css/bootstrap.min.css\""
-    
+    "scripts": {
+        "watch": "concurrently \"sass --watch --update --style=expanded app/system/_index.scss:assets/css/miz.min.css\" \"node app/system/pkg/miz-controller.js --watch\" \"sass --watch --update --style=expanded app/views/style.scss:assets/css/style.min.css\" \"sass --no-source-map --watch --update --style=expanded app/views/base/_root.scss:assets/css/config.css\"",
+        "build": "concurrently \"sass --no-source-map --style=compressed app/system/_index.scss:assets/css/miz.min.css\" \"node app/system/pkg/miz-controller.js --build\" \"sass --no-source-map --style=compressed app/views/style.scss:assets/css/style.min.css\" \"sass --no-source-map --style=expanded app/views/base/_root.scss:assets/css/config.css\"",
+        "clean": "sass --no-source-map --style=expanded app/system/_index.scss:assets/css/miz-clean.css && node app/system/pkg/miz-min.cjs",
+        "dev": "node app/system/pkg/server.js",
+        "html-format": "node app/system/pkg/html-formatter.js"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "browser-sync": "^3.0.4",
         "concurrently": "^9.0.0",
         "sass": "^1.77.8",
         "terser": "^5.28.1"
@@ -23,6 +23,7 @@
         "ejs": "^5.0.1",
         "express": "^5.1.0",
         "multer": "^2.0.2",
-        "ncp": "^2.0.0"
+        "ncp": "^2.0.0",
+        "prettier": "^3.9.6"
     }
 }

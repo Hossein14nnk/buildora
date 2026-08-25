@@ -1,0 +1,237 @@
+@use "../../../../../views/base/_responsive" as *;
+@use "../../kernel-functions/_break-point" as *;
+@use "../functions/responsive" as *;
+@use "../../../../../views/base/_paths" as *;
+@use "../../../../../views/base/_typography" as *;
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:string';
+
+// $font-family-prefix:"font-";
+// $font-size-prefix: $conf-font-prefix + "-size";
+// $values-text-align:(center,end,start,left,right,justify);
+// $values-text-transform:(lowercase,none,uppercase,capitalize);
+// $values-text-decoration-line:(line-through,none,overline,underline,wavy);
+// $values-text-decoration-style:(dashed,dotted,double,solid);
+// $values-font-style:(italic,);
+// $values-white-space:(unset, pre, pre-wrap, pre-line, wrap, nowrap);
+// $values-text-wrap:(unset, balance, nowrap, wrap);
+// $values-list-style-type:(disc, circle, square, decimal, georgian, trad-chinese-informal, kannada);
+// $values-list-style-position:(inside, outside);
+
+$font-family-prefix:"font-";
+$font-size-prefix: $conf-font-prefix + "-size";
+
+$values-text-align:(center,end,start,left,right,justify);
+$values-text-transform:(lowercase,none,uppercase,capitalize);
+$values-text-decoration-line:(line-through,none,overline,underline,wavy);
+$values-text-decoration-style:(dashed,dotted,double,solid);
+$values-font-style:(italic,);
+$values-white-space:(unset, pre, pre-wrap, pre-line, wrap, nowrap);
+$values-text-wrap:(unset, balance, nowrap, wrap);
+$values-list-style-type:(disc, circle, square, decimal, georgian, trad-chinese-informal, kannada);
+$values-list-style-position:(inside, outside);
+
+$conf-list:(
+    text-align: map.get($conf-text-align, "responsive"),
+    text-transform: map.get($conf-text-transform, "responsive"),
+    text-decoration-line: map.get($conf-text-decoration, "responsive"),
+    text-decoration-style: map.get($conf-text-decoration, "responsive"),
+    font-style: map.get($conf-font-style, "responsive"),
+    white-space: map.get($conf-white-space, "responsive"),
+    text-wrap: map.get($conf-text-wrap, "responsive"),
+    list-style-type: map.get($conf-list-style, "responsive"),
+    list-style-position: map.get($conf-list-style, "responsive"),
+);
+$key-list: (
+    text-align,
+    text-transform,
+    text-decoration-line,
+    text-decoration-style,
+    font-style,
+    white-space,
+    text-wrap,
+    list-style-type,
+    list-style-position
+);
+$value-list: (
+    $values-text-align,
+    $values-text-transform,
+    $values-text-decoration-line,
+    $values-text-decoration-style,
+    $values-font-style,
+    $values-white-space,
+    $values-text-wrap,
+    $values-list-style-type,
+    $values-list-style-position
+);
+$class-list: (
+    #{$conf-font-prefix + "-" + "align"},
+    #{$conf-font-prefix + "-" + "transform"},
+    #{$conf-font-prefix + "-" + "decoration"},
+    #{$conf-font-prefix + "-" + "decoration-style"},
+    #{$conf-font-prefix + "-" + "style"},
+    #{$conf-font-prefix + "-" + "white-space"},
+    #{$conf-font-prefix + "-" + "wrap"},
+    #{$conf-font-prefix + "-" + "list-type"},
+    #{$conf-font-prefix + "-" + "list-position"}
+);
+
+.font-weight-black{
+    font-weight: 900;
+}
+.font-weight-extra-bold{
+    font-weight: 800;
+}
+.font-weight-bold{
+    font-weight: 700;
+}
+.font-weight-semi-bold{
+    font-weight: 600;
+}
+.font-weight-medium{
+    font-weight: 500;
+}
+.font-weight-regular{
+    font-weight: 400;
+}
+.font-weight-light{
+    font-weight: 300;
+}
+.font-weight-extra-light{
+    font-weight: 200;
+}
+.font-weight-thin{
+    font-weight: 100;
+}
+
+@function font-weight-connection($weight-string){
+    $weight-number : 0;
+    @if ($weight-string == "black"){$weight-number: 900;}
+    @else if ($weight-string == "extra-bold"){$weight-number: 800;}
+    @else if ($weight-string == "bold"){$weight-number: 700;}
+    @else if ($weight-string == "semi-bold"){$weight-number: 600;}
+    @else if ($weight-string == "medium"){$weight-number: 500;}
+    @else if ($weight-string == "regular"){$weight-number: 400;}
+    @else if ($weight-string == "light"){$weight-number: 300;}
+    @else if ($weight-string == "extra-light"){$weight-number: 200;}
+    @else if ($weight-string == "thin"){$weight-number: 100;}
+
+    @return $weight-number;
+}
+
+@mixin make-font-face{
+    @each $font-name , $font-details in $conf-fonts {
+        $font-folder: map.get($font-details, "folder");
+        $font-default: map.get($font-details, "defaults");
+        @each $font-type, $font-files in map.get($font-details, "font-types") {
+        $font-weight : font-weight-connection($font-type);
+            @font-face {
+            $file-src : '';
+            font-family: $font-name;
+            font-weight: $font-weight;
+            @each $font-file in $font-files {
+                $file-name: list.nth($font-file, 1);
+                $file-format: string.slice($file-name, string.index($file-name, ".") + 1);
+                $file-path: $font-folder + "/" + $file-name;
+                $file-src :$file-src + #{url("#{$fonts-path + $file-path}")} + ",";
+            }
+            src: string.unquote($file-src);
+            }
+        }
+        .#{$font-family-prefix}#{$font-name}{
+            font-family: string.unquote("var(--font-#{$font-name})") , string.unquote($font-default);
+        }
+    }
+}
+
+@function generate-typography-list(){
+    $typography-list:();
+
+    @for $i from 1 through list.length($key-list){
+        $value:generate-typography-classes(list.nth($key-list , $i), list.nth($value-list , $i), list.nth($class-list,$i));
+        $typography-list:list.join($typography-list , $value);
+    }
+    @return $typography-list;
+}
+
+@function generate-typography-classes($property-key-list, $property-value-list, $class-name){
+    $list : ();
+    $count : ();
+    @if check-status($conf-list, $property-key-list){
+        @each $key , $value in $break-points{
+            $list:list.join($list , get-typography-break-points-classes($key, $property-key-list, $property-value-list, $class-name));
+        }
+    }@else{
+        $list:list.join($list , get-typography-break-points-classes(null, $property-key-list, $property-value-list, $class-name));   
+    }  
+    @return $list;
+}
+
+@function get-typography-break-points-classes($break-points-key,$property-key-list, $property-value-list, $class-name){
+    $list : ();
+    $base : ();
+    @for $i from 1 through list.length($property-value-list){
+        @if check-status($conf-list, $property-key-list){
+            $base:generate-classes-responsive-on-value($class-name, $break-points-key, list.nth($property-value-list , $i));
+        }@else{
+            $base:generate-classes-on-value($class-name, list.nth($property-value-list , $i));
+        }
+        $map:(
+            className: $base,
+            propertyKeys:$property-key-list,
+            propertyValues:list.nth($property-value-list , $i)
+        );
+        $list:list.append($list , $map);
+    }
+    @return $list;
+}
+
+@function get-greatest-break-point(){
+    $max-size:0;
+    @each $key , $value in $break-points{
+        @if map.get($break-points, $key) > $max-size{
+            $max-size : map.get($break-points, $key);
+        }
+    }
+    @return $max-size;
+}
+
+@function get-smallest-break-point(){
+    $min-size: get-greatest-break-point();
+    @each $key , $value in $break-points{
+        @if ($value < $min-size){
+            $min-size : $value;
+        }
+    }
+    @return $min-size;
+}
+
+@mixin generate-font-size-responsive(){
+    @if (map.get($conf-font-size, "responsive")){
+        $break-point-values:map.values($break-points);
+        @for $i from 1 through list.length($conf-font-size-responsive){
+            $break-point-value:list.nth($break-point-values,$i);
+            $font-value:list.nth($conf-font-size-responsive,$i);
+            @if get-smallest-break-point() == $break-point-value{
+                html{
+                    --html-font-size: #{$font-value};
+                    font-size:var(--html-font-size);
+                }
+            }
+
+            @else{
+                @media screen and (width >= $break-point-value){
+                    html{
+                        --html-font-size: #{$font-value};
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include make-font-face();
+@include generate-font-size-responsive();
+$txt-type : generate-typography-list();
+$font-size : generate-typography-size-classes($conf-font-size, $font-size-prefix);

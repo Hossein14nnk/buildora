@@ -1,0 +1,25 @@
+@use "../../system/sass/global-functions/_font" as *;
+@use "../../system/sass/global-functions/_commons" as *;
+@use "_dims" as *;
+
+$common-border-radius: get-size-value($border-radius, "md");
+$common-elevation: get-size-value($conf-elevation, "md");
+$common-border-width: 1px;
+$common-gap: space(1);
+$common-title: get-font-size("title");
+$common-paragraph: get-font-size("body");
+$common-icon: get-icon("md");
+$common-list-gap: space(1);
+$common-transition: 200ms linear;
+
+$common-variables: (
+    border-radius: $common-border-radius,
+    elevation: $common-elevation,
+    border-width: $common-border-width,
+    gap: $common-gap,
+    title: $common-title,
+    paragraph: $common-paragraph,
+    icon: $common-icon,
+    list-gap: $common-list-gap,
+    transition: $common-transition,
+);
