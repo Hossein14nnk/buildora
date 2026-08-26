@@ -1,0 +1,15 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+
+.view {
+    display: inline-flex;
+    align-items: center;
+
+    .view-value {
+        color: get-color("on-primary");
+        font-size: get-font-size("title");
+        font-weight: 700;
+    }
+}

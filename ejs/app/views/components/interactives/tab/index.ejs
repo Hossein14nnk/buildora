@@ -1,22 +1,27 @@
-<%- include('../../../layouts/component/head.ejs', {pageName: "breadcrumb"}); -%>
+<%- include('../../../layouts/component/head.ejs', {pageName: "tab"}); -%>
 
 <div class="bg-on-primary-color w-100 h-100 d-flex align-items-center justify-content-center">
     <%- include('./content.ejs', {
         items: [
             {
-                title: "Home",
-                link: navigation(lang, "home-one")
+                title: "ALL",
+                value: "all"
             },
             {
-                title: "Products",
-                link: navigation(lang, "home-two")
+                title: "RESIDENTIAL",
+                value: "residential"
             },
             {
-                title: "Web Development",
-                link: navigation(lang, "home-two")
+                title: "COMMERCIAL",
+                value: "commercial"
             },
             {
-                title: "Breadcrumb"
+                title: "INDUSTRIAL",
+                value: "industrial"
+            },
+            {
+                title: "INTERIOR",
+                value: "interior"
             }
         ]
     }); -%>

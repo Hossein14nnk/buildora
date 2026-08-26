@@ -1,13 +1,32 @@
 <!-- start pagination -->
 
-<nav
-    class="pagination"
-    data-pagination
-    data-container="<%= container %>"
-    data-items-per-page="<%= itemsPerPage %>"
-    aria-label="Pagination"
->
-    <div class="pagination-list"></div>
+<nav class="pagination" aria-label="Pagination">
+
+    <% for (let page = 1; page <= items; page++) { %>
+
+        <% if (page <= 3 || page > items - 2) { %>
+
+            <button
+                class="pagination-item <%= page === 1 ? 'active' : '' %>"
+                type="button"
+            >
+                <%= page %>
+            </button>
+
+        <% } else if (page === 4) { %>
+
+            <span class="pagination-item pagination-dots">
+                ...
+            </span>
+
+        <% } %>
+
+    <% } %>
+
+    <button class="pagination-item pagination-next" type="button">
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
 </nav>
 
 <!-- end pagination -->

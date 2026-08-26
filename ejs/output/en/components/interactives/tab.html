@@ -4,87 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>breadcrumb</title>
+    <title>tab</title>
     <link rel="icon" type="image/png" href="./assets/media/images/en/logo.webp">
     <base href="../../../../../">
     <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/miz.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
-<body class="font-roboto w-100vw h-100vh">
+<body class="font-roboto w-100 h-100">
 <div class="bg-on-primary-color w-100 h-100 d-flex align-items-center justify-content-center">
-    <!-- start breadcrumb -->
-<nav class="breadcrumb" aria-label="breadcrumb">
-    <ol class="breadcrumb-list">
+    <!-- start tab -->
+
+<div class="tab">
+
+    <div class="tab-list" role="tablist">
 
         
 
-            <li class="breadcrumb-item ">
+            <button class="tab-item active" type="button" role="tab"
+                data-tab="all" aria-selected="true">
+                ALL
+            </button>
 
-                
+            
 
-                    <a href="./output/en/pages/home-one.html">
-                        Home
-                    </a>
-                    <i class="fa-solid fa-chevron-right"></i>
+            <button class="tab-item " type="button" role="tab"
+                data-tab="residential" aria-selected="false">
+                RESIDENTIAL
+            </button>
 
+            
 
-                
+            <button class="tab-item " type="button" role="tab"
+                data-tab="commercial" aria-selected="false">
+                COMMERCIAL
+            </button>
 
-            </li>
+            
 
-        
+            <button class="tab-item " type="button" role="tab"
+                data-tab="industrial" aria-selected="false">
+                INDUSTRIAL
+            </button>
 
-            <li class="breadcrumb-item ">
+            
 
-                
+            <button class="tab-item " type="button" role="tab"
+                data-tab="interior" aria-selected="false">
+                INTERIOR
+            </button>
 
-                    <a href="./output/en/pages/home-two.html">
-                        Products
-                    </a>
-                    <i class="fa-solid fa-chevron-right"></i>
+            
 
+    </div>
 
-                
+    <div class="tab-content">
 
-            </li>
+        <div class="tab-panel active" data-tab-content="all">
+            <h3>All Content</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod amet mollitia, dolorum reiciendis ipsam ipsa optio officia tempora dolore quo laudantium adipisci cumque, ab consequatur, vero eligendi animi natus veritatis.
+            </p>
+        </div>
 
-        
+        <div class="tab-panel" data-tab-content="residential">
+            <h3>Residential Content</h3>
 
-            <li class="breadcrumb-item ">
+            <div class="card">
+                Residential Content
+            </div>
+        </div>
 
-                
+        <div class="tab-panel" data-tab-content="commercial">
+            <h3>Commercial Content</h3>
+        </div>
 
-                    <a href="./output/en/pages/home-two.html">
-                        Web Development
-                    </a>
-                    <i class="fa-solid fa-chevron-right"></i>
+        <div class="tab-panel" data-tab-content="industrial">
+            <h3>Industrial Content</h3>
+        </div>
 
+        <div class="tab-panel" data-tab-content="interior">
+            <h3>Interior Content</h3>
+        </div>
 
-                
+    </div>
 
-            </li>
-
-        
-
-            <li class="breadcrumb-item active">
-
-                
-
-                    <span aria-current="page">
-                        Breadcrumb
-                    </span>
-
-                
-
-            </li>
-
-        
-
-    </ol>
-</nav>
-<!-- end breadcrumb -->
 </div>
+
+<!-- end tab --></div>
 
     <script src="./assets/js/mizchin.min.js"></script>
 </body>

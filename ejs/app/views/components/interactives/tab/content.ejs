@@ -1,31 +1,51 @@
-<!-- start breadcrumb -->
-<nav class="breadcrumb" aria-label="breadcrumb">
-    <ol class="breadcrumb-list">
+<!-- start tab -->
 
-        <% items.forEach((item, index) => { %>
+<div class="tab">
 
-            <li class="breadcrumb-item <%= index === items.length - 1 ? 'active' : '' %>">
+    <div class="tab-list" role="tablist">
 
-                <% if (index !== items.length - 1 && item.link) { %>
+        <% for (let [index, item] of items.entries()) { %>
 
-                    <a href="<%= item.link %>">
-                        <%= item.title %>
-                    </a>
-                    <i class="fa-solid fa-chevron-right"></i>
+            <button class="tab-item <%= index === 0 ? 'active' : '' %>" type="button" role="tab"
+                data-tab="<%= item.value %>" aria-selected="<%= index === 0 ? 'true' : 'false' %>">
+                <%= item.title %>
+            </button>
 
+            <% } %>
 
-                <% } else { %>
+    </div>
 
-                    <span aria-current="page">
-                        <%= item.title %>
-                    </span>
+    <div class="tab-content">
 
-                <% } %>
+        <div class="tab-panel active" data-tab-content="all">
+            <h3>All Content</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod amet mollitia, dolorum reiciendis ipsam ipsa optio officia tempora dolore quo laudantium adipisci cumque, ab consequatur, vero eligendi animi natus veritatis.
+            </p>
+        </div>
 
-            </li>
+        <div class="tab-panel" data-tab-content="residential">
+            <h3>Residential Content</h3>
 
-        <% }); %>
+            <div class="card">
+                Residential Content
+            </div>
+        </div>
 
-    </ol>
-</nav>
-<!-- end breadcrumb -->
+        <div class="tab-panel" data-tab-content="commercial">
+            <h3>Commercial Content</h3>
+        </div>
+
+        <div class="tab-panel" data-tab-content="industrial">
+            <h3>Industrial Content</h3>
+        </div>
+
+        <div class="tab-panel" data-tab-content="interior">
+            <h3>Interior Content</h3>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- end tab -->

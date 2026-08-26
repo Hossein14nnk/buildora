@@ -465,69 +465,164 @@ a {
 .pagination {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.pagination .pagination-list {
-  display: flex;
-  align-items: center;
   gap: 0.5rem;
 }
-.pagination .pagination-button {
+.pagination .pagination-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 68px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   padding: 0;
-  cursor: pointer;
   border-style: solid;
   border-width: 1px;
-  border-color: var(--on-primary);
+  border-color: var(--border-fields);
   border-radius: 10px;
   background-color: var(--transparent);
   color: var(--secondary);
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
+  cursor: pointer;
   transition: 200ms linear;
 }
-.pagination .pagination-button:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-.pagination .pagination-button.active {
+.pagination .pagination-item:hover {
   background-color: var(--primary);
-  border-color: var(--primary);
   color: var(--on-primary);
+  border-color: var(--primary);
 }
-.pagination .pagination-button:focus-visible {
-  outline-style: solid;
-  outline-width: 1px;
-  outline-color: var(--primary);
-  outline-offset: 2px;
+.pagination .pagination-item.active {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  border-color: var(--primary);
 }
-.pagination .pagination-previous,
-.pagination .pagination-next {
+.pagination .pagination-item.pagination-next i {
   font-size: 1rem;
 }
-.pagination .pagination-previous i,
-.pagination .pagination-next i {
-  transition: 200ms linear;
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.25rem;
+  background-color: var(--white);
+  border-radius: 10px;
 }
-.pagination .pagination-previous:hover i,
-.pagination .pagination-next:hover i {
-  transform: translateX(2px);
+.search .search-input {
+  flex: 1;
+  min-width: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: var(--secondary);
+  font-size: 1rem;
 }
-.pagination .pagination-ellipsis {
+.search .search-input::placeholder {
+  color: var(--text);
+}
+.search .search-input:focus {
+  outline: 0;
+}
+.search .search-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 64px;
-  color: var(--secondary);
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--on-primary);
+  cursor: pointer;
+  transition: 200ms linear;
+}
+.search .search-button:hover {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+.search .search-button i {
   font-size: 1rem;
-  font-weight: 600;
-  user-select: none;
+}
+
+.tab {
+  display: block;
+  width: 100%;
+}
+.tab .tab-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--on-primary);
+}
+.tab .tab-list .tab-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border: 0;
+  background-color: transparent;
+  color: var(--text-fields);
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 1rem;
+  transition: 200ms linear;
+}
+.tab .tab-list .tab-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  transition: 200ms linear;
+}
+.tab .tab-list .tab-item:hover {
+  color: var(--primary);
+}
+.tab .tab-list .tab-item.active {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+.tab .tab-list .tab-item.active::after {
+  background-color: var(--primary);
+}
+.tab .tab-content {
+  width: 100%;
+}
+.tab .tab-content .tab-panel {
+  display: none;
+  width: 100%;
+}
+.tab .tab-content .tab-panel.active {
+  display: block;
+}
+
+.tab-content .tab-panel {
+  display: none;
+}
+.tab-content .tab-panel.active {
+  display: block;
+}
+
+.view {
+  display: inline-flex;
+  align-items: center;
+}
+.view .view-value {
+  color: var(--on-primary);
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.min.css.map */

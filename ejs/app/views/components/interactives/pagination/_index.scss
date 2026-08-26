@@ -6,89 +6,60 @@
 .pagination {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: get-space(2);
 
-    width: 100%;
-
-    .pagination-list {
-        display: flex;
-        align-items: center;
-
-        gap: get-space(2);
-    }
-
-    .pagination-button {
+    .pagination-item {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        width: 68px;
-        height: 64px;
+        width: 50px;
+        height: 50px;
 
         padding: 0;
 
-        cursor: pointer;
-
         border-style: solid;
         border-width: $common-border-width;
-        border-color: get-color("on-primary");
+        border-color: get-color("border-fields");
 
         border-radius: $common-border-radius;
 
         background-color: get-color("transparent");
         color: get-color("secondary");
 
-        font-size: get-font-size("body");
+        font-size: get-font-size("subtitle");
         font-weight: 600;
+
+        cursor: pointer;
 
         transition: $common-transition;
 
         &:hover {
+            background-color: get-color("primary");
+            color: get-color("on-primary");
             border-color: get-color("primary");
-            color: get-color("primary");
         }
 
         &.active {
             background-color: get-color("primary");
-            border-color: get-color("primary");
-
             color: get-color("on-primary");
+            border-color: get-color("primary");
         }
 
-        &:focus-visible {
-            outline-style: solid;
-            outline-width: $common-border-width;
-            outline-color: get-color("primary");
-            outline-offset: 2px;
+        // &.pagination-dots {
+        //     border-color: transparent;
+        //     cursor: default;
+
+        //     &:hover {
+        //         background-color: transparent;
+        //         color: get-color("secondary");
+        //     }
+        // }
+
+        &.pagination-next {
+            i {
+                font-size: get-font-size("body");
+            }
         }
-    }
-
-    .pagination-previous,
-    .pagination-next {
-        font-size: get-font-size("body");
-
-        i {
-            transition: $common-transition;
-        }
-
-        &:hover i {
-            transform: translateX(2px);
-        }
-    }
-
-    .pagination-ellipsis {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 32px;
-        height: 64px;
-
-        color: get-color("secondary");
-
-        font-size: get-font-size("body");
-        font-weight: 600;
-
-        user-select: none;
     }
 }
