@@ -380,6 +380,12 @@ h1 {
   color: var(--secondary);
 }
 
+.horizontal-divider {
+  width: 70px;
+  height: 2px;
+  background-color: var(--primary);
+}
+
 .dropdown {
   display: inline-block;
   position: relative;
