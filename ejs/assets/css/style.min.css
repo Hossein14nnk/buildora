@@ -298,12 +298,8 @@ h1 {
   padding-inline-start: 0.5rem;
 }
 
-.icon-box {
-  font-size: get-icon-size("md");
-  padding: 0.5rem;
-  color: var(--on-primary);
-  background-color: var(--specific);
-  border-radius: 9999px;
+.double-quotation {
+  color: var(--primary);
 }
 
 .link-box {
@@ -355,6 +351,14 @@ h1 {
 }
 .slider-arrow:hover i[class*=left] {
   transform: translateX(-30%);
+}
+
+.icon-box {
+  font-size: get-icon-size("md");
+  padding: 0.5rem;
+  color: var(--on-primary);
+  background-color: var(--specific);
+  border-radius: 9999px;
 }
 
 [class*=label-] {
