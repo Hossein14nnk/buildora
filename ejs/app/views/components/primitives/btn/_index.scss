@@ -1,3 +1,4 @@
+@use "../../../../system/sass/global-functions/_icon-size" as *;
 @use "../../../../system/sass/global-functions/_font" as *;
 @use "../../../../system/sass/global-functions/_commons" as *;
 @use "../../../../system/sass/global-functions/_colors" as *;
@@ -17,6 +18,16 @@
     font-weight: get-font-weight("semi-bold");
     font-size: get-font-size("body-sm");
     gap: get-space(4);
+
+    i {
+        transform: translateX(0%);
+        transition: $common-transition;
+        font-size: get-icon-size("sm");
+    }
+
+    &:hover i {
+        transform: translateX(30%);
+    }
 }
 
 /* btn primary */
@@ -30,13 +41,13 @@
 /* btn secondary */
 
 .btn-secondary {
-    border-color: get-color("secondary");
-    color: get-color("secondary");
+    border-color: get-color("on-secondary");
+    color: get-color("on-secondary");
 }
 
 /* btn tertiary */
 
 .btn-tertiary {
     border-color: get-color("primary");
-    color: get-color("secondary");
+    color: get-color("on-secondary");
 }

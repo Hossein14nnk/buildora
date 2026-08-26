@@ -1,0 +1,7 @@
+@use "../../../views/base/dims" as *;
+@use 'sass:map';
+
+@function get-icon-size($icon-size){
+    $sizes: map.get($conf-icon, "sizes");
+    @return map.get($sizes, $icon-size);
+}
