@@ -1,0 +1,12 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_dims" as *;
+@use "../../../base/_commons" as *;
+
+
+.horizontal-divider {
+    width: 70px;
+    height: 2px;
+    background-color: get-color("primary");
+}

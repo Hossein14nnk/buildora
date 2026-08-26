@@ -4,12 +4,12 @@
 @use "../../../../base/_commons" as *;
 
 .hero-title {
-    font-size: get-font-size("title");
     text-transform: capitalize;
     color: get-color("on-secondary");
     font-weight: get-font-weight("bold");
 }
 
 .hero-title .highlight {
+    font-size: get-font-size("display");
     color: get-color("primary");
 }

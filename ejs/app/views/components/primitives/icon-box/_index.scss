@@ -1,0 +1,13 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_dims" as *;
+@use "../../../base/_commons" as *;
+
+.icon-box {
+    font-size: get-icon-size("md");
+    padding: 0.5rem;
+    color: get-color("on-primary");
+    background-color: get-color("specific");
+    border-radius: get-size-value($border-radius, "full");
+}

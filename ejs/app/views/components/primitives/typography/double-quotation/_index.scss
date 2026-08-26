@@ -3,8 +3,6 @@
 @use "../../../../../system/sass/global-functions/_colors" as *;
 @use "../../../../base/_commons" as *;
 
-.eyebrow {
-    text-transform: uppercase;
+.double-quotation {
     color: get-color("primary");
-    font-weight: get-font-weight("bold");
 }

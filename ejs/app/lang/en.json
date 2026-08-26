@@ -23,6 +23,7 @@
 		"learnMore": {
 			"text": "learn more"
 		},
+<<<<<<< HEAD
 		"composities": {
 			"sectionCard":{
 				"uptitle": "Be Part Of Team",
@@ -59,6 +60,14 @@
 				"number1": "01",
 				"title1": "Discover",
 				"description1": "Understanding client goals and project requirements."
+=======
+		"label": {
+			"primary": {
+				"text": "learn more"
+			},
+			"secondary": {
+				"text": "learn more"
+>>>>>>> b9795ff7c3adac7437dcc338a82b0eae225b5a35
 			}
 		}
 	},
