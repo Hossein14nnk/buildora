@@ -363,4 +363,111 @@ a {
   visibility: visible;
 }
 
+.breadcrumb {
+  display: block;
+  width: 100%;
+}
+.breadcrumb .breadcrumb-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+.breadcrumb .breadcrumb-list .breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+.breadcrumb .breadcrumb-list .breadcrumb-item i {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--secondary);
+  font-size: 1rem;
+}
+.breadcrumb .breadcrumb-list .breadcrumb-item a {
+  transition: 200ms linear;
+  color: var(--secondary);
+  opacity: 0.6;
+}
+.breadcrumb .breadcrumb-list .breadcrumb-item a:hover {
+  opacity: 1;
+}
+.breadcrumb .breadcrumb-list .breadcrumb-item span {
+  color: var(--secondary);
+}
+.breadcrumb .breadcrumb-list .breadcrumb-item.active span {
+  opacity: 1;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.pagination .pagination-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pagination .pagination-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 64px;
+  padding: 0;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--on-primary);
+  border-radius: 10px;
+  background-color: var(--transparent);
+  color: var(--secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 200ms linear;
+}
+.pagination .pagination-button:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.pagination .pagination-button.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--on-primary);
+}
+.pagination .pagination-button:focus-visible {
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: var(--primary);
+  outline-offset: 2px;
+}
+.pagination .pagination-previous,
+.pagination .pagination-next {
+  font-size: 1rem;
+}
+.pagination .pagination-previous i,
+.pagination .pagination-next i {
+  transition: 200ms linear;
+}
+.pagination .pagination-previous:hover i,
+.pagination .pagination-next:hover i {
+  transform: translateX(2px);
+}
+.pagination .pagination-ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 64px;
+  color: var(--secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  user-select: none;
+}
+
 /*# sourceMappingURL=style.min.css.map */

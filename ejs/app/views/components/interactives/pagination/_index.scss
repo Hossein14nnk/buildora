@@ -1,0 +1,94 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    .pagination-list {
+        display: flex;
+        align-items: center;
+
+        gap: get-space(2);
+    }
+
+    .pagination-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 68px;
+        height: 64px;
+
+        padding: 0;
+
+        cursor: pointer;
+
+        border-style: solid;
+        border-width: $common-border-width;
+        border-color: get-color("on-primary");
+
+        border-radius: $common-border-radius;
+
+        background-color: get-color("transparent");
+        color: get-color("secondary");
+
+        font-size: get-font-size("body");
+        font-weight: 600;
+
+        transition: $common-transition;
+
+        &:hover {
+            border-color: get-color("primary");
+            color: get-color("primary");
+        }
+
+        &.active {
+            background-color: get-color("primary");
+            border-color: get-color("primary");
+
+            color: get-color("on-primary");
+        }
+
+        &:focus-visible {
+            outline-style: solid;
+            outline-width: $common-border-width;
+            outline-color: get-color("primary");
+            outline-offset: 2px;
+        }
+    }
+
+    .pagination-previous,
+    .pagination-next {
+        font-size: get-font-size("body");
+
+        i {
+            transition: $common-transition;
+        }
+
+        &:hover i {
+            transform: translateX(2px);
+        }
+    }
+
+    .pagination-ellipsis {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 32px;
+        height: 64px;
+
+        color: get-color("secondary");
+
+        font-size: get-font-size("body");
+        font-weight: 600;
+
+        user-select: none;
+    }
+}
