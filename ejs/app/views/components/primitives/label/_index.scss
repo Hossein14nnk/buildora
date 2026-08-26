@@ -1,0 +1,27 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_dims" as *;
+@use "../../../base/_commons" as *;
+
+
+[class*="label-"] {
+    border-radius: get-size-value($border-radius, "xs");
+    padding-block: get-space(1);
+    padding-inline: get-space(2);
+    font-weight: get-font-weight("semi-bold");
+}
+
+/* label primary */
+
+.label-primary {
+    background-color: get-color("primary");
+    color: get-color("on-primary");
+}
+
+/* label secondary */
+
+.label-secondary {
+    background-color: get-color("on-secondary");
+    color: get-color("secondary");
+}

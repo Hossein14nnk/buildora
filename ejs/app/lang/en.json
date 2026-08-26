@@ -22,6 +22,14 @@
 		},
 		"learnMore": {
 			"text": "learn more"
+		},
+		"label": {
+			"primary": {
+				"text": "learn more"
+			},
+			"secondary": {
+				"text": "learn more"
+			}
 		}
 	},
 	"pages": {

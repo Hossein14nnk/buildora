@@ -1,0 +1,9 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "link-box"}); -%>
+
+<div class="bg-on-primary-color w-100 h-100 d-grid grid-3 gap-4">
+    <%- include('./content.ejs', {
+        link: navigation(lang, "home-one")
+    }); -%>
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>
