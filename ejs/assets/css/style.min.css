@@ -1,12 +1,11 @@
-/* Error: Can't find stylesheet to import.
+/* Error: expected "$".
  *   ,
- * 1 | @forward "nav-item";
- *   | ^^^^^^^^^^^^^^^^^^^
+ * 9 | @for
+ *   |     ^
  *   '
- *   app\views\components\composites\topics-pattern\_index.scss 1:1  @forward
- *   app\views\components\composites\_index.scss 8:1                 @forward
- *   app\views\components\_index.scss 3:1                            @forward
- *   app\views\style.scss 6:1                                        root stylesheet */
+ *   app\views\components\composites\_index.scss 9:5  @forward
+ *   app\views\components\_index.scss 3:1             @forward
+ *   app\views\style.scss 6:1                         root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -16,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @forward \"nav-item\";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   app\\views\\components\\composites\\topics-pattern\\_index.scss 1:1  @forward\a   app\\views\\components\\composites\\_index.scss 8:1                 @forward\a   app\\views\\components\\_index.scss 3:1                            @forward\a   app\\views\\style.scss 6:1                                        root stylesheet";
+  content: 'Error: expected "$".\a   \2577 \a 9 \2502  @for\d\a   \2502      ^\a   \2575 \a   app\\views\\components\\composites\\_index.scss 9:5  @forward\a   app\\views\\components\\_index.scss 3:1             @forward\a   app\\views\\style.scss 6:1                         root stylesheet';
 }
