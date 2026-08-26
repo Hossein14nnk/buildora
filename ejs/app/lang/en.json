@@ -23,7 +23,14 @@
 		"learnMore": {
 			"text": "learn more"
 		},
-<<<<<<< HEAD
+		"label": {
+			"primary": {
+				"text": "learn more"
+			},
+			"secondary": {
+				"text": "learn more"
+			}
+		},
 		"composities": {
 			"sectionCard":{
 				"uptitle": "Be Part Of Team",
@@ -60,14 +67,44 @@
 				"number1": "01",
 				"title1": "Discover",
 				"description1": "Understanding client goals and project requirements."
-=======
-		"label": {
-			"primary": {
-				"text": "learn more"
 			},
-			"secondary": {
-				"text": "learn more"
->>>>>>> b9795ff7c3adac7437dcc338a82b0eae225b5a35
+			"formPattern" :{
+				"text": {
+					"placeHolder": "Enter your full name",
+					"label": "Full Name"
+				},
+				"textArea": {
+					"placeHolder": "tell us about your project",
+					"label": "message"
+				},
+				"selector" : {
+					"label": "Subject",
+					"option1": "Select a subject",
+					"option2": "Construction",
+					"option3": "Interior",
+					"option4": "Consulting"
+				}
+			},
+			"subscribe": {
+				"title": "subscribe to our news letter",
+				"description": "get the latest updates, insights, and news delivered to your inbox.",
+				"placeHolder": "enter your email",
+				"btn": "subscribe now"
+			},
+			"callBanner": {
+				"btn": "get a free quote",
+				"uptitle": "Have a similar project?",
+				"title": "Let's Build It Together"
+			},
+			"levelProcess": {
+				"number1": "01",
+				"title1": "1998 Company Founded",
+				"description1": "Buildora Construction was established with a vision for excellence."
+			},
+			"features": {
+				"title": "Expert Team",
+				"description": "Skilled professionals dedicated to excellence.",
+				"alt": "feature's picture"
 			}
 		}
 	},
@@ -85,4 +122,5 @@
 			}
 		}
 	}
+
 }

@@ -1,0 +1,12 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+
+
+
+
+.section-topic .line {
+    width: 50px;
+    height: 2px;
+}

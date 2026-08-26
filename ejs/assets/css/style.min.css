@@ -556,18 +556,28 @@ h1 {
   width: 20px;
 }
 
-.description {
-  font-size: 0.875rem;
-  text-transform: capitalize;
-  color: var(--text);
-  font-weight: 400;
+.level-process .line-box > .little-line {
+  height: 2px;
 }
 
-.description-secondary {
-  font-size: 0.875rem;
-  text-transform: capitalize;
-  color: var(--on-secondary);
-  font-weight: 400;
+.level-process .line-box > .long-line {
+  height: 2px;
+}
+
+.features .line {
+  width: 40px;
+  height: 2px;
+  background-image: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
+}
+
+.how-work .line {
+  width: 50px;
+  height: 2px;
+}
+
+.section-topic .line {
+  width: 50px;
+  height: 2px;
 }
 
 /*# sourceMappingURL=style.min.css.map */
