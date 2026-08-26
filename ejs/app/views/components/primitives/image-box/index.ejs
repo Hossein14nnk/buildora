@@ -1,0 +1,10 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "image-box"}); -%>
+
+<div class="bg-on-primary-color w-100 h-100 d-grid grid-12 gap-4">
+    <%- include('./content.ejs', {
+        image: getMedia(lang, "demo1/vector1.png", "images"),
+        alt: "image"
+    }); -%>
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>
