@@ -423,4 +423,24 @@ a {
   visibility: visible;
 }
 
+.approach .solid-line {
+  width: 50px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: var(--primary);
+}
+
+.approach .circle i {
+  width: 50px;
+  aspect-ratio: 1;
+}
+
+.approach .vertical-dot-line {
+  height: 50px;
+}
+
+.approach .horizonral-dot-line {
+  width: 20px;
+}
+
 /*# sourceMappingURL=style.min.css.map */

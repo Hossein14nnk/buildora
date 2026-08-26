@@ -48,6 +48,17 @@
 				"alt": "service picture",
 				"title": "Sustainable Design",
 				"description": "Built with eco-friendly materials and energy-efficient systems"
+			},
+			"nextServices": {
+				"title": "next project",
+				"alt": "project's picture",
+				"project": "urban retail center"
+			},
+			"approach": {
+				"cardName": "Our Approach",
+				"number1": "01",
+				"title1": "Discover",
+				"description1": "Understanding client goals and project requirements."
 			}
 		}
 	},
