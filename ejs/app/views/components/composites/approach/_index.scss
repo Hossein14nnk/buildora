@@ -3,24 +3,10 @@
 @use "../../../../system/sass/global-functions/_colors" as *;
 @use "../../../base/_commons" as *;
 
-
-
-.approach .solid-line {
-    width: 50px;
-    height: 2px;
-    border-radius: 10px;
-    background-color: var(--primary);
-}
-
-.approach .circle i {
-    width: 50px;
-    aspect-ratio: 1;
-}
-
 .approach .vertical-dot-line {
     height: 50px;
 }
 
-.approach .horizonral-dot-line {
+.approach .horizontal-dot-line {
     width: 20px;
 }

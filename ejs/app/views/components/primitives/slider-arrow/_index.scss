@@ -9,7 +9,7 @@
     width: fit-content;
     height: fit-content;
     font-size: get-icon-size("md");
-    border-width: $common-border-width;
+    border-width: $common-bw;
     border-color: get-color("primary");
     border-style: solid;
     background-color: color-mix(in srgb, get-color("primary") 30%, transparent 100%);

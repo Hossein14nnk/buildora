@@ -9,11 +9,11 @@
 .link-box {
     width: fit-content;
     height: fit-content;
-    border-width: $common-border-width;
+    border-width: $common-bw;
     border-color: get-color("primary");
     border-style: solid;
     background-color: color-mix(in srgb, get-color("primary") 30%, transparent 100%);
-    border-radius: $common-border-radius;
+    border-radius: $common-radius;
     padding-inline: get-space(4);
     padding-block: get-space(4);
     

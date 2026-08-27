@@ -31,14 +31,14 @@
 				"text": "learn more"
 			}
 		},
-		"composities": {
+		"composites": {
 			"sectionCard":{
-				"uptitle": "Be Part Of Team",
+				"upTitle": "Be Part Of Team",
 				"title": "Build Your Career With Us",
 				"subtitle": "We're are always looking for talented and pasionate individuals",
 				"btn": "veiw open positions"
 			},
-			"logoStracture": {
+			"logoStructure": {
 				"siteName": "buildora",
 				"subtitle": "construction",
 				"logoAlt" : "logo"
@@ -50,7 +50,7 @@
 			"briefNews":{
 				"alt": "article picture",
 				"title": "10 construction treands shaping the future",
-				"date": "may,12,2026"
+				"date": "may 12, 2026"
 			},
 			"servicesCard":{
 				"alt": "service picture",
@@ -93,7 +93,7 @@
 			},
 			"callBanner": {
 				"btn": "get a free quote",
-				"uptitle": "Have a similar project?",
+				"upTitle": "Have a similar project?",
 				"title": "Let's Build It Together"
 			},
 			"levelProcess": {

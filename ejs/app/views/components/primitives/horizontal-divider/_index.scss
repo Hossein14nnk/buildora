@@ -7,6 +7,6 @@
 
 .horizontal-divider {
     width: 70px;
-    height: 2px;
-    background-color: get-color("primary");
+    border-color: get-color("primary");
+    border-width: $common-bw;
 }

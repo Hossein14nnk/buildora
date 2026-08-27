@@ -2,21 +2,21 @@
 @use "../../system/sass/global-functions/_commons" as *;
 @use "_dims" as *;
 
-$common-border-radius: get-size-value($border-radius, "md");
-$common-elevation: get-size-value($conf-elevation, "md");
-$common-border-width: 1px;
-$common-gap: space(1);
-$common-title: get-font-size("title");
-$common-paragraph: get-font-size("body");
-$common-icon: get-icon("md");
-$common-list-gap: space(1);
+$common-radius: get-size-value($border-radius, "sm"); // _dims.scss
+$common-elevation: get-size-value($conf-elevation, "md"); // _dims.scss
+$common-bw: 1px; // _dims.scss
+$common-grid-gap: space(1); // _responsive.scss
+$common-title: get-font-size("title"); // _typography.scss
+$common-paragraph: get-font-size("body"); // _typography.scss
+$common-icon: get-icon("md"); // _dims.scss
+$common-list-gap: space(1); // _responsive.scss
 $common-transition: 200ms linear;
 
-$common-variables: (
-    border-radius: $common-border-radius,
+$conf-commons: (
+    radius: $common-radius,
     elevation: $common-elevation,
-    border-width: $common-border-width,
-    gap: $common-gap,
+    bw: $common-bw,
+    grid-gap: $common-grid-gap,
     title: $common-title,
     paragraph: $common-paragraph,
     icon: $common-icon,
