@@ -43,9 +43,10 @@
 				"subtitle": "construction",
 				"logoAlt" : "logo"
 			},
-			"counter": {
+			"counterBox": {
 				"number": "+25",
-				"text": "experiment"
+				"text": "experiment",
+				"alt": "counter picture"
 			},
 			"briefNews":{
 				"alt": "article picture",
@@ -62,14 +63,14 @@
 				"alt": "project's picture",
 				"project": "urban retail center"
 			},
-			"approach": {
+			"approachItem": {
 				"cardName": "Our Approach",
 				"number1": "01",
 				"title1": "Discover",
 				"description1": "Understanding client goals and project requirements."
 			},
 			"formPattern" :{
-				"text": {
+				"textType": {
 					"placeHolder": "Enter your full name",
 					"label": "Full Name"
 				},
@@ -105,7 +106,8 @@
 				"title": "Expert Team",
 				"description": "Skilled professionals dedicated to excellence.",
 				"alt": "feature's picture"
-			}
+			},
+			"date": "may 12, 2026"
 		}
 	},
 	"pages": {

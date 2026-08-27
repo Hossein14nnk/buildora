@@ -534,12 +534,16 @@ h1 {
   visibility: visible;
 }
 
-.approach .vertical-dot-line {
+.approach-item .vertical-dot-line {
   height: 50px;
 }
 
-.approach .horizontal-dot-line {
+.approach-item .horizontal-dot-line {
   width: 20px;
+}
+
+textarea {
+  resize: vertical;
 }
 
 .level-process .line-box > .little-line {
@@ -550,15 +554,10 @@ h1 {
   height: 2px;
 }
 
-.features .line {
+.feature-item .line {
   width: 40px;
   height: 2px;
   background-image: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
-}
-
-.how-work .line {
-  width: 50px;
-  height: 2px;
 }
 
 .section-topic .line {

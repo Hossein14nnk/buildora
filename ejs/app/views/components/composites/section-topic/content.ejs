@@ -1,27 +1,30 @@
-<!-- start section-topic -->
+<!-- ================== SECTION-TOPIC ================== -->
 
-    <div class="section-topic d-flex flex-column gap-6">
+    <div class="section-topic div gap-6">
 
         <div class="gap-3 d-flex description-secondary">
-            <a href="<%= getMedia(lang, 'demo1/building1.png', 'images') %>" class="text-decoration-none primary-color">Home</a>
-            <span class="">></span>
-            <a href="<%= getMedia(lang, 'demo1/building1.png', 'images') %>" class="text-decoration-none primary-color">Project</a>
-            <span class="">></span>
-            <span class="">Construction</span>
+            <a href="<%= link1 %>" class="text-decoration-none primary-color">
+                <span>Home</span>
+            </a>
+            <span>></span>
+            <a href="<%= link2 %>" class="text-decoration-none primary-color">
+                <span>Project</span>
+            </a>
+            <span>></span>
+            <span>Construction</span>
         </div>
 
-        <span class="eyebrow"><%= t.components.eyebrow.text %></span>
+        <span class="eyebrow"><%= uptitle %></span>
 
         <h1 class="hero-title">
-            <%= t.components.sectionTitle.text %>
-            <span class="highlight">t.components.title.highlight</span>
+            <%= firstPartTitle %>
+            <span class="highlight"><%= secondPartTitle %></span>
         </h1>
 
-        <div class="line bg-primary-color radius-all-md mb-2"></div>
+        <hr class="horizontal-divider">
 
-        <p class="description-secondary"><%= t.components.description.text %></p>
+        <p class="description-secondary"><%= text %></p>
         
     </div>
 
-
-<!-- end section-topic -->
+<!-- ================== END SECTION-TOPIC ================== -->

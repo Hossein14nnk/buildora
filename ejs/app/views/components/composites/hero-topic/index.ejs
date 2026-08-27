@@ -1,7 +1,14 @@
 <%- include('../../../layouts/component/head.ejs', {pageName: "hero-topic"}); -%>
 
-<div class="d-flex align-items-center gap-4 justify-content-cente w-100 h-100 bg-secondary-color ">
-    <%- include('./content.ejs'); -%>
+<div class="d-flex align-items-center gap-4 justify-content-cente w-100 h-100 bg-secondary-color w-100 he-100">
+    <%- include('./content.ejs',
+    {
+        uptitle: t.components.eyebrow.text,
+        firstPartTitle: t.components.sectionTitle.text,
+        secondPartTitle: t.components.title.highlight,
+        text: t.components.description.text
+
+    }); -%>
 </div>
 
 <%- include('../../../layouts/component/foot.ejs'); -%>
