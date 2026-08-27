@@ -1,23 +1,35 @@
-<h6 class="fw-bold on-primary-color">CONTACT INFO</h6>
+<!-- start contact info -->
 
-<ul class="list-unstyled d-flex flex-column gap-2">
-    <li class="d-flex gap-2 align-items-baseline w-fit-content">
-        <i class="fa-solid fa-location text-primary"></i>
-        <div class="d-flex flex-column justify-content-start">
-            <span class="">123 Construction Ave,</span>
-            <span class="">New York, NY 10001, USA</span>
-        </div>
-    </li>
-    <li class="d-flex gap-2 align-items-baseline w-fit-content">
-        <i class="fa-solid fa-light fa-phone text-primary"></i>
-        <span class="number">+1 212 555 7890</span>
-    </li>
-    <li class="d-flex gap-2 align-items-baseline w-fit-content">
-        <i class="fa-solid fa-envelope text-primary"></i>
-        <span class="">info@Buildora.com</span>
-    </li>
-    <li class="d-flex gap-2 align-items-baseline w-fit-content">
-        <i class="fa-solid fa-clock text-primary"></i>
-        <span class="">Mon – Sat: 8:00 AM – 6:00 PM</span>
-    </li>
-</ul>
+<div class="contact-info">
+
+    <h6 class="fw-bold on-secondary-color mb-5">
+        <%= title %>
+    </h6>
+
+    <ul class="list-unstyled d-flex flex-column gap-2">
+
+        <% for (let item of items) { %>
+
+            <li class="d-flex gap-2 align-items-baseline w-fit-content">
+
+                <i class="<%= item.icon %> primary-color"></i>
+
+                <div class="d-flex flex-column justify-content-start <%= item.class || '' %>">
+
+                    <% for (let text of item.content) { %>
+                        <span class="on-secondary-color">
+                            <%= text %>
+                        </span>
+                    <% } %>
+
+                </div>
+
+            </li>
+
+        <% } %>
+
+    </ul>
+
+</div>
+
+<!-- end contact info -->

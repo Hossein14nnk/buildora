@@ -1,0 +1,17 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "service-list"}); -%>
+
+<div class="bg-color w-100 h-100 d-flex align-items-center justify-content-center p-8">
+	<div class="w-40">
+		<%- include('./content.ejs', {
+			title: "Our Services",
+			items: {
+				label : "Construction",
+				date : "May 12, 2024",
+				title : "10 Construction Trends Shaping the Future",
+				image : "10 Construction Trends Shaping the Future",
+			}
+		}); -%>
+	</div>
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>

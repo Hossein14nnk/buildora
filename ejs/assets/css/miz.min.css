@@ -815,6 +815,10 @@ html {
   background-color: var(--white);
 }
 
+.danger-regular-color {
+  color: var(--danger-regular);
+}
+
 .bg-danger-regular-color {
   background-color: var(--danger-regular);
 }

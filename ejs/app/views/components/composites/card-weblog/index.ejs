@@ -1,0 +1,14 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "counter"}); -%>
+
+<div class="d-grid grid-4 gap-4">
+    <%- include('./content.ejs', {
+        image: getMedia(lang, "demo1/building1.png", "images"),
+        alt: "person1",
+        title: "James Anderson",
+        description: "Learn how proper planning, scheduling, and resource management lead to successful project delivery.",
+        readMoreLink: navigation(lang, "home-one"),
+        date: t.components.composites.weblogCard.date
+    }); -%>
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>

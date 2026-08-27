@@ -1,9 +1,36 @@
-<%- include('../../../layouts/component/head.ejs', {pageName: "content info"}); -%>
+<%- include('../../../layouts/component/head.ejs', {pageName: "contact-info"}); -%>
 
-<div class="bg-on-primary-color w-100 h-100 d-flex flex-column align-items-center justify-content-center gap-4">
+<div class="bg-on-primary-color w-100 h-100 d-flex align-items-center justify-content-center">
     <%- include('./content.ejs', {
-        link: navigation(lang, "ar-project"),
-        title: t.components.btn.title
+        title: "CONTACT INFO",
+        items: [
+            {
+                icon: "fa-solid fa-location",
+                content: [
+                    "123 Construction Ave,",
+                    "New York, NY 10001, USA"
+                ]
+            },
+            {
+                icon: "fa-solid fa-light fa-phone",
+                content: [
+                    "+1 212 555 7890"
+                ],
+                class: "number"
+            },
+            {
+                icon: "fa-solid fa-envelope",
+                content: [
+                    "info@Buildora.com"
+                ]
+            },
+            {
+                icon: "fa-solid fa-clock",
+                content: [
+                    "Mon – Sat: 8:00 AM – 6:00 PM"
+                ]
+            }
+        ]
     }); -%>
 </div>
 
