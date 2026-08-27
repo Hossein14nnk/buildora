@@ -1,0 +1,267 @@
+<%- include('../layouts/page/head.ejs' , {title: "st-blog", addCount: 0}); -%>
+    <main id="st-blog" class="d-flex flex-column">
+        <section id="st-blog-hero" class="conainer-fluid bg-on-secondary d-flex align-items-center pt-20">
+            <div class="container d-flex gap-6 flex-column">
+
+                <div class="small ">
+                    <a href="<%= navigation(lang, 'home-one.html') %>" class="text-decoration-none mt-2"><%- t.pages.stBlog.breadcromp1 %></a>
+
+                    <span class="text-secondary">></span>
+
+                    <a class="text-decoration-none "><%- t.pages.stBlog.breadcromp2 %></a>
+                    <span class="text-secondary">></span>
+
+                    <span class="text-secondary"><%- t.pages.stBlog.breadcromp3 %></span>
+                </div>
+                <span class="text-primary fw-bold fs-normal"><%- t.pages.stBlog.heroSubtitle %></span>
+                <h1 class="text-light fw-bold fs-big-title"><%- t.pages.stBlog.heroTitle1 %>
+                    <br><span class="text-primary"><%- t.pages.stBlog.heroTitle2 %></span>
+                </h1>
+                <div class="border-bottom border-primary border-3" style="width:50px"></div>
+                
+            </div>
+        </section>
+        <section id="descriotion-blog" class="container-fluid">
+            <div class="container">
+                <div class="row gx-xl-5 gx-0 gy-5 align-items-xxl-stretch align-items-xl-stretch align-items-center">
+                    <div class="col-12 col-xl-9 g-2 m-0 pe-xl-10">
+
+                        <div class="d-flex flex-column gap-6 align-items-start  h-100">
+                            <span class="fs-small bg-primary rounded-1 p-2 text-button-text fw-bold">
+                                <%- t.pages.stBlog.btnsectiontwo %></span>
+                            <h2 class="fs-mid-title fw-bold text-title-text">
+                                <%- t.pages.stBlog.sectiontwoTitle %>
+                            </h2>
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="d-flex align-items-center gap-2 fs-normal">
+                                    <i class="fa-solid fa-calendar text-text primary-hover transition-150"></i>
+                                    <span class="text-text fs-normal"> <%- t.pages.stBlog.date %></span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 fs-normal ">
+                                    <i class="fa-solid fa-user text-text primary-hover transition-150"></i>
+                                    <span class="text-text fs-normal"><%- t.pages.stBlog.admin %></span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 fs-normal">
+                                    <i class="fa-solid fa-comments text-text primary-hover transition-150"></i>
+                                    <span class="text-text fs-normal"><%- t.pages.stBlog.comment %></span>
+                                </div>
+                            </div>
+                            <img src="<%= getMedia(lang, 'st-blog/thum4.jpg', 'images'); %>" alt=""
+                                class="w-100 rounded-2 image-blog">
+                            <div class="d-flex flex-column gap-2">
+                                <p class="text-text"><%- t.pages.stBlog.description1 %></p>
+                                <h3 class="fs-mid-title fw-bold text-title-text"><%- t.pages.stBlog.title1 %></h3>
+                                <p class="text-text"><%- t.pages.stBlog.description2 %></p>
+                                <h3 class="fs-mid-title fw-bold text-title-text"><%- t.pages.stBlog.title2 %>
+                                </h3>
+                                <p class="text-text"><%- t.pages.stBlog.description3 %></p>
+                                <h3 class="fs-mid-title fw-bold text-title-text"><%- t.pages.stBlog.title3 %></h3>
+                                <p class="text-text"><%- t.pages.stBlog.description4 %></p>
+                                <p class="text-text"><%- t.pages.stBlog.description5 %>
+                                </p>
+                            </div>
+                            <div class="bg-primary-light d-flex align-items-center p-5 gap-3 rounded-1 w-100">
+                                <i class="fa-solid fa-quote-left fs-high-title text-primary"></i>
+                                <span class="fs-title fw-bold text-title-text">
+                                    <%- t.pages.stBlog.point %>
+                                </span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="fs-title fw-bold text-title-text"><%- t.pages.stBlog.share %></span>
+                                <div class="social d-flex gap-3 mt-2">
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal primary-hover transition-150"></i>
+                                    <i class="fa-brands fa-twitter bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal primary-hover transition-150"></i>
+                                    <i class="fa-brands fa-facebook-f bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal primary-hover transition-150"></i>
+                                    <i class="fa-brands fa-instagram bg-secondary rounded-circle p-1 d-flex align-items-center justify-content-center fs-normal primary-hover transition-150"></i>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="fs-title fw-bold text-title-text"><%- t.pages.stBlog.tag %></span>
+                                <div class="d-flex flex-wrap gap-4">
+                                    <span class="fs-normal border rounded-1 p-2 text-button-text">
+                                        <%- t.pages.stBlog.filter1 %></span>
+                                    <span class="fs-normal border rounded-1 p-2 text-button-text">
+                                        <%- t.pages.stBlog.filter2 %></span>
+                                    <span class="fs-normal border rounded-1 p-2 text-button-text">
+                                        <%- t.pages.stBlog.filter3 %></span>
+                                    <span class="fs-normal border rounded-1 p-2 text-button-text">
+                                        <%- t.pages.stBlog.filter4 %></span>
+                                    <span class="fs-normal border rounded-1 p-2 text-button-text">
+                                        <%- t.pages.stBlog.filter5 %></span>
+                                </div>
+
+                            </div>
+                            <div class="d-flex w-100">
+                                <div class="d-flex flex-column align-items-start w-50 border p-2 justify-content-center">
+                                    <div>
+                                        <i class="fas fa-arrow-left-long"></i>
+                                        <span class="fs-title fw-bold text-title-text text-start"><%- t.pages.stBlog.previus %></span>
+                                    </div>
+                                    <p class="fs-subtitle fw-bold text-title-text text-start"><%- t.pages.stBlog.previusDescription1 %><br> <%- t.pages.stBlog.previusDescription2 %></p>
+                                </div>
+                                <div class="d-flex flex-column align-items-end w-50 border p-2 justify-content-center">
+                                    <div>
+                                        <span class="fs-title fw-bold text-title-text text-end"><%- t.pages.stBlog.next %></span>
+                                        <i class="fas fa-arrow-right-long"></i>
+                                    </div>
+                                    <p class="fs-subtitle fw-bold text-title-text text-end"><%- t.pages.stBlog.nextDescription1 %> <br>
+                                       <%- t.pages.stBlog.nextDescription2 %></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-3 m-0 pt-5 pt-xl-0">
+                        <div class="d-flex flex-column gap-5 justify-content-between h-100">
+                            <div class="w-100 d-flex flex-row justify-content-between bg-white rounded-2 p-3">
+                                <input type="text" placeholder="<%- t.pages.stBlog.searchpalceholder %>">
+                                <button>
+                                    <i class="fa-light fa-search fs-normal p-2 bg-primary rounded-1"></i>
+                                </button>
+                            </div>
+                            <div class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
+
+                                <h4 class="fw-bold fs-title"><%- t.pages.stBlog.Categories %></h4>
+
+                                <div class="border-bottom border-primary border-3" style="width:50px"></div>
+
+                                <ul class="list-group d-flex flex-column gap-3">
+
+                                    <li class="rounded">
+                                        <a class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
+                                            <%- t.pages.stBlog.category1 %>
+                                            <span class="number bg-background">(8)</span>
+                                        </a>
+                                    </li>
+                                    <li class="rounded">
+                                        <a class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
+                                           <%- t.pages.stBlog.category2 %>
+                                            <span class="number bg-background">(5)</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="rounded ">
+                                        <a class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
+                                           <%- t.pages.stBlog.category3 %>
+                                            <span class="number bg-background">(4)</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="rounded">
+                                        <a class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
+                                           <%- t.pages.stBlog.category4 %>
+                                            <span class="number bg-background">(8)</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="rounded">
+                                        <a class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
+                                            <%- t.pages.stBlog.category5 %>
+                                            <span class="number bg-background">(3)</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="rounded">
+                                        <a class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
+                                            <%- t.pages.stBlog.category6 %>
+                                            <span class="number bg-background">(2)</span>
+                                        </a>
+                                    </li>
+                                    <li class="rounded">
+                                        <a class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
+                                            <%- t.pages.stBlog.category7 %>
+                                            <span class="number bg-background">(1)</span>
+                                        </a>
+                                    </li>
+                                    <li class="rounded">
+                                        <a class="d-flex justify-content-between align-items-center text-dark primary-hover transition-150">
+                                            <%- t.pages.stBlog.category8 %>
+                                            <span class="number bg-background">(1)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="card-body px-4 py-8 order-0 shadow-sm rounded-2 d-flex flex-column gap-4 bg-white">
+                                <h4 class="fw-bold fs-title"><%- t.pages.stBlog.PopularBlog %></h4>
+                                <div class="border-bottom border-primary border-3" style="width:50px"></div>
+                                <div class="d-flex flex-column gap-5">
+                                    <div class="pooular-post d-flex align-items-center gap-3">
+                                        <div class="image-post"> 
+                                            <img src="<%= getMedia(lang, 'st-blog/news.jpg', 'images'); %> "
+                                            alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a  class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0"><%- t.pages.stBlog.blog1 %></h6>
+                                            <div class="d-flex align-items-center gap-2 fs-normal">
+                                                <i class="fa-solid fa-calendar text-primary"></i>
+                                                <span class="text-text fs-normal"> <%- t.pages.stBlog.date1 %></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pooular-post d-flex align-items-center gap-3">
+                                        <div class="image-post"> 
+                                            <img src="<%= getMedia(lang, 'st-blog/projects.jpg', 'images'); %>"
+                                            alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0"><%- t.pages.stBlog.blog2 %></h6>
+                                            <div class="d-flex align-items-center gap-2 fs-normal">
+                                                <i class="fa-solid fa-calendar text-primary"></i>
+                                                <span class="text-text fs-normal"><%- t.pages.stBlog.date2 %></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pooular-post d-flex align-items-center gap-2">
+                                        <div class="image-post"> 
+                                            <img src="<%= getMedia(lang, 'st-blog/building2.png', 'images'); %>"
+                                                alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0"><%- t.pages.stBlog.blog3 %></h6>
+                                            <div class="d-flex align-items-center gap-2 fs-normal">
+                                                <i class="fa-solid fa-calendar text-primary"></i>
+                                                <span class="text-text fs-normal"> <%- t.pages.stBlog.date3 %></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pooular-post d-flex align-items-center gap-2">
+                                        <div class="image-post"> 
+                                            <img src="<%= getMedia(lang, 'st-blog/building3.png', 'images'); %>"
+                                                alt="" class="rounded-1 object-fit-cover"> 
+                                            <i class="fa-solid fa-like"></i>
+                                        </div>
+                                        <a class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0"><%- t.pages.stBlog.blog4 %></h6>
+                                            <div class="d-flex align-items-center gap-2 fs-normal">
+                                                <i class="fa-solid fa-calendar text-primary"></i>
+                                                <span class="text-text fs-normal"> <%- t.pages.stBlog.date4 %></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pooular-post d-flex align-items-center gap-2">
+                                        <div class="image-post"> 
+                                            <img src="./assets/media/images/en/components/news.jpg"
+                                                alt="" class="rounded-1 object-fit-cover"> 
+                                        </div>
+                                        <a class="d-flex gap-2 flex-column">
+                                            <h6 class="fs-big fw-bold text-title-text mb-0"><%- t.pages.stBlog.blog5 %></h6>
+                                            <div class="d-flex align-items-center gap-2 fs-normal">
+                                                <i class="fa-solid fa-calendar text-primary"></i>
+                                                <span class="text-text fs-normal"><%- t.pages.stBlog.date5 %></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <%- include('../components/subscribe/content.ejs', {subscribe: t.components.subscribe}); -%>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+<%- include('../layouts/page/foot.ejs'); -%>

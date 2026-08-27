@@ -30,6 +30,82 @@
 			"secondary": {
 				"text": "learn more"
 			}
+		},
+		"composities": {
+			"sectionCard":{
+				"uptitle": "Be Part Of Team",
+				"title": "Build Your Career With Us",
+				"subtitle": "We're are always looking for talented and pasionate individuals",
+				"btn": "veiw open positions"
+			},
+			"logoStracture": {
+				"siteName": "buildora",
+				"subtitle": "construction",
+				"logoAlt" : "logo"
+			},
+			"counter": {
+				"number": "+25",
+				"text": "experiment"
+			},
+			"briefNews":{
+				"alt": "article picture",
+				"title": "10 construction treands shaping the future",
+				"date": "may,12,2026"
+			},
+			"servicesCard":{
+				"alt": "service picture",
+				"title": "Sustainable Design",
+				"description": "Built with eco-friendly materials and energy-efficient systems"
+			},
+			"nextServices": {
+				"title": "next project",
+				"alt": "project's picture",
+				"project": "urban retail center"
+			},
+			"approach": {
+				"cardName": "Our Approach",
+				"number1": "01",
+				"title1": "Discover",
+				"description1": "Understanding client goals and project requirements."
+			},
+			"formPattern" :{
+				"text": {
+					"placeHolder": "Enter your full name",
+					"label": "Full Name"
+				},
+				"textArea": {
+					"placeHolder": "tell us about your project",
+					"label": "message"
+				},
+				"selector" : {
+					"label": "Subject",
+					"option1": "Select a subject",
+					"option2": "Construction",
+					"option3": "Interior",
+					"option4": "Consulting"
+				}
+			},
+			"subscribe": {
+				"title": "subscribe to our news letter",
+				"description": "get the latest updates, insights, and news delivered to your inbox.",
+				"placeHolder": "enter your email",
+				"btn": "subscribe now"
+			},
+			"callBanner": {
+				"btn": "get a free quote",
+				"uptitle": "Have a similar project?",
+				"title": "Let's Build It Together"
+			},
+			"levelProcess": {
+				"number1": "01",
+				"title1": "1998 Company Founded",
+				"description1": "Buildora Construction was established with a vision for excellence."
+			},
+			"features": {
+				"title": "Expert Team",
+				"description": "Skilled professionals dedicated to excellence.",
+				"alt": "feature's picture"
+			}
 		}
 	},
 	"pages": {
@@ -46,4 +122,5 @@
 			}
 		}
 	}
+
 }
