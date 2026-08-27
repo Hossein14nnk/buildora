@@ -53,7 +53,7 @@
   /* common */
   --common-radius: 6px;
   --common-elevation: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --common-bw: 1px;
+  --common-bw: 2px;
   --common-grid-gap: space(1);
   --common-title: 2rem;
   --common-paragraph: 1rem;
