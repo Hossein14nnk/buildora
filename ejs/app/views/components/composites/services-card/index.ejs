@@ -1,7 +1,12 @@
 <%- include('../../../layouts/component/head.ejs', {pageName: "services-card"}); -%>
 
-<div class="d-flex align-items-center gap-4 justify-content-center w-100 h-100 bg-secondary-color">
-    <%- include('./content.ejs'); -%>
+<div class="d-grid grid-3 align-items-center gap-4 justify-content-center w-100 h-100 bg-secondary-color">
+    <%- include('./content.ejs',
+    {
+        image: getMedia(lang, 'demo1/vector1.png', 'images'),
+        title: t.components.composites.servicesCard.title,
+        text: t.components.composites.servicesCard.description
+    }); -%>
 </div>
 
 <%- include('../../../layouts/component/foot.ejs'); -%>

@@ -1,7 +1,12 @@
 <%- include('../../../layouts/component/head.ejs', {pageName: "next-services"}); -%>
 
-<div class="d-flex align-items-center gap-4 justify-content-center w-fit-content">
-    <%- include('./content.ejs'); -%>
+<div class="d-flex align-items-center gap-4 justify-content-center w-100 h-100 ">
+    <%- include('./content.ejs',
+    {
+        link: navigation(lang, 'st-project'),
+        image: getMedia(lang, 'demo1/building1.png', 'images'),
+        title: t.components.composites.nextServices.title
+    }); -%>
 </div>
 
 <%- include('../../../layouts/component/foot.ejs'); -%>
