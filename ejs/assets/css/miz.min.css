@@ -412,7 +412,7 @@ footer.section > .container.wide {
 }
 
 .common-bw {
-  border-width: 1px;
+  border-width: 2px;
 }
 
 .common-grid-gap {
@@ -4815,27 +4815,27 @@ html {
 }
 
 .icon-size-xs {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .icon-size-sm {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .icon-size-md {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .icon-size-lg {
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .icon-size-xl {
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .icon-size-xxl {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .image-xs {
@@ -4866,6 +4866,11 @@ html {
 .image-xxl {
   width: 150px;
   height: 150px;
+}
+
+.image-4xl {
+  width: 351px;
+  height: 351px;
 }
 
 @media screen and (width >= 576px) {

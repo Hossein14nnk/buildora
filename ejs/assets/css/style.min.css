@@ -353,11 +353,13 @@ h1 {
 }
 
 .icon-box {
-  font-size: get-icon-size("md");
+  font-size: 20px;
   padding: 0.5rem;
   color: var(--on-primary);
   background-color: var(--specific);
   border-radius: 9999px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
 }
 
 [class*=label-] {
@@ -383,6 +385,7 @@ h1 {
   width: 70px;
   border-color: var(--primary);
   border-width: 2px;
+  border-style: solid;
 }
 
 .dropdown {

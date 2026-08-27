@@ -105,6 +105,11 @@
 				"title": "Expert Team",
 				"description": "Skilled professionals dedicated to excellence.",
 				"alt": "feature's picture"
+			},
+			"weblogCard":{
+				"alt": "article picture",
+				"title": "10 construction treands shaping the future",
+				"date": "may 12, 2026"
 			}
 		}
 	},
