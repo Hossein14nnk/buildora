@@ -3,3 +3,6 @@
 @use "../../../../../system/sass/global-functions/_colors" as *;
 @use "../../../../base/_commons" as *;
 
+textarea {
+  resize: vertical;
+}

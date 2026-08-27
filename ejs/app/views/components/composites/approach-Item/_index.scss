@@ -3,10 +3,10 @@
 @use "../../../../system/sass/global-functions/_colors" as *;
 @use "../../../base/_commons" as *;
 
+.approach-item .vertical-dot-line {
+    height: 50px;
+}
 
-
-.features .line {
-  width: 40px;
-  height: 2px;
-  background-image: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
+.approach-item .horizontal-dot-line {
+    width: 20px;
 }

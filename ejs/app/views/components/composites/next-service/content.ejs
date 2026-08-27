@@ -1,20 +1,25 @@
 <!-- start services-card -->
 
-    <div class="next-services d-flex align-items-center gap-6 p-2">
-        <div class="image-box">
-            <img src="<%= getMedia(lang, 'demo1/building1.png', 'images') %>" alt="<%= t.components.composites.nextServices.alt %>">
-        </div>
+    <div class="next-services p-2">
+        <a href="navigation(lang, 'st-project')" class="d-flex align-items-center gap-6">
 
-        <div class="d-flex flex-column txt-align-justify gap-2">
+            <div class="image-box">
+                <img src="<%= getMedia(lang, 'demo1/building1.png', 'images') %>" alt="<%= t.components.composites.nextServices.alt %>">
+            </div>
 
-            <a href="navigation(lang, 'st-project')" class="learn-more div">
-                <span class="txt-transform-captilize"><%= t.components.composites.nextServices.project %></span>
-                <i class="fa-solid fa-arrow-right secondary-color"></i>
-            </a>
+            <div class="d-flex flex-column txt-align-justify gap-2">
 
-            <p class="title txt-transform-uppercase font-weight-bold"><%= t.components.composites.nextServices.title %></p>
-            
-        </div>
+                <div class="learn-more div">
+                    <span class="txt-transform-captilize"><%= t.components.composites.nextServices.project %></span>
+                    <i class="fa-solid fa-arrow-right secondary-color"></i>
+                </div>
+
+                <p class="title txt-transform-uppercase font-weight-bold"><%= t.components.composites.nextServices.title %></p>
+                
+            </div>
+
+
+        </a>
     </div>
     
 
