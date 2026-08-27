@@ -3,16 +3,48 @@
 @use "../../../../../system/sass/global-functions/_colors" as *;
 @use "../../../../base/_commons" as *;
 
-.title {
-    font-size: get-font-size("title");
-    text-transform: capitalize;
-    color: get-color("title-text");
-    font-weight: get-font-weight("bold");
+// .title {
+//     font-size: get-font-size("title");
+//     text-transform: capitalize;
+//     color: get-color("title-text");
+//     font-weight: get-font-weight("bold");
+// }
+
+// .title-secondary {
+//     font-size: get-font-size("title");
+//     text-transform: capitalize;
+//     color: get-color("on-secondary");
+//     font-weight: get-font-weight("bold");
+// }
+
+span {
+    font-size: get-font-size("body-sm");
 }
 
-.secondary-title {
+p {
+    font-size: get-font-size("body");
+}
+
+h6 {
+    font-size: get-font-size("subtitle");
+}
+
+h5 {
+    font-size: get-font-size("title-sm");
+}
+
+h4 {
     font-size: get-font-size("title");
-    text-transform: capitalize;
-    color: get-color("on-secondary");
-    font-weight: get-font-weight("bold");
+}
+
+h3 {
+    font-size: get-font-size("title-lg");
+}
+
+h2 {
+    font-size: get-font-size("title-xl");
+}
+
+h1 {
+    font-size: get-font-size("display");
 }

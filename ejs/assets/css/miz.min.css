@@ -4410,6 +4410,10 @@ html {
   font-size: 3.75rem;
 }
 
+.txt-size-unset {
+  font-size: unset;
+}
+
 .txt-align-center {
   text-align: center;
 }
