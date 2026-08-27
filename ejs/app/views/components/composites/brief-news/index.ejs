@@ -3,7 +3,9 @@
 <div class="d-flex align-items-center gap-4 justify-content-center w-100 h-100 d-grid grid-4">
     <%- include('./content.ejs' , 
     {
-        image: getMedia(lang, 'demo1/building1.png', "images")
+        image: getMedia(lang, 'demo1/building1.png', "images"),
+        title: t.components.composites.briefNews.title,
+        date: t.components.composites.briefNews.date
     }); -%>
 </div>
 
