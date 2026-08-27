@@ -1,0 +1,30 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "tab"}); -%>
+
+<div class="bg-on-primary-color w-100 h-100 d-flex align-items-center justify-content-center">
+    <%- include('./content.ejs', {
+        items: [
+            {
+                title: "ALL",
+                value: "all"
+            },
+            {
+                title: "RESIDENTIAL",
+                value: "residential"
+            },
+            {
+                title: "COMMERCIAL",
+                value: "commercial"
+            },
+            {
+                title: "INDUSTRIAL",
+                value: "industrial"
+            },
+            {
+                title: "INTERIOR",
+                value: "interior"
+            }
+        ]
+    }); -%>
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>

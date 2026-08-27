@@ -1,0 +1,58 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+
+.breadcrumb {
+    display: block;
+    width: 100%;
+
+    .breadcrumb-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        font-size: get-font-size("title-sm");
+        color: get-color("secondary");
+        
+
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+
+            & i {
+                margin-left: get-space(2);
+                margin-right: get-space(2);
+
+                color: get-color("secondary");
+                font-size: get-font-size("body");
+            }
+
+            a {
+                transition: $common-transition;
+
+                color: get-color("secondary");
+                opacity: .6;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            span {
+                color: get-color("secondary");
+            }
+
+            &.active {
+                span {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

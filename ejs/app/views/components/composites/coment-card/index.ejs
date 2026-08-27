@@ -1,0 +1,15 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "comment card"}); -%>
+
+<div class="bg-color w-100 h-100 d-flex align-items-center justify-content-center p-8">
+	<div class="w-25">
+		<%- include('./content.ejs', {
+			icon: "building",
+			title: "Construction Maintenance",
+			"description": "Our ongoing maintenance services ensure your property remains safe, efficient, and in optimal condition.",
+			link: navigation(lang, "st-services"),
+			linkText: "LEARN MORE"
+		}); -%>
+	</div>
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>

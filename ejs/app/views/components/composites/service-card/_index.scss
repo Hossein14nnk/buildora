@@ -1,0 +1,20 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+@use "../../../base/_dims" as *;
+
+.service-card {
+    max-width: 320px;
+
+    & .service-card-link {
+        i {
+            transition: $common-transition; 
+        }
+
+       
+    }
+    &:hover .service-card-link i {
+        transform: translateX(4px);
+    }
+}

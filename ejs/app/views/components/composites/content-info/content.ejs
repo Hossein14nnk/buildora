@@ -1,0 +1,35 @@
+<!-- start contact info -->
+
+<div class="contact-info">
+
+    <h6 class="fw-bold on-secondary-color mb-5">
+        <%= title %>
+    </h6>
+
+    <ul class="list-unstyled d-flex flex-column gap-2">
+
+        <% for (let item of items) { %>
+
+            <li class="d-flex gap-2 align-items-baseline w-fit-content">
+
+                <i class="<%= item.icon %> primary-color"></i>
+
+                <div class="d-flex flex-column justify-content-start <%= item.class || '' %>">
+
+                    <% for (let text of item.content) { %>
+                        <span class="on-secondary-color">
+                            <%= text %>
+                        </span>
+                    <% } %>
+
+                </div>
+
+            </li>
+
+        <% } %>
+
+    </ul>
+
+</div>
+
+<!-- end contact info -->

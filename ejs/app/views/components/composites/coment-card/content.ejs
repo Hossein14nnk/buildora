@@ -1,0 +1,19 @@
+<!-- start service-card -->
+<div class="service-card bg-card-color radius-all-lg p-6 d-flex flex-column gap-4">
+
+	<div class=" image-xs bg-primary-light-color radius-all-md d-flex align-items-center justify-content-center">
+		<i class="fa-light fa-<%= icon %> icon-size-xl title-text-color"></i>
+	</div>
+
+	<div class="d-flex flex-column gap-2 mb-8">
+		<h3 class="txt-size-subtitle font-weight-bold title-text-color"><%= title %></h3>
+		<p class="txt-size-body-sm font-weight-regular text-color m-0"><%= description %></p>
+	</div>
+
+	<a href="<%= link %>" class="service-card-link d-flex align-items-center gap-2 txt-decoration-none">
+		<span class="txt-size-body-sm font-weight-bold on-primary-color"><%= linkText %></span>
+		<i class="fa-solid fa-arrow-right primary-color"></i>
+	</a>
+
+</div>
+<!-- end service-card -->
