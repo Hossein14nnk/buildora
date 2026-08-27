@@ -70,7 +70,7 @@
 				"description1": "Understanding client goals and project requirements."
 			},
 			"formPattern" :{
-				"text": {
+				"textType": {
 					"placeHolder": "Enter your full name",
 					"label": "Full Name"
 				},

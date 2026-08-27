@@ -1,7 +1,12 @@
 <%- include('../../../layouts/component/head.ejs', {pageName: "level-process"}); -%>
 
-<div class="d-flex align-items-center gap-4 justify-content-center w-fit-content w-100 bg-specific-color h-100 ">
-    <%- include('./content.ejs'); -%>
+<div class="d-grid grid-4 align-items-center gap-4 justify-content-center bg-specific-color h-100 w-100">
+    <%- include('./content.ejs',
+    {
+        number: t.components.composites.levelProcess.number1,
+        title: t.components.composites.levelProcess.title1,
+        text: t.components.composites.levelProcess.description1
+    }); -%>
 </div>
 
 <%- include('../../../layouts/component/foot.ejs'); -%>

@@ -1,7 +1,12 @@
 <%- include('../../../../layouts/component/head.ejs', {pageName: "title-third"}); -%>
 
-<div class="w-20 h-100 d-flex flex-column justify-content-center gap-4">
-    <%- include('./content.ejs'); -%>
+<div class="w-100 h-100 d-grid grid-4 justify-content-center align-items-center gap-4">
+    <%- include('./content.ejs',
+    {
+        uptitle: t.components.eyebrow.text,
+        title: t.components.eyebrow.text,
+        text: t.components.description.text
+    }); -%>
 </div>
 
 <%- include('../../../../layouts/component/foot.ejs'); -%>
