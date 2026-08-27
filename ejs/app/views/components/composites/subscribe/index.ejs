@@ -1,7 +1,13 @@
 <%- include('../../../layouts/component/head.ejs', {pageName: "subscribe"}); -%>
 
-<div class="d-flex align-items-center gap-4 justify-content-center w-fit-content">
-    <%- include('./content.ejs'); -%>
+<div class="d-grid grid-3 align-items-center gap-4 justify-content-center w-100 -100">
+    <%- include('./content.ejs', {
+        link: navigation(lang, 'home-one.html'),
+        title: t.components.composites.subscribe.title,
+        description: t.components.composites.subscribe.description,
+        placeHolder: t.components.composites.subscribe.placeHolder,
+        btn: t.components.composites.subscribe.btn,
+    }); -%>
 </div>
 
 <%- include('../../../layouts/component/foot.ejs'); -%>

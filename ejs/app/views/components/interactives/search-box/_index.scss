@@ -13,7 +13,7 @@
     padding: get-space(1);
 
     background-color: get-color("white");
-    border-radius: $common-border-radius;
+    border-radius: $common-radius;
 
     .search-input {
         flex: 1;
@@ -53,7 +53,7 @@
         flex-shrink: 0;
 
         border: 0;
-        border-radius: $common-border-radius;
+        border-radius: $common-radius;
 
         background-color: get-color("primary");
         color: get-color("on-primary");

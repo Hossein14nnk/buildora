@@ -1,0 +1,12 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "approach-item"}); -%>
+
+<div class="d-flex align-items-center gap-4 justify-content-center w-100 h-100 bg-specific-color">
+    <%- include('./content.ejs',
+    {
+        number: t.components.composites.approachItem.number1 ,
+        title: t.components.composites.approachItem.title1 ,
+        text: t.components.composites.approachItem.description1
+    }); -%>
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>

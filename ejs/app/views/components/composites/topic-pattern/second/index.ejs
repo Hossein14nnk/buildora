@@ -1,7 +1,11 @@
 <%- include('../../../../layouts/component/head.ejs', {pageName: "title-second"}); -%>
 
-<div class="bg-secondary-color w-100 h-100 d-flex flex-column justify-content-center gap-4">
-    <%- include('./content.ejs'); -%>
+<div class="bg-secondary-color w-100 h-100 d-flex align-items-center justify-content-center gap-4">
+    <%- include('./content.ejs',
+    {
+        upTitle: t.components.eyebrow.text ,
+        title: t.components.title.text
+    }); -%>
 </div>
 
 <%- include('../../../../layouts/component/foot.ejs'); -%>

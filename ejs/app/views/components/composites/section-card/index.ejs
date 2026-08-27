@@ -1,7 +1,14 @@
-<%- include('../../../layouts/component/head.ejs', {pageName: "counter"}); -%>
+<%- include('../../../layouts/component/head.ejs', {pageName: "section-card"}); -%>
 
 <div class="w-100 h-100 d-flex align-items-center justify-content-center gap-4">
-    <%- include('./content.ejs'); -%>
+    <%- include('./content.ejs',
+    {
+        link: navigation(lang, 'home-one.html'),
+        upTitle: t.components.composites.sectionCard.upTitle,
+        title: t.components.composites.sectionCard.title,
+        text: t.components.composites.sectionCard.subtitle,
+        btnText: t.components.composites.sectionCard.btn
+    }); -%>
 </div>
 
 <%- include('../../../layouts/component/foot.ejs'); -%>

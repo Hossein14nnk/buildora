@@ -403,6 +403,42 @@ footer.section > .container.wide {
     margin-inline-end: 2.5rem;
   }
 }
+.common-radius {
+  border-radius: 6px;
+}
+
+.common-elevation {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.common-bw {
+  border-width: 1px;
+}
+
+.common-grid-gap {
+  gap: space(1);
+}
+
+.common-title {
+  font-size: 2rem;
+}
+
+.common-paragraph {
+  font-size: 1rem;
+}
+
+.common-icon {
+  font-size: 20px;
+}
+
+.common-list-gap {
+  gap: space(1);
+}
+
+.common-transition {
+  transition: 200ms linear;
+}
+
 .rtl {
   direction: rtl;
 }

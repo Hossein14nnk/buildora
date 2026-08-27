@@ -14,7 +14,7 @@
         width: 100%;
 
         border-bottom-style: solid;
-        border-bottom-width: $common-border-width;
+        border-bottom-width: $common-bw;
         border-bottom-color: get-color("on-primary");
 
         .tab-item {
@@ -46,10 +46,10 @@
                 position: absolute;
 
                 left: 0;
-                bottom: -$common-border-width;
+                bottom: -$common-bw;
 
                 width: 100%;
-                height: $common-border-width;
+                height: $common-bw;
 
                 background-color: transparent;
 

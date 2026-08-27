@@ -1,7 +1,13 @@
 <%- include('../../../layouts/component/head.ejs', {pageName: "call-banner"}); -%>
 
-<div class="d-flex align-items-center gap-4 justify-content-center w-fit-content w-50">
-    <%- include('./content.ejs'); -%>
+<div class="d-flex align-items-center gap-4 justify-content-center w-100 h-100 d-grid grid-3">
+    <%- include('./content.ejs',
+    {
+        upTitle: t.components.composites.callBanner.upTitle ,
+        title: t.components.composites.callBanner.title ,
+        link: navigation(lang, 'home-one.html') ,
+        btn: t.components.composites.callBanner.btn
+    }); -%>
 </div>
 
 <%- include('../../../layouts/component/foot.ejs'); -%>

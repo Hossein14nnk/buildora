@@ -1,21 +1,14 @@
-<!-- start services-card -->
-
-    <div class="next-services d-flex align-items-center gap-6 p-2">
+<div class="next-services div p-2">
+    <a href="<%= link %>" class="d-flex align-items-center gap-6">
         <div class="image-box">
-            <img src="<%= getMedia(lang, 'demo1/building1.png', 'images') %>" alt="<%= t.components.composities.nextServices.alt %>">
+            <img src="<%= image %>" alt="<%= t.components.composites.nextServices.alt %>">
         </div>
-
         <div class="d-flex flex-column txt-align-justify gap-2">
-
-            <a href="navigation(lang, 'st-project')" class="learn-more div">
-                <span class="txt-transform-captilize"><%= t.components.composities.nextServices.project %></span>
+            <div class="learn-more">
+                <span class="txt-transform-captilize"><%= serviceTitle %></span>
                 <i class="fa-solid fa-arrow-right secondary-color"></i>
-            </a>
-
-            <p class="title txt-transform-uppercase font-weight-bold"><%= t.components.composities.nextServices.title %></p>
-            
+            </div>
+            <p class="txt-transform-uppercase font-weight-bold"><%= title %></p>
         </div>
-    </div>
-    
-
-<!-- end services-card -->
+    </a>
+</div>

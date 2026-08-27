@@ -19,10 +19,10 @@
         padding: 0;
 
         border-style: solid;
-        border-width: $common-border-width;
+        border-width: $common-bw;
         border-color: get-color("border-fields");
-
-        border-radius: $common-border-radius;
+ 
+        border-radius: $common-radius;
 
         background-color: get-color("transparent");
         color: get-color("secondary");
