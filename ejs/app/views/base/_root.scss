@@ -15,7 +15,7 @@
 }
 
 @mixin generate-common-variables(){
-    @each $common-name, $common-value in $common-variables {
+    @each $common-name, $common-value in $conf-commons {
         #{"--" + "common-" + $common-name}: #{$common-value};
     }
 }

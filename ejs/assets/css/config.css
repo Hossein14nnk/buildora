@@ -51,10 +51,10 @@
   --border-secondary: #FFFFFF;
   --unCommon: #FFFFFF;
   /* common */
-  --common-border-radius: 10px;
+  --common-radius: 6px;
   --common-elevation: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --common-border-width: 1px;
-  --common-gap: space(1);
+  --common-bw: 1px;
+  --common-grid-gap: space(1);
   --common-title: 2rem;
   --common-paragraph: 1rem;
   --common-icon: 20px;

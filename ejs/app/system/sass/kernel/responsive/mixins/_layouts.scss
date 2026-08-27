@@ -1,4 +1,6 @@
+@use "../../../global-functions/_commons" as *;
 @use "../../../../../views/base/_responsive" as *;
+@use "../../../../../views/base/_commons" as *;
 @use "../../../../../views/base/_layout" as *;
 @use 'sass:list';
 @use 'sass:map';
@@ -331,6 +333,42 @@
     }
 }
 
+@mixin generate-common-classes(){
+    @each $common-key, $common-value in $conf-commons {
+        $property: null;
+        @if ($common-key == "radius"){
+            $property: "border-radius";
+        }
+        @else if ($common-key == "elevation"){
+            $property: "box-shadow";
+        }
+        @else if ($common-key == "bw"){
+            $property: "border-width";
+        }
+        @else if ($common-key == "grid-gap"){
+            $property: "gap";
+        }
+        @else if ($common-key == "title"){
+            $property: "font-size";
+        }
+        @else if ($common-key == "paragraph"){
+            $property: "font-size";
+        }
+        @else if ($common-key == "icon"){
+            $property: "font-size";
+        }
+        @else if ($common-key == "list-gap"){
+            $property: "gap";
+        }
+        @else if ($common-key == "transition"){
+            $property: "transition";
+        }
+        #{"." + "common-" + $common-key}{
+            #{$property}: #{$common-value};
+        }
+    }
+}
+
 @include generate-header-horizontal-space();
 @include generate-header-vertical-space();
 @include generate-main-horizontal-space();
@@ -341,3 +379,4 @@
 @include generate-div();
 @include generate-element-space();
 @include generate-grid-gap-space();
+@include generate-common-classes();

@@ -7,8 +7,8 @@
 /* btn basic */
 
 .btn {
-    border-radius: $common-border-radius;
-    border-width: $common-border-width;
+    border-radius: $common-radius;
+    border-width: $common-bw;
     border-style: solid;
     padding-inline: get-space(2);
     padding-block: get-space(3);

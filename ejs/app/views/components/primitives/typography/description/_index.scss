@@ -4,14 +4,14 @@
 @use "../../../../base/_commons" as *;
 
 .description {
-    font-size: get-font-size("body-sm");
+    // font-size: get-font-size("body-sm");
     text-transform: capitalize;
     color: get-color("text");
     font-weight: get-font-weight("regular");
 }
 
 .description-secondary {
-    font-size: get-font-size("body-sm");
+    // font-size: get-font-size("body-sm");
     text-transform: capitalize;
     color: get-color("on-secondary");
     font-weight: get-font-weight("regular");

@@ -22,10 +22,10 @@
         padding-right: get-space(2);
         background-color: get-color("transparent");
         color: get-color("on-secondary");
-        border-radius: $common-border-radius;
+        border-radius: $common-radius;
         font-size: get-font-size("body");
         border-color: get-color("on-primary");
-        border-width: $common-border-width;
+        border-width: $common-bw;
     }
 
     &.active .dropdown-box {
@@ -44,10 +44,10 @@
         transition: $common-transition;
         background-color: get-color("on-secondary");
         color: get-color("secondary");
-        border-radius: $common-border-radius;
+        border-radius: $common-radius;
         font-size: get-font-size("body");
         border-color: get-color("on-primary");
-        border-width: $common-border-width;
+        border-width: $common-bw;
 
         & > li {
             & > :not(:has(*)) {
@@ -68,26 +68,26 @@
             }
 
             &:first-child:not(.dropdown-submenu) {
-                border-top-right-radius: $common-border-radius;
-                border-top-left-radius: $common-border-radius;
+                border-top-right-radius: $common-radius;
+                border-top-left-radius: $common-radius;
                 overflow: hidden;
             }
 
             &:last-child:not(.dropdown-submenu) {
-                border-bottom-right-radius: $common-border-radius;
-                border-bottom-left-radius: $common-border-radius;
+                border-bottom-right-radius: $common-radius;
+                border-bottom-left-radius: $common-radius;
                 overflow: hidden;
             }
 
             &:first-child.dropdown-submenu > *:not(.dropdown-menu) {
-                border-bottom-right-radius: $common-border-radius;
-                border-bottom-left-radius: $common-border-radius;
+                border-bottom-right-radius: $common-radius;
+                border-bottom-left-radius: $common-radius;
                 overflow: hidden;
             }
 
             &:last-child.dropdown-submenu > *:not(.dropdown-menu) {
-                border-bottom-right-radius: $common-border-radius;
-                border-bottom-left-radius: $common-border-radius;
+                border-bottom-right-radius: $common-radius;
+                border-bottom-left-radius: $common-radius;
                 overflow: hidden;
             }
         }
