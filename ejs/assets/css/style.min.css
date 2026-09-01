@@ -158,7 +158,7 @@ a {
 /* btn basic */
 .btn {
   border-radius: 6px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   padding-inline: 0.5rem;
   padding-block: 0.75rem;
@@ -201,6 +201,7 @@ a {
   width: 90px;
   height: 90px;
   border-radius: 6px;
+  object-fit: cover;
 }
 
 .intro-image img {
@@ -303,7 +304,7 @@ h1 {
 .link-box {
   width: fit-content;
   height: fit-content;
-  border-width: 1px;
+  border-width: 2px;
   border-color: var(--primary);
   border-style: solid;
   background-color: color-mix(in srgb, var(--primary) 30%, transparent 100%);
@@ -325,7 +326,7 @@ h1 {
   width: fit-content;
   height: fit-content;
   font-size: get-icon-size("md");
-  border-width: 1px;
+  border-width: 2px;
   border-color: var(--primary);
   border-style: solid;
   background-color: color-mix(in srgb, var(--primary) 30%, transparent 100%);
@@ -352,11 +353,13 @@ h1 {
 }
 
 .icon-box {
-  font-size: get-icon-size("md");
+  font-size: 20px;
   padding: 0.5rem;
   color: var(--on-primary);
   background-color: var(--specific);
   border-radius: 9999px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
 }
 
 [class*=label-] {
@@ -381,7 +384,8 @@ h1 {
 .horizontal-divider {
   width: 70px;
   border-color: var(--primary);
-  border-width: 1px;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .dropdown {
@@ -405,7 +409,7 @@ h1 {
   border-radius: 6px;
   font-size: 1rem;
   border-color: var(--on-primary);
-  border-width: 1px;
+  border-width: 2px;
 }
 .dropdown.active .dropdown-box {
   color: var(--primary);
@@ -424,7 +428,7 @@ h1 {
   border-radius: 6px;
   font-size: 1rem;
   border-color: var(--on-primary);
-  border-width: 1px;
+  border-width: 2px;
 }
 .dropdown .dropdown-menu > li > :not(:has(*)) {
   display: block;

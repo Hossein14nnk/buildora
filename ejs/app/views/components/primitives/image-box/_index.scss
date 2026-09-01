@@ -9,5 +9,6 @@
         width: get-image-size("xl");
         height: get-image-size("xl");
         border-radius: $common-radius;
+        object-fit: cover;
     }
 }
