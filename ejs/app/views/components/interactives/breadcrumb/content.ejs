@@ -1,0 +1,31 @@
+<!-- start breadcrumb -->
+<nav class="breadcrumb" aria-label="breadcrumb">
+    <ol class="breadcrumb-list">
+
+        <% items.forEach((item, index) => { %>
+
+            <li class="breadcrumb-item <%= index === items.length - 1 ? 'active' : '' %>">
+
+                <% if (index !== items.length - 1 && item.link) { %>
+
+                    <a href="<%= item.link %>">
+                        <%= item.title %>
+                    </a>
+                    <i class="fa-solid fa-chevron-right"></i>
+
+
+                <% } else { %>
+
+                    <span aria-current="page">
+                        <%= item.title %>
+                    </span>
+
+                <% } %>
+
+            </li>
+
+        <% }); %>
+
+    </ol>
+</nav>
+<!-- end breadcrumb -->

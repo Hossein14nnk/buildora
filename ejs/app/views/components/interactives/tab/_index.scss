@@ -1,0 +1,95 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_commons" as *;
+
+.tab {
+    display: block;
+    width: 100%;
+
+    .tab-list {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+
+        border-bottom-style: solid;
+        border-bottom-width: $common-bw;
+        border-bottom-color: get-color("on-primary");
+
+        .tab-item {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding-top: get-space(2);
+            padding-bottom: get-space(2);
+            padding-left: get-space(3);
+            padding-right: get-space(3);
+
+            border: 0;
+            background-color: transparent;
+            color: get-color("text-fields");
+
+            cursor: pointer;
+            white-space: nowrap;
+
+            font-size: get-font-size("body");
+
+            transition: $common-transition;
+
+            &::after {
+                content: "";
+
+                position: absolute;
+
+                left: 0;
+                bottom: -$common-bw;
+
+                width: 100%;
+                height: $common-bw;
+
+                background-color: transparent;
+
+                transition: $common-transition;
+            }
+
+            &:hover {
+                color: get-color("primary");
+            }
+
+            &.active {
+                background-color: get-color("primary");
+                color: get-color("on-primary");
+
+                &::after {
+                    background-color: get-color("primary");
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        width: 100%;
+
+        .tab-panel {
+            display: none;
+            width: 100%;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
+.tab-content {
+    .tab-panel {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}

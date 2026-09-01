@@ -1,0 +1,40 @@
+<!-- start categories -->
+
+<div class="categories card-body px-4 py-4 shadow-sm rounded-2 bg-white shadow radius-all-md">
+
+    <h4 class="fw-bold fs-body m-0 mb-3">
+        <%= title %>
+    </h4>
+
+    <div class="horizontal-divider mb-3"></div>
+ 
+    <ul class="list-unstyled d-flex flex-column m-0 px-3">
+
+        <% for (let item of items) { %>
+
+            <li class="categories-item justify-content-between">
+
+                <a
+                    href="<%= item.link %>"
+                    class="categories-link d-flex justify-content-space-between align-items-center gap-5"
+                >
+
+                    <span>
+                        <%= item.title %>
+                    </span>
+
+                    <small class="categories-count radius-all-xs p-1">
+                        (<%= item.count %>)
+                    </small>
+
+                </a>
+
+            </li>
+
+        <% } %>
+
+    </ul>
+
+</div>
+
+<!-- end categories -->

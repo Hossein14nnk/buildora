@@ -1,0 +1,48 @@
+@use "../../../../system/sass/global-functions/_font" as *;
+@use "../../../../system/sass/global-functions/_commons" as *;
+@use "../../../../system/sass/global-functions/_colors" as *;
+@use "../../../base/_dims" as *;
+@use "../../../base/_commons" as *;
+
+
+.categories {
+    .categories-item {
+        border-bottom: 1px solid get-color("background");
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    .categories-link {
+        padding-top: get-space(2);
+        padding-bottom: get-space(2);
+
+        color: get-color("title-text");
+
+        font-size: get-font-size("small");
+
+        transition: $common-transition;
+
+        &:hover {
+            color: get-color("primary");
+
+            .categories-count {
+                color: get-color("primary");
+            }
+        }
+    }
+
+    .categories-count {
+
+        background-color: get-color("background");
+
+        color: get-color("secondary");
+
+        font-size: get-font-size("small");
+
+        line-height: 1;
+
+        transition: $common-transition;
+    }
+}
