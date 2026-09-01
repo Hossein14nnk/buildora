@@ -1,16 +1,12 @@
-<!-- ================== LOGO STRACTURE ================== -->
+<div class="logo-stracture div p-2">
+    <a href="<%= link %>" class="d-flex align-items-center gap-2">
+        <div class="image-box">
+            <img src="<%= getMedia(lang, 'logo.webp', 'images') %>" alt="<%= t.components.composites.logoStructure.logoAlt %>">
+        </div>
 
-    <div class="logo-stracture div p-2">
-        <a href="<%= link %>" class="d-flex align-items-center gap-2">
-            <div class="image-box">
-                <img src="<%= getMedia(lang, 'logo.webp', 'images') %>" alt="<%= logoAlt %>">
-            </div>
-
-            <div class="d-flex flex-column txt-align-justify gap-1">
-                <h5 class="on-secondary-color txt-transform-uppercase font-weight-bold"><%= siteName %></h6>
-                <span class="on-secondary-color txt-transform-uppercase txt-align-justify"><%= subtitle %></span>
-            </div>
-        </a>
-    </div>
-    
-<!-- ================== END LOGO STRACTURE ================== -->
+        <div class="d-flex flex-column txt-align-justify gap-1">
+            <h5 class="on-secondary-color txt-transform-uppercase font-weight-bold"><%= siteName %></h6>
+            <span class="on-secondary-color txt-transform-uppercase txt-align-justify"><%= subtitle %></span>
+        </div>
+    </a>
+</div>

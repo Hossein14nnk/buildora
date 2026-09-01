@@ -1,14 +1,10 @@
-<!-- ================== SUBSCRIBE ================== -->
-                
-    <div class="subscribe div common-radius bg-secondary-color d-flex flex-column gap-4 align-items-center p-6">
-        <i class="fa-light fa-envelope txt-size-title primary-color radius-all-full justify-content-center align-items-center d-flex txt-size-title-sm common-bw border-style-solid border-primary-color p-4 w-fit-content align-self-center aspect-ratio-1x1"></i>
-        <h5 class="on-secondary-color txt-transform-captilize txt-align-center"><%= t.components.composites.subscribe.title %></h5>
-        <p class="description-secondary txt-align-center"><%= t.components.composites.subscribe.description %></p>
-        <input type="email" placeholder="<%= t.components.composites.subscribe.placeHolder %>" class="txt-transform-capitalize radius-all-xs p-2 border-fields-color text-fields-color border-color border-style-solid common-border w-100" >
-        <a href="navigation(lang, 'home-one.html')" class="btn btn-primary w-100">
-            <span class="txt-transform-uppercase"><%= t.components.composites.subscribe.btn %></span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-    </div>
-
-<!-- ================== END SUBSCRIBE ================== -->
+<div class="subscribe div common-radius bg-secondary-color d-flex flex-column gap-4 align-items-center p-6">
+    <i class="fa-light fa-envelope primary-color radius-all-full justify-content-center align-items-center d-flex icon-size-xxl common-bw border-style-solid border-primary-color p-4 w-fit-content align-self-center aspect-ratio-1x1"></i>
+    <h5 class="on-secondary-color txt-transform-captilize txt-align-center"><%= title %></h5>
+    <p class="description-secondary txt-align-center"><%= description %></p>
+    <input type="email" placeholder="<%= placeHolder %>" class="txt-transform-capitalize common-radius p-2 border-fields-color text-fields-color border-color border-style-solid w-100">
+    <a href="<%= link %>" class="btn btn-primary w-100">
+        <span class="txt-transform-uppercase"><%= btn %></span>
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+</div>
