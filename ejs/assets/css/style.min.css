@@ -154,6 +154,20 @@ a {
   filter: grayscale(0);
 }
 
+.point-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: color-mix(in srgb, var(--primary) 30%, transparent 100%);
+  padding-block: 1.25rem;
+  padding-inline: 1.75rem;
+  border-radius: 6px;
+}
+.point-box .description {
+  color: var(--section-title-text);
+  font-weight: 500;
+}
+
 /* components styles */
 /* btn basic */
 .btn {
@@ -260,15 +274,19 @@ h1 {
 }
 
 .description {
+  font-size: 1rem;
   text-transform: capitalize;
   color: var(--text);
   font-weight: 400;
+  line-height: 1.75rem;
 }
 
 .description-secondary {
+  font-size: 1rem;
   text-transform: capitalize;
   color: var(--on-secondary);
   font-weight: 400;
+  line-height: 1.75rem;
 }
 
 .hero-title {
@@ -353,13 +371,16 @@ h1 {
 }
 
 .icon-box {
-  font-size: 20px;
-  padding: 0.5rem;
+  font-size: 16px;
+  padding: 1rem;
   color: var(--on-primary);
   background-color: var(--specific);
   border-radius: 9999px;
   aspect-ratio: 1/1;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 [class*=label-] {
@@ -367,6 +388,7 @@ h1 {
   padding-block: 0.25rem;
   padding-inline: 0.5rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* label primary */
@@ -377,6 +399,9 @@ h1 {
 
 /* label secondary */
 .label-secondary {
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--divider);
   background-color: var(--on-secondary);
   color: var(--secondary);
 }
@@ -384,7 +409,7 @@ h1 {
 .horizontal-divider {
   width: 70px;
   border-color: var(--primary);
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
 }
 
@@ -590,7 +615,7 @@ h1 {
   height: 50px;
   padding: 0;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-color: var(--border-fields);
   border-radius: 6px;
   background-color: var(--transparent);
@@ -672,7 +697,7 @@ h1 {
   align-items: center;
   width: 100%;
   border-bottom-style: solid;
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-color: var(--on-primary);
 }
 .tab .tab-list .tab-item {
@@ -696,9 +721,9 @@ h1 {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -2px;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: transparent;
   transition: 200ms linear;
 }
@@ -821,6 +846,9 @@ textarea {
   font-weight: 600;
 }
 
+.categories {
+  background-color: var(--section);
+}
 .categories .categories-item {
   border-bottom: 1px solid var(--background);
 }
@@ -864,6 +892,11 @@ textarea {
 }
 .service-card:hover .service-card-link i {
   transform: translateX(4px);
+}
+
+.group-dates {
+  flex-direction: row;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.min.css.map */

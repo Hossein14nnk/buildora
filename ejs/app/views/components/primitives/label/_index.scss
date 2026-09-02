@@ -10,6 +10,7 @@
     padding-block: get-space(1);
     padding-inline: get-space(2);
     font-weight: get-font-weight("semi-bold");
+    text-transform: uppercase;
 }
 
 /* label primary */
@@ -22,6 +23,9 @@
 /* label secondary */
 
 .label-secondary {
+    border-width: $common-bw;
+    border-style: solid;
+    border-color: get-color("divider");
     background-color: get-color("on-secondary");
     color: get-color("secondary");
 }

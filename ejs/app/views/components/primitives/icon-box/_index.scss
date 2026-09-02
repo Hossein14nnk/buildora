@@ -6,11 +6,14 @@
 @use "../../../base/_commons" as *;
 
 .icon-box {
-    font-size: get-icon-size("md");
-    padding: 0.5rem;
+    font-size: $common-icon;
+    padding: get-space(4);
     color: get-color("on-primary");
     background-color: get-color("specific");
     border-radius: get-size-value($border-radius, "full");
     aspect-ratio: 1/1;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
