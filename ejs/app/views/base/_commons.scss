@@ -5,11 +5,11 @@
 $common-radius: get-size-value($border-radius, "sm"); // _dims.scss
 $common-elevation: get-size-value($conf-elevation, "md"); // _dims.scss
 $common-bw: 2px; // _dims.scss
-$common-grid-gap: space(1); // _responsive.scss
+$common-grid-gap: get-space(1); // _responsive.scss
 $common-title: get-font-size("title"); // _typography.scss
 $common-paragraph: get-font-size("body"); // _typography.scss
-$common-icon: get-icon("md"); // _dims.scss
-$common-list-gap: space(1); // _responsive.scss
+$common-icon: get-icon("sm"); // _dims.scss
+$common-list-gap: get-space(1); // _responsive.scss
 $common-transition: 200ms linear;
 
 $conf-commons: (

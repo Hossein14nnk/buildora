@@ -1,0 +1,19 @@
+@use "../../../system/sass/global-functions/_font" as *;
+@use "../../../system/sass/global-functions/_commons" as *;
+@use "../../../system/sass/global-functions/_colors" as *;
+@use "../../base/_commons" as *;
+
+.point-box {
+    display: flex;
+    align-items: center;
+    gap: get-space(3);
+    background-color: color-mix(in srgb, get-color("primary") 30%, transparent 100%);
+    padding-block: get-space(5);
+    padding-inline: get-space(7);
+    border-radius: $common-radius;
+
+    .description {
+        color: get-color("section-title-text");
+        font-weight: get-font-weight("medium");
+    }
+}
