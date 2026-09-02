@@ -6,6 +6,8 @@
 
 
 .categories {
+    background-color: get-color("section");
+
     .categories-item {
         border-bottom: 1px solid get-color("background");
 

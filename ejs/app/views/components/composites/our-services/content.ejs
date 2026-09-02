@@ -1,4 +1,4 @@
-<!-- start our-service -->
+
 <div class="our-service bg-card-color radius-all-lg p-8 d-flex flex-column gap-6 position-relative">
 
 	<div class="d-flex flex-column gap-3">
@@ -11,7 +11,7 @@
 
 		<a
 			href="<%= item.link %>"
-			class="our-service-item d-flex align-items-center justify-content-space-between gap-6 p-4 txt-decoration-none cursor-pointer<%= item.active ? ' our-service__item--active bg-primary-light-color radius-all-md' : '' %><%= (!item.active && !isLast) ? ' bb-style-solid bw-1 border-fields-color' : '' %>"
+			class="our-service-item d-flex align-items-center justify-content-space-between gap-6 p-4 txt-decoration-none cursor-pointer<%- item.active ? ' our-service__item--active bg-primary-light-color radius-all-md' : '' %><%- (!item.active && !isLast) ? ' bb-style-solid bw-1 border-fields-color' : '' %>"
 		>
 			<span class="txt-size-body font-weight-medium title-text-color"><%= item.title %></span>
 			<i class="fa-solid fa-arrow-right-long on-primary-color"></i> 
@@ -21,4 +21,3 @@
 	</div>
 
 </div>
-<!-- end our-service -->
