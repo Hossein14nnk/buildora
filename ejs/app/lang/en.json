@@ -153,6 +153,21 @@
 				"title": "10 construction trends shaping the future",
 				"imageAlt": "single-weblog"
 			}
+		},
+		"singleProject": {
+			"hero": {
+				"components": {
+					"upTitle": "COMMERCIAL",
+					"heroTitle": {
+						"title": "Modern Commercial",
+						"highlight": "Complex"
+					},
+					"description": "home > blog > Modern Commercial"
+				}
+			},
+			"content": {
+				"aboutProject" : "The construction industry is constantly evolving. New technologies, innovative materials, and a stronger focus on sustainability are reshaping the way we build. Here are the top trends that are defining the future of construction."
+			}
 		}
 	}
 

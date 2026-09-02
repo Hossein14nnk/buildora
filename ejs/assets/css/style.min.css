@@ -168,6 +168,24 @@ a {
   font-weight: 500;
 }
 
+.point-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: color-mix(in srgb, var(--primary) 30%, transparent 100%);
+  padding-block: 1.25rem;
+  padding-inline: 1.75rem;
+  border-radius: 6px;
+}
+.point-box .description {
+  color: var(--section-title-text);
+  font-weight: 500;
+}
+
+.approach-items-list li:last-child .approach-item .vertical-dot-line {
+  display: none;
+}
+
 /* components styles */
 /* btn basic */
 .btn {
@@ -766,7 +784,7 @@ h1 {
 }
 
 .approach-item .vertical-dot-line {
-  height: 50px;
+  height: 100%;
 }
 
 .approach-item .horizontal-dot-line {
@@ -804,7 +822,6 @@ textarea {
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: var(--on-primary);
   border-radius: 6px;
 }
 .project-highlights .project-highlights-title {
