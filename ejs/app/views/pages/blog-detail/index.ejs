@@ -1,30 +1,40 @@
-<%- include("../../layouts/page/head.ejs", { pageName: "single-weblog" }); %>
+<%- include("../../layouts/page/head.ejs", { pageName: "blog-detail" }); %>
 
 <main>
     <section id="hero" class="section bg-secondary-color">
         <div class="container">
-            <%#- include("../../components/composites/section-topic/content.ejs", {
+            <%- include("../../components/composites/section-topic/content.ejs", {
+                // link1: navigation(lang, "home-one"),
+                // link2: navigation(lang, "ar-weblog"),
+                // upTitle: t.pages.blogDetail.hero.components.upTitle,
+                // firstPartTitle: t.pages.blogDetail.hero.components.heroTitle.title,
+                // secondPartTitle: `<br>${t.pages.blogDetail.hero.components.heroTitle.highlight}`,
+                // text: t.pages.blogDetail.hero.components.description
+
+                part1: "home",
+                part2: "blog",
+                part3: "detail",
                 link1: navigation(lang, "home-one"),
                 link2: navigation(lang, "ar-weblog"),
-                upTitle: t.pages.singleWeblog.hero.components.upTitle,
-                firstPartTitle: t.pages.singleWeblog.hero.components.heroTitle.title,
-                secondPartTitle: `<br>${t.pages.singleWeblog.hero.components.heroTitle.highlight}`,
-                text: t.pages.singleWeblog.hero.components.description
+                upTitle: t.pages.blogDetail.hero.components.upTitle,
+                firstPartTitle: t.pages.blogDetail.hero.components.heroTitle.title,
+                secondPartTitle: `<br>${t.pages.blogDetail.hero.components.heroTitle.highlight}`,
+                text: t.pages.blogDetail.hero.components.description
             }); %>
         </div>
     </section>
     <section id="content" class="section bg-color">
         <div class="container flex-column flex-xxl-row gap-4">
             <div class="block align-items-start gap-4 w-xxl-70">
-                <span class="label-primary"><%= t.pages.singleWeblog.content.components.label %></span>
-                <h2><%= t.pages.singleWeblog.content.title %></h2>
+                <span class="label-primary"><%= t.pages.blogDetail.content.components.label %></span>
+                <h2><%= t.pages.blogDetail.content.title %></h2>
                 <%- include("../../components/composites/group/dates/content.ejs", {
-                    date: t.pages.singleWeblog.content.components.group.dates.date,
-                    author: t.pages.singleWeblog.content.components.group.dates.author,
-                    commentCount: t.pages.singleWeblog.content.components.group.dates.commentCount,
+                    date: t.pages.blogDetail.content.components.group.dates.date,
+                    author: t.pages.blogDetail.content.components.group.dates.author,
+                    commentCount: t.pages.blogDetail.content.components.group.dates.commentCount,
                 }); %>
                 <img class="common-radius w-100" src="<%= getMedia(lang, "st-blog/thum4.jpg", "images"); %>" alt="single-weblog">
-                <p class="description"><%= t.pages.singleWeblog.content.components.description %></p>
+                <p class="description"><%= t.pages.blogDetail.content.components.description %></p>
                 <h5 class="font-weight-bold">1. Sustainable Building Practices</h5>
                 <p class="description mb-2">Sustainability is no longer an option-it's a necessity. Green building materials, energy-efficient designs, and waste reduction practices are helping reduce environmental impact while lowering long-term costs.</p>
                 <h5 class="font-weight-bold">2. Building Information Modeling (BIM)</h5>
@@ -32,7 +42,7 @@
                 <h5 class="font-weight-bold">3. Modular Construction</h5>
                 <p class="description mb-2">Off-site construction and prefabrication are speeding up project timelines and improving quality control. Modular building is becoming a mainstream solution for various sectors.</p>
                 <p class="description">These trends are more than just buzzwords-they are transforming the industry and creating better outcomes for clients, communities, and the environment.</p>
-                
+
                 <div class="point-box">
                     <h2 class="double-quotation">
                         <i class="fa-solid fa-quote-left text-primary"></i>
@@ -52,11 +62,11 @@
                 <div class="div flex-row align-items-center gap-4">
                     <p class="font-weight-semi-bold">Tags:</p>
                     <div class="group-labels d-flex flex-wrap gap-3">
-                        <span class="label-secondary"><%= t.pages.singleWeblog.content.components.label %></span>
-                        <span class="label-secondary"><%= t.pages.singleWeblog.content.components.label %></span>
-                        <span class="label-secondary"><%= t.pages.singleWeblog.content.components.label %></span>
-                        <span class="label-secondary"><%= t.pages.singleWeblog.content.components.label %></span>
-                        <span class="label-secondary"><%= t.pages.singleWeblog.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.blogDetail.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.blogDetail.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.blogDetail.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.blogDetail.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.blogDetail.content.components.label %></span>
                     </div>
                 </div>
                 <div class="div flex-column flex-md-row py-6 justify-content-center align-items-center align-items-md-stretch common-radius bg-section-color gap-8">
@@ -122,8 +132,6 @@
                     ]
                 }); %>
 
-
-                <!-- <div class="categories card-body px-4 py-4 shadow-sm rounded-2 bg-white shadow radius-all-md"> -->
                 <div class="px-4 py-4 shadow-sm rounded-2 bg-white shadow radius-all-md">
                     <h4 class="font-weight-bold mb-3"><%= "title" %></h4>
                     <div class="horizontal-divider mb-3"></div>
