@@ -1,0 +1,104 @@
+<%- include("../../layouts/page/head.ejs", { pageName: "single-project" }); %>
+
+<main>
+    <section id="hero" class="section bg-secondary-color">
+        <div class="container">
+            <%- include("../../components/composites/section-topic/content.ejs", {
+                link1: navigation(lang, "home-one"),
+                link2: navigation(lang, "ar-weblog"),
+                upTitle: t.pages.singleProject.hero.components.upTitle,
+                firstPartTitle: t.pages.singleProject.hero.components.heroTitle.title,
+                secondPartTitle: `<br>${t.pages.singleProject.hero.components.heroTitle.highlight}`,
+                text: t.pages.singleProject.hero.components.description
+            }); %>
+        </div>
+    </section>
+    <section id="content" class="section bg-color">
+        <div class="container flex-column flex-xxl-row gap-4">
+            <div class="block align-items-start gap-4 w-xxl-70">
+                <img class="common-radius w-100" src="<%= getMedia(lang, "st-blog/thum4.jpg", "images"); %>" alt="single-weblog">
+                <h5 class="font-weight-bold">About The Project</h5>
+                <p class="description"><%= t.pages.singleProject.content.aboutProject %></p>
+                <h5 class="font-weight-bold">Key Features</h5>
+
+                <div class="d-grid grid-2 gap-4">
+                    <% for (let i = 0; i < 6; i++) { %>
+                        <div>
+                            <%- include("../../components/composites/feature-card/content.ejs",{
+                                image: getMedia(lang, 'demo1/vector1.png', 'images'),
+                                alt: t.components.composites.servicesCard.alt,
+                                title: t.components.composites.servicesCard.title,
+                                text: t.components.composites.servicesCard.description
+                            }); -%>
+                        </div>
+                     <% } %>
+                </div> 
+                <hr class="w-100 border-divider-color bw-1 border-style-solid">
+            
+                <h5 class="font-weight-bold">Project gallery</h5>
+        
+                <div class="d-grid grid-3 gap-4">
+                    <% for (let i = 0; i < 6; i++) { %>
+                        <div>
+                            <img class="common-radius w-100" src="<%= getMedia(lang, "st-blog/thum4.jpg", "images"); %>" alt="single-weblog">
+                        </div>
+                     <% } %>
+                </div> 
+
+                <h5 class="font-weight-bold">Our Process</h5>
+ 
+                <div class="block flex-row">
+                    <% for (let i = 0; i < 4; i++) { %>
+                        <%- include("../../components/composites/level-process/content.ejs",{
+                            number: t.components.composites.levelProcess.number1,
+                            title: t.components.composites.levelProcess.title1,
+                            text: t.components.composites.levelProcess.description1
+                        }); -%>  
+                     <% } %>
+                    
+                </div>
+
+                
+
+                
+            </div>
+            <aside class="block grow-1 common-radius gap-8">
+               
+                <%- include("../../components/composites/call-banner/content.ejs", {
+                    upTitle: t.components.composites.callBanner.upTitle ,
+                    title: t.components.composites.callBanner.title ,
+                    link: navigation(lang, 'home-one.html') ,
+                    btn: t.components.composites.callBanner.btn
+                }); -%> 
+                
+                <%- include("../../components/composites/our-services/content.ejs", {
+                    title: "Our Services",
+                    items: [
+                        { title: "Construction Management", link: "#", active: true },
+                        { title: "Design & Build", link: "#", active: false },
+                        { title: "Renovation & Restoration", link: "#", active: false },
+                        { title: "Interior Design", link: "#", active: false },
+                        { title: "Project Consulting", link: "#", active: false },
+                        { title: "Construction Maintenance", link: "#", active: false }
+                    ]
+                }); -%>
+
+                
+
+              
+
+               
+
+                
+            </aside>
+        </div>
+    </section>
+
+    <section class="section bg-color journey bg-card">
+        
+    </section>
+    
+    
+</main>
+
+<%- include("../../layouts/page/foot.ejs"); %>
