@@ -25,7 +25,7 @@
 
         <section id="about" class="section">
 
-            <div class="container d-grid gap-20 flex-column grid-2 align-items-center">
+            <div class="container d-grid gap-20 flex-column grid-1 align-items-center grid-lg-2">
 
                 <div class="align-items-center position-relative">
 
@@ -83,7 +83,7 @@
         </section>
 
         <section id="journey" class="section bg-card-color bg-specific-color">
-            <div class="container d-grid gap-10">
+            <div class="container d-grid gap-10 grid-1">
 
 				<div class="">
 					<%- include('../../components/composites/topic-pattern/first/content.ejs',
@@ -94,7 +94,7 @@
 					}); -%>
 				</div>
 				
-				<div class="div d-grid grid-4">
+				<div class="div d-grid grid-2 grid-md-4">
 					<%- include('../../components/composites/level-process/content.ejs',
 						{
 							number: t.components.composites.levelProcess.number1,
@@ -125,7 +125,7 @@
         </section>
 
         <section id="values" class="section bg-secondary-color">
-			<div class="container d-grid gap-10">
+			<div class="container d-grid gap-10 grid-1">
 
 				<div class="">
 					<%- include('../../components/composites/topic-pattern/second/content.ejs',
@@ -136,7 +136,7 @@
 					}); -%>
 				</div>
 				
-				<div class="div d-grid grid-4 on-secondary-color">
+				<div class="div d-grid grid-2 grid-md-4 on-secondary-color">
 					<%- include('../../components/composites/feature-item/content.ejs',
 						{
 							image: getMedia(lang, 'components/second-feature-card-icon-1.png', 'images'),
@@ -169,7 +169,7 @@
         <section id="introduction" class="section bg-specific-color">
             <div class="container bg-specific-color">
 
-				<div class="block d-grid grid-4 w-100">
+				<div class="block d-grid grid-2 w-100 grid-md-4">
 					<%- include('../../components/composites/counter-box/content.ejs' ,
 						{
 							image: getMedia(lang, "components/1_years_experience.png", "images"),
@@ -208,19 +208,22 @@
         <section id="team" class="section">
             <div class="container gap-10 flex-column">
 
-                <div class="block  gap-10 gap-6 justify-content-space-between align-items-center flex-column flex-xxl-row flex-xl-row flex-lg-row flex-md-row">
-                    <%- include('../../components/composites/topic-pattern/first/content.ejs',
+                <div class="block gap-6 justify-content-space-between align-items-center flex-column flex-lg-row">
+					<div class="div txt-align-center txt-align-lg-start align-items-lg-start align-items-center">
+						<%- include('../../components/composites/topic-pattern/first/content.ejs',
 					{
 						upTitle: t.components.eyebrow.text,
 						title: t.components.eyebrow.text,
 						text: t.components.description.text
 					}); -%>
+					</div>
                     
-                    <p  class="description w-40"> Our strength lies in our people. Our team brings together engineers, project managers, designers, and specialists who are passionate about building a better tomorrow.</p>
+                    
+                    <p  class="description w-80 w-lg-50 txt-align-center"> Our strength lies in our people. Our team brings together engineers, project managers, designers, and specialists who are passionate about building a better tomorrow.</p>
                     
                 </div>
                 
-                <div class="block d-grid grid-5 gap-4">
+                <div class="block d-grid grid-2 grid-md-3 grid-lg-4 grid-xxl-5 gap-4">
                     <%- include('../../components/composites/card-person/content.ejs', {
 						image: getMedia(lang, "teams/percon1.jpg", "images"),
 						alt: "person1",
