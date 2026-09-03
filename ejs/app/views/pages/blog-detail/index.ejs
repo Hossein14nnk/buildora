@@ -1,0 +1,155 @@
+<%- include("../../layouts/page/head.ejs", { pageName: "blog-detail" }); %>
+
+<main>
+    <section id="hero" class="section bg-secondary-color">
+        <div class="container">
+            <%- include("../../components/composites/section-topic/content.ejs", {
+                link1: navigation(lang, "home-one"),
+                link2: navigation(lang, "ar-weblog"),
+                upTitle: t.pages.blogDetail.hero.components.upTitle,
+                firstPartTitle: t.pages.blogDetail.hero.components.heroTitle.title,
+                secondPartTitle: `<br>${t.pages.blogDetail.hero.components.heroTitle.highlight}`,
+                text: t.pages.blogDetail.hero.components.description
+            }); %>
+        </div>
+    </section>
+    <section id="content" class="section bg-color">
+        <div class="container flex-column flex-xxl-row gap-4">
+            <div class="block align-items-start gap-4 w-xxl-70">
+                <span class="label-primary"><%= t.pages.blogDetail.content.components.label %></span>
+                <h2><%= t.pages.blogDetail.content.title %></h2>
+                <%- include("../../components/composites/group/dates/content.ejs", {
+                    date: t.pages.blogDetail.content.components.group.dates.date,
+                    author: t.pages.blogDetail.content.components.group.dates.author,
+                    commentCount: t.pages.blogDetail.content.components.group.dates.commentCount,
+                }); %>
+                <img class="common-radius w-100" src="<%= getMedia(lang, "st-blog/thum4.jpg", "images"); %>" alt="single-weblog">
+                <p class="description"><%= t.pages.blogDetail.content.components.description %></p>
+                <h5 class="font-weight-bold">1. Sustainable Building Practices</h5>
+                <p class="description mb-2">Sustainability is no longer an option-it's a necessity. Green building materials, energy-efficient designs, and waste reduction practices are helping reduce environmental impact while lowering long-term costs.</p>
+                <h5 class="font-weight-bold">2. Building Information Modeling (BIM)</h5>
+                <p class="description mb-2">BIM technology allows teams to create digital representations of physical and functional characteristics of a facility. It improves collaboration, reduces errors, and enhances project outcomes.</p>
+                <h5 class="font-weight-bold">3. Modular Construction</h5>
+                <p class="description mb-2">Off-site construction and prefabrication are speeding up project timelines and improving quality control. Modular building is becoming a mainstream solution for various sectors.</p>
+                <p class="description">These trends are more than just buzzwords-they are transforming the industry and creating better outcomes for clients, communities, and the environment.</p>
+
+                <div class="point-box">
+                    <h2 class="double-quotation">
+                        <i class="fa-solid fa-quote-left text-primary"></i>
+                    </h2>
+                    <p class="description">These trends are more than just buzzwords-they are transforming the industry and creating better outcomes for clients, communities, and the environment.</p>
+                </div>
+                <hr class="w-100 border-divider-color bw-1 border-style-solid" />
+                <div class="div flex-row align-items-center gap-4">
+                    <p class="font-weight-semi-bold">Share this post:</p>
+                    <div class="group-icons d-flex gap-3">
+                        <i class="icon-box fa-brands fa-facebook-f"></i>
+                        <i class="icon-box fa-brands fa-linkedin-in"></i>
+                        <i class="icon-box fa-brands fa-x-twitter"></i>
+                        <i class="icon-box fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="div flex-row align-items-center gap-4">
+                    <p class="font-weight-semi-bold">Tags:</p>
+                    <div class="group-labels d-flex flex-wrap gap-3">
+                        <span class="label-secondary"><%= t.pages.blogDetail.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.blogDetail.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.blogDetail.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.blogDetail.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.blogDetail.content.components.label %></span>
+                    </div>
+                </div>
+                <div class="div flex-column flex-md-row py-6 justify-content-center align-items-center align-items-md-stretch common-radius bg-section-color gap-8">
+                    <a href="<%= navigation(lang, "st-weblog") %>" class="d-flex flex-row-reverse align-items-center gap-6">
+                        <img class="common-radius image-lg aspect-ratio-3x2 object-cover" src="<%= getMedia(lang, "st-blog/thum4.jpg", "images"); %>" alt="single-weblog">
+                        <div class="d-flex flex-column align-items-end txt-wrap-nowrap gap-2">
+                            <span class="text-color txt-transform-uppercase">previous weblog</span>
+                            <span class="secondary-color txt-transform-capitalize font-weight-semi-bold">luxury residential villas</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <div class="d-none d-md-inline-block common-bw border-divider-color bie-style-solid"></div>
+                    <a href="<%= navigation(lang, "st-weblog") %>" class="d-flex flex-row align-items-center gap-6">
+                        <img class="common-radius image-lg aspect-ratio-3x2 object-cover" src="<%= getMedia(lang, "st-blog/thum4.jpg", "images"); %>" alt="single-weblog">
+                        <div class="d-flex flex-column align-items-start txt-wrap-nowrap gap-2">
+                            <span class="text-color txt-transform-uppercase">next weblog</span>
+                            <span class="secondary-color txt-transform-capitalize font-weight-semi-bold">luxury residential villas</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <aside class="block grow-1 common-radius gap-8">
+                <%- include("../../components/interactives/search-box/content.ejs", { placeholder: "Search blogs..." }); %>
+                <%- include("../../components/composites/categories/content.ejs", {
+                    title: "Categories",
+                    items: [
+                        {
+                            title: "Construction",
+                            count: 8,
+                            link: "#"
+                        },
+                        {
+                            title: "Project Management",
+                            count: 5,
+                            link: "#"
+                        },
+                        {
+                            title: "Interior Design",
+                            count: 4,
+                            link: "#"
+                        },
+                        {
+                            title: "Sustainability",
+                            count: 3,
+                            link: "#"
+                        },
+                        {
+                            title: "Safety",
+                            count: 2,
+                            link: "#"
+                        },
+                        {
+                            title: "Commercial",
+                            count: 1,
+                            link: "#"
+                        },
+                        {
+                            title: "Residential",
+                            count: 1,
+                            link: "#"
+                        }
+                    ]
+                }); %>
+
+                <div class="px-4 py-4 shadow-sm rounded-2 bg-white shadow radius-all-md">
+                    <h4 class="font-weight-bold mb-3"><%= "title" %></h4>
+                    <div class="horizontal-divider mb-3"></div>
+                    <ul class="list-unstyled d-flex flex-column m-0 px-3">
+                        <% for (let i = 1; i <= 3; i++) { %>
+                            <li class="categories-item justify-content-between">
+                                <a href="<%= "item.link" %>"class="categories-link d-flex justify-content-space-between align-items-center gap-5">
+                                    <%- include("../../components/composites/brief-news/content.ejs", {
+                                        image: getMedia(lang, `st-blog/building${i}.png`, "images"),
+                                        title: "asdfdasdf",
+                                        date: "asdfdasdf"
+                                    }); %>
+                                </a>
+                            </li>
+                        <% } %>
+                    </ul>
+                </div>
+
+                <%- include("../../components/composites/subscribe/content.ejs", {
+                    title: "aaa",
+                    description: "aaa",
+                    placeHolder: "aaa",
+                    link: "aaa",
+                    btn: "aaa"
+                }); %>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<%- include("../../layouts/page/foot.ejs"); %>
