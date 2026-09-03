@@ -24,7 +24,7 @@
                 <div class="d-grid grid-2 gap-4">
                     <% for (let i = 0; i < 6; i++) { %>
                         <div>
-                            <%- include("../../components/composites/services-card/content.ejs",{
+                            <%- include("../../components/composites/feature-card/content.ejs",{
                                 image: getMedia(lang, 'demo1/vector1.png', 'images'),
                                 alt: t.components.composites.servicesCard.alt,
                                 title: t.components.composites.servicesCard.title,
@@ -44,7 +44,22 @@
                         </div>
                      <% } %>
                 </div> 
+
+                <h5 class="font-weight-bold">Our Process</h5>
  
+                <div class="block flex-row">
+                    <% for (let i = 0; i < 4; i++) { %>
+                        <%- include("../../components/composites/level-process/content.ejs",{
+                            number: t.components.composites.levelProcess.number1,
+                            title: t.components.composites.levelProcess.title1,
+                            text: t.components.composites.levelProcess.description1
+                        }); -%>  
+                     <% } %>
+                    
+                </div>
+
+                
+
                 
             </div>
             <aside class="block grow-1 common-radius gap-8">
@@ -55,43 +70,22 @@
                     link: navigation(lang, 'home-one.html') ,
                     btn: t.components.composites.callBanner.btn
                 }); -%> 
-               
+                
+                <%- include("../../components/composites/our-services/content.ejs", {
+                    title: "Our Services",
+                    items: [
+                        { title: "Construction Management", link: "#", active: true },
+                        { title: "Design & Build", link: "#", active: false },
+                        { title: "Renovation & Restoration", link: "#", active: false },
+                        { title: "Interior Design", link: "#", active: false },
+                        { title: "Project Consulting", link: "#", active: false },
+                        { title: "Construction Maintenance", link: "#", active: false }
+                    ]
+                }); -%>
 
                 
 
-                <!-- <div class="categories card-body px-4 py-4 shadow-sm rounded-2 bg-white shadow radius-all-md"> -->
-                <div class="px-4 py-4 bg-on-primary-color rounded-2 radius-all-md">
-                    <h4 class="font-weight-bold mb-3 on-secondary-color"><%= "Our Approach" %></h4>
-                    <div class="horizontal-divider mb-3"></div>
-                    <ul class="list-unstyled d-flex flex-column m-0 px-3 approach-items-list">
-                        <% for (let i = 0; i < 3; i++) { %>
-                            <li>
-                                <%- include("../../components/composites/approach-Item/content.ejs", {
-                                    number: t.components.composites.approachItem.number1 ,
-                                    title: t.components.composites.approachItem.title1 ,
-                                    text: t.components.composites.approachItem.description1
-                                }); -%>
-                            </li>
-                         <% } %>
-                    </ul> 
-                </div>
-
-
-                <div class="px-4 py-4 elevation-md bg-white-color rounded-2 radius-all-md">
-                    <h4 class="font-weight-bold mb-3"><%= "project overview" %></h4>
-                    <div class="horizontal-divider mb-3"></div>
-                    <ul class="list-unstyled d-flex flex-column m-0 px-3">
-                        <li class="categories-item justify-content-between">
-                            <div class="d-flex flex-row align-items-center bg-card-color common-radius p-4 gap-8">
-                                <i class="fa-solid fa-user primary-color icon-size-xxl"></i>
-                                <div class="d-flex flex-column align-items-start">
-                                    <h4>asdfaf</h4>
-                                    <p class="ellipsis-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque explicabo quis ipsum?</p>
-                                </div>
-                            </div> 
-                        </li>
-                    </ul> 
-                </div>
+              
 
                
 
@@ -99,26 +93,12 @@
             </aside>
         </div>
     </section>
-    <section id="singlePageination" class="section bg-color">
-        <div class="container flex-column flex-xxl-row gap-4 bg-specific-color">
-            <div class="w-100 perv-project">
-                <%- include("../../components/composites/next-service/content.ejs",{
-                    link: navigation(lang, 'st-project'),
-                    image: getMedia(lang, 'demo1/building1.png', 'images'),
-                    serviceTitle: t.components.composites.nextServices.project,
-                    title: t.components.composites.nextServices.title
-                }); -%>
-            </div>
-            <div class="w-100">
-                <%- include("../../components/composites/next-service/content.ejs",{
-                    link: navigation(lang, 'st-project'),
-                    image: getMedia(lang, 'demo1/building1.png', 'images'),
-                    serviceTitle: t.components.composites.nextServices.project,
-                    title: t.components.composites.nextServices.title
-                }); -%>
-            </div>
-        </div>
+
+    <section class="section bg-color journey bg-card">
+        
     </section>
+    
+    
 </main>
 
 <%- include("../../layouts/page/foot.ejs"); %>
