@@ -3,8 +3,11 @@
 <div class="d-flex align-items-center gap-4 justify-content-cente w-100 h-100 bg-secondary-color ">
     <%- include('./content.ejs',
     {
-        link1: getMedia(lang, 'demo1/building1.png', 'images'),
-        link2: getMedia(lang, 'demo1/building1.png', 'images'),
+        part1: t.components.composites.sectionTopic.part1,
+        link1: navigation(lang, "ar-project"),
+        part2: t.components.composites.sectionTopic.part2,
+        link2: navigation(lang, "ar-project"),
+        part3: t.components.composites.sectionTopic.part3,
         upTitle: t.components.eyebrow.text,
         firstPartTitle: t.components.sectionTitle.text,
         secondPartTitle: t.components.title.highlight,

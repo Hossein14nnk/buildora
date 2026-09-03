@@ -111,6 +111,14 @@
 				"alt": "article picture",
 				"title": "10 construction treands shaping the future",
 				"date": "may 12, 2026"
+			},
+			"sectionTopic":{
+				"part1": "Home",
+				"part2": " Project",
+				"part3": "Page name"
+			},
+			"tickList": {
+				"text": "Client-focused approach"
 			}
 		}
 	},
@@ -153,6 +161,15 @@
 				"title": "10 construction trends shaping the future",
 				"imageAlt": "single-weblog"
 			}
+		},
+		"aboutUs": {
+			"topic":{
+				"upTitle": "About Us",
+				"firstPartTitle": "ABOUT US",
+				"secondPartTitle": "building more than stractures",
+				"btn": "work with us"
+			}
+			
 		}
 	}
 
