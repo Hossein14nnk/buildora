@@ -1,12 +1,17 @@
 
 
-    <div class="counter-box d-flex align-items-center gap-4 p-1">
+    <div class="counter-box d-flex justify-self-center align-items-center gap-4 p-1">
         <div class="image-box">
             <img src="<%= image %>" alt="<%= t.components.composites.counterBox.alt %>">
         </div>
 
         <div class="d-flex flex-column txt-align-justify">
-            <span class="txt-transform-uppercase font-weight-black txt-size-title"><%= number %></span>
+            
+            <%- include('../../interactives/view/content.ejs', {
+                value: value,
+                suffix: suffix
+            }); -%>   
+
             <span class="txt-transform-uppercase txt-align-justify text-color"><%= title %></span>
         </div>
     </div>
