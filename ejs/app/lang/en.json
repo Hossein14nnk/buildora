@@ -127,7 +127,7 @@
 				}
 			}
 		},
-		"singleWeblog": {
+		"stBlog": {
 			"hero": {
 				"components": {
 					"upTitle": "blog details",
@@ -141,6 +141,32 @@
 			"content": {
 				"components": {
 					"label": "congtruction",
+					"group": {
+						"dates": {
+							"date": "may 12, 2026",
+							"author": "admin",
+							"commentCount": "5"
+						}
+					},
+					"description": "The construction industry is constantly evolving. New technologies, innovative materials, and a stronger focus on sustainability are reshaping the way we build. Here are the top trends that are defining the future of construction."
+				},
+				"title": "10 construction trends shaping the future",
+				"imageAlt": "single-weblog"
+			}
+		},
+		"contactUs": {
+			"hero": {
+				"components": {
+					"upTitle": "contact us",
+					"heroTitle": {
+						"title": "let build",
+						"highlight": "something great together"
+					},
+					"description": "Have a project in mind? We'd love to hear about it. Get in touch with our team and let's turn your vision into reality."
+				}
+			},
+			"content": {
+				"components": {
 					"group": {
 						"dates": {
 							"date": "may 12, 2026",

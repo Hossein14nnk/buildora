@@ -6,25 +6,25 @@
             <%- include("../../components/composites/section-topic/content.ejs", {
                 link1: navigation(lang, "home-one"),
                 link2: navigation(lang, "ar-weblog"),
-                upTitle: t.pages.singleWeblog.hero.components.upTitle,
-                firstPartTitle: t.pages.singleWeblog.hero.components.heroTitle.title,
-                secondPartTitle: `<br>${t.pages.singleWeblog.hero.components.heroTitle.highlight}`,
-                text: t.pages.singleWeblog.hero.components.description
+                upTitle: t.pages.stBlog.hero.components.upTitle,
+                firstPartTitle: t.pages.stBlog.hero.components.heroTitle.title,
+                secondPartTitle: `<br>${t.pages.stBlog.hero.components.heroTitle.highlight}`,
+                text: t.pages.stBlog.hero.components.description
             }); %>
         </div>
     </section>
     <section id="content" class="section bg-color">
         <div class="container flex-column flex-xxl-row gap-4">
             <div class="block align-items-start gap-4 w-xxl-70">
-                <span class="label-primary"><%= t.pages.singleWeblog.content.components.label %></span>
-                <h2><%= t.pages.singleWeblog.content.title %></h2>
+                <span class="label-primary"><%= t.pages.stBlog.content.components.label %></span>
+                <h2><%= t.pages.stBlog.content.title %></h2>
                 <%- include("../../components/composites/group/dates/content.ejs", {
-                    date: t.pages.singleWeblog.content.components.group.dates.date,
-                    author: t.pages.singleWeblog.content.components.group.dates.author,
-                    commentCount: t.pages.singleWeblog.content.components.group.dates.commentCount,
+                    date: t.pages.stBlog.content.components.group.dates.date,
+                    author: t.pages.stBlog.content.components.group.dates.author,
+                    commentCount: t.pages.stBlog.content.components.group.dates.commentCount,
                 }); %>
                 <img class="common-radius w-100" src="<%= getMedia(lang, "st-blog/thum4.jpg", "images"); %>" alt="single-weblog">
-                <p class="description"><%= t.pages.singleWeblog.content.components.description %></p>
+                <p class="description"><%= t.pages.stBlog.content.components.description %></p>
                 <h5 class="font-weight-bold">1. Sustainable Building Practices</h5>
                 <p class="description mb-2">Sustainability is no longer an option-it's a necessity. Green building materials, energy-efficient designs, and waste reduction practices are helping reduce environmental impact while lowering long-term costs.</p>
                 <h5 class="font-weight-bold">2. Building Information Modeling (BIM)</h5>
@@ -52,11 +52,11 @@
                 <div class="div flex-row align-items-center gap-4">
                     <p class="font-weight-semi-bold">Tags:</p>
                     <div class="group-labels d-flex flex-wrap gap-3">
-                        <span class="label-secondary"><%= t.pages.singleWeblog.content.components.label %></span>
-                        <span class="label-secondary"><%= t.pages.singleWeblog.content.components.label %></span>
-                        <span class="label-secondary"><%= t.pages.singleWeblog.content.components.label %></span>
-                        <span class="label-secondary"><%= t.pages.singleWeblog.content.components.label %></span>
-                        <span class="label-secondary"><%= t.pages.singleWeblog.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.stBlog.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.stBlog.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.stBlog.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.stBlog.content.components.label %></span>
+                        <span class="label-secondary"><%= t.pages.stBlog.content.components.label %></span>
                     </div>
                 </div>
                 <div class="div flex-column flex-md-row py-6 justify-content-center align-items-center align-items-md-stretch common-radius bg-section-color gap-8">

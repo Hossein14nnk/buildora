@@ -19,7 +19,7 @@ button, select {
   border: none;
 }
 
-input, button, select, textarea ul, li {
+input, button, select, textarea, ul, li {
   font-family: inherit;
 }
 
