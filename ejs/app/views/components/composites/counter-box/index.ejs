@@ -1,11 +1,12 @@
 <%- include('../../../layouts/component/head.ejs', {pageName: "counter-box"}); -%>
 
-<div class="d-flex align-items-center gap-4 justify-content-center w-100 h-100 ">
+<div class="d-flex align-items-center gap-4 justify-content-center w-100 h-100">
     <%- include('./content.ejs' ,
     {
         image: getMedia(lang, "components/1_years_experience.png", "images"),
-        number: t.components.composites.counterBox.number,
-        title: t.components.composites.counterBox.text
+        title: t.components.composites.counterBox.text,
+        value: 120,
+        suffix: "+"
     }); -%>
 </div>
 

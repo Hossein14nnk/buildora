@@ -1,2 +1,12 @@
 // @use "../../miz/sass/global-functions/_images" as *;
 // @use "../../miz/sass/global-functions/_colors" as *;
+
+
+#about-us #journey .container {
+    grid-template-columns: 1fr 2.5fr;
+}
+
+
+#about-us #values .container {
+    grid-template-columns: 1fr 2.5fr;
+}

@@ -111,6 +111,14 @@
 				"alt": "article picture",
 				"title": "10 construction treands shaping the future",
 				"date": "may 12, 2026"
+			},
+			"sectionTopic":{
+				"part1": "Home",
+				"part2": " Project",
+				"part3": "Page name"
+			},
+			"tickList": {
+				"text": "Client-focused approach"
 			}
 		}
 	},
@@ -154,6 +162,16 @@
 				"imageAlt": "single-weblog"
 			}
 		},
+<<<<<<< HEAD
+		"aboutUs": {
+			"topic":{
+				"upTitle": "About Us",
+				"firstPartTitle": "ABOUT US",
+				"secondPartTitle": "building more than stractures",
+				"btn": "work with us"
+			}
+			
+=======
 		"singleProject": {
 			"hero": {
 				"components": {
@@ -168,6 +186,7 @@
 			"content": {
 				"aboutProject" : "The construction industry is constantly evolving. New technologies, innovative materials, and a stronger focus on sustainability are reshaping the way we build. Here are the top trends that are defining the future of construction."
 			}
+>>>>>>> db61dd689f08f5b7ba158190a8db1582fe510790
 		}
 	}
 
