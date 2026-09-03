@@ -135,7 +135,7 @@
 				}
 			}
 		},
-		"stBlog": {
+		"blogDetail": {
 			"hero": {
 				"components": {
 					"upTitle": "blog details",

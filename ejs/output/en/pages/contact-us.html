@@ -1,66 +1,104 @@
-<%- include("../../layouts/page/head.ejs", { pageName: "contact-us" }); %>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-us</title>
+    <link rel="icon" type="image/png" href="./assets/media/images/en/logo.webp">
+    <base href="../../../">
+    <link rel="stylesheet" href="./assets/icons/fontawesome-free-7.3.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/miz.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+<body class="font-roboto">
 
 <main>
     <section id="hero" class="section bg-secondary-color">
         <div class="container">
-            <%- include("../../components/composites/section-topic/content.ejs", {
-                link1: navigation(lang, "home-one"),
-                part1: "home",
-                link2: navigation(lang, "ar-weblog"),
-                part2: "contact-us",
-                part3: "detail",
-                upTitle: t.pages.contactUs.hero.components.upTitle,
-                firstPartTitle: t.pages.contactUs.hero.components.heroTitle.title,
-                secondPartTitle: `<br>${t.pages.contactUs.hero.components.heroTitle.highlight}`,
-                text: t.pages.contactUs.hero.components.description
-            }); %>
+            <div class="section-topic block gap-6">
+    <div class="div flex-row gap-2 align-items-center description-secondary">
+        <a href="./output/en/pages/home-one.html" class="text-decoration-none primary-color">
+            <span>home</span>
+        </a>
+        <span>></span>
+        <a href="./output/en/pages/ar-weblog.html" class="text-decoration-none primary-color">
+            <span>contact-us</span>
+        </a>
+        <span>></span>
+        <span>detail</span>
+    </div>
+    <span class="eyebrow">contact us</span>
+    <h1 class="hero-title">
+        let build
+        <span class="highlight"><br>something great together</span>
+    </h1>
+    <hr class="horizontal-divider">
+    <p class="description-secondary">Have a project in mind? We&#39;d love to hear about it. Get in touch with our team and let&#39;s turn your vision into reality.</p>
+</div>
         </div>
     </section>
     <section id="information" class="section bg-color">
         <div class="container flex-column flex-lg-row gap-4">
             <form class="block w-lg-60 w-100">
-                <span class="eyebrow"><%= "text" %></span>
-                <h3 class="font-weight-semi-bold mb-5"><%= "test" %></h3>
+                <span class="eyebrow">text</span>
+                <h3 class="font-weight-semi-bold mb-5">test</h3>
                 <div class="div d-grid grid-1 grid-md-2">
-                    <%- include("../../components/composites/form-pattern/text-type/content.ejs", {
-                        label: "full name",
-                        placeHolder: "enter your full name"
-                    }); %>
-                    <%- include("../../components/composites/form-pattern/text-type/content.ejs", {
-                        label: "email address",
-                        placeHolder: "enter your "
-                    }); %>
-                    <%- include("../../components/composites/form-pattern/text-type/content.ejs", {
-                        label: "phone number",
-                        placeHolder: "enter your "
-                    }); %>
-                    <%- include("../../components/composites/form-pattern/selector/content.ejs", {
-                        label: "select",
-                        option1: "1",
-                        option2: "2",
-                        option3: "3",
-                        option4: "4",
-                    }); %>
+                    <div class="d-flex flex-column p-4 gap-1 w-100">
+    <label class="font-weight-semi-bold txt-transform-capitalize ">
+        full name <span class="danger-regular-color">*</span>
+    </label>
+    <input type="text" placeholder="enter your full name" class="txt-transform-capitalize common-radius p-2 border-fields-color text-fields-color border-style-solid common-bw" >
+</div>
+                    <div class="d-flex flex-column p-4 gap-1 w-100">
+    <label class="font-weight-semi-bold txt-transform-capitalize ">
+        email address <span class="danger-regular-color">*</span>
+    </label>
+    <input type="text" placeholder="enter your " class="txt-transform-capitalize common-radius p-2 border-fields-color text-fields-color border-style-solid common-bw" >
+</div>
+                    <div class="d-flex flex-column p-4 gap-1 w-100">
+    <label class="font-weight-semi-bold txt-transform-capitalize ">
+        phone number <span class="danger-regular-color">*</span>
+    </label>
+    <input type="text" placeholder="enter your " class="txt-transform-capitalize common-radius p-2 border-fields-color text-fields-color border-style-solid common-bw" >
+</div>
+                    <div class="d-flex flex-column p-4 w-100 gap-1">
+    <label class="form-label font-weight-semi-bold">
+        select <span class="danger-regular-color common-icon">*</span>
+    </label>
+    <select class="txt-transform-capitalize common-radius p-2 border-fields-color border-style-solid common-bw">
+        <option selected="">1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+</div>
                 </div>
-                <%- include("../../components/composites/form-pattern/selector/content.ejs", {
-                    label: "select",
-                    option1: "1",
-                    option2: "2",
-                    option3: "3",
-                    option4: "4",
-                }); %>
-                <%- include("../../components/composites/form-pattern/text-area/content.ejs", {
-                    label: "massage",
-                    placeHolder: "Tell us about your project"
-                }); %>
+                <div class="d-flex flex-column p-4 w-100 gap-1">
+    <label class="form-label font-weight-semi-bold">
+        select <span class="danger-regular-color common-icon">*</span>
+    </label>
+    <select class="txt-transform-capitalize common-radius p-2 border-fields-color border-style-solid common-bw">
+        <option selected="">1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+</div>
+                <div class="d-flex flex-column p-4 gap-1 w-100">
+    <label class="font-weight-semi-bold txt-transform-uppercase">
+        massage
+    </label>
+    <textarea type="textarea" placeholder="Tell us about your project" class="common-radius p-2 border-fields-color text-fields-color border-style-solid common-bw"></textarea>
+</div>
                 <button type="submit" class="btn btn-primary cursor-pointer align-self-start">
-                    <span><%= "send message" %></span>
+                    <span>send message</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </form>
             <div class="block w-lg-40 w-100">
-                <span class="eyebrow"><%= "text" %></span>
-                <h3 class="font-weight-semi-bold mb-5"><%= "test" %></h3>
+                <span class="eyebrow">text</span>
+                <h3 class="font-weight-semi-bold mb-5">test</h3>
                 <div class="div gap-4 mb-6">
                     <div class="d-flex flex-row align-items-center bg-card-color common-radius p-4 gap-8 w-100">
                         <i class="fa-solid fa-user primary-color icon-size-xxl"></i>
@@ -114,8 +152,8 @@
                 <div class="div flex-row align-items-center gap-5">
                     <i class="fa-solid fa-headset icon-size-xxl primary-color"></i>
                     <div class="d-flex flex-column gap-2">
-                        <h4 class="on-secondary-color font-weight-bold"><%= "title" %></h4>
-                        <p class="text-color"><%= "text" %></p>
+                        <h4 class="on-secondary-color font-weight-bold">title</h4>
+                        <p class="text-color">text</p>
                     </div>
                 </div>
                 <div class="d-none d-md-inline-block common-bw border-divider-color bie-style-solid"></div>
@@ -123,8 +161,8 @@
                     <div class="d-flex align-items-center gap-4 common-bw border-style-solid px-8 py-4 common-radius border-divider-color">
                         <i class="fa-solid fa-phone-volume icon-size-xl primary-color"></i>
                         <div class="d-flex flex-column gap-2">
-                            <span class="on-secondary-color"><%= "call us now" %></span>
-                            <h5 class="primary-color font-weight-semi-bold"><%= "+1 212 555 7890" %></h4>
+                            <span class="on-secondary-color">call us now</span>
+                            <h5 class="primary-color font-weight-semi-bold">+1 212 555 7890</h4>
                         </div>
                     </div>
                 </div>
@@ -133,4 +171,8 @@
     </section>
 </main>
 
-<%- include("../../layouts/page/foot.ejs"); %>
+
+    <script src="./assets/js/mizchin.min.js"></script>
+</body>
+
+</html>
