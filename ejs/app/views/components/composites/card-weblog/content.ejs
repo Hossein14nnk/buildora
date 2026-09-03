@@ -1,0 +1,18 @@
+<div class="card-person elevation-md common-radius div p-4 gap-2">
+    <div class="position-relative">
+        <img class="common-radius image-4xl aspect-ratio-4x3 object-cover radius-br-none radius-bl-none" src="<%= image %>" alt="<%= alt %>">
+        <span class="label-primary position-absolute inset-start-0 m-4"><%= "text" %></span>
+    </div>
+    <div class="d-flex flex-column gap-3">
+        <div class="next-service d-flex gap-1">
+            <i class="fa-light fa-calendar text-color"></i>      
+            <p class="description txt-transform-uppercase txt-align-justify"><%= date %></p>
+        </div>
+        <h5 class="font-weight-semi-bold"><%= title %></h5>
+        <p class="description"><%= description %></p>
+        <a href="<%= readMoreLink %>" class="learn-more div">
+            <span>read more</span>
+            <i class="fa-solid fa-arrow-right primary-color"></i>
+        </a>
+    </div>
+</div>

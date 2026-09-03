@@ -1,0 +1,12 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "counter"}); -%>
+
+<div class="d-flex align-items-center gap-4 justify-content-center w-fit-content">
+    <%- include('./content.ejs', {
+        image: getMedia(lang, "teams/percon1.jpg", "images"),
+        alt: "person1",
+        title: "James Anderson",
+        description: "Chief Executive Officer"
+    }); -%>
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>

@@ -16,7 +16,7 @@
   --secondary-text: #C6C6C7;
   --section-title-text: #0C0B0C;
   --border: #FEBF01;
-  --divider: #FEBF01;
+  --divider: #E4E4E4;
   --icon: #FCEED2;
   --icon-hover: rgba(0, 0, 0, 0);
   --menu: rgba(0, 0, 0, 0);
@@ -53,12 +53,12 @@
   /* common */
   --common-radius: 6px;
   --common-elevation: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --common-bw: 1px;
-  --common-grid-gap: space(1);
+  --common-bw: 2px;
+  --common-grid-gap: 0.25rem;
   --common-title: 2rem;
   --common-paragraph: 1rem;
-  --common-icon: 20px;
-  --common-list-gap: space(1);
+  --common-icon: 16px;
+  --common-list-gap: 0.25rem;
   --common-transition: 200ms linear;
   /* font */
   --font-roboto: "roboto";
@@ -82,7 +82,7 @@
   --secondary-text: #C6C6C7;
   --section-title-text: #0C0B0C;
   --border: #FEBF01;
-  --divider: #FEBF01;
+  --divider: #E4E4E4;
   --icon: #FCEED2;
   --icon-hover: rgba(0, 0, 0, 0);
   --menu: rgba(0, 0, 0, 0);

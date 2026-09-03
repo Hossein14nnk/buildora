@@ -2,5 +2,5 @@
 @use "../functions/_sizing" as *;
 
 $images-list-class:"image";
-$map-image:(image: (width, height));
+$map-image:(image: (width));
 $image-element-size : generate-total-map-list-sizing($images-list-class , $map-image , $conf-image);

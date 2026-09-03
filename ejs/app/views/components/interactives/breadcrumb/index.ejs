@@ -1,0 +1,25 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "breadcrumb"}); -%>
+
+<div class="bg-on-primary-color w-100 h-100 d-flex align-items-center justify-content-center">
+    <%- include('./content.ejs', {
+        items: [
+            {
+                title: "Home",
+                link: navigation(lang, "home-one")
+            },
+            {
+                title: "Products",
+                link: navigation(lang, "home-two")
+            },
+            {
+                title: "Web Development",
+                link: navigation(lang, "home-two")
+            },
+            {
+                title: "Breadcrumb"
+            }
+        ]
+    }); -%>
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>

@@ -1,0 +1,11 @@
+<%- include('../../../../layouts/component/head.ejs', {pageName: "date-box"}); -%>
+
+<div class="d-flex align-items-center gap-4 justify-content-center w-100 h-100">
+    <%- include('./content.ejs', {
+        date: "may 12, 2026",
+        author: "admin",
+        commentCount: "5"
+    }); -%>
+</div>
+
+<%- include('../../../../layouts/component/foot.ejs'); -%>

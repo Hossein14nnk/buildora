@@ -412,11 +412,11 @@ footer.section > .container.wide {
 }
 
 .common-bw {
-  border-width: 1px;
+  border-width: 2px;
 }
 
 .common-grid-gap {
-  gap: space(1);
+  gap: 0.25rem;
 }
 
 .common-title {
@@ -428,11 +428,11 @@ footer.section > .container.wide {
 }
 
 .common-icon {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .common-list-gap {
-  gap: space(1);
+  gap: 0.25rem;
 }
 
 .common-transition {
@@ -4815,57 +4815,55 @@ html {
 }
 
 .icon-size-xs {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .icon-size-sm {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .icon-size-md {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .icon-size-lg {
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .icon-size-xl {
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .icon-size-xxl {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .image-xs {
   width: 75px;
-  height: 75px;
 }
 
 .image-sm {
   width: 90px;
-  height: 90px;
 }
 
 .image-md {
   width: 105px;
-  height: 105px;
 }
 
 .image-lg {
   width: 120px;
-  height: 120px;
 }
 
 .image-xl {
   width: 135px;
-  height: 135px;
 }
 
 .image-xxl {
   width: 150px;
-  height: 150px;
+}
+
+.image-4xl {
+  width: 351px;
 }
 
 @media screen and (width >= 576px) {

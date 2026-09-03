@@ -1,0 +1,48 @@
+<%- include('../../../layouts/component/head.ejs', {pageName: "categories"}); -%>
+
+<div class="d-flex align-items-center gap-4 justify-content-center w-fit-content w-50">
+
+    <%- include('./content.ejs', {
+        title: "Categories",
+        items: [
+            {
+                title: "Construction",
+                count: 8,
+                link: "#"
+            },
+            {
+                title: "Project Management",
+                count: 5,
+                link: "#"
+            },
+            {
+                title: "Interior Design",
+                count: 4,
+                link: "#"
+            },
+            {
+                title: "Sustainability",
+                count: 3,
+                link: "#"
+            },
+            {
+                title: "Safety",
+                count: 2,
+                link: "#"
+            },
+            {
+                title: "Commercial",
+                count: 1,
+                link: "#"
+            },
+            {
+                title: "Residential",
+                count: 1,
+                link: "#"
+            }
+        ]
+    }); -%>
+
+</div>
+
+<%- include('../../../layouts/component/foot.ejs'); -%>
