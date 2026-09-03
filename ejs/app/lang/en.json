@@ -162,6 +162,7 @@
 				"imageAlt": "single-weblog"
 			}
 		},
+<<<<<<< HEAD
 		"aboutUs": {
 			"topic":{
 				"upTitle": "About Us",
@@ -170,6 +171,22 @@
 				"btn": "work with us"
 			}
 			
+=======
+		"singleProject": {
+			"hero": {
+				"components": {
+					"upTitle": "COMMERCIAL",
+					"heroTitle": {
+						"title": "Modern Commercial",
+						"highlight": "Complex"
+					},
+					"description": "home > blog > Modern Commercial"
+				}
+			},
+			"content": {
+				"aboutProject" : "The construction industry is constantly evolving. New technologies, innovative materials, and a stronger focus on sustainability are reshaping the way we build. Here are the top trends that are defining the future of construction."
+			}
+>>>>>>> db61dd689f08f5b7ba158190a8db1582fe510790
 		}
 	}
 
