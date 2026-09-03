@@ -2,11 +2,18 @@
 // @use "../../miz/sass/global-functions/_colors" as *;
 
 
-#about-us #journey .container {
-    grid-template-columns: 1fr 2.5fr;
-}
 
 
-#about-us #values .container {
-    grid-template-columns: 1fr 2.5fr;
+
+
+
+@media screen and (width >= 992px) {
+    #about-us #journey .container {
+        grid-template-columns: 1fr 2.5fr;
+    }
+
+    #about-us #values .container {
+        grid-template-columns: 1fr 2.5fr;
+    }
+
 }
