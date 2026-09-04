@@ -1,4 +1,4 @@
-<%- include('../../layouts/page/head.ejs', {pageName: "articles"}); -%>
+<%- include('../../layouts/page/head.ejs', {pageName: "about-us"}); -%>
 
 	<main class="section d-flex flex-column" id="about-us">
         <section id="topic" class="section bg-secondary-color ">
@@ -16,28 +16,32 @@
 						text: t.components.description.text
 					}); -%>
 
-					<a href="" class="btn btn-primary txt-size-subtitle txt-transform-uppercase">
-						<span><%= t.pages.aboutUs.topic.btn %></span>
-						<i class="fa-solid fa-arrow-right"></i>
-					</a>
+					<div class="block">
+						<a href="" class="btn btn-primary txt-size-subtitle txt-transform-uppercase">
+							<span><%= t.pages.aboutUs.topic.btn %></span>
+							<i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+
+					
             </div>
         </section>
 
         <section id="about" class="section">
 
-            <div class="container d-grid gap-20 flex-column grid-1 align-items-center grid-lg-2">
+            <div class="container d-grid flex-column grid-1 align-items-center grid-lg-2 gap-10">
 
-                <div class="align-items-center position-relative">
+                <div class="block position-relative p-0">
 
-                    <img src="./assets/media/images/en/about-us/archive-picture.webp" class="p-0 m-0  common-radius w-100 h-100">
+                    <img src="./assets/media/images/en/about-us/archive-picture.webp" class="p-0 common-radius w-100 h-100">
 
 					<div class="bg-secondary-color position-absolute p-2 common-radius bottom-0 start-0 on-secondary-color">
 
 						<%- include('../../components/composites/counter-box/content.ejs' ,
 						{
 							image: getMedia(lang, "components/1_years_experience.png", "images"),
-							title: t.components.composites.counterBox.text,
-							value: 120,
+							title: t.pages.aboutUs.about.counter.text ,
+							value: t.pages.aboutUs.about.counter.number ,
 							suffix: "+"
 						}); -%>
 
@@ -46,33 +50,27 @@
 
                 </div>
 
-                <div class="d-flex flex-column gap-4">
+                <div class="block gap-4 p-0">
 					<%- include('../../components/composites/topic-pattern/third/content.ejs',
 						{
-							upTitle: t.components.eyebrow.text,
-							title: t.components.eyebrow.text,
-							text: t.components.description.text
+							upTitle: t.pages.aboutUs.about.upTitle ,
+							title: t.pages.aboutUs.about.title ,
+							text: t.pages.aboutUs.about.firstParagraph
 						}); -%>
 
 					<hr class="horizontal-divider">
 
-					<p class="description">Our experienced professionals work collaboratively to bring ideas to life—on time, on budget, and beyond expectations. </p>
+					<p class="description"><%= t.pages.aboutUs.about.secondParagraph  %></p>
 
 					<hr class="horizontal-divider">
 
+					<% for(let i = 0 ; i < 3; i++ ){ %>
+						<%- include('../../components/composites/tick-list/content.ejs',
+						{
+							text : t.components.composites.tickList.text 
+						}); -%>
+					<% } %>
 
-						<%- include('../../components/composites/tick-list/content.ejs',
-							{
-								text:  t.components.composites.tickList.text
-							}); -%>
-						<%- include('../../components/composites/tick-list/content.ejs',
-							{
-								text:  t.components.composites.tickList.text
-							}); -%>
-						<%- include('../../components/composites/tick-list/content.ejs',
-							{
-								text:  t.components.composites.tickList.text
-							}); -%>
 						
 					
 				</div>
@@ -82,52 +80,40 @@
 
         </section>
 
-        <section id="journey" class="section bg-card-color bg-specific-color">
-            <div class="container d-grid gap-10 grid-1">
+        <section id="journey" class="section bg-specific-color">
+            <div class="container d-grid grid-1 align-items-center">
 
-				<div class="">
+				<div class="block">
 					<%- include('../../components/composites/topic-pattern/first/content.ejs',
 					{
-						upTitle: t.components.eyebrow.text,
-						title: t.components.eyebrow.text,
-						text: t.components.description.text
+						upTitle: t.pages.aboutUs.journey.upTitle ,
+						title: t.pages.aboutUs.journey.title ,
 					}); -%>
 				</div>
 				
-				<div class="div d-grid grid-2 grid-md-4">
-					<%- include('../../components/composites/level-process/content.ejs',
-						{
-							number: t.components.composites.levelProcess.number1,
-							title: t.components.composites.levelProcess.title1,
-							text: t.components.composites.levelProcess.description1
-						}); -%>
-					<%- include('../../components/composites/level-process/content.ejs',
-						{
-							number: t.components.composites.levelProcess.number1,
-							title: t.components.composites.levelProcess.title1,
-							text: t.components.composites.levelProcess.description1
-						}); -%>
-					<%- include('../../components/composites/level-process/content.ejs',
-						{
-							number: t.components.composites.levelProcess.number1,
-							title: t.components.composites.levelProcess.title1,
-							text: t.components.composites.levelProcess.description1
-						}); -%>
-					<%- include('../../components/composites/level-process/content.ejs',
-						{
-							number: t.components.composites.levelProcess.number1,
-							title: t.components.composites.levelProcess.title1,
-							text: t.components.composites.levelProcess.description1
-						}); -%>
+				<div class="block d-grid grid-2 grid-md-4 group">
+
+					
+					<% for(let i = 0 ; i < 4; i++ ){ %>
+						<%- include('../../components/composites/level-process/content.ejs',
+							{
+								icon: t.pages.aboutUs.journey.group[i].icon ,
+								number: t.pages.aboutUs.journey.group[i].number ,
+								title: t.pages.aboutUs.journey.group[i].title ,
+								text: t.pages.aboutUs.journey.group[i].text
+							}); 
+						-%>
+					<% } %>
+
 				</div>
 
             </div>
         </section>
 
         <section id="values" class="section bg-secondary-color">
-			<div class="container d-grid gap-10 grid-1">
+			<div class="container d-grid gap-10 grid-1 align-items-center">
 
-				<div class="">
+				<div class="block">
 					<%- include('../../components/composites/topic-pattern/second/content.ejs',
 					{
 						upTitle: t.components.eyebrow.text,
@@ -136,31 +122,19 @@
 					}); -%>
 				</div>
 				
-				<div class="div d-grid grid-2 grid-md-4 on-secondary-color">
-					<%- include('../../components/composites/feature-item/content.ejs',
-						{
-							image: getMedia(lang, 'components/second-feature-card-icon-1.png', 'images'),
-							title: t.components.composites.features.title,
-							text: t.components.composites.features.description
-						}); -%>
-					<%- include('../../components/composites/feature-item/content.ejs',
-						{
-							image: getMedia(lang, 'components/second-feature-card-icon-1.png', 'images'),
-							title: t.components.composites.features.title,
-							text: t.components.composites.features.description
-						}); -%>
-					<%- include('../../components/composites/feature-item/content.ejs',
-						{
-							image: getMedia(lang, 'components/second-feature-card-icon-1.png', 'images'),
-							title: t.components.composites.features.title,
-							text: t.components.composites.features.description
-						}); -%>
-					<%- include('../../components/composites/feature-item/content.ejs',
-						{
-							image: getMedia(lang, 'components/second-feature-card-icon-1.png', 'images'),
-							title: t.components.composites.features.title,
-							text: t.components.composites.features.description
-						}); -%>
+				<div class="block d-grid grid-2 grid-md-4 on-secondary-color group">
+
+					<% for( let i = 0 ; i < 4 ; i++ ){ %>
+						<%- include('../../components/composites/feature-item/content.ejs',
+							{
+								image:  t.pages.aboutUs.values.group[i].image ,
+								title: t.pages.aboutUs.values.group[i].title ,
+								text: t.pages.aboutUs.values.group[i].text
+							}); 
+						-%>
+					<% } %>
+
+
 				</div>
 
             </div>
@@ -170,34 +144,17 @@
             <div class="container bg-specific-color">
 
 				<div class="block d-grid grid-2 w-100 grid-md-4">
-					<%- include('../../components/composites/counter-box/content.ejs' ,
-						{
-							image: getMedia(lang, "components/1_years_experience.png", "images"),
-							title: t.components.composites.counterBox.text,
-							value: 120,
-							suffix: "+"
-						}); -%>
-						<%- include('../../components/composites/counter-box/content.ejs' ,
-						{
-							image: getMedia(lang, "components/1_years_experience.png", "images"),
-							title: t.components.composites.counterBox.text,
-							value: 120,
-							suffix: "+"
-						}); -%>
-						<%- include('../../components/composites/counter-box/content.ejs' ,
-						{
-							image: getMedia(lang, "components/1_years_experience.png", "images"),
-							title: t.components.composites.counterBox.text,
-							value: 120,
-							suffix: "+"
-						}); -%>
-						<%- include('../../components/composites/counter-box/content.ejs' ,
-						{
-							image: getMedia(lang, "components/1_years_experience.png", "images"),
-							title: t.components.composites.counterBox.text,
-							value: 120,
-							suffix: "+"
-						}); -%>
+
+					<% for( let i = 0 ; i < 4 ; i++ ){ %>
+						<%- include('../../components/composites/counter-box/content.ejs',
+							{
+								image: t.pages.aboutUs.introduction.group[i].image ,
+								title: t.pages.aboutUs.introduction.group[i].title ,
+								value: t.pages.aboutUs.introduction.group[i].value ,
+								suffix: t.pages.aboutUs.introduction.group[i].suffix
+							}); 
+						-%>
+					<% } %>
 						
 				</div>
 
@@ -211,52 +168,31 @@
                 <div class="block gap-6 justify-content-space-between align-items-center flex-column flex-lg-row">
 					<div class="div txt-align-center txt-align-lg-start align-items-lg-start align-items-center">
 						<%- include('../../components/composites/topic-pattern/first/content.ejs',
-					{
-						upTitle: t.components.eyebrow.text,
-						title: t.components.eyebrow.text,
-						text: t.components.description.text
-					}); -%>
+							{
+								upTitle: t.pages.aboutUs.team.upTitle ,
+								title: t.pages.aboutUs.team.title
+							}); -%>
 					</div>
                     
                     
-                    <p  class="description w-80 w-lg-50 txt-align-center"> Our strength lies in our people. Our team brings together engineers, project managers, designers, and specialists who are passionate about building a better tomorrow.</p>
+                    <p  class="description w-80 w-lg-50 txt-align-center txt-align-lg-start"><%= t.pages.aboutUs.team.text %></p>
                     
                 </div>
                 
                 <div class="block d-grid grid-2 grid-md-3 grid-lg-4 grid-xxl-5 gap-4">
-                    <%- include('../../components/composites/card-person/content.ejs', {
-						image: getMedia(lang, "teams/percon1.jpg", "images"),
-						alt: "person1",
-						title: "James Anderson",
-						description: "Chief Executive Officer"
-					}); -%>
-					<%- include('../../components/composites/card-person/content.ejs', {
-						image: getMedia(lang, "teams/percon1.jpg", "images"),
-						alt: "person1",
-						title: "James Anderson",
-						description: "Chief Executive Officer"
-					}); -%>
-					<%- include('../../components/composites/card-person/content.ejs', {
-						image: getMedia(lang, "teams/percon1.jpg", "images"),
-						alt: "person1",
-						title: "James Anderson",
-						description: "Chief Executive Officer"
-					}); -%>
-					<%- include('../../components/composites/card-person/content.ejs', {
-						image: getMedia(lang, "teams/percon1.jpg", "images"),
-						alt: "person1",
-						title: "James Anderson",
-						description: "Chief Executive Officer"
-					}); -%>
-					<%- include('../../components/composites/card-person/content.ejs', {
-						image: getMedia(lang, "teams/percon1.jpg", "images"),
-						alt: "person1",
-						title: "James Anderson",
-						description: "Chief Executive Officer"
-					}); -%>
-                    
+					<% for(let i = 0 ; i < 6 ; i++){ %>
+						<%#- include('../../components/composites/card-person/content.ejs',
+							{
+								image: t.pages.aboutUs.team.percons[i].image ,
+								alt: t.pages.aboutUs.team.percons[i].alt ,
+								title: t.pages.aboutUs.team.percons[i].name ,
+								description: t.pages.aboutUs.team.percons[i].job
+							}); -%>
+					<% } %>
+					
                 </div>
         </section>
+
 
     </main>
 

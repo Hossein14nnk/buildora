@@ -804,7 +804,6 @@ h1 {
   align-items: center;
 }
 .view .view-value {
-  color: var(--on-primary);
   font-size: 2rem;
   font-weight: 700;
 }

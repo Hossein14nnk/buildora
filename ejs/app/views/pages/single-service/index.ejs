@@ -3,7 +3,7 @@
 <main>
     <section id="hero" class="section bg-secondary-color">
         <div class="container">
-            <%- include("../../components/composites/section-topic/content.ejs", {
+            <%#- include("../../components/composites/section-topic/content.ejs", {
                 link1: navigation(lang, "home-one"),
                 link2: navigation(lang, "ar-weblog"),
                 upTitle: t.pages.singleProject.hero.components.upTitle,
@@ -49,9 +49,9 @@
  
                 <div class="block flex-row">
                     <% for (let i = 0; i < 4; i++) { %>
-                        <%- include("../../components/composites/level-process/content.ejs",{
-                            number: t.components.composites.levelProcess.number1,
-                            title: t.components.composites.levelProcess.title1,
+                        <%#- include("../../components/composites/level-process/content.ejs",{
+                            number: t.components.composites.levelProcess.number1 ,
+                            title: t.components.composites.levelProcess.title1 ,
                             text: t.components.composites.levelProcess.description1
                         }); -%>  
                      <% } %>

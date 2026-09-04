@@ -98,6 +98,7 @@
 				"title": "Let's Build It Together"
 			},
 			"levelProcess": {
+				"icon" : "fa-soli fa-check" ,
 				"number1": "01",
 				"title1": "1998 Company Founded",
 				"description1": "Buildora Construction was established with a vision for excellence."
@@ -168,6 +169,142 @@
 				"firstPartTitle": "ABOUT US",
 				"secondPartTitle": "building more than stractures",
 				"btn": "work with us"
+			},
+			"about": {
+				"upTitle": "WHO WE ARE",
+				"title": "Dedicated to Quality. Driven by Integrity. ",
+				"firstParagraph": "Founded with a vision to raise the standards of construction,Builders Construction has grown into a trusted partner for clientswho value quality, transparency, and results. ",
+				"secondParagraph": "Our experienced professionals work collaboratively to bring ideas to life—on time, on budget, and beyond expectations.",
+				"listItem": [
+					"Client-focused approach",
+					"Skilled and certified team",
+					"Commitment to safety and quality"
+				],
+				"counter": {
+					"number": "+25",
+					"text": "Years of Experience"
+				}
+			},
+			"journey": {
+				"upTitle": "OUR JOURNEY",
+				"title": "Milstones That Define Our Path",
+				"group":[
+					{
+						"icon": "fa-solid fa-building",
+						"number": "01",
+						"title": "1998 Company Founded",
+						"text": "Buildora Construction was established with a vision for excellence."
+					},
+					{
+						"icon": "fa-solid fa-building",
+						"number": "02",
+						"title": "2005 Expanded Services",
+						"text": "We expanded our services to include commercial and Industrial projects."
+					},
+					{
+						"icon": "fa-solid fa-building",
+						"number": "03",
+						"title": "2012 National Recognition",
+						"text": "Received multiple awards for quality and construction excellence."
+					},
+					{
+						"icon": "fa-solid fa-building",
+						"number": "04",
+						"title": "2020 Sustainable Future",
+						"text": "We embraced sustainable building practices for a better future."
+					}
+				]
+			},
+			"values":{
+				"upTitle": "OUR VALUES",
+				"title": "The Principles That Guide Everything We Do",
+				"group":[
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"title": "Integrity",
+						"text": "We do what's right, always."
+					},
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"title": "Quality",
+						"text": "We build to last with uncompromised standards."
+					},
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"title": "Innovation",
+						"text": "We embrace new ideas to deliver smarter solutions."
+					},
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"title": "Teamwork",
+						"text": "We believe in collaboration and shared success."
+					}
+				]
+			},
+			"introduction":{
+				"group":[
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"title": "Years Experience",
+						"value": "1",
+						"suffix": "+"
+					},
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"title": "Projects Completed",
+						"value": "530",
+						"suffix": "+"
+					},
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"title": "Happy Customers",
+						"value": "1000",
+						"suffix": "+"
+					},
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"title": "Professional Awards",
+						"value": "50",
+						"suffix": "+"
+					}
+				]
+			},
+			"team":{
+				"upTitle": "OUR Team",
+				"title": "Meet The People Behind Our success",
+				"text": "Our strength lies in our people. Our team brings together engineers, project managers, designers, and specialists who are passionate about building a better tomorrow.",
+				"percons":[
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"alt": "person1",
+						"name": "Daniel Thomas",
+						"job": "Director of Construction"
+					},
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"alt": "person2",
+						"name": "Liam Wilson",
+						"job": "Project Manager"
+					},
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"alt": "person3",
+						"name": "Noah Brown",
+						"job": "Site Supervisor"
+					},
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"alt": "person4",
+						"name": "Ava Thompson",
+						"job": "Interior Designer"
+					},
+					{
+						"image": "getMedia(lang, 'components/second-feature-card-icon-1.png', 'images')",
+						"alt": "person5",
+						"name": "David Lee",
+						"job": "Site Supervisor"
+					}
+				]
 			}
 		},	
 		"singleProject": {
