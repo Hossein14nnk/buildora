@@ -1,0 +1,136 @@
+<%- include("../../layouts/page/head.ejs", { pageName: "contact-us" }); %>
+
+<main>
+    <section id="hero" class="section bg-secondary-color">
+        <div class="container">
+            <%- include("../../components/composites/section-topic/content.ejs", {
+                link1: navigation(lang, "home-one"),
+                part1: "home",
+                link2: navigation(lang, "ar-weblog"),
+                part2: "contact-us",
+                part3: "detail",
+                upTitle: t.pages.contactUs.hero.components.upTitle,
+                firstPartTitle: t.pages.contactUs.hero.components.heroTitle.title,
+                secondPartTitle: `<br>${t.pages.contactUs.hero.components.heroTitle.highlight}`,
+                text: t.pages.contactUs.hero.components.description
+            }); %>
+        </div>
+    </section>
+    <section id="information" class="section bg-color">
+        <div class="container flex-column flex-lg-row gap-4">
+            <form class="block w-lg-60 w-100">
+                <span class="eyebrow"><%= "text" %></span>
+                <h3 class="font-weight-semi-bold mb-5"><%= "test" %></h3>
+                <div class="div d-grid grid-1 grid-md-2">
+                    <%- include("../../components/composites/form-pattern/text-type/content.ejs", {
+                        label: "full name",
+                        placeHolder: "enter your full name"
+                    }); %>
+                    <%- include("../../components/composites/form-pattern/text-type/content.ejs", {
+                        label: "email address",
+                        placeHolder: "enter your "
+                    }); %>
+                    <%- include("../../components/composites/form-pattern/text-type/content.ejs", {
+                        label: "phone number",
+                        placeHolder: "enter your "
+                    }); %>
+                    <%- include("../../components/composites/form-pattern/selector/content.ejs", {
+                        label: "select",
+                        option1: "1",
+                        option2: "2",
+                        option3: "3",
+                        option4: "4",
+                    }); %>
+                </div>
+                <%- include("../../components/composites/form-pattern/selector/content.ejs", {
+                    label: "select",
+                    option1: "1",
+                    option2: "2",
+                    option3: "3",
+                    option4: "4",
+                }); %>
+                <%- include("../../components/composites/form-pattern/text-area/content.ejs", {
+                    label: "massage",
+                    placeHolder: "Tell us about your project"
+                }); %>
+                <button type="submit" class="btn btn-primary cursor-pointer align-self-start">
+                    <span><%= "send message" %></span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+            <div class="block w-lg-40 w-100">
+                <span class="eyebrow"><%= "text" %></span>
+                <h3 class="font-weight-semi-bold mb-5"><%= "test" %></h3>
+                <div class="div gap-4 mb-6">
+                    <div class="d-flex flex-row align-items-center bg-card-color common-radius p-4 gap-8 w-100">
+                        <i class="fa-solid fa-user primary-color icon-size-xxl"></i>
+                        <div class="d-flex flex-column align-items-start">
+                            <h4>asdfaf</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque explicabo quis ipsum?</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center bg-card-color common-radius p-4 gap-8 w-100">
+                        <i class="fa-solid fa-user primary-color icon-size-xxl"></i>
+                        <div class="d-flex flex-column align-items-start">
+                            <h4>asdfaf</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque explicabo quis ipsum?</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center bg-card-color common-radius p-4 gap-8 w-100">
+                        <i class="fa-solid fa-user primary-color icon-size-xxl"></i>
+                        <div class="d-flex flex-column align-items-start">
+                            <h4>asdfaf</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque explicabo quis ipsum?</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center bg-card-color common-radius p-4 gap-8 w-100">
+                        <i class="fa-solid fa-user primary-color icon-size-xxl"></i>
+                        <div class="d-flex flex-column align-items-start">
+                            <h4>asdfaf</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque explicabo quis ipsum?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div gap-3">
+                    <span class="font-weight-semi-bold">Let's Connect</span>
+                    <div class="group-icons d-flex gap-3">
+                        <i class="icon-box fa-brands fa-facebook-f"></i>
+                        <i class="icon-box fa-brands fa-linkedin-in"></i>
+                        <i class="icon-box fa-brands fa-x-twitter"></i>
+                        <i class="icon-box fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map" class="section bg-color">
+        <div class="container">
+            <iframe class="common-radius" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border:0" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;maptype=roadmap&amp;zoom=14"><a href="https://www.maps.ie/world-time-zone-map/">time zone map</a></iframe>
+        </div>
+    </section>
+    <section id="call-us" class="section bg-color">
+        <div class="container">
+            <div class="section-card block flex-row justify-content-space-between bg-secondary-color py-8 gap-6 common-radius w-100 flex-md-row">
+                <div class="div flex-row align-items-center gap-5">
+                    <i class="fa-solid fa-headset icon-size-xxl primary-color"></i>
+                    <div class="d-flex flex-column gap-2">
+                        <h4 class="on-secondary-color font-weight-bold"><%= "title" %></h4>
+                        <p class="text-color"><%= "text" %></p>
+                    </div>
+                </div>
+                <div class="d-none d-md-inline-block common-bw border-divider-color bie-style-solid"></div>
+                <div class="div flex-row align-items-center justify-content-center">
+                    <div class="d-flex align-items-center gap-4 common-bw border-style-solid px-8 py-4 common-radius border-divider-color">
+                        <i class="fa-solid fa-phone-volume icon-size-xl primary-color"></i>
+                        <div class="d-flex flex-column gap-2">
+                            <span class="on-secondary-color"><%= "call us now" %></span>
+                            <h5 class="primary-color font-weight-semi-bold"><%= "+1 212 555 7890" %></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include("../../layouts/page/foot.ejs"); %>
